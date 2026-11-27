@@ -1,0 +1,54 @@
+{
+  "slug": "saldatura-fascio",
+  "titolo": "Saldatura a fascio (laser ed elettronico)",
+  "titoloOriginale": "Power Beam Welding",
+  "parte": "Parte 3 – Giunzione",
+  "categoria": "Termico",
+  "sintesi": "Un fascio laser o di elettroni concentra tanta energia in un punto da aprire un \"keyhole\" nel giunto: saldature strette, profonde e rapide, con zona termicamente alterata ridotta, anche in spessori molto elevati.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di due lastre d'acciaio spesse, accostate sotto una testa laser. Le lastre si avvicinano, la testa scende e un fascio arancione apre un pozzetto luminoso che attraversa tutto lo spessore. La testa avanza lungo il giunto lasciando una saldatura sottilissima e profonda, visibile anche sulla faccia frontale, che raffreddandosi diventa verde." },
+  "schema": {
+    "titolo": "Saldatura laser con keyhole, in sezione trasversale",
+    "descrizione": "Sezione trasversale di due lastre spesse accostate, con la testa laser sopra. Le fasi mostrano l'allineamento del giunto, il fascio messo a fuoco con il gas di protezione, il keyhole che penetra tutto lo spessore e la saldatura stretta con la sua piccola zona alterata.",
+    "fasi": [
+      { "titolo": "Allineamento", "durata": 1800, "pag": "290", "didascalia": "Il giunto deve rispettare tolleranze strette ed essere allineato con il fascio: servono maschere e morsetti precisi." },
+      { "titolo": "Messa a fuoco", "durata": 1800, "pag": "290", "didascalia": "Il fascio arriva alla testa con specchi o fibra ottica; una lente lo concentra in un punto di 0,1–1 mm sulla superficie, sotto un gas di protezione." },
+      { "titolo": "Keyhole", "durata": 2800, "pag": "288, 290", "didascalia": "L'energia concentrata fonde o vaporizza il materiale e apre un foro che porta il calore in profondità; la testa avanza, per esempio a 7 kW su 8 mm di acciaio a 1,5 m al minuto." },
+      { "titolo": "Solidificazione", "durata": 2000, "pag": "288", "didascalia": "Il materiale fuso si richiude dietro il fascio in una saldatura omogenea, stretta e profonda, con una zona termicamente alterata più piccola dell'arco." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "288", "testo": "Come l'arco, i processi a fascio fondono l'interfaccia del giunto; ma il calore non viene da un arco elettrico, bensì dall'energia concentrata nel fascio." },
+    { "fase": 2, "pag": "288, 290", "testo": "I laser possono essere CO₂, a diodi, Nd:YAG, a disco o a fibra; il Nd:YAG e la fibra viaggiano anche in fibra ottica e saldano su 5 assi, con profili, rotazioni e punti (fino a 120.000 punti all'ora)." },
+    { "fase": 3, "pag": "288", "testo": "Gli stessi fasci possono anche tagliare, lavorare e forare. Nel fascio elettronico le densità di potenza arrivano a 30.000 W/mm²." },
+    { "fase": 4, "pag": "288–289", "testo": "Più velocità, ZTA stretta e poca distorsione; si uniscono anche metalli diversi e, con il laser, termoplastici diversi fra loro." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Metalli ferrosi e non ferrosi, soprattutto acciai, rame, alluminio (serie 5000 e 6000), magnesio e titanio; il fascio elettronico solo metalli conduttivi. Il laser salda anche termoplastici come PP, PE, ABS, POM e PMMA, e tessuti.", "pag": "288–290" },
+    "volumi": { "valore": "Da applicazioni specialistiche alla produzione di massa.", "pag": "288–289" },
+    "costoAttrezzatura": { "valore": "Nessuno, ma servono maschere e morsetti precisi; macchine molto costose, specie per il fascio elettronico.", "pag": "288, 290" },
+    "costoUnitario": { "valore": "Alto; manodopera alta.", "pag": "288, 290" },
+    "tempoCiclo": { "valore": "Rapido: il fascio elettronico salda fino a 10 m al minuto in spessori elevati; la preparazione e il vuoto (fino a 30 minuti) allungano i tempi.", "pag": "288, 290" },
+    "qualitaSuperficiale": { "valore": "Giunti molto resistenti, rapidi e uniformi; sulle plastiche giunti di altissima qualità senza tracce in superficie.", "pag": "288" },
+    "precisione": { "valore": "Saldature precise; tolleranze numeriche: n.d.", "pag": "288" },
+    "dimensioni": { "valore": "Laser: soprattutto sotto i 15 mm. Fascio elettronico: 0,1–450 mm secondo il materiale (acciaio fino a 150 mm, alluminio 450 mm, rame 100 mm).", "pag": "288, 290", "ocr": "Densità di potenza minima del laser: n.d. (OCR \"loo W/mm2\")" }
+  },
+  "vincoli": [
+    { "mini": "giunto", "titolo": "Giunto preciso e allineato", "spiegazione": "Il giunto deve rispettare tolleranze strette ed essere allineato con il fascio: la preparazione può costare tempo, soprattutto su pezzi grandi. Se la luce del giunto varia si usano ibridi laser-arco.", "pag": "288, 290" },
+    { "mini": "cricche", "titolo": "Attenzione ai metalli sensibili", "spiegazione": "La grande differenza di temperatura fra zona fusa e metallo base può causare cricche, soprattutto negli acciai ad alto carbonio; l'alluminio è riflettente e il titanio reagisce con ossigeno e azoto.", "pag": "288, 290" },
+    { "mini": "costo", "titolo": "Solo dove il costo si ripaga", "spiegazione": "Attrezzature costose, programmazione accurata e, per il fascio elettronico, il vuoto rendono il processo adatto ad applicazioni specialistiche o di massa.", "pag": "289–290" }
+  ],
+  "variantiNota": "Lo schema principale mostra la saldatura laser; queste sono le altre tecniche e applicazioni descritte nel capitolo.",
+  "varianti": [
+    { "mini": "ebw", "titolo": "Fascio elettronico", "titoloOriginale": "Electron beam welding (EBW)", "testo": "Fascio di elettroni nel vuoto; penetrazione eccezionale e saldature molto pulite.", "pag": "288, 290, 292" },
+    { "mini": "ridotta", "titolo": "Fascio elettronico a pressione ridotta", "titoloOriginale": "Reduced pressure EBW", "testo": "Vuoto locale di 1–10 mbar in un'unità mobile: meno energia e tempo, saldatura in opera.", "pag": "289, 292" },
+    { "mini": "plastica", "titolo": "Laser su plastiche e tessuti", "titoloOriginale": "Laser welding of plastics (Clearweld®)", "testo": "Un mezzo che assorbe l'infrarosso permette di saldare plastiche trasparenti e tessuti.", "pag": "288–290" },
+    { "mini": "ibrido", "titolo": "Ibrido laser-arco", "titoloOriginale": "Laser-arc hybrid", "testo": "Laser e MIG insieme per giunti con luce variabile.", "pag": "288" }
+  ],
+  "correlati": [
+    { "slug": "saldatura-arco", "nome": "Saldatura ad arco", "nota": "alternativa per le lamiere sottili", "pag": "288" },
+    { "slug": "saldatura-ultrasuoni", "nome": "Saldatura a ultrasuoni", "nota": "alternativa al laser per le plastiche", "pag": "288" },
+    { "slug": "taglio-laser", "nome": "Taglio laser", "nota": "stessa sorgente usata per tagliare", "pag": "288" },
+    { "slug": "prototipazione-rapida", "nome": "Prototipazione rapida", "nota": "il laser fonde anche strati di polvere", "pag": "288" }
+  ],
+  "fonte": { "pagine": "288–293" }
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "tornitura-lastra",
+  "titolo": "Tornitura in lastra",
+  "titoloOriginale": "Metal Spinning",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "sintesi": "Un disco di lamiera gira al tornio insieme a un mandrino e un rullo lo spinge, passata dopo passata, contro la sua superficie: si ottengono coni, cilindri ed emisferi con un solo stampo e costi contenuti.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di un tornio tagliato a metà lungo l'asse. Un mandrino a cupola è montato sulla testa del tornio e un disco di lamiera è bloccato contro la sua punta. Mentre il tornio gira, un rullo si sposta lungo il profilo e piega progressivamente il disco, prima a forma di cono e poi aderente alla cupola. Alla fine il bordo viene rifilato e il pezzo diventa verde." },
+  "schema": {
+    "titolo": "Tornitura in lastra in sezione assiale",
+    "descrizione": "Sezione lungo l'asse del tornio: a sinistra la testa con il mandrino a cupola, a destra la contropunta che blocca il disco di lamiera. Un rullo di formatura percorre il profilo e piega la lamiera sul mandrino; alla fine il bordo viene rifilato.",
+    "fasi": [
+      { "titolo": "Caricamento del disco", "durata": 2000, "pag": "79", "didascalia": "Un disco di lamiera viene caricato sul mandrino e bloccato; mandrino e disco girano insieme sul tornio." },
+      { "titolo": "Prime passate", "durata": 2600, "pag": "79–80", "didascalia": "Il rullo spinge la lamiera verso il mandrino: a ogni passata il metallo viene guidato e controllato, un po' come l'argilla al tornio." },
+      { "titolo": "Passate successive", "durata": 2600, "pag": "79", "didascalia": "La lamiera viene premuta sulla superficie del mandrino e, dove serve, allungata e assottigliata." },
+      { "titolo": "Rifinitura e rifilatura", "durata": 2200, "pag": "79–80", "didascalia": "Si rifila il bordo; se il mandrino è scomponibile si forma prima il rientro. L'intero ciclo richiede meno di un minuto." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "78–79", "testo": "Si lavora su un solo stampo, il mandrino, maschio o femmina secondo la forma; per i pezzi unici si può anche tornire 'in aria', senza stampo." },
+    { "fase": 2, "pag": "79–80", "testo": "Il rullo, guidato a mano o a controllo numerico, percorre il profilo a passate successive." },
+    { "fase": 3, "pag": "79", "testo": "La superficie interna copia il mandrino, quella esterna è formata dall'utensile. Nervature, ondulazioni e texture si integrano nella stessa operazione." },
+    { "fase": 4, "pag": "79–80", "testo": "Dopo la rifilatura il pezzo si estrae; spesso si prosegue con punzonatura, saldatura o stampaggio per bordi, forme asimmetriche e forature." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Acciaio dolce e inossidabile, ottone, rame, alluminio, titanio. Mandrini in legno, plastica, alluminio o acciaio.", "pag": "80" },
+    "volumi": { "valore": "Da pezzo unico a serie medio-piccole.", "pag": "78" },
+    "costoAttrezzatura": { "valore": "Basso, anche molto basso per prototipi: un solo stampo, molto meno che per stampaggio e imbutitura. Senza mandrino è nullo.", "pag": "78–80" },
+    "costoUnitario": { "valore": "Moderato; manodopera da moderata ad alta nel lavoro manuale, ridotta dall'automazione.", "pag": "78, 80" },
+    "tempoCiclo": { "valore": "Da moderato a rapido: meno di un minuto nel caso tipico, 30 secondi per la prima fase del caso studio. L'alluminio è molto più rapido dell'acciaio.", "pag": "78–80" },
+    "qualitaSuperficiale": { "valore": "Variabile, dipende dall'abilità dell'operatore e dalla velocità; operatori esperti ottengono finiture molto alte.", "pag": "78–79" },
+    "precisione": { "valore": "Tolleranze fino a 1,5 mm.", "pag": "80" },
+    "dimensioni": { "valore": "Da piccoli a molto grandi, fino a 2,5 m di diametro.", "pag": "80" }
+  },
+  "vincoli": [
+    { "mini": "simmetria", "titolo": "Solo forme a rivoluzione", "spiegazione": "La tornitura in lastra è limitata ai pezzi a simmetria di rotazione.", "pag": "79" },
+    { "mini": "profondita", "titolo": "Diametro almeno doppio della profondità", "spiegazione": "La forma ideale è l'emisfero, con diametro maggiore o uguale al doppio della profondità. Pezzi più profondi si possono fare, ma con costi molto più alti.", "pag": "79–80" },
+    { "mini": "rientri", "titolo": "Pareti parallele e rientri costano", "spiegazione": "Sono possibili, ma richiedono più stampi che si incastrano fra loro e aumentano i costi.", "pag": "80" }
+  ],
+  "approfondimento": {
+    "titolo": "Incrudimento",
+    "testo": "Lavorando l'acciaio si incrudisce: può essere un vantaggio perché il pezzo diventa più resistente, ma se va lavorato ancora dopo la tornitura serve un trattamento termico di distensione, che allunga il ciclo.",
+    "pag": "80"
+  },
+  "variantiNota": "Il libro non elenca varianti di questo processo. Qui sotto le possibilità descritte nel testo e nel caso studio.",
+  "varianti": [
+    { "mini": "aria", "titolo": "Tornitura senza mandrino", "titoloOriginale": "Spinning on-air", "testo": "Si forma la lamiera senza alcuno stampo: la superficie interna non è influenzata da un mandrino, non ci sono costi di attrezzatura ma la manodopera è più alta.", "pag": "78–80" },
+    { "mini": "scomponibile", "titolo": "Mandrino scomponibile", "titoloOriginale": "Split mandrel", "testo": "Per ottenere un rientro, come sul collo del paralume del caso studio, il mandrino si divide all'interno del pezzo e le sue parti si estraggono una per volta dopo la lavorazione a mano.", "pag": "79–80" }
+  ],
+  "correlati": [
+    { "slug": "stampaggio-lamiera", "nome": "Stampaggio della lamiera", "nota": "profili simili con stampi accoppiati", "pag": "78" },
+    { "slug": "imbutitura-profonda", "nome": "Imbutitura profonda", "nota": "profili simili con stampi accoppiati", "pag": "78" },
+    { "slug": "tornitura-argilla", "nome": "Tornitura dell'argilla", "nota": "gesto simile al tornio del vasaio", "pag": "79–80" }
+  ],
+  "fonte": { "pagine": "78–81" }
+}

@@ -1,0 +1,55 @@
+{
+  "slug": "tampografia",
+  "titolo": "Tampografia",
+  "titoloOriginale": "Pad Printing",
+  "parte": "Parte 4 – Finitura",
+  "categoria": "Stampa",
+  "sintesi": "Stampa a umido in cui un tampone di silicone preleva l'inchiostro da un cliché inciso e lo trasferisce su superfici 3D o delicate: loghi, grafiche e dettagli a tinta unita su quasi ogni materiale.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una tampografica: a sinistra un cliché d'acciaio con nove anelli incisi, a destra una tastiera di gomma con tasti bianchi e gialli. Una racla stende l'inchiostro nero negli anelli; un tampone arancione a cupola scende, si schiaccia sul cliché e si porta via gli anelli. Si sposta sulla tastiera, si schiaccia sui tasti e vi lascia gli anelli neri, poi torna indietro." },
+  "schema": {
+    "titolo": "Ciclo di tampografia",
+    "descrizione": "A sinistra un cliché inciso con una racla, a destra un pezzo con superficie curva; sopra, un tampone in silicone. Le fasi mostrano la preparazione del cliché, il prelievo dell'inchiostro, lo spostamento sul pezzo, la stampa con il tampone schiacciato e il pezzo finito.",
+    "fasi": [
+      { "titolo": "Preparazione", "durata": 2000, "pag": "405", "didascalia": "Il cliché, con inciso in positivo un colore del disegno, si copre d'inchiostro; la racla lo pulisce, perché il tampone preleva tutto l'inchiostro che tocca." },
+      { "titolo": "Prelievo", "durata": 1800, "pag": "405–406", "didascalia": "L'incisione è poco profonda e l'inchiostro, sottilissimo, inizia subito ad asciugare: il tampone preme leggermente e lo raccoglie." },
+      { "titolo": "Trasferimento", "durata": 1800, "pag": "405", "didascalia": "Il tampone si sposta sul pezzo; intanto la racla torna indietro e ricopre il cliché." },
+      { "titolo": "Stampa", "durata": 2000, "pag": "405–406", "didascalia": "Compresso sul pezzo, il silicone ne avvolge il profilo; avendo un'energia superficiale molto bassa, cede facilmente l'inchiostro." },
+      { "titolo": "Finito", "durata": 1800, "pag": "404–406", "didascalia": "Il tampone torna al cliché e il ciclo ricomincia: la stampa dura 2–5 secondi; i pezzi poi cuociono in forno per 20–60 minuti." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "404", "testo": "Detta anche tampo printing, stampa in modo ripetibile su superfici piane, concave, convesse o entrambe: il silicone le avvolge allungandosi pochissimo, senza perdere forma e qualità della grafica." },
+    { "fase": 2, "pag": "404", "testo": "Il film d'inchiostro è molto più sottile che in serigrafia, di solito sotto 1 µm: per pezzi retroilluminati o critici può servire più di uno strato." },
+    { "fase": 4, "pag": "404", "testo": "La qualità dipende dal dettaglio inciso nel cliché, perché il silicone liscio trasferisce tutto ciò che preleva: linee fino a 0,1 mm, distanti 0,1 mm." },
+    { "fase": 5, "pag": "406", "testo": "Gli inchiostri sono quasi sempre a solvente, perché quelli ad acqua non aderiscono al silicone; si stampano anche inchiostri conduttivi su forme curve." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Quasi tutti, tranne quelli con energia superficiale più bassa del silicone, come il PTFE; alcune plastiche vanno pretrattate.", "pag": "406" },
+    "volumi": { "valore": "Da lotti a produzione di massa.", "pag": "404" },
+    "costoAttrezzatura": { "valore": "Basso: il cliché, la parte più costosa, si taglia con laser, fresatura fotochimica o CNC.", "pag": "404, 406" },
+    "costoUnitario": { "valore": "Basso; manodopera bassa perché il processo è quasi tutto meccanizzato.", "pag": "404, 406" },
+    "tempoCiclo": { "valore": "Stampa in 2–5 secondi; cottura in forno 20–60 minuti.", "pag": "404" },
+    "qualitaSuperficiale": { "valore": "Alta, bordi netti anche su superfici ondulate.", "pag": "404" },
+    "precisione": { "valore": "Linee fino a 0,1 mm, distanti 0,1 mm.", "pag": "404" },
+    "dimensioni": { "valore": "Grafiche fino a 100 × 100 mm.", "pag": "406" }
+  },
+  "vincoli": [
+    { "mini": "avvolgimento", "titolo": "Avvolgimento limitato", "spiegazione": "Il tampone non va oltre metà di un pezzo cilindrico; per stampare tutt'intorno si usa la versione rotativa.", "pag": "406" },
+    { "mini": "formato", "titolo": "Massimo 100 × 100 mm", "spiegazione": "È la grafica più grande che il tampone riesce a prelevare dal cliché.", "pag": "406" },
+    { "mini": "superficie", "titolo": "Energia superficiale", "spiegazione": "L'inchiostro deve staccarsi dal silicone: materiali antiaderenti come il PTFE non si stampano.", "pag": "406" }
+  ],
+  "variantiNota": "Possibilità descritte nel capitolo; lo schema principale mostra la stampa lineare.",
+  "varianti": [
+    { "mini": "rotativa", "titolo": "Tampografia rotativa", "titoloOriginale": "Rotary pad printing", "testo": "In continuo e tutt'intorno ai cilindri.", "pag": "406" },
+    { "mini": "bagnato", "titolo": "Bagnato su bagnato", "titoloOriginale": "Wet-on-wet", "testo": "Macchine in tandem per più colori.", "pag": "405–406" },
+    { "mini": "palline", "titolo": "Superfici con alveoli", "titoloOriginale": "Sports balls", "testo": "Palline da golf e palloni.", "pag": "404" }
+  ],
+  "correlati": [
+    { "slug": "stampa-idrografica", "nome": "Stampa a trasferimento ad acqua", "nota": "copre superfici intere", "pag": "404" },
+    { "slug": "serigrafia", "nome": "Serigrafia", "nota": "film d'inchiostro più spesso", "pag": "404" },
+    { "slug": "verniciatura-spruzzo", "nome": "Verniciatura a spruzzo", "nota": "effetto simile, con mascherature", "pag": "404" },
+    { "slug": "stampaggio-compressione", "nome": "Stampaggio a compressione", "nota": "produce la tastiera del caso studio", "pag": "406" },
+    { "slug": "stampaggio-iniezione", "nome": "Stampaggio a iniezione", "nota": "dove la decorazione in stampo non basta", "pag": "404" }
+  ],
+  "fonte": { "pagine": "404–407" }
+}

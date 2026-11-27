@@ -1,0 +1,53 @@
+{
+  "slug": "ribaditura",
+  "titolo": "Ribaditura a caldo (staking)",
+  "titoloOriginale": "Staking",
+  "parte": "Parte 3 – Giunzione",
+  "categoria": "Termico",
+  "sintesi": "Un perno di plastica stampato sul pezzo attraversa un componente forato, si scalda e viene schiacciato in una testa, come un rivetto: unisce plastica e metallo senza viti né colle.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una ribaditura ad aria calda. Un supporto di plastica chiara ha quattro perni; una piastrina metallica forata scende e si infila sui perni. Quattro ugelli soffiano aria calda e le cime dei perni diventano arancioni; poi quattro punzoni con la punta sagomata scendono, schiacciano i perni in teste a cupola verdi e risalgono." },
+  "schema": {
+    "titolo": "Ribaditura ad aria calda, in sezione",
+    "descrizione": "Sezione di un pezzo stampato con un perno che attraversa un contatto metallico forato. Le fasi mostrano l'assemblaggio, il getto d'aria calda che ammorbidisce il perno, il punzone freddo che lo forma a cupola e il giunto finito.",
+    "fasi": [
+      { "titolo": "Assemblaggio", "durata": 1800, "pag": "317–318", "didascalia": "Il pezzo stampato va nella maschera di supporto e il contatto metallico si infila sui perni." },
+      { "titolo": "Aria calda", "durata": 2200, "pag": "317–318", "didascalia": "Un getto d'aria calda, alla temperatura di plastificazione del materiale, ammorbidisce ogni perno per qualche secondo." },
+      { "titolo": "Formatura", "durata": 2200, "pag": "317–318", "didascalia": "Un punzone freddo con la testa sagomata preme sul perno caldo: in un colpo lo forma, lo raffredda e serra i pezzi." },
+      { "titolo": "Ritorno", "durata": 1600, "pag": "316, 318", "didascalia": "I punzoni risalgono e l'assieme è finito: giunti serrati e senza gioco." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "316", "testo": "Il processo sfrutta la capacità dei termoplastici di essere riscaldati e riformati senza perdere resistenza; unisce materiali diversi purché uno sia termoplastico." },
+    { "fase": 2, "pag": "316", "testo": "È molto usato per fissare circuiti metallici in scocche di plastica: i perni sono isolanti. Ha sostituito viti e clip in elettronica e nell'auto." },
+    { "fase": 3, "pag": "316", "testo": "La pressione rende i giunti serrati; basta poca forza, quindi si possono unire anche pezzi sottili e delicati che non sopporterebbero vibrazioni." },
+    { "fase": 4, "pag": "316–317", "testo": "I perni si stampano insieme al pezzo senza costi aggiuntivi; rispetto agli incastri a scatto si possono aggiungere molti punti di fissaggio, purché nella stessa direzione di sformatura." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Pezzi stampati a iniezione in PP, PE, ABS o PMMA, uniti a metallo o ad altri materiali.", "pag": "316–317" },
+    "volumi": { "valore": "Medie e grandi serie.", "pag": "316–317" },
+    "costoAttrezzatura": { "valore": "Basso: maschere di alluminio; utensili standard per l'aria calda, sonotrodi per gli ultrasuoni.", "pag": "316–317" },
+    "costoUnitario": { "valore": "Basso; manodopera bassa perché i processi sono di solito automatici.", "pag": "316–317" },
+    "tempoCiclo": { "valore": "Rapido, 0,5–15 secondi: ultrasuoni 0,5–2 secondi, aria calda 5–15 secondi.", "pag": "316–317" },
+    "qualitaSuperficiale": { "valore": "Giunti resistenti, puliti, ma con aspetto variabile e non controllabile.", "pag": "316–317" },
+    "precisione": { "valore": "Giunti serrati e senza vibrazioni. Tolleranze numeriche: n.d.", "pag": "316" },
+    "dimensioni": { "valore": "Perni tondi di solito da 0,5 a 5 mm; rettangolari e cavi anche più grandi, con pareti sottili. Dimensioni dei pezzi: n.d.", "pag": "317" }
+  },
+  "vincoli": [
+    { "mini": "allineamento", "titolo": "Perni nella stessa direzione", "spiegazione": "I perni devono essere allineati in verticale, altrimenti non si formano in un solo colpo; nello stampo devono seguire la stessa direzione di sformatura.", "pag": "316" },
+    { "mini": "diametro", "titolo": "Diametro adatto", "spiegazione": "La resistenza dipende dal diametro e dalle proprietà del materiale; i perni tondi misurano di solito 0,5–5 mm, quelli rettangolari o cavi possono essere più grandi se le pareti sono sottili.", "pag": "316–317" },
+    { "mini": "aspetto", "titolo": "Aspetto non controllabile", "spiegazione": "I giunti sono puliti ma la finitura non si controlla: di solito si collocano all'interno, dove l'aspetto non conta.", "pag": "317" }
+  ],
+  "variantiNota": "Lo schema principale mostra la ribaditura ad aria calda; queste sono le alternative descritte nel capitolo.",
+  "varianti": [
+    { "mini": "ultrasuoni", "titolo": "A ultrasuoni", "titoloOriginale": "Ultrasonic staking", "testo": "Riscaldamento e formatura in un'unica fase con il sonotrodo, in pochi secondi.", "pag": "316–318" },
+    { "mini": "teste", "titolo": "Teste diverse", "titoloOriginale": "Alternative profiles", "testo": "Testa a cupola, zigrinata, divisa o cava.", "pag": "317" },
+    { "mini": "tenuta", "titolo": "Giunti a tenuta", "titoloOriginale": "Watertight staking", "testo": "Molti perni formati insieme e una guarnizione di gomma stretta nell'assieme.", "pag": "316, 318" }
+  ],
+  "correlati": [
+    { "slug": "saldatura-ultrasuoni", "nome": "Saldatura a ultrasuoni", "nota": "per unire materiali simili", "pag": "316" },
+    { "slug": "saldatura-piastra-calda", "nome": "Saldatura a piastra calda", "nota": "per unire materiali simili", "pag": "316" },
+    { "slug": "saldatura-vibrazione", "nome": "Saldatura a vibrazione", "nota": "per unire materiali simili", "pag": "316" },
+    { "slug": "stampaggio-iniezione", "nome": "Stampaggio a iniezione", "nota": "produce i pezzi con i perni", "pag": "317" }
+  ],
+  "fonte": { "pagine": "316–319" }
+}

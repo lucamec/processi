@@ -1,0 +1,52 @@
+{
+  "slug": "zincatura",
+  "titolo": "Zincatura a caldo",
+  "titoloOriginale": "Galvanizing",
+  "parte": "Parte 4 – Finitura",
+  "categoria": "Processi additivi (rivestimenti)",
+  "sintesi": "Acciaio e ghisa si immergono nello zinco fuso, che si lega metallurgicamente alla superficie e la protegge anche se il rivestimento si graffia: lunga durata con poca manutenzione.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una linea di zincatura con tre vasche. Una trave d'acciaio arrugginita, appesa inclinata a un bilanciere, scende nella vasca di pulizia e ne esce grigia; passa nella vasca del flusso, da cui esce fumante, e scende nello zinco fuso argenteo, dove produce schizzi. Estratta lentamente, la trave è rivestita di zinco lucente, poi verde." },
+  "schema": {
+    "titolo": "Zincatura a caldo: immersione e strati del rivestimento",
+    "descrizione": "A sinistra un pezzo appeso inclinato sopra una vasca di zinco fuso; a destra l'ingrandimento degli strati. Le fasi mostrano la pulizia, il flussaggio, l'immersione con la formazione delle leghe zinco-ferro e dello zinco puro, e l'estrazione lenta.",
+    "fasi": [
+      { "titolo": "Pulizia e decapaggio", "durata": 2000, "pag": "369–370", "didascalia": "I pezzi, appesi a circa 30°, passano nella soda caustica calda, in due bagni di acido cloridrico che tolgono scaglia e ruggine, e in un lavaggio a 80 °C." },
+      { "titolo": "Flussaggio", "durata": 1800, "pag": "369–370", "didascalia": "Un flusso caldo di cloruro di zinco e ammonio condiziona la superficie e fa scorrere bene lo zinco dentro e fuori il pezzo." },
+      { "titolo": "Immersione nello zinco", "durata": 2600, "pag": "369–370", "didascalia": "Lo zinco fuso, a 450 °C, si lega al ferro formando strati di leghe zinco-ferro, con all'esterno zinco puro; l'immersione dura fino a 10 minuti e la superficie del bagno si schiuma di continuo." },
+      { "titolo": "Estrazione", "durata": 2000, "pag": "369–370", "didascalia": "Il pezzo si estrae lentamente perché lo zinco in eccesso ricada nel bagno; poi si lascia asciugare all'aria o si tempra." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "368", "testo": "Lo zinco reagisce con l'atmosfera più facilmente del ferro: anche dove il rivestimento è inciso forma un deposito che protegge il metallo base." },
+    { "fase": 3, "pag": "368", "testo": "Il rivestimento è parte del metallo: lo strato intermedio di lega è durissimo e può superare la resistenza del materiale base." },
+    { "fase": 4, "pag": "368", "testo": "Appena uscito lo zinco è brillante e pulito; con il tempo e l'esposizione diventa grigio opaco. Gli acciai ricchi di silicio danno subito un aspetto grigio." },
+    { "fase": 4, "pag": "369–370", "testo": "Lo zinco si usa con efficienza (circa 1 parte ogni 15 di metallo) e si ricicla all'infinito; la vita dell'acciaio sale a 40–100 anni." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Solo acciaio e ghisa, perché il processo si basa su un legame metallurgico con il ferro.", "pag": "368–369" },
+    "volumi": { "valore": "Da pezzo unico a produzione di massa.", "pag": "368" },
+    "costoAttrezzatura": { "valore": "Nessuno.", "pag": "369" },
+    "costoUnitario": { "valore": "Basso, soprattutto nel lungo periodo; manodopera moderata.", "pag": "369" },
+    "tempoCiclo": { "valore": "Rapido: l'immersione si completa di solito entro 10 minuti.", "pag": "368–369" },
+    "qualitaSuperficiale": { "valore": "Protezione eccellente; aspetto influenzato dalla qualità dell'acciaio, da brillante a grigio opaco.", "pag": "368" },
+    "precisione": { "valore": "Rivestimento di 50–150 µm, legato allo spessore del metallo base; quello centrifugo è un po' più sottile e uniforme.", "pag": "368" },
+    "dimensioni": { "valore": "Da bulloni di 8 mm di diametro a strutture di 12 × 3 m; le più grandi si assemblano dopo la zincatura.", "pag": "368" }
+  },
+  "vincoli": [
+    { "mini": "sfiati", "titolo": "Niente volumi chiusi", "spiegazione": "Tubi sigillati e angoli ciechi possono esplodere nel bagno; si progettano fori di scolo perché i liquidi possano uscire.", "pag": "368–370" },
+    { "mini": "temperatura", "titolo": "Resistere a 450 °C", "spiegazione": "Il bagno è mantenuto a 450 °C: tutte le parti devono sopportarlo.", "pag": "368" },
+    { "mini": "pulizia", "titolo": "Superfici pulite", "spiegazione": "Scorie di saldatura, grasso e vernice vanno tolti prima del trattamento; preparazione e composizione dell'acciaio decidono la qualità.", "pag": "369–370" }
+  ],
+  "variantiNota": "La seconda tecnica e la mascheratura descritte nel capitolo; lo schema principale mostra la zincatura per immersione.",
+  "varianti": [
+    { "mini": "centrifuga", "titolo": "Zincatura centrifuga", "titoloOriginale": "Centrifugal galvanizing", "testo": "Pezzi in cestelli centrifugati dopo l'immersione: rivestimento uniforme per minuteria filettata.", "pag": "368" },
+    { "mini": "mascheratura", "titolo": "Mascheratura", "titoloOriginale": "Masking", "testo": "Nastri resistenti al calore, grasso o vernice escludono alcune zone.", "pag": "368" }
+  ],
+  "correlati": [
+    { "slug": "galvanostegia", "nome": "Galvanostegia", "nota": "altro rivestimento metallico, per molti metalli", "pag": "368" },
+    { "slug": "metallizzazione-sottovuoto", "nome": "Metallizzazione sottovuoto", "nota": "altro rivestimento metallico", "pag": "368" },
+    { "slug": "verniciatura-spruzzo", "nome": "Verniciatura a spruzzo", "nota": "vernici conduttive", "pag": "368" },
+    { "slug": "verniciatura-polvere", "nome": "Verniciatura a polvere", "nota": "spesso applicata sopra la zincatura", "pag": "356" }
+  ],
+  "fonte": { "pagine": "368–371" }
+}

@@ -1,0 +1,54 @@
+{
+  "slug": "curvatura-vapore",
+  "titolo": "Curvatura a vapore",
+  "titoloOriginale": "Steam Bending",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Legno",
+  "sintesi": "Il legno massiccio, ammorbidito dal vapore, viene piegato su una sagoma e lasciato asciugare: ottiene curve strette, anche su più assi, con le fibre che corrono continue lungo tutto il pezzo.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una curvatura manuale. Un listello di legno chiaro si ammorbidisce in un tubo pieno di vapore, poi viene posato su una sagoma semicircolare con un nastro di acciaio sul lato esterno. Le due estremità si piegano attorno alla sagoma fino a formare una U rovesciata; una camera di essiccazione avvolge l'insieme e il pezzo diventa verde. Alla fine il pezzo si solleva dalla sagoma e conserva la curva." },
+  "schema": {
+    "titolo": "Curvatura manuale su sagoma fissa, vista di lato",
+    "descrizione": "Un listello di massello sopra una sagoma semicircolare. Le fasi mostrano il vapore che lo ammorbidisce, il nastro di tensione con i fermi e il morsetto, la piegatura delle estremità, la camera di essiccazione e il pezzo che, tolto dalla sagoma, resta curvo.",
+    "fasi": [
+      { "titolo": "Ammollo e vapore", "durata": 2400, "pag": "199–201", "didascalia": "Il pezzo, già profilato, resta in acqua a 60 °C per 24 ore, poi in vapore a 104 °C e 0,6 bar per 1–3 ore: la lignina si ammorbidisce." },
+      { "titolo": "Carico sulla sagoma", "durata": 2200, "pag": "199, 201", "didascalia": "Il pezzo si blocca sulla sagoma, centrato sul segno a matita, con il nastro di tensione sul lato esterno." },
+      { "titolo": "Curvatura", "durata": 2600, "pag": "199, 201", "didascalia": "Due operatori piegano il pezzo insieme e lo fissano alla sagoma metallica con i morsetti: la curva si forma per compressione." },
+      { "titolo": "Essiccazione", "durata": 2400, "pag": "201", "didascalia": "Il pezzo nella sua sagoma entra in camera a 80 °C per un massimo di 2 giorni, fino a circa l'8% di umidità." },
+      { "titolo": "Sformatura", "durata": 2000, "pag": "201", "didascalia": "Il pezzo si toglie dalla sagoma, che si riusa, e conserva la sua curva." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "199", "testo": "Il legno è un composito naturale di lignina e cellulosa. Per piegarlo bisogna ammorbidire la lignina, che lega le catene di cellulosa: lo si fa con un trattamento termo-meccanico a vapore." },
+    { "fase": 2, "pag": "199", "testo": "Tutte le tecniche usano un nastro di tensione sul lato esterno del pezzo, che limita l'allungamento di quel bordo." },
+    { "fase": 3, "pag": "199, 201", "testo": "La curva si forma quindi per compressione: il legno ammorbidito si comprime, ma si strappa se viene allungato oltre l'1% della lunghezza. Il nastro aiuta anche a controllare la torsione." },
+    { "fase": 4, "pag": "199", "testo": "Il pezzo resta bloccato e la lignina torna rigida in una camera di essiccazione; l'intero processo può durare diversi giorni." },
+    { "fase": 5, "pag": "198", "testo": "Le fibre corrono continue lungo il pezzo: la curva è più resistente e ha meno ritorno elastico di un profilo segato." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Latifoglie più che conifere: faggio e frassino per l'arredo, quercia per l'edilizia, olmo, frassino e salice per le barche, acero per gli strumenti; anche betulla, hickory, larice, iroko e pioppo.", "pag": "199–200" },
+    "volumi": { "valore": "Da pezzo unico a grandi serie.", "pag": "198" },
+    "costoAttrezzatura": { "valore": "Basso.", "pag": "198, 200" },
+    "costoUnitario": { "valore": "Da moderato ad alto; manodopera specializzata.", "pag": "198, 200" },
+    "tempoCiclo": { "valore": "Lento, fino a 3 giorni: ammollo 24 ore, vapore 1–3 ore, essiccazione 24–48 ore.", "pag": "198, 200" },
+    "qualitaSuperficiale": { "valore": "Buona; alta resistenza grazie all'allineamento delle fibre.", "pag": "198" },
+    "precisione": { "valore": "Non adatta a pezzi di precisione: anche con la stessa sagoma due pezzi non vengono mai uguali. Tolleranze numeriche: n.d.", "pag": "198" },
+    "dimensioni": { "valore": "Il raggio minimo dipende da dimensioni e specie del legno; valori numerici: n.d.", "pag": "199" }
+  },
+  "vincoli": [
+    { "mini": "profilatura", "titolo": "Profilare prima di curvare", "spiegazione": "Ogni sagomatura del listello va fatta prima della curvatura; dopo si eseguono solo semplici modifiche e i profili dei giunti.", "pag": "199" },
+    { "mini": "sezione", "titolo": "Sezioni semplici, rastremate nelle curve strette", "spiegazione": "Le sezioni quadrate e tonde sono le più facili da curvare; ondulazioni e profili complessi sono punti deboli. Sezioni sottili aiutano nelle curve strette, quelle spesse servono ai giunti.", "pag": "199" },
+    { "mini": "ancoraggio", "titolo": "Ancorare le parti curvate", "spiegazione": "Le parti curvate tendono a raddrizzarsi col tempo se non sono fissate: l'assieme deve anche tollerare una certa variabilità fra pezzi.", "pag": "198" },
+    { "mini": "trazione", "titolo": "Comprimere, non allungare", "spiegazione": "Il legno ammorbidito si comprime ma si strappa se allungato oltre l'1%: il nastro di tensione sul lato esterno è indispensabile.", "pag": "199, 201" }
+  ],
+  "variantiNota": "Le tre tecniche principali descritte nel capitolo; lo schema principale mostra la curvatura manuale.",
+  "varianti": [
+    { "mini": "manuale", "titolo": "Curvatura manuale", "titoloOriginale": "Manual bending", "testo": "Si usa per curve su più assi e può avere molte forme; nel caso studio due operatori piegano gambe e schienale della sedia.", "pag": "199, 201" },
+    { "mini": "circolare", "titolo": "Curvatura circolare", "titoloOriginale": "Circle bending", "testo": "Assistita a macchina, su un solo asse, per anelli chiusi come telai di sedute e braccioli; il pezzo resta in tensione.", "pag": "199, 201" },
+    { "mini": "aperta", "titolo": "Curvatura aperta", "titoloOriginale": "Open bending", "testo": "Assistita a macchina, su un solo asse, per profili con estremità aperte come uno schienale.", "pag": "199, 201" }
+  ],
+  "correlati": [
+    { "slug": "lavorazione-cnc", "nome": "Lavorazione CNC", "nota": "geometrie simili, senza le fibre continue", "pag": "198" },
+    { "slug": "laminazione-legno", "nome": "Laminazione del legno", "nota": "geometrie simili; non richiede legno di qualità così alta", "pag": "198" }
+  ],
+  "fonte": { "pagine": "198–201" }
+}

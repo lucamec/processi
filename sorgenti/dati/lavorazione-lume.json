@@ -1,0 +1,53 @@
+{
+  "slug": "lavorazione-lume",
+  "titolo": "Lavorazione del vetro alla fiamma (lume)",
+  "titoloOriginale": "Lampworking",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Vetro e ceramica",
+  "sintesi": "Tubi e bacchette di vetro vengono scaldati con un cannello e lavorati a mano (soffiati, forati, piegati, uniti): dalle perline ai complessi strumenti di laboratorio.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di un tubo di vetro trasparente sopra la fiamma di un cannello, tagliato a metà. La zona scaldata diventa arancione, poi si gonfia in una bolla; una punta di tungsteno apre un foro in cima alla bolla; un tratto del tubo si piega verso il basso. Alla fine il pezzo, raffreddato in forno, diventa verde." },
+  "schema": {
+    "titolo": "Lavorazione al banco vista di lato",
+    "descrizione": "Vista laterale di un tubo di vetro sopra la fiamma del cannello. Le fasi mostrano il riscaldo localizzato, la soffiatura di una bolla, la foratura con la punta di tungsteno, la curvatura del tubo e la ricottura.",
+    "fasi": [
+      { "titolo": "Riscaldo", "durata": 2200, "pag": "160–162", "didascalia": "Una fiamma di gas naturale e ossigeno scalda localmente il tubo fino a circa 1000 °C: il vetro caldo si forma facilmente, quello freddo resta com'è." },
+      { "titolo": "Soffiatura", "durata": 2400, "pag": "162", "didascalia": "Si sigilla il tubo e si soffia dal lato freddo: la parte calda si gonfia in una bolla regolare. A ogni passaggio le misure si controllano sul disegno tecnico." },
+      { "titolo": "Foratura", "durata": 2200, "pag": "162", "didascalia": "Punte di tungsteno aprono un foro nella bolla, che poi si allarga con un alesatore di tungsteno." },
+      { "titolo": "Curvatura e unione", "durata": 2400, "pag": "162, 164", "didascalia": "Si scalda una zona ampia e si piega il tubo a mano; due parti scaldate insieme si fondono e si uniscono." },
+      { "titolo": "Ricottura", "durata": 2400, "pag": "161, 164", "didascalia": "Tutto va ricotto: per il borosilicato circa 570 °C per 20 minuti, poi un raffreddamento lento, di solito durante la notte." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "160–161", "testo": "Il borosilicato si lavora a 800–1200 °C, quando ha la flessibilità di una gomma da masticare; il vetro sodico-calcico a 500–700 °C. Tutte le parti del pezzo devono restare a temperature simili per non incrinarsi." },
+    { "fase": 2, "pag": "160", "testo": "Si lavora al banco, per forme complesse e asimmetriche, o al tornio, per pezzi a simmetria di rotazione." },
+    { "fase": 4, "pag": "161–162", "testo": "Tecniche di base: soffiatura, curvatura, foratura e formatura su mandrino. Si usano sagome come nella soffiatura, pinzette di tungsteno, fili colorati e fogli metallici." },
+    { "fase": 5, "pag": "162", "testo": "Anche tensioni minime frantumano il vetro: la ricottura stabilizza il pezzo." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Tutti i vetri; soprattutto borosilicato ('vetro duro', resistente agli agenti chimici) e vetro sodico-calcico ('vetro tenero', più economico ma non riparabile dopo la ricottura). Vetri artistici come quelli di Murano.", "pag": "164" },
+    "volumi": { "valore": "Da pezzo unico a piccola serie; per volumi che giustificano lo stampo si passa a soffiatura o pressatura.", "pag": "160, 162" },
+    "costoAttrezzatura": { "valore": "Di solito nullo.", "pag": "160, 164" },
+    "costoUnitario": { "valore": "Da moderato ad alto; manodopera costosa per l'abilità richiesta.", "pag": "160, 164" },
+    "tempoCiclo": { "valore": "Da moderato a lungo; ricottura di solito di notte, fino a 16 ore, e per vetri molto spessi anche mesi (abbassando la temperatura di 1,5 °C al giorno).", "pag": "160, 164" },
+    "qualitaSuperficiale": { "valore": "Molto alta, ma dipende dall'abilità del vetraio.", "pag": "160, 162" },
+    "precisione": { "valore": "Tolleranze molto strette se necessario (lavorando su disegno tecnico). Valore numerico: n.d.", "pag": "161–162" },
+    "dimensioni": { "valore": "Al banco tubi fino a 30 mm di diametro; al tornio fino a 415 mm.", "pag": "160" }
+  },
+  "vincoli": [
+    { "mini": "dilatazione", "titolo": "Stesso coefficiente di dilatazione", "spiegazione": "I vetri uniti devono avere lo stesso coefficiente di dilatazione: altrimenti le tensioni li incrinano o li frantumano.", "pag": "164" },
+    { "mini": "diametro", "titolo": "Banco fino a 30 mm, poi tornio", "spiegazione": "Al banco il limite pratico è un tubo di 30 mm, oltre il quale il vetraio non può tenerlo e lavorarlo insieme; al tornio si arriva a 415 mm.", "pag": "160" },
+    { "mini": "calore", "titolo": "Scaldare in modo uniforme", "spiegazione": "Tutte le parti vanno tenute a temperature simili; per una curva a U regolare si scalda una zona ampia.", "pag": "161, 164" }
+  ],
+  "variantiNota": "Le quattro tecniche elencate nel capitolo; nello schema principale compaiono in sequenza.",
+  "varianti": [
+    { "mini": "soffiatura", "titolo": "Soffiatura", "titoloOriginale": "Blowing", "testo": "Si chiude il tubo, si scalda una zona e si soffia dal lato freddo per ottenere una bolla uniforme.", "pag": "160, 162" },
+    { "mini": "foratura", "titolo": "Foratura", "titoloOriginale": "Hole boring", "testo": "Punte e alesatori di tungsteno aprono e allargano fori nel vetro caldo.", "pag": "161–162" },
+    { "mini": "curvatura", "titolo": "Curvatura", "titoloOriginale": "Bending", "testo": "Per una piega stretta si soffia nel tubo mentre lo si curva: l'aria fa da mandrino e impedisce alle pareti di collassare.", "pag": "160, 162" },
+    { "mini": "mandrino", "titolo": "Formatura su mandrino", "titoloOriginale": "Mandrel forming", "testo": "Il vetro, alla temperatura ottimale, si avvolge su un mandrino rivestito di grafite, per esempio a spirale: se è troppo caldo si allunga invece di piegarsi.", "pag": "161, 164" }
+  ],
+  "correlati": [
+    { "slug": "soffiatura-vetro", "nome": "Soffiatura del vetro", "nota": "per le forme che giustificano lo stampo", "pag": "160, 162" },
+    { "slug": "pressatura-ceramica", "nome": "Formatura a pressione della ceramica", "nota": "la pressatura dà parti standard poi rifinite alla fiamma", "pag": "160, 162, 164" }
+  ],
+  "fonte": { "pagine": "160–167" }
+}

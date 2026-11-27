@@ -1,0 +1,223 @@
+{
+  "slug": "stampaggio-iniezione",
+  "titolo": "Stampaggio a iniezione",
+  "titoloOriginale": "Injection Molding",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Plastica e gomma",
+  "sintesi": "La plastica fusa viene spinta ad alta pressione in uno stampo chiuso, dove si raffredda e prende forma: è il processo di riferimento per produrre in grande serie pezzi in plastica tutti uguali.",
+  "vista3d": {
+    "tecnica": "webgl",
+    "alt": "Modello 3D della pressa, tagliato a metà lungo l'asse per vedere l'interno. A sinistra c'è la tramoggia con i granuli sopra il cilindro; dentro il cilindro gira la vite a filetto elicoidale, circondata da tre fasce riscaldanti. A destra lo stampo è diviso in due metà: quella fissa, con il canale di colata, e quella mobile, con la cavità a forma di vaschetta, il nucleo, i canali di raffreddamento e gli estrattori. Seguendo le fasi, la vite ruota e poi avanza, lo stampo si chiude, il materiale arancione riempie la cavità partendo dal canale, diventa verde quando solidifica e infine il pezzo viene espulso. Il pulsante Spaccato mostra o nasconde la metà anteriore."
+  },
+  "schema": {
+    "titolo": "Ciclo di stampaggio a iniezione in sezione",
+    "descrizione": "Sezione longitudinale della pressa: a sinistra il cilindro riscaldato con la vite e la tramoggia dei granuli, a destra lo stampo in due metà. L'animazione mostra in cinque fasi la plastificazione, la chiusura, l'iniezione, il raffreddamento e l'estrazione del pezzo, un bicchiere visto in sezione.",
+    "fasi": [
+      {
+        "titolo": "Plastificazione",
+        "durata": 3200,
+        "didascalia": "I granuli scendono dalla tramoggia nel cilindro. La vite ruota: trascina il materiale in avanti e lo mescola; con il calore delle fasce riscaldanti il materiale fonde e si raccoglie davanti alla punta, pronto per l'iniezione.",
+        "pag": "51"
+      },
+      {
+        "titolo": "Chiusura",
+        "durata": 1800,
+        "didascalia": "Il semistampo mobile avanza e si chiude contro quello fisso. Il gruppo idraulico lo tiene serrato contro la pressione che arriverà.",
+        "pag": "51"
+      },
+      {
+        "titolo": "Iniezione",
+        "durata": 2400,
+        "didascalia": "La vite, mossa da un motore e da un pistone idraulico, spinge il fuso attraverso l'ugello e il canale di colata fino a riempire la cavità.",
+        "pag": "51"
+      },
+      {
+        "titolo": "Mantenimento e raffreddamento",
+        "durata": 2800,
+        "didascalia": "La pressione resta applicata mentre l'acqua nei canali dello stampo sottrae calore: così si limitano ritiro e deformazioni. Il pezzo solidifica.",
+        "pag": "51"
+      },
+      {
+        "titolo": "Apertura ed estrazione",
+        "durata": 2600,
+        "didascalia": "Lo stampo si apre, il pezzo resta sul semistampo mobile e gli estrattori lo spingono fuori. Il ciclo ricomincia.",
+        "pag": "51"
+      }
+    ]
+  },
+  "comeFunziona": [
+    {
+      "fase": 1,
+      "testo": "La materia prima è in granuli, essiccati e caricati in una tramoggia; qui si possono aggiungere i pigmenti, in quantità comprese fra 0,5% e 5%. Nel cilindro una vite (detta \"di Archimede\") ruota e così scalda, mescola e spinge avanti il materiale finché non è fuso.",
+      "pag": "51"
+    },
+    {
+      "fase": 2,
+      "testo": "Lo stampo è formato da due metà: una fissa e una mobile. La metà mobile si chiude e viene tenuta serrata.",
+      "pag": "51"
+    },
+    {
+      "fase": 3,
+      "testo": "Raggiunta la pressione giusta, la vite inietta il fuso nella cavità passando dal punto di iniezione (in inglese gate) e dai canali di alimentazione (runner).",
+      "pag": "51"
+    },
+    {
+      "fase": 4,
+      "testo": "La pressione resta applicata finché il pezzo si raffredda, per ridurre ritiro e deformazione. La durata del ciclo dipende dalle dimensioni del pezzo e dal tempo di solidificazione del polimero: di norma fra 30 e 60 secondi.",
+      "pag": "51"
+    },
+    {
+      "fase": 5,
+      "testo": "Lo stampo si apre, gli eventuali nuclei mobili rientrano e gli estrattori (perni di espulsione) staccano il pezzo, che cade su un nastro o viene prelevato da un robot.",
+      "pag": "51"
+    }
+  ],
+  "caratteristiche": {
+    "materiali": {
+      "valore": "Quasi tutti i termoplastici; anche alcuni termoindurenti e polveri metalliche legate da una matrice polimerica.",
+      "pag": "52"
+    },
+    "volumi": {
+      "valore": "Grandi serie: lo stampo è conveniente solo per produzioni ad alto volume. Lotto minimo numerico: n.d.",
+      "pag": "50"
+    },
+    "costoAttrezzatura": {
+      "valore": "Molto alto; dipende dalla complessità e dal numero di cavità e di nuclei.",
+      "pag": "50, 52"
+    },
+    "costoUnitario": {
+      "valore": "Molto basso; costo della manodopera relativamente basso.",
+      "pag": "50, 52"
+    },
+    "tempoCiclo": {
+      "valore": "Fra 30 e 60 secondi, anche con stampi a più cavità; più lungo per i pezzi grandi.",
+      "pag": "50–52"
+    },
+    "qualitaSuperficiale": {
+      "valore": "Molto alta, con riproduzione dei dettagli fini. Le grandi superfici lucide costano più di quelle opache o testurizzate; una texture fine maschera le imperfezioni.",
+      "pag": "50, 52"
+    },
+    "precisione": {
+      "valore": "Tolleranze strette e processo molto ripetibile (valore numerico: n.d.). Nel caso studio un accoppiamento forzato richiede una precisione superiore e viene forato dopo lo stampaggio.",
+      "pag": "50, 54"
+    },
+    "dimensioni": {
+      "valore": "Dai paraurti delle auto ai componenti più minuti. Valori numerici: n.d.",
+      "pag": "50"
+    }
+  },
+  "vincoli": [
+    {
+      "mini": "spessore",
+      "titolo": "Spessore delle pareti uniforme",
+      "spiegazione": "Pareti di spessore diverso si raffreddano a velocità diverse e il pezzo si deforma. Il libro dà anche una tolleranza percentuale sulla differenza di spessore, ma la cifra è illeggibile nella scansione.",
+      "pag": "52",
+      "ocr": "Percentuale ammessa: n.d. (OCR \"io%\", nessuna conversione che la confermi)"
+    },
+    {
+      "mini": "ingresso",
+      "titolo": "Iniettare nella sezione più spessa",
+      "spiegazione": "Il fuso segue la via più facile: deve entrare dalla parte più spessa e finire in quella più sottile.",
+      "pag": "52"
+    },
+    {
+      "mini": "sformo",
+      "titolo": "Angolo di sformo di almeno 0,5°",
+      "spiegazione": "Le pareti parallele alla direzione di apertura vanno inclinate di almeno 0,5°. Con un angolo minore il pezzo si sollecita durante l'estrazione.",
+      "pag": "52"
+    },
+    {
+      "mini": "spigoli",
+      "titolo": "Evitare gli spigoli vivi",
+      "spiegazione": "Negli angoli netti si accumulano tensioni interne che possono portare a crepe e deformazioni.",
+      "pag": "52"
+    },
+    {
+      "mini": "nervature",
+      "titolo": "Molte nervature basse, non poche alte",
+      "spiegazione": "Le nervature irrigidiscono il pezzo senza ispessire le pareti e aiutano il flusso. Secondo il testo non devono superare 5 volte lo spessore della parete, quindi conviene usarne molte e poco profonde.",
+      "pag": "52"
+    },
+    {
+      "mini": "collegati",
+      "titolo": "Elementi sporgenti collegati alle pareti",
+      "spiegazione": "Ogni sporgenza si tratta come una nervatura e va unita alle pareti, così si evitano sacche d'aria e punti di tensione.",
+      "pag": "52"
+    },
+    {
+      "mini": "giunzione",
+      "titolo": "Linee di giunzione lontano dalle zone in vista",
+      "spiegazione": "Dove il flusso aggira un foro o un incavo, i due fronti si riuniscono e lasciano una linea. Spostare il punto di iniezione la porta in una zona non critica, come nel caso analizzato con Moldflow.",
+      "pag": "50, 56"
+    },
+    {
+      "mini": "sottosquadri",
+      "titolo": "Sottosquadri solo con nuclei mobili",
+      "spiegazione": "Un sottosquadro (una parte che impedisce l'estrazione nella direzione di apertura) richiede nuclei retrattili, mossi da camme o cilindri idraulici. Il costo cresce con la complessità del movimento.",
+      "pag": "50"
+    }
+  ],
+  "approfondimento": {
+    "titolo": "Strumento di verifica: l'analisi del flusso (Moldflow)",
+    "testo": "Non è una variante del processo ma una simulazione al computer. Prima di costruire lo stampo, il modello 3D del pezzo viene analizzato per prevedere riempimento, raffreddamento, ritiro e deformazioni. In un esempio del libro, ridurre lo spessore delle pareti ha accorciato il ciclo di 7,3 secondi e ridotto i costi di produzione del 24%.",
+    "pag": "56–57"
+  },
+  "varianti": [
+    {
+      "mini": "gas",
+      "titolo": "Iniezione assistita da gas",
+      "titoloOriginale": "Gas-assisted injection molding",
+      "testo": "Si inietta plastica senza riempire del tutto la cavità, poi si immette gas. Il gas forma una bolla che spinge il materiale fino alle estremità e lascia una sezione cava, rigida e leggera. Le pareti risultano più uniformi e il ritiro diminuisce. Lo spessore di parete può essere di 3 mm o più.",
+      "pag": "58–59"
+    },
+    {
+      "mini": "multishot",
+      "titolo": "Iniezione multicomponente",
+      "titoloOriginale": "Multishot injection molding",
+      "testo": "Due o più plastiche vengono stampate nello stesso stampo, in cavità diverse. Un piano girevole ruota di 180° e porta il primo pezzo, già solidificato, nella cavità dove viene iniettato il secondo materiale. Si possono combinare fino a 6 materiali.",
+      "pag": "60–61"
+    },
+    {
+      "mini": "imd",
+      "titolo": "Decorazione in stampo",
+      "titoloOriginale": "In-mold decoration",
+      "testo": "Una pellicola stampata viene posta nella cavità con la stampa rivolta verso l'interno. La plastica iniettata si lega alla pellicola, che resta protetta sotto un sottile strato trasparente. Così non servono stampa o verniciatura successive, ma il ciclo si allunga un po'.",
+      "pag": "62–63"
+    }
+  ],
+  "correlati": [
+    {
+      "slug": "termoformatura",
+      "nome": "Termoformatura",
+      "nota": "alternativa per alcune geometrie a lastra",
+      "pag": "50"
+    },
+    {
+      "slug": "colata-sottovuoto",
+      "nome": "Colata sottovuoto",
+      "nota": "per prototipi e piccole serie",
+      "pag": "50"
+    },
+    {
+      "slug": "rim",
+      "nome": "Stampaggio a iniezione con reazione (RIM)",
+      "nota": "per prototipi e piccole serie in poliuretano",
+      "pag": "50"
+    },
+    {
+      "slug": "stampaggio-rotazionale",
+      "nome": "Stampaggio rotazionale",
+      "nota": "anch'esso integra grafiche in stampo",
+      "pag": "36"
+    },
+    {
+      "slug": "pressofusione",
+      "nome": "Pressofusione",
+      "nota": "anche questa si analizza con Moldflow",
+      "pag": "56"
+    }
+  ],
+  "fonte": {
+    "pagine": "50–63"
+  }
+}

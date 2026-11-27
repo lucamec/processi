@@ -1,0 +1,659 @@
+[
+ {
+  "n": 1,
+  "titolo": "Soffiaggio",
+  "titoloOriginale": "Blow Molding",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Plastica e gomma",
+  "pagine": "22–29",
+  "slug": "soffiaggio"
+ },
+ {
+  "n": 2,
+  "titolo": "Termoformatura",
+  "titoloOriginale": "Thermoforming",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Plastica e gomma",
+  "pagine": "30–35",
+  "slug": "termoformatura"
+ },
+ {
+  "n": 3,
+  "titolo": "Stampaggio rotazionale",
+  "titoloOriginale": "Rotation Molding",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Plastica e gomma",
+  "pagine": "36–39",
+  "slug": "stampaggio-rotazionale"
+ },
+ {
+  "n": 4,
+  "titolo": "Colata sottovuoto",
+  "titoloOriginale": "Vacuum Casting",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Plastica e gomma",
+  "pagine": "40–43",
+  "slug": "colata-sottovuoto"
+ },
+ {
+  "n": 5,
+  "titolo": "Stampaggio a compressione",
+  "titoloOriginale": "Compression Molding",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Plastica e gomma",
+  "pagine": "44–49",
+  "slug": "stampaggio-compressione"
+ },
+ {
+  "n": 6,
+  "titolo": "Stampaggio a iniezione",
+  "titoloOriginale": "Injection Molding",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Plastica e gomma",
+  "pagine": "50–63",
+  "slug": "stampaggio-iniezione"
+ },
+ {
+  "n": 7,
+  "titolo": "Stampaggio a iniezione con reazione (RIM)",
+  "titoloOriginale": "Reaction Injection Molding",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Plastica e gomma",
+  "pagine": "64–67",
+  "slug": "rim"
+ },
+ {
+  "n": 8,
+  "titolo": "Stampaggio per immersione",
+  "titoloOriginale": "Dip Molding",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Plastica e gomma",
+  "pagine": "68–71",
+  "slug": "stampaggio-immersione"
+ },
+ {
+  "n": 9,
+  "titolo": "Battitura della lamiera",
+  "titoloOriginale": "Panel Beating",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "pagine": "72–77",
+  "slug": "battitura-lamiera"
+ },
+ {
+  "n": 10,
+  "titolo": "Tornitura in lastra",
+  "titoloOriginale": "Metal Spinning",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "pagine": "78–81",
+  "slug": "tornitura-lastra"
+ },
+ {
+  "n": 11,
+  "titolo": "Stampaggio della lamiera (tranciatura-piegatura a stampo)",
+  "titoloOriginale": "Metal Stamping",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "pagine": "82–87",
+  "slug": "stampaggio-lamiera"
+ },
+ {
+  "n": 12,
+  "titolo": "Imbutitura profonda",
+  "titoloOriginale": "Deep Drawing",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "pagine": "88–91",
+  "slug": "imbutitura-profonda"
+ },
+ {
+  "n": 13,
+  "titolo": "Formatura superplastica (superforming)",
+  "titoloOriginale": "Superforming",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "pagine": "92–97",
+  "slug": "superformatura"
+ },
+ {
+  "n": 14,
+  "titolo": "Curvatura di tubi e profilati",
+  "titoloOriginale": "Tube and Section Bending",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "pagine": "98–103",
+  "slug": "curvatura-tubi"
+ },
+ {
+  "n": 15,
+  "titolo": "Rastremazione (swaging)",
+  "titoloOriginale": "Swaging",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "pagine": "104–109",
+  "slug": "rastremazione"
+ },
+ {
+  "n": 16,
+  "titolo": "Profilatura a rulli",
+  "titoloOriginale": "Roll Forming",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "pagine": "110–113",
+  "slug": "profilatura-rulli"
+ },
+ {
+  "n": 17,
+  "titolo": "Forgiatura",
+  "titoloOriginale": "Forging",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "pagine": "114–119",
+  "slug": "forgiatura"
+ },
+ {
+  "n": 18,
+  "titolo": "Fusione in sabbia",
+  "titoloOriginale": "Sand Casting",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "pagine": "120–123",
+  "slug": "fusione-sabbia"
+ },
+ {
+  "n": 19,
+  "titolo": "Pressofusione",
+  "titoloOriginale": "Die Casting",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "pagine": "124–129",
+  "slug": "pressofusione"
+ },
+ {
+  "n": 20,
+  "titolo": "Microfusione a cera persa",
+  "titoloOriginale": "Investment Casting",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "pagine": "130–135",
+  "slug": "microfusione"
+ },
+ {
+  "n": 21,
+  "titolo": "Stampaggio a iniezione di polveri metalliche (MIM)",
+  "titoloOriginale": "Metal Injection Molding",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "pagine": "136–139",
+  "slug": "mim"
+ },
+ {
+  "n": 22,
+  "titolo": "Elettroformatura",
+  "titoloOriginale": "Electroforming",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "pagine": "140–143",
+  "slug": "elettroformatura"
+ },
+ {
+  "n": 23,
+  "titolo": "Fusione centrifuga",
+  "titoloOriginale": "Centrifugal Casting",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "pagine": "144–147",
+  "slug": "fusione-centrifuga"
+ },
+ {
+  "n": 24,
+  "titolo": "Piegatura alla pressa piegatrice",
+  "titoloOriginale": "Press Braking",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "pagine": "148–151",
+  "slug": "piegatura-pressa"
+ },
+ {
+  "n": 25,
+  "titolo": "Soffiatura del vetro",
+  "titoloOriginale": "Glassblowing",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Vetro e ceramica",
+  "pagine": "152–159",
+  "slug": "soffiatura-vetro"
+ },
+ {
+  "n": 26,
+  "titolo": "Lavorazione del vetro alla fiamma (lume)",
+  "titoloOriginale": "Lampworking",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Vetro e ceramica",
+  "pagine": "160–167",
+  "slug": "lavorazione-lume"
+ },
+ {
+  "n": 27,
+  "titolo": "Tornitura dell'argilla",
+  "titoloOriginale": "Clay Throwing",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Vetro e ceramica",
+  "pagine": "168–171",
+  "slug": "tornitura-argilla"
+ },
+ {
+  "n": 28,
+  "titolo": "Colaggio ceramico",
+  "titoloOriginale": "Ceramic Slip Casting",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Vetro e ceramica",
+  "pagine": "172–175",
+  "slug": "colaggio-ceramico"
+ },
+ {
+  "n": 29,
+  "titolo": "Formatura a pressione della ceramica",
+  "titoloOriginale": "Press Molding Ceramics",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Vetro e ceramica",
+  "pagine": "176–181",
+  "slug": "pressatura-ceramica"
+ },
+ {
+  "n": 30,
+  "titolo": "Lavorazione CNC (fresatura, tornitura, foratura)",
+  "titoloOriginale": "CNC Machining",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Legno",
+  "pagine": "182–189",
+  "slug": "lavorazione-cnc"
+ },
+ {
+  "n": 31,
+  "titolo": "Laminazione del legno",
+  "titoloOriginale": "Wood Laminating",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Legno",
+  "pagine": "190–197",
+  "slug": "laminazione-legno"
+ },
+ {
+  "n": 32,
+  "titolo": "Curvatura a vapore",
+  "titoloOriginale": "Steam Bending",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Legno",
+  "pagine": "198–201",
+  "slug": "curvatura-vapore"
+ },
+ {
+  "n": 33,
+  "titolo": "Stampaggio della polpa di carta",
+  "titoloOriginale": "Paper Pulp Molding",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Legno",
+  "pagine": "202–205",
+  "slug": "polpa-carta"
+ },
+ {
+  "n": 34,
+  "titolo": "Laminazione dei compositi",
+  "titoloOriginale": "Composite Laminating",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Compositi",
+  "pagine": "206–217",
+  "slug": "laminazione-compositi"
+ },
+ {
+  "n": 35,
+  "titolo": "Stampaggio di DMC e SMC",
+  "titoloOriginale": "DMC and SMC Molding",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Compositi",
+  "pagine": "218–221",
+  "slug": "dmc-smc"
+ },
+ {
+  "n": 36,
+  "titolo": "Avvolgimento di filamenti",
+  "titoloOriginale": "Filament Winding",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Compositi",
+  "pagine": "222–227",
+  "slug": "avvolgimento-filamenti"
+ },
+ {
+  "n": 37,
+  "titolo": "Laminazione termica 3D",
+  "titoloOriginale": "3D Thermal Laminating",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Compositi",
+  "pagine": "228–231",
+  "slug": "laminazione-termica-3d"
+ },
+ {
+  "n": 38,
+  "titolo": "Prototipazione rapida",
+  "titoloOriginale": "Rapid Prototyping",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Prototipazione rapida (manifattura a strati)",
+  "pagine": "232–241",
+  "slug": "prototipazione-rapida"
+ },
+ {
+  "n": 39,
+  "titolo": "Fresatura fotochimica",
+  "titoloOriginale": "Photochemical Machining",
+  "parte": "Parte 2 – Taglio",
+  "categoria": "Chimico",
+  "pagine": "244–247",
+  "slug": "fresatura-fotochimica"
+ },
+ {
+  "n": 40,
+  "titolo": "Taglio laser",
+  "titoloOriginale": "Laser Cutting",
+  "parte": "Parte 2 – Taglio",
+  "categoria": "Termico",
+  "pagine": "248–253",
+  "slug": "taglio-laser"
+ },
+ {
+  "n": 41,
+  "titolo": "Elettroerosione (EDM)",
+  "titoloOriginale": "Electrical Discharge Machining",
+  "parte": "Parte 2 – Taglio",
+  "categoria": "Termico",
+  "pagine": "254–259",
+  "slug": "elettroerosione"
+ },
+ {
+  "n": 42,
+  "titolo": "Punzonatura e tranciatura",
+  "titoloOriginale": "Punching and Blanking",
+  "parte": "Parte 2 – Taglio",
+  "categoria": "Meccanico",
+  "pagine": "260–265",
+  "slug": "punzonatura-tranciatura"
+ },
+ {
+  "n": 43,
+  "titolo": "Fustellatura",
+  "titoloOriginale": "Die Cutting",
+  "parte": "Parte 2 – Taglio",
+  "categoria": "Meccanico",
+  "pagine": "266–271",
+  "slug": "fustellatura"
+ },
+ {
+  "n": 44,
+  "titolo": "Taglio a getto d'acqua",
+  "titoloOriginale": "Water Jet Cutting",
+  "parte": "Parte 2 – Taglio",
+  "categoria": "Meccanico",
+  "pagine": "272–275",
+  "slug": "taglio-getto-acqua"
+ },
+ {
+  "n": 45,
+  "titolo": "Taglio del vetro per incisione (scoring)",
+  "titoloOriginale": "Glass Scoring",
+  "parte": "Parte 2 – Taglio",
+  "categoria": "Meccanico",
+  "pagine": "276–279",
+  "slug": "taglio-vetro"
+ },
+ {
+  "n": 46,
+  "titolo": "Saldatura ad arco",
+  "titoloOriginale": "Arc Welding",
+  "parte": "Parte 3 – Giunzione",
+  "categoria": "Termico",
+  "pagine": "282–287",
+  "slug": "saldatura-arco"
+ },
+ {
+  "n": 47,
+  "titolo": "Saldatura a fascio (laser ed elettronico)",
+  "titoloOriginale": "Power Beam Welding",
+  "parte": "Parte 3 – Giunzione",
+  "categoria": "Termico",
+  "pagine": "288–293",
+  "slug": "saldatura-fascio"
+ },
+ {
+  "n": 48,
+  "titolo": "Saldatura per attrito",
+  "titoloOriginale": "Friction Welding",
+  "parte": "Parte 3 – Giunzione",
+  "categoria": "Termico",
+  "pagine": "294–297",
+  "slug": "saldatura-attrito"
+ },
+ {
+  "n": 49,
+  "titolo": "Saldatura a vibrazione",
+  "titoloOriginale": "Vibration Welding",
+  "parte": "Parte 3 – Giunzione",
+  "categoria": "Termico",
+  "pagine": "298–301",
+  "slug": "saldatura-vibrazione"
+ },
+ {
+  "n": 50,
+  "titolo": "Saldatura a ultrasuoni",
+  "titoloOriginale": "Ultrasonic Welding",
+  "parte": "Parte 3 – Giunzione",
+  "categoria": "Termico",
+  "pagine": "302–307",
+  "slug": "saldatura-ultrasuoni"
+ },
+ {
+  "n": 51,
+  "titolo": "Saldatura a resistenza",
+  "titoloOriginale": "Resistance Welding",
+  "parte": "Parte 3 – Giunzione",
+  "categoria": "Termico",
+  "pagine": "308–311",
+  "slug": "saldatura-resistenza"
+ },
+ {
+  "n": 52,
+  "titolo": "Brasatura dolce e forte",
+  "titoloOriginale": "Soldering and Brazing",
+  "parte": "Parte 3 – Giunzione",
+  "categoria": "Termico",
+  "pagine": "312–315",
+  "slug": "brasatura"
+ },
+ {
+  "n": 53,
+  "titolo": "Ribaditura a caldo (staking)",
+  "titoloOriginale": "Staking",
+  "parte": "Parte 3 – Giunzione",
+  "categoria": "Termico",
+  "pagine": "316–319",
+  "slug": "ribaditura"
+ },
+ {
+  "n": 54,
+  "titolo": "Saldatura a piastra calda",
+  "titoloOriginale": "Hot Plate Welding",
+  "parte": "Parte 3 – Giunzione",
+  "categoria": "Termico",
+  "pagine": "320–323",
+  "slug": "saldatura-piastra-calda"
+ },
+ {
+  "n": 55,
+  "titolo": "Giunzioni del legno (falegnameria)",
+  "titoloOriginale": "Joinery",
+  "parte": "Parte 3 – Giunzione",
+  "categoria": "Meccanico",
+  "pagine": "324–331",
+  "slug": "giunzioni-legno"
+ },
+ {
+  "n": 56,
+  "titolo": "Tessitura e intreccio",
+  "titoloOriginale": "Weaving",
+  "parte": "Parte 3 – Giunzione",
+  "categoria": "Meccanico",
+  "pagine": "332–337",
+  "slug": "tessitura"
+ },
+ {
+  "n": 57,
+  "titolo": "Imbottitura e tappezzeria",
+  "titoloOriginale": "Upholstery",
+  "parte": "Parte 3 – Giunzione",
+  "categoria": "Meccanico",
+  "pagine": "338–343",
+  "slug": "imbottitura"
+ },
+ {
+  "n": 58,
+  "titolo": "Strutture a telaio in legno",
+  "titoloOriginale": "Timber Frame Structures",
+  "parte": "Parte 3 – Giunzione",
+  "categoria": "Meccanico",
+  "pagine": "344–347",
+  "slug": "strutture-telaio-legno"
+ },
+ {
+  "n": 59,
+  "titolo": "Verniciatura a spruzzo",
+  "titoloOriginale": "Spray Painting",
+  "parte": "Parte 4 – Finitura",
+  "categoria": "Processi additivi (rivestimenti)",
+  "pagine": "350–355",
+  "slug": "verniciatura-spruzzo"
+ },
+ {
+  "n": 60,
+  "titolo": "Verniciatura a polvere",
+  "titoloOriginale": "Powder Coating",
+  "parte": "Parte 4 – Finitura",
+  "categoria": "Processi additivi (rivestimenti)",
+  "pagine": "356–359",
+  "slug": "verniciatura-polvere"
+ },
+ {
+  "n": 61,
+  "titolo": "Anodizzazione",
+  "titoloOriginale": "Anodizing",
+  "parte": "Parte 4 – Finitura",
+  "categoria": "Processi additivi (rivestimenti)",
+  "pagine": "360–363",
+  "slug": "anodizzazione"
+ },
+ {
+  "n": 62,
+  "titolo": "Galvanostegia (elettrodeposizione)",
+  "titoloOriginale": "Electroplating",
+  "parte": "Parte 4 – Finitura",
+  "categoria": "Processi additivi (rivestimenti)",
+  "pagine": "364–367",
+  "slug": "galvanostegia"
+ },
+ {
+  "n": 63,
+  "titolo": "Zincatura a caldo",
+  "titoloOriginale": "Galvanizing",
+  "parte": "Parte 4 – Finitura",
+  "categoria": "Processi additivi (rivestimenti)",
+  "pagine": "368–371",
+  "slug": "zincatura"
+ },
+ {
+  "n": 64,
+  "titolo": "Metallizzazione sottovuoto",
+  "titoloOriginale": "Vacuum Metalizing",
+  "parte": "Parte 4 – Finitura",
+  "categoria": "Processi additivi (rivestimenti)",
+  "pagine": "372–375",
+  "slug": "metallizzazione-sottovuoto"
+ },
+ {
+  "n": 65,
+  "titolo": "Rettifica, levigatura e lucidatura",
+  "titoloOriginale": "Grinding, Sanding and Polishing",
+  "parte": "Parte 4 – Finitura",
+  "categoria": "Processi sottrattivi",
+  "pagine": "376–383",
+  "slug": "rettifica-levigatura"
+ },
+ {
+  "n": 66,
+  "titolo": "Elettrolucidatura",
+  "titoloOriginale": "Electropolishing",
+  "parte": "Parte 4 – Finitura",
+  "categoria": "Processi sottrattivi",
+  "pagine": "384–387",
+  "slug": "elettrolucidatura"
+ },
+ {
+  "n": 67,
+  "titolo": "Sabbiatura (granigliatura)",
+  "titoloOriginale": "Abrasive Blasting",
+  "parte": "Parte 4 – Finitura",
+  "categoria": "Processi sottrattivi",
+  "pagine": "388–391",
+  "slug": "sabbiatura"
+ },
+ {
+  "n": 68,
+  "titolo": "Incisione fotochimica",
+  "titoloOriginale": "Photo Etching",
+  "parte": "Parte 4 – Finitura",
+  "categoria": "Processi sottrattivi",
+  "pagine": "392–395",
+  "slug": "incisione-fotochimica"
+ },
+ {
+  "n": 69,
+  "titolo": "Incisione CNC",
+  "titoloOriginale": "CNC Engraving",
+  "parte": "Parte 4 – Finitura",
+  "categoria": "Processi sottrattivi",
+  "pagine": "396–399",
+  "slug": "incisione-cnc"
+ },
+ {
+  "n": 70,
+  "titolo": "Serigrafia",
+  "titoloOriginale": "Screen Printing",
+  "parte": "Parte 4 – Finitura",
+  "categoria": "Stampa",
+  "pagine": "400–403",
+  "slug": "serigrafia"
+ },
+ {
+  "n": 71,
+  "titolo": "Tampografia",
+  "titoloOriginale": "Pad Printing",
+  "parte": "Parte 4 – Finitura",
+  "categoria": "Stampa",
+  "pagine": "404–407",
+  "slug": "tampografia"
+ },
+ {
+  "n": 72,
+  "titolo": "Stampa a trasferimento ad acqua (idrografica)",
+  "titoloOriginale": "Hydro Transfer Printing",
+  "parte": "Parte 4 – Finitura",
+  "categoria": "Stampa",
+  "pagine": "408–411",
+  "slug": "stampa-idrografica"
+ },
+ {
+  "n": 73,
+  "titolo": "Stampa a caldo e goffratura",
+  "titoloOriginale": "Foil Blocking and Embossing",
+  "parte": "Parte 4 – Finitura",
+  "categoria": "Stampa",
+  "pagine": "412–415",
+  "slug": "stampa-caldo-goffratura"
+ }
+]

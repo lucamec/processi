@@ -1,0 +1,55 @@
+{
+  "slug": "sabbiatura",
+  "titolo": "Sabbiatura (granigliatura)",
+  "titoloOriginale": "Abrasive Blasting",
+  "parte": "Parte 4 – Finitura",
+  "categoria": "Processi sottrattivi",
+  "sintesi": "Particelle fini di sabbia, metallo, plastica o altri abrasivi, spinte ad alta pressione, erodono la superficie: si prepara il pezzo per altre finiture o lo si decora con texture e motivi, come sul vetro.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una cabina a guanti trasparente con dentro un vaso di vetro azzurrino, avvolto da fasce scure di maschera. Un ugello gira attorno al vaso e lancia un getto di granelli: le fasce scoperte diventano bianche e smerigliate. Poi una fascia della maschera si toglie e viene incisa più leggermente; alla fine la maschera sparisce e restano fasce trasparenti, opache e semiopache, rese in verde." },
+  "schema": {
+    "titolo": "Sabbiatura decorativa a più livelli, in sezione",
+    "descrizione": "Sezione della parete di un vaso di vetro con una maschera di cera. Le fasi mostrano la maschera applicata, la prima incisione delle zone scoperte, la rimozione di una parte della maschera, la seconda incisione che crea due profondità e il pezzo pulito.",
+    "fasi": [
+      { "titolo": "Maschera", "durata": 2000, "pag": "389–390", "didascalia": "Il disegno, in due toni, diventa una maschera di cera adesiva sul pezzo; l'interno si protegge a parte. Gli abrasivi rimbalzano sulla cera senza intaccarla." },
+      { "titolo": "Prima incisione", "durata": 2400, "pag": "389–390", "didascalia": "In una cabina a guanti l'operatore incide le zone scoperte con ossido di alluminio, grana 180–220, spinto da aria compressa." },
+      { "titolo": "Maschera modificata", "durata": 1800, "pag": "390", "didascalia": "Si tolgono alcune parti della maschera e si rinforzano le zone delicate." },
+      { "titolo": "Seconda incisione", "durata": 2400, "pag": "390", "didascalia": "Una seconda passata crea un'immagine a più livelli, con profondità e trasparenze diverse." },
+      { "titolo": "Pulizia", "durata": 1800, "pag": "390", "didascalia": "Si tolgono cera e protezioni; il pezzo si pulisce e si lucida." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "388", "testo": "Il termine comprende sabbiatura, incisione a secco, sabbiatura con plastica, granigliatura e pallinatura; servono a preparare le superfici per altre lavorazioni o a decorarle, oltre che a sbavare, tagliare e forare." },
+    { "fase": 2, "pag": "389", "testo": "L'abrasivo arriva alla pistola da un serbatoio in pressione (più efficace) o per aspirazione (più versatile); l'aria lavora di solito fra 5,5 e 8,6 bar." },
+    { "fase": 4, "pag": "388–389", "testo": "Cinque variabili controllano il risultato: pressione, diametro dell'ugello, distanza, portata e tipo di abrasivo. Più la texture è profonda, meno il materiale trasparente lascia passare la luce." },
+    { "fase": 5, "pag": "388", "testo": "L'esito delle operazioni manuali dipende molto dall'operatore: i dettagli molto fini si riproducono con precisione, ma l'asportazione è permanente." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Soprattutto metallo e vetro; anche legno e alcuni polimeri per preparazione e finitura.", "pag": "390" },
+    "volumi": { "valore": "Grandi volumi per l'asportazione di superficie; volumi bassi o medi per le finiture fini.", "pag": "388" },
+    "costoAttrezzatura": { "valore": "Nessuno, ma possono servire maschere, il cui costo dipende da complessità e area.", "pag": "388, 390" },
+    "costoUnitario": { "valore": "Da basso ad alto; manodopera relativamente alta nelle operazioni manuali.", "pag": "388, 390" },
+    "tempoCiclo": { "valore": "Rapido, ma rallentato da maschere complesse, strati multipli e scolpitura; automatizzare i compiti semplici lo riduce molto.", "pag": "388, 390" },
+    "qualitaSuperficiale": { "valore": "Texture fine, da simile all'incisione acida a un aspetto più grezzo; dettagli molto fini con operatori esperti.", "pag": "388" },
+    "precisione": { "valore": "Tolleranze numeriche: n.d.", "pag": "388–391" },
+    "dimensioni": { "valore": "Dalle cabine a guanti a quelle in cui si entra, fino a lavori all'aperto per pezzi molto grandi; limiti numerici: n.d.", "pag": "389" }
+  },
+  "vincoli": [
+    { "mini": "vista", "titolo": "Linea di vista", "spiegazione": "Come la verniciatura, il getto lavora in linea retta: l'erosione non passa sotto i bordi della maschera ma scende perpendicolare.", "pag": "388" },
+    { "mini": "prove", "titolo": "Provare prima", "spiegazione": "L'abrasivo va scelto per il materiale; conviene provare abrasivo, pressione e distanza prima della produzione, perché l'asportazione è permanente.", "pag": "388–389" },
+    { "mini": "sporco", "titolo": "Proteggere la texture", "spiegazione": "Le texture trattengono lo sporco e, sul vetro, evidenziano le impronte: spesso si racchiudono in un laminato o sotto un rivestimento trasparente.", "pag": "388" }
+  ],
+  "variantiNota": "Alcune possibilità descritte nel capitolo; lo schema principale mostra la sabbiatura decorativa con maschera.",
+  "varianti": [
+    { "mini": "abrasivi", "titolo": "Abrasivi diversi", "titoloOriginale": "Blasting media", "testo": "Sabbia, graniglia d'acciaio, ossido di alluminio, microsfere di vetro, gusci di noce e cocco.", "pag": "389" },
+    { "mini": "scultura", "titolo": "Scultura del vetro", "titoloOriginale": "Glass carving", "testo": "Rilievi tridimensionali per vetrate e vetrine.", "pag": "388" },
+    { "mini": "plastica", "titolo": "Sabbiatura con plastica", "titoloOriginale": "Plastic media blasting (PMB)", "testo": "Granuli più teneri a pressione minore; attrezzature specialistiche.", "pag": "388–389" }
+  ],
+  "correlati": [
+    { "slug": "incisione-cnc", "nome": "Incisione CNC", "nota": "effetti simili sul vetro e altri materiali", "pag": "388" },
+    { "slug": "incisione-fotochimica", "nome": "Incisione fotochimica", "nota": "effetti simili", "pag": "388" },
+    { "slug": "taglio-laser", "nome": "Taglio laser", "nota": "effetti simili", "pag": "388" },
+    { "slug": "soffiatura-vetro", "nome": "Soffiatura del vetro", "nota": "produce il vaso del caso studio", "pag": "390" },
+    { "slug": "verniciatura-spruzzo", "nome": "Verniciatura a spruzzo", "nota": "stesso limite di linea di vista", "pag": "388" }
+  ],
+  "fonte": { "pagine": "388–391" }
+}

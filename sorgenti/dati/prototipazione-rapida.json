@@ -1,0 +1,54 @@
+{
+  "slug": "prototipazione-rapida",
+  "titolo": "Prototipazione rapida",
+  "titoloOriginale": "Rapid Prototyping",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Prototipazione rapida",
+  "sintesi": "Il pezzo si costruisce direttamente dal file CAD, fondendo o solidificando strati sottilissimi di polvere o liquido con un laser: prototipi e piccole serie senza alcuno stampo.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una macchina per stereolitografia. Sopra la vasca compare il modello del vaso diviso in sezioni sottili. Una piattaforma scende passo dopo passo nella resina ambrata mentre un raggio laser arancione traccia il contorno sulla superficie e una pala la livella: prima crescono i supporti, poi il vaso. La piattaforma risale, il vaso si stacca dai supporti e, sotto una lampada UV viola, diventa verde." },
+  "schema": {
+    "titolo": "Stereolitografia (SLA), in sezione",
+    "descrizione": "Sezione di una vasca di resina con una piattaforma che scende. Le fasi mostrano il modello CAD diviso in sezioni, la costruzione dei supporti, il laser e la pala che costruiscono il pezzo strato per strato sotto il pelo della resina, l'estrazione con la rimozione dei supporti e la post-cura UV.",
+    "fasi": [
+      { "titolo": "Modello sezionato", "durata": 2000, "pag": "232, 234", "didascalia": "Il modello CAD, in un file .stl, viene diviso in sezioni orizzontali: ognuna è uno strato da costruire." },
+      { "titolo": "Supporti", "durata": 2000, "pag": "234", "didascalia": "Prima del pezzo si costruisce, nello stesso modo, una struttura di supporto a nido d'ape che lo tiene staccato dalla piattaforma." },
+      { "titolo": "Costruzione a strati", "durata": 3400, "pag": "234, 236", "didascalia": "Lo specchio guida il laser UV sulla resina, che solidifica dove viene colpita: prima la pelle, poi il nucleo. La piattaforma scende di 0,05–0,1 mm e la pala livella la superficie." },
+      { "titolo": "Estrazione e supporti", "durata": 2400, "pag": "237", "didascalia": "I pezzi sgocciolano e si tolgono dalla vasca; si staccano dalla piattaforma e si rimuove con cura la struttura di supporto." },
+      { "titolo": "Pulizia e post-cura", "durata": 2200, "pag": "237", "didascalia": "L'alcol isopropilico toglie la resina non indurita; poi un minuto di luce UV intensa completa la cura. Gli strati restano appena visibili." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "232", "testo": "Ogni sezione del modello viene tracciata da un laser sulla superficie del materiale, che si fonde o polimerizza. Si lavorano polimeri, ceramiche, cera, metalli e perfino carta." },
+    { "fase": 3, "pag": "234", "testo": "La macchina lavora da sola, spesso di notte. Non servono stampi: ogni modifica al progetto non costa nulla, e si ottengono geometrie complesse prima impossibili." },
+    { "fase": 4, "pag": "234", "testo": "Nella SLA e nella DMLS i pezzi devono essere sostenuti e i sottosquadri legati alla piattaforma; nella SLS la polvere non fusa fa da supporto." },
+    { "fase": 5, "pag": "233", "testo": "Gli strati lasciano gradini sugli angoli acuti, quindi tutti i pezzi vanno rifiniti; la resina SLA trasparente può diventare lucida come vetro." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "SLA: resine epossidiche che imitano ABS, PP/PE e PBT/ABS trasparente, alcune fino a 200 °C. SLS: polveri di nylon (Nylon 11 fino a 150 °C), caricate con vetro o carbonio, simili alla gomma o colorate. DMLS: leghe di nichel-bronzo e di acciaio.", "pag": "234–235" },
+    "volumi": { "valore": "Pezzi unici, prototipi e piccole serie.", "pag": "232" },
+    "costoAttrezzatura": { "valore": "Nessuno: non servono stampi.", "pag": "232, 235" },
+    "costoUnitario": { "valore": "Dipende dal tempo di costruzione; SLS la più economica, DMLS la più costosa; costruire più pezzi insieme lo riduce. Manodopera moderata, secondo la finitura.", "pag": "232, 235–236" },
+    "tempoCiclo": { "valore": "Lento ma con consegna rapida: SLS 2–3 mm di altezza all'ora, SLA 1,2–12 mm all'ora, DMLS 2–12 mm³ all'ora; il raffreddamento SLS allunga il ciclo fino al 50%.", "pag": "232, 235–236" },
+    "qualitaSuperficiale": { "valore": "Alta definizione dei dettagli; la SLA ha la finitura migliore. La micromodellazione, con strati di 25 µm, rende quasi inutile la finitura.", "pag": "232–233" },
+    "precisione": { "valore": "SLS e SLA ±0,15 mm; DMLS ±0,05 mm.", "pag": "233" },
+    "dimensioni": { "valore": "SLS fino a 350 × 380 × 700 mm; SLA fino a 500 × 500 × 500 mm; DMLS fino a 250 × 250 × 185 mm; micromodellazione fino a 77 × 61 × 230 mm. Strati: SLA 0,05–0,1 mm, SLS 0,1 mm, DMLS 0,02–0,06 mm.", "pag": "233–234" }
+  },
+  "vincoli": [
+    { "mini": "orientamento", "titolo": "Orientamento del pezzo", "spiegazione": "L'orientamento incide su proprietà meccaniche e precisione: un tubo costruito in verticale resta tondo, in orizzontale viene leggermente ovale; i materiali caricati con fibre resistono meglio in certe direzioni.", "pag": "234" },
+    { "mini": "piani", "titolo": "Grandi piani inclinati", "spiegazione": "Una grande superficie piana va costruita inclinata: costruita piatta accumula tensioni e si imbarca.", "pag": "234" },
+    { "mini": "cerniere", "titolo": "Cerniere integrali in orizzontale", "spiegazione": "La cerniera integrale si costruisce sempre nel piano orizzontale: in verticale gli strati sarebbero troppo corti per resistere alle aperture e chiusure.", "pag": "234" },
+    { "mini": "gradini", "titolo": "Gradini degli strati", "spiegazione": "Sulle superfici molto inclinate gli strati restano visibili: tutti i pezzi richiedono finitura all'uscita dalla macchina.", "pag": "233, 237" }
+  ],
+  "variantiNota": "I tre processi principali descritti nel capitolo; lo schema principale mostra la stereolitografia.",
+  "varianti": [
+    { "mini": "sla", "titolo": "Stereolitografia", "titoloOriginale": "Stereolithography (SLA)", "testo": "Laser UV su resina epossidica liquida; ideale per prototipi di forma e accoppiamento e per pezzi trasparenti, traslucidi od opachi.", "pag": "232, 234" },
+    { "mini": "sls", "titolo": "Sinterizzazione laser selettiva", "titoloOriginale": "Selective laser sintering (SLS)", "testo": "Laser CO₂ su polvere di nylon in una camera a 170 °C, appena sotto la fusione; pezzi simili agli stampati a iniezione, con cerniere integrali e incastri a scatto: adatta ai prototipi funzionali.", "pag": "232, 234, 238" },
+    { "mini": "dmls", "titolo": "Sinterizzazione laser diretta di metalli", "titoloOriginale": "Direct metal laser sintering (DMLS)", "testo": "Laser CO₂ da 250 W su polveri metalliche, in azoto; per inserti di stampi, utensili e prototipi metallici. Un inserto in nichel-bronzo produce 20.000–30.000 pezzi, leghe più dure 100.000–200.000.", "pag": "232, 234, 240" }
+  ],
+  "correlati": [
+    { "slug": "lavorazione-cnc", "nome": "Lavorazione CNC", "nota": "toglie materiale invece di aggiungerlo", "pag": "232" },
+    { "slug": "elettroerosione", "nome": "Elettroerosione", "nota": "altro processo per asportazione; stacca i pezzi DMLS", "pag": "233, 236" },
+    { "slug": "microfusione", "nome": "Microfusione", "nota": "vantaggi geometrici simili, grazie agli stampi a perdere", "pag": "233" }
+  ],
+  "fonte": { "pagine": "232–241" }
+}

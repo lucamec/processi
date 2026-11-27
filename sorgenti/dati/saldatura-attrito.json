@@ -1,0 +1,54 @@
+{
+  "slug": "saldatura-attrito",
+  "titolo": "Saldatura per attrito",
+  "titoloOriginale": "Friction Welding",
+  "parte": "Parte 3 – Giunzione",
+  "categoria": "Termico",
+  "sintesi": "Due pezzi metallici strofinati l'uno contro l'altro si scaldano per attrito fino a plastificarsi, poi una forte spinta assiale li unisce: un giunto allo stato solido, senza fusione, con resistenza simile al materiale base.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una saldatrice per attrito rotativa. Due barre d'acciaio sono strette in due mandrini; quella di sinistra gira mentre l'altra avanza fino a toccarla. Le facce a contatto diventano incandescenti; la rotazione si ferma, la spinta aumenta e attorno al giunto si gonfia un collare di bava arancione. Un utensile toglie la bava e la barra saldata diventa verde." },
+  "schema": {
+    "titolo": "Saldatura rotativa per attrito, in sezione assiale",
+    "descrizione": "Sezione assiale di due barre fra un mandrino rotante e uno fisso. Le fasi mostrano il carico, l'attrito che plastifica l'interfaccia, la spinta assiale che forma la bava e il giunto finito dopo la rimozione della bava.",
+    "fasi": [
+      { "titolo": "Carico", "durata": 1800, "pag": "295", "didascalia": "I due pezzi si serrano nei mandrini; almeno uno deve essere simmetrico rispetto all'asse di rotazione." },
+      { "titolo": "Attrito", "durata": 2800, "pag": "294–295", "didascalia": "Un pezzo ruota e l'altro, fermo, viene spinto contro: l'attrito scalda e plastifica l'interfaccia, senza raggiungere la fusione." },
+      { "titolo": "Pressione assiale", "durata": 2400, "pag": "295", "didascalia": "Dopo un tempo stabilito, circa un minuto, la rotazione si ferma e la spinta sale a circa 20 tonnellate: i materiali si uniscono e attorno al giunto si forma la bava." },
+      { "titolo": "Rimozione della bava", "durata": 2000, "pag": "295", "didascalia": "La bava si toglie, per esempio lucidandola; il giunto interessa tutta l'interfaccia." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "294", "testo": "Quattro tecniche principali: rotativa (la più antica e diffusa), lineare, orbitale e la più recente friction stir, brevettata nel 1991." },
+    { "fase": 2, "pag": "294", "testo": "Poiché non si arriva alla fusione, si saldano metalli inadatti alla saldatura per fusione ad arco o a fascio." },
+    { "fase": 3, "pag": "296", "testo": "È un processo allo stato solido: la zona termicamente alterata è piccola e il ritiro, quindi la distorsione, è minimo anche su giunti lunghi. Non serve gravità: si può saldare anche capovolti." },
+    { "fase": 4, "pag": "296–297", "testo": "Si uniscono anche metalli diversi, come alluminio e rame o alluminio e inox, e spessori diversi. Non si aggiungono flussi, fili o gas, e non si producono scarti." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "La maggior parte dei metalli ferrosi e non ferrosi: acciaio a basso carbonio, inox, leghe di alluminio, rame, piombo, titanio, magnesio, zinco e compositi a matrice metallica; la lineare è in sviluppo per alcuni legni.", "pag": "296–297" },
+    "volumi": { "valore": "Grandi serie.", "pag": "294" },
+    "costoAttrezzatura": { "valore": "Nessuno per rotativa, lineare e orbitale; utensili economici per il friction stir. Macchine molto costose.", "pag": "294, 296–297" },
+    "costoUnitario": { "valore": "Da basso a moderato.", "pag": "294" },
+    "tempoCiclo": { "valore": "Rapido per rotativa, lineare e orbitale; più lento il friction stir, che percorre tutto il giunto (5 mm di alluminio a circa 12 mm al secondo).", "pag": "294, 297" },
+    "qualitaSuperficiale": { "valore": "Giunto ermetico di alta integrità, con resistenza simile al materiale base.", "pag": "294" },
+    "precisione": { "valore": "Poca distorsione anche su giunti lunghi. Tolleranze numeriche: n.d.", "pag": "294, 296" },
+    "dimensioni": { "valore": "Rotativa, lineare e orbitale: giunti sotto circa 2.000 mm². Friction stir: da 1,2 a 50 mm, fino a 150 mm saldando dai due lati; la microsaldatura scende a 0,3 mm.", "pag": "296" }
+  },
+  "vincoli": [
+    { "mini": "simmetria", "titolo": "Un pezzo simmetrico per la rotativa", "spiegazione": "La saldatura rotativa richiede che almeno un pezzo sia simmetrico rispetto all'asse di rotazione; per gli altri si usano lineare e orbitale.", "pag": "295" },
+    { "mini": "sezione", "titolo": "Superficie del giunto limitata", "spiegazione": "Nelle tecniche rotativa, lineare e orbitale il giunto resta sotto circa 2.000 mm².", "pag": "296" },
+    { "mini": "piano", "titolo": "Moto relativo sul piano del giunto", "spiegazione": "I pezzi devono potersi muovere l'uno rispetto all'altro sul piano del giunto; il friction stir invece segue anche circonferenze e profili 3D a qualsiasi angolo.", "pag": "296" }
+  ],
+  "variantiNota": "Lo schema principale mostra la saldatura rotativa; queste sono le altre tecniche descritte nel capitolo.",
+  "varianti": [
+    { "mini": "lineare", "titolo": "Lineare", "titoloOriginale": "Linear friction welding (LFW)", "testo": "Oscillazione rettilinea per pezzi non rotondi, come i dischi palettati dei motori a reazione.", "pag": "294–295, 297" },
+    { "mini": "orbitale", "titolo": "Orbitale", "titoloOriginale": "Orbital friction welding (OFW)", "testo": "Oscillazione orbitale; usata soprattutto per le plastiche.", "pag": "294–295" },
+    { "mini": "fsw", "titolo": "Friction stir", "titoloOriginale": "Friction stir welding (FSW)", "testo": "Utensile rotante che avanza lungo il giunto; nato per i pannelli navali di estrusi di alluminio, usato anche per carrozze ferroviarie e prodotti di elettronica.", "pag": "294, 296" },
+    { "mini": "inerziale", "titolo": "Inerziale", "titoloOriginale": "Inertia friction welding", "testo": "L'energia di un volano lasciato girare libero fornisce la rotazione.", "pag": "295" }
+  ],
+  "correlati": [
+    { "slug": "saldatura-arco", "nome": "Saldatura ad arco", "nota": "più diffusa, qualità simile", "pag": "294" },
+    { "slug": "saldatura-resistenza", "nome": "Saldatura a resistenza", "nota": "più diffusa, qualità simile", "pag": "294" },
+    { "slug": "saldatura-fascio", "nome": "Saldatura a fascio", "nota": "saldatura per fusione", "pag": "294" },
+    { "slug": "saldatura-vibrazione", "nome": "Saldatura a vibrazione", "nota": "il principio applicato alle plastiche", "pag": "294" }
+  ],
+  "fonte": { "pagine": "294–297" }
+}

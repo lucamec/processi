@@ -1,0 +1,54 @@
+{
+  "slug": "curvatura-tubi",
+  "titolo": "Curvatura di tubi e profilati",
+  "titoloOriginale": "Tube and Section Bending",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "sintesi": "Tubi e profilati metallici vengono piegati a freddo su una matrice rotante, con un mandrino all'interno, o fra rulli: si ottengono strutture continue e fluide, dalle sedie in tubolare alle travi curve.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di un tubo d'acciaio piegato in sequenza. La matrice rotante, un cilindro con la morsa, si porta sul punto di curvatura e piega il tubo di 90 gradi. Poi il tubo avanza e ruota sul proprio asse, così la curva successiva si forma su un piano diverso; dopo due curve su piani diversi il tubo forma una struttura tridimensionale e diventa verde." },
+  "schema": {
+    "titolo": "Curvatura con mandrino vista dall'alto",
+    "descrizione": "Vista dall'alto della curvatubi: la matrice rotante con la morsa, il tubo con il mandrino interno e la matrice di pressione che lo accompagna. Le fasi mostrano il carico, la prima curva a 90°, l'avanzamento con rotazione del tubo, la seconda curva e lo scarico.",
+    "fasi": [
+      { "titolo": "Carico", "durata": 2000, "pag": "99, 101", "didascalia": "Il tubo, pulito e lucidato, viene infilato sul mandrino e bloccato sulla matrice con la morsa." },
+      { "titolo": "Prima curva", "durata": 2600, "pag": "99", "didascalia": "La matrice ruota e trascina il tubo: il mandrino impedisce alle pareti di schiacciarsi nel punto di piega e la matrice di pressione segue il tubo per una curva precisa e senza grinze." },
+      { "titolo": "Avanzamento e rotazione", "durata": 2400, "pag": "101", "didascalia": "La morsa si apre, il tubo avanza fino al punto della curva successiva e ruota sul proprio asse: la curva seguente si forma su un altro piano." },
+      { "titolo": "Seconda curva", "durata": 2600, "pag": "99, 101", "didascalia": "Si ripete la piegatura; il raggio dipende dalla dimensione della matrice, l'angolo da quanto ruota." },
+      { "titolo": "Scarico", "durata": 2000, "pag": "101", "didascalia": "La struttura piegata si toglie a mano e si controlla. Non c'è sfrido: si usa tutta la lunghezza del tubo." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "98", "testo": "I tipi principali sono due: la curvatura con mandrino, per raggi piccoli, e la curvatura a rulli, per curve ampie e continue su tubi, profilati e barre." },
+    { "fase": 2, "pag": "99", "testo": "Il mandrino, inserito nel tubo, ne evita il collasso. A volte serve un'altra morsa contro le grinze sul lato interno, soprattutto con pareti sottili; senza mandrino si piegano solo pareti spesse." },
+    { "fase": 3, "pag": "100–101", "testo": "Le macchine a controllo numerico allineano il tubo e ne gestiscono la sequenza di curve. Le semiautomatiche si preparano più in fretta e costano meno; per grandi serie conviene l'automazione completa." },
+    { "fase": 5, "pag": "98, 103", "testo": "Piegare invece di tagliare e saldare riduce sprechi e costi. La qualità del lavoro manuale dipende molto dall'esperienza dell'operatore." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Quasi tutti i metalli: acciaio, alluminio, rame, titanio; i più duttili si piegano più facilmente.", "pag": "102" },
+    "volumi": { "valore": "Da pezzo unico a grande serie.", "pag": "98, 102" },
+    "costoAttrezzatura": { "valore": "Nullo con gli utensili standard; da moderato ad alto con utensili speciali.", "pag": "98, 103" },
+    "costoUnitario": { "valore": "Da basso a moderato; manodopera alta nelle lavorazioni manuali.", "pag": "98, 103" },
+    "tempoCiclo": { "valore": "Rapido; la preparazione della macchina può essere lunga.", "pag": "98, 103" },
+    "qualitaSuperficiale": { "valore": "Alta; con la piegatura il pezzo guadagna rigidità.", "pag": "98, 102" },
+    "precisione": { "valore": "Più precisa con CNC; a mano l'operatore deve compensare l'imprecisione delle matrici. Valore numerico: n.d.", "pag": "102" },
+    "dimensioni": { "valore": "Con mandrino: tubi di norma fino a 80 mm, pareti fino a 2 mm, raggio minimo attorno a 50 mm e fino a 200 mm. A rulli: tubi fino a 1 m di diametro, profili pieni fino a 80 mm, lamiere larghe 4,5 m e spesse fino a 80 mm, raggi sopra i 200 mm.", "pag": "102", "ocr": "Spessore minimo di parete: nel libro 0,5 mm è convertito in 0.002 in (cioè 0,05 mm), quindi le due unità non coincidono." }
+  },
+  "vincoli": [
+    { "mini": "raggio", "titolo": "Raggio minimo attorno a 50 mm", "spiegazione": "Con il mandrino il raggio minimo è tipicamente intorno ai 50 mm; la curvatura a rulli, senza mandrino, è limitata a raggi oltre i 200 mm.", "pag": "102" },
+    { "mini": "vicine", "titolo": "Distanziare le curve", "spiegazione": "Le curve devono stare nella macchina: più curve molto vicine possono non essere realizzabili.", "pag": "102" },
+    { "mini": "sviluppo", "titolo": "Il pezzo piegato è più lungo", "spiegazione": "La piegatura stira il materiale all'esterno e lo comprime all'interno, ma il metallo si allunga più facilmente: il pezzo risulta un po' più lungo e la quota a disegno raramente corrisponde alla lunghezza del tubo.", "pag": "102" }
+  ],
+  "variantiNota": "Le due tecniche elencate nel capitolo.",
+  "varianti": [
+    { "mini": "mandrino", "titolo": "Curvatura con mandrino", "titoloOriginale": "Mandrel bending", "testo": "Per raggi piccoli; applica raggi diversi lungo lo stesso tubo, su qualunque asse, ma solo su diametri relativamente piccoli. È la tecnica dei mobili in tubolare, come la sedia S43 di Mart Stam prodotta da Thonet.", "pag": "98–102" },
+    { "mini": "anello", "titolo": "Curvatura a rulli", "titoloOriginale": "Ring rolling", "testo": "Il pezzo passa avanti e indietro fra tre rulli; uno si sposta verso l'interno a ogni passata e stringe gradualmente la curva per evitare crepe e grinze. Il raggio può variare: si ottengono archi non circolari, anelli completi e perfino curve tridimensionali come i binari delle montagne russe. Sulla lamiera si chiama calandratura.", "pag": "98, 102" }
+  ],
+  "correlati": [
+    { "slug": "curvatura-vapore", "nome": "Curvatura a vapore", "nota": "il precursore del mobile in tubolare", "pag": "98" },
+    { "slug": "piegatura-pressa", "nome": "Piegatura alla pressa piegatrice", "nota": "per profili cavi rastremati", "pag": "98" },
+    { "slug": "saldatura-arco", "nome": "Saldatura ad arco", "nota": "per unire i tratti piegati", "pag": "98, 102" },
+    { "slug": "forgiatura", "nome": "Forgiatura", "nota": "la laminazione-forgiatura dà profili simili ma pieni", "pag": "99, 102" },
+    { "slug": "rastremazione", "nome": "Rastremazione (swaging)", "nota": "processo correlato per i tubi", "pag": "98" }
+  ],
+  "fonte": { "pagine": "98–103" }
+}

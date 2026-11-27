@@ -1,0 +1,55 @@
+{
+  "slug": "soffiatura-vetro",
+  "titolo": "Soffiatura del vetro",
+  "titoloOriginale": "Glassblowing",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Vetro e ceramica",
+  "sintesi": "Si soffia una bolla d'aria in una massa di vetro fuso raccolta in punta a una canna, o spinta in uno stampo: dai pezzi unici dei maestri vetrai alle bottiglie prodotte a migliaia ogni giorno.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D della soffiatura artigianale, tagliato a metà. In punta alla canna da soffio, che gira di continuo, si raccoglie una goccia di vetro incandescente; rullata sul tavolo d'acciaio diventa un cilindro, poi l'aria la gonfia in una bolla cava che, riscaldata nel gloryhole e modellata, prende la forma di un vaso. Infine il vaso raffredda lentamente nel forno di ricottura e diventa verde." },
+  "schema": {
+    "titolo": "Soffiatura artigianale vista di lato",
+    "descrizione": "Vista laterale della canna da soffio con il vetro in punta. Le fasi mostrano la raccolta dal crogiolo, la marveratura sul tavolo d'acciaio, la soffiatura con riscaldo nel gloryhole, la formatura con pinze e sagome e la ricottura.",
+    "fasi": [
+      { "titolo": "Raccolta", "durata": 2200, "pag": "152, 154", "didascalia": "La punta della canna, preriscaldata, viene immersa nel crogiolo a oltre 1120 °C; con alcuni giri si raccoglie uno strato uniforme di vetro. La canna deve girare sempre, perché il vetro non coli." },
+      { "titolo": "Marveratura", "durata": 2200, "pag": "152, 154", "didascalia": "La massa calda (il parison) si rulla sul marver, un tavolo di metallo lucidato, e si sagoma con blocchi di legno di ciliegio bagnati." },
+      { "titolo": "Soffiatura", "durata": 2600, "pag": "152, 154", "didascalia": "Si soffia aria nella canna; il vetro viene riportato a temperatura nel gloryhole, a circa 800 °C, dove ha la consistenza di una caramella morbida." },
+      { "titolo": "Formatura", "durata": 2400, "pag": "153", "didascalia": "Sagome, stampi e pinze a molla (pucellas) danno la forma; il pezzo passa al pontello, si stacca dalla canna e si rifinisce dall'apertura." },
+      { "titolo": "Ricottura", "durata": 2400, "pag": "153, 157", "didascalia": "Il pezzo raffredda lentamente nel forno di ricottura (36 ore nel caso studio): si eliminano le tensioni che altrimenti lo romperebbero." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "152", "testo": "Il vetro si lavora sopra i 600 °C. Esistono la soffiatura artigianale, per pezzi unici, e quella meccanizzata, divisa in soffio-soffio e pressa-soffio." },
+    { "fase": 3, "pag": "153", "testo": "Se il vetro scende sotto i 600 °C e poi viene riscaldato, può subire uno shock termico e frantumarsi." },
+    { "fase": 4, "pag": "153", "testo": "Il vetro caldo si decora in molti modi: polveri e fogli d'argento incapsulati sotto vetro trasparente, fili colorati trascinati sulla superficie, bolle d'aria intrappolate, cretti ottenuti immergendo il pezzo in acqua tiepida." },
+    { "fase": 5, "pag": "153", "testo": "Le parti di spessore diverso raffreddano a velocità diverse e accumulano tensioni: la ricottura le scioglie gradualmente." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Vetro sodico-calcico per la grande serie (circa 70% sabbia silicea), vetro al piombo per cristalleria e oggetti decorativi, borosilicato per laboratorio, cottura e illuminazione.", "pag": "152, 156, 158" },
+    "volumi": { "valore": "Da pezzo unico a grande serie; la produzione meccanizzata richiede almeno 10 000 pezzi.", "pag": "152, 154" },
+    "costoAttrezzatura": { "valore": "Alto per la produzione meccanizzata; basso o nullo per la soffiatura artigianale, che usa sempre gli stessi attrezzi.", "pag": "152, 156" },
+    "costoUnitario": { "valore": "Basso nella produzione meccanizzata; più alto nell'artigianale, che richiede quasi sempre due persone.", "pag": "152, 154, 158" },
+    "tempoCiclo": { "valore": "Artigianale: circa 20 minuti per un pezzo tipico, più la ricottura. Meccanizzato: oltre 15 000 contenitori ogni 24 ore nel caso studio.", "pag": "154, 156" },
+    "qualitaSuperficiale": { "valore": "Alta, con alto valore percepito; nella produzione meccanizzata dettagli precisi come filetti e loghi.", "pag": "152, 154" },
+    "precisione": { "valore": "Meccanizzato: tolleranze fini e buona ripetibilità (valore numerico: n.d.); artigianale: dipende dall'esperienza del vetraio.", "pag": "154" },
+    "dimensioni": { "valore": "Artigianale: limitate solo dal gloryhole e da ciò che il vetraio riesce a maneggiare. Valori numerici: n.d.", "pag": "154" }
+  },
+  "vincoli": [
+    { "mini": "forme", "titolo": "Forme morbide", "spiegazione": "Bisogna fare molta attenzione alle concentrazioni di tensione: addolcire la forma le riduce, anche se dove serve si ottengono raggi stretti. Possono nascere problemi, per esempio, nei filetti dei tappi.", "pag": "154" },
+    { "mini": "sformo", "titolo": "Sformo di 5° negli stampi", "spiegazione": "Si lavora di solito con 5° di sformo, che con forme tonde ed ellittiche non è un limite.", "pag": "154" },
+    { "mini": "simmetria", "titolo": "Simmetria e collo centrato in serie", "spiegazione": "Per la produzione meccanizzata i pezzi vanno tenuti simmetrici e con il collo centrato, perché devono adattarsi alle linee di riempimento ed etichettatura.", "pag": "154, 156" }
+  ],
+  "variantiNota": "La soffiatura artigianale è lo schema principale; qui sotto i due metodi meccanizzati elencati nel capitolo.",
+  "varianti": [
+    { "mini": "soffiosoffio", "titolo": "Soffio-soffio meccanico", "titoloOriginale": "Machine blow and blow", "testo": "Le materie prime fondono a 1500 °C e il vetro viene portato a circa 1150 °C. Una goccia entra nel primo stampo, dove si formano collo e abbozzo con l'aria, poi passa allo stampo finale e viene soffiata; segue la ricottura nel tunnel.", "pag": "158" },
+    { "mini": "pressasoffio", "titolo": "Pressa-soffio meccanico", "titoloOriginale": "Machine press and blow", "testo": "Come il soffio-soffio, ma il primo abbozzo e il collo si formano con un punzone.", "pag": "158" }
+  ],
+  "correlati": [
+    { "slug": "pressatura-ceramica", "nome": "Formatura a pressione della ceramica", "nota": "la pressatura del vetro dà forme simili", "pag": "152" },
+    { "slug": "soffiaggio", "nome": "Soffiaggio", "nota": "molti imballaggi in vetro oggi sono in plastica soffiata", "pag": "152" },
+    { "slug": "taglio-getto-acqua", "nome": "Taglio a getto d'acqua", "nota": "per profilare le lastre di vetro", "pag": "152" },
+    { "slug": "taglio-vetro", "nome": "Taglio del vetro per incisione (scoring)", "nota": "per profilare le lastre di vetro", "pag": "152" },
+    { "slug": "lavorazione-lume", "nome": "Lavorazione del vetro alla fiamma (lume)", "nota": "altra lavorazione del vetro caldo", "pag": "152" },
+    { "slug": "sabbiatura", "nome": "Sabbiatura", "nota": "finitura del vaso del caso studio", "pag": "154" }
+  ],
+  "fonte": { "pagine": "152–159" }
+}

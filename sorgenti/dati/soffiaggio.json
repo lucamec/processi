@@ -1,0 +1,59 @@
+{
+  "slug": "soffiaggio",
+  "titolo": "Soffiaggio",
+  "titoloOriginale": "Blow Molding",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Plastica e gomma",
+  "sintesi": "Un tubo o un pre-forma di plastica calda viene chiuso in uno stampo e gonfiato con aria compressa finché aderisce alle pareti: così si producono in grandissima serie contenitori cavi a parete sottile.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una macchina per estrusione-soffiaggio, tagliata a metà. In alto la testa dell'estrusore fa scendere un tubo arancione (il parison). Le due metà dello stampo si chiudono attorno al tubo, l'ugello di soffiaggio scende nel collo e il tubo si gonfia fino a prendere la forma della bottiglia, che diventa verde raffreddandosi. Lo stampo si riapre e la bava sul fondo viene tolta." },
+  "schema": {
+    "titolo": "Estrusione-soffiaggio (EBM) in sezione",
+    "descrizione": "Sezione verticale: in alto l'estrusore e la testa con il mandrino da cui scende il tubo di plastica; sotto, lo stampo in due metà con la cavità a forma di bottiglia. Le fasi mostrano l'estrusione del tubo, la chiusura dello stampo e il taglio, il soffiaggio, l'apertura e la rifilatura della bava.",
+    "fasi": [
+      { "titolo": "Estrusione del parison", "durata": 2600, "pag": "22", "didascalia": "L'estrusore spinge il polimero fuso attraverso la testa: passando attorno al mandrino esce come un tubo, il parison. L'estrusione è continua." },
+      { "titolo": "Chiusura e taglio", "durata": 2000, "pag": "23", "didascalia": "Quando il tubo è abbastanza lungo, le due metà dello stampo si chiudono e lo sigillano sul fondo. Un coltello lo taglia in alto." },
+      { "titolo": "Soffiaggio", "durata": 2400, "pag": "23–24", "didascalia": "Dall'ugello entra aria compressa (8 bar nel caso studio): il tubo si gonfia e prende la forma della cavità, solidificando a contatto con lo stampo freddo." },
+      { "titolo": "Apertura", "durata": 1800, "pag": "23", "didascalia": "Quando il pezzo è abbastanza freddo lo stampo si apre e il contenitore viene espulso, ancora con la bava." },
+      { "titolo": "Rifilatura", "durata": 1800, "pag": "23", "didascalia": "Una rifilatrice profilata toglie la bava rimasta dove lo stampo ha pizzicato il tubo." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "22", "testo": "Il soffiaggio si fa in tre modi: estrusione-soffiaggio (EBM), iniezione-soffiaggio (IBM) e iniezione-stiro-soffiaggio (ISBM). Nell'EBM, qui illustrato, un estrusore produce di continuo un tubo di polimero fuso, il parison." },
+    { "fase": 2, "pag": "23", "testo": "Lo stampo si chiude attorno al tubo e lo sigilla sul fondo; un coltello lo taglia e il pezzo passa alla stazione di soffiaggio." },
+    { "fase": 3, "pag": "23", "testo": "L'aria soffiata spinge la plastica contro le pareti fredde dello stampo, dove solidifica in una parete sottile e uniforme." },
+    { "fase": 4, "pag": "23", "testo": "Lo stampo si apre e il contenitore viene espulso." },
+    { "fase": 5, "pag": "23", "testo": "La bava rimasta sul fondo e sul collo viene tolta. Uno stampo può avere più cavità e produrre un lotto di pezzi ogni 1–2 minuti." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Tutti i termoplastici. EBM: PP, PE, PET, PVC; IBM: PP e HDPE; ISBM: PE e PET.", "pag": "23" },
+    "volumi": { "valore": "Solo grandi serie; le macchine sono spesso dedicate a un solo prodotto. Lotto minimo numerico: n.d.", "pag": "22–23" },
+    "costoAttrezzatura": { "valore": "Moderato. L'EBM è il meno caro; lo stampo IBM costa circa il doppio; l'ISBM è il più costoso.", "pag": "22–23" },
+    "costoUnitario": { "valore": "Basso; manodopera bassa perché la produzione è automatizzata. Preparazione e cambio di produzione costosi.", "pag": "22–23" },
+    "tempoCiclo": { "valore": "Molto rapido: di norma 1–2 minuti per un lotto di pezzi.", "pag": "22–23", "ocr": "Numero di cavità per stampo: n.d. (OCR \"ic or more\")" },
+    "qualitaSuperficiale": { "valore": "Molto alta, lucida, testurizzata o opaca; pareti sottili e uniformi.", "pag": "22" },
+    "precisione": { "valore": "IBM e ISBM controllano con precisione collo, spessore e peso. Valore numerico: n.d.", "pag": "22" },
+    "dimensioni": { "valore": "IBM da 3 ml a 1 l; ISBM da 50 ml a 5 l; EBM da 3 ml a 220 l.", "pag": "22–23" }
+  },
+  "vincoli": [
+    { "mini": "capacita", "titolo": "Scegliere il processo in base alla capacità", "spiegazione": "Ogni variante copre un campo di volumi: IBM da 3 ml a 1 l, ISBM da 50 ml a 5 l, EBM da 3 ml a 220 l.", "pag": "22–23" },
+    { "mini": "collo", "titolo": "Collo e spessori precisi: iniezione-soffiaggio", "spiegazione": "Il motivo principale per scegliere l'IBM è il maggiore controllo sullo spessore delle pareti e sui dettagli del collo.", "pag": "22" },
+    { "mini": "bava", "titolo": "Prevedere la rifilatura nell'EBM", "spiegazione": "Nell'estrusione-soffiaggio lo stampo pizzica il tubo e lascia una bava da rifilare; IBM e ISBM non richiedono rifilatura.", "pag": "23, 26, 29" }
+  ],
+  "approfondimento": {
+    "titolo": "Che cosa considerare nel progetto",
+    "testo": "Il libro raccomanda di farsi guidare da ingegneri e stampisti e di considerare insieme l'utente (ergonomia), il prodotto contenuto (sensibilità alla luce, viscosità), il riempimento (collo e linea di riempimento), l'imballaggio (altezza a scaffale) e la presentazione (etichette a manicotto o stampa). Il collo non deve essere per forza verticale o tubolare; manici, colli filettati e texture si possono integrare in tutti e tre i processi.",
+    "pag": "22–23"
+  },
+  "variantiNota": "L'estrusione-soffiaggio è lo schema principale; qui sotto le altre due tecniche descritte nel capitolo.",
+  "varianti": [
+    { "mini": "ibm", "titolo": "Iniezione-soffiaggio", "titoloOriginale": "Injection Blow Molding (IBM)", "testo": "Una tavola rotante porta i pezzi da una stazione all'altra. Il pre-forma viene stampato a iniezione su un nucleo, con il collo già finito; ruota di 120° nello stampo di soffiaggio, dove l'aria lo gonfia, e poi di altri 120° per l'estrazione. Non serve rifilatura.", "pag": "22, 26" },
+    { "mini": "isbm", "titolo": "Iniezione-stiro-soffiaggio", "titoloOriginale": "Injection Stretch Blow Molding (ISBM)", "testo": "Come nell'IBM il pre-forma si stampa su un nucleo, che poi viene sostituito da un'asta di stiro. L'aria gonfia il pre-forma mentre l'asta lo allunga: le catene del polimero si allineano e il contenitore diventa più resistente e trasparente, con una buona barriera a gas e solventi. È il processo delle bottiglie in PET.", "pag": "22, 28" }
+  ],
+  "correlati": [
+    { "slug": "termoformatura", "nome": "Termoformatura", "nota": "può ottenere geometrie simili", "pag": "22" },
+    { "slug": "stampaggio-rotazionale", "nome": "Stampaggio rotazionale", "nota": "per corpi cavi più grandi in serie medio-piccole", "pag": "22" },
+    { "slug": "stampaggio-iniezione", "nome": "Stampaggio a iniezione", "nota": "con cui si stampano i pre-forma di IBM e ISBM", "pag": "22" },
+    { "slug": "soffiatura-vetro", "nome": "Soffiatura del vetro", "nota": "il soffiaggio della plastica consuma meno energia", "pag": "23" }
+  ],
+  "fonte": { "pagine": "22–29" }
+}

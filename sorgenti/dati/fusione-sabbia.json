@@ -1,0 +1,55 @@
+{
+  "slug": "fusione-sabbia",
+  "titolo": "Fusione in sabbia",
+  "titoloOriginale": "Sand Casting",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "sintesi": "Il metallo fuso viene colato per gravità in uno stampo di sabbia, che poi si rompe per estrarre il pezzo: è economico per pezzi unici e piccole serie, anche molto grandi.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di due staffe piene di sabbia, rese semitrasparenti. Prima si vede il modello grigio nella staffa inferiore; poi si mette l'anima e si chiude la staffa superiore. Il metallo arancione scende dal canale di colata e risale riempiendo la cavità e la materozza. Raffreddandosi diventa verde; infine la sabbia sparisce e resta il pezzo." },
+  "schema": {
+    "titolo": "Fusione in sabbia in sezione",
+    "descrizione": "Sezione di due staffe di sabbia sovrapposte con la cavità di un guscio, un'anima di sabbia all'interno, il canale di colata a sinistra e la materozza in alto. Le fasi mostrano la formatura sul modello, la chiusura con l'anima, la colata, la solidificazione e la distaffatura.",
+    "fasi": [
+      { "titolo": "Formatura", "durata": 2200, "pag": "120, 122", "didascalia": "Una staffa metallica viene messa sopra il modello e la sabbia viene versata e compattata a strati. Canale di colata e materozze fanno già parte del modello." },
+      { "titolo": "Anima e chiusura", "durata": 2200, "pag": "120–122", "didascalia": "Si toglie il modello; le anime, fatte in stampi a parte, vanno nella staffa inferiore e le due staffe si chiudono." },
+      { "titolo": "Colata", "durata": 2600, "pag": "121–122", "didascalia": "Il metallo, scaldato ben sopra la temperatura di fusione, viene versato nel canale di colata e per gravità riempie la cavità e le materozze." },
+      { "titolo": "Solidificazione", "durata": 2200, "pag": "121–123", "didascalia": "Una polvere esotermica versata su canale e materozze tiene caldo il metallo in alto: mentre il pezzo si ritira raffreddandosi, può attingere metallo liquido e la porosità superficiale si riduce." },
+      { "titolo": "Distaffatura", "durata": 2200, "pag": "123", "didascalia": "Dopo circa 15 minuti si separano le staffe, si rompe la sabbia e si taglia il pezzo dai canali; poi sabbiatura e finitura." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "120", "testo": "La sabbia è legata con argilla (sabbia a verde) o con resine sintetiche (a secco). Le due metà dello stampo si chiamano staffa superiore e inferiore." },
+    { "fase": 2, "pag": "121", "testo": "Le anime formano le cavità interne; si possono usare più anime, anche con sformi diversi da quelli esterni, perché lo stampo poi si rompe." },
+    { "fase": 3, "pag": "120–121", "testo": "Il processo è manuale e usa la sola gravità: resta sempre un po' di porosità. La qualità dipende molto dall'abilità della fonderia." },
+    { "fase": 5, "pag": "121–122", "testo": "Dalla sabbia il pezzo esce con una superficie tipica: si sabbia sempre, poi si può lucidare. Si ottengono getti più grandi che con qualsiasi altro metodo, fino a diverse tonnellate." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Ferrosi e leghe non ferrose: ghisa, acciaio, leghe di rame (ottone, bronzo), leghe di alluminio, sempre più magnesio.", "pag": "122" },
+    "volumi": { "valore": "Da pezzo unico a serie medie.", "pag": "120" },
+    "costoAttrezzatura": { "valore": "Basso: il costo principale è il modello, in legno o alluminio; i modelli in schiuma sono i più economici.", "pag": "120, 122" },
+    "costoUnitario": { "valore": "Moderato; manodopera alta, perché quasi tutto è manuale.", "pag": "120, 122" },
+    "tempoCiclo": { "valore": "Moderato: la colata richiede di solito meno di 30 minuti; finiture e lavorazioni lo allungano.", "pag": "120, 122" },
+    "qualitaSuperficiale": { "valore": "Scarsa, con porosità; la sabbia legata a resina dà finiture migliori. Si sabbia sempre e si può lucidare.", "pag": "120–121" },
+    "precisione": { "valore": "Inferiore alla pressofusione; dipende dalla fonderia. Valore numerico: n.d.", "pag": "121" },
+    "dimensioni": { "valore": "Fino a diverse tonnellate; pareti da 2,5 a 130 mm.", "pag": "122", "ocr": "Spessore minimo: il libro scrive 2,5 mm ma la conversione riportata (1 in) non corrisponde." }
+  },
+  "vincoli": [
+    { "mini": "sformo", "titolo": "Sformo da 1° a 5°", "spiegazione": "Servono angoli di sformo, di solito basta 2°, sullo stampo e sulle anime, per estrarre il modello.", "pag": "121–122" },
+    { "mini": "spessore", "titolo": "Evitare i cambi di spessore", "spiegazione": "Le variazioni di spessore vanno evitate; quelle piccole si risolvono con rastremature e raccordi.", "pag": "122" },
+    { "mini": "sezioni", "titolo": "Grandi cambi di sezione: parti separate", "spiegazione": "Se serve un grande cambio di sezione, le parti si fondono separatamente e si assemblano. Il ritiro varia con il metallo (l'acciaio si ritira quasi il doppio dell'alluminio) e cresce con sezione e dimensioni.", "pag": "122" }
+  ],
+  "variantiNota": "Il libro non elenca varianti come sotto-voci; qui sotto i tipi di sabbia e il modello evaporativo descritti nel testo.",
+  "varianti": [
+    { "mini": "verde", "titolo": "Sabbia a verde", "titoloOriginale": "Green sand casting", "testo": "Sabbia con argilla e acqua, compattata sul modello e lasciata asciugare del tutto. Fino al 95% dello stampo si può riciclare.", "pag": "120, 122" },
+    { "mini": "secca", "titolo": "Sabbia legata a resina", "titoloOriginale": "Dry sand casting", "testo": "Ogni granello è rivestito di resina vinilestere che indurisce a temperatura ambiente e forma una pellicola attorno al modello: stampi più rapidi e superfici migliori.", "pag": "120, 122" },
+    { "mini": "evaporativo", "titolo": "Modello evaporativo", "titoloOriginale": "Evaporative pattern casting", "testo": "Ibrido fra fusione in sabbia e microfusione: un modello in schiuma, fresato o stampato, resta nella sabbia e il metallo lo brucia entrando. Finitura inferiore, ma utile per prototipi e piccolissime serie.", "pag": "120" }
+  ],
+  "correlati": [
+    { "slug": "pressofusione", "nome": "Pressofusione", "nota": "più precisa e rapida, per grandi serie", "pag": "121" },
+    { "slug": "fusione-centrifuga", "nome": "Fusione centrifuga", "nota": "alternativa per i metalli", "pag": "121" },
+    { "slug": "forgiatura", "nome": "Forgiatura", "nota": "alternativa, spesso combinata", "pag": "121" },
+    { "slug": "microfusione", "nome": "Microfusione a cera persa", "nota": "più costosa per piccole serie", "pag": "120–121" },
+    { "slug": "sabbiatura", "nome": "Sabbiatura", "nota": "finitura obbligata dei getti", "pag": "120–121" }
+  ],
+  "fonte": { "pagine": "120–123" }
+}

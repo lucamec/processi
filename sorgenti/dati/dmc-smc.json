@@ -1,0 +1,53 @@
+{
+  "slug": "dmc-smc",
+  "titolo": "Stampaggio di DMC e SMC",
+  "titoloOriginale": "DMC and SMC Molding",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Compositi",
+  "sintesi": "Impasti o fogli di resina termoindurente rinforzata con fibre vengono compressi in uno stampo caldo: pezzi strutturali leggeri a metà strada fra la laminazione dei compositi e lo stampaggio a iniezione.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di uno stampo rotondo per compressione, tagliabile a metà. Nella cavità dello stampo inferiore c'è una carica chiara di DMC e un inserto metallico su un perno. Lo stampo superiore scende e la carica riempie la cavità diventando arancione. Lo stampo risale, due estrattori sollevano la coppa ora verde; infine la bava attorno al bordo e il perno vengono tolti." },
+  "schema": {
+    "titolo": "Stampaggio per compressione di DMC con inserto, in sezione",
+    "descrizione": "Sezione di uno stampo in due parti con una cavità a coppa. Le fasi mostrano la carica di DMC e l'inserto metallico, la discesa dello stampo superiore che riempie la cavità, l'apertura con gli estrattori che sollevano il pezzo e la sbavatura.",
+    "fasi": [
+      { "titolo": "Carico", "durata": 2200, "pag": "219–220", "didascalia": "Una quantità pesata di DMC entra nella cavità dello stampo inferiore; gli inserti metallici, su perni di centraggio, si posano nelle sedi." },
+      { "titolo": "Stampaggio", "durata": 2800, "pag": "219", "didascalia": "Lo stampo superiore scende con spinta costante e distribuisce il materiale; la resina plastifica a circa 115 °C e polimerizza a 150 °C in 2–5 minuti." },
+      { "titolo": "Sformatura", "durata": 2200, "pag": "219, 221", "didascalia": "Le parti dello stampo si separano in sequenza; se serve, gli estrattori staccano il pezzo, che porta con sé inserti e perni." },
+      { "titolo": "Sbavatura", "durata": 2000, "pag": "221", "didascalia": "I perni si svitano dagli inserti e la bava si toglie a mano; i pezzi finiti si impilano." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "219", "testo": "Il materiale è una miscela di fibra e resina termoindurente: il DMC contiene fibre tagliate, l'SMC fogli di tessuto. La sequenza è la stessa: carico, stampaggio, sformatura." },
+    { "fase": 1, "pag": "220", "testo": "Nel caso studio gli inserti hanno la superficie zigrinata, per far presa sul materiale sovrastampato." },
+    { "fase": 2, "pag": "219", "testo": "La pressione arriva a 400 tonnellate, ma in genere il limite è 150 (il valore minimo è illeggibile nell'OCR: n.d.). Più pressione dà migliore finitura e riproduzione dei dettagli." },
+    { "fase": 3, "pag": "218", "testo": "Il materiale viene compresso e non iniettato: i pezzi hanno tensioni ridotte e si deformano meno; le fibre restano lunghe e il pezzo è più resistente di un termoplastico rinforzato a iniezione." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Resine termoindurenti poliestere, epossidica e fenolica, rinforzate con fibra di vetro, aramide, carbonio o fibre naturali (canapa, iuta, cotone, lino); cariche come talco e legno. Alternativa termoplastica: GMT in polipropilene.", "pag": "218, 220" },
+    "volumi": { "valore": "Medie e grandi serie.", "pag": "218" },
+    "costoAttrezzatura": { "valore": "Moderato; in genere meno dell'iniezione, perché la pressione è minore e gli stampi più semplici.", "pag": "218, 220" },
+    "costoUnitario": { "valore": "Basso, da 3 a 4 volte il costo del materiale; manodopera moderata.", "pag": "218, 220" },
+    "tempoCiclo": { "valore": "2–5 minuti, secondo dimensioni e tempo di cura.", "pag": "218, 220" },
+    "qualitaSuperficiale": { "valore": "Molto buona, con ottima riproduzione dei dettagli; colori limitati, spesso si vernicia.", "pag": "218–219" },
+    "precisione": { "valore": "Pezzi con tensioni ridotte e poco soggetti a deformazione. Tolleranze numeriche: n.d.", "pag": "218" },
+    "dimensioni": { "valore": "0,1–8 kg su una pressa da 400 tonnellate; pareti 1–50 mm.", "pag": "219–220" }
+  },
+  "vincoli": [
+    { "mini": "inserti", "titolo": "Inserti allineati all'estrazione", "spiegazione": "Inserti metallici e componenti si sovrastampano, riducendo le lavorazioni successive, ma vanno allineati con la direzione di estrazione, altrimenti il pezzo non si stacca.", "pag": "218–219" },
+    { "mini": "spessore", "titolo": "Pareti non troppo spesse", "spiegazione": "Lo spessore va da 1 a 50 mm, limitato dalla reazione esotermica: le sezioni spesse fanno bolle. Conviene ridurre lo spessore e svuotare le parti voluminose.", "pag": "220", "ocr": "Angolo di sformo minimo con stampo ed estrattori ben progettati: n.d. (OCR \"less than o.50\")" },
+    { "mini": "sfiati", "titolo": "Sfiati per i gas di cura", "spiegazione": "La resina libera gas mentre si scalda e polimerizza: sfiati e nervature ben studiate sono parte della progettazione dello stampo e incidono sulle dimensioni possibili.", "pag": "219" }
+  ],
+  "variantiNota": "I due materiali dello stesso processo e un processo simile citato nel capitolo; lo schema principale mostra il DMC.",
+  "varianti": [
+    { "mini": "dmc", "titolo": "DMC", "titoloOriginale": "Dough molding compound (BMC)", "testo": "Fibre tagliate e resina, per forme massicce; i salti di spessore non sono un problema.", "pag": "218–219" },
+    { "mini": "smc", "titolo": "SMC", "titoloOriginale": "Sheet molding compound", "testo": "Fogli con tessuti di fibra più lunga, per componenti in lastra leggeri e a spessore uniforme; trame diverse per usi strutturali diversi.", "pag": "218–219" },
+    { "mini": "pultrusione", "titolo": "Pultrusione", "titoloOriginale": "Pultrusion", "testo": "Invece di comprimere, tira la fibra in un bagno di resina che polimerizza in un profilo continuo, come un'estrusione.", "pag": "218" }
+  ],
+  "correlati": [
+    { "slug": "laminazione-compositi", "nome": "Laminazione dei compositi", "nota": "proprietà meccaniche simili", "pag": "218" },
+    { "slug": "stampaggio-iniezione", "nome": "Stampaggio a iniezione", "nota": "prodotti simili, ma con fibre più corte", "pag": "218" },
+    { "slug": "stampaggio-compressione", "nome": "Stampaggio per compressione", "nota": "stesso principio", "pag": "218" },
+    { "slug": "avvolgimento-filamenti", "nome": "Avvolgimento di filamenti", "nota": "la pultrusione fa da ponte con l'estrusione", "pag": "218" }
+  ],
+  "fonte": { "pagine": "218–221" }
+}

@@ -1,0 +1,52 @@
+{
+  "slug": "imbutitura-profonda",
+  "titolo": "Imbutitura profonda",
+  "titoloOriginale": "Deep Drawing",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "sintesi": "Un punzone spinge un disco di lamiera dentro una matrice e lo trasforma in un contenitore senza saldature, più profondo che largo: lattine, lavelli, recipienti.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una pressa per imbutitura inversa, tagliato a metà. Un disco di lamiera è posato su una matrice ad anello. Il premilamiera scende e piega il disco sopra la matrice, formando una coppa rovesciata. Poi il punzone entra dall'alto nel foro e rovescia la coppa verso il basso, rendendola più profonda. Infine il pezzo verde viene estratto." },
+  "schema": {
+    "titolo": "Imbutitura inversa in sezione",
+    "descrizione": "Sezione di una matrice ad anello, con il premilamiera esterno e il punzone che entra nel foro centrale. Le fasi mostrano il carico del disco, la prima imbutitura verso il basso attorno alla matrice, l'imbutitura inversa del punzone e l'estrazione.",
+    "fasi": [
+      { "titolo": "Carico", "durata": 2000, "pag": "89–90", "didascalia": "Il disco di lamiera, oliato su entrambi i lati, viene caricato nella pressa idraulica e bloccato nel premilamiera." },
+      { "titolo": "Prima imbutitura", "durata": 2400, "pag": "89", "didascalia": "Il premilamiera scende e il materiale scorre sui fianchi della matrice: si forma una coppa simmetrica." },
+      { "titolo": "Imbutitura inversa", "durata": 2600, "pag": "89, 91", "didascalia": "Il punzone spinge il materiale nella matrice in senso opposto: il metallo scorre sul bordo della matrice e prende la forma del punzone, rovesciando la coppa." },
+      { "titolo": "Estrazione", "durata": 2000, "pag": "89, 91", "didascalia": "Il pezzo viene espulso; poi si rifila il bordo per togliere grinze e strappi." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "88", "testo": "Si parla di imbutitura profonda quando la profondità supera il diametro, talvolta già quando ne è la metà. Si ottengono forme senza saldature e senza altre lavorazioni." },
+    { "fase": 2, "pag": "88", "testo": "C'è un limite a quanto si può deformare la lamiera in un'operazione: dipende da materiale e spessore. Le coppe semplici si fanno in un passaggio, le forme profonde con stampi progressivi o con l'imbutitura inversa." },
+    { "fase": 3, "pag": "88, 91", "testo": "L'imbutitura inversa preme la lamiera due volte nella stessa operazione, rovesciandola: il ciclo è più rapido e servono meno stampi." },
+    { "fase": 4, "pag": "89–90", "testo": "La lamiera si assottiglia: nel caso studio da 0,8 a 0,7 mm. I metalli che resistono all'assottigliamento si strappano e si raggrinzano meno." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Acciai, zinco, rame e leghe di alluminio: servono malleabilità e resistenza all'assottigliamento.", "pag": "89" },
+    "volumi": { "valore": "Serie medie e grandi; nel caso studio 50 pezzi all'ora.", "pag": "88, 91" },
+    "costoAttrezzatura": { "valore": "Da alto a molto alto: punzone e matrice di grande precisione; gli stampi progressivi aumentano molto i costi.", "pag": "88, 90" },
+    "costoUnitario": { "valore": "Moderato; manodopera moderata grazie all'automazione.", "pag": "88, 90" },
+    "tempoCiclo": { "valore": "Rapido: da pochi secondi a diversi minuti, secondo il numero di operazioni.", "pag": "88, 90" },
+    "qualitaSuperficiale": { "valore": "In genere molto buona, secondo la qualità di punzone e matrice; grinze e difetti sul bordo vengono rifilati.", "pag": "88–89" },
+    "precisione": { "valore": "Tolleranze precise grazie agli stampi accoppiati. Valore numerico: n.d.", "pag": "90" },
+    "dimensioni": { "valore": "Diametri da meno di 5 mm a 500 mm; lunghezza fino a 5 volte il diametro; presse fino a 1000 tonnellate.", "pag": "89" }
+  },
+  "vincoli": [
+    { "mini": "lunghezza", "titolo": "Profondità fino a 5 diametri", "spiegazione": "La lunghezza dell'imbutitura arriva a 5 volte il diametro; i profili più lunghi richiedono lamiere più spesse, perché lo spessore si riduce.", "pag": "89" },
+    { "mini": "sottosquadri", "titolo": "Rientri costosi", "spiegazione": "I sottosquadri si ottengono con stampi progressivi o azioni perpendicolari, ma il costo dello stampo cresce molto; spesso si eseguono dopo la formatura.", "pag": "89, 91" },
+    { "mini": "bordo", "titolo": "Prevedere la rifilatura del bordo", "spiegazione": "Grinze e difetti si concentrano sul bordo, che viene rifilato dopo la formatura.", "pag": "89, 91" }
+  ],
+  "variantiNota": "Il libro non elenca varianti come sotto-voci; qui sotto le tecniche descritte nel capitolo.",
+  "varianti": [
+    { "mini": "inversa", "titolo": "Imbutitura inversa", "titoloOriginale": "Reverse drawing", "testo": "La lamiera viene premuta due volte nella stessa operazione, rovesciando la forma dopo la prima imbutitura: è la tecnica dello schema principale.", "pag": "88" },
+    { "mini": "progressiva", "titolo": "Stampi progressivi", "titoloOriginale": "Progressive dies", "testo": "Le forme molto profonde e complesse si ottengono con una serie di stampi; aumentano però molto i costi.", "pag": "88, 90" }
+  ],
+  "correlati": [
+    { "slug": "stampaggio-lamiera", "nome": "Stampaggio della lamiera", "nota": "per i profili poco profondi", "pag": "88" },
+    { "slug": "tornitura-lastra", "nome": "Tornitura in lastra", "nota": "geometrie simili senza saldature", "pag": "88" },
+    { "slug": "curvatura-tubi", "nome": "Curvatura di tubi e profilati", "nota": "la curvatura ad anello della lamiera dà forme simili", "pag": "88" },
+    { "slug": "superformatura", "nome": "Formatura superplastica (superforming)", "nota": "geometrie simili in lamiera", "pag": "88" }
+  ],
+  "fonte": { "pagine": "88–91" }
+}

@@ -1,0 +1,54 @@
+{
+  "slug": "superformatura",
+  "titolo": "Formatura superplastica (superforming)",
+  "titoloOriginale": "Superforming",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "sintesi": "Una lamiera di lega superplastica viene scaldata a circa 450–500 °C e spinta con l'aria su uno stampo a una sola faccia, come nella termoformatura: si ottengono pezzi metallici grandi e complessi in un solo pezzo.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di uno stampo femmina riscaldato, tagliato a metà, con sopra una camera di pressione. La lamiera di alluminio viene bloccata e scaldata, diventando arancione. L'aria in pressione la spinge progressivamente nella cavità finché ne copia la forma. Poi la camera si alza e il pezzo verde viene estratto." },
+  "schema": {
+    "titolo": "Formatura superplastica in cavità, in sezione",
+    "descrizione": "Sezione di uno stampo femmina riscaldato con sopra la camera di pressione; la lamiera è bloccata fra i due. Le fasi mostrano il riscaldamento, la pressione dell'aria che spinge la lamiera nella cavità, la formatura completa e l'estrazione.",
+    "fasi": [
+      { "titolo": "Carico e riscaldamento", "durata": 2200, "pag": "94", "didascalia": "La lamiera viene caricata, bloccata e scaldata fra 450 e 500 °C, secondo il tipo e lo spessore del materiale." },
+      { "titolo": "Pressione dell'aria", "durata": 2600, "pag": "94", "didascalia": "L'aria, a 1–30 bar, spinge la lamiera calda contro la superficie interna dello stampo." },
+      { "titolo": "Formatura completa", "durata": 2200, "pag": "94", "didascalia": "A questa temperatura il metallo è superplastico: si stira molto e copia anche forme complesse e minute." },
+      { "titolo": "Estrazione e rifilatura", "durata": 2200, "pag": "95", "didascalia": "Il pezzo formato viene estratto, rifilato e pulito, pronto per le lavorazioni successive." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "92", "testo": "È un processo a caldo con gli stessi principi della termoformatura della plastica. È stato sviluppato per alleggerire i componenti metallici, riducendo assemblaggi e spessori." },
+    { "fase": 2, "pag": "92, 94", "testo": "Ci sono quattro tecniche: in cavità, a bolla, con contropressione e con diaframma. In cavità la lamiera viene spinta dentro uno stampo femmina: è adatta a pezzi grandi e poco profondi, come i pannelli di carrozzeria." },
+    { "fase": 3, "pag": "93", "testo": "Una lega superplastica si allunga di più volte la sua lunghezza senza rompersi; alcune leghe superano deformazioni del 200%." },
+    { "fase": 4, "pag": "92, 95", "testo": "Un unico foglio sostituisce costosi assemblaggi di più parti. Un software di simulazione del flusso (FEA) accorcia il passaggio dal CAD al pezzo." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Leghe superplastiche di alluminio (le più comuni 5083, 2004, 7475), di magnesio e di titanio. Con il diaframma anche leghe non superplastiche (2014, 2024, 2219, 6061).", "pag": "92–94" },
+    "volumi": { "valore": "Serie piccole e medie.", "pag": "92" },
+    "costoAttrezzatura": { "valore": "Da basso a moderato: uno stampo a una sola faccia, meno caro degli stampi accoppiati; dipende da dimensione e complessità.", "pag": "92, 95" },
+    "costoUnitario": { "valore": "Da moderato ad alto; manodopera moderata, rifilatura e pulizia di ogni pezzo.", "pag": "92, 95" },
+    "tempoCiclo": { "valore": "Rapido: 5–20 minuti; rifilatura e assemblaggio allungano il tempo complessivo.", "pag": "92, 95" },
+    "qualitaSuperficiale": { "valore": "Molto buona; la faccia che non tocca lo stampo è la migliore. Dipende dalla finitura dello stampo e dalla precisione delle lavorazioni successive.", "pag": "92" },
+    "precisione": { "valore": "Valore numerico: n.d.", "pag": "92" },
+    "dimensioni": { "valore": "In cavità fino a 3000 × 2000 × 600 mm e 10 mm di spessore; con diaframma fino a 2800 × 1600 × 600 mm. Per bolla e contropressione i valori sono spezzati fra le colonne della scansione: n.d.", "pag": "94" }
+  },
+  "vincoli": [
+    { "mini": "lato", "titolo": "Il lato a vista è quello lontano dallo stampo", "spiegazione": "Come nella termoformatura, la faccia che non tocca lo stampo ha la finitura migliore.", "pag": "92" },
+    { "mini": "profondi", "titolo": "Pezzi profondi: formatura a bolla", "spiegazione": "La formatura in cavità serve soprattutto per pezzi grandi e poco profondi; per pezzi profondi e complessi con spessore quasi costante si usa la bolla, che stira il materiale in modo uniforme.", "pag": "92, 94" },
+    { "mini": "dimensioni", "titolo": "Rispettare le dimensioni massime", "spiegazione": "Ogni tecnica ha dimensioni massime diverse, che a volte si superano secondo geometria e lega. Una lega che si forma bene può però non avere le proprietà richieste in uso.", "pag": "94" }
+  ],
+  "variantiNota": "La formatura in cavità è lo schema principale; qui sotto le altre tre tecniche elencate nel capitolo.",
+  "varianti": [
+    { "mini": "bolla", "titolo": "Formatura a bolla", "titoloOriginale": "Bubble forming", "testo": "Simile alla termoformatura: la lamiera calda viene gonfiata a bolla, lo stampo sale nella camera e la pressione si inverte, spingendo il metallo sulla faccia esterna dello stampo. Ottiene geometrie impossibili con altri processi.", "pag": "92, 94–95" },
+    { "mini": "contropressione", "titolo": "Formatura con contropressione", "titoloOriginale": "Backpressure forming", "testo": "Come in cavità, ma l'aria agisce anche sul retro della lamiera, che viene tirata sullo stampo con una lieve differenza di pressione: meno sollecitazioni e leghe 'difficili' formabili. Nata per componenti strutturali aeronautici in lega 7475.", "pag": "92, 94" },
+    { "mini": "diaframma", "titolo": "Formatura con diaframma", "titoloOriginale": "Diaphragm forming", "testo": "Un diaframma metallico sostiene la lamiera calda e la aiuta a scorrere nelle forme complesse: è spesso l'unico modo pratico di formare leghe non superplastiche.", "pag": "92, 94" }
+  ],
+  "correlati": [
+    { "slug": "stampaggio-lamiera", "nome": "Stampaggio della lamiera", "nota": "geometrie simili con stampi accoppiati", "pag": "92" },
+    { "slug": "imbutitura-profonda", "nome": "Imbutitura profonda", "nota": "geometrie simili con stampi accoppiati", "pag": "92" },
+    { "slug": "termoformatura", "nome": "Termoformatura", "nota": "stesso principio per la plastica", "pag": "92" },
+    { "slug": "laminazione-compositi", "nome": "Laminazione dei compositi", "nota": "forme simili in vetroresina", "pag": "92" },
+    { "slug": "battitura-lamiera", "nome": "Battitura della lamiera", "nota": "complementare nelle piccole e medie serie", "pag": "73" }
+  ],
+  "fonte": { "pagine": "92–95" }
+}

@@ -1,0 +1,54 @@
+{
+  "slug": "stampa-caldo-goffratura",
+  "titolo": "Stampa a caldo e goffratura",
+  "titoloOriginale": "Foil Blocking and Embossing",
+  "parte": "Parte 4 – Finitura",
+  "categoria": "Stampa",
+  "sintesi": "Processi a secco: un utensile metallico sagomato, caldo, preme sulla superficie e vi lascia un'immagine in lamina, oppure un rilievo. Rapidi, ripetibili e poco costosi, sono molto usati negli imballaggi e negli stampati.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una pressa con una piastra calda sopra un foglio di carta color crema. Fra la piastra e la carta scorre un nastro di lamina d'oro tra due bobine. La piastra scende e risale: sulla carta resta un anello d'oro con un punto al centro, mentre sul nastro rimane l'impronta vuota che si avvolge sulla bobina. Poi la piastra cambia utensile e solleva nella carta un anello in rilievo." },
+  "schema": {
+    "titolo": "Stampa a caldo e goffratura, in sezione",
+    "descrizione": "A sinistra la stampa a caldo: utensile caldo, lamina su film di supporto e carta sul piano. A destra la goffratura fra due stampi accoppiati. Le fasi mostrano il carico, la pressione, lo scarico e il risultato: lamina impressa a sinistra, rilievo a destra.",
+    "fasi": [
+      { "titolo": "Carico", "durata": 1800, "pag": "414", "didascalia": "Ugelli a vuoto portano il foglio sul piano di stampa; l'utensile in magnesio, inciso per fresatura fotochimica, è montato dietro la lamina." },
+      { "titolo": "Pressione", "durata": 2000, "pag": "414", "didascalia": "L'utensile, a 100–200 °C, preme per meno di un secondo: calore e pressione attivano l'adesivo e la lamina si incolla e affonda leggermente nella carta." },
+      { "titolo": "Scarico", "durata": 1800, "pag": "414", "didascalia": "Il foglio esce; la lamina usata si avvolge su una bobina ed è scarto, perché riciclarla non è pratico." },
+      { "titolo": "Goffratura", "durata": 2200, "pag": "412, 414", "didascalia": "Nella goffratura non c'è lamina: il foglio si preme fra stampi accoppiati con bordi arrotondati, che non stressano le fibre, e si solleva in rilievo." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "412", "testo": "La stampa a caldo è detta anche foil stamping, hot stamping o gold foil blocking; è una pressatura che si abbina bene alla goffratura." },
+    { "fase": 2, "pag": "414", "testo": "Le lamine metalliche sono depositi sottilissimi di alluminio ottenuti per metallizzazione sottovuoto; le altre sono film plastici. Entrambe stanno su un film di supporto, con un velo d'adesivo sulla faccia." },
+    { "fase": 2, "pag": "412, 414", "testo": "La profondità dell'impronta dipende dalla durezza del materiale e dalla pressione; protegge la lamina dall'abrasione. L'utensile ha spigoli vivi, per un taglio netto della lamina." },
+    { "fase": 4, "pag": "412", "testo": "La lamina è coprente, quindi il registro è meno critico che in altre stampe; i colori si sovrappongono direttamente. Combinare stampa e goffratura in un solo colpo costa meno ma rende meno." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Pelle, tessuti, legno, carta, cartone e plastica.", "pag": "412–413" },
+    "volumi": { "valore": "Da volumi molto bassi alla produzione di massa.", "pag": "412" },
+    "costoAttrezzatura": { "valore": "Molto basso; utensili rotativi e stampi accoppiati costano di più.", "pag": "412, 414" },
+    "costoUnitario": { "valore": "Basso; manodopera non alta, ma i cambi formato variano perché l'utensile va messo a registro con la stampa esistente.", "pag": "412, 414" },
+    "tempoCiclo": { "valore": "Rapido: circa 1.000 cicli all'ora; la pressatura dura meno di un secondo.", "pag": "412, 414" },
+    "qualitaSuperficiale": { "valore": "Alta e ripetibile su lunghe tirature, con dettagli fini.", "pag": "412" },
+    "precisione": { "valore": "Linee fino a 0,25 mm; caratteri fino a 1,5 mm (6 punti) con molte lamine oro e argento.", "pag": "413" },
+    "dimensioni": { "valore": "Utensile fino al formato A1, 594 × 841 mm; lamina in rotoli larghi 640 mm.", "pag": "413–414" }
+  },
+  "vincoli": [
+    { "mini": "forma", "titolo": "Solo piano o cilindrico", "spiegazione": "Il piano è il caso più comune ed economico; i cilindri richiedono attrezzature specifiche e quindi grandi volumi. Sulle superfici ondulate serve la tampografia.", "pag": "412–413" },
+    { "mini": "dettaglio", "titolo": "Limiti del dettaglio", "spiegazione": "Neretti e retini sono difficili; colori come nero, bianco o rosso possono non reggere i dettagli più fini: conviene provare con lo stampatore.", "pag": "413" },
+    { "mini": "spessore", "titolo": "Spessori per la goffratura", "spiegazione": "Si goffrano carta e cartone fino a 2 mm (500 g/m²), plastica fino a 1 mm e pelle; il debossing, impresso da un solo lato, vale per ogni spessore. I materiali sottili si improntano anche sul retro.", "pag": "412, 414" }
+  ],
+  "variantiNota": "Possibilità descritte nel capitolo; lo schema principale mostra i due processi lineari, separati.",
+  "varianti": [
+    { "mini": "cieca", "titolo": "Goffratura cieca", "titoloOriginale": "Blind embossing", "testo": "Rilievo su materiali non stampati.", "pag": "413" },
+    { "mini": "rotativa", "titolo": "Stampa a caldo rotativa", "titoloOriginale": "Rotary foil blocking", "testo": "Fogli in continuo, cilindri, finiture finto legno.", "pag": "412, 414" },
+    { "mini": "lamine", "titolo": "Lamine diverse", "titoloOriginale": "Foil types", "testo": "Opache, lucide, metallizzate, olografiche, trasparenti.", "pag": "412" }
+  ],
+  "correlati": [
+    { "slug": "tampografia", "nome": "Tampografia", "nota": "per le superfici ondulate", "pag": "412" },
+    { "slug": "serigrafia", "nome": "Serigrafia", "nota": "applica la verniciatura a zone", "pag": "412" },
+    { "slug": "metallizzazione-sottovuoto", "nome": "Metallizzazione sottovuoto", "nota": "produce le lamine metalliche", "pag": "414" },
+    { "slug": "fresatura-fotochimica", "nome": "Fresatura fotochimica", "nota": "realizza gli utensili in magnesio", "pag": "413–414" },
+    { "slug": "incisione-cnc", "nome": "Incisione CNC", "nota": "altro modo per fare gli utensili", "pag": "414" }
+  ],
+  "fonte": { "pagine": "412–415" }
+}

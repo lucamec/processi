@@ -1,0 +1,54 @@
+{
+  "slug": "piegatura-pressa",
+  "titolo": "Piegatura alla pressa piegatrice",
+  "titoloOriginale": "Press Braking",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "sintesi": "Un punzone spinto da un pistone idraulico piega la lamiera lungo una linea retta dentro una matrice: è la tecnica semplice e versatile delle carpenterie, dai prototipi alle piccole serie.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una pressa piegatrice lunga, con il punzone in alto e la matrice a V in basso. Una lamiera rettangolare è appoggiata sulla matrice; il punzone scende e la lamiera si piega progressivamente fino a 90 gradi lungo una linea retta. Poi il punzone risale e il pezzo piegato, verde, viene sollevato." },
+  "schema": {
+    "titolo": "Piegatura in aria in sezione",
+    "descrizione": "Sezione trasversale della piegatrice: in basso la matrice a V, in alto il punzone. Le fasi mostrano la lamiera piana, la discesa del punzone che la spinge nella V, la piega completa a 90° e il ritorno del punzone.",
+    "fasi": [
+      { "titolo": "Carico", "durata": 1800, "pag": "149–150", "didascalia": "Il pezzo, già tagliato e forato da piano, viene appoggiato sulla matrice." },
+      { "titolo": "Discesa del punzone", "durata": 2200, "pag": "149–150", "didascalia": "Il pistone idraulico spinge il punzone, che piega la lamiera nella V; con la piegatura in aria l'angolo dipende da quanto scende." },
+      { "titolo": "Piega completa", "durata": 1800, "pag": "149", "didascalia": "Ogni piega richiede pochi secondi; le macchine a controllo numerico si riposizionano da sole fra una piega e l'altra." },
+      { "titolo": "Ritorno ed estrazione", "durata": 1800, "pag": "149", "didascalia": "Il punzone risale e il pezzo si toglie, oppure si esegue la stessa piega su tutto il lotto prima di riattrezzare la macchina." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "148, 150", "testo": "Le presse piegatrici sono alla base della carpenteria in lamiera per piccole e medie serie, fino a circa 5000 pezzi. Il lavoro preparatorio si fa da piano, dove è più rapido." },
+    { "fase": 2, "pag": "148–149", "testo": "Il tonnellaggio dipende da lunghezza della piega, spessore, resistenza e raggio: una pressa da 100 t piega 3 m di acciaio da 5 mm su una matrice larga 32 mm. Una matrice più larga aumenta il raggio e riduce la forza." },
+    { "fase": 3, "pag": "149", "testo": "Piegare aumenta la rigidità della lamiera, che diventa più resistente e leggera." },
+    { "fase": 4, "pag": "148, 150", "testo": "Ogni piega è un'altra operazione e la macchina va predisposta: nelle grandi serie conviene spesso uno stampo più caro che riduca operazioni e tempi." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Quasi tutti i metalli: acciaio, alluminio, rame, titanio; i più duttili permettono spessori maggiori.", "pag": "150" },
+    "volumi": { "valore": "Da pezzo unico a serie fino a circa 5000 pezzi.", "pag": "148" },
+    "costoAttrezzatura": { "valore": "Nullo con punzoni e matrici standard; gli utensili speciali aumentano il prezzo unitario.", "pag": "148, 150" },
+    "costoUnitario": { "valore": "Da basso a moderato; manodopera alta per le lavorazioni manuali.", "pag": "148, 150" },
+    "tempoCiclo": { "valore": "Fino a 6 pieghe al minuto; la preparazione della macchina può essere lunga.", "pag": "148, 150" },
+    "qualitaSuperficiale": { "valore": "Pieghe di alta qualità; l'aspetto dipende molto dall'operatore.", "pag": "148, 150" },
+    "precisione": { "valore": "Pieghe precise entro ±0,1 mm; le macchine a controllo numerico si posizionano almeno entro 0,01 mm.", "pag": "148–149" },
+    "dimensioni": { "valore": "Pieghe lunghe fino a 8 m, fino a 16 m affiancando due macchine; spessore massimo a freddo circa 50 mm.", "pag": "148, 150" }
+  },
+  "vincoli": [
+    { "mini": "raggio", "titolo": "Raggio interno di 1–3 spessori", "spiegazione": "Il raggio interno è circa pari allo spessore per i materiali duttili e a 3 volte per quelli duri. Per lo sviluppo del pezzo piano basta considerare l'arco lungo la linea media dello spessore.", "pag": "150" },
+    { "mini": "rette", "titolo": "Solo pieghe rettilinee", "spiegazione": "Il limite principale è che si piega solo lungo linee rette, con il punzone che preme su tutta la lunghezza; i pezzi cavi si ottengono saldando dopo la piegatura.", "pag": "148, 150" },
+    { "mini": "collo", "titolo": "Pieghe vicine: punzone a collo d'oca", "spiegazione": "Due pieghe a 90° vicine formano un sottosquadro: servono punzoni sporgenti, a collo d'oca, che raggiungono la piega senza urtare l'ala già formata.", "pag": "149–150" }
+  ],
+  "variantiNota": "La piegatura in aria è lo schema principale; qui sotto gli altri tipi di matrice descritti nel testo.",
+  "varianti": [
+    { "mini": "fondo", "titolo": "Piegatura a fondo", "titoloOriginale": "Bottom bending (V-die, coining)", "testo": "Con punzone e matrice a V accoppiati, è riservata alla carpenteria di alta precisione perché richiede più pressione.", "pag": "149" },
+    { "mini": "acuta", "titolo": "Matrici ad angolo acuto", "titoloOriginale": "Acute angle dies", "testo": "Piegano la lamiera fino a 30°; la piegatura in aria arriva anch'essa ad angoli molto acuti, ma con meno precisione.", "pag": "150" },
+    { "mini": "segmentata", "titolo": "Matrici segmentate", "titoloOriginale": "Segmented dies", "testo": "Piegano tratti di lunghezza definita, così si fanno più pieghe insieme; la pressa ottiene anche profili lunghi, rastremati e segmentati, impossibili con profilatura o estrusione.", "pag": "150" }
+  ],
+  "correlati": [
+    { "slug": "profilatura-rulli", "nome": "Profilatura a rulli", "nota": "profili continui a spessore costante", "pag": "148" },
+    { "slug": "stampaggio-lamiera", "nome": "Stampaggio della lamiera", "nota": "forme ondulate complesse in una sola operazione", "pag": "148" },
+    { "slug": "punzonatura-tranciatura", "nome": "Punzonatura e tranciatura", "nota": "per preparare i grezzi", "pag": "150" },
+    { "slug": "taglio-laser", "nome": "Taglio laser", "nota": "per preparare i grezzi", "pag": "150" },
+    { "slug": "battitura-lamiera", "nome": "Battitura della lamiera", "nota": "usa anche la pressa piegatrice", "pag": "72" }
+  ],
+  "fonte": { "pagine": "148–151" }
+}

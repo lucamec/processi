@@ -1,0 +1,55 @@
+{
+  "slug": "pressofusione",
+  "titolo": "Pressofusione",
+  "titoloOriginale": "Die Casting",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "sintesi": "Il metallo fuso viene spinto a pressione in uno stampo d'acciaio riutilizzabile: si ottengono in grandi serie pezzi metallici precisi, con pareti sottili e dettagli complessi.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una pressa per pressofusione a camera fredda, tagliata a metà. Un crogiolo versa l'alluminio fuso nel cilindro orizzontale; il pistone lo spinge nello stampo e la cavità si riempie partendo dal canale. Il pezzo diventa verde raffreddandosi, lo stampo mobile si apre e gli estrattori spingono fuori il getto." },
+  "schema": {
+    "titolo": "Pressofusione ad alta pressione a camera fredda, in sezione",
+    "descrizione": "Sezione della macchina: a sinistra il cilindro di iniezione con il pistone e il foro di carico, a destra lo stampo fisso con il canale e lo stampo mobile con la cavità, i canali di raffreddamento e gli estrattori.",
+    "fasi": [
+      { "titolo": "Dosaggio", "durata": 2000, "pag": "126, 128", "didascalia": "Un crogiolo preleva dal forno di attesa una dose misurata di metallo fuso e la versa nel cilindro di iniezione." },
+      { "titolo": "Iniezione", "durata": 2000, "pag": "126", "didascalia": "Il pistone spinge il metallo ad alta pressione nella cavità; la pressione resta finché il pezzo solidifica." },
+      { "titolo": "Solidificazione", "durata": 2200, "pag": "126, 128", "didascalia": "I canali d'acqua tengono lo stampo più freddo del metallo e accelerano il raffreddamento: da pochi secondi a diversi minuti (2 minuti nel caso studio)." },
+      { "titolo": "Apertura ed estrazione", "durata": 2200, "pag": "126, 128", "didascalia": "Le metà dello stampo si aprono e il pezzo viene espulso, spesso preso da un braccio robotico; lo stampo viene pulito a vapore e lubrificato." },
+      { "titolo": "Sbavatura", "durata": 2000, "pag": "126, 128", "didascalia": "Bave e canali di colata vengono tagliati e tornano subito nel forno per essere rifusi." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "124, 126", "testo": "Le tecniche sono alta pressione, bassa pressione e gravità. L'alta pressione è la più versatile e il modo più rapido per formare pezzi non ferrosi. Lingotti e scarti fondono in un forno sempre acceso." },
+    { "fase": 2, "pag": "124, 126", "testo": "Le macchine vanno da 500 a oltre 3000 tonnellate di forza di chiusura, scelta secondo dimensione e complessità del pezzo. La pressione elevata permette pareti sottili e dettagli fini." },
+    { "fase": 3, "pag": "124", "testo": "L'iniezione veloce crea turbolenza e quindi porosità: si limita progettando bene, con la simulazione del riempimento dello stampo." },
+    { "fase": 5, "pag": "126–127", "testo": "I pezzi richiedono poche lavorazioni perché la finitura è già molto alta. Tutti gli scarti si rifondono senza perdita di resistenza." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Solo metalli non ferrosi: alluminio, magnesio, zinco, rame, piombo, stagno. I ferrosi fondono a temperature troppo alte.", "pag": "126" },
+    "volumi": { "valore": "Grandi serie (alta pressione); la gravità è adatta anche a serie brevi.", "pag": "124" },
+    "costoAttrezzatura": { "valore": "Alto: stampi in acciaio resistenti alle temperature del metallo; carrelli e anime li rincarano molto. Bassa pressione e gravità costano meno.", "pag": "124, 126" },
+    "costoUnitario": { "valore": "Basso; manodopera bassa nei processi automatici.", "pag": "124, 127" },
+    "tempoCiclo": { "valore": "Rapido: da pochi secondi a diversi minuti secondo dimensione e numero di cavità.", "pag": "124, 126" },
+    "qualitaSuperficiale": { "valore": "Molto alta, migliora con la pressione; proprietà meccaniche variabili per la porosità.", "pag": "124" },
+    "precisione": { "valore": "Tolleranze strette, spesso senza lavorazioni successive. Valore numerico: n.d.", "pag": "126" },
+    "dimensioni": { "valore": "Soprattutto pezzi piccoli: oltre circa 9 kg lo stampo diventa troppo grande e costoso. La sedia del caso studio pesa 4 kg.", "pag": "126, 128", "ocr": "Peso massimo: OCR \"c g kg\", confermato a 9 kg dalla conversione (20 lb)." }
+  },
+  "vincoli": [
+    { "mini": "sformo", "titolo": "Sformo di circa 1,5°", "spiegazione": "Le regole sono simili all'iniezione: nervature, angoli di sformo (di solito basta 1,5°), incavi, flusso nello stampo e linee di divisione.", "pag": "126" },
+    { "mini": "dimensione", "titolo": "Preferire pezzi piccoli", "spiegazione": "La fusione conviene soprattutto per pezzi piccoli: sopra i 9 kg circa lo stampo d'acciaio diventa molto grande e costoso.", "pag": "126" },
+    { "mini": "fori", "titolo": "Fori nello stampo, carrelli con giudizio", "spiegazione": "I fori ottenuti direttamente nel getto fanno risparmiare materiale; carrelli e anime invece rincarano lo stampo e vanno giustificati, per esempio da spessori ridotti o maggiore resistenza.", "pag": "126" }
+  ],
+  "variantiNota": "Le tre tecniche elencate nel capitolo.",
+  "varianti": [
+    { "mini": "alta", "titolo": "Pressofusione ad alta pressione", "titoloOriginale": "High pressure die casting", "testo": "A camera calda il metallo è pompato dal forno nella cavità; a camera fredda un crogiolo lo versa nel cilindro e un pistone lo spinge. Usata per auto, elettrodomestici, elettronica, arredi, gioielli e giocattoli.", "pag": "124, 126" },
+    { "mini": "bassa", "titolo": "Pressofusione a bassa pressione", "titoloOriginale": "Low pressure die casting", "testo": "Lo stampo è montato sopra il forno; la pressione del gas spinge il metallo su per un tubo, con poca turbolenza. A fine ciclo il metallo rimasto nel tubo ricade nel crogiolo. Ideale per pezzi a simmetria verticale come i cerchi in lega.", "pag": "124, 127" },
+    { "mini": "gravita", "titolo": "Fusione in conchiglia", "titoloOriginale": "Gravity die casting", "testo": "Detta anche fusione in stampo permanente: si differenzia dalla fusione in sabbia solo per gli stampi d'acciaio. Con anime in sabbia si ottengono forme complesse e piccoli sottosquadri.", "pag": "124, 126" }
+  ],
+  "correlati": [
+    { "slug": "forgiatura", "nome": "Forgiatura", "nota": "alternativa per pezzi molto resistenti", "pag": "124" },
+    { "slug": "fusione-sabbia", "nome": "Fusione in sabbia", "nota": "alternativa per piccole serie e pezzi grandi", "pag": "124" },
+    { "slug": "microfusione", "nome": "Microfusione a cera persa", "nota": "alternativa, anche per i ferrosi", "pag": "124, 126" },
+    { "slug": "stampaggio-iniezione", "nome": "Stampaggio a iniezione", "nota": "processo analogo per la plastica", "pag": "124" },
+    { "slug": "anodizzazione", "nome": "Anodizzazione", "nota": "protegge e colora alluminio e magnesio", "pag": "126" }
+  ],
+  "fonte": { "pagine": "124–129" }
+}

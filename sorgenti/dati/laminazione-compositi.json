@@ -1,0 +1,57 @@
+{
+  "slug": "laminazione-compositi",
+  "titolo": "Laminazione dei compositi",
+  "titoloOriginale": "Composite Laminating",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Compositi",
+  "sintesi": "Tessuti di fibra di vetro, carbonio o aramide vengono uniti a una resina termoindurente dentro uno stampo: ne escono pezzi leggerissimi e robusti, dalle auto da corsa agli aerei, alle barche, agli arredi.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di uno stampo femmina a una faccia, a forma di guscio, sorretto da un telaio. Un tampone stende il distaccante, poi il gel coat chiaro si distende da un lato all'altro. Tre fogli di fibra impregnati di resina, arancioni, si posano uno dopo l'altro mentre un rullo passa sulla superficie. Dopo la polimerizzazione il guscio, ora verde, si solleva dallo stampo." },
+  "schema": {
+    "titolo": "Laminazione a umido su stampo a una faccia, in sezione",
+    "descrizione": "Sezione di uno stampo femmina in composito sostenuto da un telaio. Le fasi mostrano il distaccante, il gel coat, tre strati di fibra e resina rullati, la polimerizzazione e il pezzo che si stacca dallo stampo.",
+    "fasi": [
+      { "titolo": "Distaccante", "durata": 2000, "pag": "210", "didascalia": "Lo stampo, preparato con cura perché la sua superficie si riflette sul pezzo, riceve un distaccante a cera steso con un panno morbido." },
+      { "titolo": "Gel coat", "durata": 2200, "pag": "208, 210", "didascalia": "Uno strato di gel coat, una resina termoindurente, viene spruzzato o steso a pennello: diventerà la superficie esterna del pezzo." },
+      { "titolo": "Stratificazione", "durata": 2800, "pag": "208, 212", "didascalia": "I tessuti di fibra tagliati a misura si posano sul gel coat e si impregnano di resina; un rullo elimina l'aria. Gli strati si aggiungono uno alla volta." },
+      { "titolo": "Polimerizzazione", "durata": 2200, "pag": "206, 212", "didascalia": "La resina termoindurente polimerizza: nel caso studio, con vinilestere, dopo circa 45 minuti." },
+      { "titolo": "Sformatura e rifinitura", "durata": 2200, "pag": "212", "didascalia": "Lo stampo si separa e il pezzo viene rifilato e lucidato." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "206", "testo": "Esistono tre tipi principali di laminazione: a umido, con pre-impregnati e per trasferimento di resina (RTM). Le resine sono termoindurenti." },
+    { "fase": 2, "pag": "208", "testo": "Lo stampo a una faccia è una pelle dello stesso composito sostenuta da un telaio rigido: deve essere solido durante la stratificazione e abbastanza flessibile da lasciar uscire il pezzo." },
+    { "fase": 3, "pag": "208", "testo": "Ogni prodotto può avere da 1 a 10 strati di rinforzo, tutti applicati a mano; conta il giusto rapporto fra resina e fibra. Un prodotto complesso può comporsi di decine di parti." },
+    { "fase": 4, "pag": "206–207", "testo": "I laminati polimerizzati sotto pressione hanno la porosità minima; per i pezzi di precisione si usano autoclavi con calore e pressione." },
+    { "fase": 5, "pag": "207", "testo": "Con lo stampo a una faccia solo un lato è lucido; unendo due gusci si ottengono pezzi cavi finiti su tutta la superficie." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Fibre di vetro, carbonio e aramide (Kevlar®), in tessuti, mat o unidirezionali; resine termoindurenti poliestere, vinilestere, epossidica, fenolica e cianato; anime in nido d'ape Nomex®, schiuma o nido d'ape di alluminio.", "pag": "207–209" },
+    "volumi": { "valore": "Da pezzo unico a lotti; con l'RTM anche migliaia di pezzi identici.", "pag": "206" },
+    "costoAttrezzatura": { "valore": "Da moderato ad alto: lo stampo richiede un modello ed è un lavoro manuale.", "pag": "206, 210" },
+    "costoUnitario": { "valore": "Da moderato ad alto, secondo superficie, complessità e prestazioni; manodopera alta.", "pag": "206, 210" },
+    "tempoCiclo": { "valore": "Lungo, da 1 a 150 ore secondo complessità e dimensioni.", "pag": "206, 210" },
+    "qualitaSuperficiale": { "valore": "Lucida sul lato dello stampo; il gel coat migliora la superficie della laminazione a umido e dell'RTM, che è finito su entrambi i lati.", "pag": "207, 209" },
+    "precisione": { "valore": "Pre-impregnati precisi, laminazione a umido la meno precisa. Tolleranze numeriche: n.d.", "pag": "208" },
+    "dimensioni": { "valore": "Superficie fino a 16 m², più grande in più pezzi; parete 0,25–10 mm nella laminazione a umido.", "pag": "208–209" }
+  },
+  "vincoli": [
+    { "mini": "spessore", "titolo": "Spessore della parete limitato", "spiegazione": "La parete resta fra 0,25 e 10 mm: oltre, la reazione esotermica della resina diventa pericolosa.", "pag": "208" },
+    { "mini": "giunti", "titolo": "Giunti degli strati sfalsati", "spiegazione": "Ogni strato si sovrappone in un punto diverso, creando un giunto a sovrapposizione sfalsato; giunti allineati sono punti deboli.", "pag": "208, 212" },
+    { "mini": "anima", "titolo": "Anime per rigidezza e spessore", "spiegazione": "Un'anima mantiene distanziate le pelli e aumenta rigidezza a flessione e resistenza a torsione; rende possibili variazioni di spessore della parete.", "pag": "208" },
+    { "mini": "fibre", "titolo": "Allineamento delle fibre", "spiegazione": "La direzione della trama determina le proprietà meccaniche: si calcola con l'analisi agli elementi finiti e va rispettata nella stratificazione.", "pag": "208", "ocr": "Angolo di disallineamento che riduce la resistenza del 20%: n.d. (OCR \"just 50 of movement\")" }
+  ],
+  "variantiNota": "I tre tipi principali descritti nel capitolo; lo schema principale mostra la laminazione a umido.",
+  "varianti": [
+    { "mini": "umido", "titolo": "Laminazione a umido", "titoloOriginale": "Wet lay-up", "testo": "Resine a temperatura ambiente impregnate a mano nei tessuti posati nello stampo, dopo il gel coat; adatta a ogni tipo di trama.", "pag": "206, 208" },
+    { "mini": "preimpregnato", "titolo": "Pre-impregnato", "titoloOriginale": "Pre-preg", "testo": "Il più costoso: tessuti già impregnati con la quantità esatta di resina, messi sotto vuoto e curati in autoclave a 4,1 bar e 120 °C per 2 ore. Usato soprattutto per il carbonio.", "pag": "206, 208–209" },
+    { "mini": "rtm", "titolo": "Stampaggio per trasferimento di resina", "titoloOriginale": "Resin transfer molding (RTM)", "testo": "Stampi accoppiati metallici e preriscaldati: la resina si inietta a pressione o si aspira col vuoto (infusione). Finitura su entrambi i lati; adatto a volumi maggiori.", "pag": "206, 209" }
+  ],
+  "correlati": [
+    { "slug": "dmc-smc", "nome": "Stampaggio di DMC e SMC", "nota": "geometrie simili, a metà strada con l'iniezione", "pag": "207" },
+    { "slug": "stampaggio-iniezione", "nome": "Stampaggio a iniezione", "nota": "geometrie simili", "pag": "207" },
+    { "slug": "termoformatura", "nome": "Termoformatura", "nota": "geometrie simili", "pag": "207" },
+    { "slug": "superformatura", "nome": "Superformatura", "nota": "alternativa in metallo", "pag": "207" },
+    { "slug": "stampaggio-lamiera", "nome": "Stampaggio della lamiera", "nota": "alternativa in metallo", "pag": "207" }
+  ],
+  "fonte": { "pagine": "206–217" }
+}

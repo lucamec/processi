@@ -1,0 +1,51 @@
+{
+  "slug": "colaggio-ceramico",
+  "titolo": "Colaggio ceramico",
+  "titoloOriginale": "Ceramic Slip Casting",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Vetro e ceramica",
+  "sintesi": "Un'argilla liquida, la barbottina, viene versata in uno stampo di gesso che ne assorbe l'acqua: sulle pareti si forma un guscio uniforme e si ottengono pezzi cavi identici, da lavabi a teiere.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di uno stampo in gesso bianco in due metà, tagliato a metà. La barbottina color sabbia riempie la cavità a forma di vaso; sulle pareti cresce un guscio arancione mentre il gesso assorbe l'acqua. La barbottina in eccesso si svuota, lo stampo si apre e il vaso a cuoio esce; dopo la cottura diventa verde." },
+  "schema": {
+    "titolo": "Colaggio in stampo di gesso, in sezione",
+    "descrizione": "Sezione di uno stampo in gesso in due metà con la cavità di un vaso. Le fasi mostrano il riempimento con la barbottina, la crescita del guscio sulle pareti, lo svuotamento, l'apertura dello stampo e la cottura.",
+    "fasi": [
+      { "titolo": "Riempimento", "durata": 2000, "pag": "173–174", "didascalia": "Lo stampo pulito viene chiuso con fasce di gomma (la barbottina pesa circa il doppio dell'acqua) e riempito fino all'orlo." },
+      { "titolo": "Formazione della parete", "durata": 2600, "pag": "172–173", "didascalia": "Il gesso poroso assorbe l'acqua per capillarità: le particelle d'argilla si accumulano sulla parete e formano un guscio. Si attende di solito 5–25 minuti." },
+      { "titolo": "Svuotamento", "durata": 2000, "pag": "173–174", "didascalia": "Raggiunto lo spessore voluto, la barbottina in eccesso si versa via e si recupera." },
+      { "titolo": "Sformatura", "durata": 2200, "pag": "173", "didascalia": "Quando il guscio è 'a cuoio' si apre lo stampo, si estrae il pezzo e si tolgono le bave; poi si assembla e si lascia asciugare." },
+      { "titolo": "Cottura", "durata": 2200, "pag": "173", "didascalia": "Cottura in biscotto per 8 ore, salendo a 1125 °C e mantenendo un'ora; poi smaltatura e cottura dello smalto con lo stesso ciclo." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "172", "testo": "La barbottina è una miscela finissima (particelle di circa 1 micron) di argilla, minerali, disperdenti e acqua; i disperdenti riducono l'acqua necessaria e la porosità." },
+    { "fase": 2, "pag": "172–173", "testo": "Il tempo nello stampo e la temperatura ambiente determinano lo spessore. Barbottina e gesso devono 'lavorare in armonia': consistenza giusta e stampo abbastanza asciutto." },
+    { "fase": 4, "pag": "172", "testo": "Gli stampi si ricavano da un modello in argilla, legno o gomma e durano circa 50 pezzi; il colaggio automatizzato produce molte migliaia di pezzi." },
+    { "fase": 5, "pag": "173", "testo": "Dopo la cottura dello smalto i pezzi sono rigidi e impermeabili." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Terracotta, creamware e terraglie (porose, vanno smaltate), gres e porcellana (migliori proprietà meccaniche, ma fragili).", "pag": "172" },
+    "volumi": { "valore": "Piccole serie e lotti.", "pag": "172" },
+    "costoAttrezzatura": { "valore": "Basso: stampi in gesso ricavati da un modello, che richiede però grande abilità.", "pag": "172, 174" },
+    "costoUnitario": { "valore": "Da moderato ad alto; la manodopera, da moderata ad alta, è la voce di costo maggiore.", "pag": "172, 174" },
+    "tempoCiclo": { "valore": "Moderato: 0,4–4 ore secondo dimensione e complessità; cottura fino a 48 ore.", "pag": "172" },
+    "qualitaSuperficiale": { "valore": "Dipende da stampo, smalto e abilità dell'operatore.", "pag": "172" },
+    "precisione": { "valore": "Ritiro di circa l'8%. Tolleranze numeriche: n.d.", "pag": "172" },
+    "dimensioni": { "valore": "Limitate da peso e fragilità del materiale. Valori numerici: n.d.", "pag": "172", "ocr": "Tempo di attesa prima della sformatura: da 1 a n.d. ore (OCR \"1U\")" }
+  },
+  "vincoli": [
+    { "mini": "sottosquadri", "titolo": "Stampi senza sottosquadri, in poche parti", "spiegazione": "Gli stampi vanno progettati per eliminare i sottosquadri e avere il minor numero di pezzi, idealmente 2 o 3. Lo sformo di solito non è un problema perché gli stampi curvano verso l'interno.", "pag": "172, 174" },
+    { "mini": "ritiro", "titolo": "Tenere conto del ritiro (circa 8%)", "spiegazione": "Il ritiro è nell'ordine dell'8%, secondo il materiale.", "pag": "172" },
+    { "mini": "assemblaggi", "titolo": "Evitare gli assemblaggi", "spiegazione": "Si possono colare parti separate e unirle, ma l'assemblaggio costa e si evita quando possibile.", "pag": "172" }
+  ],
+  "variantiNota": "Il libro non elenca varianti di questo processo. Qui sotto la possibilità citata nel testo.",
+  "varianti": [
+    { "mini": "automatico", "titolo": "Colaggio automatizzato", "titoloOriginale": "Automated slip casting", "testo": "Uno stampo in gesso produce circa 50 pezzi prima di essere sostituito; con le tecniche automatizzate si producono molte migliaia di pezzi.", "pag": "172" }
+  ],
+  "correlati": [
+    { "slug": "tornitura-argilla", "nome": "Tornitura dell'argilla", "nota": "senza stampo, per pezzi unici a rivoluzione", "pag": "172" },
+    { "slug": "pressatura-ceramica", "nome": "Formatura a pressione della ceramica", "nota": "per pezzi identici", "pag": "172" },
+    { "slug": "colata-sottovuoto", "nome": "Colata sottovuoto", "nota": "stesso principio di stampo morbido per la plastica", "pag": "40" }
+  ],
+  "fonte": { "pagine": "172–175" }
+}

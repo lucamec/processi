@@ -1,0 +1,50 @@
+{
+  "slug": "rastremazione",
+  "titolo": "Rastremazione (swaging)",
+  "titoloOriginale": "Swaging",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "sintesi": "Tubi, barre e fili vengono martellati o pressati in una matrice per ridurne o allargarne il diametro: si ottengono conicità, giunti a incastro e punte chiuse.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una testa per rastremazione rotativa tagliata a metà. Quattro martelli d'acciaio disposti a croce girano rapidamente e si aprono e chiudono. Un tubo color sabbia viene spinto al loro centro: mentre avanza la sua estremità si restringe a cono e infine si chiude in punta. Poi il tubo, ora verde, viene estratto." },
+  "schema": {
+    "titolo": "Rastremazione rotativa in sezione",
+    "descrizione": "Sezione lungo l'asse della testa rotante: due martelli-matrice con un foro conico vibrano aprendosi e chiudendosi; il tubo entra da sinistra, si rastrema e si chiude in punta.",
+    "fasi": [
+      { "titolo": "Inserimento", "durata": 1800, "pag": "106", "didascalia": "Il tubo (nel caso studio da 25 mm) viene spinto nella matrice mentre la testa gira ad alta velocità." },
+      { "titolo": "Martellatura", "durata": 2600, "pag": "105", "didascalia": "I martelli si muovono avanti e indietro sui loro rulli mentre la testa ruota: a ogni colpo il tubo si restringe un po' seguendo il foro conico." },
+      { "titolo": "Chiusura della punta", "durata": 2200, "pag": "106", "didascalia": "Si forma una conicità di 30° chiusa in punta; gli ultimi 10 mm circa diventano metallo pieno." },
+      { "titolo": "Estrazione", "durata": 1800, "pag": "106", "didascalia": "Dopo circa 20 secondi il tubo viene ritirato già formato." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "104", "testo": "Esistono due tecniche: la martellatura rotativa e la pressatura idraulica (detta anche formatura delle estremità). La prima riduce la sezione allungando il materiale; la seconda può anche espandere il tubo." },
+    { "fase": 2, "pag": "105", "testo": "Nella rastremazione rotativa la dimensione del tubo lavorabile dipende dall'apertura della matrice. Le matrici si lavorano in acciaio da utensili per ogni applicazione, perché raramente due prodotti sono uguali." },
+    { "fase": 3, "pag": "105–106", "testo": "Il metallo compresso si incrudisce e migliora le sue proprietà meccaniche. Lavorando su un filo interno si controlla con precisione anche il foro in punta." },
+    { "fase": 4, "pag": "104", "testo": "È il metodo più rapido e diffuso per rastremare e formare le estremità: dai pali della luce ai giunti telescopici delle tende, dai terminali per cavi alle sonde." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Quasi tutti i metalli: acciaio, alluminio, rame, ottone, titanio; tubi, barre e fili. I più duttili si lavorano meglio.", "pag": "106" },
+    "volumi": { "valore": "Da pezzo unico a grande serie.", "pag": "104" },
+    "costoAttrezzatura": { "valore": "Da basso a moderato; di solito poco costoso, ma dipende da lunghezza e complessità. Per i giunti paralleli esistono utensili standard.", "pag": "104, 106, 108" },
+    "costoUnitario": { "valore": "Da basso a moderato; manodopera alta nelle lavorazioni manuali, che richiedono grande esperienza.", "pag": "104, 106" },
+    "tempoCiclo": { "valore": "Rapido, secondo la complessità: circa 20 secondi nel caso studio.", "pag": "104, 106" },
+    "qualitaSuperficiale": { "valore": "Generalmente molto buona; migliorabile con la lucidatura.", "pag": "105" },
+    "precisione": { "valore": "Tolleranze tipiche di 0,1 mm, anche migliori allungando molto il ciclo.", "pag": "105" },
+    "dimensioni": { "valore": "Da fili di 1 mm a diametri oltre 150 mm (pali della luce); corsa di rastremazione per esempio di 350 mm per passata.", "pag": "105–106" }
+  },
+  "vincoli": [
+    { "mini": "angolo", "titolo": "Conicità fino a 30°", "spiegazione": "L'angolo ideale non supera i 30°; si può arrivare a 45° se necessario. Gli angoli piccoli sono più semplici, rapidi ed economici.", "pag": "104" },
+    { "mini": "lunghezza", "titolo": "Rastremature lunghe in più fasi", "spiegazione": "Si può rastremare tutto il tubo, ma oltre la corsa della macchina (per esempio 350 mm) servono due o più fasi; la formatura delle estremità resta su tratti brevi.", "pag": "105" },
+    { "mini": "fori", "titolo": "Fori e filetti dopo", "spiegazione": "Il metallo si allunga più che comprimersi, quindi la rastremazione lo stira: filettature e fori si fanno come operazioni successive.", "pag": "106" }
+  ],
+  "variantiNota": "Le due tecniche elencate nel capitolo.",
+  "varianti": [
+    { "mini": "rotativa", "titolo": "Rastremazione rotativa", "titoloOriginale": "Rotary swaging", "testo": "I martelli si aprono e chiudono mentre la testa gira: forma conicità lungo il tubo e punte chiuse, utili per sonde e punte cave.", "pag": "104–106" },
+    { "mini": "idraulica", "titolo": "Rastremazione idraulica", "titoloOriginale": "Hydraulic swaging", "testo": "La pressione agisce sull'esterno o sull'interno del tubo per restringerlo o espanderlo, con almeno 5 segmenti di matrice insieme; il tubo ruota per deformarsi in modo uniforme. Le conicità richiedono utensili su misura.", "pag": "104, 108" }
+  ],
+  "correlati": [
+    { "slug": "curvatura-tubi", "nome": "Curvatura di tubi e profilati", "nota": "la lamiera calandrata e saldata dà profili rastremati", "pag": "104" },
+    { "slug": "saldatura-arco", "nome": "Saldatura ad arco", "nota": "per chiudere i profili calandrati", "pag": "104" }
+  ],
+  "fonte": { "pagine": "104–109" }
+}

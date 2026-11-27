@@ -1,0 +1,57 @@
+{
+  "slug": "battitura-lamiera",
+  "titolo": "Battitura della lamiera",
+  "titoloOriginale": "Panel Beating",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "sintesi": "Un operatore esperto stira e comprime la lamiera a mano, con ruota inglese, sagome e martelli, fino a ottenere curve lisce e superfici ondulate: è il modo di fare prototipi e carrozzerie in piccolissima serie.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di un banco di lavoro. Una lamiera piana color sabbia passa avanti e indietro sotto la ruota inglese e si incurva in due direzioni. Poi viene appoggiata su una sagoma e battuta finché ne prende la forma, con una nervatura in rilievo. Un secondo pannello viene saldato al primo, con il punto di saldatura che scorre lungo il giunto. Infine il martello da spianare liscia la superficie e il pezzo diventa verde." },
+  "schema": {
+    "titolo": "Battitura della lamiera: sequenza del caso studio",
+    "descrizione": "Vista laterale della lamiera su un banco. Le fasi mostrano la lamiera piana, la ruota inglese che la incurva, la martellatura su una sagoma di resina, la saldatura TIG fra due pannelli e la spianatura con martello e tasso.",
+    "fasi": [
+      { "titolo": "Lamiera tagliata", "durata": 1800, "pag": "76", "didascalia": "La lamiera di alluminio viene tagliata a misura; un'aggraffatrice può raccogliere il metallo in alcune zone per aumentarne la curvatura." },
+      { "titolo": "Ruota inglese", "durata": 3000, "pag": "74, 76", "didascalia": "La lamiera passa avanti e indietro fra la ruota piatta e l'incudine bombata, con passate sovrapposte: ogni passata la stira un po' e la incurva in due direzioni." },
+      { "titolo": "Martellatura su sagoma", "durata": 2600, "pag": "74, 76", "didascalia": "Quando la curvatura è vicina, la lamiera viene fissata sulla sagoma in resina e stirata e compressa a colpi su battitori di nylon o di alluminio finché la copia con precisione." },
+      { "titolo": "Saldatura dei pannelli", "durata": 2200, "pag": "73, 76", "didascalia": "I pannelli, formati uno per uno, vengono riuniti su una dima e saldati a TIG; ogni cordone viene poi livellato." },
+      { "titolo": "Spianatura e lucidatura", "durata": 2400, "pag": "74, 76", "didascalia": "Colpi leggeri e sovrapposti con il martello da spianare contro un tasso lisciano la superficie; si lima per trovare le ondulazioni, poi si carteggia e si lucida." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "72", "testo": "La battitura è uno stiramento e una compressione controllati della lamiera. Riunisce più tecniche: piegatura alla pressa, imbutitura a mano, aggraffatura, ruota inglese e martellatura su sagoma." },
+    { "fase": 2, "pag": "74", "testo": "Le curve ampie si formano di solito prima, per esempio alla ruota inglese." },
+    { "fase": 3, "pag": "74–75", "testo": "Le sagome sono 'morbide', in resina epossidica fresata a 5 assi, valide per circa 10 pezzi; oltre servono sagome 'dure' in acciaio." },
+    { "fase": 4, "pag": "73", "testo": "Il pezzo non è limitato dalla dimensione del foglio: più pannelli si saldano senza giunzioni visibili." },
+    { "fase": 5, "pag": "72–73, 75", "testo": "Un operatore esperto arriva a una finitura di classe A. Servono anni di apprendistato: per questo la manodopera è cara. Un telaio e una carrozzeria completi richiedono circa 6 settimane." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Quasi tutti i metalli ferrosi e non ferrosi; i più usati sono alluminio, magnesio e acciai di ogni tipo, anche inossidabili.", "pag": "73–74" },
+    "volumi": { "valore": "Pezzi unici e piccole serie, prototipi e riparazioni. La soglia annua oltre la quale conviene uno stampo è illeggibile: n.d.", "pag": "72", "ocr": "Soglia annua di pezzi: n.d. (OCR \"under 1 o parts per year\")" },
+    "costoAttrezzatura": { "valore": "Da basso a moderato: sagome in resina per piccole serie, in acciaio per volumi maggiori, comunque molto meno degli stampi per tranciatura o superformatura.", "pag": "72, 75" },
+    "costoUnitario": { "valore": "Da moderato ad alto, per l'alta specializzazione della manodopera.", "pag": "72, 75" },
+    "tempoCiclo": { "valore": "Lungo, secondo dimensione e complessità; circa 6 settimane per telaio e carrozzeria di un'auto.", "pag": "72, 75" },
+    "qualitaSuperficiale": { "valore": "Alta qualità artigianale; finitura di classe A dopo spianatura e lucidatura.", "pag": "72–73" },
+    "precisione": { "valore": "Dipende dall'abilità dell'operatore e dalla sagoma. Valore numerico: n.d.", "pag": "73–74" },
+    "dimensioni": { "valore": "Non limitate dal foglio, grazie ai pannelli saldati. Spessori: alluminio da 0,8 a 6 mm, acciaio da 0,8 a 3 mm.", "pag": "73–74", "ocr": "Nel libro il minimo di 0,8 mm è convertito in 0.024 in (cioè 0,6 mm): le due unità non coincidono." }
+  },
+  "vincoli": [
+    { "mini": "spessore", "titolo": "Rispettare lo spessore lavorabile", "spiegazione": "Lo spessore va da 0,8 a 6 mm per l'alluminio e da 0,8 a 3 mm per l'acciaio.", "pag": "74" },
+    { "mini": "pannelli", "titolo": "Dividere le forme grandi in pannelli", "spiegazione": "La maggior parte delle forme si ricava da più pannelli, perché da un solo foglio sarebbe poco pratico; i pannelli si saldano senza giunzioni visibili.", "pag": "73" },
+    { "mini": "rigidita", "titolo": "Irrigidire con nervature e flange", "spiegazione": "Le lamiere si possono imbutire, nervare o flangiare per aumentarne la rigidità senza aggiungere peso.", "pag": "73" }
+  ],
+  "variantiNota": "Le tecniche elencate nel capitolo; nello schema principale compaiono in sequenza.",
+  "varianti": [
+    { "mini": "sacco", "titolo": "Imbutitura a mano su sacco", "titoloOriginale": "Dishing", "testo": "Si batte la lamiera con un mazzuolo di legno, cuoio o plastica dentro un sacco di sabbia o di pallini, che cede e si adatta. È rapida ma la meno precisa; utile per profili profondi come i parafanghi delle moto, oggi soprattutto per prototipi.", "pag": "73–74" },
+    { "mini": "sagoma", "titolo": "Martellatura su sagoma", "titoloOriginale": "Jig chasing", "testo": "Detta anche hammerforming: si stira la lamiera su una sagoma colpendo battitori di plastica (profili morbidi) o di metallo (pieghe strette, spigoli, superfici piane).", "pag": "74" },
+    { "mini": "ruota", "titolo": "Ruota inglese", "titoloOriginale": "Wheel forming", "testo": "Sviluppata dai battilastra nella prima industria automobilistica inglese: la lamiera passa fra una ruota piatta e un'incudine bombata che la stira.", "pag": "74" },
+    { "mini": "spianatura", "titolo": "Spianatura", "titoloOriginale": "Planishing", "testo": "Non è una formatura ma una finitura: colpi leggeri e sovrapposti contro un tasso o una cupola stirano appena la lamiera e la rendono liscia.", "pag": "74" }
+  ],
+  "correlati": [
+    { "slug": "stampaggio-lamiera", "nome": "Stampaggio della lamiera", "nota": "geometrie simili con stampi accoppiati, per volumi maggiori", "pag": "72" },
+    { "slug": "imbutitura-profonda", "nome": "Imbutitura profonda", "nota": "geometrie simili con stampi accoppiati", "pag": "72" },
+    { "slug": "superformatura", "nome": "Formatura superplastica (superforming)", "nota": "usata insieme alla battitura nelle piccole e medie serie", "pag": "72–73" },
+    { "slug": "piegatura-pressa", "nome": "Piegatura alla pressa piegatrice", "nota": "una delle tecniche usate nella battitura", "pag": "72" },
+    { "slug": "saldatura-arco", "nome": "Saldatura ad arco", "nota": "per unire i pannelli formati", "pag": "72, 76" }
+  ],
+  "fonte": { "pagine": "72–77" }
+}

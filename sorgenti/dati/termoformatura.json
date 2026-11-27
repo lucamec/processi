@@ -1,0 +1,63 @@
+{
+  "slug": "termoformatura",
+  "titolo": "Termoformatura",
+  "titoloOriginale": "Thermoforming",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Plastica e gomma",
+  "sintesi": "Un foglio di termoplastico viene scaldato finché si ammorbidisce e poi fatto aderire a uno stampo con il vuoto o con l'aria compressa: si ottengono gusci a parete sottile, dagli imballaggi alle vasche da bagno.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una formatrice sottovuoto. Un foglio di plastica è bloccato in un telaio quadrato. Il riscaldatore sopra lo scalda e il foglio passa dal colore sabbia all'arancione. L'aria lo gonfia a bolla, poi uno stampo maschio sale dal basso dentro la bolla e il vuoto fa aderire il foglio alla sua forma. Raffreddandosi il guscio diventa verde e lo stampo si ritira." },
+  "schema": {
+    "titolo": "Formatura sottovuoto in sezione",
+    "descrizione": "Sezione verticale: in alto il riscaldatore, al centro il foglio bloccato nel telaio, sotto lo stampo maschio con i canali per l'aria. Le fasi mostrano il riscaldamento, la bolla, la salita dello stampo, il vuoto e la rifilatura del pezzo.",
+    "fasi": [
+      { "titolo": "Riscaldamento", "durata": 2400, "pag": "32", "didascalia": "Il foglio, bloccato nel telaio, viene scaldato fino al punto di rammollimento, diverso per ogni materiale (per esempio 127–182 °C per il polistirene)." },
+      { "titolo": "Bolla", "durata": 2000, "pag": "32", "didascalia": "L'aria gonfia il foglio morbido a bolla: così si stira in modo uniforme." },
+      { "titolo": "Salita dello stampo", "durata": 2000, "pag": "32", "didascalia": "Il flusso d'aria si inverte e lo stampo viene spinto dentro il foglio." },
+      { "titolo": "Vuoto", "durata": 2200, "pag": "32", "didascalia": "Attraverso i canali forati nello stampo si aspira l'aria (circa 0,96 bar): il foglio aderisce alla superficie dello stampo." },
+      { "titolo": "Raffreddamento e rifilatura", "durata": 2200, "pag": "32, 34", "didascalia": "Il pezzo si raffredda, lo stampo si ritira e il bordo in eccesso viene rifilato, a mano, con fresa guidata o a CNC." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "30, 32", "testo": "La termoformatura parte da un foglio, non da materiale fuso: per questo è versatile ed economica. Il foglio viene scaldato fino al rammollimento; alcuni materiali, come l'HIPS, hanno un intervallo di temperatura più ampio e sono più facili da formare." },
+    { "fase": 2, "pag": "32", "testo": "Il foglio viene gonfiato a bolla per stirarlo in modo uniforme." },
+    { "fase": 3, "pag": "32", "testo": "Lo stampo sale e spinge nel foglio." },
+    { "fase": 4, "pag": "30, 32", "testo": "Il vuoto fa aderire il foglio allo stampo. Lo stampo è a una sola faccia: solo un lato del pezzo ne prende la forma." },
+    { "fase": 5, "pag": "33", "testo": "Il pezzo si raffredda e viene rifilato. Le macchine a foglio sono caricate a mano; quelle a bobina sono automatiche e formano, rifilano e impilano in continuo." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Quasi tutti i termoplastici; i più comuni sono ABS, PET e PETG, PP, PC, HIPS e HDPE. Esistono fogli multistrato, testurizzati o prestampati.", "pag": "31–33" },
+    "volumi": { "valore": "A foglio: da pezzo unico a piccola serie. A bobina: da serie a grande serie.", "pag": "30" },
+    "costoAttrezzatura": { "valore": "Da basso a moderato. Gli stampi più cari sono in alluminio lavorato; quelli per la formatura a pressione costano il 30–50% in più, ma molto meno di uno stampo a iniezione.", "pag": "30, 33", "ocr": "Durata di uno stampo in resina: da n.d. a 500 cicli (OCR \"io\" per il valore minimo)" },
+    "costoUnitario": { "valore": "Da basso a moderato, circa 3 volte il costo del materiale; il foglio costa un po' più della materia prima.", "pag": "30" },
+    "tempoCiclo": { "valore": "A bobina: da 10 secondi a 1 minuto. A foglio: 1–8 minuti secondo la scheda riassuntiva, mentre il testo parla di 1–8 pezzi al minuto.", "pag": "30, 33" },
+    "qualitaSuperficiale": { "valore": "Dipende da materiale, pressione e tecnica. La pressione riproduce i dettagli quasi come l'iniezione; il lato a contatto con lo stampo è meno curato.", "pag": "30–31" },
+    "precisione": { "valore": "Ritiro fino al 2% (ABS 0,6%, HDPE 2%). Tolleranze numeriche: n.d.", "pag": "32" },
+    "dimensioni": { "valore": "Foglio da 1 a 12 mm (a foglio) o da 0,1 a 2,5 mm (a bobina). Pezzi di norma fino a 1,5 × 3,5 m, alcune macchine fino a 2,5 × 4 m.", "pag": "32" }
+  },
+  "vincoli": [
+    { "mini": "profondita", "titolo": "Profondità non oltre il diametro", "spiegazione": "Di solito non è pratico che la profondità superi il diametro del pezzo.", "pag": "32" },
+    { "mini": "sformo", "titolo": "Sformo di 2° sugli stampi maschi", "spiegazione": "Raffreddandosi il foglio si ritira fino al 2% e stringe le sporgenze: si consiglia di solito un angolo di sformo di 2°.", "pag": "32" },
+    { "mini": "spigoli", "titolo": "Evitare spigoli vivi e angoli triedri", "spiegazione": "Il materiale si stira di più nei profili profondi e ondulati: negli spigoli vivi e dove si incontrano tre spigoli si assottiglia troppo e diventa debole.", "pag": "32" },
+    { "mini": "punzone", "titolo": "Profili profondi: punzone ausiliario", "spiegazione": "Per i profili profondi il punzone stira il foglio prima della formatura e garantisce uno spessore sufficiente; altrimenti il materiale si strappa.", "pag": "30, 32" },
+    { "mini": "lato", "titolo": "Nascondere il lato a contatto con lo stampo", "spiegazione": "La faccia che tocca lo stampo ha una finitura peggiore, quella opposta resta liscia: di solito si progetta il pezzo perché il lato dello stampo non si veda.", "pag": "31" },
+    { "mini": "sottosquadri", "titolo": "Sottosquadri con inserti, fresatura o saldatura", "spiegazione": "Gli angoli rientranti si ottengono con inserti, messi e tolti a mano; in alternativa si fresa il pezzo dopo la formatura, o si stampano parti separate da saldare.", "pag": "31" }
+  ],
+  "approfondimento": {
+    "titolo": "Fori per l'aria e texture",
+    "testo": "I canali forati nello stampo lasciano piccoli segni in rilievo sul pezzo. Sulle superfici estetiche si evitano con stampi in alluminio microporoso, che però durano meno perché i pori si intasano. Anche le texture dello stampo aiutano l'aria a defluire (texture 'aperte').",
+    "pag": "32"
+  },
+  "variantiNota": "La formatura sottovuoto è lo schema principale; qui sotto le altre tecniche descritte nel capitolo.",
+  "varianti": [
+    { "mini": "pressione", "titolo": "Formatura a pressione", "titoloOriginale": "Pressure forming", "testo": "È l'inverso del vuoto: il foglio viene spinto sullo stampo con circa 6,9 bar di aria compressa. Si riproducono dettagli e texture con molta più precisione, con finiture vicine allo stampaggio a iniezione; lo stampo costa di più ma resta a una sola faccia.", "pag": "30–32" },
+    { "mini": "punzone", "titolo": "Formatura con punzone ausiliario", "titoloOriginale": "Plug-assisted forming", "testo": "Per i profili profondi in stampo femmina un punzone idraulico spinge il foglio nella cavità e lo stira in modo uniforme; poi si aspira l'aria e il punzone si ritira.", "pag": "30, 32" },
+    { "mini": "doppia", "titolo": "Termoformatura a doppia lastra", "titoloOriginale": "Twin sheet thermoforming", "testo": "Due fogli vengono formati uno sopra l'altro, su uno stampo superiore e uno inferiore, e poi pressati insieme: il calore residuo li salda con una resistenza simile a quella del materiale. Si ottengono corpi cavi leggeri e rigidi, anche di due materiali diversi, eventualmente riempiti di schiuma.", "pag": "30–32, 34" }
+  ],
+  "correlati": [
+    { "slug": "laminazione-compositi", "nome": "Laminazione dei compositi", "nota": "alcuni pezzi a doppia lastra la sostituiscono", "pag": "31" },
+    { "slug": "stampaggio-iniezione", "nome": "Stampaggio a iniezione", "nota": "finiture simili con la formatura a pressione, stampo molto più caro", "pag": "30–31" },
+    { "slug": "soffiaggio", "nome": "Soffiaggio", "nota": "corpi cavi simili alla doppia lastra", "pag": "31" },
+    { "slug": "stampaggio-rotazionale", "nome": "Stampaggio rotazionale", "nota": "corpi cavi simili alla doppia lastra", "pag": "31" }
+  ],
+  "fonte": { "pagine": "30–35" }
+}

@@ -1,0 +1,54 @@
+{
+  "slug": "microfusione",
+  "titolo": "Microfusione a cera persa",
+  "titoloOriginale": "Investment Casting",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "sintesi": "Un modello di cera viene rivestito di ceramica; la cera si scioglie e nel guscio vuoto si cola il metallo: si ottengono pezzi metallici complessi e precisi, anche con sottosquadri, da pochi grammi a decine di chili.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di un albero di cera color sabbia con quattro pezzi attaccati a un canale centrale. Immersione dopo immersione si forma attorno un guscio ceramico chiaro, mostrato in sezione. La cera sparisce e il guscio si arroventa in forno; poi il metallo arancione entra dall'alto e riempie il guscio. Infine il guscio viene rotto e restano i pezzi metallici verdi." },
+  "schema": {
+    "titolo": "Microfusione a cera persa in sezione",
+    "descrizione": "Sezione di un albero: un canale centrale con un imbuto in alto e quattro pezzi attaccati ai lati. Le fasi mostrano i modelli in cera, il guscio ceramico che cresce attorno, la deceratura e cottura, la colata del metallo e la rottura del guscio.",
+    "fasi": [
+      { "titolo": "Modelli e albero", "durata": 2200, "pag": "130–132", "didascalia": "I modelli in cera, iniettati in stampi d'alluminio con il loro attacco, vengono saldati con una lama calda a un canale centrale: un albero può portare decine o centinaia di pezzi." },
+      { "titolo": "Rivestimento ceramico", "durata": 2600, "pag": "131, 133–134", "didascalia": "L'albero viene immerso in una sospensione ceramica e cosparso di sabbia refrattaria, da 7 a 15 volte con grani via via più grossi; fra uno strato e l'altro asciuga per 3 ore." },
+      { "titolo": "Deceratura e cottura", "durata": 2400, "pag": "131, 134", "didascalia": "La cera viene fusa in un'autoclave a vapore e recuperata; il guscio vuoto viene cotto a 1095 °C." },
+      { "titolo": "Colata", "durata": 2400, "pag": "131, 134", "didascalia": "Con il guscio ancora rovente si cola il metallo, di solito per gravità (oppure aspirato con il vuoto o spinto a pressione): il calore del guscio lo aiuta a riempire anche le forme più complesse." },
+      { "titolo": "Rottura del guscio", "durata": 2200, "pag": "131, 134", "didascalia": "Dopo circa 3 ore di raffreddamento il guscio si rompe con colpi e vibrazioni; i pezzi si staccano dal canale, si rifiniscono e si sabbiano o si lasciano grezzi di fusione." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "130, 132", "testo": "Il processo ha tre elementi: modello a perdere, stampo ceramico a perdere e colata. Lo stampo per la cera è più grande del 3% perché la cera si ritira dell'1% e il metallo del 2%." },
+    { "fase": 2, "pag": "131", "testo": "Il primo strato, a grana finissima, dà la qualità della superficie interna del guscio; per questo si applica a mano." },
+    { "fase": 4, "pag": "130", "testo": "Né il modello né il pezzo devono essere estratti da uno stampo: si possono quindi fondere sottosquadri e spessori variabili impossibili con altri processi." },
+    { "fase": 5, "pag": "130–131", "testo": "I pezzi hanno proprietà metallurgiche superiori; si lavorano solo le zone che toccavano i canali." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Quasi tutte le leghe ferrose e non ferrose: acciai al carbonio, basso legati e inossidabili, alluminio, titanio, zinco, leghe di rame, metalli preziosi, nichel, cobalto, superleghe.", "pag": "132" },
+    "volumi": { "valore": "Da prototipi alla grande serie (oltre 40 000 pezzi al mese); oltre i 5000 pezzi può convenire la pressofusione.", "pag": "130" },
+    "costoAttrezzatura": { "valore": "Da basso a moderato per gli stampi della cera; stampi in ceramica a perdere. Uno stampo semplice in due parti dura a lungo.", "pag": "130, 132" },
+    "costoUnitario": { "valore": "Da moderato ad alto; manodopera specializzata e piuttosto costosa.", "pag": "130, 132" },
+    "tempoCiclo": { "valore": "Lungo: di solito 24 ore o più.", "pag": "130, 132" },
+    "qualitaSuperficiale": { "valore": "Molto alta: spesso i pezzi restano grezzi di fusione o si sabbiano.", "pag": "130–131" },
+    "precisione": { "valore": "Di norma entro 125 micron ogni 25 mm.", "pag": "130" },
+    "dimensioni": { "valore": "Da pochi grammi a oltre 35 kg; da meno di 5 mm a oltre 0,5 m³.", "pag": "130" }
+  },
+  "vincoli": [
+    { "mini": "pareti", "titolo": "Spessore secondo la lega", "spiegazione": "Alluminio e zinco: di solito 2–3 mm, fino a 1,5 mm. Acciaio e leghe di rame: oltre 3 mm, 2 mm su piccole zone. Le pareti non devono per forza essere uniformi: a volte servono parti più spesse per far scorrere il metallo, anche con più attacchi di colata.", "pag": "132" },
+    { "mini": "filetti", "titolo": "Filetti interni e fori ciechi lunghi in ripresa", "spiegazione": "I getti sono precisi e richiedono poche lavorazioni, ma filettature interne e fori ciechi lunghi si fanno solo dopo.", "pag": "132" },
+    { "mini": "nervature", "titolo": "Nervare contro le deformazioni", "spiegazione": "Come negli altri processi di formatura allo stato liquido, i pezzi si nervano e rinforzano per evitare deformazioni nel raffreddamento.", "pag": "132" }
+  ],
+  "variantiNota": "Il libro non elenca varianti di questo processo. Qui sotto le possibilità descritte nel testo.",
+  "varianti": [
+    { "mini": "prototipo", "titolo": "Modelli alternativi alla cera iniettata", "titoloOriginale": "Thermojet, Quickcast and other patterns", "testo": "Oltre alla cera iniettata si usano cera prototipata, modelli plastici (Quickcast), acrilici e modelli lavorati di macchina; qualsiasi materiale con dilatazione abbastanza bassa, anche se alcuni bruciano più lentamente. La cera resta la migliore per grandi serie e finiture.", "pag": "130, 132" },
+    { "mini": "solubili", "titolo": "Anime in cera solubile", "titoloOriginale": "Soluble wax cores", "testo": "Le forme interne complesse si ottengono stampando a parte elementi in cera solubile, sovrastampati con cera normale; finita la colata della cera, il pezzo va in acqua e la cera solubile si scioglie.", "pag": "130" }
+  ],
+  "correlati": [
+    { "slug": "pressofusione", "nome": "Pressofusione", "nota": "più economica oltre i 5000 pezzi, se la forma lo permette", "pag": "130" },
+    { "slug": "mim", "nome": "Stampaggio a iniezione di polveri metalliche (MIM)", "nota": "alternativa per pezzi piccoli", "pag": "130" },
+    { "slug": "fusione-sabbia", "nome": "Fusione in sabbia", "nota": "alternativa più economica e meno precisa", "pag": "130" },
+    { "slug": "prototipazione-rapida", "nome": "Prototipazione rapida", "nota": "per i modelli dei prototipi", "pag": "130" },
+    { "slug": "elettrolucidatura", "nome": "Elettrolucidatura", "nota": "finitura dei pezzi in inox del caso studio", "pag": "132" }
+  ],
+  "fonte": { "pagine": "130–135" }
+}

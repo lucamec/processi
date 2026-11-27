@@ -1,0 +1,54 @@
+{
+  "slug": "saldatura-arco",
+  "titolo": "Saldatura ad arco",
+  "titoloOriginale": "Arc Welding",
+  "parte": "Parte 3 – Giunzione",
+  "categoria": "Termico",
+  "sintesi": "Un arco elettrico fra elettrodo e pezzo fonde i bordi del giunto, e spesso l'elettrodo stesso, in un bagno che solidifica in un cordone; gas o scoria lo proteggono dall'aria. Serve solo per i metalli.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una saldatura MIG. Due lamiere d'acciaio accostate su un banco, con il morsetto di massa. La torcia scende, si accende un arco luminoso dentro una nuvola di gas azzurro e la torcia avanza lungo il giunto lasciando un cordone arancione incandescente; ai lati le lamiere si colorano per il calore. Spento l'arco, il cordone si raffredda e diventa verde." },
+  "schema": {
+    "titolo": "Saldatura MIG, vista di lato lungo il giunto",
+    "descrizione": "Vista laterale di due lamiere sul banco con il morsetto di massa e la torcia MIG sopra. Le fasi mostrano la preparazione, l'innesco dell'arco protetto dal gas, l'avanzamento che deposita il cordone e il raffreddamento con la zona termicamente alterata.",
+    "fasi": [
+      { "titolo": "Preparazione", "durata": 1800, "pag": "285", "didascalia": "Il pezzo si collega alla massa del generatore, su metallo nudo e lontano da parti che la corrente potrebbe danneggiare." },
+      { "titolo": "Innesco", "durata": 2000, "pag": "282, 284", "didascalia": "Fra il filo-elettrodo, alimentato di continuo da una bobina, e il pezzo si forma un arco che fonde il giunto e il filo." },
+      { "titolo": "Avanzamento", "durata": 3000, "pag": "282, 284", "didascalia": "La torcia avanza lungo il giunto; un getto separato di gas (argon con ossigeno e CO₂) stabilizza l'arco e protegge il bagno di fusione." },
+      { "titolo": "Raffreddamento", "durata": 2000, "pag": "282, 285", "didascalia": "Il bagno solidifica rapidamente in un cordone; attorno resta una zona termicamente alterata con tensioni residue." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "282", "testo": "Le saldature ad arco più comuni sono a elettrodo rivestito (MMA), MIG e TIG; ci sono poi l'arco sommerso (SAW) e il plasma (PW). MMA, MIG e TIG si possono fare a mano; plasma e arco sommerso sono più adatti a sistemi meccanizzati." },
+    { "fase": 2, "pag": "284", "testo": "Il MIG si distingue dall'MMA perché il filo è continuo e il gas è fornito a parte: più produttivo, più flessibile e adatto all'automazione. Rappresenta circa metà di tutte le saldature, molto usato nell'assemblaggio delle auto." },
+    { "fase": 3, "pag": "285", "testo": "L'efficienza si misura con il tasso di deposito e il fattore di servizio: circa 2 kg/h per l'MMA, 0,5 per il TIG, 4 per il MIG e 12,5 per l'arco sommerso." },
+    { "fase": 4, "pag": "285", "testo": "Come ogni processo termico, la saldatura crea una zona alterata: la struttura del metallo cambia, con proprietà diverse e possibili cricche." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "MMA: acciaio, ghisa, leghe di nichel (e di rame con elettrodi appositi). MIG, TIG, plasma e arco sommerso: metalli ferrosi e non ferrosi; il TIG è il processo principale per il titanio, il MIG si usa per acciai, alluminio e magnesio.", "pag": "285–286" },
+    "volumi": { "valore": "Da pezzo unico a produzione di massa.", "pag": "282" },
+    "costoAttrezzatura": { "valore": "Nessuno, salvo maschere o morsetti speciali.", "pag": "282, 286" },
+    "costoUnitario": { "valore": "Basso; manodopera alta nelle operazioni manuali, molto ridotta in quelle automatiche.", "pag": "282, 286" },
+    "tempoCiclo": { "valore": "Da lento a rapido: lento l'MMA per il cambio degli elettrodi, rapido il MIG soprattutto automatico, il TIG a metà.", "pag": "282, 286" },
+    "qualitaSuperficiale": { "valore": "Alta; nelle operazioni manuali dipende dall'abilità dell'operatore, quelle automatiche danno i giunti più puliti.", "pag": "282, 284–285" },
+    "precisione": { "valore": "Cordoni precisi e puliti con MMA, MIG e TIG. Tolleranze numeriche: n.d.", "pag": "284" },
+    "dimensioni": { "valore": "MIG per spessori da 1 a 5 mm; plasma da 0,1 a 10 mm.", "pag": "285" }
+  },
+  "vincoli": [
+    { "mini": "accesso", "titolo": "Il giunto deve essere raggiungibile", "spiegazione": "La saldatura richiede la vista diretta: saldatore o robot devono poter arrivare al giunto, la cui geometria influisce sulla velocità.", "pag": "285" },
+    { "mini": "massa", "titolo": "Messa a terra su metallo nudo", "spiegazione": "Il pezzo va collegato alla massa: vernici e rivestimenti isolano e possono impedire la saldatura; il contatto va posto vicino al giunto per non far passare la corrente in parti delicate.", "pag": "285" },
+    { "mini": "materiali", "titolo": "Coppie di metalli compatibili", "spiegazione": "Alcuni metalli, come il titanio, si saldano solo a se stessi; l'acciaio al carbonio invece si unisce all'inox o alle leghe di nichel, e l'alluminio al magnesio.", "pag": "285" }
+  ],
+  "variantiNota": "Le altre tecniche ad arco descritte nel capitolo; lo schema principale mostra la saldatura MIG.",
+  "varianti": [
+    { "mini": "mma", "titolo": "Elettrodo rivestito", "titoloOriginale": "Manual metal arc (MMA)", "testo": "Il rivestimento dell'elettrodo genera gas e scoria; il più portatile, per cantiere e riparazioni.", "pag": "282–283" },
+    { "mini": "tig", "titolo": "TIG", "titoloOriginale": "Tungsten inert gas (TIG)", "testo": "Elettrodo di tungsteno non consumabile; preciso e pulito, per lamiere sottili e lavori delicati.", "pag": "284, 286" },
+    { "mini": "plasma", "titolo": "Plasma", "titoloOriginale": "Plasma welding (PW)", "testo": "Microplasma, corrente media e keyhole; dal filo sottile allo spessore pieno in una passata.", "pag": "284, 286" },
+    { "mini": "sommerso", "titolo": "Arco sommerso", "titoloOriginale": "Submerged arc welding (SAW)", "testo": "Arco sotto uno strato di flusso, solo in piano; il tasso di deposito più alto.", "pag": "285–287" }
+  ],
+  "correlati": [
+    { "slug": "saldatura-fascio", "nome": "Saldatura a fascio", "nota": "alternativa per spessori elevati", "pag": "284" },
+    { "slug": "saldatura-attrito", "nome": "Saldatura per attrito", "nota": "alternativa per alcune applicazioni", "pag": "284" },
+    { "slug": "saldatura-resistenza", "nome": "Saldatura a resistenza", "nota": "alternativa per alcune applicazioni", "pag": "284" },
+    { "slug": "taglio-laser", "nome": "Taglio laser", "nota": "con il taglio, per costruire prototipi precisi", "pag": "285" }
+  ],
+  "fonte": { "pagine": "282–287" }
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "elettroformatura",
+  "titolo": "Elettroformatura",
+  "titoloOriginale": "Electroforming",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "sintesi": "Il metallo si deposita per via elettrolitica su un mandrino reso conduttivo, strato dopo strato, fino a formare un guscio che ne copia la superficie con precisione submicrometrica.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una vasca trasparente con l'elettrolita. Da un lato c'è un cestello di anodi di rame, dall'altro un mandrino con una superficie decorata in rilievo. Il mandrino viene ricoperto d'argento, poi piccole particelle viaggiano dagli anodi verso il mandrino e uno strato arancione cresce sulla sua faccia. Alla fine il guscio, verde, si stacca dal mandrino conservandone ogni dettaglio." },
+  "schema": {
+    "titolo": "Elettroformatura in sezione",
+    "descrizione": "Sezione di una vasca: a sinistra gli anodi di rame in un cestello, a destra il mandrino in silicone collegato al polo negativo. Le fasi mostrano il mandrino, lo strato d'argento, la crescita del metallo e il distacco del guscio.",
+    "fasi": [
+      { "titolo": "Mandrino", "durata": 2000, "pag": "141–142", "didascalia": "Il mandrino è il negativo del pezzo: qui un calco in silicone di un'incisione a mano, montato su un supporto di plastica." },
+      { "titolo": "Strato conduttivo", "durata": 2000, "pag": "140, 142", "didascalia": "Il mandrino, non conduttivo, viene ricoperto di polvere d'argento: è la base su cui il metallo si depositerà. Fili di rame lo collegano alla corrente lontano dalla faccia utile." },
+      { "titolo": "Deposizione", "durata": 3000, "pag": "141–142", "didascalia": "Immerso nel bagno e collegato alla corrente continua, il mandrino attira gli ioni metallici, che vi si legano; gli anodi si sciolgono e reintegrano la soluzione. Nel caso studio in 48 ore si forma 1 mm di rame." },
+      { "titolo": "Distacco", "durata": 2200, "pag": "141–142", "didascalia": "Il guscio si stacca dal mandrino, che si pulisce e si riusa; il pezzo si pulisce e si rifila." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "140–141", "testo": "È la galvanostegia applicata a superfici non conduttive. I mandrini si fanno con prototipazione rapida, laser, incisione, CNC, colata sottovuoto o stampaggio; in silicone sono durevoli e riutilizzabili." },
+    { "fase": 3, "pag": "140–141", "testo": "Si lavora più lentamente che nella galvanostegia, per maggiore precisione. Non servendo pressione, una superficie piana e un'incisione intricata si formano allo stesso modo." },
+    { "fase": 4, "pag": "141", "testo": "Il mandrino si può togliere e riusare, sciogliere oppure lasciare dentro il pezzo. La superficie è la replica esatta, rovesciata, di quella del mandrino." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Si depositano nichel, rame, argento e oro (morbidi, tranne il nichel). Si può elettroformare o incapsulare quasi ogni materiale: legno, ceramica, plastica.", "pag": "141–142" },
+    "volumi": { "valore": "Da pezzo unico a piccola serie.", "pag": "140" },
+    "costoAttrezzatura": { "valore": "Di solito basso; dipende dalla complessità del mandrino.", "pag": "140, 142" },
+    "costoUnitario": { "valore": "Alto, anche secondo il metallo; i costi di esercizio non calano molto con i volumi.", "pag": "140, 142" },
+    "tempoCiclo": { "valore": "Molto lungo: da qualche ora a 3 settimane, secondo materiale e spessore.", "pag": "140–142" },
+    "qualitaSuperficiale": { "valore": "Altissima: copia esatta del mandrino, fino al di sotto del micron, con spessore uniforme; l'argento è puro al 100%.", "pag": "140–141" },
+    "precisione": { "valore": "Riproduzione submicrometrica; nei pezzi enormi (16 m²) la tolleranza scende a 500 micron.", "pag": "140, 142" },
+    "dimensioni": { "valore": "Pareti da 5 micron a 25 mm; di norma fino a 2 m², con vasche speciali fino a 16 m².", "pag": "141–142" }
+  },
+  "vincoli": [
+    { "mini": "spessore", "titolo": "Lo spessore è uniforme", "spiegazione": "La parete cresce in modo uniforme: aggiungere nervature, incavi o rilievi non cambia né il tempo né il costo, ma non si ottengono spessori diversi in zone diverse.", "pag": "140, 142" },
+    { "mini": "dimensione", "titolo": "La vasca decide la dimensione", "spiegazione": "La dimensione massima dipende dalla vasca: di norma fino a 2 m². Nelle vasche più grandi (16 m²) la tolleranza scende a 500 micron e servono fino a 3 settimane.", "pag": "142" },
+    { "mini": "rientri", "titolo": "Rientri con mandrini flessibili", "spiegazione": "Con mandrini in gomma semiflessibile si ottengono forme intricate e rientri con un unico mandrino.", "pag": "142" }
+  ],
+  "variantiNota": "Il libro non elenca varianti di questo processo. Qui sotto la possibilità descritta nel caso studio.",
+  "varianti": [
+    { "mini": "incapsulamento", "titolo": "Incapsulamento in metallo", "titoloOriginale": "Metal encapsulation", "testo": "Il mandrino viene ricoperto interamente da uno strato metallico uniforme e non si può riusare; spesso serve da modello per ricavare mandrini riutilizzabili. Unisce un materiale economico con le qualità decorative e di resistenza di rame o nichel.", "pag": "142" }
+  ],
+  "correlati": [
+    { "slug": "galvanostegia", "nome": "Galvanostegia (elettrodeposizione)", "nota": "lo stesso principio su superfici conduttive", "pag": "140" },
+    { "slug": "lavorazione-cnc", "nome": "Lavorazione CNC", "nota": "per i mandrini; gli stampi in nichel elettroformato oltre 1 m³ possono costare meno", "pag": "140–141" },
+    { "slug": "microfusione", "nome": "Microfusione a cera persa", "nota": "forme simili; l'elettroformatura ne produce anche gli stampi per la cera", "pag": "141" },
+    { "slug": "taglio-laser", "nome": "Taglio laser", "nota": "per ricavare i mandrini", "pag": "141" }
+  ],
+  "fonte": { "pagine": "140–143" }
+}

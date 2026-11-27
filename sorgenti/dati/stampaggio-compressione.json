@@ -1,0 +1,51 @@
+{
+  "slug": "stampaggio-compressione",
+  "titolo": "Stampaggio a compressione",
+  "titoloOriginale": "Compression Molding",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Plastica e gomma",
+  "sintesi": "Una dose di materiale viene messa in uno stampo caldo e schiacciata tra le due metà finché riempie la cavità e indurisce: è il processo tipico delle plastiche termoindurenti e della gomma.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una pressa con stampo in tre parti in basso (un blocco fisso e due carrelli laterali) e un punzone in alto. Una pastiglia color sabbia viene messa nella cavità; il punzone scende e il materiale, arancione, riempie la cavità a forma di coppa; poi indurisce e diventa verde. Infine il punzone sale, i carrelli si aprono e l'estrattore spinge in alto il pezzo." },
+  "schema": {
+    "titolo": "Stampaggio a compressione di un termoindurente in sezione",
+    "descrizione": "Sezione verticale della pressa: in basso il piano fisso con lo stampo inferiore e due carrelli laterali che formano le pareti esterne di una coppa; in alto il punzone mosso dal pistone idraulico. Le fasi mostrano il carico della pastiglia, la compressione, l'indurimento e l'estrazione.",
+    "fasi": [
+      { "titolo": "Carico", "durata": 2000, "pag": "48", "didascalia": "Una dose di polvere o una pastiglia, preriscaldata a circa 100 °C, viene messa nella cavità dello stampo inferiore." },
+      { "titolo": "Compressione", "durata": 2600, "pag": "48", "didascalia": "Il punzone scende in modo graduale e costante, così il materiale si distribuisce in tutta la cavità. A circa 115 °C la plastica diventa fluida." },
+      { "titolo": "Indurimento", "durata": 2400, "pag": "48", "didascalia": "A circa 150 °C il termoindurente indurisce (reticola): l'operazione dura circa 2 minuti." },
+      { "titolo": "Apertura ed estrazione", "durata": 2400, "pag": "48–49", "didascalia": "Le parti dello stampo si separano in sequenza; se serve, l'estrattore spinge fuori il pezzo. La bava lungo le linee di chiusura si toglie a mano o in vibratrice." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "44, 48", "testo": "Il principio è semplice: una dose di materiale va tra due stampi accoppiati e già caldi. Le pastiglie preriscaldate rendono la produzione più veloce e il pezzo migliore." },
+    { "fase": 2, "pag": "48", "testo": "La pressa lavora fra 40 e 400 tonnellate, di solito non oltre 150; più pressione dà migliore finitura e riproduzione dei dettagli." },
+    { "fase": 3, "pag": "46, 48", "testo": "Il materiale reticola per effetto di tempo, temperatura e pressione. Poiché viene compresso e non iniettato, il pezzo ha meno tensioni ed è meno soggetto a deformazioni." },
+    { "fase": 4, "pag": "46, 49", "testo": "Il pezzo viene estratto. Inserti metallici e componenti elettrici si possono includere nello stampaggio." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Termoindurenti: fenoliche, poliestere, urea, melammina; gomme, soprattutto siliconi. Cariche di fibra di vetro, talco, cotone o farina di legno. I termoplastici sono possibili ma sconsigliati.", "pag": "46" },
+    "volumi": { "valore": "Serie medie e grandi.", "pag": "44" },
+    "costoAttrezzatura": { "valore": "Moderato, molto più basso dell'iniezione, soprattutto per le lastre di gomma che usano stampi semplici azionati a mano.", "pag": "44, 46" },
+    "costoUnitario": { "valore": "Basso: 3–4 volte il costo del materiale. Manodopera piuttosto alta.", "pag": "44, 46" },
+    "tempoCiclo": { "valore": "Plastica: circa 2 minuti per pezzo. Gomma: circa 10 minuti o più nella pressa calda.", "pag": "44, 46" },
+    "qualitaSuperficiale": { "valore": "Molto buona finitura e riproduzione dei dettagli; pezzi molto resistenti. Le fenoliche sono naturalmente marrone scuro: solo colori scuri, salvo verniciatura.", "pag": "44, 46" },
+    "precisione": { "valore": "Pezzi poco tensionati e poco soggetti a deformazione. Tolleranze numeriche: n.d.", "pag": "46" },
+    "dimensioni": { "valore": "Da 0,1 a 8 kg (pressa da 400 t); pareti da meno di 1 mm (0,3 mm nella gomma) a 50 mm e oltre.", "pag": "46" }
+  },
+  "vincoli": [
+    { "mini": "spessore", "titolo": "Evitare le sezioni massicce", "spiegazione": "La reazione è esotermica: le pareti spesse tendono a formare bolle e difetti. Conviene ridurre lo spessore e svuotare le parti massicce o usare inserti; alcuni pezzi, come quelli soggetti a forti sollecitazioni dielettriche, richiedono però pareti spesse.", "pag": "46" },
+    { "mini": "sfiati", "titolo": "Far uscire i gas", "spiegazione": "Il termoindurente libera gas mentre si scalda e indurisce: lo stampo deve prevedere sfiati e nervature studiate. Anche questo limita le dimensioni del pezzo.", "pag": "46" },
+    { "mini": "altezza", "titolo": "Preferire le geometrie a lastra", "spiegazione": "Gli stampi multipli per lastre funzionano solo con geometrie basse: in una cavità alta sarebbe praticamente impossibile spingere il materiale.", "pag": "46" },
+    { "mini": "gomma", "titolo": "Sformo e sottosquadri: dipende dal materiale", "spiegazione": "Con la gomma si può eliminare lo sformo e fare piccoli sottosquadri, perché il pezzo si stira sul nucleo. Con i termoindurenti rigidi lo sformo si riduce solo con stampo ed estrattori ben studiati, e i rientri richiedono carrelli laterali.", "pag": "46, 48", "ocr": "Sformo minimo per la plastica: n.d. (OCR \"less than 0.50\", unità illeggibile)" }
+  ],
+  "variantiNota": "Lo schema principale mostra la compressione della plastica; qui sotto la variante per la gomma descritta nel capitolo.",
+  "varianti": [
+    { "mini": "gomma", "titolo": "Compressione della gomma", "titoloOriginale": "Compression Molding Rubber", "testo": "La sequenza è la stessa della plastica, ma più lenta. La gomma viene condizionata per eliminare la cristallinità, messa nello stampo inferiore e compressa con calore; dopo circa 10 minuti è vulcanizzata e i pezzi si staccano dalla cavità. Le linee di strappo fanno separare la bava in modo regolare e lasciano un bordo pulito. Si integrano anche cerniere elastiche e più colori.", "pag": "45–47" }
+  ],
+  "correlati": [
+    { "slug": "dmc-smc", "nome": "Stampaggio di DMC e SMC", "nota": "compressione di plastiche rinforzate con fibre lunghe", "pag": "44–45" },
+    { "slug": "stampaggio-iniezione", "nome": "Stampaggio a iniezione", "nota": "stampi accoppiati più costosi, usato soprattutto per i termoplastici", "pag": "45" },
+    { "slug": "colata-sottovuoto", "nome": "Colata sottovuoto", "nota": "per prototipi e serie più piccole in PUR", "pag": "45" }
+  ],
+  "fonte": { "pagine": "44–49" }
+}

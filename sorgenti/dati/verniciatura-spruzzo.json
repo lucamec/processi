@@ -1,0 +1,53 @@
+{
+  "slug": "verniciatura-spruzzo",
+  "titolo": "Verniciatura a spruzzo",
+  "titoloOriginale": "Spray Painting",
+  "parte": "Parte 4 – Finitura",
+  "categoria": "Processi additivi (rivestimenti)",
+  "sintesi": "Una pistola ad aria compressa nebulizza vernici, primer, lacche, oli, sigillanti e smalti sulla superficie, in strati sottili: si colora, si protegge e si decora quasi ogni materiale, dal prototipo alla grande serie.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di un pannello piano su un supporto in una cabina. Una striscia di nastro azzurro copre la parte alta. La pistola passa avanti e indietro e il pannello si copre riga dopo riga di primer grigio; un tampone abrasivo lo leviga; poi la pistola passa di nuovo e lo ricopre di verde. Alla fine il nastro si toglie e resta una fascia grigia sopra il verde." },
+  "schema": {
+    "titolo": "Strati di verniciatura a spruzzo, in sezione",
+    "descrizione": "Sezione di un supporto con gli strati di stucco, primer e finitura, e una pistola a gravità sopra. Le fasi mostrano la mascheratura, il primer, la carteggiatura che lo assottiglia, la finitura e la rimozione della maschera.",
+    "fasi": [
+      { "titolo": "Preparazione", "durata": 2000, "pag": "352, 354", "didascalia": "I giunti si stuccano e si levigano; il nastro protegge le zone da non verniciare." },
+      { "titolo": "Primer", "durata": 2400, "pag": "352, 354", "didascalia": "Si spruzza il primer, filtrato da grumi e polvere, in passate sovrapposte del 50% circa, in cabina con l'aria filtrata e ricambiata." },
+      { "titolo": "Carteggiatura", "durata": 2000, "pag": "354", "didascalia": "Asciutto il primer, si carteggia: la mano finale mostrerebbe ogni imperfezione, quindi se serve si aggiungono altre mani." },
+      { "titolo": "Finitura", "durata": 2400, "pag": "352, 354", "didascalia": "Si stende la mano a finire; più colori si ottengono mascherando e spruzzando in tempi diversi, con bordi della maschera sfalsati per non creare gradini." },
+      { "titolo": "Essiccazione", "durata": 2000, "pag": "353", "didascalia": "Le vernici all'acqua asciugano in 2–4 ore, quelle a solvente in 4–6; tutte richiedono almeno 12 ore per indurire del tutto." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "350", "testo": "La vernice ha una o più funzioni: stucco, fondo, colore, decorazione e protezione; finiture lucide e intense nascono da preparazione accurata, base e mano a finire." },
+    { "fase": 2, "pag": "352", "testo": "Le pistole sono a gravità, ad aspirazione o a pressione: un getto d'aria nebulizza la vernice in un cono, che un secondo getto schiaccia in un'ellisse regolabile." },
+    { "fase": 4, "pag": "352–353", "testo": "Le vernici sono pigmento, legante, diluente e additivi, in acqua o in solvente; esistono anche le bicomponenti termoindurenti. Le vernici a solvente liberano composti organici volatili, motivo per cui l'auto è passata a sistemi all'acqua." },
+    { "fase": 5, "pag": "351", "testo": "La lucentezza va da opaco a semilucido, satinato e lucido; i colori si abbinano alle scale RAL e Pantone." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Quasi tutti i materiali; alcuni richiedono uno strato intermedio compatibile con il pezzo e con la finitura. Gli smalti vetrosi solo su metalli e ceramiche.", "pag": "352–353" },
+    "volumi": { "valore": "Da pezzo unico a produzione di massa; robot nelle grandi serie di auto, elettronica ed elettrodomestici.", "pag": "350" },
+    "costoAttrezzatura": { "valore": "Nessuno; possono servire supporti o maschere.", "pag": "350, 352" },
+    "costoUnitario": { "valore": "Da basso ad alto, secondo dimensione e vernice; manodopera di solito alta.", "pag": "350, 353" },
+    "tempoCiclo": { "valore": "Variabile secondo dimensione, mani e asciugatura: un piccolo prodotto elettronico in circa 2 ore, un'auto in diversi giorni.", "pag": "350, 352" },
+    "qualitaSuperficiale": { "valore": "Variabile: dipende dall'abilità dell'operatore e dalla preparazione.", "pag": "350–351" },
+    "precisione": { "valore": "Strati di 5–100 µm, salvo i sistemi ad alto spessore. Tolleranze numeriche: n.d.", "pag": "351" },
+    "dimensioni": { "valore": "Nessun limite: ciò che non entra in cabina si vernicia sul posto, anche gli aerei in hangar.", "pag": "352" }
+  },
+  "vincoli": [
+    { "mini": "vista", "titolo": "Linea di vista", "spiegazione": "Lo spruzzo arriva in linea retta: incavi profondi e sottosquadri sono difficili da coprire in modo uniforme; le tecniche elettrostatiche aiutano, ma c'è sempre overspray.", "pag": "352" },
+    { "mini": "preparazione", "titolo": "Preparazione accurata", "spiegazione": "La vernice non è parte del materiale: forellini e porosità la fanno sfogliare e lasciano corrodere il pezzo. La superficie va preparata con cura, perché la finitura mostra ogni difetto.", "pag": "351–352, 354" },
+    { "mini": "strati", "titolo": "Evitare i difetti di stesura", "spiegazione": "Granulosità se la vernice è troppo secca, buccia d'arancia se non scorre o è mal diluita (frequente nelle vernici all'acqua), colature se è troppo bagnata.", "pag": "352" }
+  ],
+  "variantiNota": "Alcune delle finiture descritte nel capitolo.",
+  "varianti": [
+    { "mini": "scaglie", "titolo": "Base e trasparente con scaglie", "titoloOriginale": "Basecoat and topcoat", "testo": "Fondo monocromo e trasparente con scaglie colorate: colore ricco e brillante.", "pag": "350, 352" },
+    { "mini": "smalto", "titolo": "Smalto vetroso", "titoloOriginale": "Enamel", "testo": "Vetro fuso sulla superficie; solo per materiali ad alto punto di fusione.", "pag": "352–353" },
+    { "mini": "effetti", "titolo": "Effetti decorativi", "titoloOriginale": "Decorative effects", "testo": "Sfumature, marmorizzato, craquelé, floccato, maschere e sagome.", "pag": "352" }
+  ],
+  "correlati": [
+    { "slug": "verniciatura-polvere", "nome": "Verniciatura a polvere", "nota": "rivestimento a secco, fino al 95% di materiale utilizzato", "pag": "350" },
+    { "slug": "stampa-idrografica", "nome": "Stampa a trasferimento ad acqua", "nota": "riproduce motivi molto più in fretta", "pag": "350" },
+    { "slug": "metallizzazione-sottovuoto", "nome": "Metallizzazione sottovuoto", "nota": "alluminio fra base e trasparente", "pag": "350–351" }
+  ],
+  "fonte": { "pagine": "350–355" }
+}

@@ -1,0 +1,53 @@
+{
+  "slug": "pressatura-ceramica",
+  "titolo": "Formatura a pressione della ceramica",
+  "titoloOriginale": "Press Molding Ceramics",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Vetro e ceramica",
+  "sintesi": "L'argilla viene spinta contro stampi permanenti, con una sagoma rotante (calibratura) o con una pressa: si producono rapidamente piatti, tazze, ciotole, lavabi e piastrelle tutti uguali.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una calibratrice, tagliata a metà. Uno stampo in gesso bianco gira su un supporto e porta una frittella di argilla arancione. Il braccio con la sagoma scende e l'argilla prende la forma di un piatto con il piede; il bordo viene rifilato, il pezzo asciuga sullo stampo e dopo la cottura diventa verde." },
+  "schema": {
+    "titolo": "Calibratura di un piatto in sezione",
+    "descrizione": "Sezione di uno stampo maschio in gesso su un supporto rotante, con sopra l'argilla e il braccio con la sagoma profilata. Le fasi mostrano il carico della frittella, la profilatura, la rifilatura del bordo, l'essiccazione sullo stampo e la cottura.",
+    "fasi": [
+      { "titolo": "Carico", "durata": 2000, "pag": "177–178", "didascalia": "Lo stampo in gesso si monta su un supporto metallico che gira ad alta velocità; una carica di argilla, stesa in una frittella uniforme, si posa sullo stampo." },
+      { "titolo": "Profilatura", "durata": 2400, "pag": "177–178", "didascalia": "Mentre gira, il braccio scende con una sagoma profilata: la sagoma forma la faccia esterna, lo stampo quella interna. Bastano meno di un minuto." },
+      { "titolo": "Rifilatura", "durata": 1800, "pag": "177–178", "didascalia": "Con il pezzo ancora in rotazione si rifila il bordo, che risulta perfettamente simmetrico." },
+      { "titolo": "Essiccazione sullo stampo", "durata": 2200, "pag": "177–178", "didascalia": "Stampo e pezzo si tolgono insieme: l'argilla, ancora molle, deve asciugare sullo stampo fino allo stato 'verde', altrimenti si deforma. Per forare il bordo si sposta su uno stampo femmina di supporto." },
+      { "titolo": "Cottura", "durata": 2200, "pag": "178", "didascalia": "Cottura in biscotto per circa 8 ore con sosta di un'ora a 1125 °C, poi smaltatura e cottura dello smalto: il piatto diventa rigido e impermeabile." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "176", "testo": "Le due tecniche principali sono la calibratura (jiggering, o jolleying se lo stampo forma la faccia esterna) e la pressatura a stampo (ram pressing). Si possono automatizzare, ma la calibratura è spesso manuale." },
+    { "fase": 2, "pag": "176", "testo": "I pezzi sono compressi e hanno spessore uniforme; gli stampi rendono ripetibili anche oggetti alti con poca abilità." },
+    { "fase": 4, "pag": "176–177", "testo": "Poiché ogni pezzo asciuga sul proprio stampo, servono molti stampi, che occupano spazio. Nella pressatura a stampo il calore indurisce l'argilla durante il ciclo e il pezzo si estrae subito." },
+    { "fase": 5, "pag": "176", "testo": "I materiali ceramici sono fragili e porosi: la smaltatura rende la superficie vetrosa e impermeabile." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Terraglia, gres e porcellana.", "pag": "176" },
+    "volumi": { "valore": "Da piccola a grande serie; la calibratura è adatta anche a prototipi e serie brevi.", "pag": "176" },
+    "costoAttrezzatura": { "valore": "Da basso a medio. Gli stampi della calibratura costano poco (una sola faccia) ma ne servono molti; quelli della pressatura costano 10–20 volte di più ma durano circa 10 000 cicli.", "pag": "176–177" },
+    "costoUnitario": { "valore": "Da basso a medio, secondo quanto lavoro manuale richiede.", "pag": "176–177" },
+    "tempoCiclo": { "valore": "Rapido: 1–6 pezzi al minuto secondo l'automazione; la calibratura è un po' più lenta. Cottura fino a 48 ore.", "pag": "176–177" },
+    "qualitaSuperficiale": { "valore": "Molto alta con entrambe le tecniche.", "pag": "176" },
+    "precisione": { "valore": "Ritiro di circa l'8%. Tolleranze numeriche: n.d.", "pag": "176" },
+    "dimensioni": { "valore": "Valori numerici: n.d.", "pag": "176" }
+  },
+  "vincoli": [
+    { "mini": "simmetria", "titolo": "Calibratura solo per forme a rivoluzione", "spiegazione": "Calibratura e jolleying funzionano solo su geometrie simmetriche attorno a un asse; la pressatura a stampo ottiene anche forme ovali, quadrate, triangolari e irregolari.", "pag": "176" },
+    { "mini": "ritiro", "titolo": "Ritiro di circa l'8%", "spiegazione": "Il ritiro è dell'ordine dell'8%, secondo il materiale.", "pag": "176" },
+    { "mini": "dettagli", "titolo": "Integrare i dettagli nella pressatura", "spiegazione": "Con la pressatura a stampo manici e decori si formano direttamente sul pezzo, che viene pressato e rifilato in un'unica operazione; aggiungerli a mano richiede più abilità.", "pag": "176" }
+  ],
+  "variantiNota": "Le tecniche elencate nel capitolo; la calibratura è lo schema principale.",
+  "varianti": [
+    { "mini": "calibratura", "titolo": "Calibratura", "titoloOriginale": "Jiggering", "testo": "Stampo maschio in gesso e sagoma profilata su un braccio: piatti e piatti piani.", "pag": "176–178" },
+    { "mini": "jolleying", "titolo": "Calibratura in stampo femmina", "titoloOriginale": "Jolleying", "testo": "Lo stampo è a contatto con la faccia esterna del pezzo e la sagoma forma l'interno: tazze e ciotole.", "pag": "176–177" },
+    { "mini": "pressa", "titolo": "Pressatura a stampo", "titoloOriginale": "Ram pressing", "testo": "Stampi in due parti; il calore della pressa indurisce l'argilla e il pezzo si estrae subito. Ottiene forme non a rivoluzione e integra manici e decori.", "pag": "176–177" }
+  ],
+  "correlati": [
+    { "slug": "tornitura-argilla", "nome": "Tornitura dell'argilla", "nota": "prodotti e geometrie simili, a mano", "pag": "176" },
+    { "slug": "colaggio-ceramico", "nome": "Colaggio ceramico", "nota": "forme simili in stampo a due parti", "pag": "176" },
+    { "slug": "soffiatura-vetro", "nome": "Soffiatura del vetro", "nota": "la pressatura si usa anche per il vetro", "pag": "152" }
+  ],
+  "fonte": { "pagine": "176–181" }
+}

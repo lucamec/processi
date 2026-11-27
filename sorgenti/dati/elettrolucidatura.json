@@ -1,0 +1,53 @@
+{
+  "slug": "elettrolucidatura",
+  "titolo": "Elettrolucidatura",
+  "titoloOriginale": "Electropolishing",
+  "parte": "Parte 4 – Finitura",
+  "categoria": "Processi sottrattivi",
+  "sintesi": "Il contrario della galvanica: il pezzo, collegato come anodo in un bagno elettrolitico, perde materiale dalle creste più che dalle valli e la superficie diventa liscia, brillante, pulita e più resistente alla corrosione.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di supporti in acciaio inox a quattro bracci appesi a un telaio. Scendono in una vasca di acido verde fra due catodi scuri; mentre ruotano lentamente la loro superficie passa da opaca a brillante. Poi passano in una vasca di risciacquo azzurra, ne escono gocciolando e alla fine sono lucidi e verdi." },
+  "schema": {
+    "titolo": "Elettrolucidatura: vasca e profilo superficiale",
+    "descrizione": "A sinistra una vasca con il pezzo come anodo fra due catodi; a destra l'ingrandimento del profilo superficiale. Le fasi mostrano il montaggio, le creste che si sciolgono più delle valli, il risciacquo e la superficie finita.",
+    "fasi": [
+      { "titolo": "Montaggio", "durata": 1800, "pag": "385–386", "didascalia": "I pezzi, se serve prima puliti, si montano su un telaio che porta la corrente: diventano l'anodo." },
+      { "titolo": "Elettrolucidatura", "durata": 2600, "pag": "385–386", "didascalia": "Nel bagno di acido fosforico e solforico a 50–90 °C la corrente scioglie il metallo, più in fretta sulle creste dove la densità di corrente è massima; nel caso studio circa 10 minuti." },
+      { "titolo": "Neutralizzazione e risciacquo", "durata": 2000, "pag": "385–386", "didascalia": "Estratti, i pezzi sgocciolano e si neutralizzano, si risciacquano e si lavano per togliere ogni residuo chimico." },
+      { "titolo": "Asciugatura", "durata": 1800, "pag": "386", "didascalia": "Si asciugano al caldo e sono pronti da maneggiare." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "384", "testo": "Oltre a lucidare, il processo pulisce, sgrassa, sbava, passiva e migliora la resistenza alla corrosione; l'asportazione può essere molto precisa." },
+    { "fase": 2, "pag": "385", "testo": "Il catodo, di solito dello stesso materiale del pezzo, sta nella soluzione; più calda è la soluzione, più rapida è la reazione." },
+    { "fase": 3, "pag": "384–385", "testo": "Sostituisce sempre più la cromatura, che usa acido cromico tossico: è più semplice, usa meno acqua e prodotti chimici, anche se produce scarti da neutralizzare." },
+    { "fase": 4, "pag": "385–386", "testo": "Rispetto alla lucidatura meccanica tratta anche forme complesse e non sollecita i pezzi; dimensioni e complessità non incidono sul tempo." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "La maggior parte dei metalli, soprattutto gli acciai inox austenitici; anche alluminio e rame.", "pag": "386" },
+    "volumi": { "valore": "Da pezzo unico a produzione di massa.", "pag": "384" },
+    "costoAttrezzatura": { "valore": "Nessuno, ma servono telai per il contatto elettrico.", "pag": "384, 386" },
+    "costoUnitario": { "valore": "Basso: aggiunge circa il 5% al costo del materiale, contro fino al 20% della galvanica; manodopera piuttosto bassa.", "pag": "384, 386" },
+    "tempoCiclo": { "valore": "Moderato, 5–30 minuti, secondo l'asportazione e la pulizia del pezzo.", "pag": "384, 386" },
+    "qualitaSuperficiale": { "valore": "Alta, brillante e igienica; l'inox elettrolucidato somiglia al cromato.", "pag": "384" },
+    "precisione": { "valore": "Asportazione precisa, di solito non oltre 40–50 µm; nel caso studio 30 µm.", "pag": "384–386" },
+    "dimensioni": { "valore": "Efficace su piccoli pezzi tecnici e grandi strutture; valori numerici: n.d.", "pag": "386" }
+  },
+  "vincoli": [
+    { "mini": "preparazione", "titolo": "Preparare la superficie", "spiegazione": "Segni di utensili, graffi profondi e altri difetti non spariscono, anzi la superficie brillante li evidenzia; i getti si sabbiano prima per avere una finitura uniforme.", "pag": "386" },
+    { "mini": "asportazione", "titolo": "Asportazione limitata", "spiegazione": "Si tolgono al massimo circa 50 µm: una finitura grezza si addolcisce ma non scompare.", "pag": "385" },
+    { "mini": "metallo", "titolo": "Un metallo per impianto", "spiegazione": "Un impianto è predisposto per un materiale: metalli diversi non si lucidano insieme né nella stessa soluzione.", "pag": "386" }
+  ],
+  "variantiNota": "Altri usi del processo descritti nel capitolo.",
+  "varianti": [
+    { "mini": "sbavatura", "titolo": "Sbavatura", "titoloOriginale": "Deburring", "testo": "Toglie le bave anche su pezzi delicati e riduce l'attrito fra superfici accoppiate.", "pag": "385–386" },
+    { "mini": "passivazione", "titolo": "Passivazione dell'inox", "titoloOriginale": "Passivation", "testo": "Strato superficiale ricco di cromo che protegge dalla corrosione.", "pag": "386" },
+    { "mini": "igienica", "titolo": "Superfici igieniche", "titoloOriginale": "Hygienic finish", "testo": "Apre le micro-cavità e rende più efficace la sterilizzazione.", "pag": "384, 386" }
+  ],
+  "correlati": [
+    { "slug": "galvanostegia", "nome": "Galvanostegia", "nota": "processo inverso; la cromatura viene sostituita", "pag": "384" },
+    { "slug": "rettifica-levigatura", "nome": "Rettifica, levigatura e lucidatura", "nota": "lucidatura meccanica, limitata dalla forma", "pag": "385" },
+    { "slug": "sabbiatura", "nome": "Sabbiatura", "nota": "prepara i getti", "pag": "386" },
+    { "slug": "microfusione", "nome": "Microfusione", "nota": "produce i supporti del caso studio", "pag": "386" }
+  ],
+  "fonte": { "pagine": "384–387" }
+}

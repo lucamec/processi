@@ -1,0 +1,54 @@
+{
+  "slug": "serigrafia",
+  "titolo": "Serigrafia",
+  "titoloOriginale": "Screen Printing",
+  "parte": "Parte 4 – Finitura",
+  "categoria": "Stampa",
+  "sintesi": "Stampa a umido che fa passare l'inchiostro attraverso una rete tesa su un telaio, dove uno stencil lascia aperte solo le zone da stampare: economica e adatta a superfici piane e cilindriche di tessuto, carta, vetro, ceramica, plastica e metallo.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una macchina serigrafica: un telaio grigio con una rete chiara e uno stencil azzurro scende su una lastra di vetro. Sulla rete c'è un cordone di inchiostro nero; una racla lo spinge da un lato all'altro e sotto compare, striscia dopo striscia, una cornice nera stampata. Poi il telaio si alza e la lastra esce verso il forno." },
+  "schema": {
+    "titolo": "Serigrafia di una lastra di vetro, in sezione",
+    "descrizione": "Sezione di un telaio con rete e stencil sopra una lastra di vetro. Le fasi mostrano lo stencil pronto, il carico del pezzo e dell'inchiostro, la racla che spinge l'inchiostro attraverso la rete aperta e lo scarico del pezzo stampato.",
+    "fasi": [
+      { "titolo": "Stencil", "durata": 2000, "pag": "401", "didascalia": "Un positivo a grandezza reale di ogni colore, stampato su acetato, si mette a registro sul telaio coperto di emulsione fotosensibile; la luce UV indurisce l'emulsione esposta e il resto si lava via." },
+      { "titolo": "Carico", "durata": 1800, "pag": "401–403", "didascalia": "Il pezzo si carica sotto il telaio, a faccia in giù nel caso studio; sulla rete si deposita una piccola carica di inchiostro." },
+      { "titolo": "Stampa", "durata": 2400, "pag": "401–403", "didascalia": "Una racla in gomma stende l'inchiostro premendo: passa dalla rete aperta e forma uno strato denso con bordi netti; lo stencil blocca il resto." },
+      { "titolo": "Scarico e asciugatura", "durata": 2000, "pag": "402–403", "didascalia": "Il pezzo esce bagnato; l'inchiostro a solvente asciuga in circa un'ora, oppure in forno a 200 °C." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "401", "testo": "La rete, tesa su un telaio, è di nylon, poliestere o acciaio inox; ogni colore richiede un telaio a parte." },
+    { "fase": 3, "pag": "401", "testo": "Quattro famiglie di inchiostri: ad acqua e a solvente, asciugati all'aria o al caldo; plastisol a base di PVC per i tessuti, che polimerizzano col calore; UV, più brillanti e più costosi." },
+    { "fase": 3, "pag": "400", "testo": "Oltre all'inchiostro si stampa qualunque materiale della giusta consistenza: pasta saldante sui circuiti, pellicole per la decorazione in stampo, perfino burro sul pane." },
+    { "fase": 4, "pag": "402", "testo": "La maglia decide dettaglio e spessore: reti pesanti depositano più inchiostro per i tessuti, reti leggere servono per carta e materiali poco assorbenti." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Quasi tutti: carta, tessuti, plastica, metallo, ceramica, vetro.", "pag": "400, 402" },
+    "volumi": { "valore": "Da pezzo unico a produzione di massa.", "pag": "400" },
+    "costoAttrezzatura": { "valore": "Basso, ma cresce con il numero di colori: un telaio per colore.", "pag": "400, 402" },
+    "costoUnitario": { "valore": "Basso, secondo il numero di colori; manodopera alta nei lavori manuali complessi e multicolore.", "pag": "400, 402" },
+    "tempoCiclo": { "valore": "1–5 cicli al minuto a mano, fino a 30 con impianti meccanizzati.", "pag": "400, 402" },
+    "qualitaSuperficiale": { "valore": "Alta: bordi netti, inchiostro che di solito non cola né sbava.", "pag": "400, 402" },
+    "precisione": { "valore": "Valori numerici: n.d.; la definizione dipende dalla maglia.", "pag": "402" },
+    "dimensioni": { "valore": "Superfici piane e cilindriche; limiti numerici: n.d.", "pag": "402" }
+  },
+  "vincoli": [
+    { "mini": "forma", "titolo": "Solo piano o cilindrico", "spiegazione": "Non si stampano superfici ondulate o concave: lì servono la tampografia o la stampa idrografica.", "pag": "402" },
+    { "mini": "colori", "titolo": "Un telaio per colore", "spiegazione": "Ogni colore richiede un telaio a registro e deve asciugare o polimerizzare prima del successivo; con i sistemi UV bastano pochi secondi.", "pag": "402" },
+    { "mini": "rete", "titolo": "Scelta della maglia", "spiegazione": "Reti pesanti danno più inchiostro e meno dettaglio; reti leggere il contrario.", "pag": "402" }
+  ],
+  "variantiNota": "Possibilità descritte nel capitolo; lo schema principale mostra la stampa piana su vetro del caso studio.",
+  "varianti": [
+    { "mini": "finestra", "titolo": "Stampa sul retro", "titoloOriginale": "Window printing", "testo": "Inchiostro protetto sotto un pannello trasparente.", "pag": "402" },
+    { "mini": "etichetta", "titolo": "Su etichetta trasparente", "titoloOriginale": "Transfer printing", "testo": "Effetto di stampa diretta su qualsiasi forma che accetti un'etichetta.", "pag": "402" },
+    { "mini": "conduttivi", "titolo": "Inchiostri speciali", "titoloOriginale": "Special inks", "testo": "UV, metallizzati, termocromici, conduttivi.", "pag": "400, 402" }
+  ],
+  "correlati": [
+    { "slug": "tampografia", "nome": "Tampografia", "nota": "per superfici ondulate", "pag": "402" },
+    { "slug": "stampa-idrografica", "nome": "Stampa a trasferimento ad acqua", "nota": "per superfici ondulate", "pag": "402" },
+    { "slug": "stampa-caldo-goffratura", "nome": "Stampa a caldo e goffratura", "nota": "effetti simili con vernici UV", "pag": "400" },
+    { "slug": "stampaggio-iniezione", "nome": "Stampaggio a iniezione", "nota": "pellicole serigrafate per la decorazione in stampo", "pag": "400" },
+    { "slug": "brasatura", "nome": "Brasatura dolce e forte", "nota": "pasta saldante serigrafata", "pag": "400" }
+  ],
+  "fonte": { "pagine": "400–403" }
+}

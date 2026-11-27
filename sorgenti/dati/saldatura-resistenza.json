@@ -1,0 +1,52 @@
+{
+  "slug": "saldatura-resistenza",
+  "titolo": "Saldatura a resistenza",
+  "titoloOriginale": "Resistance Welding",
+  "parte": "Parte 3 – Giunzione",
+  "categoria": "Termico",
+  "sintesi": "Una forte corrente passa fra due elettrodi attraverso due lamiere sovrapposte: la resistenza del metallo lo scalda e lo fonde, e la pressione unisce le lamiere in un nocciolo. Rapida, semplice ed economica.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una pinza per saldatura a punti, con due elettrodi di rame su un telaio a C. Due lamiere sovrapposte scivolano fra gli elettrodi; la pinza si chiude e fa quattro punti in fila, ognuno dei quali si illumina d'arancione fra le lamiere. Alla fine la pinza si apre e i quattro punti diventano verdi." },
+  "schema": {
+    "titolo": "Saldatura a punti, in sezione",
+    "descrizione": "Sezione di due lamiere sovrapposte fra due elettrodi di rame. Le fasi mostrano il carico, il serraggio, il passaggio di corrente che forma il nocciolo fuso fra le lamiere e il rilascio.",
+    "fasi": [
+      { "titolo": "Carico", "durata": 1800, "pag": "308, 310", "didascalia": "Le lamiere si sovrappongono fra gli elettrodi; non serve quasi preparazione delle superfici." },
+      { "titolo": "Serraggio", "durata": 1800, "pag": "310", "didascalia": "Gli elettrodi si chiudono sul metallo e applicano pressione; i metalli più duri ne richiedono un po' di più." },
+      { "titolo": "Corrente", "durata": 2400, "pag": "308, 310", "didascalia": "Una corrente elevata, concentrata fra gli elettrodi, scalda e plastifica il metallo per effetto della sua resistenza." },
+      { "titolo": "Mantenimento e rilascio", "durata": 2000, "pag": "308, 310", "didascalia": "La pressione fa unire la zona fusa, che forma il nocciolo; gli elettrodi si aprono per il punto successivo." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "308", "testo": "Tre processi principali, tutti con lo stesso principio: a rilievi, a punti e a rulli. Sono stati fondamentali per l'auto di massa: una sola vettura può avere fino a 4.000 punti di saldatura." },
+    { "fase": 2, "pag": "310", "testo": "La saldatura a punti è la più versatile: le attrezzature non sono dedicate, quindi è la meno costosa e la più adatta a prototipi e piccole serie." },
+    { "fase": 3, "pag": "310", "testo": "Il punto si forma solo fra gli elettrodi: una saldatura per volta, in sequenza. È un processo semplice, costante, economico e che richiede poca abilità." },
+    { "fase": 4, "pag": "311", "testo": "Non servono flussi, materiali d'apporto o gas; l'acqua che raffredda gli elettrodi di rame si ricicla." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "La maggior parte dei metalli: acciai al carbonio, inox, nichel, alluminio, titanio e leghe di rame; anche metalli diversi, con resistenza ridotta.", "pag": "310–311" },
+    "volumi": { "valore": "Da pezzo unico a produzione di massa.", "pag": "308" },
+    "costoAttrezzatura": { "valore": "Basso o nullo: elettrodi standard; elettrodi dedicati solo per superfici sagomate.", "pag": "308, 311" },
+    "costoUnitario": { "valore": "Basso.", "pag": "308" },
+    "tempoCiclo": { "valore": "Rapido: a punti una saldatura alla volta, a rilievi più saldature insieme; incidono spessore, rivestimenti e accoppiamento dei pezzi.", "pag": "308, 311", "ocr": "Numero di punti al secondo: n.d. (OCR \"about i weld per second\")" },
+    "qualitaSuperficiale": { "valore": "Qualità costante e alta; giunti ermetici con la saldatura a rulli.", "pag": "308, 310" },
+    "precisione": { "valore": "Il nocciolo si forma esattamente fra gli elettrodi. Tolleranze numeriche: n.d.", "pag": "310" },
+    "dimensioni": { "valore": "Lamiere di solito fra 0,5 e 5 mm; assiemi fino a 10 mm con un solo punto.", "pag": "310" }
+  },
+  "vincoli": [
+    { "mini": "accesso", "titolo": "Punto raggiungibile", "spiegazione": "La posizione dipende dalla portata della pinza e dalla forma dell'elettrodo: il punto deve essere raggiungibile dal bordo e accessibile da sopra e da sotto; elettrodi sagomati aiutano negli spazi stretti.", "pag": "310–311" },
+    { "mini": "carico", "titolo": "Giunti a taglio, non a pelatura", "spiegazione": "I giunti hanno alta resistenza a taglio, ma con noccioli piccoli e localizzati la resistenza alla pelatura è limitata.", "pag": "308, 310" },
+    { "mini": "spessore", "titolo": "Spessori adatti", "spiegazione": "Di solito 0,5–5 mm; si saldano anche spessori diversi e più fogli sovrapposti, fino a 10 mm con un solo punto.", "pag": "310" }
+  ],
+  "variantiNota": "Lo schema principale mostra la saldatura a punti; queste sono le altre tecniche descritte nel capitolo.",
+  "varianti": [
+    { "mini": "rilievi", "titolo": "A rilievi", "titoloOriginale": "Projection welding", "testo": "Rilievi o inserti localizzano la corrente: più saldature insieme in circa un secondo.", "pag": "308–309" },
+    { "mini": "rulli", "titolo": "A rulli", "titoloOriginale": "Seam welding", "testo": "Elettrodi a rullo e saldatura continua, per giunti ermetici.", "pag": "308–309, 311" },
+    { "mini": "linea", "titolo": "Punti in linea", "titoloOriginale": "Wheel spot welding", "testo": "Ruote con un elettrodo sul bordo per serie di punti ad alta velocità, per esempio nei radiatori.", "pag": "311" }
+  ],
+  "correlati": [
+    { "slug": "saldatura-arco", "nome": "Saldatura ad arco", "nota": "richiede più abilità", "pag": "308, 310" },
+    { "slug": "saldatura-attrito", "nome": "Saldatura per attrito", "nota": "alternativa", "pag": "308" },
+    { "slug": "saldatura-fascio", "nome": "Saldatura a fascio", "nota": "richiede più abilità", "pag": "310" }
+  ],
+  "fonte": { "pagine": "308–311" }
+}

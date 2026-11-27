@@ -1,0 +1,177 @@
+{
+  "slug": "stampaggio-rotazionale",
+  "titolo": "Stampaggio rotazionale",
+  "titoloOriginale": "Rotation Molding",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Plastica e gomma",
+  "sintesi": "Polvere di plastica viene fatta rotolare dentro uno stampo caldo che ruota su due assi: la polvere fonde sulle pareti e forma un corpo cavo dallo spessore costante, senza pressione e quasi senza tensioni interne.",
+  "vista3d": {
+    "tecnica": "webgl",
+    "alt": "Modello 3D della macchina vista dall'alto di tre quarti. Un braccio parte dal mozzo centrale e porta lo stampo fra tre stazioni: carico e scarico, forno (camera trasparente che si illumina di arancione quando è attiva) e camera di raffreddamento (si illumina di blu). All'estremità del braccio una forcella fa ruotare lo stampo attorno all'asse del braccio (asse primario) e, dentro la forcella, lo stampo ruota attorno a un secondo asse perpendicolare (asse secondario). Con lo spaccato attivo si vede l'interno: la polvere sul fondo, poi lo strato arancione che cresce sulle pareti e diventa verde raffreddandosi. Le velocità di rotazione sono indicative: il libro dà circa 20 giri al minuto ma non il rapporto fra i due assi (p. 37).",
+    "dettaglio": "Segui lo stampo"
+  },
+  "schema": {
+    "titolo": "Ciclo di stampaggio rotazionale: pianta della macchina e sezione dello stampo",
+    "descrizione": "A sinistra la macchina vista dall'alto: un braccio porta lo stampo tra tre stazioni (carico e scarico, forno, raffreddamento) ruotando di 120° alla volta. A destra lo stampo in sezione: la polvere dosata resta sul fondo, lo stampo ruota, la polvere fonde e riveste le pareti, poi si raffredda e lo stampo si apre.",
+    "fasi": [
+      {
+        "titolo": "Carico e chiusura",
+        "durata": 2600,
+        "didascalia": "Una dose pesata di polvere viene versata nello stampo aperto. Lo stampo si chiude, si blocca e resta chiuso per tutto il ciclo.",
+        "pag": "37"
+      },
+      {
+        "titolo": "Riscaldamento in rotazione",
+        "durata": 4200,
+        "didascalia": "Il braccio porta lo stampo nel forno (nel caso studio ruota di 120° fra una stazione e l'altra), a circa 250 °C per circa 25 minuti. Lo stampo gira di continuo: la polvere fonde a contatto con le pareti calde e forma uno strato uniforme.",
+        "pag": "37, 39"
+      },
+      {
+        "titolo": "Raffreddamento in rotazione",
+        "durata": 3200,
+        "didascalia": "Il braccio porta lo stampo nella camera di raffreddamento, dove si immettono aria e umidità per circa 25 minuti. La rotazione continua finché il pezzo solidifica.",
+        "pag": "37"
+      },
+      {
+        "titolo": "Apertura ed estrazione",
+        "durata": 2400,
+        "didascalia": "Il braccio torna alla stazione di carico. Lo stampo si apre e il pezzo cavo, ancora tiepido, viene estratto con cura.",
+        "pag": "37, 39"
+      }
+    ]
+  },
+  "comeFunziona": [
+    {
+      "fase": 1,
+      "testo": "Gli stampi metallici sono montati su un braccio rotante. In ognuno si versa una quantità di polvere già pesata, perché da essa dipende lo spessore delle pareti. Lo stampo si chiude e si blocca.",
+      "pag": "37"
+    },
+    {
+      "fase": 2,
+      "testo": "Nel forno, a circa 250 °C, lo stampo ruota di continuo attorno a due assi, uno orizzontale e uno verticale (rotazione biassiale). Le pareti si scaldano e la polvere vi aderisce fondendo, strato su strato. Uno sfiato fa uscire i gas.",
+      "pag": "37"
+    },
+    {
+      "fase": 3,
+      "testo": "Nella camera di raffreddamento la rotazione prosegue a circa 20 giri al minuto, così il materiale resta distribuito in modo uniforme. Tempi di riscaldamento e raffreddamento e velocità di rotazione sono controllati con precisione.",
+      "pag": "37"
+    },
+    {
+      "fase": 4,
+      "testo": "Quando il pezzo è abbastanza freddo si apre lo stampo e lo si estrae; poi il ciclo ricomincia. Si lavora senza pressione e senza nucleo interno: il pezzo ha tensioni minime e pareti di spessore regolare.",
+      "pag": "36–37"
+    }
+  ],
+  "caratteristiche": {
+    "materiali": {
+      "valore": "Soprattutto polietilene (PE); anche poliammide (PA), polipropilene (PP), PVC ed EVA. Polveri fini o micro-granuli per raggi stretti e dettagli.",
+      "pag": "38"
+    },
+    "volumi": {
+      "valore": "Serie basse e medie, fino a 10.000 pezzi.",
+      "pag": "36"
+    },
+    "costoAttrezzatura": {
+      "valore": "Medio, relativamente economico: gli stampi non devono reggere alte pressioni e non hanno nucleo. Dal più caro al meno caro: acciaio, alluminio, resina.",
+      "pag": "36, 38",
+      "ocr": "Serie massima per gli stampi in resina: n.d. (OCR \"icq parts\", illeggibile)"
+    },
+    "costoUnitario": {
+      "valore": "Da basso a medio: da 3 a 4 volte il costo del materiale. Processo ad alta intensità di manodopera.",
+      "pag": "36, 38"
+    },
+    "tempoCiclo": {
+      "valore": "Scheda riassuntiva: fra 30 e 60 minuti. Testo: fra 30 e 90 minuti, a seconda dello spessore e del materiale. Più stampi montati sui bracci riducono il tempo per pezzo.",
+      "pag": "36, 38"
+    },
+    "qualitaSuperficiale": {
+      "valore": "Buona, anche senza pressione. Le finiture molto lucide non sono pratiche; le polveri fini rendono più visibili i difetti superficiali.",
+      "pag": "36, 38"
+    },
+    "precisione": {
+      "valore": "Tolleranze strette possibili su chiusure e fissaggi (valore numerico: n.d.). Ritiro di circa il 3%, che può deformare le grandi superfici piane.",
+      "pag": "36"
+    },
+    "dimensioni": {
+      "valore": "Da piccoli oggetti fino a pezzi di 10 m³.",
+      "pag": "36"
+    }
+  },
+  "vincoli": [
+    {
+      "mini": "spessore",
+      "titolo": "Spessore costante, senza salti bruschi",
+      "spiegazione": "Il processo non consente variazioni brusche dello spessore. Lo spessore tipico delle pareti piene è riportato in modo incoerente nella scansione. Nel caso studio, 3,6 kg di polvere danno una parete di 6 mm.",
+      "pag": "38",
+      "ocr": "Spessore tipico massimo: n.d. (OCR \"5 mm (0.24 in.)\": le due unità non coincidono)"
+    },
+    {
+      "mini": "raggi",
+      "titolo": "Niente angoli vivi o stretti",
+      "spiegazione": "Spigoli vivi e angoli stretti vanno evitati. Si possono fare raggi piccoli su una piega in una sola direzione, non negli angoli.",
+      "pag": "38"
+    },
+    {
+      "mini": "nervature",
+      "titolo": "Nervature per compensare la bassa resistenza",
+      "spiegazione": "La bassa pressione dà materiale poco resistente meccanicamente: le nervature integrate nel disegno recuperano rigidità.",
+      "pag": "38"
+    },
+    {
+      "mini": "proporzioni",
+      "titolo": "Lunghezza massima pari a 4 volte il diametro",
+      "spiegazione": "Oltre questo rapporto il materiale si distribuisce in modo non uniforme durante la rotazione.",
+      "pag": "38"
+    },
+    {
+      "mini": "piani",
+      "titolo": "Attenzione alle grandi superfici piane",
+      "spiegazione": "Con un ritiro di circa il 3%, le parti con grandi zone piane possono deformarsi.",
+      "pag": "36"
+    }
+  ],
+  "varianti": [
+    {
+      "mini": "multistrato",
+      "titolo": "Pareti multistrato o riempite di schiuma",
+      "testo": "Con polimeri compositi che si attivano a temperature diverse si ottengono pareti a più strati, anche con un'anima espansa o cava. Il libro la indica fra gli sviluppi recenti del processo.",
+      "pag": "36, 38"
+    },
+    {
+      "mini": "coppie",
+      "titolo": "Pezzi stampati a coppie",
+      "testo": "Alcuni prodotti si stampano in coppia, come un unico corpo cavo che poi si taglia per ottenere due pezzi aperti, simili a lastre.",
+      "pag": "36"
+    },
+    {
+      "mini": "grafica",
+      "titolo": "Grafica e inserti in stampo",
+      "testo": "Come nello stampaggio a iniezione, grafiche, inserti di colore diverso, filettature e dettagli superficiali si integrano durante lo stampaggio e riducono le finiture successive. Anche il sovrastampaggio di un materiale su un pezzo già formato riduce i costi di assemblaggio.",
+      "pag": "36, 38"
+    }
+  ],
+  "correlati": [
+    {
+      "slug": "termoformatura",
+      "nome": "Termoformatura",
+      "nota": "produce anch'essa forme cave e a lastra; i pezzi cavi da doppia lastra hanno una giunzione",
+      "pag": "36"
+    },
+    {
+      "slug": "soffiaggio",
+      "nome": "Soffiaggio",
+      "nota": "per grandi serie di pezzi cavi più piccoli, come gli imballaggi a parete sottile",
+      "pag": "36"
+    },
+    {
+      "slug": "stampaggio-iniezione",
+      "nome": "Stampaggio a iniezione",
+      "nota": "condivide la grafica in stampo",
+      "pag": "36"
+    }
+  ],
+  "fonte": {
+    "pagine": "36–39"
+  },
+  "variantiNota": "Il libro non elenca varianti di questo processo. Qui sotto ci sono gli sviluppi e le possibilità citati nel testo del capitolo."
+}

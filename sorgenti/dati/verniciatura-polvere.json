@@ -1,0 +1,52 @@
+{
+  "slug": "verniciatura-polvere",
+  "titolo": "Verniciatura a polvere",
+  "titoloOriginale": "Powder Coating",
+  "parte": "Parte 4 – Finitura",
+  "categoria": "Processi additivi (rivestimenti)",
+  "sintesi": "Una polvere polimerica, spruzzata con carica elettrostatica o applicata in letto fluido, aderisce al metallo e fonde in forno in un rivestimento lucido, resistente e uniforme, senza solventi.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di un pezzo di cancello in acciaio appeso a un trasportatore. Prima scende in una vasca di pulizia azzurra e risale; poi una pistola spruzza una nuvola di particelle arancioni che si curvano verso il pezzo e lo avvolgono, coprendolo di uno strato rosa opaco. Il pezzo entra in un forno trasparente arancione, esce e il rivestimento diventa verde lucido." },
+  "schema": {
+    "titolo": "Spruzzatura elettrostatica, vista dall'alto",
+    "descrizione": "Vista dall'alto di una pistola e di un pezzo metallico collegato a terra. Le fasi mostrano i bagni di preparazione, la polvere carica che segue traiettorie curve e avvolge il pezzo, la cottura in forno e il rivestimento finito.",
+    "fasi": [
+      { "titolo": "Preparazione", "durata": 2000, "pag": "358", "didascalia": "Una serie di bagni pulisce, sgrassa e prepara la superficie; un bagno di fosfato di zinco crea uno strato che lega il metallo alla polvere." },
+      { "titolo": "Spruzzatura", "durata": 2600, "pag": "357–358", "didascalia": "Il pezzo, su un trasportatore collegato a terra, entra in cabina; la pistola dà alla polvere una forte carica negativa e il campo la attira sul pezzo, che ne viene avvolto anche sul retro." },
+      { "titolo": "Cottura", "durata": 2400, "pag": "357–358", "didascalia": "Il pezzo passa in forno a circa 200 °C per 30 minuti: la polvere termoindurente fonde e reticola in un rivestimento duro." },
+      { "titolo": "Raffreddamento", "durata": 1800, "pag": "358", "didascalia": "Il pezzo esce caldo e si lascia raffreddare mentre il polimero indurisce del tutto." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "357", "testo": "La polvere si ottiene macinando insieme resina, pigmento, carica e legante: ogni granello contiene tutto il necessario, senza bisogno di acqua o solventi." },
+    { "fase": 2, "pag": "356", "testo": "Dove il rivestimento è più sottile la differenza di potenziale è maggiore, quindi la polvere si deposita in modo uniforme." },
+    { "fase": 3, "pag": "356", "testo": "Le polveri termoindurenti, le più diffuse, reticolano e diventano dure e resistenti agli agenti chimici; le termoplastiche invece fondono e si distendono, poi solidificano." },
+    { "fase": 4, "pag": "356, 359", "testo": "La polvere in eccesso si raccoglie e si filtra: con linee a colore continuo si utilizza oltre il 95% del materiale." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Soprattutto alluminio e acciaio; tecniche nuove per alcune plastiche, pannelli di legno composito e, a letto fluido, il vetro. Polveri termoindurenti (epossidiche, poliestere, acriliche e ibride) o termoplastiche (PE, PP, PA, PVC, fluoropolimeri).", "pag": "356, 358" },
+    "volumi": { "valore": "Da pezzo unico a produzione di massa; il letto fluido soprattutto per la massa.", "pag": "356" },
+    "costoAttrezzatura": { "valore": "Nessuno, ma impianti relativamente costosi.", "pag": "356, 358" },
+    "costoUnitario": { "valore": "Basso; manodopera piuttosto bassa.", "pag": "356, 358" },
+    "tempoCiclo": { "valore": "Applicazione rapida, di solito in una sola mano; la cottura aggiunge 30 minuti o più.", "pag": "356, 358" },
+    "qualitaSuperficiale": { "valore": "Alta, lucida e uniforme, senza colature; dipende dalla superficie di partenza (i getti danno un aspetto testurizzato se non preparati).", "pag": "356, 358" },
+    "precisione": { "valore": "Film sottili difficili da ottenere, soprattutto per via elettrostatica. Spessori numerici: n.d.", "pag": "358" },
+    "dimensioni": { "valore": "Il letto fluido è limitato dalla vasca; altri limiti: n.d.", "pag": "356" }
+  },
+  "vincoli": [
+    { "mini": "faraday", "titolo": "Esporre tutto il pezzo", "spiegazione": "Ogni parte deve essere raggiunta dalla polvere; griglie e incavi creano l'effetto gabbia di Faraday e si rivestono meglio a letto fluido.", "pag": "357–358" },
+    { "mini": "calore", "titolo": "Resistere alla cottura", "spiegazione": "Se i materiali non sopportano la temperatura del forno, o se si rivestono materiali diversi, sono più adatte le vernici liquide.", "pag": "356" },
+    { "mini": "preparazione", "titolo": "Preparazione e zincatura", "spiegazione": "Pulizia e mordenzatura sono indispensabili per l'adesione; l'acciaio per esterni va prima zincato, altrimenti arrugginisce sotto la polvere, che si gonfia e si sfoglia.", "pag": "356, 358" }
+  ],
+  "variantiNota": "La seconda tecnica di applicazione e le possibilità di materiale e finitura descritte nel capitolo; lo schema principale mostra la spruzzatura elettrostatica.",
+  "varianti": [
+    { "mini": "letto", "titolo": "Letto fluido", "titoloOriginale": "Fluidized bed", "testo": "Immersione in polvere resa fluida dall'aria; strati spessi, buona copertura di forme complesse.", "pag": "356–358" },
+    { "mini": "termoplastiche", "titolo": "Polveri termoplastiche", "titoloOriginale": "Thermoplastic powders", "testo": "Fondono senza reticolare; una piccola parte del mercato, in strati spessi.", "pag": "356, 358" },
+    { "mini": "finiture", "titolo": "Finiture speciali", "titoloOriginale": "Special finishes", "testo": "Colori metallizzati, puntinati, testurizzati, finto legno e additivi funzionali.", "pag": "356, 358" }
+  ],
+  "correlati": [
+    { "slug": "zincatura", "nome": "Zincatura a caldo", "nota": "protegge l'acciaio prima della polvere", "pag": "356" },
+    { "slug": "verniciatura-spruzzo", "nome": "Verniciatura a spruzzo", "nota": "alternativa per materiali misti o sensibili al calore", "pag": "356" },
+    { "slug": "stampaggio-immersione", "nome": "Stampaggio per immersione", "nota": "anch'esso usato come rivestimento", "pag": "356" }
+  ],
+  "fonte": { "pagine": "356–359" }
+}

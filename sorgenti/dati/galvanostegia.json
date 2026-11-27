@@ -1,0 +1,52 @@
+{
+  "slug": "galvanostegia",
+  "titolo": "Galvanostegia (elettrodeposizione)",
+  "titoloOriginale": "Electroplating",
+  "parte": "Parte 4 – Finitura",
+  "categoria": "Processi additivi (rivestimenti)",
+  "sintesi": "In un bagno elettrolitico una corrente continua deposita un sottile strato di metallo, da meno di 1 a 25 µm, su un altro metallo, con un forte legame metallurgico: aspetto e prestazioni di un metallo pregiato su una base più economica.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una vasca galvanica con due anodi d'argento ai lati. Tre cucchiai appesi a un filo si puliscono in una prima vasca fra le bollicine, poi scendono nel bagno; piccoli ioni chiari viaggiano dagli anodi ai cucchiai, che oscillano e diventano lentamente argentati. Infine una spazzola lucidante li porta a una finitura brillante, colorata di verde." },
+  "schema": {
+    "titolo": "Vasca galvanica, in sezione",
+    "descrizione": "Sezione di una vasca con due anodi ai lati e il pezzo appeso al centro. Le fasi mostrano la pulizia, l'immersione del pezzo collegato al negativo, gli ioni che si depositano formando lo strato e la lucidatura finale.",
+    "fasi": [
+      { "titolo": "Pulizia", "durata": 2000, "pag": "365, 367", "didascalia": "Il pezzo, già lucidato, si sgrassa in una soluzione caustica calda; un bagno diluito toglie l'ossido e viene poi neutralizzato." },
+      { "titolo": "Montaggio", "durata": 1800, "pag": "365–366", "didascalia": "I pezzi si montano su un telaio o si appendono a un filo e si collegano alla corrente continua." },
+      { "titolo": "Deposizione", "durata": 2600, "pag": "365, 367", "didascalia": "Immerso nell'elettrolita, il pezzo si ricopre di un film di metallo; gli anodi, in cestelli forati, si sciolgono e reintegrano gli ioni. Nel caso studio 25 µm d'argento richiedono circa un'ora." },
+      { "titolo": "Lucidatura", "durata": 1800, "pag": "365, 367", "didascalia": "Uscita dal bagno la superficie non è ancora brillante: si lucida finemente con pasta abrasiva molto fine." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "364", "testo": "Il rivestimento, di metallo puro o di lega, forma uno strato integrale con il pezzo: ogni ione si lega al vicino. È il metodo di placcatura più affidabile, ripetibile e controllabile." },
+    { "fase": 2, "pag": "366", "testo": "Per un rivestimento completo i pezzi si appendono a un filo e si agitano nel bagno; su un telaio resterebbe un punto non rivestito. Zone da escludere si mascherano con cere o vernici speciali." },
+    { "fase": 3, "pag": "365–366", "testo": "La velocità dipende da temperatura e composizione dell'elettrolita: circa 25 µm all'ora per l'argento, fino a 250 per il nichel; i processi lenti danno spessori più precisi." },
+    { "fase": 4, "pag": "364", "testo": "I metalli più usati sono stagno, cromo, rame, nichel, argento, oro e rodio, ognuno con proprie qualità: brillantezza, resistenza all'ossidazione, conducibilità, igiene." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Quasi tutti i metalli come base, con diversi livelli di purezza ed efficienza; rivestimenti di stagno, cromo, rame, nichel, argento, oro e rodio. Alcune plastiche, soprattutto l'ABS, dopo uno strato chimico. Il nichel non va usato a contatto con la pelle.", "pag": "364, 366" },
+    "volumi": { "valore": "Da pezzo unico a grandi serie.", "pag": "364" },
+    "costoAttrezzatura": { "valore": "Nessuno; possono servire telai per tenere i pezzi in vasca.", "pag": "364, 366" },
+    "costoUnitario": { "valore": "Alto, determinato dal metallo; manodopera da moderata ad alta secondo l'applicazione.", "pag": "364, 366" },
+    "tempoCiclo": { "valore": "Moderato, secondo metallo e spessore: argento circa 25 µm all'ora, nichel fino a 250 µm all'ora.", "pag": "364, 366" },
+    "qualitaSuperficiale": { "valore": "Dipende dalla finitura del pezzo prima del trattamento; il metallo si sceglie per qualità come brillantezza o resistenza alla corrosione.", "pag": "364, 366" },
+    "precisione": { "valore": "Strati da meno di 1 µm fino a 25 µm (nichel intermedio fino a 10 µm, oro decorativo circa 1 µm); spessori più precisi con deposizioni lente.", "pag": "364–366" },
+    "dimensioni": { "valore": "Limitate dalla vasca; valori numerici: n.d.", "pag": "364–367" }
+  },
+  "vincoli": [
+    { "mini": "superficie", "titolo": "Superficie preparata", "spiegazione": "Lo strato è troppo sottile per coprire graffi e imperfezioni: la qualità dipende dalla finitura del pezzo prima del trattamento.", "pag": "364, 366" },
+    { "mini": "contatto", "titolo": "Punti di contatto", "spiegazione": "Il pezzo deve essere collegato alla corrente: il telaio lascia un segno visibile nel punto di contatto, da ridurre con due piccoli punti o in una zona nascosta.", "pag": "366" },
+    { "mini": "intermedio", "titolo": "Strati intermedi", "spiegazione": "Metalli che non si legano fra loro si uniscono con uno strato compatibile con entrambi; per esempio il nichel fa da barriera fra ottone e oro.", "pag": "364, 366" }
+  ],
+  "variantiNota": "Alcune possibilità descritte nel capitolo.",
+  "varianti": [
+    { "mini": "livellante", "titolo": "Strati livellanti", "titoloOriginale": "Nickel and copper intermediate layers", "testo": "Coprono piccoli difetti e danno una base brillante; il cromo su nichel è il più durevole.", "pag": "366" },
+    { "mini": "plastica", "titolo": "Plastiche metallizzate", "titoloOriginale": "Electroplated plastics", "testo": "Su un primo strato chimico; meno durevoli per mancanza di legame metallurgico.", "pag": "364, 366" },
+    { "mini": "brunitura", "titolo": "Brunitura dell'argento", "titoloOriginale": "Blackening", "testo": "Annerimento chimico e lucidatura dei rilievi.", "pag": "365–366" }
+  ],
+  "correlati": [
+    { "slug": "zincatura", "nome": "Zincatura a caldo", "nota": "altro modo di rivestire di metallo", "pag": "364" },
+    { "slug": "metallizzazione-sottovuoto", "nome": "Metallizzazione sottovuoto", "nota": "altro modo di rivestire di metallo", "pag": "364" },
+    { "slug": "verniciatura-spruzzo", "nome": "Verniciatura a spruzzo", "nota": "vernici ad alto contenuto metallico, senza legame metallurgico", "pag": "364" }
+  ],
+  "fonte": { "pagine": "364–367" }
+}

@@ -1,0 +1,55 @@
+{
+  "slug": "stampaggio-lamiera",
+  "titolo": "Stampaggio della lamiera (tranciatura-piegatura a stampo)",
+  "titoloOriginale": "Metal Stamping",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "sintesi": "La lamiera viene pressata a freddo fra un punzone e una matrice di acciaio accoppiati e prende in un solo colpo una forma poco profonda: è il processo delle carrozzerie, dei vassoi e di gran parte degli oggetti metallici di serie.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una pressa tagliata a metà. Una lamiera piana è appoggiata sulla matrice. Il punzone scende in un colpo solo e la lamiera, arancione, prende la forma di un vassoio poco profondo; poi il punzone risale, l'estrattore solleva il pezzo verde e infine il bordo viene rifilato." },
+  "schema": {
+    "titolo": "Stampaggio di un vassoio in sezione",
+    "descrizione": "Sezione di punzone e matrice accoppiati con l'estrattore ai bordi. Le fasi mostrano il carico del grezzo oliato, la pressatura in un colpo, l'estrazione e la rifilatura con bordo arrotolato.",
+    "fasi": [
+      { "titolo": "Carico del grezzo", "durata": 2000, "pag": "83–84", "didascalia": "Il grezzo, tagliato a laser o tranciato e velato d'olio perché scorra fra punzone e matrice, viene posato sull'estrattore." },
+      { "titolo": "Stampaggio", "durata": 2000, "pag": "83", "didascalia": "Il punzone, mosso da un pistone idraulico o da un bilanciere, blocca e forma il pezzo in un solo colpo." },
+      { "titolo": "Estrazione", "durata": 1800, "pag": "83", "didascalia": "Dopo la formatura l'estrattore sale e solleva il pezzo, che viene tolto." },
+      { "titolo": "Rifilatura e bordatura", "durata": 2400, "pag": "84, 87", "didascalia": "Su un mandrino rotante una lama toglie il bordo in eccesso; poi si sbava e si arrotola il bordo per irrigidire il pezzo." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "82", "testo": "Lo stampaggio forma profili poco profondi fra stampi d'acciaio accoppiati, senza ridurre molto lo spessore. Quando la profondità rispetto al diametro richiede un'imbutitura controllata si parla di imbutitura profonda." },
+    { "fase": 2, "pag": "83", "testo": "Si preferiscono i pistoni idraulici perché danno una pressione uniforme per tutto il ciclo. Ogni coppia punzone-matrice fa di solito una sola operazione, come formare o punzonare." },
+    { "fase": 3, "pag": "83", "testo": "Nello stampo progressivo il pezzo passa alla stazione successiva, a mano o con un trasferitore; la maggior parte degli impianti è automatica." },
+    { "fase": 4, "pag": "82, 87", "testo": "Seguono operazioni di ripresa: altra pressatura, taglio, sbavatura e arrotolatura del bordo. Se l'aspetto non conta, i pezzi si sbavano soltanto." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Quasi tutte le lamiere: acciaio al carbonio e inossidabile, alluminio, magnesio, titanio, rame, ottone, zinco.", "pag": "83" },
+    "volumi": { "valore": "Grandi serie; per le piccole si usano battitura, tornitura in lastra o piegatura alla pressa.", "pag": "82" },
+    "costoAttrezzatura": { "valore": "Alto: stampi lavorati con precisione in acciaio da utensili. Gli stampi in gomma semirigida costano meno.", "pag": "82–83" },
+    "costoUnitario": { "valore": "Da basso a moderato; manodopera bassa perché meccanizzato. La lucidatura aumenta molto i costi.", "pag": "82–83" },
+    "tempoCiclo": { "valore": "Rapido: da meno di 1 secondo a 1 minuto; pochi secondi per pezzo nel caso studio. Cambio e preparazione degli stampi lunghi.", "pag": "82–84", "ocr": "Pezzi al minuto (massimo): n.d. (OCR \"1 to ovenoo\")" },
+    "qualitaSuperficiale": { "valore": "Alta, con pieghe precise grazie agli stampi accoppiati; lucidabile.", "pag": "82" },
+    "precisione": { "valore": "Processo rapido e preciso. Valore numerico: n.d.", "pag": "82" },
+    "dimensioni": { "valore": "Lamiera di norma fra 0,4 e 2 mm, fino a 6 mm con limiti sulla forma. Dimensioni dei pezzi: n.d.", "pag": "83" }
+  },
+  "vincoli": [
+    { "mini": "sottosquadri", "titolo": "Rientri solo con operazioni di ripresa", "spiegazione": "Lo stampaggio avviene lungo un asse verticale: i rientri vanno formati in una seconda pressatura, con utensili a carrello laterale.", "pag": "82, 86" },
+    { "mini": "riduzione", "titolo": "Ridurre il diametro per gradi", "spiegazione": "La prima operazione riduce il diametro del grezzo al massimo del 30%, le successive del 20%: questo indica quante stazioni servono.", "pag": "82" },
+    { "mini": "bordo", "titolo": "Irrigidire con nervature e bordi", "spiegazione": "Le nervature permettono pareti più sottili, con meno peso e costo; un bordo arrotolato o un filo nel perimetro irrigidisce il pezzo e permette lamiere più sottili.", "pag": "82, 84, 87" }
+  ],
+  "variantiNota": "Le operazioni di ripresa sono la variante elencata nel capitolo; qui sotto anche le altre possibilità descritte nel testo.",
+  "varianti": [
+    { "mini": "ripresa", "titolo": "Operazioni di ripresa", "titoloOriginale": "Secondary pressing", "testo": "Altra pressatura, piegatura, rullatura, nervatura o goffratura. Utensili a carrello laterale formano i rientri; sostituendo il punzone con un rullo e facendo girare il pezzo si ottiene un bordo o una nervatura continua.", "pag": "86–87" },
+    { "mini": "progressivo", "titolo": "Stampo progressivo", "titoloOriginale": "Progressive die", "testo": "Per i pezzi di serie con più operazioni di formatura e taglio si usa una serie di stampi; spesso il pezzo è formato in un nastro continuo e poi tranciato.", "pag": "82–83, 87" },
+    { "mini": "gomma", "titolo": "Stampo morbido in gomma", "titoloOriginale": "Soft tooling", "testo": "Un lato dello stampo è in gomma semirigida, che preme la lamiera sul punzone. Costa meno e permette di passare dalla battitura allo stampaggio nelle piccole serie.", "pag": "82–83" }
+  ],
+  "correlati": [
+    { "slug": "imbutitura-profonda", "nome": "Imbutitura profonda", "nota": "quando la profondità richiede un'imbutitura controllata", "pag": "82" },
+    { "slug": "battitura-lamiera", "nome": "Battitura della lamiera", "nota": "per le piccole serie e le forme a curvatura doppia", "pag": "82" },
+    { "slug": "tornitura-lastra", "nome": "Tornitura in lastra", "nota": "per le piccole serie", "pag": "82" },
+    { "slug": "piegatura-pressa", "nome": "Piegatura alla pressa piegatrice", "nota": "per le piccole serie", "pag": "82" },
+    { "slug": "superformatura", "nome": "Formatura superplastica (superforming)", "nota": "pezzi grandi e profondi in una sola operazione, solo in alcune leghe", "pag": "82" },
+    { "slug": "punzonatura-tranciatura", "nome": "Punzonatura e tranciatura", "nota": "per preparare i grezzi", "pag": "84" }
+  ],
+  "fonte": { "pagine": "82–87" }
+}

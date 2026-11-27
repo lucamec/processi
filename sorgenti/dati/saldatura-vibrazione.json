@@ -1,0 +1,54 @@
+{
+  "slug": "saldatura-vibrazione",
+  "titolo": "Saldatura a vibrazione",
+  "titoloOriginale": "Vibration Welding",
+  "parte": "Parte 3 – Giunzione",
+  "categoria": "Termico",
+  "sintesi": "Due pezzi di plastica premuti l'uno sull'altro vengono fatti vibrare rapidamente, in linea o in orbita: l'attrito fonde l'interfaccia, che solidificando forma un giunto omogeneo e spesso ermetico.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una saldatrice a vibrazione lineare. In alto un piano tiene il guscio chiaro di un fanale, in basso un altro piano porta il catarifrangente rosso. Il piano inferiore sale e preme i pezzi, quello superiore vibra velocemente e la linea di giunzione diventa arancione; poi si ferma e, dopo il mantenimento, i piani si aprono e il fanale saldato, con il giunto verde, resta in alto." },
+  "schema": {
+    "titolo": "Saldatura a vibrazione lineare, in sezione",
+    "descrizione": "Sezione di una saldatrice con il piano superiore che tiene un guscio e il piano inferiore con un catarifrangente rosso. Le fasi mostrano il carico, la salita del piano, la vibrazione che fonde il giunto, il mantenimento sotto pressione e l'apertura.",
+    "fasi": [
+      { "titolo": "Carico", "durata": 1800, "pag": "299–300", "didascalia": "Un pezzo va nel piano inferiore, l'altro nel piano superiore, dove il vuoto lo trattiene." },
+      { "titolo": "Chiusura", "durata": 1800, "pag": "300", "didascalia": "Il piano inferiore sale e preme i pezzi uno contro l'altro; nel caso studio a 103–207 N/cm²." },
+      { "titolo": "Vibrazione", "durata": 2400, "pag": "299–300", "didascalia": "Il piano superiore, su molle risonanti, vibra nel piano del giunto: per esempio 0,7–1,8 mm a 240 Hz. L'attrito fonde la plastica in 2–3 secondi." },
+      { "titolo": "Mantenimento", "durata": 2000, "pag": "299–300", "didascalia": "La vibrazione si ferma, i pezzi si riallineano e la pressione resta per altri 2–15 secondi, finché il polimero solidifica." },
+      { "titolo": "Apertura", "durata": 1800, "pag": "300", "didascalia": "I piani si separano; il pezzo saldato resta in quello superiore e viene rilasciato quando si toglie il vuoto." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "298", "testo": "Si basa sui principi della saldatura per attrito: la saldatura lineare dei metalli e quella a vibrazione lineare delle plastiche sono lo stesso processo." },
+    { "fase": 3, "pag": "298", "testo": "A differenza degli ultrasuoni, che trasmettono energia attraverso il pezzo, la vibrazione la porta direttamente al giunto: cariche, rimacinato, coloranti e impurità non ne riducono l'efficacia." },
+    { "fase": 4, "pag": "298–299", "testo": "Il giunto ha una resistenza vicina a quella del materiale base; con alcune combinazioni i materiali si mescolano del tutto in un legame omogeneo. Umidità e modificanti influiscono sulla saldabilità." },
+    { "fase": 5, "pag": "300–301", "testo": "Si eliminano viti e adesivi; non si aggiunge materiale al giunto, quindi il processo non produce scarti." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Termoplastici amorfi e semicristallini, alcuni compositi polimerici, film e tessuti termoplastici; utile per POM, PE, PA e PP, difficili da saldare a ultrasuoni o incollare. Solo materiali uguali, salvo ABS, PMMA e PC fra loro.", "pag": "300–301" },
+    "volumi": { "valore": "Medie e grandi serie.", "pag": "298" },
+    "costoAttrezzatura": { "valore": "Da basso a moderato: ogni pezzo richiede un'attrezzatura dedicata.", "pag": "298, 301" },
+    "costoUnitario": { "valore": "Basso; manodopera bassa, soprattutto se automatizzato.", "pag": "298, 301" },
+    "tempoCiclo": { "valore": "Molto rapido, fino a 30 secondi: saldatura di 2–15 secondi e mantenimento di durata simile; più pezzi insieme riducono il ciclo.", "pag": "298, 300–301" },
+    "qualitaSuperficiale": { "valore": "Giunti forti, anche ermetici; il preriscaldo riduce i residui.", "pag": "298" },
+    "precisione": { "valore": "Allineamento automatico a fine vibrazione. Tolleranze numeriche: n.d.", "pag": "299–300" },
+    "dimensioni": { "valore": "Lineare fino a 500 × 1.500 mm; orbitale fino a 250 mm di diametro.", "pag": "300", "ocr": "Pressione di saldatura generale e ampiezza orbitale: n.d. (conversioni \"1-2N/mm2 (0.69-1.37 psi)\" e \"0.25 mm and 1.5 mm (0.1-0.59 in.)\" incoerenti)" }
+  },
+  "vincoli": [
+    { "mini": "piano", "titolo": "Piano di vibrazione piatto", "spiegazione": "I pezzi devono potersi muovere abbastanza da generare calore: il piano di vibrazione va tenuto piatto, o entro 10°.", "pag": "300" },
+    { "mini": "presa", "titolo": "Presa sicura e pareti sostenute", "spiegazione": "I pezzi devono essere afferrati bene per trasmettere l'energia; pareti sottili o lunghe e non sostenute si flettono.", "pag": "300" },
+    { "mini": "materiali", "titolo": "Plastiche uguali", "spiegazione": "La saldatura delle plastiche unisce materiali uguali, con poche eccezioni come ABS, PMMA e PC.", "pag": "300–301" }
+  ],
+  "variantiNota": "Le due forme di moto e lo sviluppo recente descritti nel capitolo; lo schema principale mostra la vibrazione lineare.",
+  "varianti": [
+    { "mini": "lineare", "titolo": "Lineare", "titoloOriginale": "Linear vibration welding", "testo": "Moto alternato su un solo asse; per pezzi grandi.", "pag": "298–300" },
+    { "mini": "orbitale", "titolo": "Orbitale", "titoloOriginale": "Orbital vibration welding", "testo": "Moto circolare non rotante, uguale in tutte le direzioni del piano; meno pressione, per parti delicate.", "pag": "298–300" },
+    { "mini": "preriscaldo", "titolo": "Con preriscaldo", "titoloOriginale": "Pre-heated vibration welding", "testo": "Il giunto si scalda prima della vibrazione: saldature pulite e resistenti con pochi residui.", "pag": "298" }
+  ],
+  "correlati": [
+    { "slug": "saldatura-attrito", "nome": "Saldatura per attrito", "nota": "stesso principio per i metalli", "pag": "298" },
+    { "slug": "saldatura-ultrasuoni", "nome": "Saldatura a ultrasuoni", "nota": "alternativa per pezzi sottili e delicati", "pag": "298" },
+    { "slug": "saldatura-piastra-calda", "nome": "Saldatura a piastra calda", "nota": "base del preriscaldo", "pag": "298" },
+    { "slug": "stampaggio-iniezione", "nome": "Stampaggio a iniezione", "nota": "produce i pezzi più adatti", "pag": "300" }
+  ],
+  "fonte": { "pagine": "298–301" }
+}

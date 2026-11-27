@@ -1,0 +1,53 @@
+{
+  "slug": "rettifica-levigatura",
+  "titolo": "Rettifica, levigatura e lucidatura",
+  "titoloOriginale": "Grinding, Sanding and Polishing",
+  "parte": "Parte 4 – Finitura",
+  "categoria": "Processi sottrattivi",
+  "sintesi": "Particelle abrasive asportano la superficie in passaggi sempre più fini, da una finitura grossolana fino allo specchio; tipo e grana dell'abrasivo e il metodo decidono l'effetto, uniforme o a motivi.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una lastra d'acciaio su un banco, sotto una mola che scorre avanti e indietro. Nella prima fase la mola è scura e la lastra appare ruvida e opaca con righe; a ogni fase la mola diventa più chiara e la superficie più liscia e lucida, finché con una mola in panno diventa uno specchio verde-acqua." },
+  "schema": {
+    "titolo": "Dalla rettifica alla lucidatura a specchio",
+    "descrizione": "A sinistra una mola che scorre su un pezzo; a destra l'ingrandimento del profilo superficiale. Le fasi mostrano il profilo che si appiattisce passando da grana 80–100 a 180–220, a 240 e infine alla pasta lucidante, con la rugosità che scende da circa 2,5 a 0,05 µm.",
+    "fasi": [
+      { "titolo": "Rettifica", "durata": 2200, "pag": "377–379", "didascalia": "Una mola rivestita di abrasivo, ad alta velocità e con lubrificante, sgrossa la superficie: con grana 80–100 la rugosità media è circa 2,5 µm." },
+      { "titolo": "Levigatura", "durata": 2200, "pag": "376–379", "didascalia": "Si passa a grane più fini (180–220): ogni passaggio riduce la profondità delle ondulazioni, fino a circa 1,25 µm." },
+      { "titolo": "Lucidatura opaca", "durata": 2200, "pag": "379", "didascalia": "Con grana 240 si ottiene una lucidatura opaca, circa 0,6 µm." },
+      { "titolo": "Lucidatura a specchio", "durata": 2400, "pag": "376–379", "didascalia": "Paste o cere con abrasivo, stese con panni o mole di stoffa, danno una superficie brillante: lo specchio è sotto 0,05 µm." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "376", "testo": "La rettifica lavora materiali duri: prepara le superfici, sbava, taglia e rifinisce con precisione; gli abrasivi vanno dal metallo ai minerali, dal diamante ai semi di mais macinati." },
+    { "fase": 2, "pag": "376", "testo": "La levigatura usa supporti ricoperti di abrasivo (sabbia, granato, ossido di alluminio, carburo di silicio); la grana va da 40 a 2.400: numeri bassi significano particelle più grosse e finitura più grezza." },
+    { "fase": 3, "pag": "378", "testo": "Con la carta abrasiva bagnata l'acqua trattiene le particelle e forma una pasta che rende la superficie molto fine." },
+    { "fase": 4, "pag": "378–379", "testo": "Le superfici lucidate riflettono oltre il 95% della luce, sono igieniche e facili da pulire; le satinate trattengono impronte e segni." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Qualsiasi materiale: metallo, legno, plastica, ceramica, vetro, con risultati diversi; l'inox, molto duro, si lucida a specchio, l'alluminio meno.", "pag": "376, 380" },
+    "volumi": { "valore": "Da pezzo unico a produzione di massa.", "pag": "376" },
+    "costoAttrezzatura": { "valore": "Per molte applicazioni nessuno; profili non standard possono richiedere utensili, anche costosi secondo le dimensioni.", "pag": "376, 380" },
+    "costoUnitario": { "valore": "Dipende dalla finitura: una lucidatura opaca aggiunge circa il 10% del costo del materiale, una finitura controllata circa il 25%, una riflettente circa il 60%.", "pag": "376, 380" },
+    "tempoCiclo": { "valore": "Da rapido a lungo: le superfici a specchio possono richiedere molte ore; nel caso studio la rettifica di una piastra dura fino a 45 minuti.", "pag": "376–378, 380" },
+    "qualitaSuperficiale": { "valore": "Alta, da grezza a specchio, uniforme o a motivi.", "pag": "376" },
+    "precisione": { "valore": "Fino a frazioni di micron; rugosità media: circa 2,5 µm con grana 80–100, 1,25 µm con 180–220, 0,6 µm con 240, 0,05 µm a specchio.", "pag": "376, 378–379" },
+    "dimensioni": { "valore": "Valori numerici: n.d.", "pag": "376–383" }
+  },
+  "vincoli": [
+    { "mini": "forma", "titolo": "Forme adatte alla precisione", "spiegazione": "Le operazioni di precisione si limitano a superfici piane, cilindriche e coniche; quelle estetiche si applicano a quasi ogni forma, anche a mano.", "pag": "380" },
+    { "mini": "durezza", "titolo": "La durezza conta", "spiegazione": "La durezza del materiale influisce sulla finitura e sul tempo: l'inox si lucida a specchio, l'alluminio no.", "pag": "380" },
+    { "mini": "ordine", "titolo": "Lucidare prima di fabbricare", "spiegazione": "Spesso conviene lucidare lamiere o tubi prima della fabbricazione e ritoccare a mano i giunti dopo.", "pag": "380" }
+  ],
+  "variantiNota": "Le altre tecniche descritte nel capitolo; lo schema principale mostra la sequenza a mola.",
+  "varianti": [
+    { "mini": "nastro", "titolo": "A nastro", "titoloOriginale": "Belt sanding", "testo": "Per legno e metallo; la versione rotativa satina tubi e profili irregolari.", "pag": "377, 380" },
+    { "mini": "honing", "titolo": "Levigatura di precisione", "titoloOriginale": "Honing", "testo": "Diametri interni ed esterni di pezzi a rivoluzione, con pietre sagomate.", "pag": "377–379" },
+    { "mini": "lappatura", "titolo": "Lappatura", "titoloOriginale": "Lapping", "testo": "Blocchi o tamponi impregnati di abrasivo, per finiture finissime o a motivi.", "pag": "377, 382–383" },
+    { "mini": "vibro", "titolo": "Vibrofinitura", "titoloOriginale": "Vibratory finishing", "testo": "Pezzi e sassolini in un contenitore vibrante, per sbavare grandi quantità.", "pag": "380" }
+  ],
+  "correlati": [
+    { "slug": "sabbiatura", "nome": "Sabbiatura", "nota": "rapida ma solo finiture opache", "pag": "378" },
+    { "slug": "elettrolucidatura", "nome": "Elettrolucidatura", "nota": "meno precisa, ma indipendente dalla forma", "pag": "378" },
+    { "slug": "prototipazione-rapida", "nome": "Prototipazione rapida", "nota": "la rettifica prepara le piastre per la DMLS", "pag": "378" }
+  ],
+  "fonte": { "pagine": "376–383" }
+}

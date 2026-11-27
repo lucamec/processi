@@ -1,0 +1,57 @@
+{
+  "slug": "giunzioni-legno",
+  "titolo": "Giunzioni del legno (falegnameria)",
+  "titoloOriginale": "Joinery",
+  "parte": "Parte 3 – Giunzione",
+  "categoria": "Meccanico",
+  "sintesi": "Incastri fatti a mano o a macchina, spesso solo incollati, uniscono pezzi di legno sfruttandone la direzione della fibra: dal semplice giunto di testa alla coda di rondine, scelti per resistenza e per aspetto.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D esploso di un giunto a tenone e mortasa fra una gamba verticale e un traverso orizzontale di rovere. Dal traverso si staccano le guance e resta il tenone; dalla gamba si solleva il blocco di legno che lascia la mortasa. Il tenone si colora d'arancione per la colla, poi il traverso scorre e il tenone entra nella mortasa; il giunto finito diventa verde." },
+  "schema": {
+    "titolo": "Giunto a tenone e mortasa, in sezione",
+    "descrizione": "Sezione di una gamba con la mortasa e di un traverso con il tenone, separati. Le fasi mostrano le guance tolte attorno al tenone, il blocco asportato dalla mortasa, la colla sul tenone e il montaggio.",
+    "fasi": [
+      { "titolo": "Tenone", "durata": 2000, "pag": "325", "didascalia": "Il traverso diventa il tenone: si tagliano le guance alla sega a nastro." },
+      { "titolo": "Mortasa", "durata": 2000, "pag": "325", "didascalia": "La mortasa si scava nella gamba con la mortasatrice, una punta che gira dentro uno scalpello e fa fori quadri; oppure a mano." },
+      { "titolo": "Colla", "durata": 1800, "pag": "324", "didascalia": "Si stende la colla, di solito PVA: distribuisce il carico su tutto il giunto e non si vede dall'esterno." },
+      { "titolo": "Montaggio", "durata": 2200, "pag": "326", "didascalia": "Il tenone entra nella mortasa: è il giunto tradizionale e più robusto fra gambe e telaio, che aiuta anche a impedire torsioni." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "324", "testo": "Artigianato e industria hanno fissato una serie di giunti standard: di testa, a sovrapposizione, a quartabuono, a scanalatura, a tenone e mortasa, a M, ammorsatura, maschio e femmina, a pettine, a dita e a coda di rondine." },
+    { "fase": 2, "pag": "324", "testo": "Il legno è anisotropo, più resistente lungo la fibra, e ritira o si gonfia con l'umidità: il giunto deve rispettarne forze e instabilità." },
+    { "fase": 3, "pag": "324", "testo": "Quattro adesivi principali: PVA, urea-formaldeide (i più economici e diffusi), epossidici bicomponenti e poliuretanici; questi ultimi incollano il legno anche a metallo, plastica o ceramica e resistono all'acqua." },
+    { "fase": 4, "pag": "324, 326", "testo": "La qualità dipende molto dall'abilità: c'è poco margine d'errore. I giunti possono essere quasi invisibili o fare da contrasto e dare valore percepito." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Soprattutto legni massicci: rovere, frassino, faggio, pino, acero, noce e betulla; anche altri materiali abbastanza duri da intagliare, e pannelli come MDF e compensato.", "pag": "326, 330" },
+    "volumi": { "valore": "Da pezzo unico a grandi serie.", "pag": "324" },
+    "costoAttrezzatura": { "valore": "Nessuno; possono servire maschere o frese per toupie e fresatrici, in genere economiche.", "pag": "324, 326" },
+    "costoUnitario": { "valore": "Da moderato ad alto secondo la complessità; manodopera piuttosto alta.", "pag": "324, 327" },
+    "tempoCiclo": { "valore": "Dipende da complessità e abilità: un giunto può richiedere 5 minuti, ma un prodotto può averne 15; conviene ripetere gli stessi giunti per ridurre i cambi macchina.", "pag": "324, 326" },
+    "qualitaSuperficiale": { "valore": "Dipende dall'abilità del falegname; i giunti possono restare a vista.", "pag": "324" },
+    "precisione": { "valore": "Poco margine d'errore. Tolleranze numeriche: n.d.", "pag": "324" },
+    "dimensioni": { "valore": "Nessun limite a dimensioni e lunghezza delle tavole da unire.", "pag": "326" }
+  },
+  "vincoli": [
+    { "mini": "terzo", "titolo": "Mortase e scanalature entro 1/3", "spiegazione": "Mortase e scanalature non devono superare un terzo dello spessore del pezzo, così attorno al giunto resta legno sufficiente.", "pag": "326" },
+    { "mini": "testa", "titolo": "Evitare la fibra di testa", "spiegazione": "La fibra di testa è la faccia più debole per colle, chiodi e viti: il giunto di testa è il più debole e va rinforzato; quelli a sovrapposizione incollano fibra lunga.", "pag": "324–325" },
+    { "mini": "movimento", "titolo": "Assecondare il movimento del legno", "spiegazione": "Lo stile del giunto deve limitare torsioni e imbarcamenti; nei piani di tavole si usano testate trasversali contro l'imbarcamento.", "pag": "324, 326" }
+  ],
+  "variantiNota": "I principali giunti descritti nel capitolo; lo schema principale mostra il tenone e mortasa.",
+  "varianti": [
+    { "mini": "spine", "titolo": "Testa a testa rinforzato", "titoloOriginale": "Butt joint with dowels or biscuits", "testo": "Il più semplice ed economico, rinforzato con spine o biscotti nascosti.", "pag": "324–325, 328" },
+    { "mini": "quartabuono", "titolo": "A quartabuono", "titoloOriginale": "Mitre joint", "testo": "Due tavole a 45°: nasconde la fibra di testa e dà continuità alla venatura.", "pag": "325–326, 328" },
+    { "mini": "pettine", "titolo": "A pettine e a coda di rondine", "titoloOriginale": "Comb and dovetail joints", "testo": "Grandi superfici di colla per cassetti e scatole; la coda di rondine resiste allo sfilamento.", "pag": "325, 330" },
+    { "mini": "scanalatura", "titolo": "A scanalatura", "titoloOriginale": "Housing joint", "testo": "Per mensole e mobili, montati e incollati in una sola operazione.", "pag": "325, 330" },
+    { "mini": "allungamento", "titolo": "Allungamento e allargamento", "titoloOriginale": "Scarf, tongue and groove, M-joint, finger joint", "testo": "Uniscono tavole in pannelli o profili continui, aumentando la superficie incollata.", "pag": "325–326" }
+  ],
+  "correlati": [
+    { "slug": "strutture-telaio-legno", "nome": "Strutture a telaio in legno", "nota": "usano giunti semplici e ferramenta", "pag": "324" },
+    { "slug": "saldatura-attrito", "nome": "Saldatura per attrito", "nota": "la lineare potrebbe sostituire l'incollaggio", "pag": "324" },
+    { "slug": "lavorazione-cnc", "nome": "Lavorazione CNC", "nota": "spesso combinata", "pag": "326" },
+    { "slug": "laminazione-legno", "nome": "Laminazione del legno", "nota": "spesso combinata", "pag": "326" },
+    { "slug": "curvatura-vapore", "nome": "Curvatura a vapore", "nota": "spesso combinata", "pag": "326" },
+    { "slug": "imbottitura", "nome": "Imbottitura e tappezzeria", "nota": "spesso combinata", "pag": "326" }
+  ],
+  "fonte": { "pagine": "324–331" }
+}

@@ -1,0 +1,52 @@
+{
+  "slug": "colata-sottovuoto",
+  "titolo": "Colata sottovuoto",
+  "titoloOriginale": "Vacuum Casting",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Plastica e gomma",
+  "sintesi": "Poliuretano liquido viene colato sottovuoto in uno stampo di silicone ricavato da un modello: si ottengono prototipi e piccole serie con dettagli e proprietà molto vicini ai pezzi stampati a iniezione.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D dentro una camera a vuoto trasparente. Lo stampo in silicone, semitrasparente, è diviso in due metà. Prima si vede il modello grigio racchiuso nel silicone; poi la metà superiore si alza e il modello viene tolto. Lo stampo si richiude, il poliuretano arancione scende dal bicchiere nel canale di colata e risale riempiendo la cavità e le materozze. In forno il pezzo diventa verde; infine lo stampo si apre." },
+  "schema": {
+    "titolo": "Colata sottovuoto in sezione",
+    "descrizione": "Sezione di uno stampo in silicone in due metà dentro la camera a vuoto. La cavità ha la forma di un guscio; un canale di colata scende dall'alto fino a un distributore sotto il pezzo e due materozze salgono dal pezzo verso l'alto. Le fasi mostrano lo stampo ricavato dal modello, la rimozione del modello, la colata, la polimerizzazione in forno e l'estrazione.",
+    "fasi": [
+      { "titolo": "Stampo in silicone", "durata": 2200, "pag": "40, 42", "didascalia": "Il modello (master), con canale di colata, distributore e materozze, viene sospeso in una cassa e annegato nella gomma siliconica." },
+      { "titolo": "Rimozione del modello", "durata": 2000, "pag": "42", "didascalia": "A silicone indurito, lo stampo viene tagliato in due metà seguendo il modello, che viene tolto." },
+      { "titolo": "Colata sottovuoto", "durata": 3000, "pag": "41, 43", "didascalia": "Le metà vengono richiuse. Sottovuoto il PUR miscelato scende dal canale di colata, passa nel distributore e risale nella cavità e nelle materozze, senza bolle e senza l'ostacolo della pressione dell'aria." },
+      { "titolo": "Polimerizzazione", "durata": 2200, "pag": "41, 43", "didascalia": "Lo stampo resta chiuso per tutta la polimerizzazione, di norma da 45 minuti a 4 ore; nel caso studio in forno a 40 °C." },
+      { "titolo": "Estrazione", "durata": 2200, "pag": "41, 43", "didascalia": "Aria in pressione nelle materozze aiuta a staccare il pezzo; le metà si separano e si tolgono bave, materozze e materiale in eccesso." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "40, 42", "testo": "Lo stampo è di silicone flessibile e si ricava direttamente da un modello di qualunque materiale non poroso." },
+    { "fase": 2, "pag": "42", "testo": "Lo stampo si taglia in due metà, A e B; si possono aggiungere inserti e nuclei per i pezzi complessi." },
+    { "fase": 3, "pag": "40–41", "testo": "Il poliuretano (PUR) è un termoindurente in due componenti, conservati a 40 °C: mescolati reagiscono producendo calore e salgono a 65–70 °C. Il vuoto fa sì che il materiale non abbia porosità e scorra liberamente." },
+    { "fase": 4, "pag": "40", "testo": "I pezzi grandi vanno induriti lentamente, altrimenti si surriscaldano e si deformano; quelli piccoli si induriscono in fretta." },
+    { "fase": 5, "pag": "41–43", "testo": "Dopo l'estrazione si tolgono materozze e bave. Uno stampo dura 20–30 cicli." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Centinaia di gradi di PUR che imitano PP, ABS, PA e TPE, dal trasparente a tutti i colori, da morbido (Shore A 25–90) a rigido (Shore D). Anche PA e cere per microfusione.", "pag": "40–42" },
+    "volumi": { "valore": "Prototipi, pezzi unici e piccole serie.", "pag": "40" },
+    "costoAttrezzatura": { "valore": "Basso, secondo dimensione e complessità del modello. Uno stampo richiede 0,5–1 giorno e va rifatto dopo 20–30 cicli.", "pag": "40, 42" },
+    "costoUnitario": { "valore": "Moderato; manodopera moderata, perché stampo, colata e finitura sono manuali.", "pag": "40, 42" },
+    "tempoCiclo": { "valore": "Variabile: di norma da 45 minuti a 4 ore, fino a diversi giorni per i pezzi grandi. Sotto i 2,5 kg, 1 ora o meno.", "pag": "40–42" },
+    "qualitaSuperficiale": { "valore": "Molto alta: replica esatta della superficie del modello, compresi loghi e texture. La finitura dello stampo in silicone non si può modificare.", "pag": "40–42" },
+    "precisione": { "valore": "Tolleranza di norma entro lo 0,4% delle dimensioni del modello.", "pag": "41" },
+    "dimensioni": { "valore": "Da pochi grammi a diverse centinaia di chili; i pezzi tipici sono sotto i 2,5 kg.", "pag": "42" }
+  },
+  "vincoli": [
+    { "mini": "spessore", "titolo": "Pareti di almeno 1 mm, meglio 3 mm", "spiegazione": "Si arriva a 0,5 mm su piccole zone, ma lo spessore consigliato è superiore a 1 mm e idealmente non meno di 3 mm. Grazie alla bassa pressione sono possibili cambi di spessore a gradino.", "pag": "42" },
+    { "mini": "spigoli", "titolo": "Evitare i dettagli taglienti", "spiegazione": "Dettagli molto affilati, come i bordi a lama, sono difficili da riprodurre in qualunque stampaggio e vanno evitati.", "pag": "42" },
+    { "mini": "sottosquadri", "titolo": "Sottosquadri piccoli sì, grandi con nuclei", "spiegazione": "Piccoli sottosquadri si estraggono flettendo lo stampo di silicone; per rientri più grandi e dettagli interni servono nuclei e inserti.", "pag": "41–42" }
+  ],
+  "variantiNota": "Il libro non elenca varianti di questo processo. Qui sotto la possibilità descritta nel testo.",
+  "varianti": [
+    { "mini": "sovrastampaggio", "titolo": "Sovrastampaggio", "titoloOriginale": "Over-molding", "testo": "Proprietà di plastiche diverse si combinano colando un secondo materiale sul primo. È simile all'iniezione multicomponente, ma il pezzo viene tolto dallo stampo e messo in un altro per il secondo materiale, per esempio un simil-ABS rigido rivestito di simil-TPE morbido.", "pag": "42" }
+  ],
+  "correlati": [
+    { "slug": "stampaggio-iniezione", "nome": "Stampaggio a iniezione", "nota": "la colata sottovuoto ne simula materiali e dettagli, ma non i volumi", "pag": "40–41" },
+    { "slug": "rim", "nome": "Stampaggio a iniezione con reazione (RIM)", "nota": "anch'esso per prototipi e piccole serie in PUR, adatto a geometrie più semplici", "pag": "41" },
+    { "slug": "microfusione", "nome": "Microfusione a cera persa", "nota": "la colata sottovuoto produce anche i modelli in cera", "pag": "42" }
+  ],
+  "fonte": { "pagine": "40–43" }
+}

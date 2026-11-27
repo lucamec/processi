@@ -1,0 +1,54 @@
+{
+  "slug": "incisione-cnc",
+  "titolo": "Incisione CNC",
+  "titoloOriginale": "CNC Engraving",
+  "parte": "Parte 4 – Finitura",
+  "categoria": "Processi sottrattivi",
+  "sintesi": "Una fresatrice a controllo numerico incide con precisione e ripetibilità superfici piane e 3D; il colore negli incavi e i materiali trasparenti mettono in risalto i dettagli.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una fresatrice a portale con tre lastre trasparenti di plexiglas su un film adesivo giallo. La punta si porta sullo spigolo di partenza, poi incide tratti dritti bianchi sulle tre lastre, una dopo l'altra. Una racla stende la vernice rossa nei solchi; alla fine le lastre si sollevano pulite." },
+  "schema": {
+    "titolo": "Incisione CNC di trofei in PMMA, in sezione",
+    "descrizione": "Sezione di una lastra di PMMA sul piano della fresatrice, fissata con un film adesivo. Le fasi mostrano il fissaggio e l'azzeramento della punta, l'incisione dei solchi, la vernice stesa a racla e il pezzo pulito.",
+    "fasi": [
+      { "titolo": "Fissaggio e azzeramento", "durata": 2000, "pag": "398", "didascalia": "Tre lastre di PMMA da 10 mm, già tagliate, si fissano al piano con un film adesivo; la punta si azzera sullo spigolo in alto a destra per allineare i dati CAD." },
+      { "titolo": "Incisione", "durata": 2800, "pag": "397–398", "didascalia": "La punta in tungsteno da 0,3 mm incide a linee rette; per i tre trofei servono 45 minuti, a 0,2 mm di profondità." },
+      { "titolo": "Colore", "durata": 2000, "pag": "398", "didascalia": "Nei solchi si stende vernice alla cellulosa; ogni colore richiede 20 minuti di asciugatura." },
+      { "titolo": "Pulizia", "durata": 1600, "pag": "397–398", "didascalia": "Tolto l'eccesso, il colore nasconde i segni del taglio; le righe sottili nella plastica trasparente si attenuano lucidando." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "396", "testo": "Con il laser, il CNC ha sostituito l'incisione a mano con scalpelli o pantografo; si esegue su fresatrici o pantografi a controllo numerico con almeno tre assi: x, y e z." },
+    { "fase": 2, "pag": "397", "testo": "Le punte sono di solito in tungsteno, riaffilabili più volte; per materiali duri come il granito servono punte diamantate. Il percorso segue linee rette o il profilo del disegno." },
+    { "fase": 2, "pag": "396–397", "testo": "Punte piccole riproducono dettagli e raggi interni stretti; punte grandi lavorano più in fretta e costano meno. Materiali duri e incisioni profonde richiedono velocità minori." },
+    { "fase": 4, "pag": "397", "testo": "Il processo parte dai dati CAD; anche con tre assi la profondità può variare a gradini, e si possono incidere segni di riferimento durante la lavorazione." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Quasi tutti: plastica, schiume, legno, metallo (anche inox e titanio), pietra, vetro, ceramica, compositi.", "pag": "396–398" },
+    "volumi": { "valore": "Da pezzo unico a lotti.", "pag": "396" },
+    "costoAttrezzatura": { "valore": "Nessuno.", "pag": "396, 398" },
+    "costoUnitario": { "valore": "Moderato; manodopera minima, la macchina lavora di solito senza operatore.", "pag": "396, 398" },
+    "tempoCiclo": { "valore": "Moderato, secondo dimensione e complessità; velocità di taglio 1–50 mm/s.", "pag": "396–398" },
+    "qualitaSuperficiale": { "valore": "Alta e ripetibile; il colore nasconde i segni del taglio.", "pag": "396–397" },
+    "precisione": { "valore": "0,01 mm.", "pag": "396" },
+    "dimensioni": { "valore": "Dipende dal piano: di solito non oltre 2 m², ma esistono piani per modelli d'auto in scala reale; spessore minimo circa 1 mm.", "pag": "397" }
+  },
+  "vincoli": [
+    { "mini": "punta", "titolo": "Dimensione della punta", "spiegazione": "Compromesso fra punta piccola, che dà definizione e raggi stretti, e punta grande, che asporta più in fretta.", "pag": "396–398" },
+    { "mini": "caratteri", "titolo": "Caratteri in tracciati", "spiegazione": "I testi vanno consegnati come contorni vettoriali, altrimenti il carattere può essere sostituito; conviene usare la versione di software preferita dal produttore.", "pag": "397" },
+    { "mini": "scala", "titolo": "Dettaglio e tempo", "spiegazione": "Dettagli molto fini sono riproducibili, ma su grandi aree il tempo cresce molto.", "pag": "397" }
+  ],
+  "variantiNota": "Possibilità descritte nel capitolo; lo schema principale mostra l'incisione a tre assi con riempimento di colore.",
+  "varianti": [
+    { "mini": "retro", "titolo": "Incisione sul retro", "titoloOriginale": "Reverse engraving", "testo": "Nei materiali trasparenti migliora molto la resa.", "pag": "397" },
+    { "mini": "cinque", "titolo": "A 5 assi", "titoloOriginale": "5-axis engraving", "testo": "Per superfici 3D e disegni complessi.", "pag": "396" },
+    { "mini": "profilo", "titolo": "Percorso a contorno", "titoloOriginale": "Profile cutting path", "testo": "La punta segue il profilo del disegno.", "pag": "397" }
+  ],
+  "correlati": [
+    { "slug": "lavorazione-cnc", "nome": "Lavorazione CNC", "nota": "stesse macchine", "pag": "396" },
+    { "slug": "taglio-laser", "nome": "Taglio laser", "nota": "dettagli fino a 0,1 mm, attrezzature costose", "pag": "396" },
+    { "slug": "incisione-fotochimica", "nome": "Incisione fotochimica", "nota": "incisioni poco profonde nei metalli", "pag": "396" },
+    { "slug": "sabbiatura", "nome": "Sabbiatura", "nota": "effetti simili su vetro e altri materiali", "pag": "388" },
+    { "slug": "serigrafia", "nome": "Serigrafia", "nota": "alternativa economica all'incisione", "pag": "396" }
+  ],
+  "fonte": { "pagine": "396–399" }
+}

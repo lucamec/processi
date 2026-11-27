@@ -1,0 +1,53 @@
+{
+  "slug": "taglio-getto-acqua",
+  "titolo": "Taglio a getto d'acqua",
+  "titoloOriginale": "Water Jet Cutting",
+  "parte": "Parte 2 – Taglio",
+  "categoria": "Meccanico",
+  "sintesi": "Un getto d'acqua ad altissima pressione, spesso caricato di abrasivo, taglia a freddo quasi ogni foglio, dalla schiuma morbida al titanio, senza zona termicamente alterata e senza attrezzature.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una tavola per taglio a getto d'acqua. Una testa su portale sta sopra una lastra di vetro azzurrina appoggiata su lamelle, sopra una vasca d'acqua. Un getto chiaro attraversa la lastra mentre la testa percorre un cerchio, lasciando un solco scuro. Cunei arancioni si inseriscono sotto il disco; poi il disco si solleva e diventa verde." },
+  "schema": {
+    "titolo": "Taglio a getto d'acqua con abrasivo, in sezione",
+    "descrizione": "Sezione di una testa di taglio sopra una lastra di vetro e una vasca d'acqua. Le fasi mostrano l'acqua in pressione verso l'orifizio, l'abrasivo che entra nella camera di miscelazione, il getto che attraversa il pezzo deviando in profondità e i cunei che sostengono il pezzo tagliato.",
+    "fasi": [
+      { "titolo": "Acqua in pressione", "durata": 2000, "pag": "272–273", "didascalia": "Pompa e moltiplicatore portano l'acqua di rete fino a 4.000 bar; poi passa da un orifizio di 0,1–0,25 mm in diamante, zaffiro o rubino." },
+      { "titolo": "Abrasivo", "durata": 2000, "pag": "273", "didascalia": "Nella camera di miscelazione particelle minerali, spesso granato, vengono accelerate dal getto supersonico: il fascio, di circa 1 mm, taglia grazie all'abrasivo." },
+      { "titolo": "Taglio", "durata": 3000, "pag": "272–274", "didascalia": "La testa a controllo numerico segue il percorso del CAD; in profondità il getto perde pressione e devia, quindi si rallenta. Sotto, una vasca d'acqua dissipa il getto." },
+      { "titolo": "Sostegno ed estrazione", "durata": 2200, "pag": "274", "didascalia": "L'operatore inserisce cunei per sostenere il pezzo durante il taglio; poi lo estrae. Nel caso studio il bordo si lucida su una mola diamantata." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "272", "testo": "Si usa industrialmente dagli anni Settanta, a sola acqua o con abrasivo: con l'acqua sola è il getto a erodere, con l'abrasivo sono le particelle a tagliare." },
+    { "fase": 3, "pag": "272", "testo": "Essendo un processo a freddo non crea zona termicamente alterata né scolorimento: si tagliano anche materiali già stampati o rivestiti. Non c'è contatto fra utensile e pezzo, quindi i bordi non si deformano." },
+    { "fase": 3, "pag": "272", "testo": "Profili interni ed esterni si tagliano nella stessa operazione; non servono fori d'ingresso, salvo nei materiali che possono delaminarsi o rompersi all'impatto." },
+    { "fase": 4, "pag": "274", "testo": "Il programma prolunga un poco il taglio all'inizio e alla fine, per ottenere un disco perfettamente simmetrico." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Quasi tutti: acciaio dolce, inox e per utensili; titanio, alluminio, rame e ottone; marmo, ceramica, vetro e pietra; laminati e compositi, compresa la fibra di carbonio; legno; schiume.", "pag": "272, 274" },
+    "volumi": { "valore": "Da pezzo unico a medie serie.", "pag": "272" },
+    "costoAttrezzatura": { "valore": "Nessuno.", "pag": "272, 274" },
+    "costoUnitario": { "valore": "Moderato: il costo principale è il tempo; manodopera moderata e specializzata.", "pag": "272, 274" },
+    "tempoCiclo": { "valore": "Moderato, secondo tipo e spessore del materiale; angoli vivi e raggi stretti rallentano.", "pag": "272, 274" },
+    "qualitaSuperficiale": { "valore": "Buona; l'acqua sola taglia più pulito, le grane abrasive più fini danno superfici migliori; in profondità la finitura peggiora.", "pag": "272" },
+    "precisione": { "valore": "Tolleranze inferiori a 500 µm.", "pag": "272" },
+    "dimensioni": { "valore": "Spessori da 0,5 a 100 mm: per esempio schiuma polimerica fino a 100 mm, inox fino a 60 mm.", "pag": "272" }
+  },
+  "vincoli": [
+    { "mini": "raggi", "titolo": "Angoli vivi e raggi stretti", "spiegazione": "Rallentano il taglio; la deviazione del getto aumenta la conicità sulle curve: si riduce rallentando o alzando la pressione.", "pag": "272–273" },
+    { "mini": "fori", "titolo": "Fori più piccoli dello spessore", "spiegazione": "I fori con diametro minore dello spessore del materiale vanno forati.", "pag": "272" },
+    { "mini": "sostegno", "titolo": "Sostenere i pezzi sottili", "spiegazione": "I pezzi molto sottili possono rompersi prima della fine del taglio per il loro peso: si progettano linguette, da togliere dopo, o si inseriscono cunei.", "pag": "274" }
+  ],
+  "variantiNota": "Le due versioni del processo e un accorgimento per ridurre i tempi descritti nel capitolo.",
+  "varianti": [
+    { "mini": "acqua", "titolo": "Solo acqua", "titoloOriginale": "Water only cutting", "testo": "Getto supersonico di acqua pura fino a 4.000 bar; taglio molto pulito.", "pag": "272" },
+    { "mini": "abrasivo", "titolo": "Con abrasivo", "titoloOriginale": "Abrasive water jet", "testo": "Particelle taglienti sospese nel getto per i materiali duri; la grana influisce sulla finitura.", "pag": "272–273" },
+    { "mini": "pacco", "titolo": "Fogli impilati", "titoloOriginale": "Stacked sheets", "testo": "Più fogli sottili si tagliano insieme per ridurre il tempo.", "pag": "274" }
+  ],
+  "correlati": [
+    { "slug": "taglio-laser", "nome": "Taglio laser", "nota": "molti materiali, ma con zona termicamente alterata", "pag": "272" },
+    { "slug": "fustellatura", "nome": "Fustellatura", "nota": "per fogli sottili", "pag": "272" },
+    { "slug": "punzonatura-tranciatura", "nome": "Punzonatura e tranciatura", "nota": "per fogli sottili", "pag": "272" },
+    { "slug": "taglio-vetro", "nome": "Taglio del vetro per incisione", "nota": "solo per vetro sottile", "pag": "272" }
+  ],
+  "fonte": { "pagine": "272–275" }
+}

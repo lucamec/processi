@@ -1,0 +1,54 @@
+{
+  "slug": "stampa-idrografica",
+  "titolo": "Stampa a trasferimento ad acqua (idrografica)",
+  "titoloOriginale": "Hydro Transfer Printing",
+  "parte": "Parte 4 – Finitura",
+  "categoria": "Stampa",
+  "sintesi": "Una grafica stampata in digitale su un film solubile galleggia sull'acqua e, quando il pezzo vi si immerge, la pressione dell'acqua la avvolge attorno a superfici 3D: legno, marmo, carbonio, mimetico o grafiche decorative.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una vasca d'acqua azzurra. Un guscio grigio è appeso sopra la vasca; sull'acqua si allarga un film con un motivo mimetico verde e marrone, chiuso da quattro paratie scure. Una pistola spruzza l'attivatore sul film; poi il guscio scende inclinato nell'acqua e, quando risale, la sua faccia inferiore è coperta dal motivo mimetico. Alla fine una seconda pistola lo spruzza dal basso con la lacca e la superficie diventa lucida." },
+  "schema": {
+    "titolo": "Ciclo d'immersione, in sezione",
+    "descrizione": "Sezione di una vasca d'acqua tiepida con un film galleggiante fra due paratie e un pezzo appeso sopra. Le fasi mostrano il fondo sul pezzo, il film che riposa sull'acqua, lo spruzzo dell'attivatore, l'immersione del pezzo avvolto dall'inchiostro e la lacca finale.",
+    "fasi": [
+      { "titolo": "Fondo", "durata": 1800, "pag": "409–410", "didascalia": "Il pezzo riceve un fondo coprente: corregge i difetti, fa aderire l'inchiostro e dà il colore su cui si leggono gli inchiostri, quasi trasparenti." },
+      { "titolo": "Film sull'acqua", "durata": 2000, "pag": "409–410", "didascalia": "Il film, di PVOH con l'inchiostro, si stende sull'acqua a 30–40 °C, con il PVOH in basso; riposa 45 secondi mentre inizia a sciogliersi, e le paratie lo fermano." },
+      { "titolo": "Attivatore", "durata": 1800, "pag": "409–410", "didascalia": "Uno spruzzo di attivatore (diluente) rende l'inchiostro gelatinoso e delicato: se si aspetta troppo si disperde nell'acqua." },
+      { "titolo": "Immersione", "durata": 2400, "pag": "409–410", "didascalia": "Dopo pochi secondi il pezzo si immerge con un'inclinazione che evita bolle d'aria; la pressione dell'acqua fa seguire all'inchiostro ogni contorno." },
+      { "titolo": "Risciacquo e lacca", "durata": 2000, "pag": "409–410", "didascalia": "Si pulisce l'acqua prima di estrarre il pezzo, lo si risciacqua e lo si protegge con una lacca trasparente, opaca o lucida." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 2, "pag": "408", "testo": "Ha molti nomi (immersion coating, cubic printing, aqua graphics) ma è lo stesso processo; serve a imitare materiali e a decorare." },
+    { "fase": 4, "pag": "409", "testo": "Il ciclo d'immersione dura 3–4 minuti ed è solo un terzo del lavoro: gli altri due terzi sono la verniciatura prima e dopo." },
+    { "fase": 4, "pag": "409–410", "testo": "L'inchiostro, sotto 1 µm, sta fra fondo e lacca, che lo rendono resistente come una verniciatura a spruzzo; tutti i colori si applicano in un passaggio, senza registro." },
+    { "fase": 5, "pag": "408, 410", "testo": "Conviene per tirature più brevi della decorazione in stampo e senza attrezzature dedicate; per volumi da immersione meccanizzata si passa di solito a quella." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Quasi ogni materiale rigido che si possa verniciare; soprattutto plastiche stampate a iniezione e metalli.", "pag": "410" },
+    "volumi": { "valore": "Da bassi volumi a produzione di massa.", "pag": "408" },
+    "costoAttrezzatura": { "valore": "Nessuno, ma i pezzi piccoli richiedono maschere di supporto per stamparne molti insieme.", "pag": "408, 410" },
+    "costoUnitario": { "valore": "Da basso a moderato; manodopera moderata, perché le immersioni sono per lo più manuali.", "pag": "408, 410" },
+    "tempoCiclo": { "valore": "Di solito non oltre 10 minuti; immersione 3–4 minuti; le mascherature lo allungano.", "pag": "409–410" },
+    "qualitaSuperficiale": { "valore": "Immagini ad alta definizione, pari alla stampa digitale; il film avvolge allungandosi poco.", "pag": "408–409" },
+    "precisione": { "valore": "La grafica non si posiziona con precisione; valori numerici: n.d.", "pag": "410" },
+    "dimensioni": { "valore": "Limitate da vasca e larghezza del film: di solito 1 m².", "pag": "410" }
+  },
+  "vincoli": [
+    { "mini": "forma", "titolo": "Complessità della forma", "spiegazione": "Superfici piane e curve dolci riescono meglio; più la forma è complessa più è difficile, e coni e spigoli vivi sono i casi peggiori.", "pag": "410" },
+    { "mini": "aria", "titolo": "Bolle d'aria", "spiegazione": "Recessi profondi, fori e sottosquadri vogliono uno sfogo per l'aria in alto; l'angolo d'immersione giusto risolve spesso i casi meno gravi.", "pag": "410" },
+    { "mini": "posizione", "titolo": "Solo motivi, non grafiche a registro", "spiegazione": "Il prodotto si può allineare al motivo, ma non abbastanza per grafiche che richiedono precisione, come i numeri di un pannello.", "pag": "410" }
+  ],
+  "variantiNota": "Possibilità descritte nel capitolo; lo schema principale mostra un'immersione singola.",
+  "varianti": [
+    { "mini": "imitazione", "titolo": "Imitazione di materiali", "titoloOriginale": "Imitation", "testo": "Legno, marmo, carbonio, pelle di serpente.", "pag": "408–410" },
+    { "mini": "mascherato", "titolo": "Due immersioni con mascheratura", "titoloOriginale": "Masked double dip", "testo": "Per pezzi con sottosquadri, come il calcio di un fucile.", "pag": "410" },
+    { "mini": "decoro", "titolo": "Grafiche decorative", "titoloOriginale": "Decoration", "testo": "Motivi, bandiere, foto, grafiche proprie.", "pag": "408" }
+  ],
+  "correlati": [
+    { "slug": "tampografia", "nome": "Tampografia", "nota": "più precisa, ma su piccole aree", "pag": "408" },
+    { "slug": "verniciatura-spruzzo", "nome": "Verniciatura a spruzzo", "nota": "fondo e lacca; effetti simili con aerografo", "pag": "408" },
+    { "slug": "stampaggio-iniezione", "nome": "Stampaggio a iniezione", "nota": "pezzi tipici; decorazione in stampo per grandi volumi", "pag": "408, 410" },
+    { "slug": "serigrafia", "nome": "Serigrafia", "nota": "non stampa superfici ondulate", "pag": "402" }
+  ],
+  "fonte": { "pagine": "408–411" }
+}

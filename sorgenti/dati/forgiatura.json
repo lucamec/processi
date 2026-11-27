@@ -1,0 +1,53 @@
+{
+  "slug": "forgiatura",
+  "titolo": "Forgiatura",
+  "titoloOriginale": "Forging",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "sintesi": "Il metallo, di solito portato al calor rosso, viene martellato, pressato o laminato fra stampi finché ne prende la forma: i pezzi hanno una struttura dei grani orientata e una resistenza eccezionale.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di un maglio tagliato a metà. Una billetta cilindrica rosso-arancio viene schiacciata da colpi ripetuti fra stampi piatti, poi fra due stampi con cavità che le danno la forma di un tappo con una corona di bava sottile tutto intorno. Alla fine la bava viene tranciata e il pezzo, raffreddato, diventa verde." },
+  "schema": {
+    "titolo": "Stampaggio a caldo di un tappo in sezione",
+    "descrizione": "Sezione del maglio: stampo inferiore e stampo superiore, prima piatti e poi con la cavità a forma di tappo. Le fasi mostrano la billetta calda, la sbozzatura a stampo aperto, lo stampaggio a stampo chiuso con formazione della bava e la tranciatura della bava.",
+    "fasi": [
+      { "titolo": "Billetta calda", "durata": 2000, "pag": "115–116", "didascalia": "La barra viene tagliata in billette, scaldate in forno per circa 30 minuti fino a circa 1250 °C e prese con le tenaglie." },
+      { "titolo": "Sbozzatura a stampo aperto", "durata": 2400, "pag": "116–117", "didascalia": "Colpi ripetuti fra stampi aperti cambiano la forma ma non il volume; si stacca la scaglia di ossido, che contaminerebbe il pezzo." },
+      { "titolo": "Stampaggio a stampo chiuso", "durata": 2600, "pag": "118", "didascalia": "A ogni colpo il metallo caldo entra di più nelle cavità. La bava, più sottile, si raffredda prima e trattiene il metallo dentro lo stampo, che così riempie anche le estremità." },
+      { "titolo": "Sbavatura", "durata": 2000, "pag": "118", "didascalia": "La bava viene tranciata con un punzone. Nel caso studio tutta la forgiatura dura circa 30 secondi." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "114–115", "testo": "Le tecniche principali sono stampaggio a caldo (con maglio), forgiatura alla pressa e laminazione-forgiatura. L'acciaio si forgia sopra i 1250 °C, l'alluminio a circa 500 °C." },
+    { "fase": 2, "pag": "115", "testo": "Lo stampo aperto, piatto o a V, serve a stirare, ricalcare o preparare il pezzo; l'operatore lo riposiziona a ogni colpo." },
+    { "fase": 3, "pag": "114–115", "testo": "Lo stampo chiuso spinge il metallo in una cavità e produce forme complesse; si può automatizzare. Gli stampi sono in acciai da utensili e un lubrificante li raffredda." },
+    { "fase": 4, "pag": "114–115", "testo": "Deformandosi, i grani del metallo si allineano nella direzione del flusso: il pezzo ha un ottimo rapporto resistenza/peso e meno concentrazioni di tensione in angoli e raccordi." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Quasi tutti i ferrosi (acciai al carbonio, legati, inossidabili) e non ferrosi come titanio, rame, alluminio e ottone.", "pag": "116" },
+    "volumi": { "valore": "Ogni tipo di produzione, dal pezzo unico alla grande serie.", "pag": "114" },
+    "costoAttrezzatura": { "valore": "Da moderato ad alto; gli stampi chiusi durano fra 50 e 5000 cicli.", "pag": "114, 116" },
+    "costoUnitario": { "valore": "Moderato.", "pag": "114" },
+    "tempoCiclo": { "valore": "Rapido: di solito meno di un minuto (30 secondi nel caso studio).", "pag": "114, 118" },
+    "qualitaSuperficiale": { "valore": "Struttura dei grani eccellente, senza vuoti né porosità.", "pag": "114–115" },
+    "precisione": { "valore": "Tolleranze da 1 mm nei pezzi piccoli a 5 mm in quelli grandi; spesso si unisce la lavorazione meccanica.", "pag": "115" },
+    "dimensioni": { "valore": "Stampaggio a caldo: circa da 0,25 a 60 kg; a stampo aperto pezzi lunghi fino a 3 m; anelli laminati fino a 8,5 m di diametro e oltre 100 tonnellate; a freddo fino a 10 kg. Pareti da 5 a 250 mm.", "pag": "114–116", "ocr": "Peso massimo: OCR \"5o kg\", confermato a 60 kg dalla conversione (132 lb)." }
+  },
+  "vincoli": [
+    { "mini": "sottosquadri", "titolo": "Niente sottosquadri", "spiegazione": "I sottosquadri non si forgiano; rientri e giunti si ottengono con operazioni di forgiatura successive, come la ricalcatura di un fermo su un perno.", "pag": "116" },
+    { "mini": "raggi", "titolo": "Raggi ampi", "spiegazione": "Come nella fusione, contano linea di divisione, sformi, nervature, raggi e raccordi. I raggi favoriscono il flusso del metallo e riducono l'usura dello stampo; il raggio minimo cresce con la profondità della sporgenza.", "pag": "116" },
+    { "mini": "sporgenze", "titolo": "Sporgenze fino a 6 volte lo spessore", "spiegazione": "Si ottengono sporgenze sorprendentemente profonde, fino a 6 volte lo spessore del materiale. Nessun limite ai cambi di spessore.", "pag": "116" }
+  ],
+  "variantiNota": "Lo stampaggio a caldo con maglio è lo schema principale; qui sotto le altre tecniche descritte nel capitolo.",
+  "varianti": [
+    { "mini": "aperto", "titolo": "Stampaggio a stampo aperto", "titoloOriginale": "Open die forging", "testo": "Con stampi piatti o a V si allunga, si ricalca o si prepara il pezzo; richiede grande abilità e non si automatizza. Alberi a gomiti e assali delle auto si forgiano così.", "pag": "114–115" },
+    { "mini": "pressa", "titolo": "Forgiatura alla pressa", "titoloOriginale": "Press forging", "testo": "Il metallo viene spinto nello stampo da pistoni idraulici con un'azione di schiacciamento continua. Si lavora a caldo o a freddo: a freddo, per pezzi fino a 10 kg, si ottengono forme quasi finite senza altre lavorazioni.", "pag": "114–115" },
+    { "mini": "rulli", "titolo": "Laminazione-forgiatura", "titoloOriginale": "Roll forging", "testo": "Il metallo caldo passa fra rulli sagomati che ne riducono la sezione per gradi: profili continui e anelli senza saldature, ricavati da un disco forato.", "pag": "114, 116" }
+  ],
+  "correlati": [
+    { "slug": "lavorazione-cnc", "nome": "Lavorazione CNC", "nota": "alternativa nelle piccole serie, con grani orientati a caso", "pag": "114, 116" },
+    { "slug": "pressofusione", "nome": "Pressofusione", "nota": "concorrente nelle grandi serie", "pag": "114" },
+    { "slug": "microfusione", "nome": "Microfusione a cera persa", "nota": "concorrente nelle grandi serie", "pag": "114" },
+    { "slug": "curvatura-tubi", "nome": "Curvatura di tubi e profilati", "nota": "la curvatura a rulli dà anelli simili ma saldati", "pag": "114" }
+  ],
+  "fonte": { "pagine": "114–119" }
+}

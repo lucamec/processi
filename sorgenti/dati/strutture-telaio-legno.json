@@ -1,0 +1,53 @@
+{
+  "slug": "strutture-telaio-legno",
+  "titolo": "Strutture a telaio in legno",
+  "titoloOriginale": "Timber Frame Structures",
+  "parte": "Parte 3 – Giunzione",
+  "categoria": "Meccanico",
+  "sintesi": "Pezzi di legno di conifera e legni ingegnerizzati si uniscono con chiodi, piastre, bulloni e connettori metallici in telai e pannelli prefabbricati: costruzioni leggere, rapide e a basso impatto.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di un pannello di parete montato su un banco. Correnti e ritti di pino scendono sul banco; piastre metalliche vengono pressate su ogni nodo; un pannello di OSB scende sul telaio mentre una pistola chioda lungo i bordi. Infine il pannello si solleva in verticale ed è pronto per il cantiere." },
+  "schema": {
+    "titolo": "Montaggio di un pannello di parete, vista frontale",
+    "descrizione": "Vista frontale di un telaio di correnti e ritti sul banco di montaggio. Le fasi mostrano i pezzi tagliati a misura, il loro posizionamento, le piastre chiodate sui nodi, il pannello di OSB chiodato e il pannello pronto per la posa.",
+    "fasi": [
+      { "titolo": "Taglio a misura", "durata": 1800, "pag": "346", "didascalia": "I pezzi di pino, ciascuno classificato e testato per resistenza, si tagliano a misura e si preparano in fasci." },
+      { "titolo": "Posizionamento", "durata": 1800, "pag": "346–347", "didascalia": "Si dispongono secondo il disegno: il banco, comandato dal computer, si regola con i morsetti su ogni pezzo." },
+      { "titolo": "Piastre chiodate", "durata": 2000, "pag": "347", "didascalia": "Su ogni nodo si mettono piastre chiodate dai due lati, che una pressa idraulica spinge nel legno." },
+      { "titolo": "Pannello OSB", "durata": 2200, "pag": "347", "didascalia": "Un pannello di OSB si chioda su un lato con pistole pneumatiche: telaio e pelle insieme danno rigidezza senza aggiungere troppo peso." },
+      { "titolo": "Messa in opera", "durata": 2000, "pag": "346–347", "didascalia": "I pannelli piani prefabbricati si portano in cantiere e si montano rapidamente: circa un piano al giorno." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "344", "testo": "I legni ingegnerizzati (compensato, OSB, LSL, PSL e travi a I composite) sfruttano la stabilità del legno laminato per strutture leggere progettate su misura." },
+    { "fase": 2, "pag": "344", "testo": "Edifici e grandi strutture si simulano in CAD per verificare la portata e fattori locali come il vento; anche la dimensione della ferramenta si calcola al computer." },
+    { "fase": 3, "pag": "344–345", "testo": "Rispetto alla falegnameria, che usa colle e incastri di legno, il telaio usa ferramenta metallica per velocità e semplicità; i fissaggi sono semipermanenti e si possono smontare." },
+    { "fase": 5, "pag": "344, 346", "testo": "Circa tre quarti delle case nel mondo sono in legno; nel caso studio la struttura portante di una casa di 4 piani è in legno, con un rivestimento in muratura separato da un'intercapedine." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Tutti i legnami: conifere, latifoglie, impiallacciature e legni ingegnerizzati (compensato, OSB, LSL, PSL, travi a I composite). Ferramenta in acciaio al carbonio zincato, o inox all'esterno.", "pag": "344–346" },
+    "volumi": { "valore": "Da pezzo unico a medie serie: farne 10 o 100 uguali costa quasi lo stesso.", "pag": "344–345" },
+    "costoAttrezzatura": { "valore": "Nessuno: bastano attrezzi manuali, anche se si diffondono montaggi a controllo numerico.", "pag": "344, 346" },
+    "costoUnitario": { "valore": "Moderato, secondo la complessità; manodopera alta per abilità e numero di operatori.", "pag": "344, 346" },
+    "tempoCiclo": { "valore": "Moderato: alcuni minuti fino a 30 minuti per telaio; in cantiere circa un piano al giorno.", "pag": "344, 346–347", "ocr": "Durata minima per telaio: n.d. (il libro indica 5 minuti nella scheda e 3 minuti nel testo)" },
+    "qualitaSuperficiale": { "valore": "Strutture leggere e durevoli; il legno si può lasciare in vista o nascondere.", "pag": "344–345" },
+    "precisione": { "valore": "Le strutture devono assorbire le variazioni dimensionali dovute all'umidità. Tolleranze numeriche: n.d.", "pag": "344" },
+    "dimensioni": { "valore": "Edifici portanti in legno fino a 7 piani nel Regno Unito; travi a I fino a 7,5 m di luce.", "pag": "346–347" }
+  },
+  "vincoli": [
+    { "mini": "chiodo", "titolo": "Chiodare dal sottile allo spesso", "spiegazione": "Conviene chiodare attraverso il pezzo più sottile dentro quello più spesso: circa due terzi del gambo devono entrare nel pezzo inferiore.", "pag": "345" },
+    { "mini": "fibra", "titolo": "Rispettare la direzione della fibra", "spiegazione": "La resistenza dipende dall'angolo fra chiodo e fibra: nella testa del legno la presa è la più debole, attraverso la fibra la più forte. Il legno è anche più resistente lungo la fibra, e i fori vanno praticati secondo le regole per non indebolire la struttura.", "pag": "345–346" },
+    { "mini": "corrosione", "titolo": "Ferramenta adatta all'ambiente", "spiegazione": "All'esterno, soprattutto vicino al mare, servono fissaggi inox: la corrosione macchia il legno e può far cedere il giunto.", "pag": "345" }
+  ],
+  "variantiNota": "I metodi di fissaggio descritti nel capitolo; lo schema principale mostra piastre chiodate e chiodatura del pannello.",
+  "varianti": [
+    { "mini": "chiodi", "titolo": "Chiodatura", "titoloOriginale": "Straight and skew nailing", "testo": "Per giunti a T e a sovrapposizione.", "pag": "344–346" },
+    { "mini": "piastre", "titolo": "Piastre chiodate", "titoloOriginale": "Nail plates", "testo": "Per giunti a T e di testa, senza sovrapposizioni.", "pag": "345, 347" },
+    { "mini": "bulloni", "titolo": "Bulloni", "titoloOriginale": "Bolts", "testo": "Più preparazione, più resistenza; per i giunti a sovrapposizione.", "pag": "345–346" },
+    { "mini": "connettori", "titolo": "Connettori a staffa", "titoloOriginale": "Framing connectors", "testo": "Per giunti a T portanti e per legare travi a I, muratura e acciaio.", "pag": "345, 347" }
+  ],
+  "correlati": [
+    { "slug": "giunzioni-legno", "nome": "Giunzioni del legno", "nota": "si sovrappongono; usano colle e incastri", "pag": "344" },
+    { "slug": "laminazione-legno", "nome": "Laminazione del legno", "nota": "per i legni ingegnerizzati", "pag": "345" }
+  ],
+  "fonte": { "pagine": "344–347" }
+}

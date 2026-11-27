@@ -1,0 +1,52 @@
+{
+  "slug": "metallizzazione-sottovuoto",
+  "titolo": "Metallizzazione sottovuoto",
+  "titoloOriginale": "Vacuum Metalizing",
+  "parte": "Parte 4 – Finitura",
+  "categoria": "Processi additivi (rivestimenti)",
+  "sintesi": "In una camera a vuoto una scarica elettrica vaporizza metallo quasi puro, di solito alluminio, che si condensa sui pezzi in un film lucido: plastica, vetro o metallo assumono l'aspetto di cromo, oro, argento o alluminio anodizzato.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una camera a vuoto trasparente con un carosello di supporti che ruotano attorno a un elettrodo centrale. Piccole cerniere scure, verniciate con la base, girano su se stesse; poi il filo al centro diventa incandescente e una nuvola chiara si espande, e le cerniere diventano argentate. Infine un trasparente le colora di verde." },
+  "schema": {
+    "titolo": "Camera di metallizzazione, vista dall'alto",
+    "descrizione": "Vista dall'alto di una camera a vuoto circolare con gli elettrodi al centro e sei pezzi su un telaio rotante. Le fasi mostrano i pezzi con la vernice di base, la rotazione durante il vuoto, la nuvola di metallo vaporizzato che li riveste e il trasparente finale.",
+    "fasi": [
+      { "titolo": "Strato di base", "durata": 2000, "pag": "373–374", "didascalia": "I pezzi si puliscono e si spruzza una vernice di base, cotta in forno circa 30 minuti: rende la superficie più liscia e fa aderire il metallo." },
+      { "titolo": "Carico e vuoto", "durata": 2200, "pag": "373–374", "didascalia": "I pezzi si fissano su supporti che ruotano su tre assi paralleli; in circa 30 minuti si raggiunge il vuoto di circa 10⁻³ mbar." },
+      { "titolo": "Vaporizzazione", "durata": 2400, "pag": "373–374", "didascalia": "Una scarica elettrica attraversa il filo di alluminio fra gli elettrodi: il metallo vaporizza all'istante e si condensa sulle superfici più fredde in uno strato sottile e uniforme. Bastano pochi minuti." },
+      { "titolo": "Trasparente", "durata": 2000, "pag": "373–374", "didascalia": "Il film metallico, ancora delicato, si protegge con un trasparente, anche colorato, cotto in forno circa 30 minuti: il metallo resta racchiuso fra due vernici." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "372", "testo": "È detto anche deposizione fisica da vapore (PVD) o sputtering; unisce vuoto spinto e scarica elettrica." },
+    { "fase": 2, "pag": "373", "testo": "Si può lavorare con un vuoto meno spinto, ma la finitura peggiora." },
+    { "fase": 3, "pag": "372, 374", "testo": "Le finiture estetiche restano sotto i 6 µm, con un film metallico sotto 1 µm; passare più volte nel processo aumenta lo spessore." },
+    { "fase": 4, "pag": "372, 374", "testo": "Serve sia a decorare (gioielli, trofei, prototipi, utensili, ferramenta) sia a funzioni tecniche: schermature RF ed EMI, riflettori, resistenza all'usura, conduttività, barriere al vapore." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Metalli, plastiche rigide e flessibili, resine, compositi, ceramiche e vetro; non le fibre naturali. Il metallo è soprattutto alluminio, ma anche argento e rame.", "pag": "374" },
+    "volumi": { "valore": "Da pezzo unico a produzione di massa.", "pag": "372" },
+    "costoAttrezzatura": { "valore": "Nessuno, ma servono supporti per tenere i pezzi nella camera.", "pag": "372, 374" },
+    "costoUnitario": { "valore": "Moderato; manodopera piuttosto alta, perché i pezzi si verniciano, si caricano e si scaricano a mano.", "pag": "372, 374" },
+    "tempoCiclo": { "valore": "Moderato, fino a 6 ore compresa la verniciatura; la metallizzazione vera e propria dura pochi minuti.", "pag": "372, 374" },
+    "qualitaSuperficiale": { "valore": "Alta, lucida e protettiva, simile a una verniciatura; liscia quanto il pezzo di partenza.", "pag": "372, 374" },
+    "precisione": { "valore": "Finiture estetiche sotto i 6 µm (metallo sotto 1 µm); rivestimenti funzionali di 10–30 µm.", "pag": "372" },
+    "dimensioni": { "valore": "Pezzi piani fino a 1,2 × 1 m; pezzi 3D fino a 1,2 × 0,5 m, perché devono ruotare.", "pag": "374" }
+  },
+  "vincoli": [
+    { "mini": "superficie", "titolo": "Superficie preparata", "spiegazione": "Il metallo è liscio solo quanto la superficie sotto: un effetto invecchiato o ruvido va ottenuto prima della metallizzazione.", "pag": "374" },
+    { "mini": "vista", "titolo": "Linea di vista", "spiegazione": "Il rivestimento arriva in linea retta: i pezzi ruotano per uniformarlo, ma sottosquadri e incavi profondi possono restare scoperti.", "pag": "373–374" },
+    { "mini": "umidita", "titolo": "Niente umidità", "spiegazione": "Le fibre naturali non sono adatte: con l'umidità è molto difficile fare il vuoto.", "pag": "374" }
+  ],
+  "variantiNota": "Alcune possibilità descritte nel capitolo.",
+  "varianti": [
+    { "mini": "colorato", "titolo": "Trasparente colorato", "titoloOriginale": "Tinted topcoat", "testo": "Imita alluminio anodizzato, cromo, argento, oro, rame, canna di fucile.", "pag": "373–374" },
+    { "mini": "funzionale", "titolo": "Rivestimenti funzionali", "titoloOriginale": "Plasma vaporizing", "testo": "Strati di 10–30 µm per usi tecnici.", "pag": "372" },
+    { "mini": "argon", "titolo": "In atmosfera di argon", "titoloOriginale": "Argon atmosphere", "testo": "Rivestimento più energico, processo specialistico.", "pag": "374" }
+  ],
+  "correlati": [
+    { "slug": "galvanostegia", "nome": "Galvanostegia", "nota": "altro modo di rivestire di metallo", "pag": "372" },
+    { "slug": "zincatura", "nome": "Zincatura a caldo", "nota": "altro modo di rivestire di metallo", "pag": "372" },
+    { "slug": "verniciatura-spruzzo", "nome": "Verniciatura a spruzzo", "nota": "applica base e trasparente", "pag": "372" }
+  ],
+  "fonte": { "pagine": "372–375" }
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "stampaggio-immersione",
+  "titolo": "Stampaggio per immersione",
+  "titoloOriginale": "Dip Molding",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Plastica e gomma",
+  "sintesi": "Uno stampo maschio caldo viene immerso in PVC liquido, che gelifica sulla sua superficie: si ottengono pezzi cavi e flessibili come cappucci, guaine e impugnature, con uno stampo molto economico.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di un supporto con quattro stampi maschi cilindrici appesi, tagliati a metà. Gli stampi si scaldano nel forno, poi la vasca di PVC liquido arancione sale e li immerge fino alla linea di riempimento: sugli stampi cresce uno strato. La vasca scende, il supporto si capovolge e lo strato indurisce in forno diventando verde; infine gli stampi si raffreddano in un bagno d'acqua." },
+  "schema": {
+    "titolo": "Stampaggio per immersione in sezione",
+    "descrizione": "Sezione di uno stampo maschio appeso a un supporto. Sotto c'è la vasca di plastisol, che sale per immergere lo stampo. Le fasi mostrano il preriscaldamento in forno, il distaccante, l'immersione con lo strato che cresce, l'indurimento con lo stampo capovolto e il raffreddamento in acqua.",
+    "fasi": [
+      { "titolo": "Preriscaldamento", "durata": 2200, "pag": "69", "didascalia": "Lo stampo pulito viene scaldato in forno a 300–400 °C, di solito per 5–20 minuti secondo la sua massa." },
+      { "titolo": "Distaccante", "durata": 1800, "pag": "69–70", "didascalia": "Lo stampo caldo viene ricoperto di una soluzione diluita di silicone, che aiuta il liquido a scorrere e poi fa da distaccante. Lo stampo è ora fra 80 e 110 °C." },
+      { "titolo": "Immersione", "durata": 2800, "pag": "69", "didascalia": "La vasca sale fino alla linea di riempimento. A contatto con lo stampo caldo il plastisol gelifica: lo spessore cresce in fretta, fino a 2,5 mm in 60 secondi. L'immersione dura di solito 20–60 secondi." },
+      { "titolo": "Indurimento", "durata": 2400, "pag": "69", "didascalia": "La vasca scende e il pezzo gelificato va in forno a 120–240 °C. A volte lo stampo si capovolge perché le gocce rientrino." },
+      { "titolo": "Raffreddamento ed estrazione", "durata": 2400, "pag": "69", "didascalia": "Un bagno d'acqua porta lo stampo alla temperatura di presa; il pezzo, ancora caldo e flessibile, si stacca con aria compressa. Il PVC indurisce del tutto in circa 24 ore." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "68–69", "testo": "Il processo usa un solo stampo maschio, di alluminio lavorato o fuso (a volte acciaio o ottone), e si articola in preriscaldamento, immersione e cottura. In produzione continua le tre fasi si sovrappongono." },
+    { "fase": 3, "pag": "69–70", "testo": "Lo spessore dipende da temperatura dello stampo e durata dell'immersione: stampi più caldi e immersioni più lunghe danno pareti più spesse, di solito fra 1 e 5 mm. Se lo stampo si raffredda, la polimerizzazione rallenta." },
+    { "fase": 4, "pag": "68–69", "testo": "Il materiale è liquido finché non gelifica e può colare come una vernice: sul fondo la parete tende a essere più spessa. Capovolgere lo stampo riduce il problema e la goccia alla base." },
+    { "fase": 5, "pag": "68–69", "testo": "Ancora caldo, il pezzo si stacca facilmente anche con sottosquadri marcati. Una volta polimerizzato il PVC non torna liquido e non si ricicla direttamente." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Soprattutto PVC (Shore A da 30 a 100). Nylon, silicone, lattice e uretano solo per usi speciali.", "pag": "70–71" },
+    "volumi": { "valore": "Da pezzo unico a grande serie; lo stesso stampo serve per prototipo e produzione.", "pag": "68, 70" },
+    "costoAttrezzatura": { "valore": "Molto basso, minimo: un solo stampo maschio, senza pressione e con poca usura.", "pag": "68, 70–71" },
+    "costoUnitario": { "valore": "Da basso a moderato; manodopera moderata.", "pag": "68, 71" },
+    "tempoCiclo": { "valore": "Rapido: immersione di 20–60 s, preriscaldamento di 5–20 min. Più stampi montati insieme riducono molto il tempo.", "pag": "69–71" },
+    "qualitaSuperficiale": { "valore": "Liscia e senza giunzioni, senza bave né linee di chiusura. L'esterno è lucido (o opaco, effetto schiuma); il lato dello stampo riproduce esattamente texture e rilievi.", "pag": "68, 70" },
+    "precisione": { "valore": "Precisa sul lato dello stampo; i dettagli esterni sono difficili da controllare perché si forma su un solo stampo. Valore numerico: n.d.", "pag": "68, 70" },
+    "dimensioni": { "valore": "Pareti fra 1 e 5 mm. Dimensioni dei pezzi: n.d.", "pag": "70" }
+  },
+  "vincoli": [
+    { "mini": "sformo", "titolo": "Sformo di 5–15° per evitare bolle d'aria", "spiegazione": "Sulle facce parallele alla superficie del liquido si consiglia un angolo di 5–15°: superfici piane, sottosquadri e fori mal progettati intrappolano aria e lasciano avvallamenti o buchi.", "pag": "70" },
+    { "mini": "raggi", "titolo": "Raggi, non spigoli o dettagli sporgenti", "spiegazione": "Il PVC smussa gli spigoli e varia di spessore: sui dettagli sporgenti può non accumularsi abbastanza materiale. I raggi aiutano il flusso.", "pag": "70" },
+    { "mini": "colature", "titolo": "Gestire colature e gocce", "spiegazione": "Il liquido cola come una vernice: la parete è più spessa in basso. Capovolgere lo stampo dopo l'immersione uniforma lo spessore e riduce la goccia alla base.", "pag": "68–69" }
+  ],
+  "approfondimento": {
+    "titolo": "Velocità e temperatura vanno provate",
+    "testo": "Le linee di scorrimento compaiono con stampo troppo caldo e immersione lenta; le bolle d'aria, con immersione troppo veloce. Per trovare velocità e temperatura giuste è indispensabile prototipare. Gli intrappolamenti d'aria si possono anche sfruttare per ottenere fori senza punzonare. Uno stampo che si fonde bene in sabbia di solito funziona bene anche per l'immersione.",
+    "pag": "68, 70"
+  },
+  "variantiNota": "Il libro non elenca varianti di questo processo. Qui sotto le possibilità descritte nel testo.",
+  "varianti": [
+    { "mini": "rivestimento", "titolo": "Rivestimento per immersione", "titoloOriginale": "Dip coating", "testo": "Sostituendo il distaccante con un primer, il PVC resta attaccato al pezzo metallico e forma uno strato spesso, colorato, isolante e protettivo: impugnature di attrezzi, cestelli di frigoriferi e lavastoviglie, arredi da esterno.", "pag": "68" },
+    { "mini": "doppia", "titolo": "Doppia immersione", "titoloOriginale": "Twin dip", "testo": "Si può immergere due volte per formare due strati: due colori o durezze diverse, oppure un isolamento elettrico in cui l'usura fa emergere lo strato sotto e segnala l'assottigliamento.", "pag": "70" }
+  ],
+  "correlati": [
+    { "slug": "termoformatura", "nome": "Termoformatura", "nota": "geometrie simili; l'immersione forma pezzi flessibili ed è meno cara per piccole serie", "pag": "68" },
+    { "slug": "stampaggio-iniezione", "nome": "Stampaggio a iniezione", "nota": "geometrie simili", "pag": "68" },
+    { "slug": "verniciatura-polvere", "nome": "Verniciatura a polvere", "nota": "altro metodo di rivestimento plastico", "pag": "68" },
+    { "slug": "fusione-sabbia", "nome": "Fusione in sabbia", "nota": "regole simili per sformi e raccordi", "pag": "70" }
+  ],
+  "fonte": { "pagine": "68–71" }
+}

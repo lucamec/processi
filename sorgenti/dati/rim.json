@@ -1,0 +1,51 @@
+{
+  "slug": "rim",
+  "titolo": "Stampaggio a iniezione con reazione (RIM)",
+  "titoloOriginale": "Reaction Injection Molding",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Plastica e gomma",
+  "sintesi": "Due liquidi che reagiscono fra loro vengono iniettati in uno stampo, dove formano poliuretano (PUR) espanso o compatto: a bassa pressione e a freddo si stampano pezzi dalle sedute imbottite ai paraurti.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di uno stampo in due metà tagliato a metà, con un telaio in acciaio scuro all'interno. In alto la testa di miscelazione riceve i due componenti. Il liquido arancione si deposita sul fondo, poi la schiuma si espande e riempie la cavità avvolgendo il telaio. Quando la reazione è finita la schiuma diventa verde, lo stampo superiore si alza e la seduta imbottita viene estratta." },
+  "schema": {
+    "titolo": "Stampaggio di schiuma a freddo in sezione",
+    "descrizione": "Sezione di uno stampo in due metà con una cavità a forma di cuscino e un telaio in acciaio sospeso all'interno. In alto a sinistra la testa di miscelazione riceve isocianato e poliolo; nella metà superiore ci sono il foro di colata e un canale di sfiato. Le fasi mostrano la preparazione, l'iniezione, l'espansione della schiuma e la sformatura.",
+    "fasi": [
+      { "titolo": "Preparazione", "durata": 2000, "pag": "64, 66", "didascalia": "Lo stampo viene pulito e spruzzato di distaccante; si posizionano inserti e telai, poi lo stampo si chiude e si blocca." },
+      { "titolo": "Miscelazione e iniezione", "durata": 2400, "pag": "64", "didascalia": "Poliolo e isocianato, tenuti in serbatoi separati, si mescolano ad alta pressione nella testa e vengono versati nello stampo a bassa pressione, in quantità prestabilite." },
+      { "titolo": "Espansione", "durata": 2800, "pag": "64", "didascalia": "La reazione è esotermica: il polimero si espande e riempie lo stampo. I canali lasciano uscire l'aria e un tappo nel foro di colata mantiene la pressione interna." },
+      { "titolo": "Sformatura e rifilatura", "durata": 2400, "pag": "64, 67", "didascalia": "Dopo 5–15 minuti le due metà si separano, i nuclei si tolgono e la bava viene rifilata con una lama rotante." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "64, 66", "testo": "Il RIM comprende lo stampaggio di schiuma a freddo: entrambi formano PUR facendo reagire due liquidi a bassa pressione. Prima di ogni ciclo si applica il distaccante e si caricano inserti come telai in acciaio, boccole filettate o pannelli." },
+    { "fase": 2, "pag": "64, 66", "testo": "I due componenti si combinano nella testa di miscelazione e scendono nello stampo dal foro in alto. Il liquido non catalizzato è molto fluido e riempie facilmente stampi grandi e complessi." },
+    { "fase": 3, "pag": "64", "testo": "L'unica pressione sullo stampo è quella del liquido che si espande: lo stampo va progettato e riempito perché il polimero si distribuisca in modo uniforme." },
+    { "fase": 4, "pag": "65, 67", "testo": "La reazione è irreversibile: una volta formata, la schiuma si può modificare solo con la lavorazione CNC. Uno stampo tipico produce 50 pezzi al giorno." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Poliuretano (PUR), espanso o compatto, da morbido (Shore A 25–90) a rigido (Shore D); densità da 40 a 400 kg/m³; schiume a celle aperte (da rivestire) o chiuse (con pelle propria).", "pag": "64, 66–67" },
+    "volumi": { "valore": "Da pezzo unico a grande serie; usato anche per prototipare pezzi da stampare poi a iniezione.", "pag": "64" },
+    "costoAttrezzatura": { "valore": "Da basso a moderato, molto meno dell'iniezione grazie a pressione e temperatura ridotte. Stampi in vetroresina per i prototipi, in alluminio o acciaio oltre i 1000 pezzi.", "pag": "64, 66–67" },
+    "costoUnitario": { "valore": "Valore numerico: n.d. Manodopera da bassa a moderata, maggiore per prototipi e piccole serie.", "pag": "67" },
+    "tempoCiclo": { "valore": "Rapido: 5–15 minuti secondo la complessità (12 minuti nel caso studio).", "pag": "64, 67" },
+    "qualitaSuperficiale": { "valore": "Alta, con buona riproduzione di dettagli e texture: dipende dalla superficie dello stampo. Possibile la decorazione in stampo.", "pag": "64, 66" },
+    "precisione": { "valore": "Alta ripetibilità e precisione. Valore numerico: n.d.", "pag": "64" },
+    "dimensioni": { "valore": "Da minuscoli fino a molto grandi, lunghi fino a 3 m.", "pag": "66" }
+  },
+  "vincoli": [
+    { "mini": "copertura", "titolo": "Ricoprire il telaio di almeno 10–15 mm", "spiegazione": "Quando si schiuma sopra un telaio in acciaio, la schiuma deve superarlo di almeno 10–15 mm perché la struttura non si veda in superficie.", "pag": "66" },
+    { "mini": "pareti", "titolo": "Pareti da 5 mm in su", "spiegazione": "Si possono stampare nello stesso pezzo sezioni spesse e sottili, da 5 mm in su.", "pag": "66" },
+    { "mini": "sfiati", "titolo": "Prevedere l'uscita dell'aria", "spiegazione": "Mentre il polimero si espande, i canali dello stampo lasciano uscire l'aria intrappolata.", "pag": "64" }
+  ],
+  "variantiNota": "Il libro non elenca varianti di questo processo. Qui sotto la possibilità descritta nel testo.",
+  "varianti": [
+    { "mini": "srim", "titolo": "PUR rinforzato con fibre", "titoloOriginale": "SRIM / RRIM", "testo": "Si può incorporare un rinforzo in fibra per migliorare resistenza e rigidità: si parla di SRIM (structural RIM) o RRIM (reinforced RIM). Si possono annegare anche stuoie di fibra e tessuti per resistere meglio a strappi e allungamenti.", "pag": "66" }
+  ],
+  "correlati": [
+    { "slug": "colata-sottovuoto", "nome": "Colata sottovuoto", "nota": "forme simili in PUR, di solito più piccole e complesse", "pag": "64" },
+    { "slug": "stampaggio-iniezione", "nome": "Stampaggio a iniezione", "nota": "il RIM serve anche a prototiparne i pezzi", "pag": "64" },
+    { "slug": "lavorazione-cnc", "nome": "Lavorazione CNC", "nota": "per blocchi di schiuma lavorati invece che stampati", "pag": "64" },
+    { "slug": "imbottitura", "nome": "Imbottitura e tappezzeria", "nota": "le schiume rivestono strutture e vengono poi tappezzate", "pag": "64, 67" }
+  ],
+  "fonte": { "pagine": "64–67" }
+}

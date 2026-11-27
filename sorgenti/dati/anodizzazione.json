@@ -1,0 +1,53 @@
+{
+  "slug": "anodizzazione",
+  "titolo": "Anodizzazione",
+  "titoloOriginale": "Anodizing",
+  "parte": "Parte 4 – Finitura",
+  "categoria": "Processi additivi (rivestimenti)",
+  "sintesi": "Il pezzo in alluminio, magnesio o titanio diventa l'anodo in un bagno elettrolitico: lo strato naturale di ossido cresce, durissimo e integrato nel metallo, e si può colorare prima di essere fissato.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una linea di anodizzazione con quattro vasche. Un telaio con profilati d'alluminio scende in ogni vasca in sequenza: nella prima si opacizza, nella seconda, fra due catodi scuri e piccole bolle, si ricopre di uno strato grigio chiaro, nella terza prende un colore bronzo, nell'ultima, fumante, si fissa e diventa verde." },
+  "schema": {
+    "titolo": "Anodizzazione: vasca elettrolitica e strato di ossido",
+    "descrizione": "A sinistra una vasca con il pezzo come anodo fra due catodi nell'acido solforico; a destra l'ingrandimento della superficie. Le fasi mostrano la mordenzatura, la crescita dello strato poroso con le bolle di ossigeno, il colore depositato nei pori e lo strato di fissaggio che li chiude.",
+    "fasi": [
+      { "titolo": "Pulizia e mordenzatura", "durata": 2000, "pag": "360", "didascalia": "Bagni alcalini e acidi in successione preparano la superficie: la mordenzatura la rende opaca, la brillantatura chimica molto lucida." },
+      { "titolo": "Anodizzazione", "durata": 2600, "pag": "360–361", "didascalia": "Nell'acido solforico diluito passa corrente fra il pezzo (anodo) e il catodo: l'ossigeno reagisce con il metallo e forma uno strato poroso; servono circa 15 minuti per 5 µm." },
+      { "titolo": "Colorazione", "durata": 2200, "pag": "361–362", "didascalia": "Con il metodo elettrolitico sali di cobalto si depositano nei pori; in alternativa si usa lo stagno o un colorante per immersione." },
+      { "titolo": "Fissaggio", "durata": 2000, "pag": "361–362", "didascalia": "Un bagno di acqua calda con additivi, a 98 °C, chiude i pori: lo strato diventa resistente all'usura e agli agenti atmosferici." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "360", "testo": "Il processo ispessisce lo strato di ossido che si forma naturalmente sul metallo: è duro, protettivo e si autoripara; l'ossido di alluminio è inerte e fra i materiali più duri." },
+    { "fase": 2, "pag": "360–361", "testo": "Tempo, temperatura e corrente decidono la crescita. Lo strato consuma circa metà del suo spessore di metallo base, e questo influisce sulla rugosità." },
+    { "fase": 3, "pag": "360–361", "testo": "Lo strato naturale è grigio chiaro. Non è possibile abbinare colori specifici come il Pantone; i pigmenti elettrolitici sono i più stabili." },
+    { "fase": 4, "pag": "360–361", "testo": "Lo strato fa parte del metallo: non si sfoglia, ha la stessa temperatura di fusione, è atossico e isolante. Si può togliere localmente al laser o per incisione fotochimica per scritte e loghi." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Alluminio, magnesio e titanio; l'inox si colora con un processo chimico simile.", "pag": "360, 362" },
+    "volumi": { "valore": "Da pezzo unico a grandi volumi.", "pag": "360" },
+    "costoAttrezzatura": { "valore": "Di solito nessuno; possono servire telai di supporto.", "pag": "360, 362" },
+    "costoUnitario": { "valore": "Basso, ma cresce con lo spessore; manodopera minima, processo automatizzato.", "pag": "360, 362" },
+    "tempoCiclo": { "valore": "Moderato, circa 6 ore per l'intero ciclo di 10 vasche.", "pag": "360, 362", "ocr": "Durata massima d'immersione nell'elettrolita: n.d. (OCR \"between 15 and 5o minutes\")" },
+    "qualitaSuperficiale": { "valore": "Alta: leggera, durissima, autoriparante e resistente agli agenti atmosferici; si applica a finiture satinate, spazzolate, goffrate o lucidate a specchio.", "pag": "360–361" },
+    "precisione": { "valore": "Spessori: anodizzazione naturale 5–35 µm, dura fino a 50 µm. Tolleranze dimensionali: da concordare con l'anodizzatore.", "pag": "360, 362" },
+    "dimensioni": { "valore": "Limitate dalle vasche: nel caso studio fino a 7 × 2 × 0,5 m.", "pag": "362" }
+  },
+  "vincoli": [
+    { "mini": "scolo", "titolo": "Lasciar defluire i liquidi", "spiegazione": "È un processo a immersione: i pezzi devono drenare i bagni; nel caso studio si montano leggermente inclinati.", "pag": "362" },
+    { "mini": "lotto", "titolo": "Stesso lotto, stessa lega", "spiegazione": "L'aspetto dipende dalla finitura di partenza e dalla composizione del metallo: lotti diversi e saldature possono dare colori diversi.", "pag": "360, 362" },
+    { "mini": "quote", "titolo": "Quote critiche", "spiegazione": "Lo strato aggiunge spessore ma la pulizia ne compensa di solito una parte; dipende dal sistema e dalla durezza del materiale, quindi per le quote critiche va consultato l'anodizzatore.", "pag": "361–362" }
+  ],
+  "variantiNota": "Lo schema principale mostra l'anodizzazione naturale in acido solforico; queste sono le altre possibilità descritte nel capitolo.",
+  "varianti": [
+    { "mini": "dura", "titolo": "Anodizzazione dura", "titoloOriginale": "Hard anodizing", "testo": "Strati più spessi per usura e calore.", "pag": "360" },
+    { "mini": "elettrolitica", "titolo": "Colorazione elettrolitica", "titoloOriginale": "Electrolytic colouring (Anolok™)", "testo": "Sali metallici nei pori: grigio, bronzo, oro, nero; consigliata per esterni.", "pag": "361–362" },
+    { "mini": "immersione", "titolo": "Colorazione per immersione", "titoloOriginale": "Dip and dye", "testo": "Gamma di colori più ampia, meno stabile alla luce: per interni.", "pag": "361" }
+  ],
+  "correlati": [
+    { "slug": "verniciatura-spruzzo", "nome": "Verniciatura a spruzzo", "nota": "aggiunge uno strato invece di trasformare la superficie", "pag": "360" },
+    { "slug": "verniciatura-polvere", "nome": "Verniciatura a polvere", "nota": "aggiunge uno strato invece di trasformare la superficie", "pag": "360" },
+    { "slug": "taglio-laser", "nome": "Taglio laser", "nota": "incide lo strato per scritte e loghi", "pag": "361" },
+    { "slug": "incisione-fotochimica", "nome": "Incisione fotochimica", "nota": "toglie lo strato in modo selettivo", "pag": "361" }
+  ],
+  "fonte": { "pagine": "360–363" }
+}

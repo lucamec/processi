@@ -1,0 +1,51 @@
+{
+  "slug": "mim",
+  "titolo": "Stampaggio a iniezione di polveri metalliche (MIM)",
+  "titoloOriginale": "Metal Injection Molding",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "sintesi": "Polvere metallica finissima, impastata con un legante plastico, viene stampata a iniezione come una plastica; poi il legante si elimina e il pezzo si sinterizza: piccoli componenti in acciaio, complessi e quasi del tutto densi.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di un piccolo ingranaggio. Prima viene stampato a iniezione fra due metà di stampo d'acciaio e appare arancione. Esce color sabbia, più grande del 20 per cento, e viene posato su una piastra in un forno. Durante deceraggio e sinterizzazione il forno si illumina e l'ingranaggio si ritira fino alle dimensioni finali, diventando verde." },
+  "schema": {
+    "titolo": "Ciclo MIM: stampaggio, deceraggio e sinterizzazione",
+    "descrizione": "A sinistra lo stampo con la cavità di un ingranaggio, a destra il forno con una piastra di supporto in ceramica. Le fasi mostrano l'iniezione del feedstock, il pezzo verde più grande, l'eliminazione del legante e la sinterizzazione con il ritiro.",
+    "fasi": [
+      { "titolo": "Iniezione", "durata": 2200, "pag": "137–138", "didascalia": "Polvere metallica di meno di 25 micron, impastata con un legante di termoplastico e cera (circa 80% metallo), viene iniettata come nello stampaggio della plastica." },
+      { "titolo": "Pezzo verde", "durata": 2000, "pag": "137", "didascalia": "Il pezzo stampato, detto 'verde', è circa il 20% più grande in ogni dimensione per compensare il ritiro." },
+      { "titolo": "Deceraggio", "durata": 2400, "pag": "137", "didascalia": "In un forno apposito il legante di termoplastico e cera evapora: resta solo il metallo." },
+      { "titolo": "Sinterizzazione", "durata": 2600, "pag": "136–137", "didascalia": "In un forno sottovuoto il pezzo si ritira del 15–20% e diventa quasi del tutto denso, con pochissima porosità. Le parti a sbalzo stanno su piastre ceramiche per non afflosciarsi." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "136–138", "testo": "Il MIM unisce la metallurgia delle polveri allo stampaggio a iniezione. Le presse sono quasi uguali a quelle per la plastica e gli stampi in acciaio possono avere nuclei mobili, filetti svitabili e inserti." },
+    { "fase": 2, "pag": "136", "testo": "Come nell'iniezione della plastica, si ottengono buona finitura, dettagli fini e ottima ripetibilità, ma anche gli stessi difetti: risucchi, linee di giunzione e bave." },
+    { "fase": 4, "pag": "136", "testo": "Il pezzo sinterizzato è duttile e resistente, con proprietà uguali in ogni direzione: si salda, si lavora, si piega, si lucida e si galvanizza come qualsiasi metallo." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Ferrosi: acciai basso legati, da utensili e inossidabili, leghe magnetiche, bronzo; anche leghe di nichel e cobalto. Alluminio e zinco no.", "pag": "136, 138" },
+    "volumi": { "valore": "Soprattutto grandi serie; piccole e medie quando il MIM offre vantaggi tecnici o di forma.", "pag": "136" },
+    "costoAttrezzatura": { "valore": "Alto, simile agli stampi per la plastica.", "pag": "136, 138" },
+    "costoUnitario": { "valore": "Da moderato a basso; il materiale è costoso per i trattamenti che richiede.", "pag": "136, 138" },
+    "tempoCiclo": { "valore": "Iniezione rapida, 30–60 secondi; deceraggio e sinterizzazione 2–3 giorni.", "pag": "136" },
+    "qualitaSuperficiale": { "valore": "Molto alta; alta densità, rettificabile e lucidabile.", "pag": "136" },
+    "precisione": { "valore": "Dimensioni precise, spesso senza lavorazioni successive. Valore numerico: n.d.", "pag": "136" },
+    "dimensioni": { "valore": "Da 0,1 a 100 g, lunghi fino a 150 mm; pareti di norma fra 1 e 5 mm (possibili da 0,3 a 10 mm).", "pag": "136, 138" }
+  },
+  "vincoli": [
+    { "mini": "spessore", "titolo": "Pareti uniformi fra 1 e 5 mm", "spiegazione": "Come nell'iniezione, lo spessore deve restare costante e le parti massicce vanno svuotate. Pezzi grandi e pareti spesse si deformano in sinterizzazione; spessori estremi (0,3 o 10 mm) creano problemi.", "pag": "138" },
+    { "mini": "raggi", "titolo": "Raggio interno di almeno 0,4 mm", "spiegazione": "Gli angoli interni concentrano le tensioni e vogliono un raggio minimo di 0,4 mm; quelli esterni possono essere vivi. Di solito non serve sformo, salvo sulle facce lunghe.", "pag": "138" },
+    { "mini": "divisione", "titolo": "Linea di divisione in zona non critica", "spiegazione": "La bava si toglie facilmente ma crea problemi su texture e filetti: tratti piani nelle filettature e linea di divisione in zone non critiche riducono il problema.", "pag": "136", "ocr": "Rapporto massimo profondità/diametro dei fori: n.d. (OCR \"up to iotoi\")" }
+  ],
+  "variantiNota": "Il libro non elenca varianti di questo processo. Qui sotto la tecnica simile citata nel testo.",
+  "varianti": [
+    { "mini": "pim", "titolo": "Iniezione di polveri (PIM)", "titoloOriginale": "Powder Injection Molding", "testo": "Una tecnica simile, detta powder injection molding, forma materiali ceramici e compositi metallici.", "pag": "136" }
+  ],
+  "correlati": [
+    { "slug": "microfusione", "nome": "Microfusione a cera persa", "nota": "spesso intercambiabile secondo tolleranze e dettagli", "pag": "136" },
+    { "slug": "pressofusione", "nome": "Pressofusione", "nota": "simile ma solo per metalli non ferrosi", "pag": "136" },
+    { "slug": "forgiatura", "nome": "Forgiatura", "nota": "per componenti più grandi", "pag": "136" },
+    { "slug": "lavorazione-cnc", "nome": "Lavorazione CNC", "nota": "geometrie simili, più cara in grandi serie", "pag": "136" },
+    { "slug": "stampaggio-iniezione", "nome": "Stampaggio a iniezione", "nota": "stesse regole di progetto", "pag": "136" }
+  ],
+  "fonte": { "pagine": "136–139" }
+}

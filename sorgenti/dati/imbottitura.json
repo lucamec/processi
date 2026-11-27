@@ -1,0 +1,55 @@
+{
+  "slug": "imbottitura",
+  "titolo": "Imbottitura e tappezzeria",
+  "titoloOriginale": "Upholstery",
+  "parte": "Parte 3 – Giunzione",
+  "categoria": "Meccanico",
+  "sintesi": "Il lavoro che unisce le parti rigide e morbide di un arredo: telaio, imbottitura in espanso e rivestimento in tessuto o pelle, tagliato, cucito e fissato. La qualità dipende moltissimo dall'abilità del tappezziere.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una macchina da cucire industriale che unisce due strati di pelle. L'ago sale e scende attraverso il piedino premistoffa; sotto il piano un crochet gira attorno alla spolina. A ogni punto la pelle avanza e sulla cucitura compare un nuovo tratto di filo; i punti finiti sono verdi." },
+  "schema": {
+    "titolo": "Cucitura a punto annodato, in sezione",
+    "descrizione": "Sezione di due strati di pelle sul piano di una macchina da cucire, con l'ago e il piedino sopra, il crochet rotante e la spolina sotto. Le fasi mostrano l'ago che attraversa, il crochet che aggancia il filo, l'asola attorno al filo inferiore e il punto che si stringe mentre la griffa fa avanzare il tessuto.",
+    "fasi": [
+      { "titolo": "L'ago attraversa", "durata": 1800, "pag": "338–339", "didascalia": "L'ago porta il filo superiore attraverso gli strati e si ferma un istante; il filo inferiore è avvolto sulla spolina." },
+      { "titolo": "Il crochet aggancia", "durata": 1800, "pag": "339", "didascalia": "Un crochet rotante, sincronizzato con l'ago da ingranaggi e alberi, prende il filo superiore." },
+      { "titolo": "Asola", "durata": 2000, "pag": "339", "didascalia": "Il crochet porta l'asola dietro il filo inferiore, tenuto in tensione dalla spolina." },
+      { "titolo": "Tensione e avanzamento", "durata": 2000, "pag": "339", "didascalia": "Il filo superiore si tende e chiude il punto; intanto la griffa trascina il tessuto per la discesa successiva. Le macchine industriali superano i 5.000 punti al minuto." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "338", "testo": "Una sedia imbottita ha un telaio strutturale, un'imbottitura in espanso e un rivestimento; divani e poltrone possono avere anche un piano molleggiato." },
+    { "fase": 2, "pag": "338", "testo": "Il telaio, in legno (laminato, curvato a vapore o lavorato a CNC) o in metallo (curvato o saldato), decide la durata del prodotto." },
+    { "fase": 3, "pag": "338", "testo": "L'imbottitura è in espanso poliuretanico, stampato RIM sul telaio oppure tagliato e incollato; densità e durezza si scelgono per il comfort." },
+    { "fase": 4, "pag": "338, 340", "testo": "Il rivestimento si taglia a mano o con un plotter CNC, si cuce e si incolla o si graffa: è legato in modo permanente a imbottitura e telaio. Finiture possibili: capitonné, cordonature, doppie cuciture." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Telai in legno o metallo; espanso poliuretanico. Rivestimenti per uso intenso: nylon, poliestere, similpelle in TPU, PVC, PP; per uso leggero: pelle, floccato, rafia, mohair, cotone, tela; per esterni: TPU e materiali rivestiti di PC.", "pag": "338, 340" },
+    "volumi": { "valore": "Ogni pezzo si riveste singolarmente: le serie riducono il costo dei materiali ma non la manodopera.", "pag": "340" },
+    "costoAttrezzatura": { "valore": "Nessuno per la tappezzeria; possono servire stampi per l'espanso RIM o per la laminazione e la curvatura del telaio.", "pag": "340" },
+    "costoUnitario": { "valore": "Dipende molto dal rivestimento: una pelle di alta qualità può raddoppiare il prezzo; manodopera alta.", "pag": "340" },
+    "tempoCiclo": { "valore": "Da moderato a lungo, secondo dimensioni e complessità.", "pag": "338, 340" },
+    "qualitaSuperficiale": { "valore": "Molto alta, secondo l'abilità del tappezziere e il materiale.", "pag": "338" },
+    "precisione": { "valore": "Tolleranze numeriche: n.d.", "pag": "338–343" },
+    "dimensioni": { "valore": "Tessuti in rotoli di solito larghi 1,37 m; pelli bovine di 4–5 m², ovine di 0,75–1 m².", "pag": "340" }
+  },
+  "vincoli": [
+    { "mini": "forma", "titolo": "Forme che si possono rivestire", "spiegazione": "Deve essere possibile tagliare e cucire una sagoma che copra il pezzo: le curve su un asse sono facili, quelle su più assi richiedono tessuti elastici o più pezzi cuciti.", "pag": "338, 340" },
+    { "mini": "concavo", "titolo": "Concavità fissate", "spiegazione": "I tessuti elastici vanno bene solo sulle forme convesse; nelle concavità la copertura va trattenuta con un pannello, spilli, legacci o colla.", "pag": "340" },
+    { "mini": "chiusura", "titolo": "Nascondere il bordo aperto", "spiegazione": "Di solito la copertura si tende e si graffa su una faccia nascosta, poi coperta da un pannello rivestito a parte.", "pag": "340, 342" }
+  ],
+  "variantiNota": "Gli altri punti di cucitura, i due modi di fare l'imbottitura e i molleggi descritti nel capitolo.",
+  "varianti": [
+    { "mini": "catena", "titolo": "Punto a catena e sopraggitto", "titoloOriginale": "Chain stitch and overlock", "testo": "Il punto a catena usa un solo filo; il sopraggitto rifinisce i bordi.", "pag": "338–339" },
+    { "mini": "tagliato", "titolo": "Espanso tagliato", "titoloOriginale": "Cut foam upholstery", "testo": "Per pezzi a spessore costante: espanso incollato su legno laminato e rivestimento graffato.", "pag": "340–341" },
+    { "mini": "rim", "titolo": "Espanso stampato (RIM)", "titoloOriginale": "RIM foam upholstery", "testo": "Per forme complesse: copertura cucita e incollata con colla attivata dal vapore.", "pag": "340, 342" },
+    { "mini": "molle", "titolo": "Molleggi", "titoloOriginale": "Spring systems", "testo": "Molle legate a mano, unità prefabbricate o molle ondulate.", "pag": "338" }
+  ],
+  "correlati": [
+    { "slug": "rim", "nome": "Stampaggio RIM", "nota": "per l'espanso stampato", "pag": "338" },
+    { "slug": "laminazione-legno", "nome": "Laminazione del legno", "nota": "per i telai", "pag": "338" },
+    { "slug": "curvatura-vapore", "nome": "Curvatura a vapore", "nota": "per i telai", "pag": "338" },
+    { "slug": "tessitura", "nome": "Tessitura e intreccio", "nota": "alternativa all'imbottitura", "pag": "338" },
+    { "slug": "lavorazione-cnc", "nome": "Lavorazione CNC", "nota": "per i telai", "pag": "338" }
+  ],
+  "fonte": { "pagine": "338–343" }
+}

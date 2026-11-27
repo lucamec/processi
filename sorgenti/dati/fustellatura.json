@@ -1,0 +1,54 @@
+{
+  "slug": "fustellatura",
+  "titolo": "Fustellatura",
+  "titoloOriginale": "Die Cutting",
+  "parte": "Parte 2 – Taglio",
+  "categoria": "Meccanico",
+  "sintesi": "Lame d'acciaio montate su una tavola di legno tagliano, mezzo-tagliano, perforano e cordonano un foglio in un solo colpo: è il modo più economico per ricavare scatole, vassoi ed etichette da materiali non metallici.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una fustellatrice piana. Sopra, una tavola di legno con lame scure che disegnano la rete a croce di una scatola e lame chiare arrotondate sulle linee di piega; sotto, un foglio di cartone su un piano d'acciaio. Il piano sale, preme il foglio contro le lame e ridiscende; la rete ritagliata si solleva, diventa verde e i quattro lembi si piegano formando una scatola, mentre il foglio forato resta come sfrido." },
+  "schema": {
+    "titolo": "Fustellatura piana, in sezione",
+    "descrizione": "Sezione di una fustella di legno con due lame di taglio, una lama cordonatrice e cuscinetti di gomma, sopra un foglio su un piano di taglio. Le fasi mostrano il carico, il piano che sale e taglia, i cuscinetti che espellono il foglio e il pezzo che si stacca dallo sfrido.",
+    "fasi": [
+      { "titolo": "Carico", "durata": 1800, "pag": "268", "didascalia": "Il foglio si posa sul piano di taglio d'acciaio." },
+      { "titolo": "Taglio", "durata": 2200, "pag": "268", "didascalia": "Il piano sale contro la fustella: le lame attraversano il foglio, quelle più corte cordonano o mezzo-tagliano; servono di solito 5–15 tonnellate." },
+      { "titolo": "Espulsione", "durata": 1800, "pag": "267–268", "didascalia": "I cuscinetti in schiuma o gomma ai lati delle lame premono il foglio e lo spingono fuori, perché non resti incastrato." },
+      { "titolo": "Separazione", "durata": 2200, "pag": "268–269", "didascalia": "Le forme ritagliate si staccano facilmente dal foglio, che diventa sfrido; nel caso della scatola, le pieghe cordonate si piegano subito." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "268", "testo": "Tre elementi: la fustella di legno con le lame d'acciaio, la pressa con il piano inferiore, e il foglio. Le sedi delle lame si tagliano di solito al laser, e le lame usurate si sostituiscono facilmente." },
+    { "fase": 2, "pag": "266", "testo": "Profondità e forma di ogni lama decidono se taglia, mezzo-taglia, cordona o perfora; il numero e l'angolo delle linee non cambiano il costo dell'operazione." },
+    { "fase": 2, "pag": "268", "testo": "La pressione dipende da spessore e tipo di materiale; alcune presse arrivano a 400 tonnellate e si possono tagliare più fogli insieme." },
+    { "fase": 4, "pag": "266–267", "testo": "È l'opposto della punzonatura, dove si toglie materiale dal pezzo. Alcuni materiali resistono al mezzo taglio e possono lasciare un alone o delaminarsi: servono prove." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Plastica alveolare, lastre e film plastici, film autoadesivi, cartoncino, cartone ondulato, feltro, schiuma, gomma, cuoio, impiallacciatura, tessuto, metalli molto sottili, fibre di rinforzo, magneti flessibili, sughero, vinile, Tyvek®.", "pag": "270" },
+    "volumi": { "valore": "Da piccole serie (anche 50 pezzi) a grandi volumi.", "pag": "266" },
+    "costoAttrezzatura": { "valore": "Basso: fustelle in legno con lame che si consumano molto lentamente.", "pag": "266, 270" },
+    "costoUnitario": { "valore": "Basso; manodopera bassa nei sistemi automatici, un po' più alta nei manuali; l'avviamento può costare per il fermo macchina.", "pag": "266, 270" },
+    "tempoCiclo": { "valore": "Molto rapido: fino a 4.000 fogli all'ora; con 4 pezzi per foglio, 16.000 pezzi all'ora.", "pag": "266, 270" },
+    "qualitaSuperficiale": { "valore": "Bordo di alta qualità, ripetibile su grandi volumi.", "pag": "266–267" },
+    "precisione": { "valore": "Profondità di taglio entro 50 µm.", "pag": "267–268" },
+    "dimensioni": { "valore": "Fogli fino a 1,5 × 2,5 m; lo spessore massimo dipende dal materiale (n.d.).", "pag": "268" }
+  },
+  "vincoli": [
+    { "mini": "raggio", "titolo": "Raggio minimo delle lame", "spiegazione": "Le lame si piegano fino a 5 mm di raggio; i fori più piccoli si tagliano con un punzone sagomato e gli spigoli vivi unendo due lame all'angolo giusto.", "pag": "268" },
+    { "mini": "distanza", "titolo": "Distanza minima fra le lame", "spiegazione": "Fra due lame servono almeno 5 mm: sotto questo valore l'espulsione del materiale diventa un problema, e geometrie fitte possono intasare la fustella.", "pag": "268" },
+    { "mini": "sezioni", "titolo": "Sezioni sottili collegate", "spiegazione": "Le parti sottili vanno legate a sezioni più spesse; annidare i pezzi nel foglio riduce materiale, tempo, sfrido e costi.", "pag": "268" }
+  ],
+  "variantiNota": "Le operazioni che la stessa fustella può eseguire in un colpo.",
+  "varianti": [
+    { "mini": "passante", "titolo": "Taglio passante", "titoloOriginale": "Cutting through", "testo": "La lama attraversa il foglio fino al piano di taglio.", "pag": "266, 268" },
+    { "mini": "mezzo", "titolo": "Mezzo taglio", "titoloOriginale": "Kiss cutting", "testo": "Taglia lo strato superiore e lascia intatto il supporto, come nelle etichette autoadesive; richiede più messa a punto.", "pag": "266, 268" },
+    { "mini": "cordonatura", "titolo": "Cordonatura e perforazione", "titoloOriginale": "Scoring and perforating", "testo": "Segna le pieghe o perfora; il cartone ondulato si può cordonare con una striscia nervata sul piano.", "pag": "266, 268" }
+  ],
+  "correlati": [
+    { "slug": "punzonatura-tranciatura", "nome": "Punzonatura e tranciatura", "nota": "per le lamiere", "pag": "266" },
+    { "slug": "taglio-getto-acqua", "nome": "Taglio a getto d'acqua", "nota": "per lamiere e vetro", "pag": "266" },
+    { "slug": "taglio-laser", "nome": "Taglio laser", "nota": "per le lamiere", "pag": "266" },
+    { "slug": "taglio-vetro", "nome": "Taglio del vetro per incisione", "nota": "per le lastre di vetro", "pag": "266" },
+    { "slug": "polpa-carta", "nome": "Stampaggio della polpa di carta", "nota": "riusa gli sfridi di cartone", "pag": "270" }
+  ],
+  "fonte": { "pagine": "266–271" }
+}

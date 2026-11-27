@@ -1,0 +1,52 @@
+{
+  "slug": "saldatura-piastra-calda",
+  "titolo": "Saldatura a piastra calda",
+  "titoloOriginale": "Hot Plate Welding",
+  "parte": "Parte 3 – Giunzione",
+  "categoria": "Termico",
+  "sintesi": "Le facce del giunto di due pezzi di plastica toccano una piastra riscaldata finché plastificano; tolta la piastra, si premono insieme e solidificano in un legame omogeneo, anche ermetico.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una saldatrice a piastra calda. Due metà di un contenitore di plastica chiara stanno negli utensili superiore e inferiore. Una piastra calda arancione scorre fra le due, i pezzi la toccano e i bordi del giunto si scaldano; poi gli utensili si allontanano, la piastra esce e le due metà si premono insieme formando un cordoncino di bava. Raffreddato, il giunto diventa verde e l'utensile superiore risale." },
+  "schema": {
+    "titolo": "Saldatura a piastra calda, in sezione",
+    "descrizione": "Sezione di due metà stampate negli utensili superiore e inferiore, con la piastra calda che entra e esce fra di esse. Le fasi mostrano il carico, il riscaldamento a contatto, il ritiro della piastra, la saldatura sotto pressione con la bava e il pezzo finito.",
+    "fasi": [
+      { "titolo": "Carico", "durata": 1800, "pag": "321–322", "didascalia": "Le due metà vanno negli utensili, che di solito lavorano in verticale e le tengono con un leggero vuoto, allineando il giunto." },
+      { "titolo": "Riscaldamento", "durata": 2400, "pag": "321–322", "didascalia": "Una piastra preriscaldata entra fra i pezzi, che la toccano: la temperatura, 50–100 °C oltre la fusione del polimero, plastifica gli strati esterni." },
+      { "titolo": "Ritiro della piastra", "durata": 1600, "pag": "321–322", "didascalia": "Dopo pochi secondi gli utensili si separano e la piastra esce." },
+      { "titolo": "Saldatura", "durata": 2200, "pag": "321–322", "didascalia": "I pezzi si premono con spinta assiale: le facce plastificate si mescolano e una quantità prestabilita di materiale esce in piccoli cordoni di bava." },
+      { "titolo": "Raffreddamento ed estrazione", "durata": 2000, "pag": "321–322", "didascalia": "I pezzi restano serrati finché il polimero si raffredda; gli utensili si aprono e il pezzo saldato resta in quello inferiore." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "320", "testo": "È un processo semplice e versatile: la dimensione è limitata solo dalla piastra, il giunto può essere piano o tridimensionale, e la macchina può essere portatile o in linea." },
+    { "fase": 2, "pag": "321", "testo": "La piastra è in genere di alluminio rivestito da un sottile strato di PTFE, che impedisce alla plastica di attaccarsi; la temperatura massima è di circa 500 °C." },
+    { "fase": 4, "pag": "320", "testo": "Serve poca pressione, quindi si saldano anche pezzi piccoli e delicati con pareti sottili; nel caso studio si eseguono insieme saldature interne ed esterne." },
+    { "fase": 5, "pag": "320", "testo": "La plastificazione resta localizzata, fino a circa 1 mm per lato, quindi la struttura del pezzo non cambia. Non si aggiunge materiale e non ci sono scarti." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "La maggior parte dei termoplastici, in pezzi stampati a iniezione o estrusi; alcuni, come il PA, si ossidano alla fusione e il giunto perde resistenza.", "pag": "320, 322" },
+    "volumi": { "valore": "Da lotti a produzione di massa.", "pag": "320" },
+    "costoAttrezzatura": { "valore": "Moderato: gli utensili sostengono il pezzo con precisione, spesso con il vuoto.", "pag": "320, 322" },
+    "costoUnitario": { "valore": "Basso; manodopera relativamente bassa, processo parzialmente o totalmente automatico.", "pag": "320, 322" },
+    "tempoCiclo": { "valore": "Variabile, da 30 secondi a 10 minuti: i pezzi piccoli si scaldano circa 10 secondi e si saldano per altri 10; nel caso studio non più di 25 secondi.", "pag": "320–322" },
+    "qualitaSuperficiale": { "valore": "Legami omogenei di alta qualità, anche ermetici; la bava spesso non si rifila.", "pag": "320" },
+    "precisione": { "valore": "Gli utensili allineano il giunto con precisione. Tolleranze numeriche: n.d.", "pag": "321" },
+    "dimensioni": { "valore": "Piastra fino a 620 × 540 mm e pezzi alti fino a 350 mm.", "pag": "322" }
+  },
+  "vincoli": [
+    { "mini": "asse", "titolo": "Giunto raggiungibile su un asse", "spiegazione": "L'unico requisito è che la piastra raggiunga il giunto lungo un asse; giunti su assi diversi richiedono una seconda operazione.", "pag": "320" },
+    { "mini": "area", "titolo": "Più superficie, più resistenza", "spiegazione": "Si saldano soprattutto giunti di testa; aumentare la superficie con una sezione a T o ad angolo retto migliora la resistenza. Le sovrapposizioni sono possibili ma rare.", "pag": "322" },
+    { "mini": "bava", "titolo": "Nascondere la bava", "spiegazione": "La bava prodotta dalla pressione spesso resta: una flangia attorno al giunto la nasconde.", "pag": "320" }
+  ],
+  "variantiNota": "Le due varianti del riscaldamento descritte nel capitolo.",
+  "varianti": [
+    { "mini": "profilata", "titolo": "Piastra profilata", "titoloOriginale": "Profiled hot plate", "testo": "Piastra sagomata per giunti tridimensionali.", "pag": "321" },
+    { "mini": "senzacontatto", "titolo": "Senza contatto", "titoloOriginale": "Non-contact heating", "testo": "Calore per convezione per plastiche appiccicose; meno efficace.", "pag": "321" }
+  ],
+  "correlati": [
+    { "slug": "saldatura-ultrasuoni", "nome": "Saldatura a ultrasuoni", "nota": "giunti simili, più pressione", "pag": "320" },
+    { "slug": "saldatura-vibrazione", "nome": "Saldatura a vibrazione", "nota": "giunti simili, più pressione", "pag": "320" },
+    { "slug": "stampaggio-iniezione", "nome": "Stampaggio a iniezione", "nota": "produce i pezzi da saldare", "pag": "320" }
+  ],
+  "fonte": { "pagine": "320–323" }
+}

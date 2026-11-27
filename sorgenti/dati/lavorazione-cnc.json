@@ -1,0 +1,54 @@
+{
+  "slug": "lavorazione-cnc",
+  "titolo": "Lavorazione CNC (fresatura, tornitura, foratura)",
+  "titoloOriginale": "CNC Machining",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Legno",
+  "sintesi": "Una macchina a controllo numerico trasferisce i dati CAD direttamente sul pezzo, togliendo materiale con frese, punte e utensili da tornio: rapida, precisa e adatta a quasi ogni materiale.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una fresatrice a portale con la seduta di una sedia in legno sulla tavola a vuoto. Il mandrino si muove lungo i tre assi X, Y e Z: prima contorna il pezzo, poi ne arrotonda il bordo, poi scava la seduta con passate parallele. Nell'ultima fase la testa si inclina su due assi di rotazione e pratica tre fori obliqui per le gambe, cosa impossibile con soli tre assi." },
+  "schema": {
+    "titolo": "Fresatura CNC della seduta di una sedia, in sezione",
+    "descrizione": "Sezione della seduta in legno sulla tavola con morsa a vuoto, con il mandrino sopra. Le fasi mostrano il fissaggio, il taglio del contorno, la profilatura del bordo, lo scavo ergonomico e i fori inclinati eseguiti a 5 assi.",
+    "fasi": [
+      { "titolo": "Fissaggio sottovuoto", "durata": 2000, "pag": "184", "didascalia": "Le tavole, tagliate in listelli girati e reincollati, vengono premute sulla tavola: il vuoto nelle scanalature, chiuso da una guarnizione, le tiene ferme." },
+      { "titolo": "Contorno", "durata": 2400, "pag": "184", "didascalia": "Con una fresa a tuffo la macchina a 3 assi taglia il profilo esterno della seduta." },
+      { "titolo": "Bordo profilato", "durata": 2000, "pag": "183–184", "didascalia": "Il carosello ruota e un altro utensile profila il bordo: il cambio è istantaneo." },
+      { "titolo": "Scavo della seduta", "durata": 2400, "pag": "184", "didascalia": "Una fresa a disco toglie materiale dal piano e dà alla seduta la forma ergonomica; tutto in meno di 2 minuti." },
+      { "titolo": "Fori inclinati a 5 assi", "durata": 2600, "pag": "182, 184", "didascalia": "La 3 assi fa solo fori verticali: la seduta passa su una macchina a 5 assi, che inclina la testa e fora con l'angolo giusto per gambe e schienale." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "182", "testo": "La CNC comprende fresatura, contornatura, tornitura, foratura, smussatura, alesatura, incisione e taglio, su metallo, plastica, legno, pietra e compositi." },
+    { "fase": 2, "pag": "182–183", "testo": "Il numero di assi decide le geometrie possibili: il tornio ne ha 2, la fresatrice o il pantografo fino a 5 (X e Y orizzontali, Z verticale, più due rotazioni)." },
+    { "fase": 4, "pag": "183–184", "testo": "Si usano frese laterali e frontali, frese a tuffo, utensili conici, a coda di rondine e a testa sferica, ideali per le superfici curve. Per la macchina, linee dritte e curve 3D sono solo punti da collegare." },
+    { "fase": 5, "pag": "184, 186", "testo": "Una volta avviata, la sequenza si ripete in modo molto preciso e rapido, quasi senza operatore; il costo principale è la preparazione della macchina." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Quasi ogni materiale: plastica, metallo, legno, vetro, ceramica, compositi, schiume.", "pag": "184, 186" },
+    "volumi": { "valore": "Da pezzo unico alla grande serie; spesso per prototipi e operazioni secondarie.", "pag": "182, 184" },
+    "costoAttrezzatura": { "valore": "Basso, limitato a dime e sistemi di fissaggio; a volte basta una morsa.", "pag": "182, 186" },
+    "costoUnitario": { "valore": "Basso; manodopera minima. Pezzi grandi, complessi e materiali duri costano di più; la preparazione si paga a parte.", "pag": "182, 186" },
+    "tempoCiclo": { "valore": "Rapido, secondo dimensione e numero di operazioni: meno di 2 minuti per la seduta del caso studio.", "pag": "182, 184" },
+    "qualitaSuperficiale": { "valore": "Alta, migliorabile con rettifica, carteggiatura e lucidatura; la fresa lascia segni secondo la velocità.", "pag": "182, 184" },
+    "precisione": { "valore": "Tolleranze strette, adatte a prototipi molto precisi. Valore numerico: n.d.", "pag": "184" },
+    "dimensioni": { "valore": "Alcune macchine accolgono un'auto intera, fino a 5 × 10 × 5 m. Per gli stampi conviene fino a circa 1 m³.", "pag": "184" }
+  },
+  "vincoli": [
+    { "mini": "fori", "titolo": "Fori obliqui richiedono 5 assi", "spiegazione": "La macchina a 3 assi fora solo in verticale; i fori inclinati per gambe e schienale si fanno su una macchina a 5 assi.", "pag": "184" },
+    { "mini": "legno", "titolo": "Stabilizzare il legno prima della lavorazione", "spiegazione": "Il legno è influenzato da venatura, umidità e imbarcamento: le tavole si tagliano in listelli, si girano e si reincollano perché ognuno bilanci le forze dei vicini.", "pag": "182, 184" },
+    { "mini": "finitura", "titolo": "Prevedere la finitura delle superfici", "spiegazione": "Secondo la velocità la fresa lascia segni del taglio, che si riducono o eliminano con carteggiatura, rettifica o lucidatura. Bisogna anche progettare per le macchine effettivamente disponibili.", "pag": "184" }
+  ],
+  "variantiNota": "Il libro non elenca varianti come sotto-voci; qui sotto le macchine descritte nel capitolo, accanto alla 5 assi dello schema principale.",
+  "varianti": [
+    { "mini": "tornio", "titolo": "Tornio CNC", "titoloOriginale": "CNC lathe turning", "testo": "Il pezzo gira fra punta e contropunta e un utensile a punta singola lo taglia con un arco continuo; i pezzi di grande sezione girano più lenti. Nel caso studio così si fanno gambe e raggi della sedia.", "pag": "182–183, 186" },
+    { "mini": "tre", "titolo": "Fresatrice a 3 assi con carosello", "titoloOriginale": "3-axis CNC with tool carousel", "testo": "Il carosello porta una serie di utensili e li cambia all'istante; la macchina a 5 assi del caso studio ha invece un solo utensile, con un magazzino separato da cui la testa preleva gli utensili.", "pag": "183" }
+  ],
+  "correlati": [
+    { "slug": "elettroerosione", "nome": "Elettroerosione (EDM)", "nota": "per forme concave nei metalli", "pag": "184" },
+    { "slug": "elettroformatura", "nome": "Elettroformatura", "nota": "più conveniente per stampi oltre circa 1 m³", "pag": "184" },
+    { "slug": "taglio-laser", "nome": "Taglio laser", "nota": "per profilare lastre, per esempio di PMMA", "pag": "184" },
+    { "slug": "curvatura-vapore", "nome": "Curvatura a vapore", "nota": "lo schienale della sedia del caso studio", "pag": "184, 188" },
+    { "slug": "rettifica-levigatura", "nome": "Rettifica, levigatura e lucidatura", "nota": "per togliere i segni dell'utensile", "pag": "184" }
+  ],
+  "fonte": { "pagine": "182–189" }
+}

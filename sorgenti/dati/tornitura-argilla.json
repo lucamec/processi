@@ -1,0 +1,50 @@
+{
+  "slug": "tornitura-argilla",
+  "titolo": "Tornitura dell'argilla",
+  "titoloOriginale": "Clay Throwing",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Vetro e ceramica",
+  "sintesi": "Al tornio del vasaio una massa d'argilla viene centrata, aperta e tirata verso l'alto con le mani fino a diventare un vaso: oggetti a simmetria di rotazione, ognuno diverso, senza alcuno stampo.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di un tornio da vasaio, con l'argilla tagliata a metà. Una massa arancione centrata sulla testa del tornio, che gira, viene aperta a ciambella, poi tirata in un cilindro a parete sottile e infine modellata come un vaso con il collo. Alla fine il vaso, essiccato e cotto, diventa verde." },
+  "schema": {
+    "titolo": "Tornitura al tornio in sezione assiale",
+    "descrizione": "Sezione verticale della testa del tornio con l'argilla. Le fasi mostrano la centratura del blocco, l'apertura a ciambella, il tiraggio di un cilindro a parete uniforme, la modellatura del vaso e il pezzo essiccato e rifinito.",
+    "fasi": [
+      { "titolo": "Centratura", "durata": 2200, "pag": "169–170", "didascalia": "La dose di argilla, impastata e lavorata a mano, viene lanciata sul piatto e centrata sul tornio in rotazione finché è perfettamente simmetrica." },
+      { "titolo": "Apertura", "durata": 2000, "pag": "170", "didascalia": "Il vasaio apre la massa in una forma a ciambella." },
+      { "titolo": "Tiraggio del cilindro", "durata": 2600, "pag": "169–170", "didascalia": "L'argilla viene tirata verso l'alto in un cilindro a parete uniforme: si parte sempre così, per distribuire bene spessore e tensioni." },
+      { "titolo": "Modellatura", "durata": 2400, "pag": "169", "didascalia": "Raggiunta l'altezza, il cilindro si modella nella forma voluta." },
+      { "titolo": "Rifinitura ed essiccazione", "durata": 2200, "pag": "169–170", "didascalia": "Il pezzo asciuga fino alla consistenza del cuoio, si rifila e si completa con piedi e manici; poi si cuoce, nel caso studio per 8–12 ore." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "169", "testo": "Prima si passa l'argilla nella impastatrice (pug mill), che la mescola e toglie parte dell'aria; poi la si lavora a mano per renderla omogenea." },
+    { "fase": 3, "pag": "168", "testo": "La qualità dipende dall'abilità del vasaio: i pezzi fatti a mano sono sempre un po' diversi." },
+    { "fase": 5, "pag": "169", "testo": "Si cuoce in biscotto e poi con lo smalto, oppure in un'unica cottura. Tempo atmosferico e temperatura influenzano l'essiccazione." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Terracotta (la più facile e diffusa, porosa: va smaltata), gres e porcellana (la più difficile).", "pag": "168" },
+    "volumi": { "valore": "Pezzi unici e piccole serie.", "pag": "168" },
+    "costoAttrezzatura": { "valore": "Nessuno.", "pag": "168" },
+    "costoUnitario": { "valore": "Da basso a moderato; manodopera moderata ma molto specializzata.", "pag": "168–169" },
+    "tempoCiclo": { "valore": "Moderato: 15–45 minuti; i pezzi alti o grandi si fanno in più parti. Cottura lunga: 8–12 ore.", "pag": "168–170" },
+    "qualitaSuperficiale": { "valore": "Variabile, perché fatta a mano.", "pag": "168" },
+    "precisione": { "valore": "Dipende dal vasaio. Valore numerico: n.d.", "pag": "168" },
+    "dimensioni": { "valore": "Limitate da abilità del vasaio, tornio, spessore e forno; pareti da 5 mm (pezzi piccoli) a 25 mm.", "pag": "168" }
+  },
+  "vincoli": [
+    { "mini": "simmetria", "titolo": "Solo forme a rivoluzione", "spiegazione": "Per natura del processo tutti i pezzi sono a simmetria di rotazione; per forme asimmetriche si combinano modellazione a mano, intaglio o pressatura, e si aggiungono pomoli, piedi e becchi.", "pag": "168" },
+    { "mini": "spessore", "titolo": "Spessore da 5 a 25 mm", "spiegazione": "Le pareti vanno da 5 mm per i pezzi piccoli fino a 25 mm; la dimensione dipende anche dallo spessore.", "pag": "168" },
+    { "mini": "alti", "titolo": "Pezzi alti in due parti", "spiegazione": "Un vaso più alto di una tornita si ottiene tornendo una seconda parte senza fondo, capovolgendola e unendola alla prima con grande precisione.", "pag": "169–170" }
+  ],
+  "variantiNota": "Il libro non elenca varianti di questo processo. Qui sotto la possibilità descritta nel testo.",
+  "varianti": [
+    { "mini": "unacottura", "titolo": "Cottura unica", "titoloOriginale": "Once-fired", "testo": "Si smalta il pezzo crudo e lo si cuoce una volta sola, riducendo l'energia; i pezzi con parti delicate si cuociono prima in biscotto per non romperli durante la cottura dello smalto.", "pag": "169" }
+  ],
+  "correlati": [
+    { "slug": "colaggio-ceramico", "nome": "Colaggio ceramico", "nota": "con stampi, per pezzi identici", "pag": "168" },
+    { "slug": "pressatura-ceramica", "nome": "Formatura a pressione della ceramica", "nota": "con stampi, per pezzi identici", "pag": "168" },
+    { "slug": "tornitura-lastra", "nome": "Tornitura in lastra", "nota": "gesto simile, sulla lamiera", "pag": "79" }
+  ],
+  "fonte": { "pagine": "168–171" }
+}

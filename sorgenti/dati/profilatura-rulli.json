@@ -1,0 +1,51 @@
+{
+  "slug": "profilatura-rulli",
+  "titolo": "Profilatura a rulli",
+  "titoloOriginale": "Roll Forming",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "sintesi": "Un nastro di lamiera svolto da un coil passa a freddo attraverso una serie di rulli, ognuno dei quali lo piega un po' di più: si producono in continuo angolari, canali, pannelli nervati e profili di qualsiasi lunghezza.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una linea di profilatura. Un nastro di acciaio esce dal coil e avanza fra quattro coppie di rulli che girano. A ogni stazione un lato del nastro si alza un po' di più, finché alla fine forma un angolare a 90 gradi. In fondo una lama taglia il profilo, che diventa verde e scorre via." },
+  "schema": {
+    "titolo": "Linea di profilatura a rulli vista di lato",
+    "descrizione": "Vista laterale della linea: a sinistra il coil, poi quattro coppie di rulli progressivi e la cesoia di taglio. Sopra ogni stazione la sezione del profilo mostra l'angolo di piega crescente: 15°, 40°, 65°, 90°.",
+    "fasi": [
+      { "titolo": "Svolgimento dal coil", "durata": 2000, "pag": "111–112", "didascalia": "Il nastro viene svolto dal coil e tirato nella linea; la tensione è mantenuta da una pressione sul coil." },
+      { "titolo": "Prime stazioni", "durata": 2400, "pag": "111", "didascalia": "Ogni coppia di rulli è sagomata per piegare il nastro un po' più della precedente: la piega si forma gradualmente lungo diversi metri." },
+      { "titolo": "Stazioni finali", "durata": 2400, "pag": "111–112", "didascalia": "Le ultime stazioni completano l'angolo; nel caso studio servono 8 stazioni per una sola piega." },
+      { "titolo": "Taglio a misura", "durata": 2000, "pag": "110, 112", "didascalia": "Il profilo esce da una matrice che ne garantisce le dimensioni e viene tagliato a misura mentre si forma." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "110–111", "testo": "La profilatura è a freddo e continua: il nastro arriva di solito da un coil, ma si possono formare anche fogli già tagliati." },
+    { "fase": 2, "pag": "111", "testo": "I rulli, fissi, sono in acciaio temprato e lucidato a specchio, accoppiati con precisione; acqua di raffreddamento e lubrificanti riducono l'usura." },
+    { "fase": 3, "pag": "110–111", "testo": "Fori, nervature e altri dettagli si eseguono durante la stessa corsa; i fori non critici si fanno prima, sul nastro piano." },
+    { "fase": 4, "pag": "110", "testo": "La lavorazione a freddo migliora l'orientamento della grana e quindi la resistenza dell'acciaio." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Quasi tutti i metalli; soprattutto quelli difficili da estrudere: acciaio inossidabile, al carbonio e zincato.", "pag": "112" },
+    "volumi": { "valore": "Serie di almeno 1500 m di profilo; molti profili standard sono già disponibili.", "pag": "110–111" },
+    "costoAttrezzatura": { "valore": "Alto per gli utensili su misura, simile agli stampi progressivi dello stampaggio; cambio e preparazione costosi.", "pag": "110–112" },
+    "costoUnitario": { "valore": "Da basso a moderato; gli utensili speciali lo aumentano molto.", "pag": "110, 112" },
+    "tempoCiclo": { "valore": "Molto rapido: fino a 1,25 m al secondo, cioè fino a 4500 m all'ora per i profili semplici. Cambi lunghi.", "pag": "110, 112" },
+    "qualitaSuperficiale": { "valore": "I rulli non alterano la finitura superficiale del metallo.", "pag": "110" },
+    "precisione": { "valore": "Passo preciso fra 0,125 e 0,25 mm. Precisione angolare: n.d.", "pag": "110", "ocr": "Precisione degli angoli: n.d. (OCR \"+10\")" },
+    "dimensioni": { "valore": "Nastro largo di norma fino a 0,5 m (con più rulli affiancati fino a 1,4 m), spesso 0,5–5 mm; lunghezze di solito fino a 20 m per la movimentazione.", "pag": "110–112", "ocr": "Lunghezza minima: il libro scrive 0.02 m ma la conversione (7.87 in) corrisponde a 0,2 m." }
+  },
+  "vincoli": [
+    { "mini": "raggio", "titolo": "Raggio di piega almeno pari allo spessore", "spiegazione": "Le pieghe si fanno solo lungo la direzione della linea e hanno un raggio uguale o maggiore dello spessore.", "pag": "111" },
+    { "mini": "bordo", "titolo": "Pieghe ad almeno 3 spessori dal bordo", "spiegazione": "Più vicino al bordo del nastro può non essere possibile formare la piega. La profondità della sezione va contenuta entro l'apertura del rullo.", "pag": "111–112" },
+    { "mini": "simmetria", "titolo": "Preferire profili simmetrici", "spiegazione": "I rulli applicano una pressione uniforme: i profili simmetrici sono più semplici e meno soggetti a incurvarsi o imbarcarsi.", "pag": "111" }
+  ],
+  "variantiNota": "Il libro non elenca varianti di questo processo. Qui sotto le possibilità descritte nel testo.",
+  "varianti": [
+    { "mini": "complessi", "titolo": "Profili complessi", "titoloOriginale": "Complex profiles", "testo": "Con più rulli in sequenza si formano sottosquadri (angoli ciechi non raggiungibili direttamente dai rulli), pieghe strette e orli, anche asimmetrici, su pezzi a parete sottile.", "pag": "110, 112" },
+    { "mini": "scatolati", "titolo": "Profili chiusi saldati", "titoloOriginale": "Seam-welded box sections", "testo": "Tubi e profili scatolati ottenuti per profilatura vengono saldati lungo la giunzione.", "pag": "110" }
+  ],
+  "correlati": [
+    { "slug": "piegatura-pressa", "nome": "Piegatura alla pressa piegatrice", "nota": "profili continui, ma una piega per operazione", "pag": "110" },
+    { "slug": "forgiatura", "nome": "Forgiatura", "nota": "la laminazione-forgiatura dà profili a spessore variabile", "pag": "110" },
+    { "slug": "stampaggio-lamiera", "nome": "Stampaggio della lamiera", "nota": "per pezzi corti", "pag": "110" }
+  ],
+  "fonte": { "pagine": "110–113" }
+}

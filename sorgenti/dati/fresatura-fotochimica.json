@@ -1,0 +1,55 @@
+{
+  "slug": "fresatura-fotochimica",
+  "titolo": "Fresatura fotochimica",
+  "titoloOriginale": "Photochemical Machining",
+  "parte": "Parte 2 – Taglio",
+  "categoria": "Chimico",
+  "sintesi": "Un film fotosensibile protegge la lamiera sottile dove serve e un acido scioglie il metallo scoperto: nella stessa passata si ritagliano pezzi, si incidono linee di piega e si alleggerisce, senza calore né bave.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una lamiera sottile d'ottone vista dall'alto. Un film azzurro la ricopre sui due lati; due lampade UV viola e due negativi scuri la espongono. Il film si apre dove c'erano le zone nere del negativo; gli ugelli oscillanti spruzzano acido sopra e sotto e le fessure si scavano dai due lati fino a passare, mentre le linee di bordo restano incise a metà. Tolto il film, la griglia diventa verde." },
+  "schema": {
+    "titolo": "Fresatura fotochimica di una lamiera, in sezione",
+    "descrizione": "Sezione di una lamiera sottile, con lo spessore esagerato. Le fasi mostrano il film sui due lati, i negativi con la luce UV, lo sviluppo che apre il film, l'incisione dai due lati che crea due tagli passanti e una mezza incisione, e la rimozione del film.",
+    "fasi": [
+      { "titolo": "Film fotosensibile", "durata": 2000, "pag": "245–246", "didascalia": "La lamiera, sgrassata in un bagno di acido cloridrico al 10%, riceve un film fotosensibile sui due lati, laminato a caldo, in camera oscura." },
+      { "titolo": "Esposizione UV", "durata": 2200, "pag": "245–246", "didascalia": "I negativi su acetato, stampati dal file CAD, si allineano sui due lati; sotto vuoto si espone alla luce UV, che indurisce il film dove passa." },
+      { "titolo": "Sviluppo", "durata": 2000, "pag": "245–246", "didascalia": "Il film non esposto, rimasto morbido, si scioglie e scopre il metallo da incidere." },
+      { "titolo": "Incisione chimica", "durata": 3000, "pag": "245–246", "didascalia": "Ugelli oscillanti spruzzano l'acido, ricco di ossigeno, sui due lati: dove i disegni coincidono il taglio attraversa la lamiera, altrove incide a metà. Per 0,7 mm di ottone servono fino a 25 minuti." },
+      { "titolo": "Rimozione del film", "durata": 2000, "pag": "245–246", "didascalia": "Il film protettivo si toglie in soda caustica; poi si tagliano le linguette che tenevano il pezzo nel foglio." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "244", "testo": "È detta anche tranciatura chimica o fotofabbricazione. La versione decorativa è l'incisione fotochimica, trattata nella Parte 4." },
+    { "fase": 2, "pag": "245", "testo": "I disegni sui due lati sono diversi: dove non si sovrappongono il taglio arriva solo a metà spessore. Il tipo di taglio dipende quindi solo dalla maschera." },
+    { "fase": 4, "pag": "245", "testo": "Non ci sono calore, pressione o contatto con un utensile: il pezzo non si deforma, non ha tensioni e il metallo conserva duttilità, durezza e grana." },
+    { "fase": 5, "pag": "244–245", "testo": "La superficie incisa è opaca, come una sabbiatura, ma si può lucidare." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "La maggior parte dei metalli: acciaio inox e dolce, alluminio (il più facile), rame, ottone, nichel, stagno, argento; l'inox è il più lento. Con resist e acidi diversi anche vetro, specchio, porcellana e ceramica.", "pag": "246" },
+    "volumi": { "valore": "Dal prototipo alla produzione di massa.", "pag": "244, 246" },
+    "costoAttrezzatura": { "valore": "Molto basso: l'unico attrezzo è il negativo, stampato dal CAD, che dura migliaia di cicli.", "pag": "244, 246" },
+    "costoUnitario": { "valore": "Da moderato ad alto; manodopera moderata.", "pag": "244, 247" },
+    "tempoCiclo": { "valore": "Moderato; più pezzi sullo stesso foglio lo riducono molto. Velocità di incisione: da 50 µm all'ora (limite superiore: n.d.).", "pag": "244, 246", "ocr": "Limite superiore della velocità di incisione: n.d. (OCR \"0.002-0.00/i in. per hour\")" },
+    "qualitaSuperficiale": { "valore": "Bordi senza bave; superficie incisa opaca, lucidabile.", "pag": "245" },
+    "precisione": { "valore": "Entro il 10% dello spessore del materiale.", "pag": "244–245" },
+    "dimensioni": { "valore": "Profilatura di lamine e lamiere da 0,1 a 1 mm; precisione piena fino a 0,7 mm. Dimensioni del foglio: n.d.", "pag": "244, 246" }
+  },
+  "vincoli": [
+    { "mini": "dettagli", "titolo": "Dettagli non più piccoli dello spessore", "spiegazione": "Ogni disegno è possibile se i dettagli superano lo spessore; raggi, fori, fessure e barrette devono misurare almeno 1,5 volte lo spessore.", "pag": "246" },
+    { "mini": "spessore", "titolo": "Spessore massimo 1 mm per profilare", "spiegazione": "Qualsiasi spessore si può incidere, ma si profila solo fino a 1 mm: oltre, il bordo resta visibilmente concavo o convesso.", "pag": "244, 246" },
+    { "mini": "linguette", "titolo": "Linguette di collegamento", "spiegazione": "Le linguette tengono i pezzi nel foglio durante il taglio e facilitano la manipolazione; metà spessore e almeno 0,15 mm. A V si spezzano a mano e possono restare dentro il profilo, parallele servono per pezzi da tranciare o lavorare.", "pag": "246" }
+  ],
+  "variantiNota": "Le tre funzioni del processo, che possono avvenire nella stessa passata.",
+  "varianti": [
+    { "mini": "profilatura", "titolo": "Profilatura", "titoloOriginale": "Profiling (blanking)", "testo": "Il disegno aperto sui due lati attraversa la lamiera e ritaglia il pezzo.", "pag": "244–246" },
+    { "mini": "linee", "titolo": "Linee di piega", "titoloOriginale": "Scoring", "testo": "Aperto su un solo lato, il disegno incide a metà: la larghezza della linea decide l'angolo di piega.", "pag": "244, 246" },
+    { "mini": "alleggerimento", "titolo": "Alleggerimento e marcatura", "titoloOriginale": "Weight reduction", "testo": "Si asporta materiale dalla superficie per alleggerire o per segnare linee.", "pag": "244–245" }
+  ],
+  "correlati": [
+    { "slug": "taglio-laser", "nome": "Taglio laser", "nota": "prodotti simili, ma scalda il pezzo; adatto a spessori maggiori", "pag": "244" },
+    { "slug": "lavorazione-cnc", "nome": "Lavorazione CNC", "nota": "lascia una zona termicamente alterata", "pag": "244" },
+    { "slug": "incisione-cnc", "nome": "Incisione CNC", "nota": "lascia una zona termicamente alterata", "pag": "244" },
+    { "slug": "sabbiatura", "nome": "Sabbiatura", "nota": "stessa finitura superficiale", "pag": "244" },
+    { "slug": "incisione-fotochimica", "nome": "Incisione fotochimica", "nota": "la versione decorativa", "pag": "244" }
+  ],
+  "fonte": { "pagine": "244–247" }
+}

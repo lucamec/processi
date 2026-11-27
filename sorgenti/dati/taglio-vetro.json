@@ -1,0 +1,51 @@
+{
+  "slug": "taglio-vetro",
+  "titolo": "Taglio del vetro per incisione (scoring)",
+  "titoloOriginale": "Glass Scoring",
+  "parte": "Parte 2 – Taglio",
+  "categoria": "Meccanico",
+  "sintesi": "Una rotella in metallo duro incide la superficie della lastra creando una cricca sottile; una leggera pressione la fa correre in tutto lo spessore e il pezzo si stacca. È il modo più diffuso per tagliare il vetro in lastra.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di un plotter per vetro. Una testa con una piccola rotella percorre un cerchio su una lastra azzurrina, lasciando una linea bianca, poi quattro linee diritte dal cerchio ai bordi. I quattro pezzi esterni si allontanano come se fossero spezzati, liberando il disco, che una mola lucida sul bordo e che diventa verde." },
+  "schema": {
+    "titolo": "Incisione e separazione del vetro, in sezione",
+    "descrizione": "Sezione di una lastra di vetro sotto una testa con rotella. Le fasi mostrano il lubrificante, la rotella che crea la cricca mediana, la pressione che fa correre la cricca e separa le due metà, e il bordo rifinito.",
+    "fasi": [
+      { "titolo": "Lubrificazione", "durata": 1800, "pag": "278", "didascalia": "Un po' di lubrificante si spruzza sulla rotella e sul vetro prima di tagliare." },
+      { "titolo": "Incisione", "durata": 2600, "pag": "277–278", "didascalia": "La rotella in carburo di tungsteno scorre con poca pressione e apre davanti a sé una cricca mediana, di solito profonda meno di 1 mm; la pressione cresce con lo spessore." },
+      { "titolo": "Separazione", "durata": 2400, "pag": "277–278", "didascalia": "Tolta la lastra dal piano, una pressione leggera fa correre la cricca in tutto lo spessore: i bordi diritti si staccano a mano, i cerchi con le pinze da rottura." },
+      { "titolo": "Rifinitura", "durata": 1800, "pag": "276", "didascalia": "La rottura è netta; se il bordo resta in vista, si lucida." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "276", "testo": "Si lavora su plotter x-y guidati dal computer, rapidi e precisi, oppure con utensili manuali, soprattutto per tagli lunghi e diritti." },
+    { "fase": 2, "pag": "277", "testo": "La rotella non toglie materiale: non c'è solco, e i pezzi si possono annidare più vicini che con il getto d'acqua." },
+    { "fase": 3, "pag": "277–278", "testo": "La zona incisa dalla rotella ha una texture diversa da quella della frattura; l'incisione provoca anche piccole cricche laterali." },
+    { "fase": 4, "pag": "277", "testo": "Nessun vetro va sprecato: tutti gli sfridi si riciclano, e il processo richiede pochissima energia." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Ogni tipo di vetro in lastra: float, stampato, colorato, a specchio, dicroico.", "pag": "277" },
+    "volumi": { "valore": "Da pezzo unico a grandi serie.", "pag": "276" },
+    "costoAttrezzatura": { "valore": "Nessuno.", "pag": "276–277" },
+    "costoUnitario": { "valore": "Basso; manodopera bassa nei sistemi automatici, alta nei lavori manuali come le vetrate.", "pag": "276–277" },
+    "tempoCiclo": { "valore": "Rapido: circa 100 m di taglio al minuto.", "pag": "276–277" },
+    "qualitaSuperficiale": { "valore": "Buon bordo, ma con qualche cricca laterale; i bordi in vista si lucidano.", "pag": "276, 278" },
+    "precisione": { "valore": "Metodo preciso. Tolleranze numeriche: n.d.", "pag": "276" },
+    "dimensioni": { "valore": "Lastre da 0,5 a 20 mm; nel vetro sottile dischi fino a 5 mm di diametro.", "pag": "276–277" }
+  },
+  "vincoli": [
+    { "mini": "esterni", "titolo": "Solo profili esterni", "spiegazione": "Il limite è ciò che si riesce a staccare dal foglio: linee rette o curve di qualsiasi lunghezza, ma non forme interne.", "pag": "277" },
+    { "mini": "bordi", "titolo": "Incisioni da bordo a bordo", "spiegazione": "Ogni incisione deve andare da un bordo all'altro, o essere una forma continua: ideale per dischi, rettangoli e forme irregolari semplici.", "pag": "277" },
+    { "mini": "rientri", "titolo": "Niente rientranze né angoli acuti", "spiegazione": "Forme con rientranze, come una mezzaluna, o con angoli acuti e profili complessi difficilmente si staccano in un solo pezzo.", "pag": "277" }
+  ],
+  "variantiNota": "I modi di incidere e di staccare i pezzi descritti nel capitolo.",
+  "varianti": [
+    { "mini": "plotter", "titolo": "Plotter x-y", "titoloOriginale": "Computer-guided x-y plotter", "testo": "Rotella guidata dal file CAD ad alta velocità, per pezzi unici o grandi serie.", "pag": "276–277" },
+    { "mini": "mano", "titolo": "Taglio a mano", "titoloOriginale": "Handheld scoring", "testo": "Per tagli lunghi e diritti, prototipi a mano libera o con sagoma, e vetrate artistiche.", "pag": "276–277" },
+    { "mini": "pinze", "titolo": "Rottura con pinze", "titoloOriginale": "Running pliers", "testo": "Rompono il vetro fuori dalla forma e lo fanno cedere lungo la cricca.", "pag": "278" }
+  ],
+  "correlati": [
+    { "slug": "taglio-getto-acqua", "nome": "Taglio a getto d'acqua", "nota": "più lento sui profili semplici, ma fino a 70 mm di spessore", "pag": "276" },
+    { "slug": "taglio-laser", "nome": "Taglio laser", "nota": "più lento, ma bordo di altissima qualità", "pag": "276" }
+  ],
+  "fonte": { "pagine": "276–279" }
+}

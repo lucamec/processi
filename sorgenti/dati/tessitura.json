@@ -1,0 +1,56 @@
+{
+  "slug": "tessitura",
+  "titolo": "Tessitura e intreccio",
+  "titoloOriginale": "Weaving",
+  "parte": "Parte 3 – Giunzione",
+  "categoria": "Meccanico",
+  "sintesi": "Fili o strisce passano sopra e sotto altri fili, formando una struttura intrecciata tenuta insieme dall'attrito: tessuti rigidi per sedute, cesti, schermi e pannelli, con fibre orientate secondo il carico.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di un telaio visto dall'alto di lato. Fili d'ordito chiari corrono dal subbio verso il tessuto; due licci si alzano e si abbassano alternando i fili pari e dispari. Una trama arancione attraversa il passo, il pettine la batte contro il tessuto, poi i licci si scambiano. Le file già tessute sono verdi." },
+  "schema": {
+    "titolo": "Tessitura su telaio, in sezione laterale",
+    "descrizione": "Sezione laterale di un telaio: subbio dell'ordito a sinistra, licci al centro, pettine e tessuto a destra. Le fasi mostrano l'ordito nei licci, l'apertura del passo, l'inserimento della trama, la battuta con il pettine e lo scambio dei licci.",
+    "fasi": [
+      { "titolo": "Ordito nei licci", "durata": 1800, "pag": "334", "didascalia": "Ogni filo d'ordito passa nell'occhiello di un liccio; nel caso studio i telai hanno 664 bobine di carta ritorta." },
+      { "titolo": "Apertura del passo", "durata": 2000, "pag": "334", "didascalia": "I licci, a pedale o comandati dal computer, alzano e abbassano gruppi di fili: è questo a decidere il disegno." },
+      { "titolo": "Trama", "durata": 2000, "pag": "334", "didascalia": "La trama entra nello spazio fra i fili, davanti al pettine." },
+      { "titolo": "Battuta", "durata": 1800, "pag": "334", "didascalia": "Il pettine, una serie di lame smussate fra i fili, spinge la trama contro il tessuto." },
+      { "titolo": "Incrocio", "durata": 2000, "pag": "334", "didascalia": "Mentre il pettine la tiene, un liccio sale e l'altro scende e bloccano la trama fra i fili; poi si ripete per la passata successiva." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "332", "testo": "Il capitolo tratta i tessuti rigidi per arredo, cesti, recinzioni, schermi e stuoie: pannelli piani o strutture tridimensionali autoportanti." },
+    { "fase": 2, "pag": "332", "testo": "A mano si tesse al telaio, fra elementi rigidi anche non paralleli, o in strutture 3D: intreccio, impagliatura con canna, legatura, sedute a stecche, avvolgimento a spirale." },
+    { "fase": 4, "pag": "333", "testo": "A differenza dei laminati, tenuti dalla colla, le strutture intrecciate stanno insieme per attrito: sono più flessibili e possono deformarsi in modo permanente." },
+    { "fase": 5, "pag": "334–335", "testo": "Nel caso studio la trama ha un filo metallico interno, che è l'elemento strutturale; il telo, largo 2 m, si fissa su un telaio di legno curvato a vapore." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Tradizionalmente fibre naturali come rattan, salice e bambù; in serie anche metallo, carta, plastica e legno, combinati per ottenere strutture portanti.", "pag": "334, 336" },
+    "volumi": { "valore": "Da pezzo unico a grandi serie.", "pag": "332" },
+    "costoAttrezzatura": { "valore": "Nessuno, salvo uno stampo per sagomare il tessuto, comunque economico.", "pag": "332, 336" },
+    "costoUnitario": { "valore": "Basso, ma dipende dalla materia prima; manodopera alta per l'abilità richiesta.", "pag": "332, 336" },
+    "tempoCiclo": { "valore": "Rapido al telaio meccanico; da moderato a lento a mano, secondo dimensioni e complessità.", "pag": "332, 336" },
+    "qualitaSuperficiale": { "valore": "Dipende dalla materia prima; i telai a controllo numerico danno materiali ripetibili, a mano conta l'abilità.", "pag": "332, 334" },
+    "precisione": { "valore": "Tolleranze numeriche: n.d.", "pag": "332–337" },
+    "dimensioni": { "valore": "Nel caso studio teli continui larghi 2 m; altre dimensioni: n.d.", "pag": "335" }
+  },
+  "vincoli": [
+    { "mini": "curva", "titolo": "Curvare in una direzione", "spiegazione": "I pannelli a macchina si piegano stretti solo in una direzione, o dolcemente su uno stampo; forzarli in profili complessi sposta le fibre e peggiora resistenza e aspetto.", "pag": "336" },
+    { "mini": "raggio", "titolo": "Raggio secondo il materiale", "spiegazione": "La canna si piega molto stretta, altri materiali possono spaccarsi: queste forme si intrecciano a mano in 3D o si ottengono unendo pannelli.", "pag": "336" },
+    { "mini": "protezione", "titolo": "Proteggere le fibre naturali", "spiegazione": "Molti materiali sono naturali e vanno protetti dagli agenti esterni con una verniciatura trasparente o colorata.", "pag": "336" }
+  ],
+  "variantiNota": "I principali tipi di intreccio descritti nel capitolo.",
+  "varianti": [
+    { "mini": "tela", "titolo": "Tela", "titoloOriginale": "Plain weave", "testo": "Uno sopra, uno sotto.", "pag": "332–333" },
+    { "mini": "saia", "titolo": "Saia", "titoloOriginale": "Twill (herringbone)", "testo": "Motivo diagonale con due o più fili incrociati alla volta.", "pag": "332–333" },
+    { "mini": "raso", "titolo": "Raso", "titoloOriginale": "Satin", "testo": "Scavalcamenti di cinque o più fili; tessuto più fitto ma meno stabile.", "pag": "332" },
+    { "mini": "canna", "titolo": "Incannucciato", "titoloOriginale": "Strand caning", "testo": "Pannelli tessuti a telaio con motivo ottagonale, fissati in una scanalatura su sedili e schienali.", "pag": "332–333, 336–337" }
+  ],
+  "correlati": [
+    { "slug": "imbottitura", "nome": "Imbottitura e tappezzeria", "nota": "alternativa con tessuti morbidi o pelle", "pag": "332" },
+    { "slug": "curvatura-vapore", "nome": "Curvatura a vapore", "nota": "telai su cui si fissa il tessuto", "pag": "332, 334" },
+    { "slug": "laminazione-legno", "nome": "Laminazione del legno", "nota": "alternativa per l'arredo", "pag": "332" },
+    { "slug": "laminazione-compositi", "nome": "Laminazione dei compositi", "nota": "alternativa; tessuti morbidi resi rigidi con la resina", "pag": "332, 334" },
+    { "slug": "verniciatura-spruzzo", "nome": "Verniciatura a spruzzo", "nota": "protegge le fibre naturali", "pag": "336" }
+  ],
+  "fonte": { "pagine": "332–337" }
+}

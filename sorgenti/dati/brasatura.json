@@ -1,0 +1,54 @@
+{
+  "slug": "brasatura",
+  "titolo": "Brasatura dolce e forte",
+  "titoloOriginale": "Soldering and Brazing",
+  "parte": "Parte 3 – Giunzione",
+  "categoria": "Termico",
+  "sintesi": "Si scalda il giunto oltre la temperatura di fusione di una lega d'apporto, che la capillarità risucchia fra i pezzi: un legame permanente senza fondere il metallo base. Sotto i 450 °C è brasatura dolce, sopra è brasatura forte.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di due tubi di rame uniti da un manicotto. Si stende un anello di pasta di flusso, il tubo entra nel manicotto, poi una fiamma azzurra e arancione scalda il giunto finché diventa incandescente. Una bacchetta chiara tocca il bordo e un anello di lega argentata si forma tutt'intorno; raffreddato, il giunto diventa verde." },
+  "schema": {
+    "titolo": "Brasatura a cannello di un giunto a manicotto, in sezione",
+    "descrizione": "Sezione assiale di due tubi di rame e un manicotto. Le fasi mostrano il flusso sulle superfici, il tubo che entra, il cannello che scalda, la lega che risale per capillarità nella fessura e il giunto finito.",
+    "fasi": [
+      { "titolo": "Flusso", "durata": 1800, "pag": "312, 314", "didascalia": "Si controlla il giunto e lo si ricopre di pasta di flusso, che mantiene la superficie pulita e senza ossidi perché la lega possa bagnarla." },
+      { "titolo": "Assemblaggio", "durata": 1800, "pag": "313–314", "didascalia": "I pezzi si montano, se serve, in una maschera, lasciando una fessura sottile e una sovrapposizione ampia." },
+      { "titolo": "Riscaldamento", "durata": 2200, "pag": "313–314", "didascalia": "Il cannello, di solito ossiacetilenico (o a propano per la brasatura dolce), porta il giunto oltre la temperatura di fusione della lega." },
+      { "titolo": "Apporto", "durata": 2400, "pag": "312–314", "didascalia": "La lega aggiunta fonde ed è risucchiata nel giunto per capillarità, formando un legame metallurgico; nel caso studio bastano circa 30 secondi." },
+      { "titolo": "Pulitura", "durata": 1600, "pag": "314", "didascalia": "Serve pochissima finitura: il pezzo si toglie dalla maschera, si lucida leggermente e si pulisce." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "312", "testo": "Il processo ha quattro elementi: preparazione del giunto, flusso, lega d'apporto e riscaldamento. In alternativa al flusso si lavora sottovuoto o in gas inerte." },
+    { "fase": 3, "pag": "312", "testo": "La temperatura di fusione della lega decide il nome: sotto 450 °C brasatura dolce, sopra brasatura forte, più resistente. Il metallo base fonde sempre più in alto della lega." },
+    { "fase": 4, "pag": "312, 314", "testo": "La lega è di solito a base di argento, ottone, stagno, rame o nichel, scelta compatibile con il pezzo; per l'impatto del piombo oggi si usano stagno, argento e rame." },
+    { "fase": 5, "pag": "314–315", "testo": "Non fondendo il metallo base, la metallurgia non cambia e la zona alterata è minima: utile per parti sottili e delicate. I pezzi difettosi si possono smontare e rifare." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "La maggior parte dei metalli (alluminio, rame, acciaio al carbonio, inox, nichel, titanio, compositi a matrice metallica) e molte ceramiche, che si metallizzano prima per favorire la bagnatura.", "pag": "312, 314" },
+    "volumi": { "valore": "Da pezzo unico a produzione di massa.", "pag": "312, 314" },
+    "costoAttrezzatura": { "valore": "Nessuno, ma possono servire maschere di supporto.", "pag": "312, 315" },
+    "costoUnitario": { "valore": "Basso; manodopera generalmente bassa.", "pag": "312, 315" },
+    "tempoCiclo": { "valore": "Rapido; nel caso studio circa 30 secondi; il forno è più lento ma unisce molti pezzi insieme.", "pag": "312, 314–315", "ocr": "Durata tipica a cannello: n.d. (OCR \"i-io minutes\")" },
+    "qualitaSuperficiale": { "valore": "Legame resistente, vicino al metallo base; cordone che di solito non richiede molata; con l'ottone il colore si adatta al pezzo.", "pag": "312, 314" },
+    "precisione": { "valore": "Il giunto non deve combaciare esattamente: la lega colma la fessura. Tolleranze numeriche: n.d.", "pag": "314" },
+    "dimensioni": { "valore": "In forno e sottovuoto limitate dalla camera; valori numerici: n.d.", "pag": "314" }
+  },
+  "vincoli": [
+    { "mini": "superficie", "titolo": "Interfaccia ampia", "spiegazione": "I giunti di testa, a T e a becco di flauto in genere non vanno bene: l'interfaccia deve offrire molta superficie, cosa che può influire sull'aspetto del prodotto.", "pag": "314" },
+    { "mini": "fessura", "titolo": "Fessura per la capillarità", "spiegazione": "Serve una piccola luce perché la lega risalga per capillarità; una luce più ampia si colma, ma riduce la resistenza.", "pag": "313", "ocr": "Valore della fessura: n.d. (conversione \"0.05 mm (0.02 in.)\" incoerente)" },
+    { "mini": "lega", "titolo": "Lega compatibile, superfici pulite", "spiegazione": "La lega deve essere compatibile con il metallo base e ne determina resistenza e temperatura di servizio; contaminazione e tensione superficiale ostacolano la bagnatura.", "pag": "312, 314" }
+  ],
+  "variantiNota": "Lo schema principale mostra il riscaldamento a cannello; questi sono gli altri metodi descritti nel capitolo.",
+  "varianti": [
+    { "mini": "conduzione", "titolo": "A conduzione", "titoloOriginale": "Conduction heating", "testo": "Con un saldatore, per esempio sui circuiti stampati e per piccole serie.", "pag": "312–313" },
+    { "mini": "forno", "titolo": "In forno", "titoloOriginale": "Furnace heating", "testo": "Riscaldamento di tutto il pezzo, per molti giunti insieme o in atmosfera protettiva, come per il titanio.", "pag": "313–314" },
+    { "mini": "pcb", "titolo": "A onda e a rifusione", "titoloOriginale": "Wave and reflow soldering", "testo": "Metodi di massa per i circuiti stampati.", "pag": "312" }
+  ],
+  "correlati": [
+    { "slug": "saldatura-arco", "nome": "Saldatura ad arco", "nota": "fonde anche il metallo base", "pag": "314" },
+    { "slug": "saldatura-resistenza", "nome": "Saldatura a resistenza", "nota": "usi simili, giunti diversi", "pag": "314" },
+    { "slug": "galvanostegia", "nome": "Galvanostegia", "nota": "metallizza le ceramiche da brasare", "pag": "312" },
+    { "slug": "metallizzazione-sottovuoto", "nome": "Metallizzazione sottovuoto", "nota": "metallizza i materiali non conduttivi", "pag": "312" }
+  ],
+  "fonte": { "pagine": "312–315" }
+}

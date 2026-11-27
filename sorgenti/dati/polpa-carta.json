@@ -1,0 +1,51 @@
+{
+  "slug": "polpa-carta",
+  "titolo": "Stampaggio della polpa di carta",
+  "titoloOriginale": "Paper Pulp Molding",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Legno",
+  "sintesi": "Uno stampo forato immerso in un impasto di carta da macero e acqua aspira l'acqua con il vuoto e trattiene un guscio di fibre, che poi si asciuga: imballaggi leggeri, riciclati e biodegradabili.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una macchina per polpa di carta. Uno stampo metallico con sei coppette, come un portauova, scende in una vasca di impasto marrone e risale coperto da un guscio di polpa. Uno stampo di trasferimento arriva sotto, prende il guscio, si capovolge e lo posa su un nastro, che lo porta in un forno trasparente dove il guscio diventa verde." },
+  "schema": {
+    "titolo": "Formatura della polpa di carta su stampo maschio, in sezione",
+    "descrizione": "Sezione di una vasca di impasto con sopra uno stampo a due coppette coperto da una rete. Le fasi mostrano l'immersione con il vuoto, l'emersione con il guscio, lo stampo di trasferimento che si capovolge e posa il guscio sul nastro, e il passaggio nel forno.",
+    "fasi": [
+      { "titolo": "Formatura", "durata": 2600, "pag": "202–204", "didascalia": "Lo stampo s'immerge nell'impasto per circa un secondo: il vuoto aspira l'acqua attraverso rete e fori e la polpa si deposita fino a 2–3 mm di parete." },
+      { "titolo": "Emersione", "durata": 2000, "pag": "203", "didascalia": "Il vuoto resta attivo e trattiene il guscio sullo stampo mentre esce dalla vasca." },
+      { "titolo": "Trasferimento", "durata": 2800, "pag": "203–204", "didascalia": "Il guscio passa a uno stampo di trasferimento in poliuretano, anch'esso con vuoto, che lo posa sul nastro quando contiene ancora il 75% di acqua." },
+      { "titolo": "Essiccazione", "durata": 2400, "pag": "203–204", "didascalia": "In forno, con aria a 200 °C circolata dolcemente, il guscio si asciuga in circa 15 minuti; in alternativa si pressa in uno stampo caldo." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "202", "testo": "Lo stampo, di solito in alluminio fresato, è rivestito da una rete fine in acciaio inox che fa da setaccio e trattiene le fibre. Fori distanti circa 10 mm lasciano passare l'acqua aspirata dal vuoto." },
+    { "fase": 1, "pag": "204", "testo": "Gli stampi stanno su un braccio rotante e lavorano in coppia: devono richiedere circa la stessa quantità di polpa, perché l'impasto resti uniforme." },
+    { "fase": 3, "pag": "203–204", "testo": "Lo stampo di trasferimento è in poliuretano, più economico da lavorare dell'alluminio; il guscio deve già reggersi da solo." },
+    { "fase": 4, "pag": "202–204", "testo": "La polpa è fatta di fibre di cellulosa legate dalla lignina, senza colle né leganti aggiunti. Gli scarti, in media il 3%, e l'acqua vengono riciclati." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Carta e cartone da macero industriali o post-consumo; si possono aggiungere altre fibre come il lino. Polpa bruna da carta kraft di qualità, grigia da giornali riciclati, meno robusta.", "pag": "204" },
+    "volumi": { "valore": "Lotti e produzione di massa.", "pag": "202" },
+    "costoAttrezzatura": { "valore": "Da basso a moderato, secondo la complessità; pressatura a umido e a caldo richiedono stampi aggiuntivi.", "pag": "202, 204" },
+    "costoUnitario": { "valore": "Da basso a moderato; manodopera bassa perché le operazioni sono quasi tutte automatiche.", "pag": "202, 204" },
+    "tempoCiclo": { "valore": "Rapido: fino a 10 cicli al minuto, più spesso circa 5 pezzi al minuto; l'essiccazione aggiunge circa 15 minuti.", "pag": "202, 204" },
+    "qualitaSuperficiale": { "valore": "Variabile; essiccato all'aria il pezzo è liscio solo sul lato dello stampo. Pressatura a umido o a caldo migliorano la superficie.", "pag": "202, 204" },
+    "precisione": { "valore": "In genere entro 0,1 mm.", "pag": "202" },
+    "dimensioni": { "valore": "Spessore 1–5 mm (tipico 2–3 mm); fino a 400 × 1700 mm e 165 mm di profondità, oltre con l'immersione verticale.", "pag": "203–204" }
+  },
+  "vincoli": [
+    { "mini": "sformo", "titolo": "Estrazione lungo un solo asse", "spiegazione": "Gli stampi si chiudono su un unico asse senza possibilità di aggiustamento: il pezzo si estrae lungo quell'asse e gli angoli di sformo sono particolarmente importanti. Lo sformo inclinato permette anche di impilare i pezzi in poco spazio.", "pag": "204", "ocr": "Valore tipico dell'angolo di sformo: n.d. (OCR \"50 on each side\")" },
+    { "mini": "nervature", "titolo": "Spessore e nervature al posto dei leganti", "spiegazione": "Senza additivi la resistenza viene da pareti più spesse e nervature. Il pezzo deve reggersi da solo pochi secondi dopo la formatura, quando contiene ancora il 75% di acqua.", "pag": "204" },
+    { "mini": "dettagli", "titolo": "Dettagli fini sul lato dello stampo", "spiegazione": "Essiccato all'aria il pezzo ha un lato liscio e uno ruvido: i dettagli fini compaiono solo sul lato a contatto con lo stampo, oppure si imprimono con la pressatura.", "pag": "204" }
+  ],
+  "variantiNota": "Il capitolo descrive due modi per migliorare la superficie e un tipo di macchina per pezzi profondi; lo schema principale mostra la formatura con essiccazione in forno.",
+  "varianti": [
+    { "mini": "umido", "titolo": "Pressatura a umido", "titoloOriginale": "Wet pressing", "testo": "Migliora la finitura e riduce la permeabilità; loghi, istruzioni e dettagli fini si imprimono nel pezzo ancora umido.", "pag": "202, 204" },
+    { "mini": "caldo", "titolo": "Pressatura a caldo", "titoloOriginale": "Hot pressing", "testo": "Asciuga rapidamente il pezzo in uno stampo caldo. Poiché la polpa si ritira, possono servire fino a 4 set di stampi; in alternativa si pressa a caldo solo nella fase finale dell'essiccazione all'aria.", "pag": "202, 204" },
+    { "mini": "verticale", "titolo": "Immersione verticale", "titoloOriginale": "Vertical dipping", "testo": "Macchine che permettono pezzi più profondi di 165 mm.", "pag": "204" }
+  ],
+  "correlati": [
+    { "slug": "termoformatura", "nome": "Termoformatura", "nota": "usata per applicazioni simili", "pag": "202" },
+    { "slug": "fustellatura", "nome": "Fustellatura", "nota": "il cartone ondulato fustellato è un'alternativa", "pag": "202" }
+  ],
+  "fonte": { "pagine": "202–205" }
+}

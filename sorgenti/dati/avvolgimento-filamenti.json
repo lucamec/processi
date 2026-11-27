@@ -1,0 +1,53 @@
+{
+  "slug": "avvolgimento-filamenti",
+  "titolo": "Avvolgimento di filamenti",
+  "titoloOriginale": "Filament Winding",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Compositi",
+  "sintesi": "Un fascio continuo di fibre impregnate di resina viene avvolto su un mandrino che ruota, con un angolo controllato: tubi e corpi cavi leggerissimi, con la fibra orientata esattamente secondo i carichi.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una macchina per avvolgimento. Un mandrino cilindrico con estremità coniche ruota fra testa motrice e contropunta; un carrello con bobina, bagno di resina e testa guidafilo scorre lungo il mandrino. La fibra arancione si deposita prima in eliche incrociate, poi in anelli fitti; un nastro chiaro avvolge tutto. Dopo la cura il tubo diventa verde e il mandrino si sfila verso destra." },
+  "schema": {
+    "titolo": "Avvolgimento di un albero di trasmissione, vista dall'alto",
+    "descrizione": "Vista dall'alto di un mandrino con estremità coniche fra testa motrice e contropunta, con il carrello guidafilo davanti. Le fasi mostrano l'aggancio della fibra, le eliche incrociate, gli anelli circonferenziali, il nastro, e il tubo finito con il mandrino che si sfila.",
+    "fasi": [
+      { "titolo": "Aggancio della fibra", "durata": 2000, "pag": "224, 226", "didascalia": "Il fascio di carbonio arriva dalla bobina, passa su una ruota che gira nel bagno di resina epossidica e viene agganciato al mandrino." },
+      { "titolo": "Strati elicoidali", "durata": 3200, "pag": "223–224, 226", "didascalia": "Il mandrino ruota e la testa guidafilo va avanti e indietro: il rapporto fra le due velocità fissa l'angolo della fibra, qui basso, per resistere lungo l'asse e a torsione." },
+      { "titolo": "Strati circonferenziali", "durata": 3200, "pag": "223, 226", "didascalia": "Con la testa che avanza lentamente la fibra si dispone vicino a 90°: gli anelli danno resistenza circonferenziale." },
+      { "titolo": "Nastratura", "durata": 2400, "pag": "226", "didascalia": "Un nastro di plastica avvolto sopra spreme la resina in eccesso e lascia una superficie liscia; l'eccesso si taglia prima della cura." },
+      { "titolo": "Cura ed estrazione", "durata": 2800, "pag": "226", "didascalia": "In forno fino a 200 °C per 4 ore, con salita e discesa graduali (8 ore in tutto). Raffreddato, il mandrino metallico si ritira più del carbonio e si sfila." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "222", "testo": "La fibra, di solito vetro, carbonio o aramide, arriva come fascio con un numero fisso di filamenti: un 12k ne contiene 12.000. Si avvolge a umido o pre-impregnata." },
+    { "fase": 2, "pag": "224", "testo": "Un circuito completo è un'andata e ritorno della testa da un capo all'altro del mandrino; un circuito può combinare più angoli secondo le necessità." },
+    { "fase": 3, "pag": "224", "testo": "Concentrando il fascio in una zona si creano rigonfiamenti: rinforzi locali o diametri maggiori da lavorare poi alla macchina utensile." },
+    { "fase": 5, "pag": "223", "testo": "L'avvolgimento è guidato da computer. La rigidezza dipende dallo spessore della stratificazione e dal diametro del tubo." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Fibre di vetro, carbonio e aramide; resine termoindurenti poliestere, vinilestere, epossidica e fenolica. Liner in alluminio o titanio di alta qualità.", "pag": "222, 224" },
+    "volumi": { "valore": "Da pezzo unico a lotti.", "pag": "222" },
+    "costoAttrezzatura": { "valore": "Da basso a moderato, secondo le dimensioni; inglobare il mandrino o un liner aumenta il costo.", "pag": "222, 224" },
+    "costoUnitario": { "valore": "Da moderato ad alto; manodopera da moderata ad alta.", "pag": "222, 225" },
+    "tempoCiclo": { "valore": "20–120 minuti per pezzi piccoli, diverse settimane per i grandi; cura di 4–8 ore.", "pag": "222, 224" },
+    "qualitaSuperficiale": { "valore": "Lucida; quattro finiture: come avvolto, nastrata, lavorata alla macchina, gel coat epossidico.", "pag": "222–223" },
+    "precisione": { "valore": "Avvolgimento preciso a 100 µm; la lavorazione dopo l'avvolgimento dà superfici molto accurate.", "pag": "223" },
+    "dimensioni": { "valore": "Di solito fino a 3 m di lunghezza e 1 m di diametro; forme molto più grandi, come i razzi, sono possibili.", "pag": "224" }
+  },
+  "vincoli": [
+    { "mini": "raggio", "titolo": "Raggio degli spigoli esterni", "spiegazione": "Si sconsiglia di avvolgere spigoli esterni con raggio inferiore a 20 mm; per gli spigoli interni non c'è limite. Si possono avvolgere anche profili ovali, ellittici o a facce piane.", "pag": "224" },
+    { "mini": "estremita", "titolo": "Estremità rastremate per gli angoli bassi", "spiegazione": "Le estremità coniche del mandrino permettono di tendere la fibra stesa a basso angolo senza che scivoli; vicino a 90° il problema non c'è.", "pag": "226" },
+    { "mini": "angolo", "titolo": "Angolo della fibra progettato per l'uso", "spiegazione": "L'angolo decide se lo strato lavora lungo l'asse, a torsione o in senso circonferenziale: le proprietà sono progettate per un'applicazione e i pezzi non sono intercambiabili.", "pag": "222–223, 226" }
+  ],
+  "variantiNota": "I due modi di applicare la resina e l'avvolgimento su liner descritti nel capitolo; lo schema principale mostra l'avvolgimento a umido su mandrino rimovibile.",
+  "varianti": [
+    { "mini": "umido", "titolo": "Avvolgimento a umido", "titoloOriginale": "Wet winding", "testo": "Il fascio passa in un bagno di resina epossidica, raccolta da una ruota, prima di arrivare al mandrino.", "pag": "222, 224" },
+    { "mini": "preimpregnato", "titolo": "Avvolgimento di pre-impregnato", "titoloOriginale": "Pre-preg winding", "testo": "Il fascio è già impregnato di resina e si applica direttamente, senza altra preparazione.", "pag": "222" },
+    { "mini": "liner", "titolo": "Avvolgimento su liner", "titoloOriginale": "Bottle winding", "testo": "Su un liner cavo che resta nel pezzo si ottengono corpi chiusi alle due estremità e con colli, come serbatoi in pressione; serve un liner nuovo per ogni pezzo.", "pag": "224" }
+  ],
+  "correlati": [
+    { "slug": "laminazione-termica-3d", "nome": "Laminazione termica 3D", "nota": "processo simile, su stampo fisso e per lastre", "pag": "222" },
+    { "slug": "laminazione-compositi", "nome": "Laminazione dei compositi", "nota": "profili simili, con fibre tessute", "pag": "222" },
+    { "slug": "dmc-smc", "nome": "Stampaggio di DMC e SMC", "nota": "per volumi più alti", "pag": "222" }
+  ],
+  "fonte": { "pagine": "222–227" }
+}

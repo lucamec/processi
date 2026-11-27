@@ -1,0 +1,53 @@
+{
+  "slug": "saldatura-ultrasuoni",
+  "titolo": "Saldatura a ultrasuoni",
+  "titoloOriginale": "Ultrasonic Welding",
+  "parte": "Parte 3 – Giunzione",
+  "categoria": "Termico",
+  "sintesi": "Vibrazioni ad alta frequenza attraversano il pezzo e fondono per attrito il giunto fra due parti di plastica in meno di un secondo: è il processo di saldatura delle plastiche più rapido ed economico.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una saldatrice a ultrasuoni a colonna. In alto il convertitore, un anello blu del booster e il sonotrodo d'alluminio; sotto, un'incudine con una piccola girante di plastica e il suo coperchio appoggiato. Il sonotrodo scende, vibra e il bordo fra coperchio e girante si illumina d'arancione; poi la vibrazione si ferma, il giunto diventa verde e il sonotrodo risale." },
+  "schema": {
+    "titolo": "Saldatura a ultrasuoni con direttore di energia, in sezione",
+    "descrizione": "Sezione di due pezzi di plastica sovrapposti fra il sonotrodo e l'incudine; il pezzo superiore ha una nervatura triangolare. Le fasi mostrano il posizionamento, il contatto del sonotrodo, la vibrazione che fonde la nervatura e il mantenimento sotto pressione.",
+    "fasi": [
+      { "titolo": "Posizionamento", "durata": 1800, "pag": "306", "didascalia": "Il pezzo inferiore va nell'incudine che lo sostiene; quello superiore si appoggia sopra e si centra da solo." },
+      { "titolo": "Contatto", "durata": 1800, "pag": "304–306", "didascalia": "Il sonotrodo scende sul pezzo e lo preme: convertitore, booster e sonotrodo sono avvitati insieme su una colonna verticale." },
+      { "titolo": "Vibrazione", "durata": 2400, "pag": "304–306", "didascalia": "I dischi piezoelettrici trasformano l'elettricità in vibrazioni (di solito 20 kHz) con il 95% di efficienza; il pezzo le trasmette al giunto, dove l'attrito plastifica il materiale in meno di un secondo." },
+      { "titolo": "Mantenimento", "durata": 1800, "pag": "305", "didascalia": "Le vibrazioni si fermano, la pressione mescola il materiale all'interfaccia, che solidifica in un legame forte e omogeneo." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "302", "testo": "La tecnologia a ultrasuoni comprende saldatura, ricalcatura, ribaditura, inserimento, saldatura a punti, taglio e sigillatura di tessuti e film; la saldatura è la più usata." },
+    { "fase": 2, "pag": "304", "testo": "Il booster adatta l'ampiezza delle vibrazioni; il sonotrodo deve risuonare alla frequenza giusta, quindi forma e dimensioni sono limitate (in genere non oltre 300 mm)." },
+    { "fase": 3, "pag": "304", "testo": "Il materiale deve essere abbastanza rigido da trasmettere le vibrazioni: gli amorfi le smorzano meno e si saldano anche lontano dal sonotrodo, i semicristallini solo vicino." },
+    { "fase": 4, "pag": "302, 304", "testo": "Non servono riempitivi, non c'è scarto né contaminazione: adatto a giocattoli, prodotti medicali e alimentari. Si eliminano viti e adesivi." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Tutti i termoplastici: amorfi come ABS, PMMA, PC e PS con se stessi e talvolta fra loro; semicristallini come PA, CA, POM, PET, PE e PP solo con se stessi. Anche tessuti e non tessuti termoplastici, compositi, carta patinata e, con tecniche speciali, alcuni metalli.", "pag": "304" },
+    "volumi": { "valore": "Lotti e produzione di massa.", "pag": "302" },
+    "costoAttrezzatura": { "valore": "Basso, anche se i sonotrodi sono in alluminio aeronautico o titanio e vanno fatti per ogni applicazione.", "pag": "302, 304–306" },
+    "costoUnitario": { "valore": "Basso; manodopera bassa, cambio attrezzatura rapido.", "pag": "302, 304" },
+    "tempoCiclo": { "valore": "Molto rapido: saldatura in meno di 1 secondo; le linee automatiche e continue fanno più saldature al secondo.", "pag": "302, 304" },
+    "qualitaSuperficiale": { "valore": "Legame permanente di alta qualità, anche ermetico; poca bava.", "pag": "302" },
+    "precisione": { "valore": "Processo molto ripetibile e controllabile. Tolleranze numeriche: n.d.", "pag": "302, 304" },
+    "dimensioni": { "valore": "Sonotrodi in genere fino a 300 mm; giunti più lunghi in più passi, con più teste o in continuo.", "pag": "304" }
+  },
+  "vincoli": [
+    { "mini": "direttore", "titolo": "Progettare il giunto", "spiegazione": "Tre tipi di giunto: sovrapposizione semplice (il più debole), direttore di energia e giunto a taglio. Direttore e giunto a taglio riducono il contatto e concentrano l'energia: il primo per gli amorfi, il secondo per i semicristallini.", "pag": "303–304" },
+    { "mini": "distanza", "titolo": "Distanza dal sonotrodo", "spiegazione": "Gli amorfi si saldano anche oltre 5 mm dal punto di contatto; semicristallini e pezzi poco rigidi devono avere il giunto entro 5 mm.", "pag": "304" },
+    { "mini": "bava", "titolo": "Nascondere la bava", "spiegazione": "Si forma un po' di bava: si limita progettando il giunto fuori vista o con vani di raccolta.", "pag": "302" }
+  ],
+  "variantiNota": "Lo schema principale mostra il giunto con direttore di energia; queste sono altre tecniche descritte nel capitolo.",
+  "varianti": [
+    { "mini": "taglio", "titolo": "Giunto a taglio", "titoloOriginale": "Shear joint", "testo": "Gradino che riduce il contatto a una linea; lo spallamento salda tutta l'interfaccia, con finitura pulita.", "pag": "303–304, 306" },
+    { "mini": "inserto", "titolo": "Inserimento", "titoloOriginale": "Inserting", "testo": "Annegamento di componenti metallici nella plastica.", "pag": "302, 304" },
+    { "mini": "punti", "titolo": "Saldatura a punti", "titoloOriginale": "Spot welding", "testo": "Saldatura localizzata di due strati sovrapposti.", "pag": "302, 304" }
+  ],
+  "correlati": [
+    { "slug": "saldatura-piastra-calda", "nome": "Saldatura a piastra calda", "nota": "alternativa se gli ultrasuoni non bastano", "pag": "302" },
+    { "slug": "saldatura-vibrazione", "nome": "Saldatura a vibrazione", "nota": "alternativa se gli ultrasuoni non bastano", "pag": "302" },
+    { "slug": "saldatura-fascio", "nome": "Saldatura a fascio", "nota": "il laser è un'alternativa", "pag": "302" },
+    { "slug": "ribaditura", "nome": "Ribaditura a caldo", "nota": "anch'essa possibile con gli ultrasuoni", "pag": "302" }
+  ],
+  "fonte": { "pagine": "302–307" }
+}

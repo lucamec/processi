@@ -1,0 +1,55 @@
+{
+  "slug": "punzonatura-tranciatura",
+  "titolo": "Punzonatura e tranciatura",
+  "titoloOriginale": "Punching and Blanking",
+  "parte": "Parte 2 – Taglio",
+  "categoria": "Meccanico",
+  "sintesi": "Un punzone di acciaio temprato attraversa la lamiera contro una matrice e la taglia per cesoiamento: fori tondi, quadri o sagomati in pochi istanti, con utensili dedicati o intercambiabili.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una punzonatrice. Una lamiera chiara scorre sul banco a rulli sotto il punzone; il premilamiera scende a bloccarla. Il punzone colpisce dodici volte mentre la lamiera si sposta da un foro all'altro, e a ogni colpo un dischetto di sfrido cade nella matrice. Alla fine la lamiera forata esce e diventa verde." },
+  "schema": {
+    "titolo": "Punzonatura, in sezione",
+    "descrizione": "Sezione di un punzone, un premilamiera e una matrice con la lamiera fra di essi. Le fasi mostrano il carico, il bloccaggio, il taglio con lo sfrido che cade, il ritorno del punzone con la bava sul bordo e la sbavatura.",
+    "fasi": [
+      { "titolo": "Carico", "durata": 1800, "pag": "262", "didascalia": "La lamiera si posa sul banco a rulli." },
+      { "titolo": "Bloccaggio", "durata": 1600, "pag": "262", "didascalia": "Premilamiera e matrice serrano il pezzo." },
+      { "titolo": "Punzonatura", "durata": 2600, "pag": "262, 264", "didascalia": "Il punzone temprato attraversa la lamiera, che si frattura fra i contorni di punzone e matrice; la matrice è appena più larga per lasciare spazio all'arrotondamento e alla bava." },
+      { "titolo": "Ritorno ed espulsione", "durata": 2000, "pag": "262, 264", "didascalia": "Il punzone risale e il premilamiera libera il metallo; lo sfrido cade e si raccoglie per il riciclo." },
+      { "titolo": "Sbavatura", "durata": 1800, "pag": "261–262", "didascalia": "Il taglio lascia bave taglienti, che si eliminano con rettifica e lucidatura." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "260", "testo": "Sono due processi di cesoiamento uguali: punzonatura quando si ricava una forma interna, tranciatura quando si ritaglia una forma esterna in un solo colpo." },
+    { "fase": 2, "pag": "260, 264", "testo": "Si lavora con pressa a utensile singolo, per operazioni ripetitive, o con punzonatrice a torretta a controllo numerico, caricata con molti utensili; la bilanciera è una pressa a vite manuale." },
+    { "fase": 3, "pag": "262", "testo": "Il gioco fra punzone e matrice dipende da tipo e spessore del materiale e va da 0,25 a 0,75 mm: le pareti del foro non sono perfettamente perpendicolari." },
+    { "fase": 4, "pag": "261", "testo": "Per fori piccoli la punzonatura è più rapida di laser e getto d'acqua, che devono seguire tutto il contorno; la fresatura è più precisa e senza bava, ma molto più lenta." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Quasi tutti i metalli, soprattutto acciaio al carbonio, inox, alluminio e leghe di rame. Pelle, tessuti, plastica, carta e cartone si punzonano con macchine diverse (fustellatura).", "pag": "262" },
+    "volumi": { "valore": "Da pezzo unico a produzione di massa; molto usata per prototipi e piccole serie.", "pag": "260" },
+    "costoAttrezzatura": { "valore": "Da basso a moderato: utensili standard e piccoli economici, utensili speciali e 3D più costosi.", "pag": "260, 262" },
+    "costoUnitario": { "valore": "Da basso a moderato; manodopera da moderata ad alta per l'abilità richiesta.", "pag": "260, 262" },
+    "tempoCiclo": { "valore": "Rapido, da 1 a 100 colpi al minuto; il cambio utensili richiede tempo.", "pag": "260, 262" },
+    "qualitaSuperficiale": { "valore": "Alta, ma i bordi vanno sbavati.", "pag": "260–261" },
+    "precisione": { "valore": "Processo preciso; gioco punzone-matrice 0,25–0,75 mm. Tolleranze numeriche: n.d.", "pag": "260, 262" },
+    "dimensioni": { "valore": "Lamiere sottili fino a 5 mm; oltre circa 85 mm di diametro un utensile unico diventa troppo costoso.", "pag": "260–261" }
+  },
+  "vincoli": [
+    { "mini": "larghezza", "titolo": "Larghezze rispetto allo spessore", "spiegazione": "Il punzone non deve essere più stretto dello spessore della lamiera, e il materiale lasciato fra i fori deve essere più largo dello spessore.", "pag": "262" },
+    { "mini": "fissaggi", "titolo": "Punti di fissaggio arretrati", "spiegazione": "I fori di fissaggio vanno posti il più lontano possibile dal bordo, per la massima resistenza.", "pag": "262" },
+    { "mini": "bava", "titolo": "Verso di punzonatura e bava", "spiegazione": "Il taglio lascia arrotondamento e bava: nel caso studio il vassoio si punzona dal retro, così il lato a vista si lucida perfettamente; altrimenti la bava si leviga o si nasconde in un incavo.", "pag": "261–263" }
+  ],
+  "variantiNota": "Lo schema principale mostra la punzonatura di una forma interna; queste sono le altre operazioni descritte nel capitolo.",
+  "varianti": [
+    { "mini": "tranciatura", "titolo": "Tranciatura", "titoloOriginale": "Blanking", "testo": "Ritaglio di una forma esterna in un solo colpo; i pezzi restano legati al foglio da linguette.", "pag": "260, 262, 264" },
+    { "mini": "roditura", "titolo": "Roditura", "titoloOriginale": "Nibbling", "testo": "Molti colpi sovrapposti lungo il perimetro, per forme grandi o fori di diametro maggiore del punzone.", "pag": "260, 264" },
+    { "mini": "intaglio", "titolo": "Intaglio", "titoloOriginale": "Notching", "testo": "Asportazione di materiale dal bordo esterno del pezzo.", "pag": "260" }
+  ],
+  "correlati": [
+    { "slug": "taglio-laser", "nome": "Taglio laser", "nota": "più materiali e spessori, ma segue il contorno", "pag": "261" },
+    { "slug": "taglio-getto-acqua", "nome": "Taglio a getto d'acqua", "nota": "più materiali e spessori, ma segue il contorno", "pag": "261" },
+    { "slug": "lavorazione-cnc", "nome": "Lavorazione CNC", "nota": "più precisa e senza bava, ma lenta e costosa", "pag": "261" },
+    { "slug": "stampaggio-lamiera", "nome": "Stampaggio della lamiera", "nota": "spesso combinata negli stampi progressivi", "pag": "260" },
+    { "slug": "fustellatura", "nome": "Fustellatura", "nota": "per materiali morbidi", "pag": "262" }
+  ],
+  "fonte": { "pagine": "260–265" }
+}

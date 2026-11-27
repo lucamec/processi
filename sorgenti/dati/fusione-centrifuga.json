@@ -1,0 +1,53 @@
+{
+  "slug": "fusione-centrifuga",
+  "titolo": "Fusione centrifuga",
+  "titoloOriginale": "Centrifugal Casting",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Metalli",
+  "sintesi": "Lo stampo gira ad alta velocità e la forza centrifuga spinge il materiale liquido nelle cavità: un processo economico per gioielli e piccoli oggetti in metallo bassofondente, ma anche per tubi e pezzi metallici di grande diametro.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di uno stampo in silicone a forma di disco, tagliato a metà, su un piatto rotante. Sei cavità disposte a raggiera sono collegate al centro da canali. Il disco gira veloce; il metallo arancione versato al centro corre lungo i canali e riempie le cavità. Poi lo stampo si apre e restano i piccoli pezzi verdi." },
+  "schema": {
+    "titolo": "Fusione centrifuga orizzontale in stampo di silicone, vista dall'alto",
+    "descrizione": "Vista dall'alto di uno stampo circolare in silicone con un canale centrale e sei cavità collegate da canali radiali. Le fasi mostrano lo stampo che inizia a girare, il metallo versato al centro, il riempimento delle cavità e l'estrazione dei pezzi.",
+    "fasi": [
+      { "titolo": "Stampo sul piatto", "durata": 2000, "pag": "146", "didascalia": "Le due metà dello stampo in silicone, con eventuali anime, si uniscono grazie a rilievi e incavi di centraggio e si serrano fra due dischi metallici sul piatto rotante." },
+      { "titolo": "Colata al centro", "durata": 2200, "pag": "145", "didascalia": "Mentre lo stampo gira ad alta velocità, il materiale fuso viene versato nel canale centrale verticale." },
+      { "titolo": "Riempimento", "durata": 2600, "pag": "144–145", "didascalia": "La rotazione spinge il materiale lungo i canali e dentro le cavità; i canali aiutano anche l'aria a uscire. Fra le metà dello stampo si forma una bava." },
+      { "titolo": "Apertura ed estrazione", "durata": 2200, "pag": "146", "didascalia": "Dopo 0,5–5 minuti per metalli bassofondenti e plastiche lo stampo si apre e si estraggono i pezzi, da 1 a 100 per ciclo." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "144", "testo": "Il materiale dello stampo distingue i due tipi principali. Il silicone serve per pezzi piccoli e anche asimmetrici, da pochi grammi a 1,5 kg; il metallo per materiali ad alta temperatura e pezzi più grandi, che però devono essere a simmetria di rotazione." },
+    { "fase": 2, "pag": "144", "testo": "Si colano metalli, plastiche, compositi e vetro. Il modello si preme nel silicone per formare la cavità, oppure la cavità si lavora di macchina." },
+    { "fase": 3, "pag": "145", "testo": "La rotazione spinge il materiale anche nelle cavità piccole: dettagli superficiali, forme complesse e pareti sottili si riproducono molto bene. Poiché la pressione è bassa, i pezzi si deformano poco raffreddandosi." },
+    { "fase": 4, "pag": "145", "testo": "Nei grandi pezzi metallici la superficie esterna è più dura, perché le molecole più pesanti sono spinte verso la periferia." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Stampi in silicone: metallo bianco, peltro, zinco, alcune plastiche come il PUR (sotto i 500 °C di fusione). Stampi metallici: acciaio, alluminio, vetro, polveri e compositi a matrice metallica.", "pag": "144–146" },
+    "volumi": { "valore": "Da pezzo unico alla grande serie, anche milioni di pezzi.", "pag": "144" },
+    "costoAttrezzatura": { "valore": "Bassissimo per il silicone, soprattutto a più cavità; gli stampi metallici costano di più ma restano economici per la loro dimensione.", "pag": "144–146" },
+    "costoUnitario": { "valore": "Basso, secondo il materiale; manodopera generalmente bassa.", "pag": "144, 146" },
+    "tempoCiclo": { "valore": "Rapido: 0,5–5 minuti per metalli bassofondenti e plastiche; il vetro può richiedere giorni di ricottura.", "pag": "144, 146" },
+    "qualitaSuperficiale": { "valore": "Ottima riproduzione dei dettagli fini e delle texture; pezzi più porosi per la bassa pressione.", "pag": "144–145" },
+    "precisione": { "valore": "Tolleranze realistiche di 250 micron nei pezzi piccoli.", "pag": "145" },
+    "dimensioni": { "valore": "Silicone: da pochi grammi a 1,5 kg, pareti da 0,25 a 12 mm. Stampi metallici: pezzi simmetrici di 1 m di diametro e oltre.", "pag": "144, 146" }
+  },
+  "vincoli": [
+    { "mini": "carichi", "titolo": "Pezzi poco sollecitati, o rinforzati", "spiegazione": "La bassa pressione dà pezzi più porosi e i metalli bassofondenti sono meno resistenti: si usa per pezzi che non devono sopportare grandi carichi, oppure si aumentano gli spessori e si aggiungono nervature.", "pag": "145–146" },
+    { "mini": "spessore", "titolo": "Pareti fra 0,25 e 12 mm in silicone", "spiegazione": "Negli stampi in silicone lo spessore va da 0,25 a 12 mm, mentre negli stampi metallici può essere molto maggiore. I salti di spessore non sono un problema e si può alimentare il pezzo da più punti.", "pag": "146" },
+    { "mini": "piombo", "titolo": "Niente piombo a contatto con cibi e bevande", "spiegazione": "Metallo bianco e peltro sono leghe di piombo, tranne il peltro British Standard; il piombo è un inquinante e non va usato in oggetti per mangiare o bere.", "pag": "146" }
+  ],
+  "variantiNota": "Il libro non elenca varianti come sotto-voci; qui sotto le altre due tecniche illustrate nello schema del capitolo.",
+  "varianti": [
+    { "mini": "singola", "titolo": "Colata orizzontale a cavità singola", "titoloOriginale": "Horizontal casting, single cavity", "testo": "I pezzi grandi si colano uno per stampo attorno al canale centrale, come il peltro del caso studio; i pezzi piccoli si dispongono in molte cavità attorno al centro, con attacchi separati.", "pag": "145–146" },
+    { "mini": "verticale", "titolo": "Colata verticale a stampo aperto", "titoloOriginale": "Vertical casting with open tool", "testo": "Simile allo stampaggio rotazionale, ma lo stampo gira su un solo asse: uno strato di materiale fuso riveste la parete interna e forma pezzi cavi o a lastra, come tubi e recipienti.", "pag": "144–145" }
+  ],
+  "correlati": [
+    { "slug": "pressofusione", "nome": "Pressofusione", "nota": "altra fusione dei metalli", "pag": "145" },
+    { "slug": "microfusione", "nome": "Microfusione a cera persa", "nota": "altra fusione dei metalli", "pag": "145" },
+    { "slug": "fusione-sabbia", "nome": "Fusione in sabbia", "nota": "altra fusione dei metalli", "pag": "145" },
+    { "slug": "stampaggio-rotazionale", "nome": "Stampaggio rotazionale", "nota": "simile, ma su due assi", "pag": "144–145" },
+    { "slug": "colata-sottovuoto", "nome": "Colata sottovuoto", "nota": "forme simili in plastica", "pag": "145" }
+  ],
+  "fonte": { "pagine": "144–147" }
+}

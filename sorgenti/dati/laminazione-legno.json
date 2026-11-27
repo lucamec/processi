@@ -1,0 +1,52 @@
+{
+  "slug": "laminazione-legno",
+  "titolo": "Laminazione del legno",
+  "titoloOriginale": "Wood Laminating",
+  "parte": "Parte 1 – Formatura",
+  "categoria": "Legno",
+  "sintesi": "Fogli di impiallacciatura o sezioni di legno massiccio vengono incollati e pressati su uno stampo: si ottengono strutture curve, leggere e rigide, dalle sedute ai tavoli monoscocca alle travi.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una pressa a stampo in due parti, tagliata a metà. Sette fogli di impiallacciatura, alternati chiaro e scuro, sono appoggiati sullo stampo inferiore curvo. Il tampone scende e li piega tutti insieme nella forma ondulata dello stampo; dopo l'indurimento della colla il tampone risale e il pezzo laminato, ora verde, esce dallo stampo." },
+  "schema": {
+    "titolo": "Laminazione di impiallacciature in stampo a due parti, in sezione",
+    "descrizione": "Sezione di uno stampo in due parti: stampo inferiore curvo e tampone superiore. Le fasi mostrano i fogli incollati appoggiati, la pressatura, l'indurimento della colla e la sformatura con rifilatura.",
+    "fasi": [
+      { "titolo": "Strati incollati", "durata": 2200, "pag": "191–192, 194", "didascalia": "Su ogni foglio si stende la colla (urea-formaldeide nel caso studio) e lo si posa sul precedente, con le fibre incrociate e in numero dispari." },
+      { "titolo": "Pressatura", "durata": 2400, "pag": "194", "didascalia": "Il tampone viene spinto nella matrice da una vite azionata a mano: si applica molta pressione." },
+      { "titolo": "Indurimento", "durata": 2400, "pag": "192, 194", "didascalia": "A freddo il pezzo resta nello stampo 24 ore; con il riscaldamento a radiofrequenza bastano 2–15 minuti." },
+      { "titolo": "Sformatura e rifilatura", "durata": 2200, "pag": "194", "didascalia": "Il pezzo si estrae, si rifila con una fresatrice CNC a 5 assi, si carteggia e si vernicia." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "190–191", "testo": "Le aree principali sono il legno massiccio, il truciolare e le impiallacciature; c'è poi il taglio a kerf. Le impiallacciature si stratificano come nel compensato: la colla, sotto pressione, dà la resistenza della lamina." },
+    { "fase": 2, "pag": "190", "testo": "Si lavora su stampo a una faccia, con sacco sottovuoto, o su stampo in due parti." },
+    { "fase": 3, "pag": "192", "testo": "Dopo il primo indurimento i pezzi riposano fino a 7 giorni. Le curve laminate hanno un ritorno elastico minimo e sono più resistenti di quelle segate, perché le fibre seguono la curva." },
+    { "fase": 4, "pag": "191", "testo": "La qualità dipende da legno e colla; i pezzi richiedono di solito finitura e carteggiatura." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Qualsiasi legno tagliabile in fogli o tavole, senza difetti come i nodi; colle urea-formaldeide per interni e fenolo-formaldeide per esterni.", "pag": "192" },
+    "volumi": { "valore": "Da pezzo unico a serie medie.", "pag": "190" },
+    "costoAttrezzatura": { "valore": "Da basso a moderato: stampi in OSB, compensato o massello durano alcune centinaia di pezzi; per grandi serie si usano alluminio o acciaio.", "pag": "190, 192" },
+    "costoUnitario": { "valore": "Moderato; manodopera specializzata.", "pag": "190–191" },
+    "tempoCiclo": { "valore": "Da medio a lungo, fino a 24 ore: radiofrequenza 2–15 minuti, calore radiante fino a un'ora, temperatura ambiente più a lungo.", "pag": "190, 192", "ocr": "Tempo minimo con calore radiante: n.d. (OCR \"io minutes\")" },
+    "qualitaSuperficiale": { "valore": "Alta; spesso servono finitura e carteggiatura.", "pag": "190–191" },
+    "precisione": { "valore": "Ritorno elastico minimo. Tolleranze numeriche: n.d.", "pag": "192" },
+    "dimensioni": { "valore": "Fogli di impiallacciatura spessi di solito 1–5 mm. Dimensioni dei pezzi: n.d.", "pag": "192" }
+  },
+  "vincoli": [
+    { "mini": "strati", "titolo": "Strati in numero dispari e simmetrici", "spiegazione": "La laminazione si basa sull'equilibrio fra trazione e compressione: un'anima con un numero dispari di fogli e impiallacciature esterne uguali per materiale e spessore evitano le deformazioni.", "pag": "191–192" },
+    { "mini": "raggio", "titolo": "Il raggio dipende dal singolo foglio", "spiegazione": "Il raggio interno minimo dipende dallo spessore del singolo foglio, non dal numero di fogli: anche pezzi spessi possono avere curve strette.", "pag": "192" },
+    { "mini": "massello", "titolo": "Massello: solo curve ampie", "spiegazione": "Con il legno massiccio si ottengono solo curve graduali e di grande raggio; le sezioni dello stesso tronco vanno invertite per non deformarsi.", "pag": "191" }
+  ],
+  "variantiNota": "Le tre tecniche elencate nel capitolo; lo schema principale mostra le impiallacciature in stampo a due parti.",
+  "varianti": [
+    { "mini": "kerf", "titolo": "Taglio a kerf", "titoloOriginale": "Kerfing", "testo": "Una serie di tagli paralleli su un lato, con sega a nastro, sega circolare o fresatrice, profondi da un terzo a tre quarti del pezzo: il legno si piega e la laminazione blocca la curva, nascondendo i tagli.", "pag": "190–191" },
+    { "mini": "massello", "titolo": "Laminazione di massello", "titoloOriginale": "Solid wood lamination", "testo": "Processo a freddo, di solito su un solo asse: sezioni di legno piegate e incollate per elementi strutturali, con meno ritiro e svergolamento.", "pag": "190–191" },
+    { "mini": "sottovuoto", "titolo": "Laminazione di impiallacciature", "titoloOriginale": "Veneer lamination", "testo": "Su stampo a una faccia, con vuoto o in stampo diviso; la colla si indurisce con calore a bassa tensione, radiante, a radiofrequenza o a temperatura ambiente. Usata nell'arredo da Aalto, Breuer e gli Eames.", "pag": "190–191" }
+  ],
+  "correlati": [
+    { "slug": "lavorazione-cnc", "nome": "Lavorazione CNC", "nota": "alternativa per alcune applicazioni, e per rifilare", "pag": "191, 194" },
+    { "slug": "curvatura-vapore", "nome": "Curvatura a vapore", "nota": "per curvare il massello; spesso combinata", "pag": "191" },
+    { "slug": "laminazione-compositi", "nome": "Laminazione dei compositi", "nota": "ha sostituito il legno laminato in molti usi", "pag": "191" }
+  ],
+  "fonte": { "pagine": "190–197" }
+}

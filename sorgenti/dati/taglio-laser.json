@@ -1,0 +1,55 @@
+{
+  "slug": "taglio-laser",
+  "titolo": "Taglio laser",
+  "titoloOriginale": "Laser Cutting",
+  "parte": "Parte 2 – Taglio",
+  "categoria": "Termico",
+  "sintesi": "Un fascio laser concentrato in un punto fonde o vaporizza il materiale lungo un percorso preso dal file CAD: taglia, incide e marca fogli di metallo, plastica, legno, tessuto e altro, senza attrezzature.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una macchina laser a portale sopra un foglio di compensato. La testa scende per mettere a fuoco, poi un raggio arancione traccia prima linee chiare in superficie, poi i contorni scuri delle finestre e infine il profilo di una facciata. La facciata ritagliata, verde, si solleva dal foglio lasciando il vuoto." },
+  "schema": {
+    "titolo": "Taglio laser su piano aspirato, in sezione",
+    "descrizione": "Sezione di un foglio sul piano aspirato, con la sorgente laser, lo specchio e l'ugello con la lente. Le fasi mostrano il carico, la messa a fuoco, l'incisione superficiale, il taglio interno passante e il profilo esterno.",
+    "fasi": [
+      { "titolo": "Carico del foglio", "durata": 1800, "pag": "248, 252", "didascalia": "Il foglio si posa sul piano aspirato; i dati arrivano direttamente dal file CAD, diviso in livelli che fissano la profondità di ogni taglio." },
+      { "titolo": "Messa a fuoco", "durata": 1800, "pag": "249", "didascalia": "Specchi fissi portano il fascio all'ugello; la lente lo concentra in un punto e si regola in altezza per metterlo a fuoco sulla superficie." },
+      { "titolo": "Incisione di linee", "durata": 2600, "pag": "250", "didascalia": "Nel caso studio la prima passata incide i dettagli di superficie, presi dal livello superiore del file." },
+      { "titolo": "Tagli interni", "durata": 2600, "pag": "249–250", "didascalia": "Poi si tagliano le forme interne: il fascio fonde o vaporizza il materiale e il gas di assistenza soffia via i residui dal solco." },
+      { "titolo": "Profilo esterno", "durata": 2600, "pag": "250", "didascalia": "Per ultimo il profilo esterno; tutto il lavoro richiede circa 8 minuti e i pezzi si staccano pronti da montare." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "248", "testo": "I due tipi principali di laser sono CO₂ e Nd:YAG. Entrambi concentrano energia termica su un punto, lavorano molto velocemente con tolleranze strette e lasciano un bordo di alta qualità." },
+    { "fase": 3, "pag": "248", "testo": "Diverse operazioni richiedono potenze diverse: circa 150 W bastano per le plastiche, mentre 1–2 kW servono per i metalli, soprattutto per le leghe riflettenti e conduttive." },
+    { "fase": 4, "pag": "248", "testo": "A differenza del taglio a lama il pezzo non subisce sforzi: si ottengono dettagli piccoli e intricati, anche in materiali sottili e delicati." },
+    { "fase": 5, "pag": "253", "testo": "Nel caso studio i pezzi di alluminio non richiedono sbavatura né altri trattamenti, e si dispongono annidati nel foglio per ridurre gli sfridi." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Legno, impiallacciature, carta e cartone, marmo sintetico, magneti flessibili, tessuti e pile, gomma, alcuni vetri e ceramiche; plastiche come PP, PMMA, PC, PETG, PA, POM, PS e fibra di carbonio; metalli, con gli acciai più facili di alluminio e rame.", "pag": "248–249" },
+    "volumi": { "valore": "Da pezzo unico a grandi serie.", "pag": "248" },
+    "costoAttrezzatura": { "valore": "Nessuno: i dati passano dal CAD alla macchina.", "pag": "248–249" },
+    "costoUnitario": { "valore": "Da medio ad alto; pochissima manodopera, ma servono file CAD adatti.", "pag": "248–249" },
+    "tempoCiclo": { "valore": "Rapido, ma dipende dallo spessore: i materiali spessi richiedono molto più tempo. Esempi dei casi studio: PMMA da 3 mm con profilo complesso 12 minuti, foglio di alluminio 8 minuti.", "pag": "248–250, 252–253" },
+    "qualitaSuperficiale": { "valore": "Alta; tagli perpendicolari con solco stretto; sui termoplastici il bordo esce lucido e non serve finitura.", "pag": "248–250" },
+    "precisione": { "valore": "Processo di precisione. Tolleranze numeriche: n.d.", "pag": "248" },
+    "dimensioni": { "valore": "Fogli da 0,2 a 40 mm, ma gli spessori elevati rallentano molto; nel caso studio acciaio fino a 25 mm e alluminio fino a 5 mm. Area di lavoro: n.d.", "pag": "248, 252", "ocr": "Diametro del punto focale: n.d. (OCR \"0.1 mm toi mm (0.0004-0.004in.)\", conversione incoerente)" }
+  },
+  "vincoli": [
+    { "mini": "linee", "titolo": "Linee unite e senza doppioni", "spiegazione": "Il laser segue vettori da punto a punto: le linee vanno unite in un percorso continuo; quelle duplicate vengono tagliate due volte e allungano il lavoro. Formati compatibili: .DXF e .DWG.", "pag": "248" },
+    { "mini": "profondita", "titolo": "Profondità non oltre la larghezza", "spiegazione": "Con laser più potenti si incidono canali profondi, ma se la profondità supera la larghezza il materiale non esce bene e il bordo peggiora.", "pag": "250" },
+    { "mini": "riflessione", "titolo": "Attenzione ai metalli riflettenti", "spiegazione": "Gli acciai si tagliano meglio di alluminio e rame, che riflettono luce e calore; l'alluminio produce una zona termicamente alterata più ampia.", "pag": "248–249, 252" }
+  ],
+  "variantiNota": "I due tipi di laser descritti nel capitolo e l'incisione raster del caso studio.",
+  "varianti": [
+    { "mini": "co2", "titolo": "Laser CO₂", "titoloOriginale": "CO2 laser", "testo": "Infrarosso a 10 µm; guidato all'ugello da specchi fissi.", "pag": "248–249" },
+    { "mini": "ndyag", "titolo": "Laser Nd:YAG", "titoloOriginale": "Nd:YAG laser", "testo": "Infrarosso a 1 µm, più versatile; può viaggiare in fibra ottica e tagliare su 5 assi.", "pag": "248–249" },
+    { "mini": "raster", "titolo": "Incisione raster", "titoloOriginale": "Raster engraving", "testo": "Con poca potenza incide loghi, immagini e testi fino a circa 40 µm; richiede più tempo di un taglio semplice.", "pag": "248, 250" }
+  ],
+  "correlati": [
+    { "slug": "lavorazione-cnc", "nome": "Lavorazione CNC", "nota": "stesso effetto in alcuni materiali", "pag": "248" },
+    { "slug": "taglio-getto-acqua", "nome": "Taglio a getto d'acqua", "nota": "stesso effetto in alcuni materiali", "pag": "248" },
+    { "slug": "punzonatura-tranciatura", "nome": "Punzonatura e tranciatura", "nota": "stesso effetto in alcuni materiali", "pag": "248" },
+    { "slug": "incisione-cnc", "nome": "Incisione CNC", "nota": "alternativa per incidere", "pag": "248" },
+    { "slug": "incisione-fotochimica", "nome": "Incisione fotochimica", "nota": "alternativa per incidere", "pag": "248" }
+  ],
+  "fonte": { "pagine": "248–253" }
+}

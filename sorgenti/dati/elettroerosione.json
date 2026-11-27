@@ -1,0 +1,55 @@
+{
+  "slug": "elettroerosione",
+  "titolo": "Elettroerosione (EDM)",
+  "titoloOriginale": "Electrical Discharge Machining",
+  "parte": "Parte 2 – Taglio",
+  "categoria": "Termico",
+  "sintesi": "Scintille ad alta tensione vaporizzano il metallo fra un elettrodo e il pezzo: si scavano cavità, si tagliano profili e si applica una texture nello stesso momento, con grande precisione anche su acciai temprati.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una vasca per elettroerosione a tuffo. Un elettrodo di rame sagomato è appeso sopra un blocco di acciaio; la vasca si riempie di olio azzurro. L'elettrodo scende lentamente fra scintille arancioni e nel blocco si forma una cavità che ne copia la forma, con un'isola al centro. L'elettrodo risale, l'olio scende e la cavità appare verde." },
+  "schema": {
+    "titolo": "Elettroerosione a tuffo, in sezione",
+    "descrizione": "Sezione di una vasca con un blocco d'acciaio e un elettrodo di rame sopra. Le fasi mostrano l'elettrodo pronto, la vasca che si riempie di dielettrico, la sgrossatura con le scintille, la finitura e la cavità che riproduce l'elettrodo dopo l'estrazione.",
+    "fasi": [
+      { "titolo": "Elettrodo", "durata": 1800, "pag": "254, 256, 258", "didascalia": "L'elettrodo di lega di rame, lavorato alla fresatrice o a filo, si monta sulla testa guidata dal computer." },
+      { "titolo": "Immersione", "durata": 2000, "pag": "256–257", "didascalia": "Elettrodo e pezzo sono immersi in un olio leggero, simile alla paraffina, che scorre di continuo: isola, raffredda e lava via il metallo vaporizzato." },
+      { "titolo": "Sgrossatura", "durata": 3000, "pag": "256–258", "didascalia": "Avvicinati, i due metalli si scambiano migliaia di scintille al secondo, che vaporizzano la superficie; l'elettrodo scende piano, a spirale. Si asportano 200–400 mm³ al minuto e la superficie resta ruvida." },
+      { "titolo": "Finitura", "durata": 2600, "pag": "257–258", "didascalia": "Con un nuovo elettrodo si lavora molto più lentamente, fino a circa 50 mm³ al minuto: la texture diventa fine." },
+      { "titolo": "Estrazione", "durata": 2000, "pag": "254, 256", "didascalia": "L'elettrodo risale; la cavità ne riproduce la forma negativa con spigoli vivi e la texture già finita." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "254", "testo": "Esistono due versioni: a tuffo (erosione a scintilla), per fori, texture e cavità profonde, e a filo, simile al taglio a filo caldo delle schiume, per profili interni ed esterni." },
+    { "fase": 3, "pag": "256", "testo": "Le scariche saltano fra i punti più vicini dei due metalli: l'asportazione è uniforme. Il pezzo non viene deformato dalla forza ma vaporizzato, quindi non subisce sforzi." },
+    { "fase": 4, "pag": "255", "testo": "Tensione alta e velocità alta danno una texture ruvida; tensione bassa, velocità bassa e più passate la rendono fine. La finitura si misura sulla scala VDI, paragonabile a una rugosità Ra di 0,32–18 µm." },
+    { "fase": 5, "pag": "256", "testo": "Ogni elettrodo può durare solo 5 lavorazioni; per la massima precisione se ne prepara uno nuovo per ogni operazione." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "Molti metalli, indipendentemente dalla durezza: acciaio inox, acciaio per utensili, alluminio, titanio, ottone e rame.", "pag": "256" },
+    "volumi": { "valore": "Pezzi unici, modifiche a stampi esistenti e piccole serie, in genere non oltre 10 pezzi.", "pag": "254" },
+    "costoAttrezzatura": { "valore": "Basso per il tuffo (elettrodi di rame), nullo per il filo, che però consuma filo; macchine molto costose.", "pag": "254, 256, 258" },
+    "costoUnitario": { "valore": "Da moderato ad alto; manodopera moderata per l'abilità richiesta e la durata del processo.", "pag": "254, 258" },
+    "tempoCiclo": { "valore": "Lungo: a tuffo da 2 mm³ al minuto (finitura) a oltre 400 (sgrossatura); a filo, per esempio, 1,5 mm al minuto su 36 mm di acciaio temprato.", "pag": "256, 258–259" },
+    "qualitaSuperficiale": { "valore": "Controllo molto alto della texture, da opaca a lucida, senza ulteriori finiture.", "pag": "254–255" },
+    "precisione": { "valore": "Fino a 5 µm.", "pag": "255–256" },
+    "dimensioni": { "valore": "A filo spessori da 0,1 a 200 mm; a tuffo la profondità dipende dal lavaggio dei residui.", "pag": "255–256" }
+  },
+  "vincoli": [
+    { "mini": "raggi", "titolo": "Raggi interni non troppo piccoli", "spiegazione": "Si ottengono raggi interni fino a 30 µm, ma conviene usarne di più ampi per evitare concentrazioni di tensione; di solito bastano 0,5 mm. A filo il raggio minimo dipende anche dal diametro del filo.", "pag": "256" },
+    { "mini": "profondita", "titolo": "Profondità limitata dal lavaggio", "spiegazione": "La profondità di una cavità a tuffo dipende da quanto bene si eliminano i residui: profili molto profondi richiedono lavaggi in più e cicli più lunghi.", "pag": "256" },
+    { "mini": "finitura", "titolo": "Texture fini su aree piccole", "spiegazione": "La finitura fine richiede velocità molto basse: è più adatta a superfici di piccola estensione.", "pag": "258" }
+  ],
+  "variantiNota": "Le due versioni del processo e un vantaggio del taglio a filo citato nel capitolo; lo schema principale mostra l'elettroerosione a tuffo.",
+  "varianti": [
+    { "mini": "tuffo", "titolo": "Elettroerosione a tuffo", "titoloOriginale": "Die sink EDM (spark erosion)", "testo": "Cavità, fori e texture con un elettrodo negativo di rame, in olio dielettrico.", "pag": "254, 256" },
+    { "mini": "filo", "titolo": "Elettroerosione a filo", "titoloOriginale": "Wire EDM (wire erosion)", "testo": "Profili con pareti parallele o inclinate fino a 30°, in acqua deionizzata a 20 °C; il filo si rinnova di continuo.", "pag": "254, 256, 258" },
+    { "mini": "pacco", "titolo": "Pezzi impilati", "titoloOriginale": "Stacked parts", "testo": "Più pezzi sottili si tagliano insieme, riducendo il tempo.", "pag": "256" }
+  ],
+  "correlati": [
+    { "slug": "lavorazione-cnc", "nome": "Lavorazione CNC", "nota": "usata insieme; prepara gli elettrodi", "pag": "254" },
+    { "slug": "taglio-getto-acqua", "nome": "Taglio a getto d'acqua", "nota": "alternativa al filo", "pag": "255" },
+    { "slug": "taglio-laser", "nome": "Taglio laser", "nota": "alternativa al filo", "pag": "255" },
+    { "slug": "saldatura-fascio", "nome": "Saldatura a fascio", "nota": "i processi a fascio sono alternativi per alcuni profili e fori", "pag": "255" },
+    { "slug": "stampaggio-iniezione", "nome": "Stampaggio a iniezione", "nota": "principale uso: la costruzione degli stampi", "pag": "254" }
+  ],
+  "fonte": { "pagine": "254–259" }
+}

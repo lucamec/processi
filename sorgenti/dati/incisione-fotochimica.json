@@ -1,0 +1,55 @@
+{
+  "slug": "incisione-fotochimica",
+  "titolo": "Incisione fotochimica",
+  "titoloOriginale": "Photo Etching",
+  "parte": "Parte 4 – Finitura",
+  "categoria": "Processi sottrattivi",
+  "sintesi": "Asportazione di superficie per via chimica: il metallo è protetto da un film fotosensibile e le zone scoperte vengono sciolte in modo uniforme, con un aspetto simile alla sabbiatura.",
+  "vista3d": { "tecnica": "webgl", "alt": "Modello 3D di una targa in acciaio inox su un nastro. Prima si ricopre di un film azzurro, poi una lampada UV la illumina attraverso un negativo scuro; il film non esposto sparisce e lascia scoperti dei segni. Una fila di ugelli oscillanti spruzza acido arancione e i segni si approfondiscono; infine il film si toglie e gli incavi si riempiono di colore rosso." },
+  "schema": {
+    "titolo": "Incisione fotochimica di una targa, in sezione",
+    "descrizione": "Sezione di una targa in acciaio inox incisa su un lato. Le fasi mostrano il film fotosensibile sui due lati, l'esposizione UV attraverso il negativo, lo sviluppo del film, l'incisione con gli ugelli oscillanti e il riempimento degli incavi con il colore.",
+    "fasi": [
+      { "titolo": "Film fotosensibile", "durata": 2000, "pag": "393–394", "didascalia": "Il metallo, sgrassato in acido cloridrico al 10% e lavato, riceve in camera oscura un film polimerico fotosensibile sui due lati, per laminazione a caldo o per immersione." },
+      { "titolo": "Esposizione UV", "durata": 2000, "pag": "393–394", "didascalia": "Il negativo su acetato, stampato dal file CAD o grafico, si fissa al pezzo; la luce UV indurisce il film esposto, su entrambi i lati perché il retro resti protetto." },
+      { "titolo": "Sviluppo e ritocco", "durata": 2000, "pag": "393–394", "didascalia": "Il film non esposto, ancora morbido, si scioglie e scopre il metallo; le piccole imperfezioni si ritoccano con una resina liquida." },
+      { "titolo": "Incisione", "durata": 2400, "pag": "393–394", "didascalia": "Il pezzo passa sotto ugelli oscillanti che spruzzano cloruro ferrico; l'oscillazione aggiunge ossigeno e accelera l'attacco. Nel caso studio fino a 20 minuti, per 150 µm." },
+      { "titolo": "Colore", "durata": 2200, "pag": "393–394", "didascalia": "Il film si toglie con soda caustica e acqua pura; gli incavi si riempiono di vernice a base di cellulosa con una racla e l'eccesso si lucida via." }
+    ]
+  },
+  "comeFunziona": [
+    { "fase": 1, "pag": "392", "testo": "È detta anche incisione acida o a umido: preciso ed economico, perché l'attrezzatura è un acetato stampato che costa poco sostituire." },
+    { "fase": 2, "pag": "392", "testo": "La precisione dipende dal film, che protegge le zone da lasciare intatte; i negativi durano migliaia di cicli e si modificano facilmente, quindi il processo si presta alle prove durante il progetto." },
+    { "fase": 4, "pag": "392", "testo": "Non c'è calore, pressione o contatto con un utensile: il pezzo non si deforma e duttilità, durezza e grana del metallo non cambiano. Laser e incisione CNC invece scaldano e possono deformare le lamiere sottili." },
+    { "fase": 5, "pag": "392, 394", "testo": "Linee, punti e aree si riempiono di colore se l'incisione supera i 150 µm; ogni colore richiede 20 minuti di asciugatura." }
+  ],
+  "caratteristiche": {
+    "materiali": { "valore": "La maggior parte dei metalli: inox, acciaio dolce, alluminio (il più rapido), rame, ottone, nichel, stagno, argento; anche vetro, specchio, porcellana e ceramica.", "pag": "394" },
+    "volumi": { "valore": "Dal prototipo alla produzione di massa.", "pag": "392" },
+    "costoAttrezzatura": { "valore": "Basso: un negativo stampato direttamente dai dati.", "pag": "392, 394" },
+    "costoUnitario": { "valore": "Da moderato ad alto; manodopera moderata.", "pag": "392, 394" },
+    "tempoCiclo": { "valore": "Moderato: 50–100 µm per passata di 5 minuti; più pezzi sullo stesso foglio lo riducono.", "pag": "392, 394" },
+    "qualitaSuperficiale": { "valore": "Alta: forma finale senza tensioni; un attacco prolungato causa sottosquadri.", "pag": "392" },
+    "precisione": { "valore": "Dettagli fino a 0,15 mm di diametro; tolleranze numeriche: n.d.", "pag": "394" },
+    "dimensioni": { "valore": "Soprattutto lamiere; fino a 1 mm di spessore si può anche tagliare. Limiti di formato: n.d.", "pag": "392, 394" }
+  },
+  "vincoli": [
+    { "mini": "dettaglio", "titolo": "Pulizia di film e negativo", "spiegazione": "La finezza dipende dalla qualità del film: film e negativo devono essere privi di polvere, che altrimenti si vede sul pezzo finito.", "pag": "394" },
+    { "mini": "sottosquadro", "titolo": "Sottosquadri", "spiegazione": "Un'esposizione prolungata all'attacco chimico scava sotto il bordo del film.", "pag": "392" },
+    { "mini": "colore", "titolo": "Profondità per il colore", "spiegazione": "Per riempire di colore servono almeno 150 µm; più livelli richiedono mascherature ripetute e allungano il ciclo.", "pag": "392" }
+  ],
+  "variantiNota": "Possibilità descritte nel capitolo; lo schema principale mostra l'incisione a spruzzo su un lato.",
+  "varianti": [
+    { "mini": "pasta", "titolo": "Pasta chimica", "titoloOriginale": "Chemical paste", "testo": "Per pezzi spessi o superfici 3D.", "pag": "394" },
+    { "mini": "vetro", "titolo": "Vetro e ceramica", "titoloOriginale": "Glass, mirror, porcelain", "testo": "Con film e prodotti chimici diversi.", "pag": "394" },
+    { "mini": "strati", "titolo": "Più livelli e mezzetinte", "titoloOriginale": "Multiple layers, halftone", "testo": "Mascherature ripetute; retino visibile.", "pag": "392" }
+  ],
+  "correlati": [
+    { "slug": "fresatura-fotochimica", "nome": "Fresatura fotochimica", "nota": "stesso principio, fino al taglio passante", "pag": "392" },
+    { "slug": "sabbiatura", "nome": "Sabbiatura", "nota": "effetto simile", "pag": "392" },
+    { "slug": "incisione-cnc", "nome": "Incisione CNC", "nota": "alternativa che scalda il pezzo", "pag": "392" },
+    { "slug": "taglio-laser", "nome": "Taglio laser", "nota": "alternativa che scalda il pezzo", "pag": "392" },
+    { "slug": "stampaggio-immersione", "nome": "Stampaggio per immersione", "nota": "un modo per applicare il film", "pag": "393" }
+  ],
+  "fonte": { "pagine": "392–395" }
+}
