@@ -157,6 +157,13 @@ function bloccoCorrelati(d) {
   }).join('')}</ul>`;
 }
 
+// Piede comune a tutte le pagine: fonte generale e autore del progetto.
+const PIEDE = `<footer class="piede"><div class="contenitore">
+<hr>
+<p>Fonte: R. Thompson, <cite lang="en">Manufacturing Processes for Design Professionals</cite>, Thames &amp; Hudson, London 2007.</p>
+<p>Progetto del <a href="https://iuav.unifind.cineca.it/get/person/004039">prof. Luca Casarotto</a> dell'<a href="https://www.iuav.it/it">Università Iuav di Venezia</a>, realizzato con Claude</p>
+</div></footer>`;
+
 function bloccoFonte(d) {
   return `<p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. ${esc(d.fonte.pagine)}.</p>
   <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>`;
@@ -169,6 +176,7 @@ function pagina(d) {
     SINTESI: esc(d.sintesi), SINTESI_ATTR: esc(d.sintesi),
     SCHEMA: bloccoSchema(d, mod), VISTA3D: '', COME: bloccoCome(d), SCHEDA: bloccoScheda(d),
     VINCOLI: bloccoVincoli(d, mod), VARIANTI: bloccoVarianti(d, mod), CORRELATI: bloccoCorrelati(d), FONTE: bloccoFonte(d),
+    PIEDE: PIEDE,
     SCRIPT3D: `<script src="assets/three.min.js"></script>\n<script src="assets/vista3d.js"></script>\n<script src="assets/scene3d/${d.slug}.js"></script>`,
   };
   return template.replace(/\{\{([A-Z0-9_]+)\}\}/g, (_, k) => {
@@ -203,8 +211,8 @@ function indice() {
 <nav class="indice-nav" aria-label="Parti del libro"><ul>${parti.map((p) => `<li><a href="#${slugify(p)}">${esc(p)}</a> <span>(${catalogo.filter((c) => c.parte === p).length})</span></li>`).join('')}</ul></nav>
 <div class="indice-filtro" hidden><label for="filtro">Cerca un processo</label><input id="filtro" type="search" autocomplete="off" placeholder="es. saldatura, vetro, injection…" aria-describedby="filtro-esito"><p id="filtro-esito" role="status"></p></div>
 ${corpo}
-<p class="fonte">Fonte: R. Thompson, <cite lang="en">Manufacturing Processes for Design Professionals</cite>, Thames &amp; Hudson, London 2007.</p>
 </main>
+${PIEDE}
 <script>
 (function () {
   var box = document.querySelector('.indice-filtro'), campo = document.getElementById('filtro'), esito = document.getElementById('filtro-esito');

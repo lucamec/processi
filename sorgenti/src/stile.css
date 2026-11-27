@@ -197,3 +197,11 @@ th { width: 28%; font-weight: 600; background: #f6f7f9; }
 .indice-cat li a::after { content: ''; position: absolute; inset: 0; border-radius: 8px; }
 .indice-cat li:hover { border-color: var(--testo-2); }
 .indice-cat li:has(a:focus-visible) { outline: 2px solid currentColor; outline-offset: 2px; }
+
+/* ---- Piede comune ---- */
+.piede { font-size: .95rem; color: var(--testo-2); padding-bottom: 2rem; }
+.piede hr { border: 0; border-top: 1px solid var(--bordo); margin: 0 0 1rem; }
+.piede p { margin: .3rem 0; }
+.piede a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.piede a:hover, .piede a:focus-visible { color: var(--testo); }
+main.contenitore { padding-bottom: 2rem; }
