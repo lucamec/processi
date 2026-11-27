@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stampaggio a iniezione di polveri metalliche (MIM) – Processi produttivi per il design</title>
+<meta name="description" content="Polvere metallica finissima, impastata con un legante plastico, viene stampata a iniezione come una plastica; poi il legante si elimina e il pezzo si sinterizza: piccoli componenti in acciaio, complessi e quasi del tutto densi.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 1 – Formatura › Metalli</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Stampaggio a iniezione di polveri metalliche (MIM)</h1>
+  <p class="originale" lang="en">Metal Injection Molding</p>
+  <p class="categoria">Parte 1 – Formatura · Metalli</p>
+  <p class="sintesi">Polvere metallica finissima, impastata con un legante plastico, viene stampata a iniezione come una plastica; poi il legante si elimina e il pezzo si sinterizza: piccoli componenti in acciaio, complessi e quasi del tutto densi.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="2200,2000,2400,2600">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="mim" data-alt="Modello 3D di un piccolo ingranaggio. Prima viene stampato a iniezione fra due metà di stampo d'acciaio e appare arancione. Esce color sabbia, più grande del 20 per cento, e viene posato su una piastra in un forno. Durante deceraggio e sinterizzazione il forno si illumina e l'ingranaggio si ritira fino alle dimensioni finali, diventando verde.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Iniezione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Pezzo verde<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Deceraggio<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Sinterizzazione<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Iniezione</b>Polvere metallica di meno di 25 micron, impastata con un legante di termoplastico e cera (circa 80% metallo), viene iniettata come nello stampaggio della plastica. <span class="pag">(p. 137–138)</span></li>
+    <li><b>Fase 2 – Pezzo verde</b>Il pezzo stampato, detto 'verde', è circa il 20% più grande in ogni dimensione per compensare il ritiro. <span class="pag">(p. 137)</span></li>
+    <li><b>Fase 3 – Deceraggio</b>In un forno apposito il legante di termoplastico e cera evapora: resta solo il metallo. <span class="pag">(p. 137)</span></li>
+    <li><b>Fase 4 – Sinterizzazione</b>In un forno sottovuoto il pezzo si ritira del 15–20% e diventa quasi del tutto denso, con pochissima porosità. Le parti a sbalzo stanno su piastre ceramiche per non afflosciarsi. <span class="pag">(p. 136–137)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di un piccolo ingranaggio. Prima viene stampato a iniezione fra due metà di stampo d'acciaio e appare arancione. Esce color sabbia, più grande del 20 per cento, e viene posato su una piastra in un forno. Durante deceraggio e sinterizzazione il forno si illumina e l'ingranaggio si ritira fino alle dimensioni finali, diventando verde.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 20 820 360" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Ciclo MIM: stampaggio, deceraggio e sinterizzazione</title>
+<desc id="sc-d">A sinistra lo stampo con la cavità di un ingranaggio, a destra il forno con una piastra di supporto in ceramica. Le fasi mostrano l'iniezione del feedstock, il pezzo verde più grande, l'eliminazione del legante e la sinterizzazione con il ritiro.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- stampo a iniezione (vista frontale della cavità) -->
+<rect x="160" y="110" width="180" height="180" fill="url(#sc-tratteggio)" class="contorno"/>
+<path d="M298.0,200.0 L308.0,215.5 L291.6,224.0 L292.4,242.4 L274.0,241.6 L265.5,258.0 L250.0,248.0 L234.5,258.0 L226.0,241.6 L207.6,242.4 L208.4,224.0 L192.0,215.5 L202.0,200.0 L192.0,184.5 L208.4,176.0 L207.6,157.6 L226.0,158.4 L234.5,142.0 L250.0,152.0 L265.5,142.0 L274.0,158.4 L292.4,157.6 L291.6,176.0 L308.0,184.5 Z M268,200 A18,18 0 1 0 232,200 A18,18 0 1 0 268,200 Z" class="cavita" fill-rule="evenodd"/>
+<rect x="244" y="60" width="12" height="80" class="m-stampo contorno"/>
+<g class="etichetta"><text x="160" y="320" text-anchor="start">Stampo d'acciaio</text></g>
+<g data-k="op:1,0,0,0"><line x1="250" y1="30" x2="250" y2="60" class="flusso-linea" marker-end="url(#sc-punta)"/><g class="etichetta"><text x="270" y="40" text-anchor="start">polvere metallica + legante (circa 80% metallo)</text></g></g>
+
+<!-- pezzo: si sposta dallo stampo al forno e si ritira -->
+<g data-k="tx:0,0,300,300;sx:1,1,1,0.83;sy:1,1,1,0.83" data-i="tx:0;sx:1;sy:1" data-o="250,200">
+  <path d="M298.0,200.0 L308.0,215.5 L291.6,224.0 L292.4,242.4 L274.0,241.6 L265.5,258.0 L250.0,248.0 L234.5,258.0 L226.0,241.6 L207.6,242.4 L208.4,224.0 L192.0,215.5 L202.0,200.0 L192.0,184.5 L208.4,176.0 L207.6,157.6 L226.0,158.4 L234.5,142.0 L250.0,152.0 L265.5,142.0 L274.0,158.4 L292.4,157.6 L291.6,176.0 L308.0,184.5 Z M268,200 A18,18 0 1 0 232,200 A18,18 0 1 0 268,200 Z" class="m-fuso contorno" fill-rule="evenodd" data-k="op:1,0,0,0" data-i="op:1"/>
+  <path d="M298.0,200.0 L308.0,215.5 L291.6,224.0 L292.4,242.4 L274.0,241.6 L265.5,258.0 L250.0,248.0 L234.5,258.0 L226.0,241.6 L207.6,242.4 L208.4,224.0 L192.0,215.5 L202.0,200.0 L192.0,184.5 L208.4,176.0 L207.6,157.6 L226.0,158.4 L234.5,142.0 L250.0,152.0 L265.5,142.0 L274.0,158.4 L292.4,157.6 L291.6,176.0 L308.0,184.5 Z M268,200 A18,18 0 1 0 232,200 A18,18 0 1 0 268,200 Z" class="m-grezzo contorno" fill-rule="evenodd" data-k="op:0,1,1,0" data-i="op:0"/>
+  <path d="M298.0,200.0 L308.0,215.5 L291.6,224.0 L292.4,242.4 L274.0,241.6 L265.5,258.0 L250.0,248.0 L234.5,258.0 L226.0,241.6 L207.6,242.4 L208.4,224.0 L192.0,215.5 L202.0,200.0 L192.0,184.5 L208.4,176.0 L207.6,157.6 L226.0,158.4 L234.5,142.0 L250.0,152.0 L265.5,142.0 L274.0,158.4 L292.4,157.6 L291.6,176.0 L308.0,184.5 Z M268,200 A18,18 0 1 0 232,200 A18,18 0 1 0 268,200 Z" class="m-finito sezionato contorno" fill-rule="evenodd" data-k="op:0,0,0,1" data-i="op:0"/>
+</g>
+<g class="etichetta" data-k="op:0,1,0,0"><text x="160" y="350" text-anchor="start">pezzo &quot;verde&quot;: circa 20% più grande</text></g>
+
+<!-- forno -->
+<rect x="440" y="100" width="220" height="220" rx="12" fill="none" stroke="var(--testo-2)" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="470" y="262" width="160" height="10" class="macchina"/>
+<g class="etichetta"><text x="470" y="300" text-anchor="start">Piastra di supporto in ceramica</text></g>
+<g data-k="op:0,0,1,1"><path d="M490,350 q6,-3.25 0,-6.5 q-6,-3.25 0,-6.5 q6,-3.25 0,-6.5 q-6,-3.25 0,-6.5" class="flusso-linea" fill="none" marker-end="url(#sc-punta)"/><path d="M550,350 q6,-3.25 0,-6.5 q-6,-3.25 0,-6.5 q6,-3.25 0,-6.5 q-6,-3.25 0,-6.5" class="flusso-linea" fill="none" marker-end="url(#sc-punta)"/><path d="M610,350 q6,-3.25 0,-6.5 q-6,-3.25 0,-6.5 q6,-3.25 0,-6.5 q-6,-3.25 0,-6.5" class="flusso-linea" fill="none" marker-end="url(#sc-punta)"/></g>
+<g class="etichetta" data-k="op:0,0,1,0"><text x="450" y="86" text-anchor="start">deceraggio: il legante evapora</text></g>
+<g class="etichetta" data-k="op:0,0,0,1"><text x="450" y="86" text-anchor="start">sinterizzazione sottovuoto: ritiro del 15–20%</text></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Il MIM unisce la metallurgia delle polveri allo stampaggio a iniezione. Le presse sono quasi uguali a quelle per la plastica e gli stampi in acciaio possono avere nuclei mobili, filetti svitabili e inserti. <span class="pag">(p. 136–138)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>Come nell'iniezione della plastica, si ottengono buona finitura, dettagli fini e ottima ripetibilità, ma anche gli stessi difetti: risucchi, linee di giunzione e bave. <span class="pag">(p. 136)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Il pezzo sinterizzato è duttile e resistente, con proprietà uguali in ogni direzione: si salda, si lavora, si piega, si lucida e si galvanizza come qualsiasi metallo. <span class="pag">(p. 136)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Ferrosi: acciai basso legati, da utensili e inossidabili, leghe magnetiche, bronzo; anche leghe di nichel e cobalto. Alluminio e zinco no. <span class="pag">(p. 136, 138)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Soprattutto grandi serie; piccole e medie quando il MIM offre vantaggi tecnici o di forma. <span class="pag">(p. 136)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Alto, simile agli stampi per la plastica. <span class="pag">(p. 136, 138)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Da moderato a basso; il materiale è costoso per i trattamenti che richiede. <span class="pag">(p. 136, 138)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Iniezione rapida, 30–60 secondi; deceraggio e sinterizzazione 2–3 giorni. <span class="pag">(p. 136)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Molto alta; alta densità, rettificabile e lucidabile. <span class="pag">(p. 136)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Dimensioni precise, spesso senza lavorazioni successive. Valore numerico: <span class="nd">n.d.</span> <span class="pag">(p. 136)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Da 0,1 a 100 g, lunghi fino a 150 mm; pareti di norma fra 1 e 5 mm (possibili da 0,3 a 10 mm). <span class="pag">(p. 136, 138)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Pareti uniformi fra 1 e 5 mm</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spessore-ok-t v-spessore-ok-d" class="mini-svg"><title id="v-spessore-ok-t">Corretto: Pareti uniformi fra 1 e 5 mm</title><desc id="v-spessore-ok-d">Spessore costante; le parti massicce si svuotano.</desc><defs>
+  <pattern id="v-spessore-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spessore-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spessore-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spessore-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M15,30 H145 V100 H15 Z M30,45 H70 V100 H30 Z M90,45 H130 V100 H90 Z" class="m-finito contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spessore-ko-t v-spessore-ko-d" class="mini-svg"><title id="v-spessore-ko-t">Da evitare: Parte massiccia e spessa</title><desc id="v-spessore-ko-d">I pezzi grandi e le pareti spesse si deformano più facilmente durante deceraggio e sinterizzazione.</desc><defs>
+  <pattern id="v-spessore-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spessore-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spessore-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spessore-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M15,30 H145 V100 H15 Z" class="m-finito contorno"/><path d="M15,100 Q80,86 145,100" fill="none" stroke="var(--ko)" stroke-width="2" stroke-dasharray="4 3"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Come nell'iniezione, lo spessore deve restare costante e le parti massicce vanno svuotate. Pezzi grandi e pareti spesse si deformano in sinterizzazione; spessori estremi (0,3 o 10 mm) creano problemi. <span class="pag">(p. 138)</span></p></article>
+<article class="card"><h3>Raggio interno di almeno 0,4 mm</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-raggi-ok-t v-raggi-ok-d" class="mini-svg"><title id="v-raggi-ok-t">Corretto: Raggio interno di almeno 0,4 mm</title><desc id="v-raggi-ok-d">Gli angoli interni concentrano le tensioni: serve un raggio minimo di 0,4 mm. Gli angoli esterni possono essere vivi.</desc><defs>
+  <pattern id="v-raggi-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-raggi-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-raggi-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-raggi-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,100 V30 H50 V74 Q50,80 56,80 H140 V100 Z" class="m-finito contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-raggi-ko-t v-raggi-ko-d" class="mini-svg"><title id="v-raggi-ko-t">Da evitare: Angolo interno vivo</title><desc id="v-raggi-ko-d">Un angolo interno a spigolo vivo è un punto di concentrazione delle tensioni.</desc><defs>
+  <pattern id="v-raggi-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-raggi-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-raggi-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-raggi-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,100 V30 H50 V80 H140 V100 Z" class="m-finito contorno"/><circle cx="50" cy="80" r="9" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Gli angoli interni concentrano le tensioni e vogliono un raggio minimo di 0,4 mm; quelli esterni possono essere vivi. Di solito non serve sformo, salvo sulle facce lunghe. <span class="pag">(p. 138)</span></p></article>
+<article class="card"><h3>Linea di divisione in zona non critica</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-divisione-ok-t v-divisione-ok-d" class="mini-svg"><title id="v-divisione-ok-t">Corretto: Linea di divisione in zona non critica</title><desc id="v-divisione-ok-d">La bava sulla linea di divisione si toglie facilmente, salvo su texture e filetti: conviene metterla in zone non critiche e prevedere tratti piani nelle filettature.</desc><defs>
+  <pattern id="v-divisione-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-divisione-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-divisione-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-divisione-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,40 H140 V90 H20 Z" class="m-finito contorno"/><line x1="10" y1="40" x2="150" y2="40" stroke="var(--testo-2)" stroke-dasharray="4 3"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-divisione-ko-t v-divisione-ko-d" class="mini-svg"><title id="v-divisione-ko-t">Da evitare: Linea di divisione sulla filettatura</title><desc id="v-divisione-ko-d">Una bava che attraversa un filetto o una texture è difficile da togliere.</desc><defs>
+  <pattern id="v-divisione-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-divisione-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-divisione-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-divisione-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,40 H140 V90 H20 Z" class="m-finito contorno"/><line x1="30" y1="40" x2="38" y2="90" stroke="var(--testo)" stroke-width="1.5"/><line x1="46" y1="40" x2="54" y2="90" stroke="var(--testo)" stroke-width="1.5"/><line x1="62" y1="40" x2="70" y2="90" stroke="var(--testo)" stroke-width="1.5"/><line x1="78" y1="40" x2="86" y2="90" stroke="var(--testo)" stroke-width="1.5"/><line x1="94" y1="40" x2="102" y2="90" stroke="var(--testo)" stroke-width="1.5"/><line x1="110" y1="40" x2="118" y2="90" stroke="var(--testo)" stroke-width="1.5"/><line x1="126" y1="40" x2="134" y2="90" stroke="var(--testo)" stroke-width="1.5"/><line x1="10" y1="65" x2="150" y2="65" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>La bava si toglie facilmente ma crea problemi su texture e filetti: tratti piani nelle filettature e linea di divisione in zone non critiche riducono il problema. <span class="pag">(p. 136)</span></p><p class="nota-ocr">Rapporto massimo profondità/diametro dei fori: <span class="nd">n.d.</span> (OCR &quot;up to iotoi&quot;)</p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Il libro non elenca varianti di questo processo. Qui sotto la tecnica simile citata nel testo.</p><div class="griglia-card"><article class="card"><h3>Iniezione di polveri (PIM)</h3><p class="originale" lang="en">Powder Injection Molding</p><div class="variante-schema"><svg viewBox="0 0 220 128" role="img" aria-labelledby="var-pim-t var-pim-d" class="mini-svg"><title id="var-pim-t">Iniezione di polveri ceramiche (PIM)</title><desc id="var-pim-d">Una tecnica simile, l'iniezione di polveri, forma materiali ceramici e compositi metallici.</desc><defs>
+  <pattern id="var-pim-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-pim-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-pim-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-pim-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <circle cx="80" cy="62" r="30" class="m-grezzo contorno"/><circle cx="150" cy="62" r="30" fill="#e8e4dc" stroke="var(--testo)"/>
+    <g class="etichetta"><text x="115" y="118" text-anchor="middle">metallo · ceramica</text></g></svg></div><p>Una tecnica simile, detta powder injection molding, forma materiali ceramici e compositi metallici. <span class="pag">(p. 136)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="microfusione.html">Microfusione a cera persa</a> – spesso intercambiabile secondo tolleranze e dettagli <span class="pag">(p. 136)</span></li><li><a href="pressofusione.html">Pressofusione</a> – simile ma solo per metalli non ferrosi <span class="pag">(p. 136)</span></li><li><a href="forgiatura.html">Forgiatura</a> – per componenti più grandi <span class="pag">(p. 136)</span></li><li><a href="lavorazione-cnc.html">Lavorazione CNC</a> – geometrie simili, più cara in grandi serie <span class="pag">(p. 136)</span></li><li><a href="stampaggio-iniezione.html">Stampaggio a iniezione</a> – stesse regole di progetto <span class="pag">(p. 136)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 136–139.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/mim.js"></script>
+</body>
+</html>

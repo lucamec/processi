@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elettroformatura – Processi produttivi per il design</title>
+<meta name="description" content="Il metallo si deposita per via elettrolitica su un mandrino reso conduttivo, strato dopo strato, fino a formare un guscio che ne copia la superficie con precisione submicrometrica.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 1 – Formatura › Metalli</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Elettroformatura</h1>
+  <p class="originale" lang="en">Electroforming</p>
+  <p class="categoria">Parte 1 – Formatura · Metalli</p>
+  <p class="sintesi">Il metallo si deposita per via elettrolitica su un mandrino reso conduttivo, strato dopo strato, fino a formare un guscio che ne copia la superficie con precisione submicrometrica.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="2000,2000,3000,2200">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="elettroformatura" data-alt="Modello 3D di una vasca trasparente con l'elettrolita. Da un lato c'è un cestello di anodi di rame, dall'altro un mandrino con una superficie decorata in rilievo. Il mandrino viene ricoperto d'argento, poi piccole particelle viaggiano dagli anodi verso il mandrino e uno strato arancione cresce sulla sua faccia. Alla fine il guscio, verde, si stacca dal mandrino conservandone ogni dettaglio.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Mandrino<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Strato conduttivo<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Deposizione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Distacco<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Mandrino</b>Il mandrino è il negativo del pezzo: qui un calco in silicone di un'incisione a mano, montato su un supporto di plastica. <span class="pag">(p. 141–142)</span></li>
+    <li><b>Fase 2 – Strato conduttivo</b>Il mandrino, non conduttivo, viene ricoperto di polvere d'argento: è la base su cui il metallo si depositerà. Fili di rame lo collegano alla corrente lontano dalla faccia utile. <span class="pag">(p. 140, 142)</span></li>
+    <li><b>Fase 3 – Deposizione</b>Immerso nel bagno e collegato alla corrente continua, il mandrino attira gli ioni metallici, che vi si legano; gli anodi si sciolgono e reintegrano la soluzione. Nel caso studio in 48 ore si forma 1 mm di rame. <span class="pag">(p. 141–142)</span></li>
+    <li><b>Fase 4 – Distacco</b>Il guscio si stacca dal mandrino, che si pulisce e si riusa; il pezzo si pulisce e si rifila. <span class="pag">(p. 141–142)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una vasca trasparente con l'elettrolita. Da un lato c'è un cestello di anodi di rame, dall'altro un mandrino con una superficie decorata in rilievo. Il mandrino viene ricoperto d'argento, poi piccole particelle viaggiano dagli anodi verso il mandrino e uno strato arancione cresce sulla sua faccia. Alla fine il guscio, verde, si stacca dal mandrino conservandone ogni dettaglio.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 40 820 320" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Elettroformatura in sezione</title>
+<desc id="sc-d">Sezione di una vasca: a sinistra gli anodi di rame in un cestello, a destra il mandrino in silicone collegato al polo negativo. Le fasi mostrano il mandrino, lo strato d'argento, la crescita del metallo e il distacco del guscio.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- vasca con elettrolita -->
+<path d="M200,60 V320 H640 V60" fill="none" stroke="var(--testo)" stroke-width="4"/>
+<rect x="203" y="90" width="434" height="228" fill="var(--flusso)" fill-opacity=".12" data-k="op:0,0,1,0" data-i="op:0"/>
+<g class="etichetta"><text x="200" y="346" text-anchor="start">Vasca con soluzione elettrolitica</text></g>
+<!-- anodi in cestello -->
+<g data-k="op:0,0,1,0" data-i="op:0">
+  <rect x="250" y="110" width="50" height="170" fill="none" stroke="var(--testo)" stroke-width="2" stroke-dasharray="5 3"/>
+  <circle cx="262" cy="130" r="9" fill="#b87333" stroke="var(--testo)"/><circle cx="286" cy="156" r="9" fill="#b87333" stroke="var(--testo)"/><circle cx="262" cy="182" r="9" fill="#b87333" stroke="var(--testo)"/><circle cx="286" cy="208" r="9" fill="#b87333" stroke="var(--testo)"/><circle cx="262" cy="234" r="9" fill="#b87333" stroke="var(--testo)"/><circle cx="286" cy="260" r="9" fill="#b87333" stroke="var(--testo)"/>
+  <g class="etichetta"><text x="220" y="100" text-anchor="start">Anodi di rame (+)</text></g>
+  <line x1="310" y1="150" x2="430" y2="150" class="flusso-linea" marker-end="url(#sc-punta)"/><line x1="310" y1="200" x2="430" y2="200" class="flusso-linea" marker-end="url(#sc-punta)"/><line x1="310" y1="250" x2="430" y2="250" class="flusso-linea" marker-end="url(#sc-punta)"/>
+  <g class="etichetta"><text x="330" y="140" text-anchor="start">ioni metallici</text></g>
+</g>
+<!-- mandrino in silicone su supporto -->
+<path d="M460,110 H520 V290 H460 Q440,270 452,250 Q470,230 452,210 Q440,190 452,170 Q470,150 452,130 Q440,120 460,110 Z" class="macchina"/>
+<rect x="520" y="100" width="20" height="200" class="scuro"/>
+<g class="etichetta"><text x="560" y="120" text-anchor="start">Mandrino (calco in silicone)</text></g>
+<path d="M460,110 Q440,120 452,130 Q470,150 452,170 Q440,190 452,210 Q470,230 452,250 Q440,270 460,290" fill="none" stroke="#c0c4c8" stroke-width="5" data-k="op:0,1,1,0" data-i="op:0"/>
+<g class="etichetta" data-k="op:0,1,0,0"><text x="560" y="160" text-anchor="start">polvere d'argento conduttiva</text></g>
+<!-- strato metallico che cresce -->
+<path d="M460,110 Q440,120 452,130 Q470,150 452,170 Q440,190 452,210 Q470,230 452,250 Q440,270 460,290" fill="none" stroke-linejoin="round" style="stroke:var(--fuso)" data-k="sw:0,0,16,16;op:0,0,1,0" data-i="sw:0;op:0"/>
+<g data-k="tx:0,0,0,-120;op:0,0,0,1" data-i="op:0"><path d="M460,110 Q440,120 452,130 Q470,150 452,170 Q440,190 452,210 Q470,230 452,250 Q440,270 460,290" fill="none" stroke-width="16" stroke-linejoin="round" style="stroke:var(--finito)"/><g class="etichetta"><text x="330" y="300" text-anchor="start">copia esatta, spessore uniforme</text></g></g>
+<g class="etichetta" data-k="op:0,0,1,0"><text x="560" y="300" text-anchor="start">corrente continua (−)</text></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>È la galvanostegia applicata a superfici non conduttive. I mandrini si fanno con prototipazione rapida, laser, incisione, CNC, colata sottovuoto o stampaggio; in silicone sono durevoli e riutilizzabili. <span class="pag">(p. 140–141)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>Si lavora più lentamente che nella galvanostegia, per maggiore precisione. Non servendo pressione, una superficie piana e un'incisione intricata si formano allo stesso modo. <span class="pag">(p. 140–141)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Il mandrino si può togliere e riusare, sciogliere oppure lasciare dentro il pezzo. La superficie è la replica esatta, rovesciata, di quella del mandrino. <span class="pag">(p. 141)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Si depositano nichel, rame, argento e oro (morbidi, tranne il nichel). Si può elettroformare o incapsulare quasi ogni materiale: legno, ceramica, plastica. <span class="pag">(p. 141–142)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Da pezzo unico a piccola serie. <span class="pag">(p. 140)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Di solito basso; dipende dalla complessità del mandrino. <span class="pag">(p. 140, 142)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Alto, anche secondo il metallo; i costi di esercizio non calano molto con i volumi. <span class="pag">(p. 140, 142)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Molto lungo: da qualche ora a 3 settimane, secondo materiale e spessore. <span class="pag">(p. 140–142)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Altissima: copia esatta del mandrino, fino al di sotto del micron, con spessore uniforme; l'argento è puro al 100%. <span class="pag">(p. 140–141)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Riproduzione submicrometrica; nei pezzi enormi (16 m²) la tolleranza scende a 500 micron. <span class="pag">(p. 140, 142)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Pareti da 5 micron a 25 mm; di norma fino a 2 m², con vasche speciali fino a 16 m². <span class="pag">(p. 141–142)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Lo spessore è uniforme</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spessore-ok-t v-spessore-ok-d" class="mini-svg"><title id="v-spessore-ok-t">Corretto: Progettare per spessore uniforme</title><desc id="v-spessore-ok-d">Lo strato cresce uguale su tutta la superficie: rilievi, nervature e incavi non cambiano tempo né costo.</desc><defs>
+  <pattern id="v-spessore-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spessore-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spessore-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spessore-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,80 Q40,40 70,80 T130,80 H150" fill="none" stroke-width="8" stroke-linejoin="round" style="stroke:var(--finito)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spessore-ko-t v-spessore-ko-d" class="mini-svg"><title id="v-spessore-ko-t">Da evitare: Pareti di spessore diverso</title><desc id="v-spessore-ko-d">Non si ottengono spessori diversi in punti diversi: la parete è uniforme.</desc><defs>
+  <pattern id="v-spessore-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spessore-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spessore-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spessore-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,80 Q40,40 70,80" fill="none" stroke-width="4" stroke-linejoin="round" style="stroke:var(--finito)"/><path d="M70,80 Q100,110 130,80 H150" fill="none" stroke-width="14" stroke-linejoin="round" style="stroke:var(--finito)"/><circle cx="70" cy="80" r="10" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>La parete cresce in modo uniforme: aggiungere nervature, incavi o rilievi non cambia né il tempo né il costo, ma non si ottengono spessori diversi in zone diverse. <span class="pag">(p. 140, 142)</span></p></article>
+<article class="card"><h3>La vasca decide la dimensione</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-dimensione-ok-t v-dimensione-ok-d" class="mini-svg"><title id="v-dimensione-ok-t">Corretto: Entro la vasca (di solito 2 m²)</title><desc id="v-dimensione-ok-d">La dimensione massima dipende dalla vasca: di norma fino a 2 m², in casi rari fino a 16 m².</desc><defs>
+  <pattern id="v-dimensione-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-dimensione-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-dimensione-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-dimensione-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="30" y="20" width="100" height="80" fill="none" stroke="var(--testo-2)"/><path d="M50,70 Q80,40 110,70" fill="none" stroke-width="6" stroke-linejoin="round" style="stroke:var(--finito)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-dimensione-ko-t v-dimensione-ko-d" class="mini-svg"><title id="v-dimensione-ko-t">Da evitare: Pezzo più grande della vasca</title><desc id="v-dimensione-ko-d">Nei pezzi enormi la tolleranza scende a 500 micron e la formatura dura settimane.</desc><defs>
+  <pattern id="v-dimensione-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-dimensione-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-dimensione-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-dimensione-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="40" y="30" width="80" height="60" fill="none" stroke="var(--testo-2)"/><path d="M10,70 Q80,10 150,70" fill="none" stroke-width="6" stroke-linejoin="round" style="stroke:var(--finito)"/><circle cx="80" cy="30" r="12" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>La dimensione massima dipende dalla vasca: di norma fino a 2 m². Nelle vasche più grandi (16 m²) la tolleranza scende a 500 micron e servono fino a 3 settimane. <span class="pag">(p. 142)</span></p></article>
+<article class="card"><h3>Rientri con mandrini flessibili</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-rientri-ok-t v-rientri-ok-d" class="mini-svg"><title id="v-rientri-ok-t">Corretto: Rientri con mandrino flessibile</title><desc id="v-rientri-ok-d">Con mandrini in gomma semiflessibile si ottengono forme intricate e rientri con un solo mandrino.</desc><defs>
+  <pattern id="v-rientri-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-rientri-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-rientri-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-rientri-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,30 V80 Q20,100 40,100 H120 Q140,100 140,80 V30 L128,40" fill="none" stroke-width="6" stroke-linejoin="round" style="stroke:var(--finito)"/><path d="M28,30 V78 Q28,92 42,92 H118 Q132,92 132,78 V30 Z" class="macchina"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-rientri-ko-t v-rientri-ko-d" class="mini-svg"><title id="v-rientri-ko-t">Da evitare: Rientri con mandrino rigido</title><desc id="v-rientri-ko-d">Un mandrino rigido resta intrappolato nel rientro: va sciolto o resta dentro (incapsulamento).</desc><defs>
+  <pattern id="v-rientri-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-rientri-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-rientri-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-rientri-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,30 V80 Q20,100 40,100 H120 Q140,100 140,80 V30 L128,40" fill="none" stroke-width="6" stroke-linejoin="round" style="stroke:var(--finito)"/><path d="M28,30 V78 Q28,92 42,92 H118 Q132,92 132,78 V30 Z" class="scuro"/><circle cx="130" cy="38" r="10" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Con mandrini in gomma semiflessibile si ottengono forme intricate e rientri con un unico mandrino. <span class="pag">(p. 142)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Il libro non elenca varianti di questo processo. Qui sotto la possibilità descritta nel caso studio.</p><div class="griglia-card"><article class="card"><h3>Incapsulamento in metallo</h3><p class="originale" lang="en">Metal encapsulation</p><div class="variante-schema"><svg viewBox="0 0 220 128" role="img" aria-labelledby="var-incapsulamento-t var-incapsulamento-d" class="mini-svg"><title id="var-incapsulamento-t">Incapsulamento in metallo</title><desc id="var-incapsulamento-d">Il mandrino (per esempio un intaglio in legno) viene coperto interamente da uno strato metallico uniforme e resta dentro: unisce un materiale economico alle qualità decorative e di resistenza di rame o nichel.</desc><defs>
+  <pattern id="var-incapsulamento-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-incapsulamento-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-incapsulamento-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-incapsulamento-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M40,100 Q60,30 110,40 Q170,50 180,100 Z" fill="#b08a5a" stroke="var(--testo)"/>
+    <path d="M40,100 Q60,30 110,40 Q170,50 180,100" fill="none" stroke="var(--finito)" stroke-width="7"/>
+    <g class="etichetta"><text x="110" y="122" text-anchor="middle">legno rivestito di rame</text></g></svg></div><p>Il mandrino viene ricoperto interamente da uno strato metallico uniforme e non si può riusare; spesso serve da modello per ricavare mandrini riutilizzabili. Unisce un materiale economico con le qualità decorative e di resistenza di rame o nichel. <span class="pag">(p. 142)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="galvanostegia.html">Galvanostegia (elettrodeposizione)</a> – lo stesso principio su superfici conduttive <span class="pag">(p. 140)</span></li><li><a href="lavorazione-cnc.html">Lavorazione CNC</a> – per i mandrini; gli stampi in nichel elettroformato oltre 1 m³ possono costare meno <span class="pag">(p. 140–141)</span></li><li><a href="microfusione.html">Microfusione a cera persa</a> – forme simili; l'elettroformatura ne produce anche gli stampi per la cera <span class="pag">(p. 141)</span></li><li><a href="taglio-laser.html">Taglio laser</a> – per ricavare i mandrini <span class="pag">(p. 141)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 140–143.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/elettroformatura.js"></script>
+</body>
+</html>

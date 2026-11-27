@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sabbiatura (granigliatura) – Processi produttivi per il design</title>
+<meta name="description" content="Particelle fini di sabbia, metallo, plastica o altri abrasivi, spinte ad alta pressione, erodono la superficie: si prepara il pezzo per altre finiture o lo si decora con texture e motivi, come sul vetro.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 4 – Finitura › Processi sottrattivi</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Sabbiatura (granigliatura)</h1>
+  <p class="originale" lang="en">Abrasive Blasting</p>
+  <p class="categoria">Parte 4 – Finitura · Processi sottrattivi</p>
+  <p class="sintesi">Particelle fini di sabbia, metallo, plastica o altri abrasivi, spinte ad alta pressione, erodono la superficie: si prepara il pezzo per altre finiture o lo si decora con texture e motivi, come sul vetro.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="2000,2400,1800,2400,1800">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="sabbiatura" data-alt="Modello 3D di una cabina a guanti trasparente con dentro un vaso di vetro azzurrino, avvolto da fasce scure di maschera. Un ugello gira attorno al vaso e lancia un getto di granelli: le fasce scoperte diventano bianche e smerigliate. Poi una fascia della maschera si toglie e viene incisa più leggermente; alla fine la maschera sparisce e restano fasce trasparenti, opache e semiopache, rese in verde.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Maschera<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Prima incisione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Maschera modificata<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Seconda incisione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="5">5. Pulizia<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Maschera</b>Il disegno, in due toni, diventa una maschera di cera adesiva sul pezzo; l'interno si protegge a parte. Gli abrasivi rimbalzano sulla cera senza intaccarla. <span class="pag">(p. 389–390)</span></li>
+    <li><b>Fase 2 – Prima incisione</b>In una cabina a guanti l'operatore incide le zone scoperte con ossido di alluminio, grana 180–220, spinto da aria compressa. <span class="pag">(p. 389–390)</span></li>
+    <li><b>Fase 3 – Maschera modificata</b>Si tolgono alcune parti della maschera e si rinforzano le zone delicate. <span class="pag">(p. 390)</span></li>
+    <li><b>Fase 4 – Seconda incisione</b>Una seconda passata crea un'immagine a più livelli, con profondità e trasparenze diverse. <span class="pag">(p. 390)</span></li>
+    <li><b>Fase 5 – Pulizia</b>Si tolgono cera e protezioni; il pezzo si pulisce e si lucida. <span class="pag">(p. 390)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una cabina a guanti trasparente con dentro un vaso di vetro azzurrino, avvolto da fasce scure di maschera. Un ugello gira attorno al vaso e lancia un getto di granelli: le fasce scoperte diventano bianche e smerigliate. Poi una fascia della maschera si toglie e viene incisa più leggermente; alla fine la maschera sparisce e restano fasce trasparenti, opache e semiopache, rese in verde.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 40 820 310" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Sabbiatura decorativa a più livelli, in sezione</title>
+<desc id="sc-d">Sezione della parete di un vaso di vetro con una maschera di cera. Le fasi mostrano la maschera applicata, la prima incisione delle zone scoperte, la rimozione di una parte della maschera, la seconda incisione che crea due profondità e il pezzo pulito.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- parete di vetro -->
+<rect x="120" y="220" width="560" height="60" fill="#cfe3ea" class="contorno"/>
+<g class="etichetta"><text x="700" y="260" text-anchor="start">Vetro</text></g>
+<!-- zone incise: A (due passate), B (solo la seconda) -->
+<g data-k="sy:0,0.6,0.6,1,1" data-i="sy:0" data-o="0,220"><rect x="160" y="220" width="80" height="18" fill="#eef1f4"/><rect x="400" y="220" width="80" height="18" fill="#eef1f4"/></g>
+<g data-k="sy:0,0,0,1,1" data-i="sy:0" data-o="0,220"><rect x="280" y="220" width="80" height="10" fill="#eef1f4"/></g>
+<g data-k="op:0,0,0,0,1" data-i="op:0">
+  <path d="M160,220 V238 H240 V220" fill="none" style="stroke:var(--finito)" stroke-width="3"/><path d="M400,220 V238 H480 V220" fill="none" style="stroke:var(--finito)" stroke-width="3"/>
+  <path d="M280,220 V230 H360 V220" fill="none" style="stroke:var(--finito)" stroke-width="3"/>
+</g>
+<!-- maschera di cera -->
+<g data-k="op:1,1,1,1,0" data-i="op:1">
+  <rect x="120" y="208" width="40" height="12" fill="#5b4a8a"/><rect x="240" y="208" width="40" height="12" fill="#5b4a8a"/><rect x="360" y="208" width="40" height="12" fill="#5b4a8a"/><rect x="480" y="208" width="200" height="12" fill="#5b4a8a"/>
+</g>
+<rect x="280" y="208" width="80" height="12" fill="#5b4a8a" data-k="op:1,1,0,0,0" data-i="op:1"/>
+<g class="etichetta"><text x="480" y="196" text-anchor="start">Maschera di cera (dal disegno)</text></g>
+<!-- ugello e getto -->
+<g data-k="op:0,1,0,1,0;tx:0,160,0,160,0" data-i="op:0;tx:0">
+  <path d="M180,60 H220 L212,120 H188 Z" class="m-stampo contorno"/>
+  <path d="M190,120 L160,206 H240 L210,120 Z" style="fill:var(--grezzo)" fill-opacity="0.45"/>
+  <circle cx="175" cy="150" r="3" fill="#8a7a5a"/><circle cx="195" cy="162" r="3" fill="#8a7a5a"/><circle cx="215" cy="174" r="3" fill="#8a7a5a"/><circle cx="230" cy="186" r="3" fill="#8a7a5a"/>
+</g>
+<g class="etichetta"><text x="240" y="60" text-anchor="start">Aria compressa (5,5–8,6 bar) con abrasivo</text></g>
+<g data-k="op:1,0,0,0,0"><g class="etichetta"><text x="20" y="330" text-anchor="start">il disegno, tradotto in una maschera di cera adesiva, si applica sul vetro</text></g></g>
+<g data-k="op:0,1,0,0,0"><g class="etichetta"><text x="20" y="330" text-anchor="start">prima incisione con ossido di alluminio, grana 180–220, in cabina a guanti</text></g></g>
+<g data-k="op:0,0,1,0,0"><g class="etichetta"><text x="20" y="330" text-anchor="start">si toglie una parte della maschera, si rinforzano le zone delicate</text></g></g>
+<g data-k="op:0,0,0,1,0"><g class="etichetta"><text x="20" y="330" text-anchor="start">seconda incisione: due livelli di profondità e trasparenza</text></g></g>
+<g data-k="op:0,0,0,0,1"><g class="etichetta"><text x="20" y="330" text-anchor="start">tolta la maschera, si pulisce e si lucida</text></g></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Il termine comprende sabbiatura, incisione a secco, sabbiatura con plastica, granigliatura e pallinatura; servono a preparare le superfici per altre lavorazioni o a decorarle, oltre che a sbavare, tagliare e forare. <span class="pag">(p. 388)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>L'abrasivo arriva alla pistola da un serbatoio in pressione (più efficace) o per aspirazione (più versatile); l'aria lavora di solito fra 5,5 e 8,6 bar. <span class="pag">(p. 389)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Cinque variabili controllano il risultato: pressione, diametro dell'ugello, distanza, portata e tipo di abrasivo. Più la texture è profonda, meno il materiale trasparente lascia passare la luce. <span class="pag">(p. 388–389)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="5" aria-label="Mostra la fase 5 nello schema">Fase 5</button>L'esito delle operazioni manuali dipende molto dall'operatore: i dettagli molto fini si riproducono con precisione, ma l'asportazione è permanente. <span class="pag">(p. 388)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Soprattutto metallo e vetro; anche legno e alcuni polimeri per preparazione e finitura. <span class="pag">(p. 390)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Grandi volumi per l'asportazione di superficie; volumi bassi o medi per le finiture fini. <span class="pag">(p. 388)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Nessuno, ma possono servire maschere, il cui costo dipende da complessità e area. <span class="pag">(p. 388, 390)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Da basso ad alto; manodopera relativamente alta nelle operazioni manuali. <span class="pag">(p. 388, 390)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Rapido, ma rallentato da maschere complesse, strati multipli e scolpitura; automatizzare i compiti semplici lo riduce molto. <span class="pag">(p. 388, 390)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Texture fine, da simile all'incisione acida a un aspetto più grezzo; dettagli molto fini con operatori esperti. <span class="pag">(p. 388)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Tolleranze numeriche: <span class="nd">n.d.</span> <span class="pag">(p. 388–391)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Dalle cabine a guanti a quelle in cui si entra, fino a lavori all'aperto per pezzi molto grandi; limiti numerici: <span class="nd">n.d.</span> <span class="pag">(p. 389)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Linea di vista</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-vista-ok-t v-vista-ok-d" class="mini-svg"><title id="v-vista-ok-t">Corretto: Incisione perpendicolare alla maschera</title><desc id="v-vista-ok-d">Il getto lavora in linea retta: l'erosione scende perpendicolare, senza passare sotto i bordi della maschera.</desc><defs>
+  <pattern id="v-vista-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-vista-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-vista-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-vista-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="60" width="120" height="30" fill="#cfe3ea" class="contorno"/><rect x="20" y="52" width="40" height="8" fill="#5b4a8a"/><rect x="100" y="52" width="40" height="8" fill="#5b4a8a"/><rect x="60" y="60" width="40" height="12" fill="#eef1f4"/><line x1="80" y1="10" x2="80" y2="50" class="flusso-linea" marker-end="url(#v-vista-ok-punta)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-vista-ko-t v-vista-ko-d" class="mini-svg"><title id="v-vista-ko-t">Da evitare: Sottosquadri e zone nascoste</title><desc id="v-vista-ko-d">Ciò che il getto non vede non viene inciso.</desc><defs>
+  <pattern id="v-vista-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-vista-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-vista-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-vista-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,90 V50 H60 V70 H100 V50 H140 V90 Z" fill="#cfe3ea" class="contorno"/><line x1="20" y1="10" x2="54" y2="46" class="flusso-linea" marker-end="url(#v-vista-ko-punta)"/><circle cx="96" cy="66" r="12" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Come la verniciatura, il getto lavora in linea retta: l'erosione non passa sotto i bordi della maschera ma scende perpendicolare. <span class="pag">(p. 388)</span></p></article>
+<article class="card"><h3>Provare prima</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-prove-ok-t v-prove-ok-d" class="mini-svg"><title id="v-prove-ok-t">Corretto: Abrasivo provato prima</title><desc id="v-prove-ok-d">L'asportazione è permanente: abrasivo, pressione e distanza si provano prima della produzione.</desc><defs>
+  <pattern id="v-prove-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-prove-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-prove-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-prove-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="24" y="40" width="36" height="50" fill="#cfe3ea" class="contorno"/><rect x="24" y="40" width="36" height="10" fill="#eef1f4" fill-opacity="0.9"/><rect x="68" y="40" width="36" height="50" fill="#cfe3ea" class="contorno"/><rect x="68" y="40" width="36" height="18" fill="#eef1f4" fill-opacity="0.9"/><rect x="112" y="40" width="36" height="50" fill="#cfe3ea" class="contorno"/><rect x="112" y="40" width="36" height="26" fill="#eef1f4" fill-opacity="0.9"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-prove-ko-t v-prove-ko-d" class="mini-svg"><title id="v-prove-ko-t">Da evitare: Getto troppo aggressivo</title><desc id="v-prove-ko-d">Un abrasivo o una pressione sbagliati scavano troppo e non si può tornare indietro.</desc><defs>
+  <pattern id="v-prove-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-prove-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-prove-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-prove-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="40" width="120" height="50" fill="#cfe3ea" class="contorno"/><path d="M60,40 Q80,80 100,40 Z" fill="#eef1f4" stroke="var(--testo)"/><circle cx="80" cy="56" r="20" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>L'abrasivo va scelto per il materiale; conviene provare abrasivo, pressione e distanza prima della produzione, perché l'asportazione è permanente. <span class="pag">(p. 388–389)</span></p></article>
+<article class="card"><h3>Proteggere la texture</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sporco-ok-t v-sporco-ok-d" class="mini-svg"><title id="v-sporco-ok-t">Corretto: Texture protetta</title><desc id="v-sporco-ok-d">Le superfici sabbiate trattengono sporco e impronte: spesso si proteggono con un laminato o un rivestimento trasparente.</desc><defs>
+  <pattern id="v-sporco-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sporco-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sporco-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sporco-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="50" width="120" height="40" fill="#cfe3ea" class="contorno"/><rect x="20" y="44" width="120" height="6" fill="var(--flusso)" fill-opacity="0.5"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sporco-ko-t v-sporco-ko-d" class="mini-svg"><title id="v-sporco-ko-t">Da evitare: Texture esposta al tatto</title><desc id="v-sporco-ko-d">Senza protezione le impronte restano ben visibili sul vetro sabbiato.</desc><defs>
+  <pattern id="v-sporco-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sporco-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sporco-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sporco-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="50" width="120" height="40" fill="#dfe8ec" class="contorno"/><ellipse cx="70" cy="64" rx="10" ry="14" fill="none" stroke="#8a9aa6" stroke-dasharray="2 2"/><circle cx="70" cy="64" r="20" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Le texture trattengono lo sporco e, sul vetro, evidenziano le impronte: spesso si racchiudono in un laminato o sotto un rivestimento trasparente. <span class="pag">(p. 388)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Alcune possibilità descritte nel capitolo; lo schema principale mostra la sabbiatura decorativa con maschera.</p><div class="griglia-card"><article class="card"><h3>Abrasivi diversi</h3><p class="originale" lang="en">Blasting media</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-abrasivi-t var-abrasivi-d" class="mini-svg"><title id="var-abrasivi-t">Abrasivi diversi</title><desc id="var-abrasivi-d">Sabbia, la più comune; graniglia d'acciaio, la più aggressiva; ossido di alluminio, più dolce; microsfere di vetro, per materiali delicati; gusci di noce o cocco, che non intaccano vetro e placcature.</desc><defs>
+  <pattern id="var-abrasivi-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-abrasivi-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-abrasivi-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-abrasivi-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <circle cx="30" cy="62" r="12" fill="#c8b080" class="contorno"/><circle cx="70" cy="62" r="12" fill="#5a6068" class="contorno"/><circle cx="110" cy="62" r="12" fill="#d8d0c0" class="contorno"/><circle cx="150" cy="62" r="8" fill="#cfe3ea" class="contorno"/><circle cx="190" cy="62" r="12" fill="#8a5a3a" class="contorno"/></svg></div><p>Sabbia, graniglia d'acciaio, ossido di alluminio, microsfere di vetro, gusci di noce e cocco. <span class="pag">(p. 389)</span></p></article>
+<article class="card"><h3>Scultura del vetro</h3><p class="originale" lang="en">Glass carving</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-scultura-t var-scultura-d" class="mini-svg"><title id="var-scultura-t">Scultura del vetro</title><desc id="var-scultura-d">Il vetro si scolpisce in rilievi tridimensionali, con o senza maschera, per vetrate architettoniche e vetrine.</desc><defs>
+  <pattern id="var-scultura-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-scultura-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-scultura-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-scultura-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="20" y="30" width="180" height="70" fill="#cfe3ea" class="contorno"/>
+    <path d="M40,30 Q70,70 100,30 Q130,80 170,30" fill="#eef1f4" stroke="var(--testo)"/></svg></div><p>Rilievi tridimensionali per vetrate e vetrine. <span class="pag">(p. 388)</span></p></article>
+<article class="card"><h3>Sabbiatura con plastica</h3><p class="originale" lang="en">Plastic media blasting (PMB)</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-plastica-t var-plastica-d" class="mini-svg"><title id="var-plastica-t">Sabbiatura con plastica (PMB)</title><desc id="var-plastica-d">Granuli di plastica, più teneri e di forme scelte, a pressione più bassa (valore n.d.: la conversione è illeggibile nell'OCR): servono attrezzature specialistiche e sono i più costosi.</desc><defs>
+  <pattern id="var-plastica-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-plastica-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-plastica-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-plastica-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="20" y="70" width="180" height="30" class="m-stampo contorno"/>
+    <rect x="40" y="40" width="8" height="8" fill="var(--flusso)" transform="rotate(0 44 44)"/><rect x="70" y="50" width="8" height="8" fill="var(--flusso)" transform="rotate(25 74 54)"/><rect x="100" y="40" width="8" height="8" fill="var(--flusso)" transform="rotate(50 104 44)"/><rect x="130" y="50" width="8" height="8" fill="var(--flusso)" transform="rotate(75 134 54)"/><rect x="160" y="40" width="8" height="8" fill="var(--flusso)" transform="rotate(100 164 44)"/></svg></div><p>Granuli più teneri a pressione minore; attrezzature specialistiche. <span class="pag">(p. 388–389)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="incisione-cnc.html">Incisione CNC</a> – effetti simili sul vetro e altri materiali <span class="pag">(p. 388)</span></li><li><a href="incisione-fotochimica.html">Incisione fotochimica</a> – effetti simili <span class="pag">(p. 388)</span></li><li><a href="taglio-laser.html">Taglio laser</a> – effetti simili <span class="pag">(p. 388)</span></li><li><a href="soffiatura-vetro.html">Soffiatura del vetro</a> – produce il vaso del caso studio <span class="pag">(p. 390)</span></li><li><a href="verniciatura-spruzzo.html">Verniciatura a spruzzo</a> – stesso limite di linea di vista <span class="pag">(p. 388)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 388–391.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/sabbiatura.js"></script>
+</body>
+</html>

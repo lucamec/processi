@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Incisione fotochimica – Processi produttivi per il design</title>
+<meta name="description" content="Asportazione di superficie per via chimica: il metallo è protetto da un film fotosensibile e le zone scoperte vengono sciolte in modo uniforme, con un aspetto simile alla sabbiatura.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 4 – Finitura › Processi sottrattivi</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Incisione fotochimica</h1>
+  <p class="originale" lang="en">Photo Etching</p>
+  <p class="categoria">Parte 4 – Finitura · Processi sottrattivi</p>
+  <p class="sintesi">Asportazione di superficie per via chimica: il metallo è protetto da un film fotosensibile e le zone scoperte vengono sciolte in modo uniforme, con un aspetto simile alla sabbiatura.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="2000,2000,2000,2400,2200">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="incisione-fotochimica" data-alt="Modello 3D di una targa in acciaio inox su un nastro. Prima si ricopre di un film azzurro, poi una lampada UV la illumina attraverso un negativo scuro; il film non esposto sparisce e lascia scoperti dei segni. Una fila di ugelli oscillanti spruzza acido arancione e i segni si approfondiscono; infine il film si toglie e gli incavi si riempiono di colore rosso.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Film fotosensibile<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Esposizione UV<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Sviluppo e ritocco<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Incisione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="5">5. Colore<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Film fotosensibile</b>Il metallo, sgrassato in acido cloridrico al 10% e lavato, riceve in camera oscura un film polimerico fotosensibile sui due lati, per laminazione a caldo o per immersione. <span class="pag">(p. 393–394)</span></li>
+    <li><b>Fase 2 – Esposizione UV</b>Il negativo su acetato, stampato dal file CAD o grafico, si fissa al pezzo; la luce UV indurisce il film esposto, su entrambi i lati perché il retro resti protetto. <span class="pag">(p. 393–394)</span></li>
+    <li><b>Fase 3 – Sviluppo e ritocco</b>Il film non esposto, ancora morbido, si scioglie e scopre il metallo; le piccole imperfezioni si ritoccano con una resina liquida. <span class="pag">(p. 393–394)</span></li>
+    <li><b>Fase 4 – Incisione</b>Il pezzo passa sotto ugelli oscillanti che spruzzano cloruro ferrico; l'oscillazione aggiunge ossigeno e accelera l'attacco. Nel caso studio fino a 20 minuti, per 150 µm. <span class="pag">(p. 393–394)</span></li>
+    <li><b>Fase 5 – Colore</b>Il film si toglie con soda caustica e acqua pura; gli incavi si riempiono di vernice a base di cellulosa con una racla e l'eccesso si lucida via. <span class="pag">(p. 393–394)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una targa in acciaio inox su un nastro. Prima si ricopre di un film azzurro, poi una lampada UV la illumina attraverso un negativo scuro; il film non esposto sparisce e lascia scoperti dei segni. Una fila di ugelli oscillanti spruzza acido arancione e i segni si approfondiscono; infine il film si toglie e gli incavi si riempiono di colore rosso.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 80 820 270" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Incisione fotochimica di una targa, in sezione</title>
+<desc id="sc-d">Sezione di una targa in acciaio inox incisa su un lato. Le fasi mostrano il film fotosensibile sui due lati, l'esposizione UV attraverso il negativo, lo sviluppo del film, l'incisione con gli ugelli oscillanti e il riempimento degli incavi con il colore.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<rect x="160" y="200" width="500" height="50" class="m-grezzo contorno"/>
+<rect x="240" y="200" width="60" height="14" fill="#eef1f4" data-k="sy:0,0,0,1,1" data-i="sy:0" data-o="240,200"/><rect x="360" y="200" width="20" height="14" fill="#eef1f4" data-k="sy:0,0,0,1,1" data-i="sy:0" data-o="360,200"/><rect x="440" y="200" width="100" height="14" fill="#eef1f4" data-k="sy:0,0,0,1,1" data-i="sy:0" data-o="440,200"/>
+<rect x="240" y="200" width="60" height="14" fill="#b8323a" data-k="op:0,0,0,0,1" data-i="op:0"/><rect x="360" y="200" width="20" height="14" fill="#b8323a" data-k="op:0,0,0,0,1" data-i="op:0"/><rect x="440" y="200" width="100" height="14" fill="#b8323a" data-k="op:0,0,0,0,1" data-i="op:0"/>
+<g class="etichetta"><line x1="200" y1="250" x2="40" y2="285" class="richiamo"/><text x="40" y="290" text-anchor="start">Targa in acciaio inox (profondità esagerata)</text></g>
+
+<!-- film: intero sui due lati, poi con le aperture sul lato inciso -->
+<g data-k="op:1,1,0,0,0" data-i="op:1">
+  <rect x="160" y="192" width="500" height="8" style="fill:var(--flusso)" fill-opacity="0.45"/>
+</g>
+<g data-k="op:0,0,1,1,0" data-i="op:0"><rect x="160" y="192" width="80" height="8" style="fill:var(--flusso)" fill-opacity="0.75"/><rect x="300" y="192" width="60" height="8" style="fill:var(--flusso)" fill-opacity="0.75"/><rect x="380" y="192" width="60" height="8" style="fill:var(--flusso)" fill-opacity="0.75"/><rect x="540" y="192" width="120" height="8" style="fill:var(--flusso)" fill-opacity="0.75"/></g>
+<rect x="160" y="250" width="500" height="8" style="fill:var(--flusso)" fill-opacity="0.75" data-k="op:1,1,1,1,0" data-i="op:1"/>
+<g data-k="op:1,0,0,0,0"><g class="etichetta"><text x="160" y="150" text-anchor="start">Pezzo sgrassato, film fotosensibile laminato a caldo sui due lati</text></g></g>
+
+<!-- 2: negativo e UV -->
+<g data-k="op:0,1,0,0,0">
+  <rect x="240" y="172" width="60" height="6" fill="#1d232b"/><rect x="360" y="172" width="20" height="6" fill="#1d232b"/><rect x="440" y="172" width="100" height="6" fill="#1d232b"/><rect x="150" y="172" width="520" height="6" fill="none" stroke="var(--testo)" stroke-width="1"/>
+  <line x1="200" y1="112" x2="200" y2="166" class="flusso-linea" marker-end="url(#sc-punta)"/><line x1="410" y1="112" x2="410" y2="166" class="flusso-linea" marker-end="url(#sc-punta)"/><line x1="620" y1="112" x2="620" y2="166" class="flusso-linea" marker-end="url(#sc-punta)"/>
+  <line x1="260" y1="320" x2="260" y2="266" class="flusso-linea" marker-end="url(#sc-punta)"/><line x1="560" y1="320" x2="560" y2="266" class="flusso-linea" marker-end="url(#sc-punta)"/>
+  <g class="etichetta"><text x="160" y="96" text-anchor="start">Negativo su acetato; UV sui due lati: il retro indurisce tutto</text></g>
+</g>
+<g data-k="op:0,0,1,0,0"><g class="etichetta"><text x="120" y="150" text-anchor="start">Il film non esposto si scioglie; le piccole imperfezioni si ritoccano a mano</text></g></g>
+
+<!-- 4: ugelli oscillanti -->
+<g data-k="op:0,0,0,1,0;vx:0,0,0,40,0" data-i="op:0;vx:0">
+  <rect x="250" y="110" width="20" height="18" class="scuro"/><path d="M254,128 L234,186 H286 L266,128 Z" style="fill:var(--fuso)" fill-opacity="0.3"/><rect x="400" y="110" width="20" height="18" class="scuro"/><path d="M404,128 L384,186 H436 L416,128 Z" style="fill:var(--fuso)" fill-opacity="0.3"/><rect x="550" y="110" width="20" height="18" class="scuro"/><path d="M554,128 L534,186 H586 L566,128 Z" style="fill:var(--fuso)" fill-opacity="0.3"/>
+</g>
+<g data-k="op:0,0,0,1,0"><g class="etichetta"><text x="160" y="96" text-anchor="start">Cloruro ferrico dagli ugelli oscillanti: 50–100 µm ogni 5 minuti</text></g></g>
+<g data-k="op:0,0,0,0,1"><g class="etichetta"><text x="120" y="150" text-anchor="start">Film tolto con soda caustica; oltre 150 µm gli incavi si riempiono di colore</text></g></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>È detta anche incisione acida o a umido: preciso ed economico, perché l'attrezzatura è un acetato stampato che costa poco sostituire. <span class="pag">(p. 392)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>La precisione dipende dal film, che protegge le zone da lasciare intatte; i negativi durano migliaia di cicli e si modificano facilmente, quindi il processo si presta alle prove durante il progetto. <span class="pag">(p. 392)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Non c'è calore, pressione o contatto con un utensile: il pezzo non si deforma e duttilità, durezza e grana del metallo non cambiano. Laser e incisione CNC invece scaldano e possono deformare le lamiere sottili. <span class="pag">(p. 392)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="5" aria-label="Mostra la fase 5 nello schema">Fase 5</button>Linee, punti e aree si riempiono di colore se l'incisione supera i 150 µm; ogni colore richiede 20 minuti di asciugatura. <span class="pag">(p. 392, 394)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>La maggior parte dei metalli: inox, acciaio dolce, alluminio (il più rapido), rame, ottone, nichel, stagno, argento; anche vetro, specchio, porcellana e ceramica. <span class="pag">(p. 394)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Dal prototipo alla produzione di massa. <span class="pag">(p. 392)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Basso: un negativo stampato direttamente dai dati. <span class="pag">(p. 392, 394)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Da moderato ad alto; manodopera moderata. <span class="pag">(p. 392, 394)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Moderato: 50–100 µm per passata di 5 minuti; più pezzi sullo stesso foglio lo riducono. <span class="pag">(p. 392, 394)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Alta: forma finale senza tensioni; un attacco prolungato causa sottosquadri. <span class="pag">(p. 392)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Dettagli fino a 0,15 mm di diametro; tolleranze numeriche: <span class="nd">n.d.</span> <span class="pag">(p. 394)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Soprattutto lamiere; fino a 1 mm di spessore si può anche tagliare. Limiti di formato: <span class="nd">n.d.</span> <span class="pag">(p. 392, 394)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Pulizia di film e negativo</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-dettaglio-ok-t v-dettaglio-ok-d" class="mini-svg"><title id="v-dettaglio-ok-t">Corretto: Dettagli oltre 0,15 mm</title><desc id="v-dettaglio-ok-d">Si riproducono dettagli fino a circa 0,15 mm di diametro, se film e negativo sono puliti.</desc><defs>
+  <pattern id="v-dettaglio-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-dettaglio-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-dettaglio-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-dettaglio-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="60" width="120" height="30" class="m-grezzo contorno"/><rect x="36" y="60" width="8" height="6" fill="#eef1f4"/><rect x="56" y="60" width="8" height="6" fill="#eef1f4"/><rect x="76" y="60" width="8" height="6" fill="#eef1f4"/><rect x="96" y="60" width="8" height="6" fill="#eef1f4"/><rect x="116" y="60" width="8" height="6" fill="#eef1f4"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-dettaglio-ko-t v-dettaglio-ko-d" class="mini-svg"><title id="v-dettaglio-ko-t">Da evitare: Polvere sul film</title><desc id="v-dettaglio-ko-d">Polvere e sporco sul film o sul negativo diventano difetti visibili sul pezzo finito.</desc><defs>
+  <pattern id="v-dettaglio-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-dettaglio-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-dettaglio-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-dettaglio-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="60" width="120" height="30" class="m-grezzo contorno"/><rect x="20" y="52" width="120" height="8" style="fill:var(--flusso)" fill-opacity="0.6"/><circle cx="80" cy="56" r="3" fill="#1d232b"/><rect x="76" y="60" width="8" height="5" fill="#eef1f4"/><circle cx="80" cy="60" r="14" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>La finezza dipende dalla qualità del film: film e negativo devono essere privi di polvere, che altrimenti si vede sul pezzo finito. <span class="pag">(p. 394)</span></p></article>
+<article class="card"><h3>Sottosquadri</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sottosquadro-ok-t v-sottosquadro-ok-d" class="mini-svg"><title id="v-sottosquadro-ok-t">Corretto: Tempo d'attacco controllato</title><desc id="v-sottosquadro-ok-d">Un'esposizione giusta all'acido dà fianchi netti sotto il bordo del film.</desc><defs>
+  <pattern id="v-sottosquadro-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sottosquadro-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sottosquadro-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sottosquadro-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="60" width="120" height="30" class="m-grezzo contorno"/><rect x="20" y="52" width="45" height="8" style="fill:var(--flusso)" fill-opacity="0.75"/><rect x="95" y="52" width="45" height="8" style="fill:var(--flusso)" fill-opacity="0.75"/><path d="M65,60 Q66,72 70,72 H90 Q94,72 95,60 Z" fill="#eef1f4"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sottosquadro-ko-t v-sottosquadro-ko-d" class="mini-svg"><title id="v-sottosquadro-ko-t">Da evitare: Attacco troppo lungo</title><desc id="v-sottosquadro-ko-d">Un'esposizione prolungata all'acido scava sotto il film (sottosquadro).</desc><defs>
+  <pattern id="v-sottosquadro-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sottosquadro-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sottosquadro-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sottosquadro-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="60" width="120" height="30" class="m-grezzo contorno"/><rect x="20" y="52" width="45" height="8" style="fill:var(--flusso)" fill-opacity="0.75"/><rect x="95" y="52" width="45" height="8" style="fill:var(--flusso)" fill-opacity="0.75"/><path d="M50,60 Q50,82 62,82 H98 Q110,82 110,60 Z" fill="#eef1f4"/><circle cx="56" cy="66" r="12" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Un'esposizione prolungata all'attacco chimico scava sotto il bordo del film. <span class="pag">(p. 392)</span></p></article>
+<article class="card"><h3>Profondità per il colore</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-colore-ok-t v-colore-ok-d" class="mini-svg"><title id="v-colore-ok-t">Corretto: Colore in incavi profondi</title><desc id="v-colore-ok-d">Per riempire di colore servono almeno 150 µm di profondità.</desc><defs>
+  <pattern id="v-colore-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-colore-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-colore-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-colore-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="50" width="120" height="40" class="m-grezzo contorno"/><rect x="50" y="50" width="60" height="16" fill="#b8323a"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-colore-ko-t v-colore-ko-d" class="mini-svg"><title id="v-colore-ko-t">Da evitare: Incavo troppo basso</title><desc id="v-colore-ko-d">Un'incisione poco profonda non trattiene il colore.</desc><defs>
+  <pattern id="v-colore-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-colore-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-colore-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-colore-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="50" width="120" height="40" class="m-grezzo contorno"/><rect x="50" y="50" width="60" height="4" fill="#b8323a"/><circle cx="80" cy="52" r="14" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Per riempire di colore servono almeno 150 µm; più livelli richiedono mascherature ripetute e allungano il ciclo. <span class="pag">(p. 392)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Possibilità descritte nel capitolo; lo schema principale mostra l'incisione a spruzzo su un lato.</p><div class="griglia-card"><article class="card"><h3>Pasta chimica</h3><p class="originale" lang="en">Chemical paste</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-pasta-t var-pasta-d" class="mini-svg"><title id="var-pasta-t">Pasta chimica</title><desc id="var-pasta-d">Per materiali molto spessi o superfici 3D: dopo la maschera, invece degli ugelli si stende una pasta che ha un effetto simile.</desc><defs>
+  <pattern id="var-pasta-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-pasta-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-pasta-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-pasta-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M20,100 Q110,30 200,100 Z" class="m-grezzo contorno"/>
+    <path d="M70,72 Q110,48 150,72" fill="none" style="stroke:var(--fuso)" stroke-width="6" stroke-linecap="round"/></svg></div><p>Per pezzi spessi o superfici 3D. <span class="pag">(p. 394)</span></p></article>
+<article class="card"><h3>Vetro e ceramica</h3><p class="originale" lang="en">Glass, mirror, porcelain</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-vetro-t var-vetro-d" class="mini-svg"><title id="var-vetro-t">Vetro e ceramica</title><desc id="var-vetro-d">Si incidono anche vetro, specchio, porcellana e ceramica, con film fotosensibili e prodotti chimici diversi.</desc><defs>
+  <pattern id="var-vetro-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-vetro-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-vetro-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-vetro-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="20" y="40" width="180" height="60" fill="#cfe3ea" class="contorno"/>
+    <rect x="40" y="40" width="20" height="8" fill="#f4f7f8"/><rect x="80" y="40" width="20" height="8" fill="#f4f7f8"/><rect x="120" y="40" width="20" height="8" fill="#f4f7f8"/><rect x="160" y="40" width="20" height="8" fill="#f4f7f8"/></svg></div><p>Con film e prodotti chimici diversi. <span class="pag">(p. 394)</span></p></article>
+<article class="card"><h3>Più livelli e mezzetinte</h3><p class="originale" lang="en">Multiple layers, halftone</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-strati-t var-strati-d" class="mini-svg"><title id="var-strati-t">Più livelli e mezzetinte</title><desc id="var-strati-d">Mascherature ripetute danno più livelli di profondità (ma più tempo); anche immagini a mezzatinta con retino visibile.</desc><defs>
+  <pattern id="var-strati-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-strati-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-strati-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-strati-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="20" y="50" width="180" height="50" class="m-grezzo contorno"/>
+    <rect x="50" y="50" width="120" height="10" fill="#eef1f4"/><rect x="80" y="60" width="60" height="10" fill="#eef1f4"/></svg></div><p>Mascherature ripetute; retino visibile. <span class="pag">(p. 392)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="fresatura-fotochimica.html">Fresatura fotochimica</a> – stesso principio, fino al taglio passante <span class="pag">(p. 392)</span></li><li><a href="sabbiatura.html">Sabbiatura</a> – effetto simile <span class="pag">(p. 392)</span></li><li><a href="incisione-cnc.html">Incisione CNC</a> – alternativa che scalda il pezzo <span class="pag">(p. 392)</span></li><li><a href="taglio-laser.html">Taglio laser</a> – alternativa che scalda il pezzo <span class="pag">(p. 392)</span></li><li><a href="stampaggio-immersione.html">Stampaggio per immersione</a> – un modo per applicare il film <span class="pag">(p. 393)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 392–395.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/incisione-fotochimica.js"></script>
+</body>
+</html>

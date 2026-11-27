@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Profilatura a rulli – Processi produttivi per il design</title>
+<meta name="description" content="Un nastro di lamiera svolto da un coil passa a freddo attraverso una serie di rulli, ognuno dei quali lo piega un po' di più: si producono in continuo angolari, canali, pannelli nervati e profili di qualsiasi lunghezza.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 1 – Formatura › Metalli</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Profilatura a rulli</h1>
+  <p class="originale" lang="en">Roll Forming</p>
+  <p class="categoria">Parte 1 – Formatura · Metalli</p>
+  <p class="sintesi">Un nastro di lamiera svolto da un coil passa a freddo attraverso una serie di rulli, ognuno dei quali lo piega un po' di più: si producono in continuo angolari, canali, pannelli nervati e profili di qualsiasi lunghezza.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="2000,2400,2400,2000">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="profilatura-rulli" data-alt="Modello 3D di una linea di profilatura. Un nastro di acciaio esce dal coil e avanza fra quattro coppie di rulli che girano. A ogni stazione un lato del nastro si alza un po' di più, finché alla fine forma un angolare a 90 gradi. In fondo una lama taglia il profilo, che diventa verde e scorre via.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Svolgimento dal coil<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Prime stazioni<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Stazioni finali<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Taglio a misura<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Svolgimento dal coil</b>Il nastro viene svolto dal coil e tirato nella linea; la tensione è mantenuta da una pressione sul coil. <span class="pag">(p. 111–112)</span></li>
+    <li><b>Fase 2 – Prime stazioni</b>Ogni coppia di rulli è sagomata per piegare il nastro un po' più della precedente: la piega si forma gradualmente lungo diversi metri. <span class="pag">(p. 111)</span></li>
+    <li><b>Fase 3 – Stazioni finali</b>Le ultime stazioni completano l'angolo; nel caso studio servono 8 stazioni per una sola piega. <span class="pag">(p. 111–112)</span></li>
+    <li><b>Fase 4 – Taglio a misura</b>Il profilo esce da una matrice che ne garantisce le dimensioni e viene tagliato a misura mentre si forma. <span class="pag">(p. 110, 112)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una linea di profilatura. Un nastro di acciaio esce dal coil e avanza fra quattro coppie di rulli che girano. A ogni stazione un lato del nastro si alza un po' di più, finché alla fine forma un angolare a 90 gradi. In fondo una lama taglia il profilo, che diventa verde e scorre via.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 40 820 300" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Linea di profilatura a rulli vista di lato</title>
+<desc id="sc-d">Vista laterale della linea: a sinistra il coil, poi quattro coppie di rulli progressivi e la cesoia di taglio. Sopra ogni stazione la sezione del profilo mostra l'angolo di piega crescente: 15°, 40°, 65°, 90°.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- coil -->
+<circle cx="110" cy="230" r="56" class="m-grezzo contorno"/><circle cx="110" cy="230" r="16" class="macchina"/>
+<g class="etichetta"><text x="60" y="316" text-anchor="start">Coil di nastro</text></g>
+<!-- nastro che scorre -->
+<line x1="150" y1="200" x2="700" y2="200" stroke="var(--grezzo)" stroke-width="6"/>
+<line x1="150" y1="200" x2="700" y2="200" stroke="#ffffff" stroke-width="2" stroke-dasharray="6 14" data-k="dash:-200,-400,-600,-600" data-i="dash:0"/>
+<!-- stazioni: coppie di rulli -->
+<g>
+  <circle cx="260" cy="174" r="22" fill="url(#sc-tratteggio)" class="contorno"/><circle cx="260" cy="226" r="22" fill="url(#sc-tratteggio)" class="contorno"/>
+  <path data-k="op:0.15,1,1,1" data-i="op:0.15" d="M284,110 H250 L217.2,101.2" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--fuso)"/>
+  <g class="etichetta"><text x="260" y="140" text-anchor="middle">15°</text></g>
+</g><g>
+  <circle cx="360" cy="174" r="22" fill="url(#sc-tratteggio)" class="contorno"/><circle cx="360" cy="226" r="22" fill="url(#sc-tratteggio)" class="contorno"/>
+  <path data-k="op:0.15,1,1,1" data-i="op:0.15" d="M384,110 H350 L324.0,88.1" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--fuso)"/>
+  <g class="etichetta"><text x="360" y="140" text-anchor="middle">40°</text></g>
+</g><g>
+  <circle cx="460" cy="174" r="22" fill="url(#sc-tratteggio)" class="contorno"/><circle cx="460" cy="226" r="22" fill="url(#sc-tratteggio)" class="contorno"/>
+  <path data-k="op:0.15,0.15,1,1" data-i="op:0.15" d="M484,110 H450 L435.6,79.2" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--fuso)"/>
+  <g class="etichetta"><text x="460" y="140" text-anchor="middle">65°</text></g>
+</g><g>
+  <circle cx="560" cy="174" r="22" fill="url(#sc-tratteggio)" class="contorno"/><circle cx="560" cy="226" r="22" fill="url(#sc-tratteggio)" class="contorno"/>
+  <path data-k="op:0.15,0.15,1,1" data-i="op:0.15" d="M584,110 H550 L550.0,76.0" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--fuso)"/>
+  <g class="etichetta"><text x="560" y="140" text-anchor="middle">90°</text></g>
+</g>
+<g class="etichetta"><text x="240" y="290" text-anchor="start">Stazioni di rulli progressivi (di solito 8 o più)</text></g>
+<g class="etichetta"><text x="240" y="62" text-anchor="start">sezione del profilo a ogni stazione</text></g>
+
+<!-- taglio a misura -->
+<g data-k="ty:0,0,0,22" data-i="ty:0"><rect x="640" y="150" width="14" height="40" class="scuro"/></g>
+<g class="etichetta"><text x="620" y="136" text-anchor="start">Taglio a misura</text></g>
+<g data-k="tx:0,0,0,80;op:0,0,0,1" data-i="op:0">
+  <path d="M734,250 H700 L700.0,216.0" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--finito)"/>
+  <line x1="660" y1="200" x2="760" y2="200" stroke="var(--finito)" stroke-width="6"/>
+</g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>La profilatura è a freddo e continua: il nastro arriva di solito da un coil, ma si possono formare anche fogli già tagliati. <span class="pag">(p. 110–111)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>I rulli, fissi, sono in acciaio temprato e lucidato a specchio, accoppiati con precisione; acqua di raffreddamento e lubrificanti riducono l'usura. <span class="pag">(p. 111)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>Fori, nervature e altri dettagli si eseguono durante la stessa corsa; i fori non critici si fanno prima, sul nastro piano. <span class="pag">(p. 110–111)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>La lavorazione a freddo migliora l'orientamento della grana e quindi la resistenza dell'acciaio. <span class="pag">(p. 110)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Quasi tutti i metalli; soprattutto quelli difficili da estrudere: acciaio inossidabile, al carbonio e zincato. <span class="pag">(p. 112)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Serie di almeno 1500 m di profilo; molti profili standard sono già disponibili. <span class="pag">(p. 110–111)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Alto per gli utensili su misura, simile agli stampi progressivi dello stampaggio; cambio e preparazione costosi. <span class="pag">(p. 110–112)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Da basso a moderato; gli utensili speciali lo aumentano molto. <span class="pag">(p. 110, 112)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Molto rapido: fino a 1,25 m al secondo, cioè fino a 4500 m all'ora per i profili semplici. Cambi lunghi. <span class="pag">(p. 110, 112)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>I rulli non alterano la finitura superficiale del metallo. <span class="pag">(p. 110)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Passo preciso fra 0,125 e 0,25 mm. Precisione angolare: <span class="nd">n.d.</span> <span class="pag">(p. 110)</span><span class="nota-ocr">Precisione degli angoli: <span class="nd">n.d.</span> (OCR &quot;+10&quot;)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Nastro largo di norma fino a 0,5 m (con più rulli affiancati fino a 1,4 m), spesso 0,5–5 mm; lunghezze di solito fino a 20 m per la movimentazione. <span class="pag">(p. 110–112)</span><span class="nota-ocr">Lunghezza minima: il libro scrive 0.02 m ma la conversione (7.87 in) corrisponde a 0,2 m.</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Raggio di piega almeno pari allo spessore</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-raggio-ok-t v-raggio-ok-d" class="mini-svg"><title id="v-raggio-ok-t">Corretto: Raggio di piega ≥ spessore</title><desc id="v-raggio-ok-d">Le pieghe hanno un raggio uguale o maggiore dello spessore del materiale.</desc><defs>
+  <pattern id="v-raggio-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-raggio-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-raggio-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-raggio-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,100 H70 Q90,100 90,80 V20" fill="none" stroke-width="8" stroke-linejoin="round" style="stroke:var(--finito)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-raggio-ko-t v-raggio-ko-d" class="mini-svg"><title id="v-raggio-ko-t">Da evitare: Piega a spigolo vivo</title><desc id="v-raggio-ko-d">Un raggio inferiore allo spessore non si ottiene a rulli.</desc><defs>
+  <pattern id="v-raggio-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-raggio-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-raggio-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-raggio-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,100 H90 V20" fill="none" stroke-width="8" stroke-linejoin="round" style="stroke:var(--finito)"/><circle cx="90" cy="100" r="11" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Le pieghe si fanno solo lungo la direzione della linea e hanno un raggio uguale o maggiore dello spessore. <span class="pag">(p. 111)</span></p></article>
+<article class="card"><h3>Pieghe ad almeno 3 spessori dal bordo</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-bordo-ok-t v-bordo-ok-d" class="mini-svg"><title id="v-bordo-ok-t">Corretto: Piega ad almeno 3 spessori dal bordo</title><desc id="v-bordo-ok-d">Lontano dal bordo del nastro la piega si forma correttamente.</desc><defs>
+  <pattern id="v-bordo-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-bordo-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-bordo-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-bordo-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,40 H110 V100" fill="none" stroke-width="6" stroke-linejoin="round" style="stroke:var(--finito)"/><g class="etichetta"><text x="116" y="80" text-anchor="start">≥ 3 s</text></g></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-bordo-ko-t v-bordo-ko-d" class="mini-svg"><title id="v-bordo-ko-t">Da evitare: Piega troppo vicina al bordo</title><desc id="v-bordo-ko-d">Troppo vicino al bordo la piega può non formarsi.</desc><defs>
+  <pattern id="v-bordo-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-bordo-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-bordo-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-bordo-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,40 H135 V50" fill="none" stroke-width="6" stroke-linejoin="round" style="stroke:var(--finito)"/><circle cx="135" cy="44" r="10" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Più vicino al bordo del nastro può non essere possibile formare la piega. La profondità della sezione va contenuta entro l'apertura del rullo. <span class="pag">(p. 111–112)</span></p></article>
+<article class="card"><h3>Preferire profili simmetrici</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-simmetria-ok-t v-simmetria-ok-d" class="mini-svg"><title id="v-simmetria-ok-t">Corretto: Profilo simmetrico</title><desc id="v-simmetria-ok-d">I rulli premono in modo uniforme: i profili simmetrici sono più semplici e meno soggetti a incurvarsi.</desc><defs>
+  <pattern id="v-simmetria-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-simmetria-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-simmetria-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-simmetria-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,30 V90 H140 V30" fill="none" stroke-width="6" stroke-linejoin="round" style="stroke:var(--finito)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-simmetria-ko-t v-simmetria-ko-d" class="mini-svg"><title id="v-simmetria-ko-t">Da evitare: Profilo molto asimmetrico</title><desc id="v-simmetria-ko-d">Un profilo sbilanciato tende a incurvarsi o a imbarcarsi lungo la lunghezza.</desc><defs>
+  <pattern id="v-simmetria-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-simmetria-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-simmetria-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-simmetria-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,60 V90 H140 V10" fill="none" stroke-width="6" stroke-linejoin="round" style="stroke:var(--finito)"/><path d="M150,15 Q160,60 150,105" fill="none" stroke="var(--ko)" stroke-width="2" stroke-dasharray="4 3"/></svg><figcaption>Da evitare</figcaption></figure></div><p>I rulli applicano una pressione uniforme: i profili simmetrici sono più semplici e meno soggetti a incurvarsi o imbarcarsi. <span class="pag">(p. 111)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Il libro non elenca varianti di questo processo. Qui sotto le possibilità descritte nel testo.</p><div class="griglia-card"><article class="card"><h3>Profili complessi</h3><p class="originale" lang="en">Complex profiles</p><div class="variante-schema"><svg viewBox="0 0 220 130" role="img" aria-labelledby="var-complessi-t var-complessi-d" class="mini-svg"><title id="var-complessi-t">Profili complessi</title><desc id="var-complessi-d">Con più stazioni in sequenza si ottengono sottosquadri (angoli ciechi), pieghe strette e orli ripiegati.</desc><defs>
+  <pattern id="var-complessi-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-complessi-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-complessi-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-complessi-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M30,100 V40 H90 V70 H70 V60" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--finito)"/><path d="M120,100 V40 H190 V52 H176" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--finito)"/>
+    <g class="etichetta"><text x="110" y="122" text-anchor="middle">angolo cieco · orlo</text></g></svg></div><p>Con più rulli in sequenza si formano sottosquadri (angoli ciechi non raggiungibili direttamente dai rulli), pieghe strette e orli, anche asimmetrici, su pezzi a parete sottile. <span class="pag">(p. 110, 112)</span></p></article>
+<article class="card"><h3>Profili chiusi saldati</h3><p class="originale" lang="en">Seam-welded box sections</p><div class="variante-schema"><svg viewBox="0 0 220 130" role="img" aria-labelledby="var-scatolati-t var-scatolati-d" class="mini-svg"><title id="var-scatolati-t">Profili chiusi saldati</title><desc id="var-scatolati-d">Tubi e profili scatolati vengono saldati lungo la giunzione, perché sono formati per mantenere la forma chiusa.</desc><defs>
+  <pattern id="var-scatolati-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-scatolati-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-scatolati-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-scatolati-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="70" y="30" width="80" height="70" fill="none" stroke="var(--finito)" stroke-width="6"/>
+    <line x1="110" y1="22" x2="110" y2="38" stroke="var(--ko)" stroke-width="3"/>
+    <g class="etichetta"><text x="110" y="122" text-anchor="middle">saldatura della giunzione</text></g></svg></div><p>Tubi e profili scatolati ottenuti per profilatura vengono saldati lungo la giunzione. <span class="pag">(p. 110)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="piegatura-pressa.html">Piegatura alla pressa piegatrice</a> – profili continui, ma una piega per operazione <span class="pag">(p. 110)</span></li><li><a href="forgiatura.html">Forgiatura</a> – la laminazione-forgiatura dà profili a spessore variabile <span class="pag">(p. 110)</span></li><li><a href="stampaggio-lamiera.html">Stampaggio della lamiera</a> – per pezzi corti <span class="pag">(p. 110)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 110–113.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/profilatura-rulli.js"></script>
+</body>
+</html>

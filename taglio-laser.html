@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Taglio laser – Processi produttivi per il design</title>
+<meta name="description" content="Un fascio laser concentrato in un punto fonde o vaporizza il materiale lungo un percorso preso dal file CAD: taglia, incide e marca fogli di metallo, plastica, legno, tessuto e altro, senza attrezzature.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 2 – Taglio › Termico</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Taglio laser</h1>
+  <p class="originale" lang="en">Laser Cutting</p>
+  <p class="categoria">Parte 2 – Taglio · Termico</p>
+  <p class="sintesi">Un fascio laser concentrato in un punto fonde o vaporizza il materiale lungo un percorso preso dal file CAD: taglia, incide e marca fogli di metallo, plastica, legno, tessuto e altro, senza attrezzature.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="1800,1800,2600,2600,2600">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="taglio-laser" data-alt="Modello 3D di una macchina laser a portale sopra un foglio di compensato. La testa scende per mettere a fuoco, poi un raggio arancione traccia prima linee chiare in superficie, poi i contorni scuri delle finestre e infine il profilo di una facciata. La facciata ritagliata, verde, si solleva dal foglio lasciando il vuoto.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Carico del foglio<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Messa a fuoco<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Incisione di linee<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Tagli interni<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="5">5. Profilo esterno<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Carico del foglio</b>Il foglio si posa sul piano aspirato; i dati arrivano direttamente dal file CAD, diviso in livelli che fissano la profondità di ogni taglio. <span class="pag">(p. 248, 252)</span></li>
+    <li><b>Fase 2 – Messa a fuoco</b>Specchi fissi portano il fascio all'ugello; la lente lo concentra in un punto e si regola in altezza per metterlo a fuoco sulla superficie. <span class="pag">(p. 249)</span></li>
+    <li><b>Fase 3 – Incisione di linee</b>Nel caso studio la prima passata incide i dettagli di superficie, presi dal livello superiore del file. <span class="pag">(p. 250)</span></li>
+    <li><b>Fase 4 – Tagli interni</b>Poi si tagliano le forme interne: il fascio fonde o vaporizza il materiale e il gas di assistenza soffia via i residui dal solco. <span class="pag">(p. 249–250)</span></li>
+    <li><b>Fase 5 – Profilo esterno</b>Per ultimo il profilo esterno; tutto il lavoro richiede circa 8 minuti e i pezzi si staccano pronti da montare. <span class="pag">(p. 250)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una macchina laser a portale sopra un foglio di compensato. La testa scende per mettere a fuoco, poi un raggio arancione traccia prima linee chiare in superficie, poi i contorni scuri delle finestre e infine il profilo di una facciata. La facciata ritagliata, verde, si solleva dal foglio lasciando il vuoto.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 10 820 300" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Taglio laser su piano aspirato, in sezione</title>
+<desc id="sc-d">Sezione di un foglio sul piano aspirato, con la sorgente laser, lo specchio e l'ugello con la lente. Le fasi mostrano il carico, la messa a fuoco, l'incisione superficiale, il taglio interno passante e il profilo esterno.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- piano aspirato -->
+<rect x="130" y="246" width="560" height="14" class="macchina"/>
+<rect x="140" y="238" width="6" height="8" class="scuro"/><rect x="179" y="238" width="6" height="8" class="scuro"/><rect x="218" y="238" width="6" height="8" class="scuro"/><rect x="257" y="238" width="6" height="8" class="scuro"/><rect x="296" y="238" width="6" height="8" class="scuro"/><rect x="335" y="238" width="6" height="8" class="scuro"/><rect x="374" y="238" width="6" height="8" class="scuro"/><rect x="413" y="238" width="6" height="8" class="scuro"/><rect x="452" y="238" width="6" height="8" class="scuro"/><rect x="491" y="238" width="6" height="8" class="scuro"/><rect x="530" y="238" width="6" height="8" class="scuro"/><rect x="569" y="238" width="6" height="8" class="scuro"/><rect x="608" y="238" width="6" height="8" class="scuro"/><rect x="647" y="238" width="6" height="8" class="scuro"/>
+<g class="etichetta"><text x="700" y="258" text-anchor="start">Piano aspirato</text></g>
+
+<!-- foglio: sfondo, parte che si stacca -->
+<g data-k="ty:0,0,0,0,0" data-i="ty:-60"><rect x="140" y="222" width="540" height="16" class="m-grezzo contorno"/></g>
+<rect x="268" y="222" width="10" height="5" fill="#eef1f4" data-k="op:0,0,1,1,1" data-i="op:0"/>
+<rect x="392" y="222" width="6" height="16" fill="#eef1f4" data-k="op:0,0,0,1,1" data-i="op:0"/>
+<g data-k="op:0,0,0,0,1" data-i="op:0"><rect x="216" y="222" width="6" height="16" fill="#eef1f4"/><rect x="560" y="222" width="6" height="16" fill="#eef1f4"/></g>
+<g data-k="op:0,0,0,0,1" data-i="op:0"><g class="etichetta"><text x="300" y="290" text-anchor="start">tagli perpendicolari, bordo lucido, solco stretto</text></g></g>
+<g class="etichetta"><line x1="150" y1="226" x2="20" y2="209" class="richiamo"/><text x="20" y="214" text-anchor="start">Foglio (0,2–40 mm)</text></g>
+
+<!-- testa: specchio, lente, ugello con gas di assistenza -->
+<rect x="40" y="40" width="80" height="34" class="macchina"/>
+<g class="etichetta"><text x="30" y="30" text-anchor="start">Sorgente laser</text></g>
+<g data-k="tx:0,0,0,120,290" data-i="tx:0">
+  <line x1="120" y1="57" x2="262" y2="57" stroke="var(--fuso)" stroke-width="3" data-k="op:0,1,1,1,1" data-i="op:0"/>
+  <rect x="256" y="44" width="28" height="26" class="m-stampo contorno" transform="rotate(45 270 57)"/>
+  <g data-k="ty:0,40,40,40,40" data-i="ty:0">
+    <path d="M250,90 H290 V140 L278,170 H262 L250,140 Z" class="m-stampo contorno"/>
+    <ellipse cx="270" cy="112" rx="18" ry="5" style="fill:var(--flusso)" opacity="0.6"/>
+    <path d="M262,57 V112 L270,180 L278,112 V57" style="fill:var(--fuso)" fill-opacity="0.55" data-k="op:0,1,1,1,1" data-i="op:0"/>
+  </g>
+</g>
+<g class="etichetta"><text x="400" y="26" text-anchor="start">Specchio, lente e ugello con gas di assistenza</text></g>
+
+<g data-k="op:0,1,0,0,0"><line x1="310" y1="110" x2="310" y2="150" class="flusso-linea" marker-end="url(#sc-punta)"/><g class="etichetta"><text x="330" y="140" text-anchor="start">la lente si alza o abbassa per mettere a fuoco sulla superficie</text></g></g>
+<g data-k="op:0,0,1,0,0"><g class="etichetta"><text x="330" y="140" text-anchor="start">prima passata, potenza bassa: linee incise in superficie</text></g></g>
+<g data-k="op:0,0,0,1,0"><g class="etichetta"><text x="440" y="140" text-anchor="start">poi i profili interni, a tutto spessore</text></g></g>
+<g data-k="op:0,0,0,0,1"><g class="etichetta"><text x="600" y="140" text-anchor="start">per ultimo il profilo esterno</text></g></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>I due tipi principali di laser sono CO₂ e Nd:YAG. Entrambi concentrano energia termica su un punto, lavorano molto velocemente con tolleranze strette e lasciano un bordo di alta qualità. <span class="pag">(p. 248)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>Diverse operazioni richiedono potenze diverse: circa 150 W bastano per le plastiche, mentre 1–2 kW servono per i metalli, soprattutto per le leghe riflettenti e conduttive. <span class="pag">(p. 248)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>A differenza del taglio a lama il pezzo non subisce sforzi: si ottengono dettagli piccoli e intricati, anche in materiali sottili e delicati. <span class="pag">(p. 248)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="5" aria-label="Mostra la fase 5 nello schema">Fase 5</button>Nel caso studio i pezzi di alluminio non richiedono sbavatura né altri trattamenti, e si dispongono annidati nel foglio per ridurre gli sfridi. <span class="pag">(p. 253)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Legno, impiallacciature, carta e cartone, marmo sintetico, magneti flessibili, tessuti e pile, gomma, alcuni vetri e ceramiche; plastiche come PP, PMMA, PC, PETG, PA, POM, PS e fibra di carbonio; metalli, con gli acciai più facili di alluminio e rame. <span class="pag">(p. 248–249)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Da pezzo unico a grandi serie. <span class="pag">(p. 248)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Nessuno: i dati passano dal CAD alla macchina. <span class="pag">(p. 248–249)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Da medio ad alto; pochissima manodopera, ma servono file CAD adatti. <span class="pag">(p. 248–249)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Rapido, ma dipende dallo spessore: i materiali spessi richiedono molto più tempo. Esempi dei casi studio: PMMA da 3 mm con profilo complesso 12 minuti, foglio di alluminio 8 minuti. <span class="pag">(p. 248–250, 252–253)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Alta; tagli perpendicolari con solco stretto; sui termoplastici il bordo esce lucido e non serve finitura. <span class="pag">(p. 248–250)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Processo di precisione. Tolleranze numeriche: <span class="nd">n.d.</span> <span class="pag">(p. 248)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Fogli da 0,2 a 40 mm, ma gli spessori elevati rallentano molto; nel caso studio acciaio fino a 25 mm e alluminio fino a 5 mm. Area di lavoro: <span class="nd">n.d.</span> <span class="pag">(p. 248, 252)</span><span class="nota-ocr">Diametro del punto focale: <span class="nd">n.d.</span> (OCR &quot;0.1 mm toi mm (0.0004-0.004in.)&quot;, conversione incoerente)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Linee unite e senza doppioni</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-linee-ok-t v-linee-ok-d" class="mini-svg"><title id="v-linee-ok-t">Corretto: Linee unite in un percorso continuo</title><desc id="v-linee-ok-d">Il laser segue le linee da punto a punto: i tratti vanno uniti in polilinee, così il taglio procede senza interruzioni.</desc><defs>
+  <pattern id="v-linee-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-linee-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-linee-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-linee-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,90 L40,30 H120 L140,90 Z" fill="none" stroke-width="4" stroke-linejoin="round" style="stroke:var(--finito)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-linee-ko-t v-linee-ko-d" class="mini-svg"><title id="v-linee-ko-t">Da evitare: Linee spezzate o duplicate</title><desc id="v-linee-ko-d">Una linea doppia viene trattata come un altro taglio e allunga il lavoro; i tratti staccati interrompono il percorso.</desc><defs>
+  <pattern id="v-linee-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-linee-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-linee-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-linee-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,90 L40,30 H120" fill="none" stroke-width="4" stroke-linejoin="round" style="stroke:var(--finito)"/><path d="M124,34 L140,90 H24" fill="none" stroke-width="4" stroke-linejoin="round" style="stroke:var(--finito)"/><path d="M44,34 H116" fill="none" stroke="var(--ko)" stroke-width="2" stroke-dasharray="4 3" transform="translate(0,-6)"/><circle cx="122" cy="32" r="10" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Il laser segue vettori da punto a punto: le linee vanno unite in un percorso continuo; quelle duplicate vengono tagliate due volte e allungano il lavoro. Formati compatibili: .DXF e .DWG. <span class="pag">(p. 248)</span></p></article>
+<article class="card"><h3>Profondità non oltre la larghezza</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-profondita-ok-t v-profondita-ok-d" class="mini-svg"><title id="v-profondita-ok-t">Corretto: Incisione meno profonda che larga</title><desc id="v-profondita-ok-d">Le incisioni raster arrivano a circa 40 µm; un canale profondo resta pulito finché la profondità non supera la larghezza.</desc><defs>
+  <pattern id="v-profondita-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-profondita-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-profondita-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-profondita-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="50" width="120" height="40" class="m-grezzo contorno"/><rect x="60" y="50" width="40" height="14" fill="#eef1f4"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-profondita-ko-t v-profondita-ko-d" class="mini-svg"><title id="v-profondita-ko-t">Da evitare: Canale più profondo che largo</title><desc id="v-profondita-ko-d">Il materiale non riesce a uscire e il bordo del taglio viene di cattiva qualità.</desc><defs>
+  <pattern id="v-profondita-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-profondita-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-profondita-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-profondita-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="40" width="120" height="60" class="m-grezzo contorno"/><rect x="72" y="40" width="16" height="48" fill="#eef1f4"/><circle cx="80" cy="80" r="14" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Con laser più potenti si incidono canali profondi, ma se la profondità supera la larghezza il materiale non esce bene e il bordo peggiora. <span class="pag">(p. 250)</span></p></article>
+<article class="card"><h3>Attenzione ai metalli riflettenti</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-riflessione-ok-t v-riflessione-ok-d" class="mini-svg"><title id="v-riflessione-ok-t">Corretto: Acciaio e materiali poco riflettenti</title><desc id="v-riflessione-ok-d">Gli acciai si tagliano meglio di alluminio e rame, che riflettono luce ed energia termica.</desc><defs>
+  <pattern id="v-riflessione-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-riflessione-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-riflessione-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-riflessione-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="70" width="120" height="16" class="m-stampo contorno"/><line x1="80" y1="10" x2="80" y2="66" class="flusso-linea" marker-end="url(#v-riflessione-ok-punta)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-riflessione-ko-t v-riflessione-ko-d" class="mini-svg"><title id="v-riflessione-ko-t">Da evitare: Leghe molto riflettenti</title><desc id="v-riflessione-ko-d">Alluminio e rame richiedono laser potenti (1–2 kW) e l'alluminio lascia una zona termicamente alterata più ampia.</desc><defs>
+  <pattern id="v-riflessione-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-riflessione-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-riflessione-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-riflessione-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="70" width="120" height="16" class="m-stampo contorno"/><line x1="70" y1="10" x2="80" y2="64" class="flusso-linea" marker-end="url(#v-riflessione-ko-punta)"/><path d="M80,66 L120,14" fill="none" stroke="var(--ko)" stroke-width="2.5" stroke-dasharray="5 3"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Gli acciai si tagliano meglio di alluminio e rame, che riflettono luce e calore; l'alluminio produce una zona termicamente alterata più ampia. <span class="pag">(p. 248–249, 252)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>I due tipi di laser descritti nel capitolo e l'incisione raster del caso studio.</p><div class="griglia-card"><article class="card"><h3>Laser CO₂</h3><p class="originale" lang="en">CO2 laser</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-co2-t var-co2-d" class="mini-svg"><title id="var-co2-t">Laser CO₂</title><desc id="var-co2-d">Lunghezza d'onda infrarossa di 10 µm; con 150 W è adatto alle plastiche, che lascia con il bordo lucido. Il fascio arriva all'ugello con specchi fissi.</desc><defs>
+  <pattern id="var-co2-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-co2-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-co2-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-co2-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="20" y="20" width="60" height="26" class="macchina"/><line x1="80" y1="33" x2="150" y2="33" stroke="var(--fuso)" stroke-width="3"/>
+    <rect x="144" y="22" width="20" height="20" class="m-stampo contorno" transform="rotate(45 154 32)"/>
+    <line x1="154" y1="42" x2="154" y2="96" stroke="var(--fuso)" stroke-width="3"/><rect x="40" y="98" width="160" height="10" class="m-grezzo contorno"/></svg></div><p>Infrarosso a 10 µm; guidato all'ugello da specchi fissi. <span class="pag">(p. 248–249)</span></p></article>
+<article class="card"><h3>Laser Nd:YAG</h3><p class="originale" lang="en">Nd:YAG laser</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-ndyag-t var-ndyag-d" class="mini-svg"><title id="var-ndyag-t">Laser Nd:YAG</title><desc id="var-ndyag-d">Lunghezza d'onda di 1 µm, più versatile: il fascio può viaggiare in fibra ottica flessibile, così la testa ruota e taglia su 5 assi.</desc><defs>
+  <pattern id="var-ndyag-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-ndyag-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-ndyag-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-ndyag-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M20,30 Q90,10 120,60 Q140,90 150,70" fill="none" stroke="var(--fuso)" stroke-width="4"/>
+    <rect x="140" y="52" width="24" height="30" class="m-stampo contorno" transform="rotate(-30 152 67)"/>
+    <path d="M40,110 Q110,60 200,110" fill="none" stroke="var(--grezzo)" stroke-width="10"/></svg></div><p>Infrarosso a 1 µm, più versatile; può viaggiare in fibra ottica e tagliare su 5 assi. <span class="pag">(p. 248–249)</span></p></article>
+<article class="card"><h3>Incisione raster</h3><p class="originale" lang="en">Raster engraving</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-raster-t var-raster-d" class="mini-svg"><title id="var-raster-t">Incisione raster</title><desc id="var-raster-d">Con una piccola parte della potenza il laser incide loghi, immagini e testi, fino a circa 40 µm; per esempio scopre l'alluminio sotto l'anodizzazione.</desc><defs>
+  <pattern id="var-raster-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-raster-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-raster-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-raster-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="20" y="40" width="180" height="50" class="m-finito contorno"/>
+    <line x1="60" y1="50" x2="120" y2="50" stroke="#d9dde2" stroke-width="3"/><line x1="60" y1="56" x2="140" y2="56" stroke="#d9dde2" stroke-width="3"/><line x1="60" y1="62" x2="160" y2="62" stroke="#d9dde2" stroke-width="3"/><line x1="60" y1="68" x2="120" y2="68" stroke="#d9dde2" stroke-width="3"/><line x1="60" y1="74" x2="140" y2="74" stroke="#d9dde2" stroke-width="3"/><line x1="60" y1="80" x2="160" y2="80" stroke="#d9dde2" stroke-width="3"/></svg></div><p>Con poca potenza incide loghi, immagini e testi fino a circa 40 µm; richiede più tempo di un taglio semplice. <span class="pag">(p. 248, 250)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="lavorazione-cnc.html">Lavorazione CNC</a> – stesso effetto in alcuni materiali <span class="pag">(p. 248)</span></li><li><a href="taglio-getto-acqua.html">Taglio a getto d'acqua</a> – stesso effetto in alcuni materiali <span class="pag">(p. 248)</span></li><li><a href="punzonatura-tranciatura.html">Punzonatura e tranciatura</a> – stesso effetto in alcuni materiali <span class="pag">(p. 248)</span></li><li><a href="incisione-cnc.html">Incisione CNC</a> – alternativa per incidere <span class="pag">(p. 248)</span></li><li><a href="incisione-fotochimica.html">Incisione fotochimica</a> – alternativa per incidere <span class="pag">(p. 248)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 248–253.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/taglio-laser.js"></script>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saldatura a ultrasuoni – Processi produttivi per il design</title>
+<meta name="description" content="Vibrazioni ad alta frequenza attraversano il pezzo e fondono per attrito il giunto fra due parti di plastica in meno di un secondo: è il processo di saldatura delle plastiche più rapido ed economico.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 3 – Giunzione › Termico</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Saldatura a ultrasuoni</h1>
+  <p class="originale" lang="en">Ultrasonic Welding</p>
+  <p class="categoria">Parte 3 – Giunzione · Termico</p>
+  <p class="sintesi">Vibrazioni ad alta frequenza attraversano il pezzo e fondono per attrito il giunto fra due parti di plastica in meno di un secondo: è il processo di saldatura delle plastiche più rapido ed economico.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="1800,1800,2400,1800">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="saldatura-ultrasuoni" data-alt="Modello 3D di una saldatrice a ultrasuoni a colonna. In alto il convertitore, un anello blu del booster e il sonotrodo d'alluminio; sotto, un'incudine con una piccola girante di plastica e il suo coperchio appoggiato. Il sonotrodo scende, vibra e il bordo fra coperchio e girante si illumina d'arancione; poi la vibrazione si ferma, il giunto diventa verde e il sonotrodo risale.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Posizionamento<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Contatto<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Vibrazione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Mantenimento<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Posizionamento</b>Il pezzo inferiore va nell'incudine che lo sostiene; quello superiore si appoggia sopra e si centra da solo. <span class="pag">(p. 306)</span></li>
+    <li><b>Fase 2 – Contatto</b>Il sonotrodo scende sul pezzo e lo preme: convertitore, booster e sonotrodo sono avvitati insieme su una colonna verticale. <span class="pag">(p. 304–306)</span></li>
+    <li><b>Fase 3 – Vibrazione</b>I dischi piezoelettrici trasformano l'elettricità in vibrazioni (di solito 20 kHz) con il 95% di efficienza; il pezzo le trasmette al giunto, dove l'attrito plastifica il materiale in meno di un secondo. <span class="pag">(p. 304–306)</span></li>
+    <li><b>Fase 4 – Mantenimento</b>Le vibrazioni si fermano, la pressione mescola il materiale all'interfaccia, che solidifica in un legame forte e omogeneo. <span class="pag">(p. 305)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una saldatrice a ultrasuoni a colonna. In alto il convertitore, un anello blu del booster e il sonotrodo d'alluminio; sotto, un'incudine con una piccola girante di plastica e il suo coperchio appoggiato. Il sonotrodo scende, vibra e il bordo fra coperchio e girante si illumina d'arancione; poi la vibrazione si ferma, il giunto diventa verde e il sonotrodo risale.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 10 820 360" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Saldatura a ultrasuoni con direttore di energia, in sezione</title>
+<desc id="sc-d">Sezione di due pezzi di plastica sovrapposti fra il sonotrodo e l'incudine; il pezzo superiore ha una nervatura triangolare. Le fasi mostrano il posizionamento, il contatto del sonotrodo, la vibrazione che fonde la nervatura e il mantenimento sotto pressione.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- incudine con il pezzo inferiore -->
+<path d="M220,250 H600 V320 H220 Z" fill="url(#sc-tratteggio)" class="contorno"/>
+<rect x="260" y="226" width="300" height="24" class="m-grezzo contorno"/>
+<g class="etichetta"><text x="610" y="300" text-anchor="start">Incudine e pezzo inferiore</text></g>
+<!-- pezzo superiore con il direttore di energia (triangolo) -->
+<g data-k="ty:0,0,8,8" data-i="ty:-30">
+  <rect x="260" y="190" width="300" height="24" class="m-grezzo contorno"/>
+  <path d="M396,214 L410,226 L424,214 Z" class="m-grezzo contorno" data-k="sy:1,1,0.1,0.1" data-i="sy:1" data-o="410,214"/>
+</g>
+<g class="etichetta"><line x1="400" y1="220" x2="20" y2="175" class="richiamo"/><text x="20" y="180" text-anchor="start">Direttore di energia: nervatura triangolare stampata</text></g>
+<!-- zona fusa e piccola bava -->
+<rect x="380" y="220" width="60" height="8" style="fill:var(--fuso)" data-k="op:0,0,1,0" data-i="op:0"/>
+<rect x="380" y="220" width="60" height="8" style="fill:var(--finito)" data-k="op:0,0,0,1" data-i="op:0"/>
+<!-- convertitore, booster, sonotrodo -->
+<g data-k="ty:-60,0,8,8;vy:0,0,3,0" data-i="ty:-90;vy:0">
+  <rect x="370" y="20" width="80" height="50" class="macchina"/>
+  <rect x="380" y="70" width="60" height="30" fill="#5b8fd1" class="contorno"/>
+  <path d="M376,100 H444 L434,186 H386 Z" class="m-stampo contorno"/>
+</g>
+<g class="etichetta"><text x="470" y="46" text-anchor="start">Convertitore piezoelettrico, booster e sonotrodo</text></g>
+<g data-k="op:0,1,1,1"><line x1="470" y1="120" x2="470" y2="170" class="flusso-linea" marker-end="url(#sc-punta)"/></g>
+<g data-k="op:0,0,1,0"><g class="etichetta"><text x="20" y="350" text-anchor="start">vibrazioni a 15–40 kHz: l'attrito fonde il direttore in meno di 1 s</text></g></g>
+<g data-k="op:0,0,0,1"><g class="etichetta"><text x="20" y="350" text-anchor="start">le vibrazioni si fermano, la pressione resta: giunto omogeneo</text></g></g>
+<g data-k="op:1,0,0,0"><g class="etichetta"><text x="20" y="350" text-anchor="start">il pezzo superiore si centra da solo su quello inferiore</text></g></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>La tecnologia a ultrasuoni comprende saldatura, ricalcatura, ribaditura, inserimento, saldatura a punti, taglio e sigillatura di tessuti e film; la saldatura è la più usata. <span class="pag">(p. 302)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>Il booster adatta l'ampiezza delle vibrazioni; il sonotrodo deve risuonare alla frequenza giusta, quindi forma e dimensioni sono limitate (in genere non oltre 300 mm). <span class="pag">(p. 304)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>Il materiale deve essere abbastanza rigido da trasmettere le vibrazioni: gli amorfi le smorzano meno e si saldano anche lontano dal sonotrodo, i semicristallini solo vicino. <span class="pag">(p. 304)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Non servono riempitivi, non c'è scarto né contaminazione: adatto a giocattoli, prodotti medicali e alimentari. Si eliminano viti e adesivi. <span class="pag">(p. 302, 304)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Tutti i termoplastici: amorfi come ABS, PMMA, PC e PS con se stessi e talvolta fra loro; semicristallini come PA, CA, POM, PET, PE e PP solo con se stessi. Anche tessuti e non tessuti termoplastici, compositi, carta patinata e, con tecniche speciali, alcuni metalli. <span class="pag">(p. 304)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Lotti e produzione di massa. <span class="pag">(p. 302)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Basso, anche se i sonotrodi sono in alluminio aeronautico o titanio e vanno fatti per ogni applicazione. <span class="pag">(p. 302, 304–306)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Basso; manodopera bassa, cambio attrezzatura rapido. <span class="pag">(p. 302, 304)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Molto rapido: saldatura in meno di 1 secondo; le linee automatiche e continue fanno più saldature al secondo. <span class="pag">(p. 302, 304)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Legame permanente di alta qualità, anche ermetico; poca bava. <span class="pag">(p. 302)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Processo molto ripetibile e controllabile. Tolleranze numeriche: <span class="nd">n.d.</span> <span class="pag">(p. 302, 304)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Sonotrodi in genere fino a 300 mm; giunti più lunghi in più passi, con più teste o in continuo. <span class="pag">(p. 304)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Progettare il giunto</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-direttore-ok-t v-direttore-ok-d" class="mini-svg"><title id="v-direttore-ok-t">Corretto: Direttore di energia o giunto a taglio</title><desc id="v-direttore-ok-d">Il contatto ridotto concentra l'energia: direttore triangolare per i materiali amorfi, giunto a taglio per i semicristallini. Meno energia, meno bava, ciclo più breve.</desc><defs>
+  <pattern id="v-direttore-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-direttore-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-direttore-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-direttore-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="40" width="120" height="20" class="m-grezzo contorno"/><path d="M70,60 L80,72 L90,60 Z" class="m-grezzo contorno"/><rect x="20" y="72" width="120" height="20" class="m-grezzo contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-direttore-ko-t v-direttore-ko-d" class="mini-svg"><title id="v-direttore-ko-t">Da evitare: Superfici piatte a contatto</title><desc id="v-direttore-ko-d">Due facce piane accostate disperdono l'energia: giunto più debole e saldatura più lenta (va bene solo per sovrapposizioni semplici, come i tubetti).</desc><defs>
+  <pattern id="v-direttore-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-direttore-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-direttore-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-direttore-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="40" width="120" height="20" class="m-grezzo contorno"/><rect x="20" y="60" width="120" height="20" class="m-grezzo contorno"/><circle cx="80" cy="60" r="16" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Tre tipi di giunto: sovrapposizione semplice (il più debole), direttore di energia e giunto a taglio. Direttore e giunto a taglio riducono il contatto e concentrano l'energia: il primo per gli amorfi, il secondo per i semicristallini. <span class="pag">(p. 303–304)</span></p></article>
+<article class="card"><h3>Distanza dal sonotrodo</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-distanza-ok-t v-distanza-ok-d" class="mini-svg"><title id="v-distanza-ok-t">Corretto: Giunto vicino al sonotrodo</title><desc id="v-distanza-ok-d">I materiali semicristallini e i pezzi poco rigidi smorzano le vibrazioni: il giunto deve stare entro 5 mm dal punto di contatto.</desc><defs>
+  <pattern id="v-distanza-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-distanza-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-distanza-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-distanza-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="60" y="10" width="40" height="30" class="m-stampo contorno"/><rect x="20" y="40" width="120" height="16" class="m-grezzo contorno"/><rect x="20" y="56" width="120" height="16" class="m-grezzo contorno"/><g class="etichetta"><text x="104" y="34" text-anchor="start">≤ 5 mm</text></g></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-distanza-ko-t v-distanza-ko-d" class="mini-svg"><title id="v-distanza-ko-t">Da evitare: Giunto lontano in un pezzo cedevole</title><desc id="v-distanza-ko-d">In un materiale che smorza, l'energia non arriva a un giunto lontano dal sonotrodo.</desc><defs>
+  <pattern id="v-distanza-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-distanza-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-distanza-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-distanza-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="60" y="10" width="40" height="20" class="m-stampo contorno"/><path d="M20,30 H140 V100 H20 Z" class="m-grezzo contorno"/><line x1="20" y1="94" x2="140" y2="94" stroke="var(--testo)"/><circle cx="80" cy="94" r="14" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Gli amorfi si saldano anche oltre 5 mm dal punto di contatto; semicristallini e pezzi poco rigidi devono avere il giunto entro 5 mm. <span class="pag">(p. 304)</span></p></article>
+<article class="card"><h3>Nascondere la bava</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-bava-ok-t v-bava-ok-d" class="mini-svg"><title id="v-bava-ok-t">Corretto: Bava nascosta o raccolta</title><desc id="v-bava-ok-d">Si forma un po' di bava: si riduce nascondendo il giunto o prevedendo vani che la raccolgano.</desc><defs>
+  <pattern id="v-bava-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-bava-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-bava-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-bava-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,40 H140 V60 H90 V76 H70 V60 H20 Z" class="m-grezzo contorno"/><path d="M60,76 H100 V96 H60 Z" class="m-grezzo contorno"/><rect x="66" y="70" width="6" height="6" style="fill:var(--finito)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-bava-ko-t v-bava-ko-d" class="mini-svg"><title id="v-bava-ko-t">Da evitare: Bava sul lato in vista</title><desc id="v-bava-ko-d">Senza accorgimenti la bava esce sulla superficie visibile.</desc><defs>
+  <pattern id="v-bava-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-bava-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-bava-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-bava-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="40" width="120" height="20" class="m-grezzo contorno"/><rect x="20" y="64" width="120" height="20" class="m-grezzo contorno"/><path d="M60,60 h40 v4 h-40 Z M60,60 l-6,2 l6,2 Z" style="fill:var(--ko)"/><circle cx="56" cy="62" r="11" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Si forma un po' di bava: si limita progettando il giunto fuori vista o con vani di raccolta. <span class="pag">(p. 302)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Lo schema principale mostra il giunto con direttore di energia; queste sono altre tecniche descritte nel capitolo.</p><div class="griglia-card"><article class="card"><h3>Giunto a taglio</h3><p class="originale" lang="en">Shear joint</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-taglio-t var-taglio-d" class="mini-svg"><title id="var-taglio-t">Giunto a taglio</title><desc id="var-taglio-d">Un gradino riduce il contatto a una linea sottile; premendo, lo spallamento scende lungo tutto il giunto. È il giunto migliore per i semicristallini.</desc><defs>
+  <pattern id="var-taglio-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-taglio-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-taglio-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-taglio-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M40,30 H180 V54 H150 V80 H70 V54 H40 Z" class="m-grezzo contorno"/>
+    <path d="M60,60 H160 V100 H60 Z" class="m-grezzo contorno"/>
+    <rect x="66" y="56" width="6" height="24" style="fill:var(--fuso)"/><rect x="148" y="56" width="6" height="24" style="fill:var(--fuso)"/></svg></div><p>Gradino che riduce il contatto a una linea; lo spallamento salda tutta l'interfaccia, con finitura pulita. <span class="pag">(p. 303–304, 306)</span></p></article>
+<article class="card"><h3>Inserimento</h3><p class="originale" lang="en">Inserting</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-inserto-t var-inserto-d" class="mini-svg"><title id="var-inserto-t">Inserimento</title><desc id="var-inserto-d">Il sonotrodo spinge un inserto metallico in un foro della plastica, che fonde attorno e lo blocca.</desc><defs>
+  <pattern id="var-inserto-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-inserto-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-inserto-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-inserto-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="40" y="50" width="140" height="60" class="m-grezzo contorno"/>
+    <rect x="96" y="30" width="28" height="56" class="m-stampo contorno"/><rect x="92" y="60" width="36" height="26" style="fill:var(--fuso)" opacity="0.5"/></svg></div><p>Annegamento di componenti metallici nella plastica. <span class="pag">(p. 302, 304)</span></p></article>
+<article class="card"><h3>Saldatura a punti</h3><p class="originale" lang="en">Spot welding</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-punti-t var-punti-d" class="mini-svg"><title id="var-punti-t">Saldatura a punti</title><desc id="var-punti-d">Una punta vibrante attraversa il foglio superiore e salda localmente i due strati, senza fori preparati.</desc><defs>
+  <pattern id="var-punti-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-punti-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-punti-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-punti-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="30" y="56" width="160" height="16" class="m-grezzo contorno"/><rect x="30" y="72" width="160" height="16" class="m-grezzo contorno"/>
+    <path d="M100,10 H120 V52 L110,64 L100,52 Z" class="m-stampo contorno"/><ellipse cx="110" cy="72" rx="12" ry="8" style="fill:var(--fuso)"/></svg></div><p>Saldatura localizzata di due strati sovrapposti. <span class="pag">(p. 302, 304)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="saldatura-piastra-calda.html">Saldatura a piastra calda</a> – alternativa se gli ultrasuoni non bastano <span class="pag">(p. 302)</span></li><li><a href="saldatura-vibrazione.html">Saldatura a vibrazione</a> – alternativa se gli ultrasuoni non bastano <span class="pag">(p. 302)</span></li><li><a href="saldatura-fascio.html">Saldatura a fascio</a> – il laser è un'alternativa <span class="pag">(p. 302)</span></li><li><a href="ribaditura.html">Ribaditura a caldo</a> – anch'essa possibile con gli ultrasuoni <span class="pag">(p. 302)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 302–307.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/saldatura-ultrasuoni.js"></script>
+</body>
+</html>

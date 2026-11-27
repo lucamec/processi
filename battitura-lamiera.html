@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Battitura della lamiera – Processi produttivi per il design</title>
+<meta name="description" content="Un operatore esperto stira e comprime la lamiera a mano, con ruota inglese, sagome e martelli, fino a ottenere curve lisce e superfici ondulate: è il modo di fare prototipi e carrozzerie in piccolissima serie.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 1 – Formatura › Metalli</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Battitura della lamiera</h1>
+  <p class="originale" lang="en">Panel Beating</p>
+  <p class="categoria">Parte 1 – Formatura · Metalli</p>
+  <p class="sintesi">Un operatore esperto stira e comprime la lamiera a mano, con ruota inglese, sagome e martelli, fino a ottenere curve lisce e superfici ondulate: è il modo di fare prototipi e carrozzerie in piccolissima serie.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="1800,3000,2600,2200,2400">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="battitura-lamiera" data-alt="Modello 3D di un banco di lavoro. Una lamiera piana color sabbia passa avanti e indietro sotto la ruota inglese e si incurva in due direzioni. Poi viene appoggiata su una sagoma e battuta finché ne prende la forma, con una nervatura in rilievo. Un secondo pannello viene saldato al primo, con il punto di saldatura che scorre lungo il giunto. Infine il martello da spianare liscia la superficie e il pezzo diventa verde.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Lamiera tagliata<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Ruota inglese<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Martellatura su sagoma<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Saldatura dei pannelli<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="5">5. Spianatura e lucidatura<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Lamiera tagliata</b>La lamiera di alluminio viene tagliata a misura; un'aggraffatrice può raccogliere il metallo in alcune zone per aumentarne la curvatura. <span class="pag">(p. 76)</span></li>
+    <li><b>Fase 2 – Ruota inglese</b>La lamiera passa avanti e indietro fra la ruota piatta e l'incudine bombata, con passate sovrapposte: ogni passata la stira un po' e la incurva in due direzioni. <span class="pag">(p. 74, 76)</span></li>
+    <li><b>Fase 3 – Martellatura su sagoma</b>Quando la curvatura è vicina, la lamiera viene fissata sulla sagoma in resina e stirata e compressa a colpi su battitori di nylon o di alluminio finché la copia con precisione. <span class="pag">(p. 74, 76)</span></li>
+    <li><b>Fase 4 – Saldatura dei pannelli</b>I pannelli, formati uno per uno, vengono riuniti su una dima e saldati a TIG; ogni cordone viene poi livellato. <span class="pag">(p. 73, 76)</span></li>
+    <li><b>Fase 5 – Spianatura e lucidatura</b>Colpi leggeri e sovrapposti con il martello da spianare contro un tasso lisciano la superficie; si lima per trovare le ondulazioni, poi si carteggia e si lucida. <span class="pag">(p. 74, 76)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di un banco di lavoro. Una lamiera piana color sabbia passa avanti e indietro sotto la ruota inglese e si incurva in due direzioni. Poi viene appoggiata su una sagoma e battuta finché ne prende la forma, con una nervatura in rilievo. Un secondo pannello viene saldato al primo, con il punto di saldatura che scorre lungo il giunto. Infine il martello da spianare liscia la superficie e il pezzo diventa verde.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 0 820 330" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Battitura della lamiera: sequenza del caso studio</title>
+<desc id="sc-d">Vista laterale della lamiera su un banco. Le fasi mostrano la lamiera piana, la ruota inglese che la incurva, la martellatura su una sagoma di resina, la saldatura TIG fra due pannelli e la spianatura con martello e tasso.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- banco -->
+<rect x="180" y="300" width="460" height="14" class="macchina"/>
+
+<!-- lamiera nelle varie fasi -->
+<path d="M220,250 H600" fill="none" stroke-width="6" stroke-linecap="round" style="stroke:var(--grezzo)" data-k="op:1,0,0,0,0" data-i="op:1"/>
+<path d="M220,250 Q410,170 600,250" fill="none" stroke-width="6" stroke-linecap="round" style="stroke:var(--fuso)" data-k="op:0,1,0,0,0" data-i="op:0"/>
+<path d="M220,250 Q300,175 380,178 Q395,160 425,160 Q440,178 470,178 Q560,184 600,250" fill="none" stroke-width="6" stroke-linecap="round" style="stroke:var(--fuso)" data-k="op:0,0,1,1,0" data-i="op:0"/>
+<path d="M220,250 Q300,175 380,178 Q395,160 425,160 Q440,178 470,178 Q560,184 600,250" fill="none" stroke-width="6" stroke-linecap="round" style="stroke:var(--finito)" data-k="op:0,0,0,0,1" data-i="op:0"/>
+<g class="etichetta"><line x1="222" y1="250" x2="40" y2="231" class="richiamo"/><text x="40" y="236" text-anchor="start">Lamiera (alluminio, acciaio, magnesio)</text></g>
+
+<!-- 2: ruota inglese -->
+<g data-k="op:0,1,0,0,0;tx:0,0,0,0,0">
+  <circle cx="410" cy="150" r="34" fill="url(#sc-tratteggio)" class="contorno" data-k="rot:0,720,720,720,720" data-i="rot:0" data-o="410,150"/>
+  <path d="M376,232 Q410,206 444,232 V262 H376 Z" fill="url(#sc-tratteggio)" class="contorno"/>
+  <g class="etichetta"><text x="460" y="130" text-anchor="start">Ruota piatta</text></g><g class="etichetta"><text x="460" y="262" text-anchor="start">Incudine bombata</text></g>
+  <line x1="300" y1="120" x2="360" y2="120" class="flusso-linea" marker-end="url(#sc-punta)"/><line x1="520" y1="100" x2="460" y2="100" class="flusso-linea" marker-end="url(#sc-punta)"/>
+  <g class="etichetta"><text x="210" y="84" text-anchor="start">passate avanti e indietro: la lamiera si incurva in due direzioni</text></g>
+</g>
+
+<!-- 3: martellatura su sagoma in resina epossidica -->
+<g data-k="op:0,0,1,0,0">
+  <path d="M226,256 Q300,181 380,184 Q395,166 425,166 Q440,184 470,184 Q560,190 594,256 V296 H226 Z" fill="url(#sc-tratteggio)" class="contorno"/>
+  <g class="etichetta"><text x="450" y="290" text-anchor="start">Sagoma in resina epossidica (o acciaio)</text></g>
+  <g data-k="ty:0,0,0,0,0;rot:0,0,0,0,0">
+    <rect x="418" y="104" width="16" height="50" class="m-stampo contorno"/><rect x="400" y="94" width="52" height="14" class="scuro"/>
+    <line x1="470" y1="110" x2="470" y2="150" class="flusso-linea" marker-end="url(#sc-punta)"/>
+  </g>
+  <g class="etichetta"><text x="480" y="116" text-anchor="start">Battitore (in nylon o alluminio) colpito dal martello</text></g>
+</g>
+
+<!-- 4: saldatura TIG di due pannelli -->
+<g data-k="op:0,0,0,1,0">
+  <rect x="404" y="110" width="12" height="46" class="scuro"/>
+  <circle cx="410" cy="162" r="7" fill="#fff" stroke="var(--fuso)" stroke-width="4"/>
+  <line x1="410" y1="150" x2="410" y2="320" stroke="var(--ko)" stroke-width="2" stroke-dasharray="5 4"/>
+  <g class="etichetta"><text x="430" y="120" text-anchor="start">Saldatura TIG fra pannelli formati separatamente</text></g>
+</g>
+
+<!-- 5: spianatura con martello e tasso -->
+<g data-k="op:0,0,0,0,1">
+  <rect x="290" y="140" width="60" height="16" class="m-stampo contorno"/><rect x="314" y="96" width="12" height="44" class="scuro"/>
+  <path d="M294,214 Q320,196 346,214 V236 H294 Z" class="m-stampo contorno"/>
+  <g class="etichetta"><text x="360" y="120" text-anchor="start">Martello da spianare</text></g><g class="etichetta"><line x1="294" y1="228" x2="40" y2="223" class="richiamo"/><text x="40" y="228" text-anchor="start">Tasso (contro-stampo)</text></g>
+</g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>La battitura è uno stiramento e una compressione controllati della lamiera. Riunisce più tecniche: piegatura alla pressa, imbutitura a mano, aggraffatura, ruota inglese e martellatura su sagoma. <span class="pag">(p. 72)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>Le curve ampie si formano di solito prima, per esempio alla ruota inglese. <span class="pag">(p. 74)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>Le sagome sono 'morbide', in resina epossidica fresata a 5 assi, valide per circa 10 pezzi; oltre servono sagome 'dure' in acciaio. <span class="pag">(p. 74–75)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Il pezzo non è limitato dalla dimensione del foglio: più pannelli si saldano senza giunzioni visibili. <span class="pag">(p. 73)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="5" aria-label="Mostra la fase 5 nello schema">Fase 5</button>Un operatore esperto arriva a una finitura di classe A. Servono anni di apprendistato: per questo la manodopera è cara. Un telaio e una carrozzeria completi richiedono circa 6 settimane. <span class="pag">(p. 72–73, 75)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Quasi tutti i metalli ferrosi e non ferrosi; i più usati sono alluminio, magnesio e acciai di ogni tipo, anche inossidabili. <span class="pag">(p. 73–74)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Pezzi unici e piccole serie, prototipi e riparazioni. La soglia annua oltre la quale conviene uno stampo è illeggibile: <span class="nd">n.d.</span> <span class="pag">(p. 72)</span><span class="nota-ocr">Soglia annua di pezzi: <span class="nd">n.d.</span> (OCR &quot;under 1 o parts per year&quot;)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Da basso a moderato: sagome in resina per piccole serie, in acciaio per volumi maggiori, comunque molto meno degli stampi per tranciatura o superformatura. <span class="pag">(p. 72, 75)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Da moderato ad alto, per l'alta specializzazione della manodopera. <span class="pag">(p. 72, 75)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Lungo, secondo dimensione e complessità; circa 6 settimane per telaio e carrozzeria di un'auto. <span class="pag">(p. 72, 75)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Alta qualità artigianale; finitura di classe A dopo spianatura e lucidatura. <span class="pag">(p. 72–73)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Dipende dall'abilità dell'operatore e dalla sagoma. Valore numerico: <span class="nd">n.d.</span> <span class="pag">(p. 73–74)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Non limitate dal foglio, grazie ai pannelli saldati. Spessori: alluminio da 0,8 a 6 mm, acciaio da 0,8 a 3 mm. <span class="pag">(p. 73–74)</span><span class="nota-ocr">Nel libro il minimo di 0,8 mm è convertito in 0.024 in (cioè 0,6 mm): le due unità non coincidono.</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Rispettare lo spessore lavorabile</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spessore-ok-t v-spessore-ok-d" class="mini-svg"><title id="v-spessore-ok-t">Corretto: Lamiera entro lo spessore lavorabile</title><desc id="v-spessore-ok-d">Alluminio fino a 6 mm, acciaio fino a 3 mm.</desc><defs>
+  <pattern id="v-spessore-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spessore-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spessore-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spessore-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M15,80 Q80,30 145,80" fill="none" stroke-width="5" stroke-linecap="round" style="stroke:var(--finito)"/><g class="etichetta"><text x="80" y="106" text-anchor="middle">Al ≤ 6 mm · acciaio ≤ 3 mm</text></g></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spessore-ko-t v-spessore-ko-d" class="mini-svg"><title id="v-spessore-ko-t">Da evitare: Lamiera troppo spessa</title><desc id="v-spessore-ko-d">Oltre questi spessori la lamiera non si lavora a mano.</desc><defs>
+  <pattern id="v-spessore-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spessore-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spessore-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spessore-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M15,80 Q80,30 145,80" fill="none" stroke-width="16" stroke-linecap="round" style="stroke:var(--finito)"/><circle cx="80" cy="55" r="16" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Lo spessore va da 0,8 a 6 mm per l'alluminio e da 0,8 a 3 mm per l'acciaio. <span class="pag">(p. 74)</span></p></article>
+<article class="card"><h3>Dividere le forme grandi in pannelli</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-pannelli-ok-t v-pannelli-ok-d" class="mini-svg"><title id="v-pannelli-ok-t">Corretto: Più pannelli saldati</title><desc id="v-pannelli-ok-d">Le forme grandi si dividono in pannelli formati separatamente e saldati senza giunzioni visibili.</desc><defs>
+  <pattern id="v-pannelli-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-pannelli-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-pannelli-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-pannelli-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M15,90 Q50,30 80,30" fill="none" stroke-width="5" stroke-linecap="round" style="stroke:var(--finito)"/><path d="M80,30 Q110,30 145,90" fill="none" stroke-width="5" stroke-linecap="round" style="stroke:var(--finito)"/><line x1="80" y1="18" x2="80" y2="44" stroke="var(--ko)" stroke-width="2" stroke-dasharray="3 3"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-pannelli-ko-t v-pannelli-ko-d" class="mini-svg"><title id="v-pannelli-ko-t">Da evitare: Forma grande da un unico foglio</title><desc id="v-pannelli-ko-d">Ricavare tutta la forma da un solo pezzo è di solito poco pratico.</desc><defs>
+  <pattern id="v-pannelli-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-pannelli-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-pannelli-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-pannelli-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M15,90 Q50,10 80,20 Q110,10 145,90" fill="none" stroke-width="5" stroke-linecap="round" style="stroke:var(--finito)"/><circle cx="80" cy="22" r="12" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>La maggior parte delle forme si ricava da più pannelli, perché da un solo foglio sarebbe poco pratico; i pannelli si saldano senza giunzioni visibili. <span class="pag">(p. 73)</span></p></article>
+<article class="card"><h3>Irrigidire con nervature e flange</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-rigidita-ok-t v-rigidita-ok-d" class="mini-svg"><title id="v-rigidita-ok-t">Corretto: Nervature, bordature e flange</title><desc id="v-rigidita-ok-d">Imbutiture e bordi piegati irrigidiscono la lamiera senza aumentarne il peso.</desc><defs>
+  <pattern id="v-rigidita-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-rigidita-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-rigidita-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-rigidita-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M15,95 V70 H45 Q55,52 65,70 H95 Q105,52 115,70 H145 V95" fill="none" stroke-width="5" stroke-linecap="round" style="stroke:var(--finito)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-rigidita-ko-t v-rigidita-ko-d" class="mini-svg"><title id="v-rigidita-ko-t">Da evitare: Pannello piano senza rinforzi</title><desc id="v-rigidita-ko-d">Una grande superficie liscia si flette facilmente.</desc><defs>
+  <pattern id="v-rigidita-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-rigidita-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-rigidita-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-rigidita-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M15,70 H145" fill="none" stroke-width="5" stroke-linecap="round" style="stroke:var(--finito)"/><path d="M15,70 Q80,96 145,70" fill="none" stroke="var(--ko)" stroke-width="2" stroke-dasharray="4 3"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Le lamiere si possono imbutire, nervare o flangiare per aumentarne la rigidità senza aggiungere peso. <span class="pag">(p. 73)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Le tecniche elencate nel capitolo; nello schema principale compaiono in sequenza.</p><div class="griglia-card"><article class="card"><h3>Imbutitura a mano su sacco</h3><p class="originale" lang="en">Dishing</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-sacco-t var-sacco-d" class="mini-svg"><title id="var-sacco-t">Imbutitura a mano su sacco</title><desc id="var-sacco-d">La lamiera viene battuta con un mazzuolo dentro un sacco di sabbia o di pallini, che cede seguendo il colpo.</desc><defs>
+  <pattern id="var-sacco-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-sacco-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-sacco-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-sacco-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M40,90 Q110,130 180,90 Q180,60 110,60 Q40,60 40,90 Z" class="m-grezzo contorno"/>
+    <path d="M50,70 Q110,105 170,70" fill="none" stroke-width="5" stroke-linecap="round" style="stroke:var(--fuso)"/>
+    <path d="M100,8 Q120,4 128,20 L118,40 Q104,34 100,8 Z" class="m-stampo contorno"/>
+    <g class="etichetta"><text x="110" y="122" text-anchor="middle">sacco di sabbia</text></g></svg></div><p>Si batte la lamiera con un mazzuolo di legno, cuoio o plastica dentro un sacco di sabbia o di pallini, che cede e si adatta. È rapida ma la meno precisa; utile per profili profondi come i parafanghi delle moto, oggi soprattutto per prototipi. <span class="pag">(p. 73–74)</span></p></article>
+<article class="card"><h3>Martellatura su sagoma</h3><p class="originale" lang="en">Jig chasing</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-sagoma-t var-sagoma-d" class="mini-svg"><title id="var-sagoma-t">Martellatura su sagoma</title><desc id="var-sagoma-d">Battitori di plastica o metallo colpiti con un martello stirano e comprimono la lamiera sulla sagoma; i battitori metallici servono per pieghe strette e superfici piane.</desc><defs>
+  <pattern id="var-sagoma-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-sagoma-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-sagoma-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-sagoma-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M20,110 V70 Q110,20 200,70 V110 Z" fill="url(#var-sagoma-tratteggio)" class="contorno"/>
+    <path d="M20,66 Q110,16 200,66" fill="none" stroke-width="5" stroke-linecap="round" style="stroke:var(--fuso)"/>
+    <rect x="104" y="0" width="12" height="30" class="m-stampo contorno"/></svg></div><p>Detta anche hammerforming: si stira la lamiera su una sagoma colpendo battitori di plastica (profili morbidi) o di metallo (pieghe strette, spigoli, superfici piane). <span class="pag">(p. 74)</span></p></article>
+<article class="card"><h3>Ruota inglese</h3><p class="originale" lang="en">Wheel forming</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-ruota-t var-ruota-d" class="mini-svg"><title id="var-ruota-t">Ruota inglese</title><desc id="var-ruota-d">La lamiera passa avanti e indietro fra una ruota piatta e un'incudine bombata: ogni passata la stira un poco e la incurva in due direzioni.</desc><defs>
+  <pattern id="var-ruota-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-ruota-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-ruota-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-ruota-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <circle cx="110" cy="30" r="24" fill="url(#var-ruota-tratteggio)" class="contorno"/>
+    <path d="M86,92 Q110,72 134,92 V112 H86 Z" fill="url(#var-ruota-tratteggio)" class="contorno"/>
+    <path d="M20,72 Q110,50 200,72" fill="none" stroke-width="5" stroke-linecap="round" style="stroke:var(--fuso)"/></svg></div><p>Sviluppata dai battilastra nella prima industria automobilistica inglese: la lamiera passa fra una ruota piatta e un'incudine bombata che la stira. <span class="pag">(p. 74)</span></p></article>
+<article class="card"><h3>Spianatura</h3><p class="originale" lang="en">Planishing</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-spianatura-t var-spianatura-d" class="mini-svg"><title id="var-spianatura-t">Spianatura</title><desc id="var-spianatura-d">Operazione di finitura: colpi leggeri e sovrapposti con un martello a faccia piatta contro un tasso lisciano la superficie; poi si lima, si carteggia e si lucida.</desc><defs>
+  <pattern id="var-spianatura-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-spianatura-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-spianatura-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-spianatura-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="80" y="10" width="60" height="16" class="m-stampo contorno"/><rect x="104" y="0" width="12" height="12" class="scuro"/>
+    <path d="M20,50 Q110,30 200,50" fill="none" stroke-width="5" stroke-linecap="round" style="stroke:var(--finito)"/>
+    <path d="M84,70 Q110,52 136,70 V96 H84 Z" class="m-stampo contorno"/></svg></div><p>Non è una formatura ma una finitura: colpi leggeri e sovrapposti contro un tasso o una cupola stirano appena la lamiera e la rendono liscia. <span class="pag">(p. 74)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="stampaggio-lamiera.html">Stampaggio della lamiera</a> – geometrie simili con stampi accoppiati, per volumi maggiori <span class="pag">(p. 72)</span></li><li><a href="imbutitura-profonda.html">Imbutitura profonda</a> – geometrie simili con stampi accoppiati <span class="pag">(p. 72)</span></li><li><a href="superformatura.html">Formatura superplastica (superforming)</a> – usata insieme alla battitura nelle piccole e medie serie <span class="pag">(p. 72–73)</span></li><li><a href="piegatura-pressa.html">Piegatura alla pressa piegatrice</a> – una delle tecniche usate nella battitura <span class="pag">(p. 72)</span></li><li><a href="saldatura-arco.html">Saldatura ad arco</a> – per unire i pannelli formati <span class="pag">(p. 72, 76)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 72–77.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/battitura-lamiera.js"></script>
+</body>
+</html>

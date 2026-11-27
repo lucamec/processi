@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saldatura a piastra calda – Processi produttivi per il design</title>
+<meta name="description" content="Le facce del giunto di due pezzi di plastica toccano una piastra riscaldata finché plastificano; tolta la piastra, si premono insieme e solidificano in un legame omogeneo, anche ermetico.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 3 – Giunzione › Termico</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Saldatura a piastra calda</h1>
+  <p class="originale" lang="en">Hot Plate Welding</p>
+  <p class="categoria">Parte 3 – Giunzione · Termico</p>
+  <p class="sintesi">Le facce del giunto di due pezzi di plastica toccano una piastra riscaldata finché plastificano; tolta la piastra, si premono insieme e solidificano in un legame omogeneo, anche ermetico.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="1800,2400,1600,2200,2000">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="saldatura-piastra-calda" data-alt="Modello 3D di una saldatrice a piastra calda. Due metà di un contenitore di plastica chiara stanno negli utensili superiore e inferiore. Una piastra calda arancione scorre fra le due, i pezzi la toccano e i bordi del giunto si scaldano; poi gli utensili si allontanano, la piastra esce e le due metà si premono insieme formando un cordoncino di bava. Raffreddato, il giunto diventa verde e l'utensile superiore risale.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Carico<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Riscaldamento<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Ritiro della piastra<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Saldatura<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="5">5. Raffreddamento ed estrazione<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Carico</b>Le due metà vanno negli utensili, che di solito lavorano in verticale e le tengono con un leggero vuoto, allineando il giunto. <span class="pag">(p. 321–322)</span></li>
+    <li><b>Fase 2 – Riscaldamento</b>Una piastra preriscaldata entra fra i pezzi, che la toccano: la temperatura, 50–100 °C oltre la fusione del polimero, plastifica gli strati esterni. <span class="pag">(p. 321–322)</span></li>
+    <li><b>Fase 3 – Ritiro della piastra</b>Dopo pochi secondi gli utensili si separano e la piastra esce. <span class="pag">(p. 321–322)</span></li>
+    <li><b>Fase 4 – Saldatura</b>I pezzi si premono con spinta assiale: le facce plastificate si mescolano e una quantità prestabilita di materiale esce in piccoli cordoni di bava. <span class="pag">(p. 321–322)</span></li>
+    <li><b>Fase 5 – Raffreddamento ed estrazione</b>I pezzi restano serrati finché il polimero si raffredda; gli utensili si aprono e il pezzo saldato resta in quello inferiore. <span class="pag">(p. 321–322)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una saldatrice a piastra calda. Due metà di un contenitore di plastica chiara stanno negli utensili superiore e inferiore. Una piastra calda arancione scorre fra le due, i pezzi la toccano e i bordi del giunto si scaldano; poi gli utensili si allontanano, la piastra esce e le due metà si premono insieme formando un cordoncino di bava. Raffreddato, il giunto diventa verde e l'utensile superiore risale.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 20 820 360" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Saldatura a piastra calda, in sezione</title>
+<desc id="sc-d">Sezione di due metà stampate negli utensili superiore e inferiore, con la piastra calda che entra e esce fra di esse. Le fasi mostrano il carico, il riscaldamento a contatto, il ritiro della piastra, la saldatura sotto pressione con la bava e il pezzo finito.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- utensile superiore con la metà superiore -->
+<g data-k="ty:-60,-12,-60,0,-100" data-i="ty:-60">
+  <path d="M240,40 H580 V110 H240 Z" fill="url(#sc-tratteggio)" class="contorno"/>
+  <path d="M260,110 H560 V150 H540 V126 H280 V150 H260 Z" class="m-grezzo contorno"/>
+  <path d="M256,150 H284 V156 H256 Z M536,150 H564 V156 H536 Z" style="fill:var(--fuso)" data-k="op:0,1,1,0,0" data-i="op:0"/>
+</g>
+<!-- utensile inferiore con la metà inferiore -->
+<g data-k="ty:60,12,60,0,0" data-i="ty:60">
+  <path d="M260,170 H280 V194 H540 V170 H560 V210 H260 Z" class="m-grezzo contorno"/>
+  <path d="M240,210 H580 V280 H240 Z" fill="url(#sc-tratteggio)" class="contorno"/>
+  <path d="M256,164 H284 V170 H256 Z M536,164 H564 V170 H536 Z" style="fill:var(--fuso)" data-k="op:0,1,1,0,0" data-i="op:0"/>
+</g>
+<g class="etichetta"><text x="20" y="330" text-anchor="start">Metà stampate, tenute dal vuoto negli utensili</text></g>
+<!-- giunto saldato e bava -->
+<g data-k="op:0,0,0,1,1" data-i="op:0">
+  <path d="M256,154 H284 V166 H256 Z M536,154 H564 V166 H536 Z" style="fill:var(--fuso)" data-k="op:0,0,0,1,0" data-i="op:0"/>
+  <path d="M256,154 H284 V166 H256 Z M536,154 H564 V166 H536 Z" class="m-finito" data-k="op:0,0,0,0,1" data-i="op:0"/>
+  <circle cx="252" cy="160" r="4" style="fill:var(--fuso)"/><circle cx="568" cy="160" r="4" style="fill:var(--fuso)"/>
+</g>
+<!-- piastra calda -->
+<g data-k="tx:0,0,620,620,620" data-i="tx:620">
+  <rect x="200" y="152" width="420" height="16" class="m-stampo contorno"/>
+  <rect x="200" y="152" width="420" height="16" style="fill:var(--fuso)" fill-opacity="0.35"/>
+</g>
+<g class="etichetta"><text x="580" y="140" text-anchor="start">Piastra calda (alluminio con PTFE)</text></g>
+<g data-k="op:0,1,0,0,0"><g class="etichetta"><text x="20" y="360" text-anchor="start">50–100 °C sopra la fusione: le facce del giunto plastificano</text></g></g>
+<g data-k="op:0,0,1,0,0"><g class="etichetta"><text x="20" y="360" text-anchor="start">gli utensili si separano e la piastra esce</text></g></g>
+<g data-k="op:0,0,0,1,0"><line x1="620" y1="30" x2="620" y2="90" class="flusso-linea" marker-end="url(#sc-punta)"/><g class="etichetta"><text x="20" y="360" text-anchor="start">spinta assiale: il materiale si mescola e forma una piccola bava</text></g></g>
+<g data-k="op:0,0,0,0,1"><g class="etichetta"><text x="20" y="360" text-anchor="start">raffreddato, il pezzo resta nell'utensile inferiore</text></g></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>È un processo semplice e versatile: la dimensione è limitata solo dalla piastra, il giunto può essere piano o tridimensionale, e la macchina può essere portatile o in linea. <span class="pag">(p. 320)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>La piastra è in genere di alluminio rivestito da un sottile strato di PTFE, che impedisce alla plastica di attaccarsi; la temperatura massima è di circa 500 °C. <span class="pag">(p. 321)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Serve poca pressione, quindi si saldano anche pezzi piccoli e delicati con pareti sottili; nel caso studio si eseguono insieme saldature interne ed esterne. <span class="pag">(p. 320)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="5" aria-label="Mostra la fase 5 nello schema">Fase 5</button>La plastificazione resta localizzata, fino a circa 1 mm per lato, quindi la struttura del pezzo non cambia. Non si aggiunge materiale e non ci sono scarti. <span class="pag">(p. 320)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>La maggior parte dei termoplastici, in pezzi stampati a iniezione o estrusi; alcuni, come il PA, si ossidano alla fusione e il giunto perde resistenza. <span class="pag">(p. 320, 322)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Da lotti a produzione di massa. <span class="pag">(p. 320)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Moderato: gli utensili sostengono il pezzo con precisione, spesso con il vuoto. <span class="pag">(p. 320, 322)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Basso; manodopera relativamente bassa, processo parzialmente o totalmente automatico. <span class="pag">(p. 320, 322)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Variabile, da 30 secondi a 10 minuti: i pezzi piccoli si scaldano circa 10 secondi e si saldano per altri 10; nel caso studio non più di 25 secondi. <span class="pag">(p. 320–322)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Legami omogenei di alta qualità, anche ermetici; la bava spesso non si rifila. <span class="pag">(p. 320)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Gli utensili allineano il giunto con precisione. Tolleranze numeriche: <span class="nd">n.d.</span> <span class="pag">(p. 321)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Piastra fino a 620 × 540 mm e pezzi alti fino a 350 mm. <span class="pag">(p. 322)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Giunto raggiungibile su un asse</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-asse-ok-t v-asse-ok-d" class="mini-svg"><title id="v-asse-ok-t">Corretto: Giunto accessibile su un asse</title><desc id="v-asse-ok-d">La piastra deve raggiungere tutto il giunto lungo un solo asse; il giunto può essere complesso, con saldature interne ed esterne.</desc><defs>
+  <pattern id="v-asse-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-asse-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-asse-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-asse-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,40 H140 V60 H120 V50 H40 V60 H20 Z" class="m-grezzo contorno"/><path d="M20,66 H140 V90 H20 Z" class="m-grezzo contorno"/><path d="M80,20 V36" stroke="var(--fuso)" stroke-width="3"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-asse-ko-t v-asse-ko-d" class="mini-svg"><title id="v-asse-ko-t">Da evitare: Giunti su assi diversi</title><desc id="v-asse-ko-d">Un giunto su un altro asse richiede una seconda operazione.</desc><defs>
+  <pattern id="v-asse-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-asse-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-asse-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-asse-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,50 H100 V100 H20 Z" class="m-grezzo contorno"/><path d="M100,30 H140 V100 H100 Z" class="m-grezzo contorno"/><circle cx="100" cy="40" r="12" fill="none" stroke="var(--ko)" stroke-width="2.5"/><circle cx="60" cy="50" r="12" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>L'unico requisito è che la piastra raggiunga il giunto lungo un asse; giunti su assi diversi richiedono una seconda operazione. <span class="pag">(p. 320)</span></p></article>
+<article class="card"><h3>Più superficie, più resistenza</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-area-ok-t v-area-ok-d" class="mini-svg"><title id="v-area-ok-t">Corretto: Interfaccia allargata</title><desc id="v-area-ok-d">La resistenza cresce con la superficie del giunto: una sezione a T o ad angolo retto la aumenta.</desc><defs>
+  <pattern id="v-area-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-area-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-area-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-area-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M60,20 H100 V56 H130 V66 H30 V56 H60 Z" class="m-grezzo contorno"/><path d="M30,70 H130 V80 H100 V110 H60 V80 H30 Z" class="m-grezzo contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-area-ko-t v-area-ko-d" class="mini-svg"><title id="v-area-ko-t">Da evitare: Parete sottile di testa</title><desc id="v-area-ko-d">Una semplice parete sottile accostata di testa offre poca superficie.</desc><defs>
+  <pattern id="v-area-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-area-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-area-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-area-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="70" y="20" width="20" height="45" class="m-grezzo contorno"/><rect x="70" y="68" width="20" height="45" class="m-grezzo contorno"/><circle cx="80" cy="66" r="14" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Si saldano soprattutto giunti di testa; aumentare la superficie con una sezione a T o ad angolo retto migliora la resistenza. Le sovrapposizioni sono possibili ma rare. <span class="pag">(p. 322)</span></p></article>
+<article class="card"><h3>Nascondere la bava</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-bava-ok-t v-bava-ok-d" class="mini-svg"><title id="v-bava-ok-t">Corretto: Bava nascosta da una flangia</title><desc id="v-bava-ok-d">La bava spesso non si rifila: una flangia attorno al giunto la nasconde.</desc><defs>
+  <pattern id="v-bava-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-bava-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-bava-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-bava-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,40 H140 V60 H20 Z" class="m-grezzo contorno"/><path d="M20,64 H140 V84 H20 Z" class="m-grezzo contorno"/><path d="M14,40 H22 V84 H14 Z M138,40 H146 V84 H138 Z" class="m-grezzo contorno"/><circle cx="26" cy="62" r="3" style="fill:var(--fuso)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-bava-ko-t v-bava-ko-d" class="mini-svg"><title id="v-bava-ko-t">Da evitare: Bava su una superficie in vista</title><desc id="v-bava-ko-d">Senza flangia la bava resta visibile lungo il giunto.</desc><defs>
+  <pattern id="v-bava-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-bava-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-bava-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-bava-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,40 H140 V60 H20 Z" class="m-grezzo contorno"/><path d="M20,64 H140 V84 H20 Z" class="m-grezzo contorno"/><circle cx="18" cy="62" r="4" style="fill:var(--fuso)"/><circle cx="142" cy="62" r="4" style="fill:var(--fuso)"/><circle cx="142" cy="62" r="12" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>La bava prodotta dalla pressione spesso resta: una flangia attorno al giunto la nasconde. <span class="pag">(p. 320)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Le due varianti del riscaldamento descritte nel capitolo.</p><div class="griglia-card"><article class="card"><h3>Piastra profilata</h3><p class="originale" lang="en">Profiled hot plate</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-profilata-t var-profilata-d" class="mini-svg"><title id="var-profilata-t">Piastra profilata</title><desc id="var-profilata-d">La piastra, di solito piana, si sagoma per giunti tridimensionali; con le stesse attrezzature si saldano termoplastici diversi cambiando solo la temperatura.</desc><defs>
+  <pattern id="var-profilata-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-profilata-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-profilata-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-profilata-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M20,40 H80 Q110,70 140,40 H200 V54 H140 Q110,84 80,54 H20 Z" class="m-stampo contorno"/>
+    <path d="M20,40 H80 Q110,70 140,40 H200 V54 H140 Q110,84 80,54 H20 Z" style="fill:var(--fuso)" fill-opacity="0.35"/></svg></div><p>Piastra sagomata per giunti tridimensionali. <span class="pag">(p. 321)</span></p></article>
+<article class="card"><h3>Senza contatto</h3><p class="originale" lang="en">Non-contact heating</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-senzacontatto-t var-senzacontatto-d" class="mini-svg"><title id="var-senzacontatto-t">Senza contatto</title><desc id="var-senzacontatto-d">Per plastiche molto appiccicose il calore arriva per convezione, senza toccare: meno efficace e poco pratico su giunti complessi. Il PTFE degrada oltre 270 °C, quindi il contatto è adatto a plastiche a bassa fusione come PP e PE.</desc><defs>
+  <pattern id="var-senzacontatto-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-senzacontatto-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-senzacontatto-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-senzacontatto-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="30" y="54" width="160" height="16" class="m-stampo contorno"/><rect x="30" y="54" width="160" height="16" style="fill:var(--fuso)" fill-opacity="0.35"/>
+    <rect x="50" y="16" width="120" height="24" class="m-grezzo contorno"/><rect x="50" y="84" width="120" height="24" class="m-grezzo contorno"/>
+    <path d="M70,50 q4,-4 0,-8" fill="none" stroke="var(--fuso)" stroke-width="2"/><path d="M110,50 q4,-4 0,-8" fill="none" stroke="var(--fuso)" stroke-width="2"/><path d="M150,50 q4,-4 0,-8" fill="none" stroke="var(--fuso)" stroke-width="2"/></svg></div><p>Calore per convezione per plastiche appiccicose; meno efficace. <span class="pag">(p. 321)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="saldatura-ultrasuoni.html">Saldatura a ultrasuoni</a> – giunti simili, più pressione <span class="pag">(p. 320)</span></li><li><a href="saldatura-vibrazione.html">Saldatura a vibrazione</a> – giunti simili, più pressione <span class="pag">(p. 320)</span></li><li><a href="stampaggio-iniezione.html">Stampaggio a iniezione</a> – produce i pezzi da saldare <span class="pag">(p. 320)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 320–323.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/saldatura-piastra-calda.js"></script>
+</body>
+</html>

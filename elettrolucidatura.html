@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elettrolucidatura – Processi produttivi per il design</title>
+<meta name="description" content="Il contrario della galvanica: il pezzo, collegato come anodo in un bagno elettrolitico, perde materiale dalle creste più che dalle valli e la superficie diventa liscia, brillante, pulita e più resistente alla corrosione.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 4 – Finitura › Processi sottrattivi</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Elettrolucidatura</h1>
+  <p class="originale" lang="en">Electropolishing</p>
+  <p class="categoria">Parte 4 – Finitura · Processi sottrattivi</p>
+  <p class="sintesi">Il contrario della galvanica: il pezzo, collegato come anodo in un bagno elettrolitico, perde materiale dalle creste più che dalle valli e la superficie diventa liscia, brillante, pulita e più resistente alla corrosione.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="1800,2600,2000,1800">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="elettrolucidatura" data-alt="Modello 3D di supporti in acciaio inox a quattro bracci appesi a un telaio. Scendono in una vasca di acido verde fra due catodi scuri; mentre ruotano lentamente la loro superficie passa da opaca a brillante. Poi passano in una vasca di risciacquo azzurra, ne escono gocciolando e alla fine sono lucidi e verdi.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Montaggio<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Elettrolucidatura<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Neutralizzazione e risciacquo<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Asciugatura<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Montaggio</b>I pezzi, se serve prima puliti, si montano su un telaio che porta la corrente: diventano l'anodo. <span class="pag">(p. 385–386)</span></li>
+    <li><b>Fase 2 – Elettrolucidatura</b>Nel bagno di acido fosforico e solforico a 50–90 °C la corrente scioglie il metallo, più in fretta sulle creste dove la densità di corrente è massima; nel caso studio circa 10 minuti. <span class="pag">(p. 385–386)</span></li>
+    <li><b>Fase 3 – Neutralizzazione e risciacquo</b>Estratti, i pezzi sgocciolano e si neutralizzano, si risciacquano e si lavano per togliere ogni residuo chimico. <span class="pag">(p. 385–386)</span></li>
+    <li><b>Fase 4 – Asciugatura</b>Si asciugano al caldo e sono pronti da maneggiare. <span class="pag">(p. 386)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di supporti in acciaio inox a quattro bracci appesi a un telaio. Scendono in una vasca di acido verde fra due catodi scuri; mentre ruotano lentamente la loro superficie passa da opaca a brillante. Poi passano in una vasca di risciacquo azzurra, ne escono gocciolando e alla fine sono lucidi e verdi.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 10 820 350" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Elettrolucidatura: vasca e profilo superficiale</title>
+<desc id="sc-d">A sinistra una vasca con il pezzo come anodo fra due catodi; a destra l'ingrandimento del profilo superficiale. Le fasi mostrano il montaggio, le creste che si sciolgono più delle valli, il risciacquo e la superficie finita.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- vasca -->
+<path d="M60,120 V330 H380 V120" fill="none" stroke="var(--testo)" stroke-width="5"/>
+<rect x="66" y="140" width="308" height="186" fill="#8fc48a" fill-opacity="0.3" data-k="op:1,1,0,0" data-i="op:1"/>
+<rect x="66" y="140" width="308" height="186" style="fill:var(--flusso)" fill-opacity="0.15" data-k="op:0,0,1,0" data-i="op:0"/>
+<rect x="90" y="100" width="20" height="200" class="scuro"/><rect x="330" y="100" width="20" height="200" class="scuro"/>
+<g class="etichetta"><text x="60" y="90" text-anchor="start">Catodi (−)</text></g>
+<g data-k="ty:-110,0,0,-110" data-i="ty:-110">
+  <line x1="220" y1="40" x2="220" y2="160" stroke="var(--testo)" stroke-width="3"/>
+  <path d="M180,160 H260 L240,260 H200 Z" fill="#b8bec6" class="contorno"/>
+</g>
+<g class="etichetta"><text x="240" y="90" text-anchor="start">Pezzo in inox: anodo (+)</text></g>
+<g class="etichetta"><text x="70" y="350" text-anchor="start">Acido fosforico e solforico, 50–90 °C</text></g>
+<!-- profilo ingrandito -->
+<rect x="440" y="150" width="340" height="150" fill="none" stroke="var(--testo)" stroke-dasharray="4 3"/>
+<path d="M450,240 L450,240 L460.6,200 L471.2,218 L481.8,240 L492.4,200 L503,218 L513.6,240 L524.2,200 L534.8,218 L545.4,240 L556,200 L566.6,218 L577.2,240 L587.8,200 L598.4,218 L609,240 L619.6,200 L630.2,218 L640.8,240 L651.4,200 L662,218 L672.6,240 L683.2,200 L693.8,218 L704.4,240 L715,200 L725.5999999999999,218 L736.2,240 L746.8,200 L757.4,218 L768,240 V290 H450 Z" fill="#b8bec6" stroke="var(--testo)" stroke-width="1.5" data-k="op:1,0,0,0" data-i="op:1"/>
+<path d="M450,240 L450,240 L460.6,226 L471.2,232 L481.8,240 L492.4,226 L503,232 L513.6,240 L524.2,226 L534.8,232 L545.4,240 L556,226 L566.6,232 L577.2,240 L587.8,226 L598.4,232 L609,240 L619.6,226 L630.2,232 L640.8,240 L651.4,226 L662,232 L672.6,240 L683.2,226 L693.8,232 L704.4,240 L715,226 L725.5999999999999,232 L736.2,240 L746.8,226 L757.4,232 L768,240 V290 H450 Z" fill="#c8ccd2" stroke="var(--testo)" stroke-width="1.5" data-k="op:0,1,1,0" data-i="op:0"/>
+<path d="M450,240 L450,240 L460.6,226 L471.2,232 L481.8,240 L492.4,226 L503,232 L513.6,240 L524.2,226 L534.8,232 L545.4,240 L556,226 L566.6,232 L577.2,240 L587.8,226 L598.4,232 L609,240 L619.6,226 L630.2,232 L640.8,240 L651.4,226 L662,232 L672.6,240 L683.2,226 L693.8,232 L704.4,240 L715,226 L725.5999999999999,232 L736.2,240 L746.8,226 L757.4,232 L768,240 V290 H450 Z" fill="#c8ccd2" stroke-width="2" style="stroke:var(--finito)" data-k="op:0,0,0,1" data-i="op:0"/>
+<g data-k="op:0,1,0,0"><circle cx="472" cy="186" r="3" style="fill:var(--fuso)"/><circle cx="504" cy="186" r="3" style="fill:var(--fuso)"/><circle cx="536" cy="186" r="3" style="fill:var(--fuso)"/><circle cx="568" cy="186" r="3" style="fill:var(--fuso)"/><circle cx="600" cy="186" r="3" style="fill:var(--fuso)"/></g>
+<g class="etichetta"><text x="450" y="140" text-anchor="start">Profilo della superficie (ingrandito)</text></g>
+<g data-k="op:1,0,0,0"><g class="etichetta"><text x="20" y="30" text-anchor="start">il pezzo si monta su un telaio che porta la corrente</text></g></g>
+<g data-k="op:0,1,0,0"><g class="etichetta"><text x="20" y="30" text-anchor="start">le creste, dove la densità di corrente è maggiore, si sciolgono prima delle valli</text></g></g>
+<g data-k="op:0,0,1,0"><g class="etichetta"><text x="20" y="30" text-anchor="start">neutralizzazione e risciacqui</text></g></g>
+<g data-k="op:0,0,0,1"><g class="etichetta"><text x="20" y="30" text-anchor="start">asciugatura: superficie brillante, pulita e passivata</text></g></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Oltre a lucidare, il processo pulisce, sgrassa, sbava, passiva e migliora la resistenza alla corrosione; l'asportazione può essere molto precisa. <span class="pag">(p. 384)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>Il catodo, di solito dello stesso materiale del pezzo, sta nella soluzione; più calda è la soluzione, più rapida è la reazione. <span class="pag">(p. 385)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>Sostituisce sempre più la cromatura, che usa acido cromico tossico: è più semplice, usa meno acqua e prodotti chimici, anche se produce scarti da neutralizzare. <span class="pag">(p. 384–385)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Rispetto alla lucidatura meccanica tratta anche forme complesse e non sollecita i pezzi; dimensioni e complessità non incidono sul tempo. <span class="pag">(p. 385–386)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>La maggior parte dei metalli, soprattutto gli acciai inox austenitici; anche alluminio e rame. <span class="pag">(p. 386)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Da pezzo unico a produzione di massa. <span class="pag">(p. 384)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Nessuno, ma servono telai per il contatto elettrico. <span class="pag">(p. 384, 386)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Basso: aggiunge circa il 5% al costo del materiale, contro fino al 20% della galvanica; manodopera piuttosto bassa. <span class="pag">(p. 384, 386)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Moderato, 5–30 minuti, secondo l'asportazione e la pulizia del pezzo. <span class="pag">(p. 384, 386)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Alta, brillante e igienica; l'inox elettrolucidato somiglia al cromato. <span class="pag">(p. 384)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Asportazione precisa, di solito non oltre 40–50 µm; nel caso studio 30 µm. <span class="pag">(p. 384–386)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Efficace su piccoli pezzi tecnici e grandi strutture; valori numerici: <span class="nd">n.d.</span> <span class="pag">(p. 386)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Preparare la superficie</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-preparazione-ok-t v-preparazione-ok-d" class="mini-svg"><title id="v-preparazione-ok-t">Corretto: Superficie preparata</title><desc id="v-preparazione-ok-d">Il risultato dipende dalla superficie di partenza: i getti, per esempio, si sabbiano prima per una finitura uniforme.</desc><defs>
+  <pattern id="v-preparazione-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-preparazione-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-preparazione-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-preparazione-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,70 l10,-4 l10,4 l10,-4 l10,4 l10,-4 l10,4 l10,-4 l10,4 l10,-4 l10,4 l10,-4 l10,4 V96 H20 Z" fill="#c8ccd2" class="contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-preparazione-ko-t v-preparazione-ko-d" class="mini-svg"><title id="v-preparazione-ko-t">Da evitare: Graffi profondi e segni di utensili</title><desc id="v-preparazione-ko-d">Graffi profondi e segni di lavorazione non spariscono: la superficie più brillante li mette anzi in risalto.</desc><defs>
+  <pattern id="v-preparazione-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-preparazione-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-preparazione-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-preparazione-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,70 H70 L76,88 L82,70 H140 V96 H20 Z" fill="#c8ccd2" class="contorno"/><circle cx="76" cy="80" r="14" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Segni di utensili, graffi profondi e altri difetti non spariscono, anzi la superficie brillante li evidenzia; i getti si sabbiano prima per avere una finitura uniforme. <span class="pag">(p. 386)</span></p></article>
+<article class="card"><h3>Asportazione limitata</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-asportazione-ok-t v-asportazione-ok-d" class="mini-svg"><title id="v-asportazione-ok-t">Corretto: Asportazioni piccole</title><desc id="v-asportazione-ok-d">Di solito si tolgono al massimo 40–50 µm: una superficie ruvida si addolcisce ma non scompare. Le bave, che sono creste, spariscono subito.</desc><defs>
+  <pattern id="v-asportazione-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-asportazione-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-asportazione-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-asportazione-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,70 q10,-10 20,0 t20,0 t20,0 t20,0 t20,0 t20,0 V96 H20 Z" fill="#c8ccd2" class="contorno"/><path d="M20,66 q10,-6 20,0 t20,0 t20,0 t20,0 t20,0 t20,0" fill="none" style="stroke:var(--finito)" stroke-width="2"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-asportazione-ko-t v-asportazione-ko-d" class="mini-svg"><title id="v-asportazione-ko-t">Da evitare: Superficie molto ruvida</title><desc id="v-asportazione-ko-d">Una finitura grezza non diventa liscia: resta ondulata anche dopo il trattamento.</desc><defs>
+  <pattern id="v-asportazione-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-asportazione-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-asportazione-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-asportazione-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,80 l10,-26 l10,26 l10,-26 l10,26 l10,-26 l10,26 l10,-26 l10,26 l10,-26 l10,26 l10,-26 l10,26 V96 H20 Z" fill="#c8ccd2" class="contorno"/><circle cx="80" cy="66" r="18" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Si tolgono al massimo circa 50 µm: una finitura grezza si addolcisce ma non scompare. <span class="pag">(p. 385)</span></p></article>
+<article class="card"><h3>Un metallo per impianto</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-metallo-ok-t v-metallo-ok-d" class="mini-svg"><title id="v-metallo-ok-t">Corretto: Un metallo per impianto</title><desc id="v-metallo-ok-d">Ogni impianto è impostato per un materiale: metalli diversi non si lucidano insieme né nella stessa soluzione.</desc><defs>
+  <pattern id="v-metallo-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-metallo-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-metallo-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-metallo-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="30" y="40" width="26" height="50" fill="#c8ccd2" class="contorno"/><rect x="70" y="40" width="26" height="50" fill="#c8ccd2" class="contorno"/><rect x="110" y="40" width="26" height="50" fill="#c8ccd2" class="contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-metallo-ko-t v-metallo-ko-d" class="mini-svg"><title id="v-metallo-ko-t">Da evitare: Metalli diversi nello stesso bagno</title><desc id="v-metallo-ko-d">Mescolare acciaio, rame e alluminio nello stesso bagno non funziona.</desc><defs>
+  <pattern id="v-metallo-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-metallo-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-metallo-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-metallo-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="30" y="40" width="26" height="50" fill="#c8ccd2" class="contorno"/><rect x="70" y="40" width="26" height="50" fill="#c27a4a" class="contorno"/><rect x="110" y="40" width="26" height="50" fill="#e0e4ea" class="contorno"/><circle cx="83" cy="65" r="30" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Un impianto è predisposto per un materiale: metalli diversi non si lucidano insieme né nella stessa soluzione. <span class="pag">(p. 386)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Altri usi del processo descritti nel capitolo.</p><div class="griglia-card"><article class="card"><h3>Sbavatura</h3><p class="originale" lang="en">Deburring</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-sbavatura-t var-sbavatura-d" class="mini-svg"><title id="var-sbavatura-t">Sbavatura</title><desc id="var-sbavatura-d">Le bave sono creste e si sciolgono molto in fretta: il processo sbava senza sforzi meccanici, anche su pezzi delicati, e riduce l'attrito fra superfici accoppiate come le filettature.</desc><defs>
+  <pattern id="var-sbavatura-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-sbavatura-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-sbavatura-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-sbavatura-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="30" y="50" width="160" height="40" fill="#c8ccd2" class="contorno"/><path d="M190,50 l10,-10 l-4,10 Z" fill="var(--ko)"/><path d="M190,50 l10,-10" stroke="var(--testo)" stroke-dasharray="2 2"/></svg></div><p>Toglie le bave anche su pezzi delicati e riduce l'attrito fra superfici accoppiate. <span class="pag">(p. 385–386)</span></p></article>
+<article class="card"><h3>Passivazione dell'inox</h3><p class="originale" lang="en">Passivation</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-passivazione-t var-passivazione-d" class="mini-svg"><title id="var-passivazione-t">Passivazione dell'inox</title><desc id="var-passivazione-d">Il ferro si scioglie più facilmente degli altri elementi: resta uno strato ricco di cromo che si ossida e protegge l'acciaio dalla corrosione, così brillante da sembrare cromato.</desc><defs>
+  <pattern id="var-passivazione-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-passivazione-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-passivazione-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-passivazione-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="30" y="60" width="160" height="40" fill="#b8bec6" class="contorno"/><rect x="30" y="52" width="160" height="8" fill="#e8f0f8" stroke="var(--testo)" stroke-width="0.5"/></svg></div><p>Strato superficiale ricco di cromo che protegge dalla corrosione. <span class="pag">(p. 386)</span></p></article>
+<article class="card"><h3>Superfici igieniche</h3><p class="originale" lang="en">Hygienic finish</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-igienica-t var-igienica-d" class="mini-svg"><title id="var-igienica-t">Superfici igieniche</title><desc id="var-igienica-d">Le micro-cavità dove si annidano batteri e sporco si aprono, e la sterilizzazione è più efficace: per farmaceutica, alimentare e ospedali.</desc><defs>
+  <pattern id="var-igienica-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-igienica-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-igienica-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-igienica-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M20,70 q10,-6 20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 V100 H20 Z" fill="#c8ccd2" class="contorno"/></svg></div><p>Apre le micro-cavità e rende più efficace la sterilizzazione. <span class="pag">(p. 384, 386)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="galvanostegia.html">Galvanostegia</a> – processo inverso; la cromatura viene sostituita <span class="pag">(p. 384)</span></li><li><a href="rettifica-levigatura.html">Rettifica, levigatura e lucidatura</a> – lucidatura meccanica, limitata dalla forma <span class="pag">(p. 385)</span></li><li><a href="sabbiatura.html">Sabbiatura</a> – prepara i getti <span class="pag">(p. 386)</span></li><li><a href="microfusione.html">Microfusione</a> – produce i supporti del caso studio <span class="pag">(p. 386)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 384–387.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/elettrolucidatura.js"></script>
+</body>
+</html>

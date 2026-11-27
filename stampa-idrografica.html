@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stampa a trasferimento ad acqua (idrografica) – Processi produttivi per il design</title>
+<meta name="description" content="Una grafica stampata in digitale su un film solubile galleggia sull'acqua e, quando il pezzo vi si immerge, la pressione dell'acqua la avvolge attorno a superfici 3D: legno, marmo, carbonio, mimetico o grafiche decorative.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 4 – Finitura › Stampa</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Stampa a trasferimento ad acqua (idrografica)</h1>
+  <p class="originale" lang="en">Hydro Transfer Printing</p>
+  <p class="categoria">Parte 4 – Finitura · Stampa</p>
+  <p class="sintesi">Una grafica stampata in digitale su un film solubile galleggia sull'acqua e, quando il pezzo vi si immerge, la pressione dell'acqua la avvolge attorno a superfici 3D: legno, marmo, carbonio, mimetico o grafiche decorative.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="1800,2000,1800,2400,2000">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="stampa-idrografica" data-alt="Modello 3D di una vasca d'acqua azzurra. Un guscio grigio è appeso sopra la vasca; sull'acqua si allarga un film con un motivo mimetico verde e marrone, chiuso da quattro paratie scure. Una pistola spruzza l'attivatore sul film; poi il guscio scende inclinato nell'acqua e, quando risale, la sua faccia inferiore è coperta dal motivo mimetico. Alla fine una seconda pistola lo spruzza dal basso con la lacca e la superficie diventa lucida.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Fondo<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Film sull'acqua<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Attivatore<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Immersione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="5">5. Risciacquo e lacca<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Fondo</b>Il pezzo riceve un fondo coprente: corregge i difetti, fa aderire l'inchiostro e dà il colore su cui si leggono gli inchiostri, quasi trasparenti. <span class="pag">(p. 409–410)</span></li>
+    <li><b>Fase 2 – Film sull'acqua</b>Il film, di PVOH con l'inchiostro, si stende sull'acqua a 30–40 °C, con il PVOH in basso; riposa 45 secondi mentre inizia a sciogliersi, e le paratie lo fermano. <span class="pag">(p. 409–410)</span></li>
+    <li><b>Fase 3 – Attivatore</b>Uno spruzzo di attivatore (diluente) rende l'inchiostro gelatinoso e delicato: se si aspetta troppo si disperde nell'acqua. <span class="pag">(p. 409–410)</span></li>
+    <li><b>Fase 4 – Immersione</b>Dopo pochi secondi il pezzo si immerge con un'inclinazione che evita bolle d'aria; la pressione dell'acqua fa seguire all'inchiostro ogni contorno. <span class="pag">(p. 409–410)</span></li>
+    <li><b>Fase 5 – Risciacquo e lacca</b>Si pulisce l'acqua prima di estrarre il pezzo, lo si risciacqua e lo si protegge con una lacca trasparente, opaca o lucida. <span class="pag">(p. 409–410)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una vasca d'acqua azzurra. Un guscio grigio è appeso sopra la vasca; sull'acqua si allarga un film con un motivo mimetico verde e marrone, chiuso da quattro paratie scure. Una pistola spruzza l'attivatore sul film; poi il guscio scende inclinato nell'acqua e, quando risale, la sua faccia inferiore è coperta dal motivo mimetico. Alla fine una seconda pistola lo spruzza dal basso con la lacca e la superficie diventa lucida.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 20 820 370" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Ciclo d'immersione, in sezione</title>
+<desc id="sc-d">Sezione di una vasca d'acqua tiepida con un film galleggiante fra due paratie e un pezzo appeso sopra. Le fasi mostrano il fondo sul pezzo, il film che riposa sull'acqua, lo spruzzo dell'attivatore, l'immersione del pezzo avvolto dall'inchiostro e la lacca finale.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- vasca -->
+<path d="M180,170 V330 H640 V170" fill="none" class="contorno" stroke-width="3"/>
+<rect x="182" y="190" width="456" height="138" fill="#bcd9ec"/>
+<g class="etichetta"><text x="660" y="300" text-anchor="start">Acqua a 30–40 °C</text></g>
+<!-- film -->
+<g data-k="op:0,1,1,0,0;sx:0.2,1,1,1,1" data-i="op:0;sx:0.2" data-o="410,190">
+  <rect x="260" y="186" width="300" height="4" fill="#6b7a3a"/>
+</g>
+<g data-k="op:0,1,1,1,0" data-i="op:0"><rect x="246" y="176" width="10" height="20" class="scuro"/><rect x="564" y="176" width="10" height="20" class="scuro"/></g>
+<g class="etichetta"><line x1="520" y1="186" x2="470" y2="145" class="richiamo"/><text x="470" y="150" text-anchor="start">Film in PVOH con l'inchiostro, fra due paratie</text></g>
+<!-- attivatore -->
+<g data-k="op:0,0,1,0,0;tx:0,0,160,160,160" data-i="op:0;tx:0">
+  <rect x="270" y="90" width="20" height="30" class="m-stampo contorno"/>
+  <path d="M275,120 L240,184 H320 L285,120 Z" fill="#e8ecef" fill-opacity="0.7"/>
+</g>
+<!-- pezzo -->
+<g data-k="ty:0,0,0,110,0" data-i="ty:0">
+  <line x1="410" y1="40" x2="410" y2="100" stroke="var(--testo)" stroke-width="3"/>
+  <path d="M350,100 H470 Q470,160 410,160 Q350,160 350,100 Z" fill="#c8ccd0" class="contorno"/>
+  <path d="M350,100 Q350,160 410,160 Q470,160 470,100" fill="none" stroke="#6b7a3a" stroke-width="5" data-k="op:0,0,0,1,1" data-i="op:0"/>
+  <path d="M346,100 Q346,164 410,164 Q474,164 474,100" fill="none" stroke="var(--flusso)" stroke-width="2" data-k="op:0,0,0,0,1" data-i="op:0"/>
+</g>
+<g class="etichetta"><text x="490" y="80" text-anchor="start">Pezzo con fondo coprente</text></g>
+<g data-k="op:1,0,0,0,0"><g class="etichetta"><text x="120" y="370" text-anchor="start">Il pezzo riceve un fondo coprente, che corregge i difetti e fa da sfondo agli inchiostri</text></g></g>
+<g data-k="op:0,1,0,0,0"><g class="etichetta"><text x="120" y="370" text-anchor="start">Il film riposa 45 secondi sull'acqua: il PVOH inizia a sciogliersi</text></g></g>
+<g data-k="op:0,0,1,0,0"><g class="etichetta"><text x="120" y="370" text-anchor="start">L'attivatore rende l'inchiostro gelatinoso: da qui conta ogni secondo</text></g></g>
+<g data-k="op:0,0,0,1,0"><g class="etichetta"><text x="120" y="370" text-anchor="start">Immerso inclinato, il pezzo è avvolto dall'inchiostro spinto dalla pressione dell'acqua</text></g></g>
+<g data-k="op:0,0,0,0,1"><g class="etichetta"><text x="120" y="370" text-anchor="start">Risciacquato, riceve una lacca trasparente opaca o lucida</text></g></g>
+<line x1="410" y1="30" x2="410" y2="60" class="flusso-linea" marker-end="url(#sc-punta)"/>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>Ha molti nomi (immersion coating, cubic printing, aqua graphics) ma è lo stesso processo; serve a imitare materiali e a decorare. <span class="pag">(p. 408)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Il ciclo d'immersione dura 3–4 minuti ed è solo un terzo del lavoro: gli altri due terzi sono la verniciatura prima e dopo. <span class="pag">(p. 409)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>L'inchiostro, sotto 1 µm, sta fra fondo e lacca, che lo rendono resistente come una verniciatura a spruzzo; tutti i colori si applicano in un passaggio, senza registro. <span class="pag">(p. 409–410)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="5" aria-label="Mostra la fase 5 nello schema">Fase 5</button>Conviene per tirature più brevi della decorazione in stampo e senza attrezzature dedicate; per volumi da immersione meccanizzata si passa di solito a quella. <span class="pag">(p. 408, 410)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Quasi ogni materiale rigido che si possa verniciare; soprattutto plastiche stampate a iniezione e metalli. <span class="pag">(p. 410)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Da bassi volumi a produzione di massa. <span class="pag">(p. 408)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Nessuno, ma i pezzi piccoli richiedono maschere di supporto per stamparne molti insieme. <span class="pag">(p. 408, 410)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Da basso a moderato; manodopera moderata, perché le immersioni sono per lo più manuali. <span class="pag">(p. 408, 410)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Di solito non oltre 10 minuti; immersione 3–4 minuti; le mascherature lo allungano. <span class="pag">(p. 409–410)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Immagini ad alta definizione, pari alla stampa digitale; il film avvolge allungandosi poco. <span class="pag">(p. 408–409)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>La grafica non si posiziona con precisione; valori numerici: <span class="nd">n.d.</span> <span class="pag">(p. 410)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Limitate da vasca e larghezza del film: di solito 1 m². <span class="pag">(p. 410)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Complessità della forma</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-forma-ok-t v-forma-ok-d" class="mini-svg"><title id="v-forma-ok-t">Corretto: Curve dolci</title><desc id="v-forma-ok-d">Superfici piane, curve dolci e pieghe su un solo asse sono le più semplici; si stampano anche cinque facce di un cubo.</desc><defs>
+  <pattern id="v-forma-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-forma-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-forma-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-forma-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,90 Q80,40 140,90 Z" fill="#c8ccd0" class="contorno"/><path d="M20,90 Q80,40 140,90" fill="none" stroke="#6b7a3a" stroke-width="4"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-forma-ko-t v-forma-ko-d" class="mini-svg"><title id="v-forma-ko-t">Da evitare: Coni e spigoli vivi</title><desc id="v-forma-ko-d">Coni e spigoli vivi sono i più difficili: il motivo si riproduce peggio che sulle superfici piane.</desc><defs>
+  <pattern id="v-forma-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-forma-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-forma-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-forma-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M30,95 L80,30 L130,95 Z" fill="#c8ccd0" class="contorno"/><circle cx="80" cy="36" r="14" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Superfici piane e curve dolci riescono meglio; più la forma è complessa più è difficile, e coni e spigoli vivi sono i casi peggiori. <span class="pag">(p. 410)</span></p></article>
+<article class="card"><h3>Bolle d'aria</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-aria-ok-t v-aria-ok-d" class="mini-svg"><title id="v-aria-ok-t">Corretto: Sfogo per l'aria</title><desc id="v-aria-ok-d">Recessi profondi, fori e sottosquadri devono avere un’uscita per l’aria in alto; l’angolo d’immersione giusto aiuta.</desc><defs>
+  <pattern id="v-aria-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-aria-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-aria-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-aria-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,40 V90 H140 V40 H100 V70 H60 V40 Z" fill="#c8ccd0" class="contorno"/><path d="M80,70 V20" stroke="var(--flusso)" stroke-width="2" stroke-dasharray="3 2"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-aria-ko-t v-aria-ko-d" class="mini-svg"><title id="v-aria-ko-t">Da evitare: Bolla intrappolata</title><desc id="v-aria-ko-d">Senza sfogo resta una bolla e l'inchiostro non tocca la superficie.</desc><defs>
+  <pattern id="v-aria-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-aria-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-aria-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-aria-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,90 V40 H140 V90 H100 V60 H60 V90 Z" fill="#c8ccd0" class="contorno"/><circle cx="80" cy="76" r="12" fill="#fff" stroke="var(--testo)"/><circle cx="80" cy="76" r="20" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Recessi profondi, fori e sottosquadri vogliono uno sfogo per l'aria in alto; l'angolo d'immersione giusto risolve spesso i casi meno gravi. <span class="pag">(p. 410)</span></p></article>
+<article class="card"><h3>Solo motivi, non grafiche a registro</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-posizione-ok-t v-posizione-ok-d" class="mini-svg"><title id="v-posizione-ok-t">Corretto: Motivi continui</title><desc id="v-posizione-ok-d">Il processo è adatto a motivi che coprono la superficie: venature, marmo, mimetico.</desc><defs>
+  <pattern id="v-posizione-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-posizione-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-posizione-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-posizione-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="40" width="120" height="50" fill="#c8ccd0" class="contorno"/><path d="M30,40 Q42,65 30,90" fill="none" stroke="#8a6a42" stroke-width="2"/><path d="M55,40 Q67,65 55,90" fill="none" stroke="#8a6a42" stroke-width="3"/><path d="M80,40 Q92,65 80,90" fill="none" stroke="#8a6a42" stroke-width="2"/><path d="M105,40 Q117,65 105,90" fill="none" stroke="#8a6a42" stroke-width="3"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-posizione-ko-t v-posizione-ko-d" class="mini-svg"><title id="v-posizione-ko-t">Da evitare: Grafiche da posizionare</title><desc id="v-posizione-ko-d">La grafica non si colloca con precisione: numeri di un pannello di comando vanno stampati in altro modo.</desc><defs>
+  <pattern id="v-posizione-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-posizione-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-posizione-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-posizione-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="40" width="120" height="50" fill="#c8ccd0" class="contorno"/><text x="62" y="74" font-size="22" fill="var(--testo)">1 2</text><circle cx="80" cy="66" r="24" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Il prodotto si può allineare al motivo, ma non abbastanza per grafiche che richiedono precisione, come i numeri di un pannello. <span class="pag">(p. 410)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Possibilità descritte nel capitolo; lo schema principale mostra un'immersione singola.</p><div class="griglia-card"><article class="card"><h3>Imitazione di materiali</h3><p class="originale" lang="en">Imitation</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-imitazione-t var-imitazione-d" class="mini-svg"><title id="var-imitazione-t">Imitazione di materiali</title><desc id="var-imitazione-d">Venature di legno, marmo, pelle di serpente, fibra di carbonio: per pezzi che nel materiale vero sarebbero troppo costosi o impossibili.</desc><defs>
+  <pattern id="var-imitazione-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-imitazione-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-imitazione-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-imitazione-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="30" y="40" width="160" height="50" fill="#b08a5a" class="contorno"/>
+    <path d="M50,40 Q66,65 44,90" fill="none" stroke="#6e4f2e" stroke-width="2"/><path d="M80,40 Q96,65 74,90" fill="none" stroke="#6e4f2e" stroke-width="2"/><path d="M110,40 Q126,65 104,90" fill="none" stroke="#6e4f2e" stroke-width="2"/><path d="M140,40 Q156,65 134,90" fill="none" stroke="#6e4f2e" stroke-width="2"/><path d="M170,40 Q186,65 164,90" fill="none" stroke="#6e4f2e" stroke-width="2"/></svg></div><p>Legno, marmo, carbonio, pelle di serpente. <span class="pag">(p. 408–410)</span></p></article>
+<article class="card"><h3>Due immersioni con mascheratura</h3><p class="originale" lang="en">Masked double dip</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-mascherato-t var-mascherato-d" class="mini-svg"><title id="var-mascherato-t">Due immersioni con mascheratura</title><desc id="var-mascherato-d">Pezzi troppo complessi si mascherano e si stampano in due metà; l'inchiostro non aderisce a sé stesso e la giunzione è netta.</desc><defs>
+  <pattern id="var-mascherato-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-mascherato-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-mascherato-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-mascherato-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="30" y="40" width="80" height="50" fill="#6b7a3a" class="contorno"/><rect x="110" y="40" width="80" height="50" fill="#c8ccd0" class="contorno"/>
+    <line x1="110" y1="34" x2="110" y2="96" stroke="var(--testo)" stroke-dasharray="3 2"/></svg></div><p>Per pezzi con sottosquadri, come il calcio di un fucile. <span class="pag">(p. 410)</span></p></article>
+<article class="card"><h3>Grafiche decorative</h3><p class="originale" lang="en">Decoration</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-decoro-t var-decoro-d" class="mini-svg"><title id="var-decoro-t">Grafiche decorative</title><desc id="var-decoro-d">Motivi geometrici, bandiere, fotografie o grafiche proprie, stampati in digitale: colori pieni o sfumati allo stesso costo.</desc><defs>
+  <pattern id="var-decoro-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-decoro-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-decoro-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-decoro-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="30" y="40" width="160" height="50" fill="#fff" class="contorno"/>
+    <rect x="40" y="50" width="30" height="30" fill="#4c62d9"/><rect x="78" y="50" width="30" height="30" fill="#f06a1d"/><rect x="116" y="50" width="30" height="30" fill="#3f8f8a"/><rect x="154" y="50" width="30" height="30" fill="#b8323a"/></svg></div><p>Motivi, bandiere, foto, grafiche proprie. <span class="pag">(p. 408)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="tampografia.html">Tampografia</a> – più precisa, ma su piccole aree <span class="pag">(p. 408)</span></li><li><a href="verniciatura-spruzzo.html">Verniciatura a spruzzo</a> – fondo e lacca; effetti simili con aerografo <span class="pag">(p. 408)</span></li><li><a href="stampaggio-iniezione.html">Stampaggio a iniezione</a> – pezzi tipici; decorazione in stampo per grandi volumi <span class="pag">(p. 408, 410)</span></li><li><a href="serigrafia.html">Serigrafia</a> – non stampa superfici ondulate <span class="pag">(p. 402)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 408–411.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/stampa-idrografica.js"></script>
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laminazione termica 3D – Processi produttivi per il design</title>
+<meta name="description" content="Fibre continue posate lungo le linee di carico fra due film di PET, su uno stampo sagomato nella forma di volo, poi laminate con vuoto e calore: vele intere, senza cuciture, leggere e resistenti.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 1 – Formatura › Compositi</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Laminazione termica 3D</h1>
+  <p class="originale" lang="en">3D Thermal Laminating</p>
+  <p class="categoria">Parte 1 – Formatura · Compositi</p>
+  <p class="sintesi">Fibre continue posate lungo le linee di carico fra due film di PET, su uno stampo sagomato nella forma di volo, poi laminate con vuoto e calore: vele intere, senza cuciture, leggere e resistenti.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="2400,2000,3000,2200,2600">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="laminazione-termica-3d" data-alt="Modello 3D di uno stampo regolabile: una superficie piatta sorretta da una griglia di pistoni si gonfia in una forma curva. Un film chiaro si stende sopra, poi un portale con testa di posa traccia fibre arancioni che si aprono a ventaglio da un angolo. Un secondo film blu trasparente copre tutto, la vela si scalda, diventa verde e si solleva dallo stampo.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Forma dello stampo<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Film PET<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Posa delle fibre<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Secondo film e vuoto<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="5">5. Cura e sformatura<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Forma dello stampo</b>Il progettista prepara un file CAD; una serie di pistoni pneumatici lo trasferisce sulla superficie dello stampo, che prende la forma di volo della vela. <span class="pag">(p. 229–230)</span></li>
+    <li><b>Fase 2 – Film PET</b>Un film di PET rivestito di un adesivo apposito si stende sullo stampo e viene messo in tensione con cinghie. <span class="pag">(p. 230)</span></li>
+    <li><b>Fase 3 – Posa delle fibre</b>Una testa su portale a 6 assi segue esattamente lo stampo e posa i fasci di fibra lungo le linee di carico previste, con adesivo che li tiene in posizione. <span class="pag">(p. 228, 230–231)</span></li>
+    <li><b>Fase 4 – Secondo film e vuoto</b>Un secondo film copre le fibre e un sacco del vuoto lo preme a circa 8,6 N/cm². <span class="pag">(p. 231)</span></li>
+    <li><b>Fase 5 – Cura e sformatura</b>Il calore, da una coperta riscaldante o da infrarossi, forma e cura il laminato; la vela si toglie e riposa altri 5 giorni perché l'adesivo raggiunga la piena resistenza. <span class="pag">(p. 230–231)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di uno stampo regolabile: una superficie piatta sorretta da una griglia di pistoni si gonfia in una forma curva. Un film chiaro si stende sopra, poi un portale con testa di posa traccia fibre arancioni che si aprono a ventaglio da un angolo. Un secondo film blu trasparente copre tutto, la vela si scalda, diventa verde e si solleva dallo stampo.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 0 820 370" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Laminazione termica 3D (3DL) su stampo regolabile, in sezione</title>
+<desc id="sc-d">Sezione di uno stampo sorretto da pistoni pneumatici che passano da piatto a curvo. Le fasi mostrano il film PET teso, le fibre posate in sezione dal portale, il secondo film con il sacco del vuoto, il calore e la vela finita che si stacca.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<rect x="150" y="320" width="520" height="14" class="macchina"/>
+<!-- pistoni pneumatici: da piatti a sagomati -->
+<g data-k="op:0,0,0,0,0" data-i="op:1"><rect x="193" y="200" width="14" height="120" class="m-stampo contorno"/><rect x="253" y="200" width="14" height="120" class="m-stampo contorno"/><rect x="313" y="200" width="14" height="120" class="m-stampo contorno"/><rect x="373" y="200" width="14" height="120" class="m-stampo contorno"/><rect x="433" y="200" width="14" height="120" class="m-stampo contorno"/><rect x="493" y="200" width="14" height="120" class="m-stampo contorno"/><rect x="553" y="200" width="14" height="120" class="m-stampo contorno"/><rect x="613" y="200" width="14" height="120" class="m-stampo contorno"/>
+  <path d="M180,200 H640" fill="none" stroke="var(--testo)" stroke-width="6"/></g>
+<g data-k="op:1,1,1,1,1" data-i="op:0"><rect x="193" y="190.85066162570888" width="14" height="129.14933837429112" class="m-stampo contorno"/><rect x="253" y="168.39319470699434" width="14" height="151.60680529300566" class="m-stampo contorno"/><rect x="313" y="153.42155009451795" width="14" height="166.57844990548205" class="m-stampo contorno"/><rect x="373" y="145.93572778827976" width="14" height="174.06427221172024" class="m-stampo contorno"/><rect x="433" y="145.93572778827976" width="14" height="174.06427221172024" class="m-stampo contorno"/><rect x="493" y="153.42155009451795" width="14" height="166.57844990548205" class="m-stampo contorno"/><rect x="553" y="168.39319470699434" width="14" height="151.60680529300566" class="m-stampo contorno"/><rect x="613" y="190.85066162570888" width="14" height="129.14933837429112" class="m-stampo contorno"/>
+  <path d="M180,200 Q410,90 640,200" fill="none" stroke="var(--testo)" stroke-width="6"/></g>
+<g class="etichetta"><text x="40" y="352" text-anchor="start">Pistoni pneumatici che danno forma allo stampo (da file CAD)</text></g>
+
+<g data-k="ty:0,0,0,0,-50" data-i="ty:0">
+  <!-- film PET inferiore -->
+  <path d="M180,194 Q410,84 640,194" fill="none" stroke-width="4" style="stroke:var(--grezzo)" data-k="op:0,1,1,1,0" data-i="op:0"/>
+  <!-- fibre in sezione, posate una alla volta -->
+  <circle cx="220" cy="171.53308128544424" r="4.5" style="fill:var(--fuso)" data-k="op:0,0,1,1,0" data-i="op:0"/><circle cx="280" cy="151.57088846880907" r="4.5" style="fill:var(--fuso)" data-k="op:0,0,1,1,0" data-i="op:0"/><circle cx="340" cy="139.0945179584121" r="4.5" style="fill:var(--fuso)" data-k="op:0,0,1,1,0" data-i="op:0"/><circle cx="400" cy="134.1039697542533" r="4.5" style="fill:var(--fuso)" data-k="op:0,0,1,1,0" data-i="op:0"/><circle cx="460" cy="136.5992438563327" r="4.5" style="fill:var(--fuso)" data-k="op:0,0,1,1,0" data-i="op:0"/><circle cx="520" cy="146.58034026465026" r="4.5" style="fill:var(--fuso)" data-k="op:0,0,1,1,0" data-i="op:0"/><circle cx="580" cy="164.04725897920605" r="4.5" style="fill:var(--fuso)" data-k="op:0,0,1,1,0" data-i="op:0"/><circle cx="640" cy="189" r="4.5" style="fill:var(--fuso)" data-k="op:0,0,1,1,0" data-i="op:0"/>
+  <!-- film superiore e sacco del vuoto -->
+  <path d="M180,184 Q410,74 640,184" fill="none" stroke-width="4" style="stroke:var(--grezzo)" data-k="op:0,0,0,1,0" data-i="op:0"/>
+  <path d="M180,176 Q410,66 640,176" fill="none" stroke-width="2" stroke-dasharray="6 4" style="stroke:var(--flusso)" data-k="op:0,0,0,1,0" data-i="op:0"/>
+  <!-- vela finita -->
+  <path d="M180,190 Q410,80 640,190" fill="none" stroke-width="14" style="stroke:var(--finito)" data-k="op:0,0,0,0,1" data-i="op:0"/>
+</g>
+<g data-k="op:0,1,0,0,0"><g class="etichetta"><text x="470" y="80" text-anchor="start">Film PET adesivo, messo in tensione</text></g></g>
+<g data-k="op:0,0,0,1,0"><g class="etichetta"><text x="470" y="80" text-anchor="start">Secondo film; sottovuoto a circa 8,6 N/cm²</text></g>
+  <line x1="300" y1="70" x2="300" y2="110" class="flusso-linea" marker-end="url(#sc-punta)"/><line x1="520" y1="70" x2="520" y2="110" class="flusso-linea" marker-end="url(#sc-punta)"/></g>
+<g data-k="op:0,0,0,0,1"><g class="etichetta"><text x="470" y="80" text-anchor="start">vela laminata: forma di volo senza cuciture</text></g></g>
+
+<!-- portale a 6 assi con testa di posa -->
+<g data-k="op:0,0,1,0,0;tx:0,0,420,420,420" data-i="op:0;tx:0">
+  <rect x="180" y="10" width="40" height="70" class="scuro"/>
+  <path d="M200,80 V176.85066162570888" stroke="var(--fuso)" stroke-width="3"/>
+</g>
+<g data-k="op:0,0,1,0,0"><g class="etichetta"><text x="40" y="104" text-anchor="start">Testa di posa su portale a 6 assi: fibre lungo le linee di carico</text></g></g>
+<!-- 5: calore -->
+<g data-k="op:0,0,0,0,1">
+  <rect x="300" y="20" width="220" height="24" fill="none" stroke="var(--fuso)" stroke-width="3" stroke-dasharray="6 4"/>
+  <g class="etichetta"><text x="530" y="36" text-anchor="start">coperta riscaldante o infrarossi</text></g>
+</g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Le vele hanno una forma di volo tridimensionale. Di solito si ottiene cucendo o incollando pannelli tagliati; qui la vela nasce già nella sua forma, senza tagli né giunzioni. <span class="pag">(p. 228)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>Le fibre di rinforzo, aramide e carbonio, si posano una per una fra due film sottili di PET. Il PET formato a caldo mantiene la posizione delle fibre, allineate con la direzione degli sforzi. <span class="pag">(p. 228–229)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Il processo unisce i vantaggi della laminazione dei compositi e dell'avvolgimento di filamenti; le tecniche aerospaziali di vuoto e pressione evitano la delaminazione anche sotto carichi estremi. <span class="pag">(p. 228)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="5" aria-label="Mostra la fase 5 nello schema">Fase 5</button>Le vele risultano fino al 20% più leggere di quelle tradizionali, più resistenti e senza cuciture; rinforzi d'angolo, tasche e occhielli si aggiungono poi con taglio e cucito tradizionali. <span class="pag">(p. 228, 230)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Due film esterni di PET con adesivo speciale; fibre di carbonio, aramide, poliestere o combinazioni; film esterni diversi o taffetà di poliestere per resistenza a strappi, sfregamento e UV. <span class="pag">(p. 229)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Pezzo unico e piccoli lotti. <span class="pag">(p. 228)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Molto alto: stampi maschi grandi e regolati da computer. <span class="pag">(p. 228–229)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Molto alto; manodopera alta per l'abilità richiesta. <span class="pag">(p. 228–229)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Fino a 5 giorni per la lunga cura, più altri 5 giorni di riposo dell'adesivo. <span class="pag">(p. 228–231)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Superficie continua senza cuciture; rapporto resistenza/peso molto alto. <span class="pag">(p. 228)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Tolleranze numeriche: <span class="nd">n.d.</span> <span class="pag">(p. 228–231)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Vele da 10 a 500 m²; stampi fino a 400 m². <span class="pag">(p. 229–230)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Solo strutture in trazione</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-trazione-ok-t v-trazione-ok-d" class="mini-svg"><title id="v-trazione-ok-t">Corretto: Strutture in trazione</title><desc id="v-trazione-ok-d">Le vele sono progettate per lavorare in tensione: il processo è adatto a membrane tese.</desc><defs>
+  <pattern id="v-trazione-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-trazione-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-trazione-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-trazione-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,30 Q80,70 140,30" fill="none" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--finito)"/><line x1="30" y1="30" x2="6" y2="24" class="flusso-linea" marker-end="url(#v-trazione-ok-punta)"/><line x1="130" y1="30" x2="154" y2="24" class="flusso-linea" marker-end="url(#v-trazione-ok-punta)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-trazione-ko-t v-trazione-ko-d" class="mini-svg"><title id="v-trazione-ko-t">Da evitare: Elementi compressi</title><desc id="v-trazione-ko-d">Non è adatto a pezzi che devono resistere a compressione: la membrana si affloscia.</desc><defs>
+  <pattern id="v-trazione-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-trazione-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-trazione-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-trazione-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M30,60 Q60,40 80,70 Q100,100 130,60" fill="none" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--finito)"/><line x1="6" y1="60" x2="26" y2="60" class="flusso-linea" marker-end="url(#v-trazione-ko-punta)"/><line x1="154" y1="60" x2="134" y2="60" class="flusso-linea" marker-end="url(#v-trazione-ko-punta)"/><circle cx="80" cy="70" r="14" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Le vele sono progettate per essere resistenti in tensione: il processo non è adatto a pezzi che devono resistere a compressione. <span class="pag">(p. 229)</span></p></article>
+<article class="card"><h3>Fibre lungo le linee di carico</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-linee-ok-t v-linee-ok-d" class="mini-svg"><title id="v-linee-ok-t">Corretto: Fibre lungo le linee di carico</title><desc id="v-linee-ok-d">Le fibre continue seguono le linee di sforzo previste, con curve morbide che collegano le zone sollecitate.</desc><defs>
+  <pattern id="v-linee-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-linee-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-linee-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-linee-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,110 L80,10 L140,110 Z" class="m-grezzo contorno"/><path d="M80,14 Q60,70 30,108" fill="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--finito)"/><path d="M80,14 Q70,70 55,108" fill="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--finito)"/><path d="M80,14 Q80,70 80,108" fill="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--finito)"/><path d="M80,14 Q90,70 105,108" fill="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--finito)"/><path d="M80,14 Q100,70 130,108" fill="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--finito)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-linee-ko-t v-linee-ko-d" class="mini-svg"><title id="v-linee-ko-t">Da evitare: Pannelli tagliati e cuciti</title><desc id="v-linee-ko-d">Nella velatura tradizionale i pannelli si tagliano e si cuciono: fibre interrotte e cuciture, vele più pesanti.</desc><defs>
+  <pattern id="v-linee-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-linee-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-linee-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-linee-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,110 L80,10 L140,110 Z" class="m-grezzo contorno"/><line x1="62" y1="40" x2="98" y2="40" stroke="var(--ko)" stroke-width="2" stroke-dasharray="4 3"/><line x1="50" y1="60" x2="110" y2="60" stroke="var(--ko)" stroke-width="2" stroke-dasharray="4 3"/><line x1="38" y1="80" x2="122" y2="80" stroke="var(--ko)" stroke-width="2" stroke-dasharray="4 3"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Quantità, tipo e direzione delle fibre si regolano sulle prestazioni richieste; curve continue collegano le zone di sforzo. <span class="pag">(p. 229)</span></p></article>
+<article class="card"><h3>Spessore non uniforme, con un minimo</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spessore-ok-t v-spessore-ok-d" class="mini-svg"><title id="v-spessore-ok-t">Corretto: Spessore variabile secondo l'uso</title><desc id="v-spessore-ok-d">Lo spessore non è uniforme: varia con l'applicazione, aggiungendo fibre dove servono.</desc><defs>
+  <pattern id="v-spessore-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spessore-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spessore-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spessore-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,70 Q80,30 150,70 L150,80 Q80,50 10,90 Z" class="m-finito contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spessore-ko-t v-spessore-ko-d" class="mini-svg"><title id="v-spessore-ko-t">Da evitare: Spessore sotto il minimo</title><desc id="v-spessore-ko-d">Lo spessore minimo è fissato dai due film PET più le fibre: non si scende oltre.</desc><defs>
+  <pattern id="v-spessore-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spessore-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spessore-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spessore-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,70 Q80,40 150,70" fill="none" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--finito)"/><circle cx="80" cy="55" r="14" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Lo spessore varia con l'applicazione; il minimo è dato dallo spessore dei film PET e del rinforzo. <span class="pag">(p. 229)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Le due tecniche descritte nel capitolo; lo schema principale mostra il 3DL su stampo fisso.</p><div class="griglia-card"><article class="card"><h3>Laminazione 3D su stampo</h3><p class="originale" lang="en">3D laminating (3DL)</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-tdl-t var-tdl-d" class="mini-svg"><title id="var-tdl-t">Laminazione 3D su stampo fisso (3DL)</title><desc id="var-tdl-d">Stampi maschi orizzontali fino a 400 m², sagomati da pistoni pneumatici; fibre posate da un portale a 6 assi, sottovuoto e cura col calore. Ciclo fino a 5 giorni.</desc><defs>
+  <pattern id="var-tdl-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-tdl-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-tdl-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-tdl-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M20,90 Q110,30 200,90 V110 H20 Z" fill="url(#var-tdl-tratteggio)" class="contorno"/>
+    <path d="M20,84 Q110,24 200,84" fill="none" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--fuso)"/>
+    <rect x="96" y="0" width="28" height="20" class="scuro"/></svg></div><p>Stampi maschi orizzontali regolabili, fibre posate da un portale a 6 assi, vuoto e calore. <span class="pag">(p. 228, 230–231)</span></p></article>
+<article class="card"><h3>Laminazione 3D rotativa</h3><p class="originale" lang="en">3D rotary laminating (3Dr)</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-tdr-t var-tdr-d" class="mini-svg"><title id="var-tdr-t">Laminazione 3D rotativa (3Dr)</title><desc id="var-tdr-d">Un solo tamburo rotante con circa 2000 attuatori che lo curvano in due direzioni: la vela si forma mentre il tamburo gira ed esce finita, più in fretta e a costo minore.</desc><defs>
+  <pattern id="var-tdr-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-tdr-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-tdr-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-tdr-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <circle cx="110" cy="62" r="44" fill="url(#var-tdr-tratteggio)" class="contorno"/>
+    <path d="M66,62 A44,44 0 0 1 154,62" fill="none" stroke="var(--fuso)" stroke-width="6"/>
+    <path d="M154,62 Q190,70 214,100" fill="none" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--finito)"/>
+    <path d="M126,62 A16,16 0 1 1 110,46" class="flusso-linea" fill="none" marker-end="url(#var-tdr-punta)"/></svg></div><p>Produzione continua su un tamburo rotante con circa 2000 attuatori che lo curvano in due direzioni; la vela esce finita dal tamburo. Più rapida ed economica. <span class="pag">(p. 228, 230–231)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="laminazione-compositi.html">Laminazione dei compositi</a> – ne condivide i principi <span class="pag">(p. 228)</span></li><li><a href="avvolgimento-filamenti.html">Avvolgimento di filamenti</a> – posa simile della fibra; adatto ai pezzi cavi <span class="pag">(p. 222, 228)</span></li><li><a href="imbottitura.html">Imbottitura e tappezzeria</a> – la cucitura produce forme simili <span class="pag">(p. 228)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 228–231.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/laminazione-termica-3d.js"></script>
+</body>
+</html>

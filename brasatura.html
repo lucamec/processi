@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brasatura dolce e forte – Processi produttivi per il design</title>
+<meta name="description" content="Si scalda il giunto oltre la temperatura di fusione di una lega d'apporto, che la capillarità risucchia fra i pezzi: un legame permanente senza fondere il metallo base. Sotto i 450 °C è brasatura dolce, sopra è brasatura forte.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 3 – Giunzione › Termico</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Brasatura dolce e forte</h1>
+  <p class="originale" lang="en">Soldering and Brazing</p>
+  <p class="categoria">Parte 3 – Giunzione · Termico</p>
+  <p class="sintesi">Si scalda il giunto oltre la temperatura di fusione di una lega d'apporto, che la capillarità risucchia fra i pezzi: un legame permanente senza fondere il metallo base. Sotto i 450 °C è brasatura dolce, sopra è brasatura forte.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="1800,1800,2200,2400,1600">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="brasatura" data-alt="Modello 3D di due tubi di rame uniti da un manicotto. Si stende un anello di pasta di flusso, il tubo entra nel manicotto, poi una fiamma azzurra e arancione scalda il giunto finché diventa incandescente. Una bacchetta chiara tocca il bordo e un anello di lega argentata si forma tutt'intorno; raffreddato, il giunto diventa verde.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Flusso<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Assemblaggio<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Riscaldamento<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Apporto<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="5">5. Pulitura<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Flusso</b>Si controlla il giunto e lo si ricopre di pasta di flusso, che mantiene la superficie pulita e senza ossidi perché la lega possa bagnarla. <span class="pag">(p. 312, 314)</span></li>
+    <li><b>Fase 2 – Assemblaggio</b>I pezzi si montano, se serve, in una maschera, lasciando una fessura sottile e una sovrapposizione ampia. <span class="pag">(p. 313–314)</span></li>
+    <li><b>Fase 3 – Riscaldamento</b>Il cannello, di solito ossiacetilenico (o a propano per la brasatura dolce), porta il giunto oltre la temperatura di fusione della lega. <span class="pag">(p. 313–314)</span></li>
+    <li><b>Fase 4 – Apporto</b>La lega aggiunta fonde ed è risucchiata nel giunto per capillarità, formando un legame metallurgico; nel caso studio bastano circa 30 secondi. <span class="pag">(p. 312–314)</span></li>
+    <li><b>Fase 5 – Pulitura</b>Serve pochissima finitura: il pezzo si toglie dalla maschera, si lucida leggermente e si pulisce. <span class="pag">(p. 314)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di due tubi di rame uniti da un manicotto. Si stende un anello di pasta di flusso, il tubo entra nel manicotto, poi una fiamma azzurra e arancione scalda il giunto finché diventa incandescente. Una bacchetta chiara tocca il bordo e un anello di lega argentata si forma tutt'intorno; raffreddato, il giunto diventa verde.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 20 820 330" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Brasatura a cannello di un giunto a manicotto, in sezione</title>
+<desc id="sc-d">Sezione assiale di due tubi di rame e un manicotto. Le fasi mostrano il flusso sulle superfici, il tubo che entra, il cannello che scalda, la lega che risale per capillarità nella fessura e il giunto finito.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<line x1="100" y1="200" x2="720" y2="200" class="asse"/>
+<!-- manicotto -->
+<rect x="300" y="140" width="220" height="16" fill="#c27a4a" class="contorno"/><rect x="300" y="244" width="220" height="16" fill="#c27a4a" class="contorno"/>
+<!-- tubo che entra -->
+<g data-k="tx:0,0,0,0,0" data-i="tx:-160">
+  <rect x="120" y="158" width="380" height="12" fill="#c27a4a" class="contorno"/><rect x="120" y="230" width="380" height="12" fill="#c27a4a" class="contorno"/>
+</g>
+<rect x="520" y="158" width="200" height="12" fill="#c27a4a" class="contorno"/><rect x="520" y="230" width="200" height="12" fill="#c27a4a" class="contorno"/>
+<g class="etichetta"><text x="20" y="100" text-anchor="start">Manicotto: la sovrapposizione dà una grande superficie di giunto</text></g>
+<!-- flusso -->
+<g data-k="op:1,1,1,0,0" data-i="op:0"><rect x="300" y="155" width="220" height="3" style="fill:var(--grezzo)"/><rect x="300" y="242" width="220" height="3" style="fill:var(--grezzo)"/></g>
+<g data-k="op:1,0,0,0,0"><g class="etichetta"><text x="20" y="330" text-anchor="start">pasta di flusso: superficie pulita e senza ossidi</text></g></g>
+<!-- capillarità del metallo d'apporto -->
+<path d="M300,156 H520" pathLength="100" stroke-dasharray="100 100" stroke-width="5" fill="none" style="stroke:#d9dde2" data-k="dash:100,100,100,0,0" data-i="dash:100"/><path d="M300,244 H520" pathLength="100" stroke-dasharray="100 100" stroke-width="5" fill="none" style="stroke:#d9dde2" data-k="dash:100,100,100,0,0" data-i="dash:100"/>
+<!-- cannello -->
+<g data-k="op:0,0,1,1,0" data-i="op:0">
+  <path d="M600,40 L540,100" stroke="var(--testo)" stroke-width="12"/>
+  <path d="M540,100 L500,140 L520,130 L515,150 Z" style="fill:var(--flusso)" opacity="0.7"/>
+  <path d="M530,108 Q500,120 504,148" fill="none" stroke="var(--fuso)" stroke-width="6"/>
+</g>
+<rect x="296" y="136" width="228" height="128" style="fill:var(--fuso)" fill-opacity="0.12" data-k="op:0,0,1,1,0" data-i="op:0"/>
+<!-- bacchetta d'apporto -->
+<g data-k="op:0,0,0,1,0;tx:0,0,0,-20,-20" data-i="op:0;tx:0"><line x1="560" y1="70" x2="526" y2="134" stroke="#d9dde2" stroke-width="6"/></g>
+<g data-k="op:0,0,1,0,0"><g class="etichetta"><text x="20" y="330" text-anchor="start">il cannello scalda il giunto oltre la fusione della lega d'apporto</text></g></g>
+<g data-k="op:0,0,0,1,0"><g class="etichetta"><text x="20" y="330" text-anchor="start">la lega fusa viene risucchiata nella fessura per capillarità</text></g></g>
+<g data-k="op:0,0,0,0,1"><g class="etichetta"><text x="20" y="330" text-anchor="start">il metallo base non fonde: niente ZTA; basta una leggera pulitura</text></g></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Il processo ha quattro elementi: preparazione del giunto, flusso, lega d'apporto e riscaldamento. In alternativa al flusso si lavora sottovuoto o in gas inerte. <span class="pag">(p. 312)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>La temperatura di fusione della lega decide il nome: sotto 450 °C brasatura dolce, sopra brasatura forte, più resistente. Il metallo base fonde sempre più in alto della lega. <span class="pag">(p. 312)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>La lega è di solito a base di argento, ottone, stagno, rame o nichel, scelta compatibile con il pezzo; per l'impatto del piombo oggi si usano stagno, argento e rame. <span class="pag">(p. 312, 314)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="5" aria-label="Mostra la fase 5 nello schema">Fase 5</button>Non fondendo il metallo base, la metallurgia non cambia e la zona alterata è minima: utile per parti sottili e delicate. I pezzi difettosi si possono smontare e rifare. <span class="pag">(p. 314–315)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>La maggior parte dei metalli (alluminio, rame, acciaio al carbonio, inox, nichel, titanio, compositi a matrice metallica) e molte ceramiche, che si metallizzano prima per favorire la bagnatura. <span class="pag">(p. 312, 314)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Da pezzo unico a produzione di massa. <span class="pag">(p. 312, 314)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Nessuno, ma possono servire maschere di supporto. <span class="pag">(p. 312, 315)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Basso; manodopera generalmente bassa. <span class="pag">(p. 312, 315)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Rapido; nel caso studio circa 30 secondi; il forno è più lento ma unisce molti pezzi insieme. <span class="pag">(p. 312, 314–315)</span><span class="nota-ocr">Durata tipica a cannello: <span class="nd">n.d.</span> (OCR &quot;i-io minutes&quot;)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Legame resistente, vicino al metallo base; cordone che di solito non richiede molata; con l'ottone il colore si adatta al pezzo. <span class="pag">(p. 312, 314)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Il giunto non deve combaciare esattamente: la lega colma la fessura. Tolleranze numeriche: <span class="nd">n.d.</span> <span class="pag">(p. 314)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>In forno e sottovuoto limitate dalla camera; valori numerici: <span class="nd">n.d.</span> <span class="pag">(p. 314)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Interfaccia ampia</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-superficie-ok-t v-superficie-ok-d" class="mini-svg"><title id="v-superficie-ok-t">Corretto: Giunto a sovrapposizione</title><desc id="v-superficie-ok-d">L'interfaccia del giunto deve essere la più ampia possibile: sovrapposizioni e manicotti.</desc><defs>
+  <pattern id="v-superficie-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-superficie-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-superficie-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-superficie-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="50" width="80" height="14" fill="#c27a4a" class="contorno"/><rect x="60" y="64" width="80" height="14" fill="#c27a4a" class="contorno"/><rect x="60" y="62" width="40" height="4" fill="#d9dde2"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-superficie-ko-t v-superficie-ko-d" class="mini-svg"><title id="v-superficie-ko-t">Da evitare: Giunto di testa, a T o a becco di flauto</title><desc id="v-superficie-ko-d">Questi giunti offrono poca superficie e non sono in genere adatti.</desc><defs>
+  <pattern id="v-superficie-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-superficie-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-superficie-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-superficie-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="56" width="60" height="14" fill="#c27a4a" class="contorno"/><rect x="82" y="56" width="60" height="14" fill="#c27a4a" class="contorno"/><circle cx="81" cy="63" r="14" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>I giunti di testa, a T e a becco di flauto in genere non vanno bene: l'interfaccia deve offrire molta superficie, cosa che può influire sull'aspetto del prodotto. <span class="pag">(p. 314)</span></p></article>
+<article class="card"><h3>Fessura per la capillarità</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-fessura-ok-t v-fessura-ok-d" class="mini-svg"><title id="v-fessura-ok-t">Corretto: Fessura sottile e regolare</title><desc id="v-fessura-ok-d">Una piccola luce fra i pezzi permette la risalita capillare; il giunto non deve combaciare perfettamente.</desc><defs>
+  <pattern id="v-fessura-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-fessura-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-fessura-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-fessura-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="40" width="120" height="20" fill="#c27a4a" class="contorno"/><rect x="20" y="64" width="120" height="20" fill="#c27a4a" class="contorno"/><rect x="20" y="60" width="120" height="4" fill="#d9dde2"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-fessura-ko-t v-fessura-ko-d" class="mini-svg"><title id="v-fessura-ko-t">Da evitare: Fessura troppo larga</title><desc id="v-fessura-ko-d">Una luce più ampia si colma comunque, ma il giunto perde resistenza.</desc><defs>
+  <pattern id="v-fessura-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-fessura-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-fessura-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-fessura-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="30" width="120" height="20" fill="#c27a4a" class="contorno"/><rect x="20" y="74" width="120" height="20" fill="#c27a4a" class="contorno"/><rect x="20" y="50" width="120" height="24" fill="#d9dde2" opacity="0.6"/><circle cx="80" cy="62" r="16" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Serve una piccola luce perché la lega risalga per capillarità; una luce più ampia si colma, ma riduce la resistenza. <span class="pag">(p. 313)</span></p><p class="nota-ocr">Valore della fessura: <span class="nd">n.d.</span> (conversione &quot;0.05 mm (0.02 in.)&quot; incoerente)</p></article>
+<article class="card"><h3>Lega compatibile, superfici pulite</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-lega-ok-t v-lega-ok-d" class="mini-svg"><title id="v-lega-ok-t">Corretto: Lega d'apporto compatibile</title><desc id="v-lega-ok-d">La lega (argento, ottone, stagno, rame, nichel) si sceglie compatibile con il metallo base; determina anche resistenza e temperatura di servizio.</desc><defs>
+  <pattern id="v-lega-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-lega-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-lega-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-lega-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="50" width="120" height="30" fill="#c27a4a" class="contorno"/><rect x="20" y="62" width="120" height="6" fill="#d9dde2"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-lega-ko-t v-lega-ko-d" class="mini-svg"><title id="v-lega-ko-t">Da evitare: Lega non compatibile o superficie sporca</title><desc id="v-lega-ko-d">Senza compatibilità metallurgica e bagnatura la lega non aderisce: contaminazione e tensione superficiale la ostacolano.</desc><defs>
+  <pattern id="v-lega-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-lega-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-lega-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-lega-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="50" width="120" height="30" fill="#c27a4a" class="contorno"/><circle cx="40" cy="46" r="6" fill="#d9dde2" stroke="var(--testo)"/><circle cx="70" cy="46" r="6" fill="#d9dde2" stroke="var(--testo)"/><circle cx="100" cy="46" r="6" fill="#d9dde2" stroke="var(--testo)"/><circle cx="125" cy="46" r="6" fill="#d9dde2" stroke="var(--testo)"/><circle cx="80" cy="46" r="20" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>La lega deve essere compatibile con il metallo base e ne determina resistenza e temperatura di servizio; contaminazione e tensione superficiale ostacolano la bagnatura. <span class="pag">(p. 312, 314)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Lo schema principale mostra il riscaldamento a cannello; questi sono gli altri metodi descritti nel capitolo.</p><div class="griglia-card"><article class="card"><h3>A conduzione</h3><p class="originale" lang="en">Conduction heating</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-conduzione-t var-conduzione-d" class="mini-svg"><title id="var-conduzione-t">A conduzione</title><desc id="var-conduzione-d">Un saldatore scalda il giunto e la lega si aggiunge a filo o in bacchetta; tipico dei componenti a foro passante sui circuiti stampati.</desc><defs>
+  <pattern id="var-conduzione-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-conduzione-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-conduzione-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-conduzione-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="20" y="80" width="180" height="14" class="m-finito contorno"/><rect x="104" y="40" width="10" height="54" class="m-stampo contorno"/>
+    <path d="M40,20 L96,70" stroke="var(--testo)" stroke-width="8"/><path d="M180,30 L118,74" stroke="#d9dde2" stroke-width="4"/></svg></div><p>Con un saldatore, per esempio sui circuiti stampati e per piccole serie. <span class="pag">(p. 312–313)</span></p></article>
+<article class="card"><h3>In forno</h3><p class="originale" lang="en">Furnace heating</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-forno-t var-forno-d" class="mini-svg"><title id="var-forno-t">In forno</title><desc id="var-forno-d">Tutto il pezzo si scalda fino alla fusione della lega, spesso su nastro trasportatore o in atmosfera protettiva: molti giunti insieme, per la produzione di massa.</desc><defs>
+  <pattern id="var-forno-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-forno-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-forno-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-forno-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="30" y="20" width="160" height="70" fill="none" stroke="var(--fuso)" stroke-width="3" stroke-dasharray="6 4"/>
+    <rect x="10" y="94" width="200" height="10" class="scuro"/><rect x="50" y="70" width="30" height="24" class="m-stampo contorno"/><rect x="100" y="70" width="30" height="24" class="m-stampo contorno"/><rect x="150" y="70" width="30" height="24" class="m-stampo contorno"/></svg></div><p>Riscaldamento di tutto il pezzo, per molti giunti insieme o in atmosfera protettiva, come per il titanio. <span class="pag">(p. 313–314)</span></p></article>
+<article class="card"><h3>A onda e a rifusione</h3><p class="originale" lang="en">Wave and reflow soldering</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-pcb-t var-pcb-d" class="mini-svg"><title id="var-pcb-t">A onda e a rifusione</title><desc id="var-pcb-d">Per i circuiti stampati: le schede passano in un bagno di flusso e poi in un'onda di lega, oppure si serigrafa una pasta di lega e flusso e si cuoce, centinaia di giunti in una passata.</desc><defs>
+  <pattern id="var-pcb-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-pcb-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-pcb-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-pcb-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="20" y="40" width="180" height="12" class="m-finito contorno"/><rect x="50" y="28" width="14" height="12" class="scuro"/><rect x="90" y="28" width="14" height="12" class="scuro"/><rect x="130" y="28" width="14" height="12" class="scuro"/><rect x="170" y="28" width="14" height="12" class="scuro"/>
+    <path d="M10,90 Q60,60 110,80 T210,80 V112 H10 Z" fill="#d9dde2" class="contorno"/></svg></div><p>Metodi di massa per i circuiti stampati. <span class="pag">(p. 312)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="saldatura-arco.html">Saldatura ad arco</a> – fonde anche il metallo base <span class="pag">(p. 314)</span></li><li><a href="saldatura-resistenza.html">Saldatura a resistenza</a> – usi simili, giunti diversi <span class="pag">(p. 314)</span></li><li><a href="galvanostegia.html">Galvanostegia</a> – metallizza le ceramiche da brasare <span class="pag">(p. 312)</span></li><li><a href="metallizzazione-sottovuoto.html">Metallizzazione sottovuoto</a> – metallizza i materiali non conduttivi <span class="pag">(p. 312)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 312–315.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/brasatura.js"></script>
+</body>
+</html>

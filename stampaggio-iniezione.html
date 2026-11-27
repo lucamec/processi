@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stampaggio a iniezione – Processi produttivi per il design</title>
+<meta name="description" content="La plastica fusa viene spinta ad alta pressione in uno stampo chiuso, dove si raffredda e prende forma: è il processo di riferimento per produrre in grande serie pezzi in plastica tutti uguali.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 1 – Formatura › Plastica e gomma</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Stampaggio a iniezione</h1>
+  <p class="originale" lang="en">Injection Molding</p>
+  <p class="categoria">Parte 1 – Formatura · Plastica e gomma</p>
+  <p class="sintesi">La plastica fusa viene spinta ad alta pressione in uno stampo chiuso, dove si raffredda e prende forma: è il processo di riferimento per produrre in grande serie pezzi in plastica tutti uguali.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="3200,1800,2400,2800,2600">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="stampaggio-iniezione" data-alt="Modello 3D della pressa, tagliato a metà lungo l'asse per vedere l'interno. A sinistra c'è la tramoggia con i granuli sopra il cilindro; dentro il cilindro gira la vite a filetto elicoidale, circondata da tre fasce riscaldanti. A destra lo stampo è diviso in due metà: quella fissa, con il canale di colata, e quella mobile, con la cavità a forma di vaschetta, il nucleo, i canali di raffreddamento e gli estrattori. Seguendo le fasi, la vite ruota e poi avanza, lo stampo si chiude, il materiale arancione riempie la cavità partendo dal canale, diventa verde quando solidifica e infine il pezzo viene espulso. Il pulsante Spaccato mostra o nasconde la metà anteriore.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Plastificazione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Chiusura<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Iniezione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Mantenimento e raffreddamento<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="5">5. Apertura ed estrazione<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Plastificazione</b>I granuli scendono dalla tramoggia nel cilindro. La vite ruota: trascina il materiale in avanti e lo mescola; con il calore delle fasce riscaldanti il materiale fonde e si raccoglie davanti alla punta, pronto per l'iniezione. <span class="pag">(p. 51)</span></li>
+    <li><b>Fase 2 – Chiusura</b>Il semistampo mobile avanza e si chiude contro quello fisso. Il gruppo idraulico lo tiene serrato contro la pressione che arriverà. <span class="pag">(p. 51)</span></li>
+    <li><b>Fase 3 – Iniezione</b>La vite, mossa da un motore e da un pistone idraulico, spinge il fuso attraverso l'ugello e il canale di colata fino a riempire la cavità. <span class="pag">(p. 51)</span></li>
+    <li><b>Fase 4 – Mantenimento e raffreddamento</b>La pressione resta applicata mentre l'acqua nei canali dello stampo sottrae calore: così si limitano ritiro e deformazioni. Il pezzo solidifica. <span class="pag">(p. 51)</span></li>
+    <li><b>Fase 5 – Apertura ed estrazione</b>Lo stampo si apre, il pezzo resta sul semistampo mobile e gli estrattori lo spingono fuori. Il ciclo ricomincia. <span class="pag">(p. 51)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D della pressa, tagliato a metà lungo l'asse per vedere l'interno. A sinistra c'è la tramoggia con i granuli sopra il cilindro; dentro il cilindro gira la vite a filetto elicoidale, circondata da tre fasce riscaldanti. A destra lo stampo è diviso in due metà: quella fissa, con il canale di colata, e quella mobile, con la cavità a forma di vaschetta, il nucleo, i canali di raffreddamento e gli estrattori. Seguendo le fasi, la vite ruota e poi avanza, lo stampo si chiude, il materiale arancione riempie la cavità partendo dal canale, diventa verde quando solidifica e infine il pezzo viene espulso. Il pulsante Spaccato mostra o nasconde la metà anteriore.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 0 880 340" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Ciclo di stampaggio a iniezione in sezione</title>
+<desc id="sc-d">Sezione longitudinale della pressa: a sinistra il cilindro riscaldato con la vite e la tramoggia dei granuli, a destra lo stampo in due metà. L'animazione mostra in cinque fasi la plastificazione, la chiusura, l'iniezione, il raffreddamento e l'estrazione del pezzo, un bicchiere visto in sezione.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<g class="macchina-iniezione">
+  <!-- Motore e pistone idraulico -->
+  <rect x="8" y="150" width="44" height="60" class="macchina"/>
+  <g class="etichetta"><text x="8" y="236" text-anchor="start">Motore + pistone</text></g>
+  <g data-k="op:0,0,1,1,0">
+    <line x1="14" y1="262" x2="84" y2="262" class="flusso-linea" marker-end="url(#sc-punta)"/>
+    <g class="etichetta"><text x="92" y="267" text-anchor="start">Pressione di iniezione</text></g>
+  </g>
+
+  <!-- Tramoggia -->
+  <path d="M95,55 L185,55 L150,150 L130,150 Z" class="macchina"/>
+  <g class="granuli">
+    <circle cx="120" cy="75" r="6" class="m-grezzo contorno"/><circle cx="140" cy="72" r="6" class="m-grezzo contorno"/><circle cx="160" cy="76" r="6" class="m-grezzo contorno"/><circle cx="130" cy="92" r="6" class="m-grezzo contorno"/><circle cx="150" cy="90" r="6" class="m-grezzo contorno"/><circle cx="140" cy="108" r="6" class="m-grezzo contorno"/><circle cx="135" cy="125" r="6" class="m-grezzo contorno"/><circle cx="145" cy="138" r="6" class="m-grezzo contorno"/><circle cx="110" cy="64" r="6" class="m-grezzo contorno"/><circle cx="170" cy="64" r="6" class="m-grezzo contorno"/>
+  </g>
+  <g class="etichetta"><line x1="170" y1="70" x2="192" y2="47" class="richiamo"/><text x="192" y="52" text-anchor="start">Tramoggia con granuli</text></g>
+
+  <!-- Cilindro (sezione) -->
+  <rect x="58" y="168" width="414" height="24" class="cavita"/>
+  <rect x="58" y="150" width="414" height="18" fill="url(#sc-tratteggio)" class="contorno"/>
+  <rect x="58" y="192" width="414" height="18" fill="url(#sc-tratteggio)" class="contorno"/>
+  <rect x="130" y="149" width="20" height="20" class="cavita"/>
+  <rect x="205" y="141" width="44" height="9" class="scuro"/><rect x="205" y="210" width="44" height="9" class="scuro"/><rect x="285" y="141" width="44" height="9" class="scuro"/><rect x="285" y="210" width="44" height="9" class="scuro"/><rect x="365" y="141" width="44" height="9" class="scuro"/><rect x="365" y="210" width="44" height="9" class="scuro"/>
+  <path d="M227,100 q6,4.25 0,8.5 q-6,4.25 0,8.5 q6,4.25 0,8.5 q-6,4.25 0,8.5" class="flusso-linea" fill="none" marker-end="url(#sc-punta)"/><path d="M307,100 q6,4.25 0,8.5 q-6,4.25 0,8.5 q6,4.25 0,8.5 q-6,4.25 0,8.5" class="flusso-linea" fill="none" marker-end="url(#sc-punta)"/><path d="M387,100 q6,4.25 0,8.5 q-6,4.25 0,8.5 q6,4.25 0,8.5 q-6,4.25 0,8.5" class="flusso-linea" fill="none" marker-end="url(#sc-punta)"/>
+  <g class="etichetta"><text x="262" y="92" text-anchor="start">Fasce riscaldanti</text></g>
+  <g class="etichetta"><line x1="130" y1="210" x2="120" y2="300" class="richiamo"/><text x="120" y="305" text-anchor="start">Cilindro (in sezione)</text></g>
+
+  <!-- Accumulo di materiale fuso davanti alla vite -->
+  <rect x="425" y="168" width="47" height="24" class="m-fuso" data-k="sx:1,1,0.02,0.02,0.02" data-o="472,180"/>
+
+  <!-- Vite: arretra mentre plastifica (fase 1), avanza come un pistone (fase 3) -->
+  <g data-k="tx:-40,-40,0,0,0">
+    <rect x="20" y="176" width="410" height="8" class="m-stampo contorno"/>
+    <line x1="75" y1="180" x2="424" y2="180" stroke-width="22" stroke-dasharray="5 13" class="filetti" data-k="dash:-216,-216,-216,-216,-216" data-i="dash:0"/>
+    <path d="M424,168 L466,180 L424,192 Z" class="m-stampo contorno"/>
+  </g>
+  <g class="etichetta"><line x1="320" y1="190" x2="290" y2="257" class="richiamo"/><text x="290" y="262" text-anchor="start">Vite di Archimede</text></g>
+
+  <!-- Ugello -->
+  <g class="ugello">
+  <path d="M472,160 L500,172 L500,188 L472,200 z" fill="url(#sc-tratteggio)" class="contorno"/>
+  <rect x="472" y="176" width="28" height="8" class="cavita"/>
+</g>
+  <rect x="472" y="176" width="28" height="8" class="m-fuso"/>
+  <g class="etichetta"><line x1="486" y1="166" x2="448" y2="130" class="richiamo"/><text x="448" y="135" text-anchor="start">Ugello</text></g>
+</g>
+
+<!-- Riempimento progressivo della cavità -->
+<clipPath id="sc-riempi" clipPathUnits="userSpaceOnUse">
+  <rect x="500" y="90" width="145" height="180" data-k="sx:0,0,1,1,1" data-i="sx:0" data-o="500,180"/>
+</clipPath>
+
+<!-- Semistampo fisso con canale di colata -->
+<rect x="500" y="90" width="45" height="180" fill="url(#sc-tratteggio)" class="contorno"/>
+<rect x="500" y="176" width="45" height="8" class="cavita"/>
+<g clip-path="url(#sc-riempi)">
+  <rect x="500" y="176" width="45" height="8" class="m-fuso" data-k="op:1,1,1,0,0" data-i="op:1"/>
+  <rect x="500" y="176" width="45" height="8" class="m-finito" data-k="op:0,0,0,1,0" data-i="op:0"/>
+</g>
+<circle cx="522" cy="112" r="7" class="m-flusso" data-k="op:0.25,0.25,0.25,1,0.25"/><circle cx="522" cy="248" r="7" class="m-flusso" data-k="op:0.25,0.25,0.25,1,0.25"/>
+<g class="etichetta"><text x="470" y="292" text-anchor="start">Semistampo fisso</text></g>
+
+<!-- Gruppo mobile: semistampo, estrattori, piastra e pezzo -->
+<g data-k="tx:110,0,0,0,110">
+  <rect x="545" y="90" width="135" height="180" fill="url(#sc-tratteggio)" class="contorno"/>
+  <path d="M640,120 H545 V240 H640 V228 H557 V132 H640 Z" class="cavita"/>
+  <circle cx="600" cy="104" r="7" class="m-flusso" data-k="op:0.25,0.25,0.25,1,0.25"/><circle cx="600" cy="256" r="7" class="m-flusso" data-k="op:0.25,0.25,0.25,1,0.25"/><circle cx="612" cy="180" r="7" class="m-flusso" data-k="op:0.25,0.25,0.25,1,0.25"/>
+  <rect x="680" y="70" width="20" height="220" class="macchina"/>
+  <rect x="700" y="170" width="100" height="20" class="macchina"/>
+  <g data-k="op:0,1,1,1,0">
+    <line x1="790" y1="60" x2="712" y2="60" class="flusso-linea" marker-end="url(#sc-punta)"/>
+    <g class="etichetta"><text x="640" y="48" text-anchor="start">Forza di chiusura</text></g>
+  </g>
+  <g data-k="tx:0,0,0,0,-100" data-i="tx:0">
+    <rect x="640" y="122" width="42" height="8" class="scuro"/>
+    <rect x="640" y="230" width="42" height="8" class="scuro"/>
+  </g>
+  <g class="etichetta"><text x="546" y="82" text-anchor="start">Semistampo mobile</text></g>
+  <g class="etichetta"><line x1="662" y1="238" x2="655" y2="317" class="richiamo"/><text x="655" y="322" text-anchor="start">Estrattori</text></g>
+  <g data-k="tx:0,0,0,0,-100" data-i="tx:0">
+    <g clip-path="url(#sc-riempi)">
+      <path d="M640,120 H545 V240 H640 V228 H557 V132 H640 Z" class="m-fuso contorno" data-k="op:1,1,1,0,0" data-i="op:1"/>
+    </g>
+    <path d="M640,120 H545 V240 H640 V228 H557 V132 H640 Z" class="m-finito sezionato contorno" data-k="op:0,0,0,1,1" data-i="op:0"/>
+  </g>
+</g>
+<rect x="796" y="160" width="24" height="40" class="macchina"/>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>La materia prima è in granuli, essiccati e caricati in una tramoggia; qui si possono aggiungere i pigmenti, in quantità comprese fra 0,5% e 5%. Nel cilindro una vite (detta &quot;di Archimede&quot;) ruota e così scalda, mescola e spinge avanti il materiale finché non è fuso. <span class="pag">(p. 51)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>Lo stampo è formato da due metà: una fissa e una mobile. La metà mobile si chiude e viene tenuta serrata. <span class="pag">(p. 51)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>Raggiunta la pressione giusta, la vite inietta il fuso nella cavità passando dal punto di iniezione (in inglese gate) e dai canali di alimentazione (runner). <span class="pag">(p. 51)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>La pressione resta applicata finché il pezzo si raffredda, per ridurre ritiro e deformazione. La durata del ciclo dipende dalle dimensioni del pezzo e dal tempo di solidificazione del polimero: di norma fra 30 e 60 secondi. <span class="pag">(p. 51)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="5" aria-label="Mostra la fase 5 nello schema">Fase 5</button>Lo stampo si apre, gli eventuali nuclei mobili rientrano e gli estrattori (perni di espulsione) staccano il pezzo, che cade su un nastro o viene prelevato da un robot. <span class="pag">(p. 51)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Quasi tutti i termoplastici; anche alcuni termoindurenti e polveri metalliche legate da una matrice polimerica. <span class="pag">(p. 52)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Grandi serie: lo stampo è conveniente solo per produzioni ad alto volume. Lotto minimo numerico: <span class="nd">n.d.</span> <span class="pag">(p. 50)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Molto alto; dipende dalla complessità e dal numero di cavità e di nuclei. <span class="pag">(p. 50, 52)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Molto basso; costo della manodopera relativamente basso. <span class="pag">(p. 50, 52)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Fra 30 e 60 secondi, anche con stampi a più cavità; più lungo per i pezzi grandi. <span class="pag">(p. 50–52)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Molto alta, con riproduzione dei dettagli fini. Le grandi superfici lucide costano più di quelle opache o testurizzate; una texture fine maschera le imperfezioni. <span class="pag">(p. 50, 52)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Tolleranze strette e processo molto ripetibile (valore numerico: <span class="nd">n.d.</span>). Nel caso studio un accoppiamento forzato richiede una precisione superiore e viene forato dopo lo stampaggio. <span class="pag">(p. 50, 54)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Dai paraurti delle auto ai componenti più minuti. Valori numerici: <span class="nd">n.d.</span> <span class="pag">(p. 50)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Spessore delle pareti uniforme</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spessore-ok-t v-spessore-ok-d" class="mini-svg"><title id="v-spessore-ok-t">Corretto: Pareti di spessore uniforme</title><desc id="v-spessore-ok-d">Sezione a U con fondo e fianchi dello stesso spessore.</desc><defs>
+  <pattern id="v-spessore-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spessore-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spessore-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spessore-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,25 H40 V75 H120 V25 H140 V95 H20 Z" class="m-finito sezionato contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spessore-ko-t v-spessore-ko-d" class="mini-svg"><title id="v-spessore-ko-t">Da evitare: Pareti di spessore molto diverso</title><desc id="v-spessore-ko-d">Sezione a U con fianchi sottili e fondo molto spesso: raffreddamento non uniforme e deformazione.</desc><defs>
+  <pattern id="v-spessore-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spessore-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spessore-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spessore-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,25 H30 V55 H130 V25 H140 V95 H20 Z" class="m-finito sezionato contorno"/><path d="M30,98 q50,10 100,0" class="flusso-linea tratteggiata"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Pareti di spessore diverso si raffreddano a velocità diverse e il pezzo si deforma. Il libro dà anche una tolleranza percentuale sulla differenza di spessore, ma la cifra è illeggibile nella scansione. <span class="pag">(p. 52)</span></p><p class="nota-ocr">Percentuale ammessa: <span class="nd">n.d.</span> (OCR &quot;io%&quot;, nessuna conversione che la confermi)</p></article>
+<article class="card"><h3>Iniettare nella sezione più spessa</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-ingresso-ok-t v-ingresso-ok-d" class="mini-svg"><title id="v-ingresso-ok-t">Corretto: Ingresso nella sezione più spessa</title><desc id="v-ingresso-ok-d">Il materiale entra dalla parte spessa e finisce in quella sottile.</desc><defs>
+  <pattern id="v-ingresso-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-ingresso-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-ingresso-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-ingresso-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,40 H90 V30 H150 V80 H90 V70 H20 Z" class="m-finito sezionato contorno"/><line x1="150" y1="98" x2="120" y2="84" class="flusso-linea" marker-end="url(#v-ingresso-ok-punta)"/><path d="M60,55 H30" class="flusso-linea tratteggiata"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-ingresso-ko-t v-ingresso-ko-d" class="mini-svg"><title id="v-ingresso-ko-t">Da evitare: Ingresso nella sezione sottile</title><desc id="v-ingresso-ko-d">Il materiale entra dalla parte sottile e deve riempire per ultima la parte spessa.</desc><defs>
+  <pattern id="v-ingresso-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-ingresso-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-ingresso-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-ingresso-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,40 H90 V30 H150 V80 H90 V70 H20 Z" class="m-finito sezionato contorno"/><line x1="8" y1="98" x2="24" y2="74" class="flusso-linea" marker-end="url(#v-ingresso-ko-punta)"/><path d="M100,55 H140" class="flusso-linea tratteggiata"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Il fuso segue la via più facile: deve entrare dalla parte più spessa e finire in quella più sottile. <span class="pag">(p. 52)</span></p></article>
+<article class="card"><h3>Angolo di sformo di almeno 0,5°</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sformo-ok-t v-sformo-ok-d" class="mini-svg"><title id="v-sformo-ok-t">Corretto: Pareti inclinate (sformo)</title><desc id="v-sformo-ok-d">Le pareti laterali sono leggermente inclinate: il pezzo si stacca dal nucleo.</desc><defs>
+  <pattern id="v-sformo-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sformo-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sformo-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sformo-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M30,20 L42,20 L48,90 L112,90 L118,20 L130,20 L122,100 L38,100 Z" class="m-finito sezionato contorno"/><path d="M50,20 L56,85 L104,85 L110,20 Z" class="m-stampo contorno" opacity=".85"/><line x1="80" y1="40" x2="80" y2="6" class="flusso-linea" marker-end="url(#v-sformo-ok-punta)"/><g class="etichetta"><text x="118" y="12" text-anchor="start">≥ 0,5°</text></g></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sformo-ko-t v-sformo-ko-d" class="mini-svg"><title id="v-sformo-ko-t">Da evitare: Pareti verticali (sformo nullo)</title><desc id="v-sformo-ko-d">Pareti a 90°: il pezzo si incolla al nucleo e si sollecita in estrazione.</desc><defs>
+  <pattern id="v-sformo-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sformo-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sformo-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sformo-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M30,20 L42,20 L42,90 L118,90 L118,20 L130,20 L130,100 L30,100 Z" class="m-finito sezionato contorno"/><rect x="45" y="20" width="70" height="66" class="m-stampo contorno" opacity=".85"/><line x1="80" y1="40" x2="80" y2="6" class="flusso-linea" marker-end="url(#v-sformo-ko-punta)"/><g class="etichetta"><text x="124" y="12" text-anchor="start">0°</text></g></svg><figcaption>Da evitare</figcaption></figure></div><p>Le pareti parallele alla direzione di apertura vanno inclinate di almeno 0,5°. Con un angolo minore il pezzo si sollecita durante l'estrazione. <span class="pag">(p. 52)</span></p></article>
+<article class="card"><h3>Evitare gli spigoli vivi</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spigoli-ok-t v-spigoli-ok-d" class="mini-svg"><title id="v-spigoli-ok-t">Corretto: Spigoli raccordati</title><desc id="v-spigoli-ok-d">Angoli interni ed esterni con raggio: il flusso è regolare e le tensioni si distribuiscono.</desc><defs>
+  <pattern id="v-spigoli-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spigoli-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spigoli-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spigoli-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,20 H50 V70 Q50,80 60,80 H140 V100 H50 Q20,100 20,70 Z" class="m-finito sezionato contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spigoli-ko-t v-spigoli-ko-d" class="mini-svg"><title id="v-spigoli-ko-t">Da evitare: Spigoli vivi</title><desc id="v-spigoli-ko-d">Angoli netti: le tensioni si concentrano nello spigolo interno.</desc><defs>
+  <pattern id="v-spigoli-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spigoli-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spigoli-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spigoli-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,20 H50 V80 H140 V100 H20 Z" class="m-finito sezionato contorno"/><circle cx="50" cy="80" r="9" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Negli angoli netti si accumulano tensioni interne che possono portare a crepe e deformazioni. <span class="pag">(p. 52)</span></p></article>
+<article class="card"><h3>Molte nervature basse, non poche alte</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-nervature-ok-t v-nervature-ok-d" class="mini-svg"><title id="v-nervature-ok-t">Corretto: Molte nervature basse</title><desc id="v-nervature-ok-d">Diverse nervature poco profonde irrigidiscono la parete.</desc><defs>
+  <pattern id="v-nervature-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-nervature-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-nervature-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-nervature-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,80 H150 V94 H10 Z" class="m-finito sezionato contorno"/><path d="M30,80 V58 H37 V80 Z" class="m-finito sezionato contorno"/><path d="M60,80 V58 H67 V80 Z" class="m-finito sezionato contorno"/><path d="M90,80 V58 H97 V80 Z" class="m-finito sezionato contorno"/><path d="M120,80 V58 H127 V80 Z" class="m-finito sezionato contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-nervature-ko-t v-nervature-ko-d" class="mini-svg"><title id="v-nervature-ko-t">Da evitare: Poche nervature alte</title><desc id="v-nervature-ko-d">Una nervatura molto alta rispetto allo spessore della parete.</desc><defs>
+  <pattern id="v-nervature-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-nervature-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-nervature-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-nervature-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,80 H150 V94 H10 Z" class="m-finito sezionato contorno"/><path d="M74,80 V12 H86 V80 Z" class="m-finito sezionato contorno"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Le nervature irrigidiscono il pezzo senza ispessire le pareti e aiutano il flusso. Secondo il testo non devono superare 5 volte lo spessore della parete, quindi conviene usarne molte e poco profonde. <span class="pag">(p. 52)</span></p></article>
+<article class="card"><h3>Elementi sporgenti collegati alle pareti</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-collegati-ok-t v-collegati-ok-d" class="mini-svg"><title id="v-collegati-ok-t">Corretto: Sporgenze collegate alle pareti</title><desc id="v-collegati-ok-d">La borchia è unita alla parete con nervature: niente sacche d'aria.</desc><defs>
+  <pattern id="v-collegati-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-collegati-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-collegati-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-collegati-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,85 H150 V97 H10 Z M10,20 H22 V85 H10 Z" class="m-finito sezionato contorno"/><path d="M70,85 V40 H90 V85 Z" class="m-finito sezionato contorno"/><path d="M22,60 H70 V66 H22 Z" class="m-finito sezionato contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-collegati-ko-t v-collegati-ko-d" class="mini-svg"><title id="v-collegati-ko-t">Da evitare: Sporgenze isolate</title><desc id="v-collegati-ko-d">Borchia staccata dalle pareti: possibili sacche d'aria e punti di tensione.</desc><defs>
+  <pattern id="v-collegati-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-collegati-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-collegati-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-collegati-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,85 H150 V97 H10 Z M10,20 H22 V85 H10 Z" class="m-finito sezionato contorno"/><path d="M70,85 V40 H90 V85 Z" class="m-finito sezionato contorno"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Ogni sporgenza si tratta come una nervatura e va unita alle pareti, così si evitano sacche d'aria e punti di tensione. <span class="pag">(p. 52)</span></p></article>
+<article class="card"><h3>Linee di giunzione lontano dalle zone in vista</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-giunzione-ok-t v-giunzione-ok-d" class="mini-svg"><title id="v-giunzione-ok-t">Corretto: Linea di giunzione in zona nascosta</title><desc id="v-giunzione-ok-d">Spostando il punto di iniezione, la linea dove i fronti si riuniscono cade in una zona non critica.</desc><defs>
+  <pattern id="v-giunzione-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-giunzione-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-giunzione-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-giunzione-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,25 H150 V95 H10 Z" class="m-finito sezionato contorno"/><circle cx="80" cy="60" r="12" class="cavita contorno"/><line x1="150" y1="6" x2="150" y2="22" class="flusso-linea" marker-end="url(#v-giunzione-ok-punta)"/><line x1="80" y1="72" x2="80" y2="95" stroke="var(--ko)" stroke-width="2.5" stroke-dasharray="3 3"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-giunzione-ko-t v-giunzione-ko-d" class="mini-svg"><title id="v-giunzione-ko-t">Da evitare: Linea di giunzione in vista</title><desc id="v-giunzione-ko-d">Il flusso si divide attorno al foro e si riunisce in una zona visibile del pezzo.</desc><defs>
+  <pattern id="v-giunzione-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-giunzione-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-giunzione-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-giunzione-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,25 H150 V95 H10 Z" class="m-finito sezionato contorno"/><circle cx="80" cy="60" r="12" class="cavita contorno"/><line x1="10" y1="6" x2="10" y2="22" class="flusso-linea" marker-end="url(#v-giunzione-ko-punta)"/><line x1="92" y1="60" x2="150" y2="60" stroke="var(--ko)" stroke-width="2.5" stroke-dasharray="3 3"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Dove il flusso aggira un foro o un incavo, i due fronti si riuniscono e lasciano una linea. Spostare il punto di iniezione la porta in una zona non critica, come nel caso analizzato con Moldflow. <span class="pag">(p. 50, 56)</span></p></article>
+<article class="card"><h3>Sottosquadri solo con nuclei mobili</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sottosquadri-ok-t v-sottosquadri-ok-d" class="mini-svg"><title id="v-sottosquadri-ok-t">Corretto: Sottosquadro con nucleo mobile</title><desc id="v-sottosquadri-ok-d">Un nucleo laterale retrattile (carrello) libera il sottosquadro prima dell'estrazione.</desc><defs>
+  <pattern id="v-sottosquadri-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sottosquadri-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sottosquadri-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sottosquadri-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,30 H140 V95 H20 Z M40,48 H120 V95 H40 Z" class="m-finito sezionato contorno"/><rect x="140" y="55" width="18" height="16" class="m-stampo contorno"/><path d="M120,55 H140 V71 H120 Z" class="m-finito sezionato contorno"/><line x1="150" y1="82" x2="158" y2="82" class="flusso-linea" marker-end="url(#v-sottosquadri-ok-punta)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sottosquadri-ko-t v-sottosquadri-ko-d" class="mini-svg"><title id="v-sottosquadri-ko-t">Da evitare: Sottosquadro senza nucleo mobile</title><desc id="v-sottosquadri-ko-d">Il dente blocca il pezzo nello stampo: non si può estrarre lungo la direzione di apertura.</desc><defs>
+  <pattern id="v-sottosquadri-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sottosquadri-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sottosquadri-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sottosquadri-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,30 H140 V95 H20 Z M40,48 H120 V95 H40 Z" class="m-finito sezionato contorno"/><path d="M108,48 H120 V70 H108 Z" class="m-finito sezionato contorno"/><line x1="80" y1="40" x2="80" y2="6" class="flusso-linea" marker-end="url(#v-sottosquadri-ko-punta)"/><line x1="100" y1="10" x2="125" y2="35" stroke="var(--ko)" stroke-width="3"/><line x1="125" y1="10" x2="100" y2="35" stroke="var(--ko)" stroke-width="3"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Un sottosquadro (una parte che impedisce l'estrazione nella direzione di apertura) richiede nuclei retrattili, mossi da camme o cilindri idraulici. Il costo cresce con la complessità del movimento. <span class="pag">(p. 50)</span></p></article></div><aside class="approfondimento"><h3>Strumento di verifica: l'analisi del flusso (Moldflow)</h3><p>Non è una variante del processo ma una simulazione al computer. Prima di costruire lo stampo, il modello 3D del pezzo viene analizzato per prevedere riempimento, raffreddamento, ritiro e deformazioni. In un esempio del libro, ridurre lo spessore delle pareti ha accorciato il ciclo di 7,3 secondi e ridotto i costi di produzione del 24%. <span class="pag">(p. 56–57)</span></p></aside>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <div class="griglia-card"><article class="card"><h3>Iniezione assistita da gas</h3><p class="originale" lang="en">Gas-assisted injection molding</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-gas-t var-gas-d" class="mini-svg"><title id="var-gas-t">Iniezione assistita da gas</title><desc id="var-gas-d">Cavità parzialmente riempita di plastica fusa; una bolla di gas spinge il materiale verso le estremità e lascia una sezione cava.</desc><defs>
+  <pattern id="var-gas-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-gas-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-gas-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-gas-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="10" y="10" width="200" height="26" fill="url(#var-gas-tratteggio)" class="contorno"/><rect x="10" y="84" width="200" height="26" fill="url(#var-gas-tratteggio)" class="contorno"/>
+    <rect x="10" y="36" width="200" height="48" class="cavita"/>
+    <path d="M10,36 H170 Q186,60 170,84 H10 Z" class="m-fuso contorno"/>
+    <path d="M10,48 H140 Q154,60 140,72 H10 Z" class="cavita" stroke="var(--flusso)" stroke-width="2"/>
+    <line x1="20" y1="60" x2="120" y2="60" class="flusso-linea" marker-end="url(#var-gas-punta)"/>
+    <g class="etichetta"><text x="26" y="56" text-anchor="start">gas</text></g></svg></div><p>Si inietta plastica senza riempire del tutto la cavità, poi si immette gas. Il gas forma una bolla che spinge il materiale fino alle estremità e lascia una sezione cava, rigida e leggera. Le pareti risultano più uniformi e il ritiro diminuisce. Lo spessore di parete può essere di 3 mm o più. <span class="pag">(p. 58–59)</span></p></article>
+<article class="card"><h3>Iniezione multicomponente</h3><p class="originale" lang="en">Multishot injection molding</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-multishot-t var-multishot-d" class="mini-svg"><title id="var-multishot-t">Iniezione multicomponente</title><desc id="var-multishot-d">Due cavità nello stesso stampo; il piano girevole ruota di 180° e il secondo polimero viene iniettato sopra il primo già solidificato.</desc><defs>
+  <pattern id="var-multishot-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-multishot-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-multishot-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-multishot-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="10" y="10" width="90" height="100" fill="url(#var-multishot-tratteggio)" class="contorno"/><rect x="120" y="10" width="90" height="100" fill="url(#var-multishot-tratteggio)" class="contorno"/>
+    <rect x="30" y="40" width="50" height="22" class="m-finito contorno"/>
+    <rect x="140" y="40" width="50" height="22" class="m-finito contorno"/><rect x="140" y="62" width="50" height="14" class="m-fuso contorno"/>
+    <g class="etichetta"><text x="55" y="119" text-anchor="middle">A</text></g><g class="etichetta"><text x="165" y="119" text-anchor="middle">A + B</text></g>
+    <path d="M126,60 A16,16 0 1 1 110,44" class="flusso-linea" fill="none" marker-end="url(#var-multishot-punta)"/>
+    <g class="etichetta"><text x="110" y="14" text-anchor="middle">180°</text></g></svg></div><p>Due o più plastiche vengono stampate nello stesso stampo, in cavità diverse. Un piano girevole ruota di 180° e porta il primo pezzo, già solidificato, nella cavità dove viene iniettato il secondo materiale. Si possono combinare fino a 6 materiali. <span class="pag">(p. 60–61)</span></p></article>
+<article class="card"><h3>Decorazione in stampo</h3><p class="originale" lang="en">In-mold decoration</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-imd-t var-imd-d" class="mini-svg"><title id="var-imd-t">Decorazione in stampo</title><desc id="var-imd-d">Una pellicola stampata è posta sulla parete della cavità; la plastica iniettata dietro la pellicola si lega a essa.</desc><defs>
+  <pattern id="var-imd-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-imd-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-imd-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-imd-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="10" y="10" width="200" height="26" fill="url(#var-imd-tratteggio)" class="contorno"/><rect x="10" y="84" width="200" height="26" fill="url(#var-imd-tratteggio)" class="contorno"/>
+    <rect x="10" y="36" width="200" height="48" class="cavita"/>
+    <rect x="10" y="36" width="200" height="6" class="m-grezzo contorno"/>
+    <path d="M10,42 H150 Q164,62 150,84 H10 Z" class="m-fuso contorno"/>
+    <line x1="20" y1="64" x2="110" y2="64" class="flusso-linea" marker-end="url(#var-imd-punta)"/>
+    <g class="etichetta"><text x="110" y="119" text-anchor="middle">pellicola stampata (giallo)</text></g></svg></div><p>Una pellicola stampata viene posta nella cavità con la stampa rivolta verso l'interno. La plastica iniettata si lega alla pellicola, che resta protetta sotto un sottile strato trasparente. Così non servono stampa o verniciatura successive, ma il ciclo si allunga un po'. <span class="pag">(p. 62–63)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="termoformatura.html">Termoformatura</a> – alternativa per alcune geometrie a lastra <span class="pag">(p. 50)</span></li><li><a href="colata-sottovuoto.html">Colata sottovuoto</a> – per prototipi e piccole serie <span class="pag">(p. 50)</span></li><li><a href="rim.html">Stampaggio a iniezione con reazione (RIM)</a> – per prototipi e piccole serie in poliuretano <span class="pag">(p. 50)</span></li><li><a href="stampaggio-rotazionale.html">Stampaggio rotazionale</a> – anch'esso integra grafiche in stampo <span class="pag">(p. 36)</span></li><li><a href="pressofusione.html">Pressofusione</a> – anche questa si analizza con Moldflow <span class="pag">(p. 56)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 50–63.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/stampaggio-iniezione.js"></script>
+</body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pressofusione – Processi produttivi per il design</title>
+<meta name="description" content="Il metallo fuso viene spinto a pressione in uno stampo d'acciaio riutilizzabile: si ottengono in grandi serie pezzi metallici precisi, con pareti sottili e dettagli complessi.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 1 – Formatura › Metalli</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Pressofusione</h1>
+  <p class="originale" lang="en">Die Casting</p>
+  <p class="categoria">Parte 1 – Formatura · Metalli</p>
+  <p class="sintesi">Il metallo fuso viene spinto a pressione in uno stampo d'acciaio riutilizzabile: si ottengono in grandi serie pezzi metallici precisi, con pareti sottili e dettagli complessi.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="2000,2000,2200,2200,2000">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="pressofusione" data-alt="Modello 3D di una pressa per pressofusione a camera fredda, tagliata a metà. Un crogiolo versa l'alluminio fuso nel cilindro orizzontale; il pistone lo spinge nello stampo e la cavità si riempie partendo dal canale. Il pezzo diventa verde raffreddandosi, lo stampo mobile si apre e gli estrattori spingono fuori il getto.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Dosaggio<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Iniezione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Solidificazione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Apertura ed estrazione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="5">5. Sbavatura<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Dosaggio</b>Un crogiolo preleva dal forno di attesa una dose misurata di metallo fuso e la versa nel cilindro di iniezione. <span class="pag">(p. 126, 128)</span></li>
+    <li><b>Fase 2 – Iniezione</b>Il pistone spinge il metallo ad alta pressione nella cavità; la pressione resta finché il pezzo solidifica. <span class="pag">(p. 126)</span></li>
+    <li><b>Fase 3 – Solidificazione</b>I canali d'acqua tengono lo stampo più freddo del metallo e accelerano il raffreddamento: da pochi secondi a diversi minuti (2 minuti nel caso studio). <span class="pag">(p. 126, 128)</span></li>
+    <li><b>Fase 4 – Apertura ed estrazione</b>Le metà dello stampo si aprono e il pezzo viene espulso, spesso preso da un braccio robotico; lo stampo viene pulito a vapore e lubrificato. <span class="pag">(p. 126, 128)</span></li>
+    <li><b>Fase 5 – Sbavatura</b>Bave e canali di colata vengono tagliati e tornano subito nel forno per essere rifusi. <span class="pag">(p. 126, 128)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una pressa per pressofusione a camera fredda, tagliata a metà. Un crogiolo versa l'alluminio fuso nel cilindro orizzontale; il pistone lo spinge nello stampo e la cavità si riempie partendo dal canale. Il pezzo diventa verde raffreddandosi, lo stampo mobile si apre e gli estrattori spingono fuori il getto.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 20 820 360" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Pressofusione ad alta pressione a camera fredda, in sezione</title>
+<desc id="sc-d">Sezione della macchina: a sinistra il cilindro di iniezione con il pistone e il foro di carico, a destra lo stampo fisso con il canale e lo stampo mobile con la cavità, i canali di raffreddamento e gli estrattori.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- cilindro di iniezione (camera fredda) -->
+<rect x="180" y="184" width="290" height="32" class="cavita"/>
+<rect x="180" y="170" width="290" height="14" fill="url(#sc-tratteggio)" class="contorno"/><rect x="180" y="216" width="290" height="14" fill="url(#sc-tratteggio)" class="contorno"/>
+<rect x="300" y="168" width="40" height="18" class="cavita"/>
+<g class="etichetta"><text x="190" y="260" text-anchor="start">Cilindro di iniezione</text></g>
+<!-- metallo nel cilindro -->
+<g data-k="tx:0,120,120,120,120;op:1,0,0,0,0" data-i="op:0"><rect x="340" y="190" width="120" height="24" class="m-fuso"/></g>
+<!-- pistone -->
+<g data-k="tx:0,125,125,0,0" data-i="tx:0">
+  <rect x="190" y="186" width="148" height="28" class="m-stampo contorno"/><rect x="80" y="194" width="110" height="12" class="macchina"/>
+</g>
+<g class="etichetta"><text x="80" y="180" text-anchor="start">Pistone</text></g>
+<g data-k="op:0,1,1,0,0"><line x1="60" y1="240" x2="140" y2="240" class="flusso-linea" marker-end="url(#sc-punta)"/><g class="etichetta"><text x="60" y="262" text-anchor="start">alta pressione</text></g></g>
+<!-- crogiolo (fase 1) -->
+<g data-k="op:1,0,0,0,0" data-i="op:1">
+  <path d="M290,70 H360 L350,120 H300 Z" class="macchina"/><rect x="304" y="96" width="42" height="20" class="m-fuso"/>
+  <line x1="320" y1="120" x2="320" y2="186" stroke="var(--fuso)" stroke-width="6"/>
+  <g class="etichetta"><text x="370" y="90" text-anchor="start">Crogiolo: dose di alluminio fuso</text></g>
+</g>
+
+<!-- semistampo fisso -->
+<rect x="470" y="90" width="50" height="220" fill="url(#sc-tratteggio)" class="contorno"/>
+<rect x="470" y="196" width="50" height="8" class="cavita"/>
+<g class="etichetta"><text x="460" y="330" text-anchor="start">Stampo fisso</text></g>
+<clipPath id="sc-riempi" clipPathUnits="userSpaceOnUse"><rect x="470" y="90" width="140" height="220" data-k="sx:0,1,1,1,1" data-i="sx:0" data-o="470,200"/></clipPath>
+<g clip-path="url(#sc-riempi)"><path d="M470,196 H520 V204 H470 Z" class="m-fuso" data-k="op:1,1,0,0,0" data-i="op:1"/></g>
+<path d="M470,196 H520 V204 H470 Z" class="m-finito" data-k="op:0,0,1,0,0" data-i="op:0"/>
+
+<!-- gruppo mobile -->
+<g data-k="tx:0,0,0,110,110" data-i="tx:0">
+  <path d="M520,90 H660 V310 H520 Z M600,130 H520 V270 H600 V256 H534 V144 H600 Z" fill="url(#sc-tratteggio)" fill-rule="evenodd" class="contorno"/>
+  <circle cx="560" cy="110" r="7" class="m-flusso" data-k="op:0.25,0.25,1,0.25,0.25"/><circle cx="560" cy="290" r="7" class="m-flusso" data-k="op:0.25,0.25,1,0.25,0.25"/><circle cx="580" cy="200" r="7" class="m-flusso" data-k="op:0.25,0.25,1,0.25,0.25"/>
+  <rect x="660" y="70" width="22" height="260" class="macchina"/>
+  <g class="etichetta"><text x="540" y="80" text-anchor="start">Stampo mobile</text></g>
+  <g data-k="tx:0,0,0,-40,-40" data-i="tx:0"><rect x="600" y="130" width="60" height="8" class="scuro"/><rect x="600" y="262" width="60" height="8" class="scuro"/></g>
+  <g data-k="tx:0,0,0,-40,-40" data-i="tx:0">
+    <g clip-path="url(#sc-riempi)"><path d="M600,130 H520 V270 H600 V256 H534 V144 H600 Z" class="m-fuso contorno" data-k="op:1,1,0,0,0" data-i="op:1"/></g>
+    <path d="M600,130 H520 V270 H600 V256 H534 V144 H600 Z" class="m-finito sezionato contorno" data-k="op:0,0,1,1,1" data-i="op:0"/>
+    <g data-k="op:0,0,0,1,0" data-i="op:0"><rect x="506" y="194" width="16" height="12" class="m-finito contorno"/><g class="etichetta"><text x="480" y="360" text-anchor="start">bava e canali da tranciare</text></g></g>
+  </g>
+</g>
+<g class="etichetta" data-k="op:0,0,1,0,0"><text x="550" y="36" text-anchor="start">Canali di raffreddamento ad acqua</text></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Le tecniche sono alta pressione, bassa pressione e gravità. L'alta pressione è la più versatile e il modo più rapido per formare pezzi non ferrosi. Lingotti e scarti fondono in un forno sempre acceso. <span class="pag">(p. 124, 126)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>Le macchine vanno da 500 a oltre 3000 tonnellate di forza di chiusura, scelta secondo dimensione e complessità del pezzo. La pressione elevata permette pareti sottili e dettagli fini. <span class="pag">(p. 124, 126)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>L'iniezione veloce crea turbolenza e quindi porosità: si limita progettando bene, con la simulazione del riempimento dello stampo. <span class="pag">(p. 124)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="5" aria-label="Mostra la fase 5 nello schema">Fase 5</button>I pezzi richiedono poche lavorazioni perché la finitura è già molto alta. Tutti gli scarti si rifondono senza perdita di resistenza. <span class="pag">(p. 126–127)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Solo metalli non ferrosi: alluminio, magnesio, zinco, rame, piombo, stagno. I ferrosi fondono a temperature troppo alte. <span class="pag">(p. 126)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Grandi serie (alta pressione); la gravità è adatta anche a serie brevi. <span class="pag">(p. 124)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Alto: stampi in acciaio resistenti alle temperature del metallo; carrelli e anime li rincarano molto. Bassa pressione e gravità costano meno. <span class="pag">(p. 124, 126)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Basso; manodopera bassa nei processi automatici. <span class="pag">(p. 124, 127)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Rapido: da pochi secondi a diversi minuti secondo dimensione e numero di cavità. <span class="pag">(p. 124, 126)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Molto alta, migliora con la pressione; proprietà meccaniche variabili per la porosità. <span class="pag">(p. 124)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Tolleranze strette, spesso senza lavorazioni successive. Valore numerico: <span class="nd">n.d.</span> <span class="pag">(p. 126)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Soprattutto pezzi piccoli: oltre circa 9 kg lo stampo diventa troppo grande e costoso. La sedia del caso studio pesa 4 kg. <span class="pag">(p. 126, 128)</span><span class="nota-ocr">Peso massimo: OCR &quot;c g kg&quot;, confermato a 9 kg dalla conversione (20 lb).</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Sformo di circa 1,5°</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sformo-ok-t v-sformo-ok-d" class="mini-svg"><title id="v-sformo-ok-t">Corretto: Sformo di circa 1,5°</title><desc id="v-sformo-ok-d">Come nello stampaggio a iniezione, le pareti hanno uno sformo; di solito 1,5° basta.</desc><defs>
+  <pattern id="v-sformo-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sformo-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sformo-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sformo-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,20 H150 V100 H10 Z M45,100 L52,40 H108 L115,100 Z" fill="url(#v-sformo-ok-tratteggio)" fill-rule="evenodd" class="contorno"/><path d="M45,100 L52,40 H108 L115,100 Z" class="m-finito contorno"/><g class="etichetta"><text x="118" y="70" text-anchor="start">1,5°</text></g></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sformo-ko-t v-sformo-ko-d" class="mini-svg"><title id="v-sformo-ko-t">Da evitare: Pareti senza sformo</title><desc id="v-sformo-ko-d">Senza sformo il getto fatica a staccarsi dallo stampo d'acciaio.</desc><defs>
+  <pattern id="v-sformo-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sformo-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sformo-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sformo-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,20 H150 V100 H10 Z M48,100 V40 H112 V100 Z" fill="url(#v-sformo-ko-tratteggio)" fill-rule="evenodd" class="contorno"/><path d="M48,100 V40 H112 V100 Z" class="m-finito contorno"/><g class="etichetta"><text x="118" y="70" text-anchor="start">0°</text></g></svg><figcaption>Da evitare</figcaption></figure></div><p>Le regole sono simili all'iniezione: nervature, angoli di sformo (di solito basta 1,5°), incavi, flusso nello stampo e linee di divisione. <span class="pag">(p. 126)</span></p></article>
+<article class="card"><h3>Preferire pezzi piccoli</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-dimensione-ok-t v-dimensione-ok-d" class="mini-svg"><title id="v-dimensione-ok-t">Corretto: Pezzi piccoli e medi</title><desc id="v-dimensione-ok-d">Il processo conviene soprattutto per pezzi piccoli: oltre i 9 kg lo stampo d'acciaio diventa enorme e costoso.</desc><defs>
+  <pattern id="v-dimensione-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-dimensione-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-dimensione-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-dimensione-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M50,50 H110 V90 H50 Z" class="m-finito contorno"/><g class="etichetta"><text x="80" y="108" text-anchor="middle">≤ 9 kg</text></g></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-dimensione-ko-t v-dimensione-ko-d" class="mini-svg"><title id="v-dimensione-ko-t">Da evitare: Pezzo molto grande</title><desc id="v-dimensione-ko-d">Per getti grandi e pesanti conviene la fusione in sabbia.</desc><defs>
+  <pattern id="v-dimensione-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-dimensione-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-dimensione-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-dimensione-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M5,20 H155 V100 H5 Z" class="m-finito contorno"/><g class="etichetta"><text x="80" y="66" text-anchor="middle">&gt; 9 kg</text></g></svg><figcaption>Da evitare</figcaption></figure></div><p>La fusione conviene soprattutto per pezzi piccoli: sopra i 9 kg circa lo stampo d'acciaio diventa molto grande e costoso. <span class="pag">(p. 126)</span></p></article>
+<article class="card"><h3>Fori nello stampo, carrelli con giudizio</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-fori-ok-t v-fori-ok-d" class="mini-svg"><title id="v-fori-ok-t">Corretto: Fori ottenuti nello stampo</title><desc id="v-fori-ok-d">I fori formati direttamente nel getto riducono materiale e lavorazioni.</desc><defs>
+  <pattern id="v-fori-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-fori-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-fori-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-fori-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M15,40 H145 V90 H15 Z" class="m-finito contorno"/><circle cx="55" cy="65" r="10" class="cavita contorno"/><circle cx="105" cy="65" r="10" class="cavita contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-fori-ko-t v-fori-ko-d" class="mini-svg"><title id="v-fori-ko-t">Da evitare: Carrelli e anime ovunque</title><desc id="v-fori-ko-d">Ogni carrello laterale o anima aumenta molto il costo dello stampo: va giustificato da un vantaggio (resistenza, spessori ridotti).</desc><defs>
+  <pattern id="v-fori-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-fori-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-fori-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-fori-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M15,40 H145 V90 H15 Z" class="m-finito contorno"/><rect x="145" y="55" width="14" height="20" class="m-stampo contorno"/><rect x="0" y="55" width="14" height="20" class="m-stampo contorno"/><circle cx="80" cy="65" r="22" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>I fori ottenuti direttamente nel getto fanno risparmiare materiale; carrelli e anime invece rincarano lo stampo e vanno giustificati, per esempio da spessori ridotti o maggiore resistenza. <span class="pag">(p. 126)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Le tre tecniche elencate nel capitolo.</p><div class="griglia-card"><article class="card"><h3>Pressofusione ad alta pressione</h3><p class="originale" lang="en">High pressure die casting</p><div class="variante-schema"><svg viewBox="0 0 220 128" role="img" aria-labelledby="var-alta-t var-alta-d" class="mini-svg"><title id="var-alta-t">Alta pressione</title><desc id="var-alta-d">Il metallo è spinto ad alta pressione da un pistone; nel metodo a camera calda è pompato direttamente dal forno, in quello a camera fredda un crogiolo lo versa nel cilindro. Pareti sottili e dettagli fini. È lo schema principale.</desc><defs>
+  <pattern id="var-alta-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-alta-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-alta-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-alta-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="20" y="50" width="110" height="24" class="m-fuso contorno"/><rect x="0" y="54" width="30" height="16" class="m-stampo contorno"/>
+    <rect x="130" y="20" width="70" height="84" fill="url(#var-alta-tratteggio)" class="contorno"/><line x1="40" y1="100" x2="100" y2="100" class="flusso-linea" marker-end="url(#var-alta-punta)"/></svg></div><p>A camera calda il metallo è pompato dal forno nella cavità; a camera fredda un crogiolo lo versa nel cilindro e un pistone lo spinge. Usata per auto, elettrodomestici, elettronica, arredi, gioielli e giocattoli. <span class="pag">(p. 124, 126)</span></p></article>
+<article class="card"><h3>Pressofusione a bassa pressione</h3><p class="originale" lang="en">Low pressure die casting</p><div class="variante-schema"><svg viewBox="0 0 220 128" role="img" aria-labelledby="var-bassa-t var-bassa-d" class="mini-svg"><title id="var-bassa-t">Bassa pressione</title><desc id="var-bassa-d">Lo stampo sta sopra il forno: la pressione del gas spinge il metallo su per un tubo nella cavità, con poca turbolenza e buone proprietà meccaniche. Adatta a pezzi simmetrici attorno a un asse verticale, come i cerchi in lega.</desc><defs>
+  <pattern id="var-bassa-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-bassa-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-bassa-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-bassa-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="50" y="70" width="120" height="50" class="macchina"/><rect x="56" y="88" width="108" height="28" class="m-fuso"/>
+    <rect x="104" y="40" width="12" height="50" class="m-fuso contorno"/>
+    <path d="M40,10 H180 V40 H40 Z" fill="url(#var-bassa-tratteggio)" class="contorno"/>
+    <line x1="150" y1="80" x2="150" y2="96" class="flusso-linea" marker-end="url(#var-bassa-punta)"/></svg></div><p>Lo stampo è montato sopra il forno; la pressione del gas spinge il metallo su per un tubo, con poca turbolenza. A fine ciclo il metallo rimasto nel tubo ricade nel crogiolo. Ideale per pezzi a simmetria verticale come i cerchi in lega. <span class="pag">(p. 124, 127)</span></p></article>
+<article class="card"><h3>Fusione in conchiglia</h3><p class="originale" lang="en">Gravity die casting</p><div class="variante-schema"><svg viewBox="0 0 220 128" role="img" aria-labelledby="var-gravita-t var-gravita-d" class="mini-svg"><title id="var-gravita-t">Fusione in conchiglia (per gravità)</title><desc id="var-gravita-d">Come la fusione in sabbia, ma con stampi d'acciaio permanenti, manuali o automatici; stampi e impianti costano meno ed è adatta a serie brevi.</desc><defs>
+  <pattern id="var-gravita-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-gravita-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-gravita-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-gravita-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M60,10 H90 V30 H60 Z" class="macchina"/><line x1="75" y1="30" x2="75" y2="46" stroke="var(--fuso)" stroke-width="6"/>
+    <path d="M30,46 H190 V120 H30 Z M60,46 H90 V60 H150 V100 H60 Z" fill="url(#var-gravita-tratteggio)" fill-rule="evenodd" class="contorno"/></svg></div><p>Detta anche fusione in stampo permanente: si differenzia dalla fusione in sabbia solo per gli stampi d'acciaio. Con anime in sabbia si ottengono forme complesse e piccoli sottosquadri. <span class="pag">(p. 124, 126)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="forgiatura.html">Forgiatura</a> – alternativa per pezzi molto resistenti <span class="pag">(p. 124)</span></li><li><a href="fusione-sabbia.html">Fusione in sabbia</a> – alternativa per piccole serie e pezzi grandi <span class="pag">(p. 124)</span></li><li><a href="microfusione.html">Microfusione a cera persa</a> – alternativa, anche per i ferrosi <span class="pag">(p. 124, 126)</span></li><li><a href="stampaggio-iniezione.html">Stampaggio a iniezione</a> – processo analogo per la plastica <span class="pag">(p. 124)</span></li><li><a href="anodizzazione.html">Anodizzazione</a> – protegge e colora alluminio e magnesio <span class="pag">(p. 126)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 124–129.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/pressofusione.js"></script>
+</body>
+</html>

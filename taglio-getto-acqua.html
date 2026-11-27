@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Taglio a getto d'acqua – Processi produttivi per il design</title>
+<meta name="description" content="Un getto d'acqua ad altissima pressione, spesso caricato di abrasivo, taglia a freddo quasi ogni foglio, dalla schiuma morbida al titanio, senza zona termicamente alterata e senza attrezzature.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 2 – Taglio › Meccanico</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Taglio a getto d'acqua</h1>
+  <p class="originale" lang="en">Water Jet Cutting</p>
+  <p class="categoria">Parte 2 – Taglio · Meccanico</p>
+  <p class="sintesi">Un getto d'acqua ad altissima pressione, spesso caricato di abrasivo, taglia a freddo quasi ogni foglio, dalla schiuma morbida al titanio, senza zona termicamente alterata e senza attrezzature.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="2000,2000,3000,2200">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="taglio-getto-acqua" data-alt="Modello 3D di una tavola per taglio a getto d'acqua. Una testa su portale sta sopra una lastra di vetro azzurrina appoggiata su lamelle, sopra una vasca d'acqua. Un getto chiaro attraversa la lastra mentre la testa percorre un cerchio, lasciando un solco scuro. Cunei arancioni si inseriscono sotto il disco; poi il disco si solleva e diventa verde.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Acqua in pressione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Abrasivo<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Taglio<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Sostegno ed estrazione<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Acqua in pressione</b>Pompa e moltiplicatore portano l'acqua di rete fino a 4.000 bar; poi passa da un orifizio di 0,1–0,25 mm in diamante, zaffiro o rubino. <span class="pag">(p. 272–273)</span></li>
+    <li><b>Fase 2 – Abrasivo</b>Nella camera di miscelazione particelle minerali, spesso granato, vengono accelerate dal getto supersonico: il fascio, di circa 1 mm, taglia grazie all'abrasivo. <span class="pag">(p. 273)</span></li>
+    <li><b>Fase 3 – Taglio</b>La testa a controllo numerico segue il percorso del CAD; in profondità il getto perde pressione e devia, quindi si rallenta. Sotto, una vasca d'acqua dissipa il getto. <span class="pag">(p. 272–274)</span></li>
+    <li><b>Fase 4 – Sostegno ed estrazione</b>L'operatore inserisce cunei per sostenere il pezzo durante il taglio; poi lo estrae. Nel caso studio il bordo si lucida su una mola diamantata. <span class="pag">(p. 274)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una tavola per taglio a getto d'acqua. Una testa su portale sta sopra una lastra di vetro azzurrina appoggiata su lamelle, sopra una vasca d'acqua. Un getto chiaro attraversa la lastra mentre la testa percorre un cerchio, lasciando un solco scuro. Cunei arancioni si inseriscono sotto il disco; poi il disco si solleva e diventa verde.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 -10 820 380" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Taglio a getto d'acqua con abrasivo, in sezione</title>
+<desc id="sc-d">Sezione di una testa di taglio sopra una lastra di vetro e una vasca d'acqua. Le fasi mostrano l'acqua in pressione verso l'orifizio, l'abrasivo che entra nella camera di miscelazione, il getto che attraversa il pezzo deviando in profondità e i cunei che sostengono il pezzo tagliato.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- vasca che dissipa il getto -->
+<rect x="140" y="250" width="540" height="80" style="fill:var(--flusso)" opacity="0.15"/>
+<path d="M140,236 V330 H680 V236" fill="none" stroke="var(--testo)" stroke-width="5"/>
+<rect x="160" y="218" width="6" height="18" class="scuro"/><rect x="204" y="218" width="6" height="18" class="scuro"/><rect x="248" y="218" width="6" height="18" class="scuro"/><rect x="292" y="218" width="6" height="18" class="scuro"/><rect x="336" y="218" width="6" height="18" class="scuro"/><rect x="380" y="218" width="6" height="18" class="scuro"/><rect x="424" y="218" width="6" height="18" class="scuro"/><rect x="468" y="218" width="6" height="18" class="scuro"/><rect x="512" y="218" width="6" height="18" class="scuro"/><rect x="556" y="218" width="6" height="18" class="scuro"/><rect x="600" y="218" width="6" height="18" class="scuro"/><rect x="644" y="218" width="6" height="18" class="scuro"/>
+<g class="etichetta"><text x="150" y="352" text-anchor="start">Vasca d'acqua: assorbe il getto, l'acqua si filtra e si ricicla</text></g>
+
+<!-- pezzo: lastra di vetro -->
+<rect x="170" y="196" width="480" height="22" fill="#cfe3ea" class="contorno"/>
+<rect x="404" y="196" width="10" height="22" fill="#eef1f4" data-k="op:0,0,1,1" data-i="op:0"/>
+<path d="M409,196 Q409,212 420,218" fill="none" stroke="var(--testo)" stroke-width="1.5" stroke-dasharray="3 2" data-k="op:0,0,1,0" data-i="op:0"/>
+<g data-k="op:0,0,0,1" data-i="op:0">
+  <path d="M380,218 l14,-10 v10 Z M440,218 l-14,-10 v10 Z" class="m-grezzo contorno"/>
+  <g class="etichetta"><text x="470" y="262" text-anchor="start">cunei che sostengono il pezzo</text></g>
+</g>
+<g class="etichetta"><text x="660" y="210" text-anchor="start">Vetro da 25 mm</text></g>
+
+<!-- testa di taglio -->
+<path d="M386,30 H432 V90 H424 V120 H394 V90 H386 Z" class="m-stampo contorno"/>
+<rect x="404" y="120" width="10" height="62" class="scuro"/>
+<circle cx="409" cy="96" r="5" style="fill:#e05a8a"/>
+<g class="etichetta"><line x1="414" y1="96" x2="450" y2="55" class="richiamo"/><text x="450" y="60" text-anchor="start">Orifizio in diamante, zaffiro o rubino (0,1–0,25 mm)</text></g>
+<g data-k="op:1,1,1,0" data-i="op:0"><line x1="409" y1="-10" x2="409" y2="34" class="flusso-linea" marker-end="url(#sc-punta)"/></g>
+<g class="etichetta"><text x="200" y="30" text-anchor="start">Acqua fino a 4.000 bar</text></g>
+<!-- abrasivo -->
+<g data-k="op:0,1,1,0" data-i="op:0">
+  <path d="M300,96 H394" fill="none" stroke="var(--grezzo)" stroke-width="8" stroke-dasharray="3 4"/>
+  <g class="etichetta"><text x="200" y="92" text-anchor="start">Abrasivo (granato)</text></g>
+</g>
+<!-- getto -->
+<path d="M409,182 V330" stroke="var(--flusso)" stroke-width="5" data-k="op:0,0,1,0" data-i="op:0"/>
+<g data-k="op:0,0,1,0"><g class="etichetta"><text x="440" y="160" text-anchor="start">il getto (Ø ~1 mm) erode e devia in profondità</text></g></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Si usa industrialmente dagli anni Settanta, a sola acqua o con abrasivo: con l'acqua sola è il getto a erodere, con l'abrasivo sono le particelle a tagliare. <span class="pag">(p. 272)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>Essendo un processo a freddo non crea zona termicamente alterata né scolorimento: si tagliano anche materiali già stampati o rivestiti. Non c'è contatto fra utensile e pezzo, quindi i bordi non si deformano. <span class="pag">(p. 272)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>Profili interni ed esterni si tagliano nella stessa operazione; non servono fori d'ingresso, salvo nei materiali che possono delaminarsi o rompersi all'impatto. <span class="pag">(p. 272)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Il programma prolunga un poco il taglio all'inizio e alla fine, per ottenere un disco perfettamente simmetrico. <span class="pag">(p. 274)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Quasi tutti: acciaio dolce, inox e per utensili; titanio, alluminio, rame e ottone; marmo, ceramica, vetro e pietra; laminati e compositi, compresa la fibra di carbonio; legno; schiume. <span class="pag">(p. 272, 274)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Da pezzo unico a medie serie. <span class="pag">(p. 272)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Nessuno. <span class="pag">(p. 272, 274)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Moderato: il costo principale è il tempo; manodopera moderata e specializzata. <span class="pag">(p. 272, 274)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Moderato, secondo tipo e spessore del materiale; angoli vivi e raggi stretti rallentano. <span class="pag">(p. 272, 274)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Buona; l'acqua sola taglia più pulito, le grane abrasive più fini danno superfici migliori; in profondità la finitura peggiora. <span class="pag">(p. 272)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Tolleranze inferiori a 500 µm. <span class="pag">(p. 272)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Spessori da 0,5 a 100 mm: per esempio schiuma polimerica fino a 100 mm, inox fino a 60 mm. <span class="pag">(p. 272)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Angoli vivi e raggi stretti</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-raggi-ok-t v-raggi-ok-d" class="mini-svg"><title id="v-raggi-ok-t">Corretto: Curve ampie e velocità adeguata</title><desc id="v-raggi-ok-d">Angoli vivi e raggi stretti costringono a rallentare; più lento, o con più pressione, il getto lascia meno conicità.</desc><defs>
+  <pattern id="v-raggi-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-raggi-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-raggi-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-raggi-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,90 V50 Q20,30 40,30 H140" fill="none" stroke="var(--finito)" stroke-width="5"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-raggi-ko-t v-raggi-ko-d" class="mini-svg"><title id="v-raggi-ko-t">Da evitare: Curve strette a velocità alta</title><desc id="v-raggi-ko-d">Il getto devia in profondità e la conicità del taglio aumenta sulle curve.</desc><defs>
+  <pattern id="v-raggi-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-raggi-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-raggi-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-raggi-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,90 V30 H140" fill="none" stroke="var(--finito)" stroke-width="5"/><path d="M20,30 q10,10 6,24" fill="none" stroke="var(--ko)" stroke-width="2" stroke-dasharray="3 3"/><circle cx="20" cy="30" r="12" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Rallentano il taglio; la deviazione del getto aumenta la conicità sulle curve: si riduce rallentando o alzando la pressione. <span class="pag">(p. 272–273)</span></p></article>
+<article class="card"><h3>Fori più piccoli dello spessore</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-fori-ok-t v-fori-ok-d" class="mini-svg"><title id="v-fori-ok-t">Corretto: Fori più larghi dello spessore</title><desc id="v-fori-ok-d">I fori con diametro inferiore allo spessore vanno forati, non tagliati.</desc><defs>
+  <pattern id="v-fori-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-fori-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-fori-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-fori-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="50" width="120" height="30" class="m-finito contorno"/><rect x="60" y="50" width="40" height="30" fill="#eef1f4"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-fori-ko-t v-fori-ko-d" class="mini-svg"><title id="v-fori-ko-t">Da evitare: Foro più stretto dello spessore</title><desc id="v-fori-ko-d">Il getto non riesce a tagliare un foro così stretto in un materiale spesso.</desc><defs>
+  <pattern id="v-fori-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-fori-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-fori-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-fori-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="30" width="120" height="60" class="m-finito contorno"/><rect x="74" y="30" width="12" height="60" fill="#eef1f4"/><circle cx="80" cy="60" r="16" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>I fori con diametro minore dello spessore del materiale vanno forati. <span class="pag">(p. 272)</span></p></article>
+<article class="card"><h3>Sostenere i pezzi sottili</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sostegno-ok-t v-sostegno-ok-d" class="mini-svg"><title id="v-sostegno-ok-t">Corretto: Linguette o cunei per i pezzi sottili</title><desc id="v-sostegno-ok-d">Un pezzo sottile può rompersi per il suo peso prima della fine del taglio: si prevedono linguette o si inseriscono cunei.</desc><defs>
+  <pattern id="v-sostegno-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sostegno-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sostegno-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sostegno-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="50" width="120" height="12" class="m-finito contorno"/><path d="M50,62 l10,14 h-20 Z M110,62 l10,14 h-20 Z" class="m-grezzo contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sostegno-ko-t v-sostegno-ko-d" class="mini-svg"><title id="v-sostegno-ko-t">Da evitare: Pezzo sottile non sostenuto</title><desc id="v-sostegno-ko-d">Senza sostegno il pezzo si spezza sul materiale non ancora tagliato.</desc><defs>
+  <pattern id="v-sostegno-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sostegno-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sostegno-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sostegno-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,50 H80 L140,70 V82 L80,62 H20 Z" class="m-finito contorno"/><circle cx="80" cy="58" r="12" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>I pezzi molto sottili possono rompersi prima della fine del taglio per il loro peso: si progettano linguette, da togliere dopo, o si inseriscono cunei. <span class="pag">(p. 274)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Le due versioni del processo e un accorgimento per ridurre i tempi descritti nel capitolo.</p><div class="griglia-card"><article class="card"><h3>Solo acqua</h3><p class="originale" lang="en">Water only cutting</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-acqua-t var-acqua-d" class="mini-svg"><title id="var-acqua-t">Solo acqua</title><desc id="var-acqua-d">Un getto supersonico di acqua pura erode il materiale: taglio molto più pulito, adatto ai materiali teneri.</desc><defs>
+  <pattern id="var-acqua-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-acqua-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-acqua-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-acqua-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="96" y="10" width="28" height="40" class="m-stampo contorno"/><path d="M110,50 V118" stroke="var(--flusso)" stroke-width="3"/>
+    <rect x="30" y="70" width="160" height="24" style="fill:var(--grezzo)" opacity="0.6" stroke="var(--testo)"/></svg></div><p>Getto supersonico di acqua pura fino a 4.000 bar; taglio molto pulito. <span class="pag">(p. 272)</span></p></article>
+<article class="card"><h3>Con abrasivo</h3><p class="originale" lang="en">Abrasive water jet</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-abrasivo-t var-abrasivo-d" class="mini-svg"><title id="var-abrasivo-t">Con abrasivo</title><desc id="var-abrasivo-d">Particelle taglienti (spesso granato) nella camera di miscelazione formano un fascio di circa 1 mm che taglia i materiali duri; grane più fini (120, 80, 50) sono più lente ma più lisce.</desc><defs>
+  <pattern id="var-abrasivo-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-abrasivo-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-abrasivo-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-abrasivo-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="96" y="10" width="28" height="40" class="m-stampo contorno"/><path d="M40,30 H96" stroke="var(--grezzo)" stroke-width="6" stroke-dasharray="3 3"/>
+    <path d="M110,50 V118" stroke="var(--flusso)" stroke-width="5"/><rect x="30" y="70" width="160" height="24" class="m-stampo contorno"/></svg></div><p>Particelle taglienti sospese nel getto per i materiali duri; la grana influisce sulla finitura. <span class="pag">(p. 272–273)</span></p></article>
+<article class="card"><h3>Fogli impilati</h3><p class="originale" lang="en">Stacked sheets</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-pacco-t var-pacco-d" class="mini-svg"><title id="var-pacco-t">Fogli impilati</title><desc id="var-pacco-d">Fogli sottili si impilano e si tagliano in un'unica passata per ridurre il tempo; i pezzi si annidano anche a 2 mm di distanza.</desc><defs>
+  <pattern id="var-pacco-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-pacco-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-pacco-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-pacco-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="30" y="50" width="160" height="7" class="m-finito contorno"/><rect x="30" y="59" width="160" height="7" class="m-finito contorno"/><rect x="30" y="68" width="160" height="7" class="m-finito contorno"/><rect x="30" y="77" width="160" height="7" class="m-finito contorno"/><rect x="30" y="86" width="160" height="7" class="m-finito contorno"/>
+    <path d="M110,10 V118" stroke="var(--flusso)" stroke-width="4"/></svg></div><p>Più fogli sottili si tagliano insieme per ridurre il tempo. <span class="pag">(p. 274)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="taglio-laser.html">Taglio laser</a> – molti materiali, ma con zona termicamente alterata <span class="pag">(p. 272)</span></li><li><a href="fustellatura.html">Fustellatura</a> – per fogli sottili <span class="pag">(p. 272)</span></li><li><a href="punzonatura-tranciatura.html">Punzonatura e tranciatura</a> – per fogli sottili <span class="pag">(p. 272)</span></li><li><a href="taglio-vetro.html">Taglio del vetro per incisione</a> – solo per vetro sottile <span class="pag">(p. 272)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 272–275.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/taglio-getto-acqua.js"></script>
+</body>
+</html>

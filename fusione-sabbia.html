@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fusione in sabbia – Processi produttivi per il design</title>
+<meta name="description" content="Il metallo fuso viene colato per gravità in uno stampo di sabbia, che poi si rompe per estrarre il pezzo: è economico per pezzi unici e piccole serie, anche molto grandi.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 1 – Formatura › Metalli</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Fusione in sabbia</h1>
+  <p class="originale" lang="en">Sand Casting</p>
+  <p class="categoria">Parte 1 – Formatura · Metalli</p>
+  <p class="sintesi">Il metallo fuso viene colato per gravità in uno stampo di sabbia, che poi si rompe per estrarre il pezzo: è economico per pezzi unici e piccole serie, anche molto grandi.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="2200,2200,2600,2200,2200">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="fusione-sabbia" data-alt="Modello 3D di due staffe piene di sabbia, rese semitrasparenti. Prima si vede il modello grigio nella staffa inferiore; poi si mette l'anima e si chiude la staffa superiore. Il metallo arancione scende dal canale di colata e risale riempiendo la cavità e la materozza. Raffreddandosi diventa verde; infine la sabbia sparisce e resta il pezzo.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Formatura<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Anima e chiusura<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Colata<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Solidificazione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="5">5. Distaffatura<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Formatura</b>Una staffa metallica viene messa sopra il modello e la sabbia viene versata e compattata a strati. Canale di colata e materozze fanno già parte del modello. <span class="pag">(p. 120, 122)</span></li>
+    <li><b>Fase 2 – Anima e chiusura</b>Si toglie il modello; le anime, fatte in stampi a parte, vanno nella staffa inferiore e le due staffe si chiudono. <span class="pag">(p. 120–122)</span></li>
+    <li><b>Fase 3 – Colata</b>Il metallo, scaldato ben sopra la temperatura di fusione, viene versato nel canale di colata e per gravità riempie la cavità e le materozze. <span class="pag">(p. 121–122)</span></li>
+    <li><b>Fase 4 – Solidificazione</b>Una polvere esotermica versata su canale e materozze tiene caldo il metallo in alto: mentre il pezzo si ritira raffreddandosi, può attingere metallo liquido e la porosità superficiale si riduce. <span class="pag">(p. 121–123)</span></li>
+    <li><b>Fase 5 – Distaffatura</b>Dopo circa 15 minuti si separano le staffe, si rompe la sabbia e si taglia il pezzo dai canali; poi sabbiatura e finitura. <span class="pag">(p. 123)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di due staffe piene di sabbia, rese semitrasparenti. Prima si vede il modello grigio nella staffa inferiore; poi si mette l'anima e si chiude la staffa superiore. Il metallo arancione scende dal canale di colata e risale riempiendo la cavità e la materozza. Raffreddandosi diventa verde; infine la sabbia sparisce e resta il pezzo.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 20 820 330" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Fusione in sabbia in sezione</title>
+<desc id="sc-d">Sezione di due staffe di sabbia sovrapposte con la cavità di un guscio, un'anima di sabbia all'interno, il canale di colata a sinistra e la materozza in alto. Le fasi mostrano la formatura sul modello, la chiusura con l'anima, la colata, la solidificazione e la distaffatura.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<clipPath id="sc-sotto" clipPathUnits="userSpaceOnUse"><rect x="230" y="200" width="360" height="130"/></clipPath>
+<clipPath id="sc-sopra" clipPathUnits="userSpaceOnUse"><rect x="230" y="80" width="360" height="120"/></clipPath>
+<!-- staffa inferiore (drag) -->
+<path d="M240,200 H580 V320 H240 Z M320,150 H500 V250 H486 V164 H334 V250 H320 Z M264,90 H280 V262 H264 Z M264,250 H320 V262 H264 Z M402,90 H418 V150 H402 Z" fill="url(#sc-tratteggio)" fill-rule="evenodd" class="contorno" clip-path="url(#sc-sotto)" data-k="op:1,1,1,1,0" data-i="op:1"/>
+<rect x="236" y="196" width="348" height="128" fill="none" stroke="var(--testo)" stroke-width="4" data-k="op:1,1,1,1,0" data-i="op:1"/>
+<g class="etichetta"><text x="600" y="300" text-anchor="start">Staffa inferiore</text></g>
+<!-- modello in legno (fase 1) -->
+<path d="M320,150 H500 V250 H486 V164 H334 V250 H320 Z M334,164 H486 V250 H334 Z" class="macchina" data-k="op:1,0,0,0,0" data-i="op:1"/>
+<g class="etichetta" data-k="op:1,0,0,0,0" data-i="op:1"><line x1="320" y1="160" x2="30" y2="145" class="richiamo"/><text x="30" y="150" text-anchor="start">Modello (legno o alluminio)</text></g>
+<!-- anima in sabbia -->
+<path d="M334,164 H486 V250 H334 Z" fill="url(#sc-tratteggio)" class="contorno" data-k="op:0,1,1,1,0" data-i="op:0"/>
+<g class="etichetta" data-k="op:0,1,1,1,0"><line x1="380" y1="240" x2="30" y2="295" class="richiamo"/><text x="30" y="300" text-anchor="start">Anima in sabbia</text></g>
+
+<!-- metallo: riempimento dal basso -->
+<clipPath id="sc-livello" clipPathUnits="userSpaceOnUse"><rect x="250" y="86" width="270" height="180" data-k="sy:0,0,1,1,1" data-i="sy:0" data-o="0,266"/></clipPath>
+<g clip-path="url(#sc-livello)"><path d="M320,150 H500 V250 H486 V164 H334 V250 H320 Z M264,90 H280 V262 H264 Z M264,250 H320 V262 H264 Z M402,90 H418 V150 H402 Z" class="m-fuso contorno" data-k="op:1,1,1,0,0" data-i="op:1"/></g>
+<path d="M320,150 H500 V250 H486 V164 H334 V250 H320 Z M264,90 H280 V262 H264 Z M264,250 H320 V262 H264 Z M402,90 H418 V150 H402 Z" class="m-finito contorno" data-k="op:0,0,0,1,0" data-i="op:0"/>
+<path d="M320,150 H500 V250 H486 V164 H334 V250 H320 Z" class="m-finito sezionato contorno" data-k="op:0,0,0,0,1" data-i="op:0"/>
+
+<!-- staffa superiore (cope) con canale di colata e materozza -->
+<g data-k="ty:-130,0,0,0,-130;op:1,1,1,1,0" data-i="ty:-130;op:1">
+  <path d="M240,90 H580 V200 H240 Z M320,150 H500 V250 H486 V164 H334 V250 H320 Z M264,90 H280 V262 H264 Z M264,250 H320 V262 H264 Z M402,90 H418 V150 H402 Z" fill="url(#sc-tratteggio)" fill-rule="evenodd" class="contorno" clip-path="url(#sc-sopra)"/>
+  <rect x="236" y="86" width="348" height="114" fill="none" stroke="var(--testo)" stroke-width="4"/>
+</g>
+<g class="etichetta"><text x="600" y="120" text-anchor="start">Staffa superiore</text></g>
+<g class="etichetta"><line x1="264" y1="230" x2="30" y2="225" class="richiamo"/><text x="30" y="230" text-anchor="start">Canale di colata</text></g>
+<g class="etichetta"><line x1="410" y1="92" x2="430" y2="55" class="richiamo"/><text x="430" y="60" text-anchor="start">Materozza</text></g>
+
+<!-- colata -->
+<g data-k="op:0,0,1,0,0">
+  <path d="M220,30 H290 L282,70 H228 Z" class="macchina"/><line x1="272" y1="70" x2="272" y2="92" stroke="var(--fuso)" stroke-width="8"/>
+  <g class="etichetta"><text x="300" y="40" text-anchor="start">Alluminio fuso (&gt; 900 °C in preparazione)</text></g>
+</g>
+<g data-k="op:0,0,0,1,0"><path d="M272,60 q6,3.25 0,6.5 q-6,3.25 0,6.5 q6,3.25 0,6.5 q-6,3.25 0,6.5" class="flusso-linea" fill="none" marker-end="url(#sc-punta)"/><path d="M410,60 q6,3.25 0,6.5 q-6,3.25 0,6.5 q6,3.25 0,6.5 q-6,3.25 0,6.5" class="flusso-linea" fill="none" marker-end="url(#sc-punta)"/><g class="etichetta"><text x="300" y="40" text-anchor="start">polvere esotermica: tiene caldi canale e materozza</text></g></g>
+<g data-k="op:0,0,0,0,1"><g class="etichetta"><text x="240" y="300" text-anchor="start">La sabbia si rompe e il pezzo si separa dai canali</text></g></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>La sabbia è legata con argilla (sabbia a verde) o con resine sintetiche (a secco). Le due metà dello stampo si chiamano staffa superiore e inferiore. <span class="pag">(p. 120)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>Le anime formano le cavità interne; si possono usare più anime, anche con sformi diversi da quelli esterni, perché lo stampo poi si rompe. <span class="pag">(p. 121)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>Il processo è manuale e usa la sola gravità: resta sempre un po' di porosità. La qualità dipende molto dall'abilità della fonderia. <span class="pag">(p. 120–121)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="5" aria-label="Mostra la fase 5 nello schema">Fase 5</button>Dalla sabbia il pezzo esce con una superficie tipica: si sabbia sempre, poi si può lucidare. Si ottengono getti più grandi che con qualsiasi altro metodo, fino a diverse tonnellate. <span class="pag">(p. 121–122)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Ferrosi e leghe non ferrose: ghisa, acciaio, leghe di rame (ottone, bronzo), leghe di alluminio, sempre più magnesio. <span class="pag">(p. 122)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Da pezzo unico a serie medie. <span class="pag">(p. 120)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Basso: il costo principale è il modello, in legno o alluminio; i modelli in schiuma sono i più economici. <span class="pag">(p. 120, 122)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Moderato; manodopera alta, perché quasi tutto è manuale. <span class="pag">(p. 120, 122)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Moderato: la colata richiede di solito meno di 30 minuti; finiture e lavorazioni lo allungano. <span class="pag">(p. 120, 122)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Scarsa, con porosità; la sabbia legata a resina dà finiture migliori. Si sabbia sempre e si può lucidare. <span class="pag">(p. 120–121)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Inferiore alla pressofusione; dipende dalla fonderia. Valore numerico: <span class="nd">n.d.</span> <span class="pag">(p. 121)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Fino a diverse tonnellate; pareti da 2,5 a 130 mm. <span class="pag">(p. 122)</span><span class="nota-ocr">Spessore minimo: il libro scrive 2,5 mm ma la conversione riportata (1 in) non corrisponde.</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Sformo da 1° a 5°</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sformo-ok-t v-sformo-ok-d" class="mini-svg"><title id="v-sformo-ok-t">Corretto: Sformo di 1–5° (di solito 2°)</title><desc id="v-sformo-ok-d">Le pareti inclinate permettono di sfilare il modello dalla sabbia senza rovinarla; anche le anime vogliono sformo.</desc><defs>
+  <pattern id="v-sformo-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sformo-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sformo-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sformo-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,20 H150 V100 H10 Z M40,100 L50,40 H110 L120,100 Z" fill="url(#v-sformo-ok-tratteggio)" fill-rule="evenodd" class="contorno"/><path d="M40,100 L50,40 H110 L120,100 Z" class="m-finito contorno"/><g class="etichetta"><text x="124" y="70" text-anchor="start">2°</text></g></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sformo-ko-t v-sformo-ko-d" class="mini-svg"><title id="v-sformo-ko-t">Da evitare: Pareti verticali</title><desc id="v-sformo-ko-d">Senza sformo il modello trascina la sabbia quando si estrae.</desc><defs>
+  <pattern id="v-sformo-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sformo-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sformo-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sformo-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,20 H150 V100 H10 Z M45,100 V40 H115 V100 Z" fill="url(#v-sformo-ko-tratteggio)" fill-rule="evenodd" class="contorno"/><path d="M45,100 V40 H115 V100 Z" class="m-finito contorno"/><g class="etichetta"><text x="122" y="70" text-anchor="start">0°</text></g></svg><figcaption>Da evitare</figcaption></figure></div><p>Servono angoli di sformo, di solito basta 2°, sullo stampo e sulle anime, per estrarre il modello. <span class="pag">(p. 121–122)</span></p></article>
+<article class="card"><h3>Evitare i cambi di spessore</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spessore-ok-t v-spessore-ok-d" class="mini-svg"><title id="v-spessore-ok-t">Corretto: Spessore costante, raccordi graduali</title><desc id="v-spessore-ok-d">Le variazioni di spessore vanno evitate; quelle piccole si risolvono con rastremature e raccordi.</desc><defs>
+  <pattern id="v-spessore-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spessore-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spessore-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spessore-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,90 H60 Q75,90 80,76 L90,50 H150 V66 H100 L94,84 Q88,106 60,106 H10 Z" class="m-finito contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spessore-ko-t v-spessore-ko-d" class="mini-svg"><title id="v-spessore-ko-t">Da evitare: Salto brusco di spessore</title><desc id="v-spessore-ko-d">Le sezioni diverse si raffreddano e si ritirano in modo diverso.</desc><defs>
+  <pattern id="v-spessore-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spessore-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spessore-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spessore-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,70 H80 V30 H150 V100 H10 Z" class="m-finito contorno"/><circle cx="80" cy="70" r="11" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Le variazioni di spessore vanno evitate; quelle piccole si risolvono con rastremature e raccordi. <span class="pag">(p. 122)</span></p></article>
+<article class="card"><h3>Grandi cambi di sezione: parti separate</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sezioni-ok-t v-sezioni-ok-d" class="mini-svg"><title id="v-sezioni-ok-t">Corretto: Grandi differenze: fondere in più parti</title><desc id="v-sezioni-ok-d">Se serve un grande cambio di sezione, le parti si fondono separatamente e poi si assemblano.</desc><defs>
+  <pattern id="v-sezioni-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sezioni-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sezioni-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sezioni-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,60 H70 V90 H10 Z" class="m-finito contorno"/><path d="M90,20 H150 V100 H90 Z" class="m-finito contorno"/><line x1="80" y1="50" x2="80" y2="100" stroke="var(--testo-2)" stroke-dasharray="3 3"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sezioni-ko-t v-sezioni-ko-d" class="mini-svg"><title id="v-sezioni-ko-t">Da evitare: Massa e parete sottile insieme</title><desc id="v-sezioni-ko-d">Un blocco massiccio unito a una parete sottile si ritira in modo diverso: deformazioni e porosità.</desc><defs>
+  <pattern id="v-sezioni-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sezioni-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sezioni-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sezioni-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,60 H90 V20 H150 V100 H10 V90 Z" class="m-finito contorno"/><circle cx="90" cy="75" r="12" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Se serve un grande cambio di sezione, le parti si fondono separatamente e si assemblano. Il ritiro varia con il metallo (l'acciaio si ritira quasi il doppio dell'alluminio) e cresce con sezione e dimensioni. <span class="pag">(p. 122)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Il libro non elenca varianti come sotto-voci; qui sotto i tipi di sabbia e il modello evaporativo descritti nel testo.</p><div class="griglia-card"><article class="card"><h3>Sabbia a verde</h3><p class="originale" lang="en">Green sand casting</p><div class="variante-schema"><svg viewBox="0 0 220 130" role="img" aria-labelledby="var-verde-t var-verde-d" class="mini-svg"><title id="var-verde-t">Sabbia a verde</title><desc id="var-verde-d">Sabbia mescolata ad argilla e acqua, compattata sul modello e lasciata asciugare: l'acqua residua bollirebbe creando sacche d'aria. Fino al 95% della sabbia si ricicla.</desc><defs>
+  <pattern id="var-verde-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-verde-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-verde-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-verde-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="20" width="180" height="90" fill="url(#var-verde-tratteggio)" class="contorno"/><path d="M70,110 V60 H150 V110" class="cavita contorno"/><g class="etichetta"><text x="110" y="14" text-anchor="middle">sabbia + argilla + acqua</text></g></svg></div><p>Sabbia con argilla e acqua, compattata sul modello e lasciata asciugare del tutto. Fino al 95% dello stampo si può riciclare. <span class="pag">(p. 120, 122)</span></p></article>
+<article class="card"><h3>Sabbia legata a resina</h3><p class="originale" lang="en">Dry sand casting</p><div class="variante-schema"><svg viewBox="0 0 220 130" role="img" aria-labelledby="var-secca-t var-secca-d" class="mini-svg"><title id="var-secca-t">Sabbia legata (a secco)</title><desc id="var-secca-d">Ogni granello è rivestito di una resina vinilestere che indurisce a temperatura ambiente: stampi più rapidi e finitura migliore.</desc><defs>
+  <pattern id="var-secca-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-secca-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-secca-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-secca-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="20" width="180" height="90" fill="url(#var-secca-tratteggio)" class="contorno"/><path d="M70,110 V60 H150 V110" class="cavita contorno" stroke-width="3"/><g class="etichetta"><text x="110" y="14" text-anchor="middle">sabbia con resina</text></g></svg></div><p>Ogni granello è rivestito di resina vinilestere che indurisce a temperatura ambiente e forma una pellicola attorno al modello: stampi più rapidi e superfici migliori. <span class="pag">(p. 120, 122)</span></p></article>
+<article class="card"><h3>Modello evaporativo</h3><p class="originale" lang="en">Evaporative pattern casting</p><div class="variante-schema"><svg viewBox="0 0 220 130" role="img" aria-labelledby="var-evaporativo-t var-evaporativo-d" class="mini-svg"><title id="var-evaporativo-t">Modello evaporativo</title><desc id="var-evaporativo-d">Un modello di schiuma (polistirene) resta nella sabbia e il metallo fuso lo brucia mentre entra: utile per prototipi e piccolissime serie, con finitura inferiore.</desc><defs>
+  <pattern id="var-evaporativo-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-evaporativo-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-evaporativo-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-evaporativo-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="20" width="180" height="90" fill="url(#var-evaporativo-tratteggio)" class="contorno"/><path d="M70,110 V60 H110 V110 Z" class="m-fuso contorno"/><path d="M110,110 V60 H150 V110 Z" fill="#ffffff" stroke="var(--testo)"/><g class="etichetta"><text x="110" y="124" text-anchor="middle">metallo · schiuma</text></g></svg></div><p>Ibrido fra fusione in sabbia e microfusione: un modello in schiuma, fresato o stampato, resta nella sabbia e il metallo lo brucia entrando. Finitura inferiore, ma utile per prototipi e piccolissime serie. <span class="pag">(p. 120)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="pressofusione.html">Pressofusione</a> – più precisa e rapida, per grandi serie <span class="pag">(p. 121)</span></li><li><a href="fusione-centrifuga.html">Fusione centrifuga</a> – alternativa per i metalli <span class="pag">(p. 121)</span></li><li><a href="forgiatura.html">Forgiatura</a> – alternativa, spesso combinata <span class="pag">(p. 121)</span></li><li><a href="microfusione.html">Microfusione a cera persa</a> – più costosa per piccole serie <span class="pag">(p. 120–121)</span></li><li><a href="sabbiatura.html">Sabbiatura</a> – finitura obbligata dei getti <span class="pag">(p. 120–121)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 120–123.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/fusione-sabbia.js"></script>
+</body>
+</html>

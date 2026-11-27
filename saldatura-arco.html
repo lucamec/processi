@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saldatura ad arco – Processi produttivi per il design</title>
+<meta name="description" content="Un arco elettrico fra elettrodo e pezzo fonde i bordi del giunto, e spesso l'elettrodo stesso, in un bagno che solidifica in un cordone; gas o scoria lo proteggono dall'aria. Serve solo per i metalli.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 3 – Giunzione › Termico</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Saldatura ad arco</h1>
+  <p class="originale" lang="en">Arc Welding</p>
+  <p class="categoria">Parte 3 – Giunzione · Termico</p>
+  <p class="sintesi">Un arco elettrico fra elettrodo e pezzo fonde i bordi del giunto, e spesso l'elettrodo stesso, in un bagno che solidifica in un cordone; gas o scoria lo proteggono dall'aria. Serve solo per i metalli.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="1800,2000,3000,2000">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="saldatura-arco" data-alt="Modello 3D di una saldatura MIG. Due lamiere d'acciaio accostate su un banco, con il morsetto di massa. La torcia scende, si accende un arco luminoso dentro una nuvola di gas azzurro e la torcia avanza lungo il giunto lasciando un cordone arancione incandescente; ai lati le lamiere si colorano per il calore. Spento l'arco, il cordone si raffredda e diventa verde.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Preparazione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Innesco<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Avanzamento<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Raffreddamento<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Preparazione</b>Il pezzo si collega alla massa del generatore, su metallo nudo e lontano da parti che la corrente potrebbe danneggiare. <span class="pag">(p. 285)</span></li>
+    <li><b>Fase 2 – Innesco</b>Fra il filo-elettrodo, alimentato di continuo da una bobina, e il pezzo si forma un arco che fonde il giunto e il filo. <span class="pag">(p. 282, 284)</span></li>
+    <li><b>Fase 3 – Avanzamento</b>La torcia avanza lungo il giunto; un getto separato di gas (argon con ossigeno e CO₂) stabilizza l'arco e protegge il bagno di fusione. <span class="pag">(p. 282, 284)</span></li>
+    <li><b>Fase 4 – Raffreddamento</b>Il bagno solidifica rapidamente in un cordone; attorno resta una zona termicamente alterata con tensioni residue. <span class="pag">(p. 282, 285)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una saldatura MIG. Due lamiere d'acciaio accostate su un banco, con il morsetto di massa. La torcia scende, si accende un arco luminoso dentro una nuvola di gas azzurro e la torcia avanza lungo il giunto lasciando un cordone arancione incandescente; ai lati le lamiere si colorano per il calore. Spento l'arco, il cordone si raffredda e diventa verde.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 20 820 310" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Saldatura MIG, vista di lato lungo il giunto</title>
+<desc id="sc-d">Vista laterale di due lamiere sul banco con il morsetto di massa e la torcia MIG sopra. Le fasi mostrano la preparazione, l'innesco dell'arco protetto dal gas, l'avanzamento che deposita il cordone e il raffreddamento con la zona termicamente alterata.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- lamiere da unire e massa -->
+<rect x="160" y="232" width="480" height="40" fill="url(#sc-tratteggio)" class="contorno"/>
+<rect x="120" y="272" width="560" height="12" class="macchina"/>
+<rect x="640" y="240" width="40" height="24" class="scuro"/>
+<g class="etichetta"><line x1="660" y1="264" x2="600" y2="305" class="richiamo"/><text x="600" y="310" text-anchor="start">Morsetto di massa</text></g>
+<!-- zona termicamente alterata -->
+<rect x="200" y="232" width="400" height="18" style="fill:var(--fuso)" fill-opacity="0.18" data-k="op:0,0,1,1" data-i="op:0"/>
+<g data-k="op:0,0,0,1"><g class="etichetta"><line x1="260" y1="246" x2="40" y2="305" class="richiamo"/><text x="40" y="310" text-anchor="start">zona termicamente alterata (ZTA) con tensioni residue</text></g></g>
+<!-- cordone: si deposita, poi si raffredda -->
+<path d="M200,226 H600" pathLength="100" stroke-dasharray="100 100" stroke-width="12" stroke-linecap="round" fill="none" style="stroke:var(--fuso)" data-k="dash:100,100,0,0" data-i="dash:100"/>
+<path d="M200,226 H600" stroke-width="12" stroke-linecap="round" fill="none" style="stroke:var(--finito)" data-k="op:0,0,0,1" data-i="op:0"/>
+<!-- torcia MIG -->
+<g data-k="tx:0,0,400,400;ty:-40,0,0,-60" data-i="tx:0;ty:-60">
+  <path d="M150,60 L190,170 H214 L180,60 Z" class="m-stampo contorno"/>
+  <path d="M188,170 H216 L212,196 H192 Z" class="scuro"/>
+  <line x1="202" y1="196" x2="202" y2="214" stroke="var(--grezzo)" stroke-width="3"/>
+  <g data-k="op:0,1,1,0" data-i="op:0">
+    <path d="M190,196 L170,224 H234 L214,196 Z" style="fill:var(--flusso)" opacity="0.25"/>
+    <path d="M202,214 l-5,4 l8,2 l-6,5" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+    <circle cx="202" cy="222" r="9" style="fill:var(--fuso)" opacity="0.9"/>
+  </g>
+</g>
+<g class="etichetta"><text x="280" y="60" text-anchor="start">Torcia: filo-elettrodo continuo e gas di protezione</text></g>
+<g data-k="op:0,1,0,0"><g class="etichetta"><text x="280" y="150" text-anchor="start">l'arco fra filo e pezzo fonde il giunto e il filo</text></g></g>
+<g data-k="op:0,0,1,0"><g class="etichetta"><text x="280" y="150" text-anchor="start">il gas protegge il bagno di fusione dall'aria</text></g><line x1="300" y1="190" x2="560" y2="190" class="flusso-linea" marker-end="url(#sc-punta)"/></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Le saldature ad arco più comuni sono a elettrodo rivestito (MMA), MIG e TIG; ci sono poi l'arco sommerso (SAW) e il plasma (PW). MMA, MIG e TIG si possono fare a mano; plasma e arco sommerso sono più adatti a sistemi meccanizzati. <span class="pag">(p. 282)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>Il MIG si distingue dall'MMA perché il filo è continuo e il gas è fornito a parte: più produttivo, più flessibile e adatto all'automazione. Rappresenta circa metà di tutte le saldature, molto usato nell'assemblaggio delle auto. <span class="pag">(p. 284)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>L'efficienza si misura con il tasso di deposito e il fattore di servizio: circa 2 kg/h per l'MMA, 0,5 per il TIG, 4 per il MIG e 12,5 per l'arco sommerso. <span class="pag">(p. 285)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Come ogni processo termico, la saldatura crea una zona alterata: la struttura del metallo cambia, con proprietà diverse e possibili cricche. <span class="pag">(p. 285)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>MMA: acciaio, ghisa, leghe di nichel (e di rame con elettrodi appositi). MIG, TIG, plasma e arco sommerso: metalli ferrosi e non ferrosi; il TIG è il processo principale per il titanio, il MIG si usa per acciai, alluminio e magnesio. <span class="pag">(p. 285–286)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Da pezzo unico a produzione di massa. <span class="pag">(p. 282)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Nessuno, salvo maschere o morsetti speciali. <span class="pag">(p. 282, 286)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Basso; manodopera alta nelle operazioni manuali, molto ridotta in quelle automatiche. <span class="pag">(p. 282, 286)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Da lento a rapido: lento l'MMA per il cambio degli elettrodi, rapido il MIG soprattutto automatico, il TIG a metà. <span class="pag">(p. 282, 286)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Alta; nelle operazioni manuali dipende dall'abilità dell'operatore, quelle automatiche danno i giunti più puliti. <span class="pag">(p. 282, 284–285)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Cordoni precisi e puliti con MMA, MIG e TIG. Tolleranze numeriche: <span class="nd">n.d.</span> <span class="pag">(p. 284)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>MIG per spessori da 1 a 5 mm; plasma da 0,1 a 10 mm. <span class="pag">(p. 285)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Il giunto deve essere raggiungibile</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-accesso-ok-t v-accesso-ok-d" class="mini-svg"><title id="v-accesso-ok-t">Corretto: Giunto raggiungibile</title><desc id="v-accesso-ok-d">La saldatura richiede la vista diretta del giunto: saldatore o robot devono arrivarci.</desc><defs>
+  <pattern id="v-accesso-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-accesso-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-accesso-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-accesso-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,90 H140 M80,90 V30" stroke="var(--testo)" stroke-width="8"/><path d="M84,86 l8,-8" stroke="var(--fuso)" stroke-width="6"/><line x1="130" y1="30" x2="96" y2="74" class="flusso-linea" marker-end="url(#v-accesso-ok-punta)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-accesso-ko-t v-accesso-ko-d" class="mini-svg"><title id="v-accesso-ko-t">Da evitare: Giunto nascosto</title><desc id="v-accesso-ko-d">Un giunto chiuso fra altre parti non si raggiunge con la torcia.</desc><defs>
+  <pattern id="v-accesso-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-accesso-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-accesso-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-accesso-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,90 H140 M80,90 V30 M40,90 V50 H80" fill="none" stroke="var(--testo)" stroke-width="8"/><circle cx="72" cy="80" r="12" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>La saldatura richiede la vista diretta: saldatore o robot devono poter arrivare al giunto, la cui geometria influisce sulla velocità. <span class="pag">(p. 285)</span></p></article>
+<article class="card"><h3>Messa a terra su metallo nudo</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-massa-ok-t v-massa-ok-d" class="mini-svg"><title id="v-massa-ok-t">Corretto: Contatto di massa su metallo nudo</title><desc id="v-massa-ok-d">La corrente deve passare dal pezzo: il contatto di massa va su metallo pulito, vicino al giunto, lontano da parti delicate.</desc><defs>
+  <pattern id="v-massa-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-massa-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-massa-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-massa-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="60" width="120" height="24" class="m-stampo contorno"/><rect x="118" y="50" width="20" height="16" class="scuro"/><path d="M128,50 V20" stroke="var(--testo)" stroke-width="3"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-massa-ko-t v-massa-ko-d" class="mini-svg"><title id="v-massa-ko-t">Da evitare: Pezzo verniciato o rivestito</title><desc id="v-massa-ko-d">Vernici e rivestimenti isolano il metallo e rendono la saldatura difficile o impossibile.</desc><defs>
+  <pattern id="v-massa-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-massa-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-massa-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-massa-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="60" width="120" height="24" class="m-stampo contorno"/><rect x="20" y="54" width="120" height="6" style="fill:var(--finito)"/><rect x="118" y="40" width="20" height="14" class="scuro"/><circle cx="128" cy="56" r="13" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Il pezzo va collegato alla massa: vernici e rivestimenti isolano e possono impedire la saldatura; il contatto va posto vicino al giunto per non far passare la corrente in parti delicate. <span class="pag">(p. 285)</span></p></article>
+<article class="card"><h3>Coppie di metalli compatibili</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-materiali-ok-t v-materiali-ok-d" class="mini-svg"><title id="v-materiali-ok-t">Corretto: Coppie di metalli compatibili</title><desc id="v-materiali-ok-d">L'acciaio al carbonio si salda all'inox o alle leghe di nichel, l'alluminio al magnesio.</desc><defs>
+  <pattern id="v-materiali-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-materiali-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-materiali-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-materiali-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="50" width="60" height="30" class="m-stampo contorno"/><rect x="80" y="50" width="60" height="30" fill="url(#v-materiali-ok-tratteggio)" class="contorno"/><path d="M80,46 V84" stroke="var(--fuso)" stroke-width="6"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-materiali-ko-t v-materiali-ko-d" class="mini-svg"><title id="v-materiali-ko-t">Da evitare: Titanio con altri metalli</title><desc id="v-materiali-ko-d">Alcuni metalli, come il titanio, si saldano solo con lo stesso metallo.</desc><defs>
+  <pattern id="v-materiali-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-materiali-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-materiali-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-materiali-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="50" width="60" height="30" class="m-stampo contorno"/><rect x="80" y="50" width="60" height="30" fill="url(#v-materiali-ko-tratteggio)" class="contorno"/><circle cx="80" cy="65" r="16" fill="none" stroke="var(--ko)" stroke-width="2.5"/><g class="etichetta"><text x="40" y="104" text-anchor="start">Ti</text></g></svg><figcaption>Da evitare</figcaption></figure></div><p>Alcuni metalli, come il titanio, si saldano solo a se stessi; l'acciaio al carbonio invece si unisce all'inox o alle leghe di nichel, e l'alluminio al magnesio. <span class="pag">(p. 285)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Le altre tecniche ad arco descritte nel capitolo; lo schema principale mostra la saldatura MIG.</p><div class="griglia-card"><article class="card"><h3>Elettrodo rivestito</h3><p class="originale" lang="en">Manual metal arc (MMA)</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-mma-t var-mma-d" class="mini-svg"><title id="var-mma-t">Elettrodo rivestito (MMA)</title><desc id="var-mma-d">L'elettrodo a bacchetta è rivestito di flusso, che fonde e forma gas e scoria protettivi. Portatile, adatto a cantieri e riparazioni; cordoni brevi e scoria da togliere fra una passata e l'altra.</desc><defs>
+  <pattern id="var-mma-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-mma-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-mma-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-mma-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="20" y="88" width="180" height="20" class="m-stampo contorno"/>
+    <path d="M90,10 L110,80" stroke="var(--grezzo)" stroke-width="10"/><path d="M90,10 L110,80" stroke="var(--testo)" stroke-width="3"/>
+    <path d="M60,88 Q90,80 112,86" stroke="#8a6a3a" stroke-width="8" fill="none"/></svg></div><p>Il rivestimento dell'elettrodo genera gas e scoria; il più portatile, per cantiere e riparazioni. <span class="pag">(p. 282–283)</span></p></article>
+<article class="card"><h3>TIG</h3><p class="originale" lang="en">Tungsten inert gas (TIG)</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-tig-t var-tig-d" class="mini-svg"><title id="var-tig-t">TIG</title><desc id="var-tig-d">Elettrodo di tungsteno non consumabile e gas inerte (argon, elio); il materiale d'apporto è facoltativo. Preciso e pulito, ideale per lamiere sottili; è il processo principale per il titanio.</desc><defs>
+  <pattern id="var-tig-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-tig-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-tig-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-tig-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="20" y="88" width="180" height="20" class="m-stampo contorno"/>
+    <path d="M100,10 V70" stroke="var(--testo)" stroke-width="12"/><path d="M100,70 l-4,10 h8 Z" class="scuro"/>
+    <path d="M150,40 L114,84" stroke="var(--grezzo)" stroke-width="3"/><circle cx="100" cy="86" r="7" style="fill:var(--fuso)"/></svg></div><p>Elettrodo di tungsteno non consumabile; preciso e pulito, per lamiere sottili e lavori delicati. <span class="pag">(p. 284, 286)</span></p></article>
+<article class="card"><h3>Plasma</h3><p class="originale" lang="en">Plasma welding (PW)</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-plasma-t var-plasma-d" class="mini-svg"><title id="var-plasma-t">Plasma</title><desc id="var-plasma-d">Simile al TIG ma con un plasma a 3.000–6.000 °C: dal microplasma per reti e lamiere di 0,1 mm al &quot;keyhole&quot;, che penetra fino a 6 mm in una passata.</desc><defs>
+  <pattern id="var-plasma-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-plasma-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-plasma-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-plasma-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="20" y="88" width="180" height="20" class="m-stampo contorno"/>
+    <path d="M86,10 H114 V60 L104,74 H96 L86,60 Z" class="m-stampo contorno"/><path d="M100,74 V104" stroke="var(--fuso)" stroke-width="5"/></svg></div><p>Microplasma, corrente media e keyhole; dal filo sottile allo spessore pieno in una passata. <span class="pag">(p. 284, 286)</span></p></article>
+<article class="card"><h3>Arco sommerso</h3><p class="originale" lang="en">Submerged arc welding (SAW)</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-sommerso-t var-sommerso-d" class="mini-svg"><title id="var-sommerso-t">Arco sommerso (SAW)</title><desc id="var-sommerso-d">L'arco è coperto da uno strato di flusso granulare, posato davanti alla torcia e recuperato dietro: niente luce né spruzzi, rendimento termico del 50%. Solo in piano e meccanizzato.</desc><defs>
+  <pattern id="var-sommerso-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-sommerso-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-sommerso-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-sommerso-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="20" y="88" width="180" height="20" class="m-stampo contorno"/>
+    <path d="M40,88 Q110,62 180,88 Z" style="fill:var(--grezzo)"/><path d="M110,10 V70" stroke="var(--testo)" stroke-width="6"/></svg></div><p>Arco sotto uno strato di flusso, solo in piano; il tasso di deposito più alto. <span class="pag">(p. 285–287)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="saldatura-fascio.html">Saldatura a fascio</a> – alternativa per spessori elevati <span class="pag">(p. 284)</span></li><li><a href="saldatura-attrito.html">Saldatura per attrito</a> – alternativa per alcune applicazioni <span class="pag">(p. 284)</span></li><li><a href="saldatura-resistenza.html">Saldatura a resistenza</a> – alternativa per alcune applicazioni <span class="pag">(p. 284)</span></li><li><a href="taglio-laser.html">Taglio laser</a> – con il taglio, per costruire prototipi precisi <span class="pag">(p. 285)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 282–287.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/saldatura-arco.js"></script>
+</body>
+</html>

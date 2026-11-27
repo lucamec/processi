@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laminazione dei compositi – Processi produttivi per il design</title>
+<meta name="description" content="Tessuti di fibra di vetro, carbonio o aramide vengono uniti a una resina termoindurente dentro uno stampo: ne escono pezzi leggerissimi e robusti, dalle auto da corsa agli aerei, alle barche, agli arredi.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 1 – Formatura › Compositi</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Laminazione dei compositi</h1>
+  <p class="originale" lang="en">Composite Laminating</p>
+  <p class="categoria">Parte 1 – Formatura · Compositi</p>
+  <p class="sintesi">Tessuti di fibra di vetro, carbonio o aramide vengono uniti a una resina termoindurente dentro uno stampo: ne escono pezzi leggerissimi e robusti, dalle auto da corsa agli aerei, alle barche, agli arredi.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="2000,2200,2800,2200,2200">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="laminazione-compositi" data-alt="Modello 3D di uno stampo femmina a una faccia, a forma di guscio, sorretto da un telaio. Un tampone stende il distaccante, poi il gel coat chiaro si distende da un lato all'altro. Tre fogli di fibra impregnati di resina, arancioni, si posano uno dopo l'altro mentre un rullo passa sulla superficie. Dopo la polimerizzazione il guscio, ora verde, si solleva dallo stampo.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Distaccante<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Gel coat<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Stratificazione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Polimerizzazione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="5">5. Sformatura e rifinitura<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Distaccante</b>Lo stampo, preparato con cura perché la sua superficie si riflette sul pezzo, riceve un distaccante a cera steso con un panno morbido. <span class="pag">(p. 210)</span></li>
+    <li><b>Fase 2 – Gel coat</b>Uno strato di gel coat, una resina termoindurente, viene spruzzato o steso a pennello: diventerà la superficie esterna del pezzo. <span class="pag">(p. 208, 210)</span></li>
+    <li><b>Fase 3 – Stratificazione</b>I tessuti di fibra tagliati a misura si posano sul gel coat e si impregnano di resina; un rullo elimina l'aria. Gli strati si aggiungono uno alla volta. <span class="pag">(p. 208, 212)</span></li>
+    <li><b>Fase 4 – Polimerizzazione</b>La resina termoindurente polimerizza: nel caso studio, con vinilestere, dopo circa 45 minuti. <span class="pag">(p. 206, 212)</span></li>
+    <li><b>Fase 5 – Sformatura e rifinitura</b>Lo stampo si separa e il pezzo viene rifilato e lucidato. <span class="pag">(p. 212)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di uno stampo femmina a una faccia, a forma di guscio, sorretto da un telaio. Un tampone stende il distaccante, poi il gel coat chiaro si distende da un lato all'altro. Tre fogli di fibra impregnati di resina, arancioni, si posano uno dopo l'altro mentre un rullo passa sulla superficie. Dopo la polimerizzazione il guscio, ora verde, si solleva dallo stampo.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 0 820 370" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Laminazione a umido su stampo a una faccia, in sezione</title>
+<desc id="sc-d">Sezione di uno stampo femmina in composito sostenuto da un telaio. Le fasi mostrano il distaccante, il gel coat, tre strati di fibra e resina rullati, la polimerizzazione e il pezzo che si stacca dallo stampo.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- stampo a una faccia: pelle in composito su telaio rigido -->
+<path d="M150,110 H200 Q410,310 620,110 H670 V126 H630 Q410,346 190,126 H150 Z" fill="url(#sc-tratteggio)" class="contorno"/>
+<rect x="170" y="126" width="14" height="190" class="macchina"/><rect x="636" y="126" width="14" height="190" class="macchina"/>
+<rect x="300" y="240" width="14" height="76" class="macchina"/><rect x="506" y="240" width="14" height="76" class="macchina"/>
+<rect x="150" y="316" width="520" height="12" class="macchina"/>
+<g class="etichetta"><text x="40" y="350" text-anchor="start">Stampo: pelle di 6–8 mm su telaio rigido</text></g>
+
+<!-- 1: distaccante -->
+<path d="M200,108 Q410,306 620,108" pathLength="100" stroke-dasharray="100 100" fill="none" stroke-width="3" style="stroke:var(--flusso)" data-k="dash:0,0,0,0,0" data-i="dash:100"/>
+<g data-k="op:1,0,0,0,0"><g class="etichetta"><text x="470" y="300" text-anchor="start">Distaccante a cera steso con un panno</text></g></g>
+
+<!-- 2: gel coat -->
+<g data-k="op:1,1,1,1,0" data-i="op:1"><path d="M200,105 Q410,300 620,105" pathLength="100" stroke-dasharray="100 100" fill="none" stroke-width="5" style="stroke:#e8e2d6" data-k="dash:100,0,0,0,0" data-i="dash:100"/>
+<g data-k="op:0,1,0,0,0"><g class="etichetta"><text x="470" y="300" text-anchor="start">Gel coat spruzzato o a pennello</text></g></g>
+
+<!-- 3: strati di fibra impregnati di resina -->
+<path d="M200,100 Q410,290 620,100" pathLength="100" stroke-dasharray="100 100" fill="none" stroke-width="6" style="stroke:var(--fuso)" data-k="dash:100,100,0,0,0" data-i="dash:100"/><path d="M200,94 Q410,278 620,94" pathLength="100" stroke-dasharray="100 100" fill="none" stroke-width="6" style="stroke:var(--fuso)" data-k="dash:100,100,0,0,0" data-i="dash:100"/><path d="M200,88 Q410,266 620,88" pathLength="100" stroke-dasharray="100 100" fill="none" stroke-width="6" style="stroke:var(--fuso)" data-k="dash:100,100,0,0,0" data-i="dash:100"/></g>
+<g data-k="ty:0,0,0,0,-70" data-i="ty:0">
+  <g data-k="op:0,0,0,0,1" data-i="op:0"><path d="M200,100 Q410,290 620,100" fill="none" stroke-width="6" style="stroke:var(--finito)"/><path d="M200,94 Q410,278 620,94" fill="none" stroke-width="6" style="stroke:var(--finito)"/><path d="M200,88 Q410,266 620,88" fill="none" stroke-width="6" style="stroke:var(--finito)"/>
+  <path d="M200,105 Q410,300 620,105" fill="none" stroke-width="5" style="stroke:var(--finito)"/></g>
+</g>
+<g data-k="op:0,0,1,0,0;tx:0,0,220,0,0" data-i="tx:-200;op:0">
+  <circle cx="400" cy="152" r="12" class="m-stampo contorno"/><line x1="400" y1="152" x2="440" y2="90" stroke="var(--testo)" stroke-width="5"/>
+</g>
+<g data-k="op:0,0,1,0,0"><g class="etichetta"><text x="470" y="300" text-anchor="start">Fogli di fibra e resina; il rullo toglie l'aria</text></g></g>
+<!-- 4: polimerizzazione -->
+<g data-k="op:0,0,0,1,0"><g class="etichetta"><text x="250" y="40" text-anchor="start">La resina termoindurente polimerizza (circa 45 minuti nel caso studio)</text></g></g>
+<!-- 5: sformatura -->
+<g data-k="op:0,0,0,0,1"><line x1="410" y1="100" x2="410" y2="50" class="flusso-linea" marker-end="url(#sc-punta)"/><g class="etichetta"><text x="470" y="300" text-anchor="start">il pezzo si stacca, si rifila e si lucida</text></g></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Esistono tre tipi principali di laminazione: a umido, con pre-impregnati e per trasferimento di resina (RTM). Le resine sono termoindurenti. <span class="pag">(p. 206)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>Lo stampo a una faccia è una pelle dello stesso composito sostenuta da un telaio rigido: deve essere solido durante la stratificazione e abbastanza flessibile da lasciar uscire il pezzo. <span class="pag">(p. 208)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>Ogni prodotto può avere da 1 a 10 strati di rinforzo, tutti applicati a mano; conta il giusto rapporto fra resina e fibra. Un prodotto complesso può comporsi di decine di parti. <span class="pag">(p. 208)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>I laminati polimerizzati sotto pressione hanno la porosità minima; per i pezzi di precisione si usano autoclavi con calore e pressione. <span class="pag">(p. 206–207)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="5" aria-label="Mostra la fase 5 nello schema">Fase 5</button>Con lo stampo a una faccia solo un lato è lucido; unendo due gusci si ottengono pezzi cavi finiti su tutta la superficie. <span class="pag">(p. 207)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Fibre di vetro, carbonio e aramide (Kevlar®), in tessuti, mat o unidirezionali; resine termoindurenti poliestere, vinilestere, epossidica, fenolica e cianato; anime in nido d'ape Nomex®, schiuma o nido d'ape di alluminio. <span class="pag">(p. 207–209)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Da pezzo unico a lotti; con l'RTM anche migliaia di pezzi identici. <span class="pag">(p. 206)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Da moderato ad alto: lo stampo richiede un modello ed è un lavoro manuale. <span class="pag">(p. 206, 210)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Da moderato ad alto, secondo superficie, complessità e prestazioni; manodopera alta. <span class="pag">(p. 206, 210)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Lungo, da 1 a 150 ore secondo complessità e dimensioni. <span class="pag">(p. 206, 210)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Lucida sul lato dello stampo; il gel coat migliora la superficie della laminazione a umido e dell'RTM, che è finito su entrambi i lati. <span class="pag">(p. 207, 209)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Pre-impregnati precisi, laminazione a umido la meno precisa. Tolleranze numeriche: <span class="nd">n.d.</span> <span class="pag">(p. 208)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Superficie fino a 16 m², più grande in più pezzi; parete 0,25–10 mm nella laminazione a umido. <span class="pag">(p. 208–209)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Spessore della parete limitato</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spessore-ok-t v-spessore-ok-d" class="mini-svg"><title id="v-spessore-ok-t">Corretto: Parete fra 0,25 e 10 mm</title><desc id="v-spessore-ok-d">Nella laminazione a umido lo spessore resta in questo intervallo: oltre, il calore della reazione diventa pericoloso.</desc><defs>
+  <pattern id="v-spessore-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spessore-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spessore-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spessore-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M15,70 H145" fill="none" stroke-width="10" stroke-linejoin="round" style="stroke:var(--finito)"/><g class="etichetta"><text x="80" y="100" text-anchor="middle">0,25–10 mm</text></g></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spessore-ko-t v-spessore-ko-d" class="mini-svg"><title id="v-spessore-ko-t">Da evitare: Parete troppo spessa</title><desc id="v-spessore-ko-d">Uno strato massiccio di resina sviluppa una reazione esotermica eccessiva.</desc><defs>
+  <pattern id="v-spessore-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spessore-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spessore-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spessore-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M15,66 H145" fill="none" stroke-width="40" stroke-linejoin="round" style="stroke:var(--finito)"/><circle cx="80" cy="66" r="24" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>La parete resta fra 0,25 e 10 mm: oltre, la reazione esotermica della resina diventa pericolosa. <span class="pag">(p. 208)</span></p></article>
+<article class="card"><h3>Giunti degli strati sfalsati</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-giunti-ok-t v-giunti-ok-d" class="mini-svg"><title id="v-giunti-ok-t">Corretto: Giunti sfalsati</title><desc id="v-giunti-ok-d">Ogni strato si sovrappone in un punto diverso: si forma un giunto a sovrapposizione sfalsato, più resistente.</desc><defs>
+  <pattern id="v-giunti-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-giunti-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-giunti-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-giunti-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><line x1="15" y1="50" x2="57" y2="50" stroke="var(--fuso)" stroke-width="7"/><line x1="63" y1="50" x2="145" y2="50" stroke="var(--fuso)" stroke-width="7"/><line x1="15" y1="60" x2="71" y2="60" stroke="var(--fuso)" stroke-width="7"/><line x1="77" y1="60" x2="145" y2="60" stroke="var(--fuso)" stroke-width="7"/><line x1="15" y1="70" x2="85" y2="70" stroke="var(--fuso)" stroke-width="7"/><line x1="91" y1="70" x2="145" y2="70" stroke="var(--fuso)" stroke-width="7"/><line x1="15" y1="80" x2="99" y2="80" stroke="var(--fuso)" stroke-width="7"/><line x1="105" y1="80" x2="145" y2="80" stroke="var(--fuso)" stroke-width="7"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-giunti-ko-t v-giunti-ko-d" class="mini-svg"><title id="v-giunti-ko-t">Da evitare: Giunti allineati</title><desc id="v-giunti-ko-d">Interruzioni sovrapposte nello stesso punto creano una debolezza.</desc><defs>
+  <pattern id="v-giunti-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-giunti-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-giunti-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-giunti-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><line x1="15" y1="50" x2="77" y2="50" stroke="var(--fuso)" stroke-width="7"/><line x1="83" y1="50" x2="145" y2="50" stroke="var(--fuso)" stroke-width="7"/><line x1="15" y1="60" x2="77" y2="60" stroke="var(--fuso)" stroke-width="7"/><line x1="83" y1="60" x2="145" y2="60" stroke="var(--fuso)" stroke-width="7"/><line x1="15" y1="70" x2="77" y2="70" stroke="var(--fuso)" stroke-width="7"/><line x1="83" y1="70" x2="145" y2="70" stroke="var(--fuso)" stroke-width="7"/><line x1="15" y1="80" x2="77" y2="80" stroke="var(--fuso)" stroke-width="7"/><line x1="83" y1="80" x2="145" y2="80" stroke="var(--fuso)" stroke-width="7"/><circle cx="80" cy="65" r="22" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Ogni strato si sovrappone in un punto diverso, creando un giunto a sovrapposizione sfalsato; giunti allineati sono punti deboli. <span class="pag">(p. 208, 212)</span></p></article>
+<article class="card"><h3>Anime per rigidezza e spessore</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-anima-ok-t v-anima-ok-d" class="mini-svg"><title id="v-anima-ok-t">Corretto: Anima leggera fra le pelli</title><desc id="v-anima-ok-d">Un'anima a nido d'ape o in schiuma aumenta rigidezza a flessione e torsione, e permette variazioni di spessore.</desc><defs>
+  <pattern id="v-anima-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-anima-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-anima-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-anima-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M15,40 H145" fill="none" stroke-width="6" stroke-linejoin="round" style="stroke:var(--finito)"/><path d="M15,96 H145" fill="none" stroke-width="6" stroke-linejoin="round" style="stroke:var(--finito)"/><path d="M20,44 l10,12 v24 l-10,12 M30,56 h11" fill="none" stroke="var(--testo)" stroke-width="1.5"/><path d="M41,44 l10,12 v24 l-10,12 M51,56 h11" fill="none" stroke="var(--testo)" stroke-width="1.5"/><path d="M62,44 l10,12 v24 l-10,12 M72,56 h11" fill="none" stroke="var(--testo)" stroke-width="1.5"/><path d="M83,44 l10,12 v24 l-10,12 M93,56 h11" fill="none" stroke="var(--testo)" stroke-width="1.5"/><path d="M104,44 l10,12 v24 l-10,12 M114,56 h11" fill="none" stroke="var(--testo)" stroke-width="1.5"/><path d="M125,44 l10,12 v24 l-10,12 M135,56 h11" fill="none" stroke="var(--testo)" stroke-width="1.5"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-anima-ko-t v-anima-ko-d" class="mini-svg"><title id="v-anima-ko-t">Da evitare: Laminato sottile senza anima</title><desc id="v-anima-ko-d">Una pelle sottile da sola si flette facilmente.</desc><defs>
+  <pattern id="v-anima-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-anima-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-anima-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-anima-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M15,60 Q80,90 145,60" fill="none" stroke-width="6" stroke-linejoin="round" style="stroke:var(--finito)"/><circle cx="80" cy="76" r="14" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Un'anima mantiene distanziate le pelli e aumenta rigidezza a flessione e resistenza a torsione; rende possibili variazioni di spessore della parete. <span class="pag">(p. 208)</span></p></article>
+<article class="card"><h3>Allineamento delle fibre</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-fibre-ok-t v-fibre-ok-d" class="mini-svg"><title id="v-fibre-ok-t">Corretto: Fibre orientate secondo i carichi</title><desc id="v-fibre-ok-d">La direzione della trama determina le proprietà meccaniche; per i pezzi ad alte prestazioni si calcola con l'analisi agli elementi finiti.</desc><defs>
+  <pattern id="v-fibre-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-fibre-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-fibre-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-fibre-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="30" width="120" height="70" class="m-grezzo contorno"/><line x1="20" y1="36" x2="140" y2="36" stroke="var(--finito)" stroke-width="3"/><line x1="20" y1="48" x2="140" y2="48" stroke="var(--finito)" stroke-width="3"/><line x1="20" y1="60" x2="140" y2="60" stroke="var(--finito)" stroke-width="3"/><line x1="20" y1="72" x2="140" y2="72" stroke="var(--finito)" stroke-width="3"/><line x1="20" y1="84" x2="140" y2="84" stroke="var(--finito)" stroke-width="3"/><line x1="20" y1="96" x2="140" y2="96" stroke="var(--finito)" stroke-width="3"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-fibre-ko-t v-fibre-ko-d" class="mini-svg"><title id="v-fibre-ko-t">Da evitare: Fibre disallineate</title><desc id="v-fibre-ko-d">Anche una piccola rotazione della trama riduce sensibilmente la resistenza.</desc><defs>
+  <pattern id="v-fibre-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-fibre-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-fibre-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-fibre-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="30" width="120" height="70" class="m-grezzo contorno"/><line x1="20" y1="30" x2="140" y2="46" stroke="var(--finito)" stroke-width="3"/><line x1="20" y1="42" x2="140" y2="58" stroke="var(--finito)" stroke-width="3"/><line x1="20" y1="54" x2="140" y2="70" stroke="var(--finito)" stroke-width="3"/><line x1="20" y1="66" x2="140" y2="82" stroke="var(--finito)" stroke-width="3"/><line x1="20" y1="78" x2="140" y2="94" stroke="var(--finito)" stroke-width="3"/><line x1="20" y1="90" x2="140" y2="106" stroke="var(--finito)" stroke-width="3"/><circle cx="128" cy="48" r="12" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>La direzione della trama determina le proprietà meccaniche: si calcola con l'analisi agli elementi finiti e va rispettata nella stratificazione. <span class="pag">(p. 208)</span></p><p class="nota-ocr">Angolo di disallineamento che riduce la resistenza del 20%: <span class="nd">n.d.</span> (OCR &quot;just 50 of movement&quot;)</p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>I tre tipi principali descritti nel capitolo; lo schema principale mostra la laminazione a umido.</p><div class="griglia-card"><article class="card"><h3>Laminazione a umido</h3><p class="originale" lang="en">Wet lay-up</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-umido-t var-umido-d" class="mini-svg"><title id="var-umido-t">Laminazione a umido</title><desc id="var-umido-d">Su stampo a una faccia, dopo il gel coat, i tessuti di fibra si impregnano di resina a pennello o a spruzzo e si rullano per eliminare la porosità. È la meno precisa.</desc><defs>
+  <pattern id="var-umido-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-umido-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-umido-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-umido-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M20,40 Q110,120 200,40 V60 Q110,140 20,60 Z" fill="url(#var-umido-tratteggio)" class="contorno"/>
+    <path d="M24,34 Q110,110 196,34" fill="none" stroke-width="6" stroke-linejoin="round" style="stroke:var(--fuso)"/>
+    <circle cx="110" cy="62" r="10" class="m-stampo contorno"/></svg></div><p>Resine a temperatura ambiente impregnate a mano nei tessuti posati nello stampo, dopo il gel coat; adatta a ogni tipo di trama. <span class="pag">(p. 206, 208)</span></p></article>
+<article class="card"><h3>Pre-impregnato</h3><p class="originale" lang="en">Pre-preg</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-preimpregnato-t var-preimpregnato-d" class="mini-svg"><title id="var-preimpregnato-t">Pre-impregnato (pre-preg)</title><desc id="var-preimpregnato-d">Tessuti già impregnati con una quantità precisa di resina, coperti da film permeabile, membrana traspirante e film ermetico; si fa il vuoto e si cura in autoclave a 4,1 bar e 120 °C per 2 ore.</desc><defs>
+  <pattern id="var-preimpregnato-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-preimpregnato-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-preimpregnato-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-preimpregnato-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M20,50 Q110,120 200,50 V70 Q110,140 20,70 Z" fill="url(#var-preimpregnato-tratteggio)" class="contorno"/>
+    <path d="M24,44 Q110,110 196,44" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--fuso)"/>
+    <path d="M14,40 Q110,112 206,40" fill="none" stroke="var(--flusso)" stroke-width="2.5" stroke-dasharray="5 3"/>
+    <line x1="110" y1="4" x2="110" y2="30" class="flusso-linea" marker-end="url(#var-preimpregnato-punta)"/></svg></div><p>Il più costoso: tessuti già impregnati con la quantità esatta di resina, messi sotto vuoto e curati in autoclave a 4,1 bar e 120 °C per 2 ore. Usato soprattutto per il carbonio. <span class="pag">(p. 206, 208–209)</span></p></article>
+<article class="card"><h3>Stampaggio per trasferimento di resina</h3><p class="originale" lang="en">Resin transfer molding (RTM)</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-rtm-t var-rtm-d" class="mini-svg"><title id="var-rtm-t">Stampaggio per trasferimento di resina (RTM)</title><desc id="var-rtm-d">Stampi accoppiati, di solito metallici e preriscaldati: le fibre si dispongono nello stampo aperto, poi si chiude e si inietta la resina, o la si aspira col vuoto (infusione). Finitura su entrambi i lati.</desc><defs>
+  <pattern id="var-rtm-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-rtm-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-rtm-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-rtm-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="30" y="10" width="160" height="40" fill="url(#var-rtm-tratteggio)" class="contorno"/>
+    <rect x="30" y="64" width="160" height="40" fill="url(#var-rtm-tratteggio)" class="contorno"/>
+    <path d="M30,57 H190" fill="none" stroke-width="8" stroke-linejoin="round" style="stroke:var(--fuso)"/>
+    <line x1="10" y1="57" x2="30" y2="57" class="flusso-linea" marker-end="url(#var-rtm-punta)"/></svg></div><p>Stampi accoppiati metallici e preriscaldati: la resina si inietta a pressione o si aspira col vuoto (infusione). Finitura su entrambi i lati; adatto a volumi maggiori. <span class="pag">(p. 206, 209)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="dmc-smc.html">Stampaggio di DMC e SMC</a> – geometrie simili, a metà strada con l'iniezione <span class="pag">(p. 207)</span></li><li><a href="stampaggio-iniezione.html">Stampaggio a iniezione</a> – geometrie simili <span class="pag">(p. 207)</span></li><li><a href="termoformatura.html">Termoformatura</a> – geometrie simili <span class="pag">(p. 207)</span></li><li><a href="superformatura.html">Superformatura</a> – alternativa in metallo <span class="pag">(p. 207)</span></li><li><a href="stampaggio-lamiera.html">Stampaggio della lamiera</a> – alternativa in metallo <span class="pag">(p. 207)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 206–217.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/laminazione-compositi.js"></script>
+</body>
+</html>

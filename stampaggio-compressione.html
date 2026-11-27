@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stampaggio a compressione – Processi produttivi per il design</title>
+<meta name="description" content="Una dose di materiale viene messa in uno stampo caldo e schiacciata tra le due metà finché riempie la cavità e indurisce: è il processo tipico delle plastiche termoindurenti e della gomma.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 1 – Formatura › Plastica e gomma</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Stampaggio a compressione</h1>
+  <p class="originale" lang="en">Compression Molding</p>
+  <p class="categoria">Parte 1 – Formatura · Plastica e gomma</p>
+  <p class="sintesi">Una dose di materiale viene messa in uno stampo caldo e schiacciata tra le due metà finché riempie la cavità e indurisce: è il processo tipico delle plastiche termoindurenti e della gomma.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="2000,2600,2400,2400">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="stampaggio-compressione" data-alt="Modello 3D di una pressa con stampo in tre parti in basso (un blocco fisso e due carrelli laterali) e un punzone in alto. Una pastiglia color sabbia viene messa nella cavità; il punzone scende e il materiale, arancione, riempie la cavità a forma di coppa; poi indurisce e diventa verde. Infine il punzone sale, i carrelli si aprono e l'estrattore spinge in alto il pezzo.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Carico<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Compressione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Indurimento<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Apertura ed estrazione<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Carico</b>Una dose di polvere o una pastiglia, preriscaldata a circa 100 °C, viene messa nella cavità dello stampo inferiore. <span class="pag">(p. 48)</span></li>
+    <li><b>Fase 2 – Compressione</b>Il punzone scende in modo graduale e costante, così il materiale si distribuisce in tutta la cavità. A circa 115 °C la plastica diventa fluida. <span class="pag">(p. 48)</span></li>
+    <li><b>Fase 3 – Indurimento</b>A circa 150 °C il termoindurente indurisce (reticola): l'operazione dura circa 2 minuti. <span class="pag">(p. 48)</span></li>
+    <li><b>Fase 4 – Apertura ed estrazione</b>Le parti dello stampo si separano in sequenza; se serve, l'estrattore spinge fuori il pezzo. La bava lungo le linee di chiusura si toglie a mano o in vibratrice. <span class="pag">(p. 48–49)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una pressa con stampo in tre parti in basso (un blocco fisso e due carrelli laterali) e un punzone in alto. Una pastiglia color sabbia viene messa nella cavità; il punzone scende e il materiale, arancione, riempie la cavità a forma di coppa; poi indurisce e diventa verde. Infine il punzone sale, i carrelli si aprono e l'estrattore spinge in alto il pezzo.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 -80 820 470" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Stampaggio a compressione di un termoindurente in sezione</title>
+<desc id="sc-d">Sezione verticale della pressa: in basso il piano fisso con lo stampo inferiore e due carrelli laterali che formano le pareti esterne di una coppa; in alto il punzone mosso dal pistone idraulico. Le fasi mostrano il carico della pastiglia, la compressione, l'indurimento e l'estrazione.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- Pressa: piano fisso -->
+<rect x="200" y="300" width="420" height="22" class="macchina"/>
+<g class="etichetta"><text x="630" y="316" text-anchor="start">Piano fisso</text></g>
+
+<!-- Stampo inferiore fisso -->
+<rect x="300" y="270" width="220" height="30" fill="url(#sc-tratteggio)" class="contorno"/>
+<g class="etichetta"><text x="630" y="290" text-anchor="start">Stampo inferiore</text></g>
+
+<!-- Estrattore -->
+<g data-k="ty:0,0,0,-44" data-i="ty:0">
+  <rect x="404" y="271" width="12" height="40" class="scuro"/>
+</g>
+<g class="etichetta"><line x1="410" y1="312" x2="330" y2="340" class="richiamo"/><text x="330" y="345" text-anchor="start">Estrattore</text></g>
+
+<!-- Carrelli laterali -->
+<g data-k="tx:0,0,0,-60" data-i="tx:0"><rect x="230" y="150" width="70" height="150" fill="url(#sc-tratteggio)" class="contorno"/></g>
+<g data-k="tx:0,0,0,60" data-i="tx:0"><rect x="520" y="150" width="70" height="150" fill="url(#sc-tratteggio)" class="contorno"/></g>
+<g class="etichetta"><line x1="232" y1="220" x2="40" y2="215" class="richiamo"/><text x="40" y="220" text-anchor="start">Carrelli laterali</text></g>
+
+<!-- Carica: pastiglia preriscaldata a circa 100 °C -->
+<rect x="340" y="236" width="140" height="34" rx="6" class="m-grezzo contorno" data-k="ty:0,0,0,0;op:1,0,0,0" data-i="ty:-90;op:1"/>
+<g class="etichetta" data-k="op:1,0,0,0" data-i="op:1"><line x1="342" y1="252" x2="40" y2="257" class="richiamo"/><text x="40" y="262" text-anchor="start">Pastiglia di polvere</text></g>
+
+<!-- Materiale che riempie la cavità e polimerizza -->
+<clipPath id="sc-flusso" clipPathUnits="userSpaceOnUse"><rect x="290" y="160" width="240" height="112" data-k="sy:0,1,1,1" data-i="sy:0" data-o="0,272"/></clipPath>
+<g data-k="ty:0,0,0,-44" data-i="ty:0">
+  <g clip-path="url(#sc-flusso)"><path d="M300,170 H316 V254 H504 V170 H520 V270 H300 Z" class="m-fuso contorno" data-k="op:1,1,0,0" data-i="op:1"/></g>
+  <path d="M300,170 H316 V254 H504 V170 H520 V270 H300 Z" class="m-finito sezionato contorno" data-k="op:0,0,1,1" data-i="op:0"/>
+</g>
+
+<!-- Stampo superiore (punzone) e pistone -->
+<g data-k="ty:-120,0,0,-120" data-i="ty:-120">
+  <rect x="380" y="0" width="60" height="60" class="macchina"/>
+  <path d="M230,60 H590 V100 H504 V254 H316 V100 H230 Z" fill="url(#sc-tratteggio)" class="contorno"/>
+  <g data-k="op:0,1,1,0"><line x1="410" y1="-40" x2="410" y2="2" class="flusso-linea" marker-end="url(#sc-punta)"/></g>
+</g>
+<g class="etichetta"><text x="600" y="90" text-anchor="start">Punzone (stampo superiore)</text></g>
+<g class="etichetta"><text x="630" y="30" text-anchor="start">Pistone idraulico</text></g>
+
+<!-- Calore dai piani riscaldati -->
+<g data-k="op:0.3,1,1,0.3">
+  <path d="M260,336 q6,-3.75 0,-7.5 q-6,-3.75 0,-7.5 q6,-3.75 0,-7.5 q-6,-3.75 0,-7.5" class="flusso-linea" fill="none" marker-end="url(#sc-punta)"/><path d="M560,336 q6,-3.75 0,-7.5 q-6,-3.75 0,-7.5 q6,-3.75 0,-7.5 q-6,-3.75 0,-7.5" class="flusso-linea" fill="none" marker-end="url(#sc-punta)"/>
+  <g class="etichetta"><text x="40" y="380" text-anchor="start">piani riscaldati: ≈ 115 °C fusione, 150 °C indurimento</text></g>
+</g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Il principio è semplice: una dose di materiale va tra due stampi accoppiati e già caldi. Le pastiglie preriscaldate rendono la produzione più veloce e il pezzo migliore. <span class="pag">(p. 44, 48)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>La pressa lavora fra 40 e 400 tonnellate, di solito non oltre 150; più pressione dà migliore finitura e riproduzione dei dettagli. <span class="pag">(p. 48)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>Il materiale reticola per effetto di tempo, temperatura e pressione. Poiché viene compresso e non iniettato, il pezzo ha meno tensioni ed è meno soggetto a deformazioni. <span class="pag">(p. 46, 48)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Il pezzo viene estratto. Inserti metallici e componenti elettrici si possono includere nello stampaggio. <span class="pag">(p. 46, 49)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Termoindurenti: fenoliche, poliestere, urea, melammina; gomme, soprattutto siliconi. Cariche di fibra di vetro, talco, cotone o farina di legno. I termoplastici sono possibili ma sconsigliati. <span class="pag">(p. 46)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Serie medie e grandi. <span class="pag">(p. 44)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Moderato, molto più basso dell'iniezione, soprattutto per le lastre di gomma che usano stampi semplici azionati a mano. <span class="pag">(p. 44, 46)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Basso: 3–4 volte il costo del materiale. Manodopera piuttosto alta. <span class="pag">(p. 44, 46)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Plastica: circa 2 minuti per pezzo. Gomma: circa 10 minuti o più nella pressa calda. <span class="pag">(p. 44, 46)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Molto buona finitura e riproduzione dei dettagli; pezzi molto resistenti. Le fenoliche sono naturalmente marrone scuro: solo colori scuri, salvo verniciatura. <span class="pag">(p. 44, 46)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Pezzi poco tensionati e poco soggetti a deformazione. Tolleranze numeriche: <span class="nd">n.d.</span> <span class="pag">(p. 46)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Da 0,1 a 8 kg (pressa da 400 t); pareti da meno di 1 mm (0,3 mm nella gomma) a 50 mm e oltre. <span class="pag">(p. 46)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Evitare le sezioni massicce</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spessore-ok-t v-spessore-ok-d" class="mini-svg"><title id="v-spessore-ok-t">Corretto: Sezioni spesse svuotate</title><desc id="v-spessore-ok-d">Le parti massicce vengono svuotate o completate con inserti: meno materiale e niente bolle.</desc><defs>
+  <pattern id="v-spessore-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spessore-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spessore-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spessore-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M15,30 H145 V100 H15 Z M35,50 H70 V100 H35 Z M90,50 H125 V100 H90 Z" class="m-finito sezionato contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spessore-ko-t v-spessore-ko-d" class="mini-svg"><title id="v-spessore-ko-t">Da evitare: Sezione piena molto spessa</title><desc id="v-spessore-ko-d">Per la reazione esotermica le sezioni spesse tendono a formare bolle e altri difetti.</desc><defs>
+  <pattern id="v-spessore-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spessore-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spessore-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spessore-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M15,30 H145 V100 H15 Z" class="m-finito sezionato contorno"/><circle cx="50" cy="60" r="5" fill="#fff" stroke="var(--ko)" stroke-width="2"/><circle cx="95" cy="72" r="5" fill="#fff" stroke="var(--ko)" stroke-width="2"/><circle cx="70" cy="85" r="5" fill="#fff" stroke="var(--ko)" stroke-width="2"/></svg><figcaption>Da evitare</figcaption></figure></div><p>La reazione è esotermica: le pareti spesse tendono a formare bolle e difetti. Conviene ridurre lo spessore e svuotare le parti massicce o usare inserti; alcuni pezzi, come quelli soggetti a forti sollecitazioni dielettriche, richiedono però pareti spesse. <span class="pag">(p. 46)</span></p></article>
+<article class="card"><h3>Far uscire i gas</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sfiati-ok-t v-sfiati-ok-d" class="mini-svg"><title id="v-sfiati-ok-t">Corretto: Sfiati per i gas</title><desc id="v-sfiati-ok-d">Lo stampo ha sfiati e nervature studiate per far uscire i gas prodotti durante l'indurimento.</desc><defs>
+  <pattern id="v-sfiati-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sfiati-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sfiati-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sfiati-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,20 H150 V100 H10 Z M30,40 H130 V80 H30 Z" fill="url(#v-sfiati-ok-tratteggio)" fill-rule="evenodd" class="contorno"/><path d="M30,40 H130 V80 H30 Z" class="m-finito sezionato contorno"/><rect x="128" y="57" width="22" height="5" class="cavita"/><line x1="130" y1="60" x2="156" y2="60" class="flusso-linea tratteggiata" marker-end="url(#v-sfiati-ok-punta)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sfiati-ko-t v-sfiati-ko-d" class="mini-svg"><title id="v-sfiati-ko-t">Da evitare: Gas intrappolati</title><desc id="v-sfiati-ko-d">Senza sfiati i gas restano nella cavità e lasciano vuoti nel pezzo.</desc><defs>
+  <pattern id="v-sfiati-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sfiati-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sfiati-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sfiati-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,20 H150 V100 H10 Z M30,40 H130 V80 H30 Z" fill="url(#v-sfiati-ko-tratteggio)" fill-rule="evenodd" class="contorno"/><path d="M30,40 H130 V80 H30 Z" class="m-finito sezionato contorno"/><circle cx="118" cy="50" r="7" fill="#fff" stroke="var(--ko)" stroke-width="2"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Il termoindurente libera gas mentre si scalda e indurisce: lo stampo deve prevedere sfiati e nervature studiate. Anche questo limita le dimensioni del pezzo. <span class="pag">(p. 46)</span></p></article>
+<article class="card"><h3>Preferire le geometrie a lastra</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-altezza-ok-t v-altezza-ok-d" class="mini-svg"><title id="v-altezza-ok-t">Corretto: Geometria a lastra</title><desc id="v-altezza-ok-d">Con stampi multipli per lastre (come le tastiere in silicone) il materiale si distribuisce facilmente.</desc><defs>
+  <pattern id="v-altezza-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-altezza-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-altezza-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-altezza-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,70 H150 V84 H10 Z M30,56 H50 V70 H30 Z M70,56 H90 V70 H70 Z M110,56 H130 V70 H110 Z" class="m-finito sezionato contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-altezza-ko-t v-altezza-ko-d" class="mini-svg"><title id="v-altezza-ko-t">Da evitare: Cavità alta e stretta</title><desc id="v-altezza-ko-d">In una cavità alta è praticamente impossibile spingere il materiale fino in fondo.</desc><defs>
+  <pattern id="v-altezza-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-altezza-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-altezza-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-altezza-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,90 H150 V100 H10 Z M74,10 H86 V90 H74 Z" class="m-finito sezionato contorno"/><circle cx="80" cy="14" r="9" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Gli stampi multipli per lastre funzionano solo con geometrie basse: in una cavità alta sarebbe praticamente impossibile spingere il materiale. <span class="pag">(p. 46)</span></p></article>
+<article class="card"><h3>Sformo e sottosquadri: dipende dal materiale</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-gomma-ok-t v-gomma-ok-d" class="mini-svg"><title id="v-gomma-ok-t">Corretto: Gomma: sformo nullo e piccoli sottosquadri</title><desc id="v-gomma-ok-d">La gomma è flessibile: si stira sul nucleo, quindi si può eliminare lo sformo e fare piccoli rientri.</desc><defs>
+  <pattern id="v-gomma-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-gomma-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-gomma-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-gomma-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,30 H140 V100 H124 V60 L118,50 H42 L36,60 V100 H20 Z" class="m-finito sezionato contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-gomma-ko-t v-gomma-ko-d" class="mini-svg"><title id="v-gomma-ko-t">Da evitare: Termoindurente rigido con sottosquadro</title><desc id="v-gomma-ko-d">Un materiale rigido non si deforma: un rientro richiede carrelli laterali nello stampo.</desc><defs>
+  <pattern id="v-gomma-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-gomma-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-gomma-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-gomma-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,30 H140 V100 H124 V60 L118,50 H42 L36,60 V100 H20 Z" class="m-finito sezionato contorno"/><circle cx="38" cy="56" r="9" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Con la gomma si può eliminare lo sformo e fare piccoli sottosquadri, perché il pezzo si stira sul nucleo. Con i termoindurenti rigidi lo sformo si riduce solo con stampo ed estrattori ben studiati, e i rientri richiedono carrelli laterali. <span class="pag">(p. 46, 48)</span></p><p class="nota-ocr">Sformo minimo per la plastica: <span class="nd">n.d.</span> (OCR &quot;less than 0.50&quot;, unità illeggibile)</p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Lo schema principale mostra la compressione della plastica; qui sotto la variante per la gomma descritta nel capitolo.</p><div class="griglia-card"><article class="card"><h3>Compressione della gomma</h3><p class="originale" lang="en">Compression Molding Rubber</p><div class="variante-schema"><svg viewBox="0 0 220 128" role="img" aria-labelledby="var-gomma-t var-gomma-d" class="mini-svg"><title id="var-gomma-t">Compressione della gomma</title><desc id="var-gomma-d">La gomma condizionata viene messa nello stampo inferiore; le due metà si chiudono sotto pressione e calore e dopo circa 10 minuti la gomma è vulcanizzata. Le linee di strappo staccano la bava in modo pulito.</desc><defs>
+  <pattern id="var-gomma-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-gomma-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-gomma-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-gomma-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="20" y="10" width="180" height="34" fill="url(#var-gomma-tratteggio)" class="contorno"/><rect x="20" y="76" width="180" height="34" fill="url(#var-gomma-tratteggio)" class="contorno"/>
+    <path d="M20,44 H200 V76 H20 Z" class="m-finito contorno"/>
+    <rect x="50" y="30" width="26" height="14" class="m-finito contorno"/><rect x="95" y="30" width="26" height="14" class="m-finito contorno"/><rect x="140" y="30" width="26" height="14" class="m-finito contorno"/>
+    <line x1="46" y1="44" x2="46" y2="76" stroke="var(--ko)" stroke-width="2" stroke-dasharray="3 3"/><line x1="91" y1="44" x2="91" y2="76" stroke="var(--ko)" stroke-width="2" stroke-dasharray="3 3"/><line x1="136" y1="44" x2="136" y2="76" stroke="var(--ko)" stroke-width="2" stroke-dasharray="3 3"/><line x1="170" y1="44" x2="170" y2="76" stroke="var(--ko)" stroke-width="2" stroke-dasharray="3 3"/>
+    <g class="etichetta"><text x="110" y="122" text-anchor="middle">linee di strappo</text></g></svg></div><p>La sequenza è la stessa della plastica, ma più lenta. La gomma viene condizionata per eliminare la cristallinità, messa nello stampo inferiore e compressa con calore; dopo circa 10 minuti è vulcanizzata e i pezzi si staccano dalla cavità. Le linee di strappo fanno separare la bava in modo regolare e lasciano un bordo pulito. Si integrano anche cerniere elastiche e più colori. <span class="pag">(p. 45–47)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="dmc-smc.html">Stampaggio di DMC e SMC</a> – compressione di plastiche rinforzate con fibre lunghe <span class="pag">(p. 44–45)</span></li><li><a href="stampaggio-iniezione.html">Stampaggio a iniezione</a> – stampi accoppiati più costosi, usato soprattutto per i termoplastici <span class="pag">(p. 45)</span></li><li><a href="colata-sottovuoto.html">Colata sottovuoto</a> – per prototipi e serie più piccole in PUR <span class="pag">(p. 45)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 44–49.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/stampaggio-compressione.js"></script>
+</body>
+</html>

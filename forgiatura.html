@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forgiatura – Processi produttivi per il design</title>
+<meta name="description" content="Il metallo, di solito portato al calor rosso, viene martellato, pressato o laminato fra stampi finché ne prende la forma: i pezzi hanno una struttura dei grani orientata e una resistenza eccezionale.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 1 – Formatura › Metalli</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Forgiatura</h1>
+  <p class="originale" lang="en">Forging</p>
+  <p class="categoria">Parte 1 – Formatura · Metalli</p>
+  <p class="sintesi">Il metallo, di solito portato al calor rosso, viene martellato, pressato o laminato fra stampi finché ne prende la forma: i pezzi hanno una struttura dei grani orientata e una resistenza eccezionale.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="2000,2400,2600,2000">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="forgiatura" data-alt="Modello 3D di un maglio tagliato a metà. Una billetta cilindrica rosso-arancio viene schiacciata da colpi ripetuti fra stampi piatti, poi fra due stampi con cavità che le danno la forma di un tappo con una corona di bava sottile tutto intorno. Alla fine la bava viene tranciata e il pezzo, raffreddato, diventa verde.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Billetta calda<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Sbozzatura a stampo aperto<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Stampaggio a stampo chiuso<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Sbavatura<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Billetta calda</b>La barra viene tagliata in billette, scaldate in forno per circa 30 minuti fino a circa 1250 °C e prese con le tenaglie. <span class="pag">(p. 115–116)</span></li>
+    <li><b>Fase 2 – Sbozzatura a stampo aperto</b>Colpi ripetuti fra stampi aperti cambiano la forma ma non il volume; si stacca la scaglia di ossido, che contaminerebbe il pezzo. <span class="pag">(p. 116–117)</span></li>
+    <li><b>Fase 3 – Stampaggio a stampo chiuso</b>A ogni colpo il metallo caldo entra di più nelle cavità. La bava, più sottile, si raffredda prima e trattiene il metallo dentro lo stampo, che così riempie anche le estremità. <span class="pag">(p. 118)</span></li>
+    <li><b>Fase 4 – Sbavatura</b>La bava viene tranciata con un punzone. Nel caso studio tutta la forgiatura dura circa 30 secondi. <span class="pag">(p. 118)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di un maglio tagliato a metà. Una billetta cilindrica rosso-arancio viene schiacciata da colpi ripetuti fra stampi piatti, poi fra due stampi con cavità che le danno la forma di un tappo con una corona di bava sottile tutto intorno. Alla fine la bava viene tranciata e il pezzo, raffreddato, diventa verde.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 -100 820 440" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Stampaggio a caldo di un tappo in sezione</title>
+<desc id="sc-d">Sezione del maglio: stampo inferiore e stampo superiore, prima piatti e poi con la cavità a forma di tappo. Le fasi mostrano la billetta calda, la sbozzatura a stampo aperto, lo stampaggio a stampo chiuso con formazione della bava e la tranciatura della bava.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- stampo inferiore: piano (fasi 1–2) e con cavità (fasi 3–4) -->
+<rect x="250" y="252" width="320" height="70" fill="url(#sc-tratteggio)" class="contorno" data-k="op:1,1,0,0" data-i="op:1"/>
+<path d="M250,242 H336 V252 H484 V242 H570 V322 H250 Z" fill="url(#sc-tratteggio)" class="contorno" data-k="op:0,0,1,1" data-i="op:0"/>
+<g class="etichetta"><text x="590" y="300" text-anchor="start">Stampo inferiore (incudine)</text></g>
+
+<!-- pezzo -->
+<path d="M380,150 H440 V250 H380 Z" class="m-fuso contorno" data-k="op:1,0,0,0" data-i="op:1"/>
+<path d="M350,200 H470 V250 H350 Z" class="m-fuso contorno" data-k="op:0,1,0,0" data-i="op:0"/>
+<path d="M300,236 H340 V214 Q340,206 348,206 H472 Q480,206 480,214 V236 H520 V242 H480 V252 H340 V242 H300 Z" class="m-fuso contorno" data-k="op:0,0,1,0" data-i="op:0"/>
+<g data-k="op:0,0,0,1" data-i="op:0"><path d="M340,214 Q340,206 348,206 H472 Q480,206 480,214 V252 H340 Z" class="m-finito sezionato contorno"/>
+  <path d="M300,236 H336 V242 H300 Z M484,236 H520 V242 H484 Z" class="m-finito contorno" opacity=".35"/>
+  <g class="etichetta"><text x="590" y="230" text-anchor="start">bava tranciata</text></g></g>
+<g class="etichetta" data-k="op:1,0,0,0" data-i="op:1"><line x1="378" y1="170" x2="30" y2="145" class="richiamo"/><text x="30" y="150" text-anchor="start">Billetta &quot;rosso ciliegia&quot; (≈ 1250 °C)</text></g>
+<g class="etichetta" data-k="op:0,0,1,0"><line x1="300" y1="238" x2="30" y2="231" class="richiamo"/><text x="30" y="236" text-anchor="start">Bava</text></g>
+<g data-k="op:1,0,0,0"><path d="M360,120 q6,3.25 0,6.5 q-6,3.25 0,6.5 q6,3.25 0,6.5 q-6,3.25 0,6.5" class="flusso-linea" fill="none" marker-end="url(#sc-punta)"/><path d="M460,120 q6,3.25 0,6.5 q-6,3.25 0,6.5 q6,3.25 0,6.5 q-6,3.25 0,6.5" class="flusso-linea" fill="none" marker-end="url(#sc-punta)"/></g>
+
+<!-- maglio con stampo superiore: piatto (fase 2), con cavità (fase 3) -->
+<g data-k="ty:-110,0,0,-110;vy:0,14,14,0" data-i="ty:-110">
+  <rect x="380" y="20" width="60" height="60" class="macchina"/>
+  <rect x="250" y="80" width="320" height="70" fill="url(#sc-tratteggio)" class="contorno" data-k="op:1,1,0,0;ty:0,50,0,0" data-i="op:1"/>
+  <path d="M250,80 H570 V236 H484 V214 Q484,202 472,202 H348 Q336,202 336,214 V236 H250 Z" fill="url(#sc-tratteggio)" class="contorno" data-k="op:0,0,1,1" data-i="op:0"/>
+</g>
+<g class="etichetta"><text x="590" y="60" text-anchor="start">Maglio con stampo superiore</text></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Le tecniche principali sono stampaggio a caldo (con maglio), forgiatura alla pressa e laminazione-forgiatura. L'acciaio si forgia sopra i 1250 °C, l'alluminio a circa 500 °C. <span class="pag">(p. 114–115)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>Lo stampo aperto, piatto o a V, serve a stirare, ricalcare o preparare il pezzo; l'operatore lo riposiziona a ogni colpo. <span class="pag">(p. 115)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>Lo stampo chiuso spinge il metallo in una cavità e produce forme complesse; si può automatizzare. Gli stampi sono in acciai da utensili e un lubrificante li raffredda. <span class="pag">(p. 114–115)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Deformandosi, i grani del metallo si allineano nella direzione del flusso: il pezzo ha un ottimo rapporto resistenza/peso e meno concentrazioni di tensione in angoli e raccordi. <span class="pag">(p. 114–115)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Quasi tutti i ferrosi (acciai al carbonio, legati, inossidabili) e non ferrosi come titanio, rame, alluminio e ottone. <span class="pag">(p. 116)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Ogni tipo di produzione, dal pezzo unico alla grande serie. <span class="pag">(p. 114)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Da moderato ad alto; gli stampi chiusi durano fra 50 e 5000 cicli. <span class="pag">(p. 114, 116)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Moderato. <span class="pag">(p. 114)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Rapido: di solito meno di un minuto (30 secondi nel caso studio). <span class="pag">(p. 114, 118)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Struttura dei grani eccellente, senza vuoti né porosità. <span class="pag">(p. 114–115)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Tolleranze da 1 mm nei pezzi piccoli a 5 mm in quelli grandi; spesso si unisce la lavorazione meccanica. <span class="pag">(p. 115)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Stampaggio a caldo: circa da 0,25 a 60 kg; a stampo aperto pezzi lunghi fino a 3 m; anelli laminati fino a 8,5 m di diametro e oltre 100 tonnellate; a freddo fino a 10 kg. Pareti da 5 a 250 mm. <span class="pag">(p. 114–116)</span><span class="nota-ocr">Peso massimo: OCR &quot;5o kg&quot;, confermato a 60 kg dalla conversione (132 lb).</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Niente sottosquadri</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sottosquadri-ok-t v-sottosquadri-ok-d" class="mini-svg"><title id="v-sottosquadri-ok-t">Corretto: Nessun sottosquadro nello stampo</title><desc id="v-sottosquadri-ok-d">I sottosquadri non si forgiano: si ottengono con operazioni di forgiatura successive.</desc><defs>
+  <pattern id="v-sottosquadri-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sottosquadri-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sottosquadri-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sottosquadri-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M30,100 V60 L50,30 H110 L130,60 V100 Z" class="m-finito contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sottosquadri-ko-t v-sottosquadri-ko-d" class="mini-svg"><title id="v-sottosquadri-ko-t">Da evitare: Sottosquadro nello stampo</title><desc id="v-sottosquadri-ko-d">Uno stampo chiuso non può liberare un rientro.</desc><defs>
+  <pattern id="v-sottosquadri-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sottosquadri-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sottosquadri-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sottosquadri-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M30,100 V60 L50,30 H110 L130,60 V100 H110 V80 H50 V100 Z M50,80 L40,90" class="m-finito contorno"/><circle cx="45" cy="86" r="12" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>I sottosquadri non si forgiano; rientri e giunti si ottengono con operazioni di forgiatura successive, come la ricalcatura di un fermo su un perno. <span class="pag">(p. 116)</span></p></article>
+<article class="card"><h3>Raggi ampi</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-raggi-ok-t v-raggi-ok-d" class="mini-svg"><title id="v-raggi-ok-t">Corretto: Raggi ampi, più grandi nelle parti profonde</title><desc id="v-raggi-ok-d">I raggi favoriscono il flusso del metallo e riducono l'usura; il raggio minimo cresce con la profondità della sporgenza.</desc><defs>
+  <pattern id="v-raggi-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-raggi-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-raggi-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-raggi-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,100 V70 Q20,60 30,60 H60 Q66,60 66,52 V24 Q66,16 74,16 H86 Q94,16 94,24 V52 Q94,60 100,60 H130 Q140,60 140,70 V100 Z" class="m-finito contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-raggi-ko-t v-raggi-ko-d" class="mini-svg"><title id="v-raggi-ko-t">Da evitare: Spigoli vivi</title><desc id="v-raggi-ko-d">Gli spigoli vivi ostacolano il flusso e consumano lo stampo.</desc><defs>
+  <pattern id="v-raggi-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-raggi-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-raggi-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-raggi-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,100 V60 H66 V16 H94 V60 H140 V100 Z" class="m-finito contorno"/><circle cx="66" cy="60" r="10" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Come nella fusione, contano linea di divisione, sformi, nervature, raggi e raccordi. I raggi favoriscono il flusso del metallo e riducono l'usura dello stampo; il raggio minimo cresce con la profondità della sporgenza. <span class="pag">(p. 116)</span></p></article>
+<article class="card"><h3>Sporgenze fino a 6 volte lo spessore</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sporgenze-ok-t v-sporgenze-ok-d" class="mini-svg"><title id="v-sporgenze-ok-t">Corretto: Sporgenze fino a 6 volte lo spessore</title><desc id="v-sporgenze-ok-d">Martellando o pressando si ottengono sporgenze profonde, fino a 6 volte lo spessore del materiale.</desc><defs>
+  <pattern id="v-sporgenze-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sporgenze-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sporgenze-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sporgenze-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,100 V84 H70 V30 H90 V84 H140 V100 Z" class="m-finito contorno"/><g class="etichetta"><text x="100" y="50" text-anchor="start">h ≤ 6 s</text></g></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sporgenze-ko-t v-sporgenze-ko-d" class="mini-svg"><title id="v-sporgenze-ko-t">Da evitare: Sporgenza troppo alta e sottile</title><desc id="v-sporgenze-ko-d">Oltre questo rapporto il metallo non riempie la cavità.</desc><defs>
+  <pattern id="v-sporgenze-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sporgenze-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sporgenze-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sporgenze-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,100 V90 H76 V6 H84 V90 H140 V100 Z" class="m-finito contorno"/><circle cx="80" cy="10" r="10" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Si ottengono sporgenze sorprendentemente profonde, fino a 6 volte lo spessore del materiale. Nessun limite ai cambi di spessore. <span class="pag">(p. 116)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Lo stampaggio a caldo con maglio è lo schema principale; qui sotto le altre tecniche descritte nel capitolo.</p><div class="griglia-card"><article class="card"><h3>Stampaggio a stampo aperto</h3><p class="originale" lang="en">Open die forging</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-aperto-t var-aperto-d" class="mini-svg"><title id="var-aperto-t">Stampaggio a stampo aperto</title><desc id="var-aperto-d">Con stampi piatti o a V l'operatore riposiziona il pezzo a ogni colpo: per allungare (stiratura), accorciare e ingrossare (ricalcatura) o preparare il pezzo; alberi e barre fino a 3 m.</desc><defs>
+  <pattern id="var-aperto-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-aperto-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-aperto-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-aperto-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="40" y="8" width="140" height="26" fill="url(#var-aperto-tratteggio)" class="contorno"/>
+    <rect x="40" y="94" width="140" height="26" fill="url(#var-aperto-tratteggio)" class="contorno"/>
+    <rect x="20" y="40" width="180" height="48" rx="8" class="m-fuso contorno"/></svg></div><p>Con stampi piatti o a V si allunga, si ricalca o si prepara il pezzo; richiede grande abilità e non si automatizza. Alberi a gomiti e assali delle auto si forgiano così. <span class="pag">(p. 114–115)</span></p></article>
+<article class="card"><h3>Forgiatura alla pressa</h3><p class="originale" lang="en">Press forging</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-pressa-t var-pressa-d" class="mini-svg"><title id="var-pressa-t">Forgiatura alla pressa</title><desc id="var-pressa-d">Come lo stampaggio a caldo, ma il metallo è spinto nella cavità da una pressione idraulica continua; si lavora anche a freddo per pezzi fino a 10 kg quasi finiti.</desc><defs>
+  <pattern id="var-pressa-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-pressa-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-pressa-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-pressa-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M30,10 H190 V40 H140 V56 H80 V40 H30 Z" fill="url(#var-pressa-tratteggio)" class="contorno"/>
+    <path d="M30,110 H190 V80 H140 V64 H80 V80 H30 Z" fill="url(#var-pressa-tratteggio)" class="contorno"/>
+    <rect x="80" y="56" width="60" height="8" class="m-fuso"/>
+    <line x1="110" y1="-6" x2="110" y2="8" class="flusso-linea" marker-end="url(#var-pressa-punta)"/></svg></div><p>Il metallo viene spinto nello stampo da pistoni idraulici con un'azione di schiacciamento continua. Si lavora a caldo o a freddo: a freddo, per pezzi fino a 10 kg, si ottengono forme quasi finite senza altre lavorazioni. <span class="pag">(p. 114–115)</span></p></article>
+<article class="card"><h3>Laminazione-forgiatura</h3><p class="originale" lang="en">Roll forging</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-rulli-t var-rulli-d" class="mini-svg"><title id="var-rulli-t">Laminazione-forgiatura</title><desc id="var-rulli-d">Barre o piatti passano fra rulli sagomati che riducono la sezione per gradi: profili continui e anelli senza saldatura, fino a 8,5 m di diametro.</desc><defs>
+  <pattern id="var-rulli-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-rulli-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-rulli-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-rulli-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <circle cx="110" cy="30" r="24" fill="url(#var-rulli-tratteggio)" class="contorno"/><circle cx="110" cy="96" r="24" fill="url(#var-rulli-tratteggio)" class="contorno"/>
+    <path d="M10,48 H86 L110,56 H210 V70 H110 L86,78 H10 Z" class="m-fuso contorno"/></svg></div><p>Il metallo caldo passa fra rulli sagomati che ne riducono la sezione per gradi: profili continui e anelli senza saldature, ricavati da un disco forato. <span class="pag">(p. 114, 116)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="lavorazione-cnc.html">Lavorazione CNC</a> – alternativa nelle piccole serie, con grani orientati a caso <span class="pag">(p. 114, 116)</span></li><li><a href="pressofusione.html">Pressofusione</a> – concorrente nelle grandi serie <span class="pag">(p. 114)</span></li><li><a href="microfusione.html">Microfusione a cera persa</a> – concorrente nelle grandi serie <span class="pag">(p. 114)</span></li><li><a href="curvatura-tubi.html">Curvatura di tubi e profilati</a> – la curvatura a rulli dà anelli simili ma saldati <span class="pag">(p. 114)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 114–119.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/forgiatura.js"></script>
+</body>
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Curvatura a vapore – Processi produttivi per il design</title>
+<meta name="description" content="Il legno massiccio, ammorbidito dal vapore, viene piegato su una sagoma e lasciato asciugare: ottiene curve strette, anche su più assi, con le fibre che corrono continue lungo tutto il pezzo.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 1 – Formatura › Legno</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Curvatura a vapore</h1>
+  <p class="originale" lang="en">Steam Bending</p>
+  <p class="categoria">Parte 1 – Formatura · Legno</p>
+  <p class="sintesi">Il legno massiccio, ammorbidito dal vapore, viene piegato su una sagoma e lasciato asciugare: ottiene curve strette, anche su più assi, con le fibre che corrono continue lungo tutto il pezzo.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="2400,2200,2600,2400,2000">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="curvatura-vapore" data-alt="Modello 3D di una curvatura manuale. Un listello di legno chiaro si ammorbidisce in un tubo pieno di vapore, poi viene posato su una sagoma semicircolare con un nastro di acciaio sul lato esterno. Le due estremità si piegano attorno alla sagoma fino a formare una U rovesciata; una camera di essiccazione avvolge l'insieme e il pezzo diventa verde. Alla fine il pezzo si solleva dalla sagoma e conserva la curva.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Ammollo e vapore<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Carico sulla sagoma<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Curvatura<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Essiccazione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="5">5. Sformatura<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Ammollo e vapore</b>Il pezzo, già profilato, resta in acqua a 60 °C per 24 ore, poi in vapore a 104 °C e 0,6 bar per 1–3 ore: la lignina si ammorbidisce. <span class="pag">(p. 199–201)</span></li>
+    <li><b>Fase 2 – Carico sulla sagoma</b>Il pezzo si blocca sulla sagoma, centrato sul segno a matita, con il nastro di tensione sul lato esterno. <span class="pag">(p. 199, 201)</span></li>
+    <li><b>Fase 3 – Curvatura</b>Due operatori piegano il pezzo insieme e lo fissano alla sagoma metallica con i morsetti: la curva si forma per compressione. <span class="pag">(p. 199, 201)</span></li>
+    <li><b>Fase 4 – Essiccazione</b>Il pezzo nella sua sagoma entra in camera a 80 °C per un massimo di 2 giorni, fino a circa l'8% di umidità. <span class="pag">(p. 201)</span></li>
+    <li><b>Fase 5 – Sformatura</b>Il pezzo si toglie dalla sagoma, che si riusa, e conserva la sua curva. <span class="pag">(p. 201)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una curvatura manuale. Un listello di legno chiaro si ammorbidisce in un tubo pieno di vapore, poi viene posato su una sagoma semicircolare con un nastro di acciaio sul lato esterno. Le due estremità si piegano attorno alla sagoma fino a formare una U rovesciata; una camera di essiccazione avvolge l'insieme e il pezzo diventa verde. Alla fine il pezzo si solleva dalla sagoma e conserva la curva.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 0 820 360" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Curvatura manuale su sagoma fissa, vista di lato</title>
+<desc id="sc-d">Un listello di massello sopra una sagoma semicircolare. Le fasi mostrano il vapore che lo ammorbidisce, il nastro di tensione con i fermi e il morsetto, la piegatura delle estremità, la camera di essiccazione e il pezzo che, tolto dalla sagoma, resta curvo.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- sagoma fissa -->
+<path d="M290,230 A120,120 0 0 1 530,230 V300 H290 Z" fill="url(#sc-tratteggio)" class="contorno"/>
+<rect x="250" y="300" width="320" height="14" class="macchina"/>
+<g class="etichetta"><text x="600" y="300" text-anchor="start">Sagoma fissa (dima)</text></g>
+
+<!-- 1: ammollo e vapore -->
+<g data-k="op:1,0,0,0,0" data-i="op:1">
+  <rect x="160" y="70" width="500" height="66" rx="10" fill="none" stroke="var(--flusso)" stroke-width="3"/>
+  <path d="M220,128 q8,-8 0,-16 q-8,-8 0,-16" fill="none" stroke="var(--flusso)" stroke-width="2.5"/><path d="M320,128 q8,-8 0,-16 q-8,-8 0,-16" fill="none" stroke="var(--flusso)" stroke-width="2.5"/><path d="M420,128 q8,-8 0,-16 q-8,-8 0,-16" fill="none" stroke="var(--flusso)" stroke-width="2.5"/><path d="M520,128 q8,-8 0,-16 q-8,-8 0,-16" fill="none" stroke="var(--flusso)" stroke-width="2.5"/><path d="M600,128 q8,-8 0,-16 q-8,-8 0,-16" fill="none" stroke="var(--flusso)" stroke-width="2.5"/>
+  <g class="etichetta"><text x="170" y="56" text-anchor="start">Vapore a 104 °C e 0,6 bar, 1–3 ore</text></g>
+</g>
+
+<!-- pezzo di massello -->
+<path d="M178,103 H642" fill="none" stroke-width="14" style="stroke:var(--grezzo)" data-k="op:0,0,0,0,0" data-i="op:1"/>
+<path d="M178,103 H642" fill="none" stroke-width="14" style="stroke:var(--fuso)" data-k="op:1,1,0,0,0" data-i="op:0"/>
+<g data-k="ty:0,0,0,0,-50" data-i="ty:0">
+  <path d="M283,260 V230 A127,127 0 0 1 537,230 V260" fill="none" stroke-width="14" style="stroke:var(--fuso)" data-k="op:0,0,1,0,0" data-i="op:0"/>
+  <path d="M283,260 V230 A127,127 0 0 1 537,230 V260" fill="none" stroke-width="14" style="stroke:var(--finito)" data-k="op:0,0,0,1,1" data-i="op:0"/>
+</g>
+<g class="etichetta" data-k="op:1,1,0,0,0" data-i="op:1"><line x1="200" y1="108" x2="40" y2="165" class="richiamo"/><text x="40" y="170" text-anchor="start">Pezzo di massello già profilato</text></g>
+
+<!-- nastro di tensione con fermi alle estremità -->
+<g data-k="op:0,1,0,0,0" data-i="op:0">
+  <path d="M172,92 H648" fill="none" stroke-width="4" style="stroke:var(--testo)"/>
+  <rect x="164" y="88" width="10" height="24" class="scuro"/><rect x="646" y="88" width="10" height="24" class="scuro"/>
+</g>
+<g data-k="op:0,0,1,1,0" data-i="op:0">
+  <path d="M272,268 V230 A138,138 0 0 1 548,230 V268" fill="none" stroke-width="4" style="stroke:var(--testo)"/>
+  <rect x="268" y="264" width="24" height="10" class="scuro"/><rect x="528" y="264" width="24" height="10" class="scuro"/>
+</g>
+<g data-k="op:0,1,1,0,0" data-i="op:0"><g class="etichetta"><text x="470" y="56" text-anchor="start">Nastro di tensione: il lato esterno non si allunga</text></g></g>
+<!-- morsetto centrale -->
+<g data-k="op:0,1,1,1,0" data-i="op:0"><rect x="396" y="66" width="28" height="22" class="scuro"/></g>
+
+<!-- 3: curvatura -->
+<g data-k="op:0,0,1,0,0">
+  <line x1="200" y1="150" x2="250" y2="230" class="flusso-linea" marker-end="url(#sc-punta)"/><line x1="620" y1="150" x2="570" y2="230" class="flusso-linea" marker-end="url(#sc-punta)"/>
+  <g class="etichetta"><text x="40" y="340" text-anchor="start">due operatori piegano il pezzo sulla sagoma</text></g>
+</g>
+<!-- 4: essiccazione -->
+<g data-k="op:0,0,0,1,0">
+  <rect x="230" y="40" width="360" height="290" rx="8" fill="none" stroke="var(--fuso)" stroke-width="3" stroke-dasharray="8 6"/>
+  <g class="etichetta"><text x="240" y="26" text-anchor="start">Camera di essiccazione: 80 °C fino a 2 giorni</text></g>
+</g>
+<g data-k="op:0,0,0,0,1"><g class="etichetta"><text x="480" y="160" text-anchor="start">tolto dalla sagoma, il pezzo mantiene la curva</text></g></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Il legno è un composito naturale di lignina e cellulosa. Per piegarlo bisogna ammorbidire la lignina, che lega le catene di cellulosa: lo si fa con un trattamento termo-meccanico a vapore. <span class="pag">(p. 199)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>Tutte le tecniche usano un nastro di tensione sul lato esterno del pezzo, che limita l'allungamento di quel bordo. <span class="pag">(p. 199)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>La curva si forma quindi per compressione: il legno ammorbidito si comprime, ma si strappa se viene allungato oltre l'1% della lunghezza. Il nastro aiuta anche a controllare la torsione. <span class="pag">(p. 199, 201)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Il pezzo resta bloccato e la lignina torna rigida in una camera di essiccazione; l'intero processo può durare diversi giorni. <span class="pag">(p. 199)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="5" aria-label="Mostra la fase 5 nello schema">Fase 5</button>Le fibre corrono continue lungo il pezzo: la curva è più resistente e ha meno ritorno elastico di un profilo segato. <span class="pag">(p. 198)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Latifoglie più che conifere: faggio e frassino per l'arredo, quercia per l'edilizia, olmo, frassino e salice per le barche, acero per gli strumenti; anche betulla, hickory, larice, iroko e pioppo. <span class="pag">(p. 199–200)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Da pezzo unico a grandi serie. <span class="pag">(p. 198)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Basso. <span class="pag">(p. 198, 200)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Da moderato ad alto; manodopera specializzata. <span class="pag">(p. 198, 200)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Lento, fino a 3 giorni: ammollo 24 ore, vapore 1–3 ore, essiccazione 24–48 ore. <span class="pag">(p. 198, 200)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Buona; alta resistenza grazie all'allineamento delle fibre. <span class="pag">(p. 198)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Non adatta a pezzi di precisione: anche con la stessa sagoma due pezzi non vengono mai uguali. Tolleranze numeriche: <span class="nd">n.d.</span> <span class="pag">(p. 198)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Il raggio minimo dipende da dimensioni e specie del legno; valori numerici: <span class="nd">n.d.</span> <span class="pag">(p. 199)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Profilare prima di curvare</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-profilatura-ok-t v-profilatura-ok-d" class="mini-svg"><title id="v-profilatura-ok-t">Corretto: Profilare prima di curvare</title><desc id="v-profilatura-ok-d">Rastremature e sagomature si fanno sul pezzo diritto: è molto più semplice ed economico.</desc><defs>
+  <pattern id="v-profilatura-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-profilatura-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-profilatura-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-profilatura-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M15,50 L145,44 L145,64 L15,58 Z" class="m-grezzo contorno"/><path d="M30,108 Q80,70 130,108" fill="none" stroke-width="8" stroke-linecap="round" style="stroke:var(--finito)"/><line x1="80" y1="70" x2="80" y2="84" class="flusso-linea" marker-end="url(#v-profilatura-ok-punta)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-profilatura-ko-t v-profilatura-ko-d" class="mini-svg"><title id="v-profilatura-ko-t">Da evitare: Sagomare il pezzo già curvo</title><desc id="v-profilatura-ko-d">Lavorare un pezzo curvato è difficile e costoso; dopo si fanno solo piccoli ritocchi e i profili dei giunti.</desc><defs>
+  <pattern id="v-profilatura-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-profilatura-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-profilatura-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-profilatura-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,100 Q80,10 140,100" fill="none" stroke-width="14" stroke-linecap="round" style="stroke:var(--grezzo)"/><circle cx="80" cy="56" r="14" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Ogni sagomatura del listello va fatta prima della curvatura; dopo si eseguono solo semplici modifiche e i profili dei giunti. <span class="pag">(p. 199)</span></p></article>
+<article class="card"><h3>Sezioni semplici, rastremate nelle curve strette</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sezione-ok-t v-sezione-ok-d" class="mini-svg"><title id="v-sezione-ok-t">Corretto: Sezione quadrata o tonda</title><desc id="v-sezione-ok-d">Sono le sezioni più facili da curvare; una rastrematura che assottiglia il pezzo nella curva stretta aiuta.</desc><defs>
+  <pattern id="v-sezione-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sezione-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sezione-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sezione-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="30" y="40" width="36" height="36" class="m-finito contorno"/><circle cx="114" cy="58" r="20" class="m-finito contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sezione-ko-t v-sezione-ko-d" class="mini-svg"><title id="v-sezione-ko-t">Da evitare: Profilo complesso o ondulato</title><desc id="v-sezione-ko-d">Forme complesse e ondulazioni nella sezione diventano punti deboli.</desc><defs>
+  <pattern id="v-sezione-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sezione-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sezione-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sezione-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M30,40 H70 L60,56 L74,76 H30 Z" class="m-finito contorno"/><path d="M96,58 q8,-20 16,0 t16,0 t16,0" fill="none" stroke="var(--finito)" stroke-width="8"/><circle cx="66" cy="60" r="14" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Le sezioni quadrate e tonde sono le più facili da curvare; ondulazioni e profili complessi sono punti deboli. Sezioni sottili aiutano nelle curve strette, quelle spesse servono ai giunti. <span class="pag">(p. 199)</span></p></article>
+<article class="card"><h3>Ancorare le parti curvate</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-ancoraggio-ok-t v-ancoraggio-ok-d" class="mini-svg"><title id="v-ancoraggio-ok-t">Corretto: Estremità ancorate</title><desc id="v-ancoraggio-ok-d">Le parti curvate vanno fissate all'assieme, altrimenti col tempo si raddrizzano.</desc><defs>
+  <pattern id="v-ancoraggio-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-ancoraggio-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-ancoraggio-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-ancoraggio-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M30,100 V50 Q30,20 60,20 Q90,20 90,50 V100" fill="none" stroke-width="10" stroke-linecap="round" style="stroke:var(--finito)"/><rect x="20" y="100" width="120" height="10" class="m-stampo contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-ancoraggio-ko-t v-ancoraggio-ko-d" class="mini-svg"><title id="v-ancoraggio-ko-t">Da evitare: Curva stretta con estremità libera</title><desc id="v-ancoraggio-ko-d">Come il manico di un ombrello: se l'estremità non è fissata la curva si apre lentamente.</desc><defs>
+  <pattern id="v-ancoraggio-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-ancoraggio-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-ancoraggio-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-ancoraggio-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M110,10 V70 Q110,100 80,100 Q56,100 52,80" fill="none" stroke-width="10" stroke-linecap="round" style="stroke:var(--finito)"/><path d="M52,80 L44,60" fill="none" stroke="var(--ko)" stroke-width="2" stroke-dasharray="4 3"/><circle cx="52" cy="80" r="11" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Le parti curvate tendono a raddrizzarsi col tempo se non sono fissate: l'assieme deve anche tollerare una certa variabilità fra pezzi. <span class="pag">(p. 198)</span></p></article>
+<article class="card"><h3>Comprimere, non allungare</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-trazione-ok-t v-trazione-ok-d" class="mini-svg"><title id="v-trazione-ok-t">Corretto: Curvatura per compressione</title><desc id="v-trazione-ok-d">Il nastro sul lato esterno impedisce l'allungamento: il legno ammorbidito si comprime all'interno della curva.</desc><defs>
+  <pattern id="v-trazione-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-trazione-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-trazione-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-trazione-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M30,100 V60 A50,50 0 0 1 130,60 V100" fill="none" stroke-width="12" stroke-linecap="round" style="stroke:var(--finito)"/><path d="M18,100 V60 A62,62 0 0 1 142,60 V100" fill="none" stroke="var(--testo)" stroke-width="3"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-trazione-ko-t v-trazione-ko-d" class="mini-svg"><title id="v-trazione-ko-t">Da evitare: Curvatura senza nastro</title><desc id="v-trazione-ko-d">Il legno si comprime ma si strappa subito se viene allungato oltre l'1% della lunghezza.</desc><defs>
+  <pattern id="v-trazione-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-trazione-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-trazione-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-trazione-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M30,100 V60 A50,50 0 0 1 130,60 V100" fill="none" stroke-width="12" stroke-linecap="round" style="stroke:var(--finito)"/><path d="M66,16 l6,10 l-8,6" fill="none" stroke="var(--ko)" stroke-width="2.5"/><circle cx="68" cy="22" r="13" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Il legno ammorbidito si comprime ma si strappa se allungato oltre l'1%: il nastro di tensione sul lato esterno è indispensabile. <span class="pag">(p. 199, 201)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Le tre tecniche principali descritte nel capitolo; lo schema principale mostra la curvatura manuale.</p><div class="griglia-card"><article class="card"><h3>Curvatura manuale</h3><p class="originale" lang="en">Manual bending</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-manuale-t var-manuale-d" class="mini-svg"><title id="var-manuale-t">Curvatura manuale</title><desc id="var-manuale-d">Per curve su più assi: il pezzo, bloccato nel nastro di tensione, viene piegato a mano sulla sagoma e fissato con morsetti.</desc><defs>
+  <pattern id="var-manuale-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-manuale-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-manuale-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-manuale-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M60,100 V60 A50,50 0 0 1 160,60 V100 Z" fill="url(#var-manuale-tratteggio)" class="contorno"/>
+    <path d="M52,104 V60 A58,58 0 0 1 168,60 V104" fill="none" stroke-width="9" stroke-linecap="round" style="stroke:var(--fuso)"/>
+    <path d="M44,104 V60 A66,66 0 0 1 176,60 V104" fill="none" stroke="var(--testo)" stroke-width="2.5"/></svg></div><p>Si usa per curve su più assi e può avere molte forme; nel caso studio due operatori piegano gambe e schienale della sedia. <span class="pag">(p. 199, 201)</span></p></article>
+<article class="card"><h3>Curvatura circolare</h3><p class="originale" lang="en">Circle bending</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-circolare-t var-circolare-d" class="mini-svg"><title id="var-circolare-t">Curvatura circolare</title><desc id="var-circolare-d">Assistita a macchina, su un solo asse: forma anelli chiusi come telai di sedute e braccioli; il pezzo resta sotto tensione per non allungare le fibre esterne.</desc><defs>
+  <pattern id="var-circolare-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-circolare-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-circolare-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-circolare-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <circle cx="110" cy="62" r="40" fill="url(#var-circolare-tratteggio)" class="contorno"/>
+    <path d="M110,14 A48,48 0 1 1 70,34" fill="none" stroke="var(--fuso)" stroke-width="9"/>
+    <path d="M126,62 A16,16 0 1 1 110,46" class="flusso-linea" fill="none" marker-end="url(#var-circolare-punta)"/></svg></div><p>Assistita a macchina, su un solo asse, per anelli chiusi come telai di sedute e braccioli; il pezzo resta in tensione. <span class="pag">(p. 199, 201)</span></p></article>
+<article class="card"><h3>Curvatura aperta</h3><p class="originale" lang="en">Open bending</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-aperta-t var-aperta-d" class="mini-svg"><title id="var-aperta-t">Curvatura aperta</title><desc id="var-aperta-d">Assistita a macchina, su un solo asse: per profili con estremità aperte, come uno schienale; una sagoma mobile ruota e preme il pezzo su quella fissa.</desc><defs>
+  <pattern id="var-aperta-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-aperta-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-aperta-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-aperta-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M30,40 Q110,100 190,40 V30 Q110,86 30,30 Z" fill="url(#var-aperta-tratteggio)" class="contorno"/>
+    <path d="M26,46 Q110,110 194,46" fill="none" stroke-width="8" stroke-linecap="round" style="stroke:var(--fuso)"/>
+    <line x1="110" y1="122" x2="110" y2="96" class="flusso-linea" marker-end="url(#var-aperta-punta)"/></svg></div><p>Assistita a macchina, su un solo asse, per profili con estremità aperte come uno schienale. <span class="pag">(p. 199, 201)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="lavorazione-cnc.html">Lavorazione CNC</a> – geometrie simili, senza le fibre continue <span class="pag">(p. 198)</span></li><li><a href="laminazione-legno.html">Laminazione del legno</a> – geometrie simili; non richiede legno di qualità così alta <span class="pag">(p. 198)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 198–201.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/curvatura-vapore.js"></script>
+</body>
+</html>

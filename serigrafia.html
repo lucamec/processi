@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Serigrafia – Processi produttivi per il design</title>
+<meta name="description" content="Stampa a umido che fa passare l'inchiostro attraverso una rete tesa su un telaio, dove uno stencil lascia aperte solo le zone da stampare: economica e adatta a superfici piane e cilindriche di tessuto, carta, vetro, ceramica, plastica e metallo.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 4 – Finitura › Stampa</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Serigrafia</h1>
+  <p class="originale" lang="en">Screen Printing</p>
+  <p class="categoria">Parte 4 – Finitura · Stampa</p>
+  <p class="sintesi">Stampa a umido che fa passare l'inchiostro attraverso una rete tesa su un telaio, dove uno stencil lascia aperte solo le zone da stampare: economica e adatta a superfici piane e cilindriche di tessuto, carta, vetro, ceramica, plastica e metallo.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="2000,1800,2400,2000">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="serigrafia" data-alt="Modello 3D di una macchina serigrafica: un telaio grigio con una rete chiara e uno stencil azzurro scende su una lastra di vetro. Sulla rete c'è un cordone di inchiostro nero; una racla lo spinge da un lato all'altro e sotto compare, striscia dopo striscia, una cornice nera stampata. Poi il telaio si alza e la lastra esce verso il forno.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Stencil<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Carico<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Stampa<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Scarico e asciugatura<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Stencil</b>Un positivo a grandezza reale di ogni colore, stampato su acetato, si mette a registro sul telaio coperto di emulsione fotosensibile; la luce UV indurisce l'emulsione esposta e il resto si lava via. <span class="pag">(p. 401)</span></li>
+    <li><b>Fase 2 – Carico</b>Il pezzo si carica sotto il telaio, a faccia in giù nel caso studio; sulla rete si deposita una piccola carica di inchiostro. <span class="pag">(p. 401–403)</span></li>
+    <li><b>Fase 3 – Stampa</b>Una racla in gomma stende l'inchiostro premendo: passa dalla rete aperta e forma uno strato denso con bordi netti; lo stencil blocca il resto. <span class="pag">(p. 401–403)</span></li>
+    <li><b>Fase 4 – Scarico e asciugatura</b>Il pezzo esce bagnato; l'inchiostro a solvente asciuga in circa un'ora, oppure in forno a 200 °C. <span class="pag">(p. 402–403)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una macchina serigrafica: un telaio grigio con una rete chiara e uno stencil azzurro scende su una lastra di vetro. Sulla rete c'è un cordone di inchiostro nero; una racla lo spinge da un lato all'altro e sotto compare, striscia dopo striscia, una cornice nera stampata. Poi il telaio si alza e la lastra esce verso il forno.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 90 820 270" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Serigrafia di una lastra di vetro, in sezione</title>
+<desc id="sc-d">Sezione di un telaio con rete e stencil sopra una lastra di vetro. Le fasi mostrano lo stencil pronto, il carico del pezzo e dell'inchiostro, la racla che spinge l'inchiostro attraverso la rete aperta e lo scarico del pezzo stampato.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<defs><clipPath id="sc-stampa"><rect x="160" y="200" width="500" height="20" data-k="sx:0,0,1,1" data-i="sx:0" data-o="160,200"/></clipPath></defs>
+<!-- piano e lastra -->
+<rect x="120" y="230" width="580" height="24" class="m-stampo contorno"/>
+<g data-k="tx:-460,0,0,460" data-i="tx:-460">
+  <rect x="180" y="212" width="460" height="18" fill="#cfe3ea" class="contorno"/>
+  <g clip-path="url(#sc-stampa)"><rect x="230" y="208" width="100" height="4" fill="#1d232b"/><rect x="490" y="208" width="100" height="4" fill="#1d232b"/></g>
+</g>
+<g class="etichetta"><line x1="600" y1="230" x2="560" y2="275" class="richiamo"/><text x="560" y="280" text-anchor="start">Lastra di vetro</text></g>
+<!-- telaio con rete e stencil -->
+<g data-k="ty:-40,0,0,-40" data-i="ty:-40">
+  <rect x="140" y="170" width="20" height="36" class="m-macchina contorno"/><rect x="660" y="170" width="20" height="36" class="m-macchina contorno"/>
+  <line x1="160" y1="204" x2="660" y2="204" stroke="var(--testo)" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <g data-k="op:1,1,1,1" data-i="op:0">
+    <rect x="160" y="201" width="70" height="6" fill="#4c62d9"/>
+    <rect x="330" y="201" width="160" height="6" fill="#4c62d9"/>
+    <rect x="590" y="201" width="70" height="6" fill="#4c62d9"/>
+  </g>
+</g>
+<g class="etichetta"><line x1="280" y1="170" x2="120" y2="115" class="richiamo"/><text x="120" y="120" text-anchor="start">Telaio con rete (nylon, poliestere o inox) e stencil impermeabile</text></g>
+<!-- carica di inchiostro e racla -->
+<g data-k="op:0,1,1,0;tx:0,0,420,420" data-i="op:0;tx:0">
+  <ellipse cx="200" cy="196" rx="18" ry="7" fill="#1d232b"/>
+</g>
+<g data-k="op:0,0,1,0;tx:0,0,420,420" data-i="op:0;tx:0">
+  <path d="M168,120 H196 V170 L186,198 H178 L168,170 Z" class="m-macchina contorno" transform="rotate(-12 182 198)"/>
+</g>
+<g data-k="op:1,0,0,0"><g class="etichetta"><text x="120" y="330" text-anchor="start">Positivo su acetato e luce UV: l'emulsione esposta indurisce, il resto si lava via</text></g></g>
+<g data-k="op:0,1,0,0"><g class="etichetta"><text x="120" y="330" text-anchor="start">Il pezzo si carica sotto il telaio; sulla rete si deposita l'inchiostro</text></g></g>
+<g data-k="op:0,0,1,0"><g class="etichetta"><text x="120" y="330" text-anchor="start">La racla in gomma spinge l'inchiostro attraverso la rete aperta</text></g></g>
+<g data-k="op:0,0,0,1"><g class="etichetta"><text x="120" y="330" text-anchor="start">Il pezzo esce bagnato e asciuga; ogni colore vuole un altro telaio</text></g></g>
+<line x1="600" y1="140" x2="660" y2="140" class="flusso-linea" marker-end="url(#sc-punta)"/>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>La rete, tesa su un telaio, è di nylon, poliestere o acciaio inox; ogni colore richiede un telaio a parte. <span class="pag">(p. 401)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>Quattro famiglie di inchiostri: ad acqua e a solvente, asciugati all'aria o al caldo; plastisol a base di PVC per i tessuti, che polimerizzano col calore; UV, più brillanti e più costosi. <span class="pag">(p. 401)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>Oltre all'inchiostro si stampa qualunque materiale della giusta consistenza: pasta saldante sui circuiti, pellicole per la decorazione in stampo, perfino burro sul pane. <span class="pag">(p. 400)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>La maglia decide dettaglio e spessore: reti pesanti depositano più inchiostro per i tessuti, reti leggere servono per carta e materiali poco assorbenti. <span class="pag">(p. 402)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Quasi tutti: carta, tessuti, plastica, metallo, ceramica, vetro. <span class="pag">(p. 400, 402)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Da pezzo unico a produzione di massa. <span class="pag">(p. 400)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Basso, ma cresce con il numero di colori: un telaio per colore. <span class="pag">(p. 400, 402)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Basso, secondo il numero di colori; manodopera alta nei lavori manuali complessi e multicolore. <span class="pag">(p. 400, 402)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>1–5 cicli al minuto a mano, fino a 30 con impianti meccanizzati. <span class="pag">(p. 400, 402)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Alta: bordi netti, inchiostro che di solito non cola né sbava. <span class="pag">(p. 400, 402)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Valori numerici: <span class="nd">n.d.</span>; la definizione dipende dalla maglia. <span class="pag">(p. 402)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Superfici piane e cilindriche; limiti numerici: <span class="nd">n.d.</span> <span class="pag">(p. 402)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Solo piano o cilindrico</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-forma-ok-t v-forma-ok-d" class="mini-svg"><title id="v-forma-ok-t">Corretto: Superfici piane o cilindriche</title><desc id="v-forma-ok-d">La serigrafia stampa superfici piane e cilindriche.</desc><defs>
+  <pattern id="v-forma-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-forma-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-forma-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-forma-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="70" width="120" height="20" fill="#cfe3ea" class="contorno"/><rect x="30" y="64" width="100" height="6" fill="#1d232b"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-forma-ko-t v-forma-ko-d" class="mini-svg"><title id="v-forma-ko-t">Da evitare: Superfici ondulate o concave</title><desc id="v-forma-ko-d">Su forme ondulate o concave la rete non tocca: servono tampografia o stampa idrografica.</desc><defs>
+  <pattern id="v-forma-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-forma-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-forma-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-forma-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,90 Q50,50 80,80 T140,70 V100 H20 Z" fill="#cfe3ea" class="contorno"/><line x1="20" y1="56" x2="140" y2="56" stroke="var(--testo)" stroke-dasharray="3 2"/><circle cx="80" cy="70" r="16" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Non si stampano superfici ondulate o concave: lì servono la tampografia o la stampa idrografica. <span class="pag">(p. 402)</span></p></article>
+<article class="card"><h3>Un telaio per colore</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-colori-ok-t v-colori-ok-d" class="mini-svg"><title id="v-colori-ok-t">Corretto: Un telaio per colore, a registro</title><desc id="v-colori-ok-d">Ogni colore ha il suo telaio, messo a registro, e deve asciugare prima del successivo.</desc><defs>
+  <pattern id="v-colori-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-colori-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-colori-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-colori-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="40" width="120" height="50" fill="#fff" class="contorno"/><rect x="40" y="52" width="40" height="26" fill="#3f8f8a"/><rect x="80" y="52" width="40" height="26" fill="#f06a1d"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-colori-ko-t v-colori-ko-d" class="mini-svg"><title id="v-colori-ko-t">Da evitare: Colori fuori registro</title><desc id="v-colori-ko-d">Senza registro i colori si sovrappongono o lasciano vuoti.</desc><defs>
+  <pattern id="v-colori-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-colori-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-colori-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-colori-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="40" width="120" height="50" fill="#fff" class="contorno"/><rect x="40" y="52" width="40" height="26" fill="#3f8f8a"/><rect x="74" y="58" width="40" height="26" fill="#f06a1d" fill-opacity="0.9"/><circle cx="78" cy="66" r="16" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Ogni colore richiede un telaio a registro e deve asciugare o polimerizzare prima del successivo; con i sistemi UV bastano pochi secondi. <span class="pag">(p. 402)</span></p></article>
+<article class="card"><h3>Scelta della maglia</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-rete-ok-t v-rete-ok-d" class="mini-svg"><title id="v-rete-ok-t">Corretto: Rete fine per dettagli</title><desc id="v-rete-ok-d">Reti leggere per carta e materiali poco assorbenti: più dettaglio, meno inchiostro.</desc><defs>
+  <pattern id="v-rete-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-rete-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-rete-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-rete-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><line x1="24" y1="40" x2="24" y2="90" stroke="var(--testo)" stroke-width="0.8"/><line x1="34" y1="40" x2="34" y2="90" stroke="var(--testo)" stroke-width="0.8"/><line x1="44" y1="40" x2="44" y2="90" stroke="var(--testo)" stroke-width="0.8"/><line x1="54" y1="40" x2="54" y2="90" stroke="var(--testo)" stroke-width="0.8"/><line x1="64" y1="40" x2="64" y2="90" stroke="var(--testo)" stroke-width="0.8"/><line x1="74" y1="40" x2="74" y2="90" stroke="var(--testo)" stroke-width="0.8"/><line x1="84" y1="40" x2="84" y2="90" stroke="var(--testo)" stroke-width="0.8"/><line x1="94" y1="40" x2="94" y2="90" stroke="var(--testo)" stroke-width="0.8"/><line x1="104" y1="40" x2="104" y2="90" stroke="var(--testo)" stroke-width="0.8"/><line x1="114" y1="40" x2="114" y2="90" stroke="var(--testo)" stroke-width="0.8"/><line x1="124" y1="40" x2="124" y2="90" stroke="var(--testo)" stroke-width="0.8"/><line x1="134" y1="40" x2="134" y2="90" stroke="var(--testo)" stroke-width="0.8"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-rete-ko-t v-rete-ko-d" class="mini-svg"><title id="v-rete-ko-t">Da evitare: Rete grossa per dettagli fini</title><desc id="v-rete-ko-d">Reti pesanti depositano più inchiostro (tessili) ma risolvono meno i dettagli.</desc><defs>
+  <pattern id="v-rete-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-rete-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-rete-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-rete-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><line x1="30" y1="40" x2="30" y2="90" stroke="var(--testo)" stroke-width="3"/><line x1="55" y1="40" x2="55" y2="90" stroke="var(--testo)" stroke-width="3"/><line x1="80" y1="40" x2="80" y2="90" stroke="var(--testo)" stroke-width="3"/><line x1="105" y1="40" x2="105" y2="90" stroke="var(--testo)" stroke-width="3"/><line x1="130" y1="40" x2="130" y2="90" stroke="var(--testo)" stroke-width="3"/><circle cx="80" cy="65" r="22" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Reti pesanti danno più inchiostro e meno dettaglio; reti leggere il contrario. <span class="pag">(p. 402)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Possibilità descritte nel capitolo; lo schema principale mostra la stampa piana su vetro del caso studio.</p><div class="griglia-card"><article class="card"><h3>Stampa sul retro</h3><p class="originale" lang="en">Window printing</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-finestra-t var-finestra-d" class="mini-svg"><title id="var-finestra-t">Stampa sul retro (window printing)</title><desc id="var-finestra-d">Si stampa il retro di un pannello trasparente: l'inchiostro resta protetto e lucido, come negli schermi di telefoni e televisori.</desc><defs>
+  <pattern id="var-finestra-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-finestra-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-finestra-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-finestra-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="30" y="40" width="160" height="30" fill="#cfe3ea" class="contorno"/>
+    <rect x="30" y="70" width="40" height="6" fill="#1d232b"/><rect x="150" y="70" width="40" height="6" fill="#1d232b"/>
+    <circle cx="110" cy="20" r="6" fill="none" stroke="var(--testo)"/></svg></div><p>Inchiostro protetto sotto un pannello trasparente. <span class="pag">(p. 402)</span></p></article>
+<article class="card"><h3>Su etichetta trasparente</h3><p class="originale" lang="en">Transfer printing</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-etichetta-t var-etichetta-d" class="mini-svg"><title id="var-etichetta-t">Su etichetta trasparente</title><desc id="var-etichetta-d">L'immagine rovesciata si stampa sul retro di un'etichetta trasparente, poi incollata: sembra stampa diretta.</desc><defs>
+  <pattern id="var-etichetta-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-etichetta-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-etichetta-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-etichetta-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M30,100 Q110,40 190,100" fill="none" stroke="var(--testo)" stroke-width="2"/>
+    <path d="M70,76 Q110,54 150,76" fill="none" stroke="#4c62d9" stroke-width="5"/></svg></div><p>Effetto di stampa diretta su qualsiasi forma che accetti un'etichetta. <span class="pag">(p. 402)</span></p></article>
+<article class="card"><h3>Inchiostri speciali</h3><p class="originale" lang="en">Special inks</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-conduttivi-t var-conduttivi-d" class="mini-svg"><title id="var-conduttivi-t">Inchiostri speciali</title><desc id="var-conduttivi-d">Vernici UV, metallizzati, perlescenti, fluorescenti, termocromici, a rilievo, da grattare e conduttivi per circuiti flessibili.</desc><defs>
+  <pattern id="var-conduttivi-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-conduttivi-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-conduttivi-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-conduttivi-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="30" y="40" width="160" height="60" fill="#fff" class="contorno"/>
+    <path d="M50,60 H100 V80 H150" fill="none" stroke="#b08d2a" stroke-width="4"/><circle cx="150" cy="80" r="5" fill="#b08d2a"/></svg></div><p>UV, metallizzati, termocromici, conduttivi. <span class="pag">(p. 400, 402)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="tampografia.html">Tampografia</a> – per superfici ondulate <span class="pag">(p. 402)</span></li><li><a href="stampa-idrografica.html">Stampa a trasferimento ad acqua</a> – per superfici ondulate <span class="pag">(p. 402)</span></li><li><a href="stampa-caldo-goffratura.html">Stampa a caldo e goffratura</a> – effetti simili con vernici UV <span class="pag">(p. 400)</span></li><li><a href="stampaggio-iniezione.html">Stampaggio a iniezione</a> – pellicole serigrafate per la decorazione in stampo <span class="pag">(p. 400)</span></li><li><a href="brasatura.html">Brasatura dolce e forte</a> – pasta saldante serigrafata <span class="pag">(p. 400)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 400–403.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/serigrafia.js"></script>
+</body>
+</html>

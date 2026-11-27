@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fusione centrifuga – Processi produttivi per il design</title>
+<meta name="description" content="Lo stampo gira ad alta velocità e la forza centrifuga spinge il materiale liquido nelle cavità: un processo economico per gioielli e piccoli oggetti in metallo bassofondente, ma anche per tubi e pezzi metallici di grande diametro.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 1 – Formatura › Metalli</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Fusione centrifuga</h1>
+  <p class="originale" lang="en">Centrifugal Casting</p>
+  <p class="categoria">Parte 1 – Formatura · Metalli</p>
+  <p class="sintesi">Lo stampo gira ad alta velocità e la forza centrifuga spinge il materiale liquido nelle cavità: un processo economico per gioielli e piccoli oggetti in metallo bassofondente, ma anche per tubi e pezzi metallici di grande diametro.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="2000,2200,2600,2200">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="fusione-centrifuga" data-alt="Modello 3D di uno stampo in silicone a forma di disco, tagliato a metà, su un piatto rotante. Sei cavità disposte a raggiera sono collegate al centro da canali. Il disco gira veloce; il metallo arancione versato al centro corre lungo i canali e riempie le cavità. Poi lo stampo si apre e restano i piccoli pezzi verdi.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Stampo sul piatto<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Colata al centro<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Riempimento<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Apertura ed estrazione<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Stampo sul piatto</b>Le due metà dello stampo in silicone, con eventuali anime, si uniscono grazie a rilievi e incavi di centraggio e si serrano fra due dischi metallici sul piatto rotante. <span class="pag">(p. 146)</span></li>
+    <li><b>Fase 2 – Colata al centro</b>Mentre lo stampo gira ad alta velocità, il materiale fuso viene versato nel canale centrale verticale. <span class="pag">(p. 145)</span></li>
+    <li><b>Fase 3 – Riempimento</b>La rotazione spinge il materiale lungo i canali e dentro le cavità; i canali aiutano anche l'aria a uscire. Fra le metà dello stampo si forma una bava. <span class="pag">(p. 144–145)</span></li>
+    <li><b>Fase 4 – Apertura ed estrazione</b>Dopo 0,5–5 minuti per metalli bassofondenti e plastiche lo stampo si apre e si estraggono i pezzi, da 1 a 100 per ciclo. <span class="pag">(p. 146)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di uno stampo in silicone a forma di disco, tagliato a metà, su un piatto rotante. Sei cavità disposte a raggiera sono collegate al centro da canali. Il disco gira veloce; il metallo arancione versato al centro corre lungo i canali e riempie le cavità. Poi lo stampo si apre e restano i piccoli pezzi verdi.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 20 820 360" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Fusione centrifuga orizzontale in stampo di silicone, vista dall'alto</title>
+<desc id="sc-d">Vista dall'alto di uno stampo circolare in silicone con un canale centrale e sei cavità collegate da canali radiali. Le fasi mostrano lo stampo che inizia a girare, il metallo versato al centro, il riempimento delle cavità e l'estrazione dei pezzi.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- stampo in silicone (vista dall'alto) che ruota -->
+<g data-k="rot:0,720,1440,1440" data-i="rot:0" data-o="400,190">
+  <circle cx="400" cy="190" r="150" fill="url(#sc-tratteggio)" class="contorno" data-k="op:1,1,1,0.25" data-i="op:1"/>
+  <g transform="rotate(0 400 190)"><rect x="422" y="185" width="58" height="10" class="cavita contorno"/><circle cx="500" cy="190" r="20" class="cavita contorno"/></g><g transform="rotate(60 400 190)"><rect x="422" y="185" width="58" height="10" class="cavita contorno"/><circle cx="500" cy="190" r="20" class="cavita contorno"/></g><g transform="rotate(120 400 190)"><rect x="422" y="185" width="58" height="10" class="cavita contorno"/><circle cx="500" cy="190" r="20" class="cavita contorno"/></g><g transform="rotate(180 400 190)"><rect x="422" y="185" width="58" height="10" class="cavita contorno"/><circle cx="500" cy="190" r="20" class="cavita contorno"/></g><g transform="rotate(240 400 190)"><rect x="422" y="185" width="58" height="10" class="cavita contorno"/><circle cx="500" cy="190" r="20" class="cavita contorno"/></g><g transform="rotate(300 400 190)"><rect x="422" y="185" width="58" height="10" class="cavita contorno"/><circle cx="500" cy="190" r="20" class="cavita contorno"/></g>
+  <circle cx="400" cy="190" r="22" class="cavita contorno"/>
+  <g data-k="op:0,0,1,0" data-i="op:0"><g transform="rotate(0 400 190)"><rect x="422" y="185" width="58" height="10" class="m-fuso contorno"/><circle cx="500" cy="190" r="20" class="m-fuso contorno"/></g><g transform="rotate(60 400 190)"><rect x="422" y="185" width="58" height="10" class="m-fuso contorno"/><circle cx="500" cy="190" r="20" class="m-fuso contorno"/></g><g transform="rotate(120 400 190)"><rect x="422" y="185" width="58" height="10" class="m-fuso contorno"/><circle cx="500" cy="190" r="20" class="m-fuso contorno"/></g><g transform="rotate(180 400 190)"><rect x="422" y="185" width="58" height="10" class="m-fuso contorno"/><circle cx="500" cy="190" r="20" class="m-fuso contorno"/></g><g transform="rotate(240 400 190)"><rect x="422" y="185" width="58" height="10" class="m-fuso contorno"/><circle cx="500" cy="190" r="20" class="m-fuso contorno"/></g><g transform="rotate(300 400 190)"><rect x="422" y="185" width="58" height="10" class="m-fuso contorno"/><circle cx="500" cy="190" r="20" class="m-fuso contorno"/></g><circle cx="400" cy="190" r="22" class="m-fuso contorno"/></g>
+  <g data-k="op:0,0,0,1" data-i="op:0"><g transform="rotate(0 400 190)"><rect x="422" y="185" width="58" height="10" class="m-finito contorno"/><circle cx="500" cy="190" r="20" class="m-finito contorno"/></g><g transform="rotate(60 400 190)"><rect x="422" y="185" width="58" height="10" class="m-finito contorno"/><circle cx="500" cy="190" r="20" class="m-finito contorno"/></g><g transform="rotate(120 400 190)"><rect x="422" y="185" width="58" height="10" class="m-finito contorno"/><circle cx="500" cy="190" r="20" class="m-finito contorno"/></g><g transform="rotate(180 400 190)"><rect x="422" y="185" width="58" height="10" class="m-finito contorno"/><circle cx="500" cy="190" r="20" class="m-finito contorno"/></g><g transform="rotate(240 400 190)"><rect x="422" y="185" width="58" height="10" class="m-finito contorno"/><circle cx="500" cy="190" r="20" class="m-finito contorno"/></g><g transform="rotate(300 400 190)"><rect x="422" y="185" width="58" height="10" class="m-finito contorno"/><circle cx="500" cy="190" r="20" class="m-finito contorno"/></g></g>
+</g>
+<g data-k="op:0,1,0,0"><circle cx="400" cy="190" r="22" class="m-fuso contorno"/><g class="etichetta"><text x="570" y="60" text-anchor="start">metallo versato nel canale centrale</text></g></g>
+<path d="M622,300 A22,22 0 1 1 600,278" class="flusso-linea" fill="none" marker-end="url(#sc-punta)"/>
+<g class="etichetta"><text x="570" y="350" text-anchor="start">rotazione ad alta velocità</text></g>
+<g class="etichetta"><text x="570" y="110" text-anchor="start">Stampo in silicone (metà superiore)</text></g>
+<g class="etichetta"><text x="570" y="150" text-anchor="start">Cavità e canali radiali</text></g>
+<g class="etichetta" data-k="op:0,0,1,0"><text x="570" y="190" text-anchor="start">il metallo è spinto verso l'esterno</text></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Il materiale dello stampo distingue i due tipi principali. Il silicone serve per pezzi piccoli e anche asimmetrici, da pochi grammi a 1,5 kg; il metallo per materiali ad alta temperatura e pezzi più grandi, che però devono essere a simmetria di rotazione. <span class="pag">(p. 144)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>Si colano metalli, plastiche, compositi e vetro. Il modello si preme nel silicone per formare la cavità, oppure la cavità si lavora di macchina. <span class="pag">(p. 144)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>La rotazione spinge il materiale anche nelle cavità piccole: dettagli superficiali, forme complesse e pareti sottili si riproducono molto bene. Poiché la pressione è bassa, i pezzi si deformano poco raffreddandosi. <span class="pag">(p. 145)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Nei grandi pezzi metallici la superficie esterna è più dura, perché le molecole più pesanti sono spinte verso la periferia. <span class="pag">(p. 145)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Stampi in silicone: metallo bianco, peltro, zinco, alcune plastiche come il PUR (sotto i 500 °C di fusione). Stampi metallici: acciaio, alluminio, vetro, polveri e compositi a matrice metallica. <span class="pag">(p. 144–146)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Da pezzo unico alla grande serie, anche milioni di pezzi. <span class="pag">(p. 144)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Bassissimo per il silicone, soprattutto a più cavità; gli stampi metallici costano di più ma restano economici per la loro dimensione. <span class="pag">(p. 144–146)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Basso, secondo il materiale; manodopera generalmente bassa. <span class="pag">(p. 144, 146)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Rapido: 0,5–5 minuti per metalli bassofondenti e plastiche; il vetro può richiedere giorni di ricottura. <span class="pag">(p. 144, 146)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Ottima riproduzione dei dettagli fini e delle texture; pezzi più porosi per la bassa pressione. <span class="pag">(p. 144–145)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Tolleranze realistiche di 250 micron nei pezzi piccoli. <span class="pag">(p. 145)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Silicone: da pochi grammi a 1,5 kg, pareti da 0,25 a 12 mm. Stampi metallici: pezzi simmetrici di 1 m di diametro e oltre. <span class="pag">(p. 144, 146)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Pezzi poco sollecitati, o rinforzati</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-carichi-ok-t v-carichi-ok-d" class="mini-svg"><title id="v-carichi-ok-t">Corretto: Pezzi non sollecitati, o rinforzati</title><desc id="v-carichi-ok-d">Con bassa pressione e metalli bassofondenti i pezzi sono più porosi e meno resistenti: si aumentano gli spessori e si aggiungono nervature.</desc><defs>
+  <pattern id="v-carichi-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-carichi-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-carichi-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-carichi-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,90 H150 V100 H10 Z M40,90 V58 H50 V90 Z M75,90 V58 H85 V90 Z M110,90 V58 H120 V90 Z" class="m-finito contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-carichi-ko-t v-carichi-ko-d" class="mini-svg"><title id="v-carichi-ko-t">Da evitare: Parte sottile e sotto carico</title><desc id="v-carichi-ko-d">Un pezzo sottile e senza rinforzi non sopporta carichi elevati.</desc><defs>
+  <pattern id="v-carichi-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-carichi-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-carichi-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-carichi-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,90 H150 V96 H10 Z" class="m-finito contorno"/><path d="M10,92 Q80,118 150,92" fill="none" stroke="var(--ko)" stroke-width="2" stroke-dasharray="4 3"/></svg><figcaption>Da evitare</figcaption></figure></div><p>La bassa pressione dà pezzi più porosi e i metalli bassofondenti sono meno resistenti: si usa per pezzi che non devono sopportare grandi carichi, oppure si aumentano gli spessori e si aggiungono nervature. <span class="pag">(p. 145–146)</span></p></article>
+<article class="card"><h3>Pareti fra 0,25 e 12 mm in silicone</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spessore-ok-t v-spessore-ok-d" class="mini-svg"><title id="v-spessore-ok-t">Corretto: Pareti fra 0,25 e 12 mm (silicone)</title><desc id="v-spessore-ok-d">Negli stampi in silicone lo spessore va da 0,25 a 12 mm; i salti di spessore non creano problemi seri.</desc><defs>
+  <pattern id="v-spessore-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spessore-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spessore-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spessore-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M15,40 H145 V100 H120 V60 H40 V100 H15 Z" class="m-finito contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spessore-ko-t v-spessore-ko-d" class="mini-svg"><title id="v-spessore-ko-t">Da evitare: Oltre i 12 mm nello stampo in silicone</title><desc id="v-spessore-ko-d">Spessori maggiori richiedono stampi metallici.</desc><defs>
+  <pattern id="v-spessore-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spessore-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spessore-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spessore-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M15,20 H145 V100 H15 Z" class="m-finito contorno"/><circle cx="80" cy="60" r="16" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Negli stampi in silicone lo spessore va da 0,25 a 12 mm, mentre negli stampi metallici può essere molto maggiore. I salti di spessore non sono un problema e si può alimentare il pezzo da più punti. <span class="pag">(p. 146)</span></p></article>
+<article class="card"><h3>Niente piombo a contatto con cibi e bevande</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-piombo-ok-t v-piombo-ok-d" class="mini-svg"><title id="v-piombo-ok-t">Corretto: Peltro senza piombo per cibi e bevande</title><desc id="v-piombo-ok-d">Metallo bianco e peltro sono leghe di piombo, salvo il peltro British Standard: per oggetti a contatto con cibi e bevande si evita il piombo.</desc><defs>
+  <pattern id="v-piombo-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-piombo-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-piombo-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-piombo-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M50,20 H110 L104,100 H56 Z" class="m-finito contorno"/><g class="etichetta"><text x="80" y="106" text-anchor="middle">senza piombo</text></g></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-piombo-ko-t v-piombo-ko-d" class="mini-svg"><title id="v-piombo-ko-t">Da evitare: Lega al piombo in un bicchiere</title><desc id="v-piombo-ko-d">Il piombo, ingerito in quantità sufficiente, danneggia il sistema nervoso.</desc><defs>
+  <pattern id="v-piombo-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-piombo-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-piombo-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-piombo-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M50,20 H110 L104,100 H56 Z" class="m-finito contorno"/><circle cx="80" cy="60" r="22" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Metallo bianco e peltro sono leghe di piombo, tranne il peltro British Standard; il piombo è un inquinante e non va usato in oggetti per mangiare o bere. <span class="pag">(p. 146)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Il libro non elenca varianti come sotto-voci; qui sotto le altre due tecniche illustrate nello schema del capitolo.</p><div class="griglia-card"><article class="card"><h3>Colata orizzontale a cavità singola</h3><p class="originale" lang="en">Horizontal casting, single cavity</p><div class="variante-schema"><svg viewBox="0 0 220 128" role="img" aria-labelledby="var-singola-t var-singola-d" class="mini-svg"><title id="var-singola-t">Colata orizzontale, cavità singola</title><desc id="var-singola-d">Per pezzi più grandi lo stampo contiene un solo pezzo attorno al canale centrale.</desc><defs>
+  <pattern id="var-singola-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-singola-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-singola-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-singola-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><circle cx="110" cy="62" r="56" fill="url(#var-singola-tratteggio)" class="contorno"/><circle cx="110" cy="62" r="34" class="m-fuso contorno"/><circle cx="110" cy="62" r="10" class="cavita contorno"/></svg></div><p>I pezzi grandi si colano uno per stampo attorno al canale centrale, come il peltro del caso studio; i pezzi piccoli si dispongono in molte cavità attorno al centro, con attacchi separati. <span class="pag">(p. 145–146)</span></p></article>
+<article class="card"><h3>Colata verticale a stampo aperto</h3><p class="originale" lang="en">Vertical casting with open tool</p><div class="variante-schema"><svg viewBox="0 0 220 128" role="img" aria-labelledby="var-verticale-t var-verticale-d" class="mini-svg"><title id="var-verticale-t">Colata verticale a stampo aperto</title><desc id="var-verticale-d">Lo stampo metallico ruota attorno a un solo asse e il metallo forma uno strato sulla parete: tubi, volani, recipienti a pressione, vetro da tavola. Simile allo stampaggio rotazionale, ma su un asse.</desc><defs>
+  <pattern id="var-verticale-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-verticale-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-verticale-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-verticale-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M60,10 V114 H160 V10 H146 V100 H74 V10 Z" fill="url(#var-verticale-tratteggio)" class="contorno"/>
+    <path d="M74,20 V100 H146 V20 H136 V90 H84 V20 Z" class="m-fuso contorno"/>
+    <line x1="110" y1="0" x2="110" y2="124" class="asse"/></svg></div><p>Simile allo stampaggio rotazionale, ma lo stampo gira su un solo asse: uno strato di materiale fuso riveste la parete interna e forma pezzi cavi o a lastra, come tubi e recipienti. <span class="pag">(p. 144–145)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="pressofusione.html">Pressofusione</a> – altra fusione dei metalli <span class="pag">(p. 145)</span></li><li><a href="microfusione.html">Microfusione a cera persa</a> – altra fusione dei metalli <span class="pag">(p. 145)</span></li><li><a href="fusione-sabbia.html">Fusione in sabbia</a> – altra fusione dei metalli <span class="pag">(p. 145)</span></li><li><a href="stampaggio-rotazionale.html">Stampaggio rotazionale</a> – simile, ma su due assi <span class="pag">(p. 144–145)</span></li><li><a href="colata-sottovuoto.html">Colata sottovuoto</a> – forme simili in plastica <span class="pag">(p. 145)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 144–147.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/fusione-centrifuga.js"></script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tornitura in lastra – Processi produttivi per il design</title>
+<meta name="description" content="Un disco di lamiera gira al tornio insieme a un mandrino e un rullo lo spinge, passata dopo passata, contro la sua superficie: si ottengono coni, cilindri ed emisferi con un solo stampo e costi contenuti.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 1 – Formatura › Metalli</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Tornitura in lastra</h1>
+  <p class="originale" lang="en">Metal Spinning</p>
+  <p class="categoria">Parte 1 – Formatura · Metalli</p>
+  <p class="sintesi">Un disco di lamiera gira al tornio insieme a un mandrino e un rullo lo spinge, passata dopo passata, contro la sua superficie: si ottengono coni, cilindri ed emisferi con un solo stampo e costi contenuti.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="2000,2600,2600,2200">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="tornitura-lastra" data-alt="Modello 3D di un tornio tagliato a metà lungo l'asse. Un mandrino a cupola è montato sulla testa del tornio e un disco di lamiera è bloccato contro la sua punta. Mentre il tornio gira, un rullo si sposta lungo il profilo e piega progressivamente il disco, prima a forma di cono e poi aderente alla cupola. Alla fine il bordo viene rifilato e il pezzo diventa verde.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Caricamento del disco<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Prime passate<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Passate successive<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Rifinitura e rifilatura<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Caricamento del disco</b>Un disco di lamiera viene caricato sul mandrino e bloccato; mandrino e disco girano insieme sul tornio. <span class="pag">(p. 79)</span></li>
+    <li><b>Fase 2 – Prime passate</b>Il rullo spinge la lamiera verso il mandrino: a ogni passata il metallo viene guidato e controllato, un po' come l'argilla al tornio. <span class="pag">(p. 79–80)</span></li>
+    <li><b>Fase 3 – Passate successive</b>La lamiera viene premuta sulla superficie del mandrino e, dove serve, allungata e assottigliata. <span class="pag">(p. 79)</span></li>
+    <li><b>Fase 4 – Rifinitura e rifilatura</b>Si rifila il bordo; se il mandrino è scomponibile si forma prima il rientro. L'intero ciclo richiede meno di un minuto. <span class="pag">(p. 79–80)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di un tornio tagliato a metà lungo l'asse. Un mandrino a cupola è montato sulla testa del tornio e un disco di lamiera è bloccato contro la sua punta. Mentre il tornio gira, un rullo si sposta lungo il profilo e piega progressivamente il disco, prima a forma di cono e poi aderente alla cupola. Alla fine il bordo viene rifilato e il pezzo diventa verde.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 0 820 380" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Tornitura in lastra in sezione assiale</title>
+<desc id="sc-d">Sezione lungo l'asse del tornio: a sinistra la testa con il mandrino a cupola, a destra la contropunta che blocca il disco di lamiera. Un rullo di formatura percorre il profilo e piega la lamiera sul mandrino; alla fine il bordo viene rifilato.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<line x1="140" y1="200" x2="620" y2="200" class="asse"/>
+<!-- testa del tornio -->
+<rect x="150" y="110" width="80" height="180" class="macchina"/>
+<g class="etichetta"><text x="30" y="104" text-anchor="start">Testa del tornio</text></g>
+<path d="M212,200 A22,22 0 1 1 190,178" class="flusso-linea" fill="none" marker-end="url(#sc-punta)"/>
+<!-- mandrino -->
+<path d="M230,95 H330 Q470,95 470,200 Q470,305 330,305 H230 Z" fill="url(#sc-tratteggio)" class="contorno"/>
+<g class="etichetta"><line x1="300" y1="300" x2="30" y2="325" class="richiamo"/><text x="30" y="330" text-anchor="start">Mandrino (forma interna)</text></g>
+<!-- contropunta che blocca il disco -->
+<rect x="484" y="176" width="26" height="48" class="m-stampo contorno"/><rect x="510" y="192" width="110" height="16" class="macchina"/>
+<g class="etichetta"><text x="530" y="240" text-anchor="start">Contropunta</text></g>
+
+<!-- lamiera -->
+<path d="M478,60 V340" fill="none" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" style="stroke:var(--grezzo)" data-k="op:1,0,0,0" data-i="op:1"/>
+<path d="M478,200 Q478,128 440,108 L360,40 M478,200 Q478,272 440,292 L360,360" fill="none" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" style="stroke:var(--fuso)" data-k="op:0,1,0,0" data-i="op:0"/>
+<path d="M478,200 Q476,90 330,89 H250 M478,200 Q476,310 330,311 H250" fill="none" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" style="stroke:var(--fuso)" data-k="op:0,0,1,0" data-i="op:0"/>
+<path d="M478,200 Q476,90 330,89 H270 M478,200 Q476,310 330,311 H270" fill="none" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" style="stroke:var(--finito)" data-k="op:0,0,0,1" data-i="op:0"/>
+<g class="etichetta" data-k="op:1,0,0,0" data-i="op:1"><line x1="482" y1="76" x2="520" y2="65" class="richiamo"/><text x="520" y="70" text-anchor="start">Disco di lamiera</text></g>
+
+<!-- rullo di formatura -->
+<g data-k="tx:80,0,-110,80;ty:-40,0,-14,-40" data-i="tx:80;ty:-40">
+  <circle cx="440" cy="86" r="18" fill="url(#sc-tratteggio)" class="contorno"/>
+  <line x1="440" y1="86" x2="500" y2="26" stroke="var(--testo)" stroke-width="6"/>
+</g>
+<g class="etichetta"><text x="560" y="30" text-anchor="start">Rullo di formatura</text></g>
+<g data-k="op:0,1,1,0"><line x1="560" y1="130" x2="500" y2="100" class="flusso-linea" marker-end="url(#sc-punta)"/><g class="etichetta"><text x="520" y="150" text-anchor="start">il rullo spinge la lamiera sul mandrino</text></g></g>
+<!-- rifilatura -->
+<g data-k="op:0,0,0,1">
+  <line x1="262" y1="70" x2="262" y2="108" stroke="var(--ko)" stroke-width="3" stroke-dasharray="4 3"/>
+  <line x1="262" y1="292" x2="262" y2="330" stroke="var(--ko)" stroke-width="3" stroke-dasharray="4 3"/>
+  <g class="etichetta"><line x1="262" y1="76" x2="30" y2="59" class="richiamo"/><text x="30" y="64" text-anchor="start">bordo rifilato</text></g>
+</g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Si lavora su un solo stampo, il mandrino, maschio o femmina secondo la forma; per i pezzi unici si può anche tornire 'in aria', senza stampo. <span class="pag">(p. 78–79)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>Il rullo, guidato a mano o a controllo numerico, percorre il profilo a passate successive. <span class="pag">(p. 79–80)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>La superficie interna copia il mandrino, quella esterna è formata dall'utensile. Nervature, ondulazioni e texture si integrano nella stessa operazione. <span class="pag">(p. 79)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Dopo la rifilatura il pezzo si estrae; spesso si prosegue con punzonatura, saldatura o stampaggio per bordi, forme asimmetriche e forature. <span class="pag">(p. 79–80)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Acciaio dolce e inossidabile, ottone, rame, alluminio, titanio. Mandrini in legno, plastica, alluminio o acciaio. <span class="pag">(p. 80)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Da pezzo unico a serie medio-piccole. <span class="pag">(p. 78)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Basso, anche molto basso per prototipi: un solo stampo, molto meno che per stampaggio e imbutitura. Senza mandrino è nullo. <span class="pag">(p. 78–80)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Moderato; manodopera da moderata ad alta nel lavoro manuale, ridotta dall'automazione. <span class="pag">(p. 78, 80)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Da moderato a rapido: meno di un minuto nel caso tipico, 30 secondi per la prima fase del caso studio. L'alluminio è molto più rapido dell'acciaio. <span class="pag">(p. 78–80)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Variabile, dipende dall'abilità dell'operatore e dalla velocità; operatori esperti ottengono finiture molto alte. <span class="pag">(p. 78–79)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Tolleranze fino a 1,5 mm. <span class="pag">(p. 80)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Da piccoli a molto grandi, fino a 2,5 m di diametro. <span class="pag">(p. 80)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Solo forme a rivoluzione</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-simmetria-ok-t v-simmetria-ok-d" class="mini-svg"><title id="v-simmetria-ok-t">Corretto: Forma a rivoluzione</title><desc id="v-simmetria-ok-d">Il processo ottiene solo pezzi assialsimmetrici: coni, cilindri, emisferi.</desc><defs>
+  <pattern id="v-simmetria-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-simmetria-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-simmetria-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-simmetria-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><ellipse cx="80" cy="60" rx="55" ry="40" fill="none" stroke="var(--finito)" stroke-width="5"/><line x1="10" y1="60" x2="150" y2="60" class="asse"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-simmetria-ko-t v-simmetria-ko-d" class="mini-svg"><title id="v-simmetria-ko-t">Da evitare: Forma asimmetrica</title><desc id="v-simmetria-ko-d">Le forme non assialsimmetriche non si possono tornire in lastra.</desc><defs>
+  <pattern id="v-simmetria-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-simmetria-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-simmetria-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-simmetria-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M30,90 Q30,20 90,25 Q140,30 130,80 Q100,100 30,90 Z" fill="none" stroke="var(--finito)" stroke-width="5"/><circle cx="125" cy="40" r="11" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>La tornitura in lastra è limitata ai pezzi a simmetria di rotazione. <span class="pag">(p. 79)</span></p></article>
+<article class="card"><h3>Diametro almeno doppio della profondità</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-profondita-ok-t v-profondita-ok-d" class="mini-svg"><title id="v-profondita-ok-t">Corretto: Diametro almeno doppio della profondità</title><desc id="v-profondita-ok-d">La forma ideale è l'emisfero: diametro ≥ 2 volte la profondità.</desc><defs>
+  <pattern id="v-profondita-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-profondita-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-profondita-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-profondita-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,30 Q20,95 80,95 Q140,95 140,30" fill="none" stroke-width="5" stroke-linecap="round" style="stroke:var(--finito)"/><g class="etichetta"><text x="80" y="22" text-anchor="middle">D ≥ 2 h</text></g></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-profondita-ko-t v-profondita-ko-d" class="mini-svg"><title id="v-profondita-ko-t">Da evitare: Più profondo che largo</title><desc id="v-profondita-ko-d">Si può fare, ma i costi crescono molto.</desc><defs>
+  <pattern id="v-profondita-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-profondita-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-profondita-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-profondita-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M50,10 V90 Q50,105 80,105 Q110,105 110,90 V10" fill="none" stroke-width="5" stroke-linecap="round" style="stroke:var(--finito)"/><g class="etichetta"><text x="130" y="60" text-anchor="start">h &gt; D</text></g></svg><figcaption>Da evitare</figcaption></figure></div><p>La forma ideale è l'emisfero, con diametro maggiore o uguale al doppio della profondità. Pezzi più profondi si possono fare, ma con costi molto più alti. <span class="pag">(p. 79–80)</span></p></article>
+<article class="card"><h3>Pareti parallele e rientri costano</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-rientri-ok-t v-rientri-ok-d" class="mini-svg"><title id="v-rientri-ok-t">Corretto: Rientro con mandrino scomponibile</title><desc id="v-rientri-ok-d">Pareti parallele e rientri richiedono mandrini in più pezzi che si estraggono uno alla volta.</desc><defs>
+  <pattern id="v-rientri-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-rientri-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-rientri-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-rientri-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M30,20 H80 V100 H50 Q30,100 30,80 Z" fill="url(#v-rientri-ok-tratteggio)" class="contorno"/><path d="M80,20 H130 V80 Q130,100 110,100 H80 Z" fill="url(#v-rientri-ok-tratteggio)" class="contorno"/><path d="M24,10 V80 Q24,106 50,106 H110 Q136,106 136,80 V30 L124,20" fill="none" stroke-width="5" stroke-linecap="round" style="stroke:var(--finito)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-rientri-ko-t v-rientri-ko-d" class="mini-svg"><title id="v-rientri-ko-t">Da evitare: Rientro con mandrino unico</title><desc id="v-rientri-ko-d">Con un mandrino in un solo pezzo il rientro trattiene il pezzo: non si sfila.</desc><defs>
+  <pattern id="v-rientri-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-rientri-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-rientri-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-rientri-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M30,20 H130 V80 Q130,100 110,100 H50 Q30,100 30,80 Z" fill="url(#v-rientri-ko-tratteggio)" class="contorno"/><path d="M24,10 V80 Q24,106 50,106 H110 Q136,106 136,80 V30 L124,20" fill="none" stroke-width="5" stroke-linecap="round" style="stroke:var(--finito)"/><circle cx="126" cy="22" r="10" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Sono possibili, ma richiedono più stampi che si incastrano fra loro e aumentano i costi. <span class="pag">(p. 80)</span></p></article></div><aside class="approfondimento"><h3>Incrudimento</h3><p>Lavorando l'acciaio si incrudisce: può essere un vantaggio perché il pezzo diventa più resistente, ma se va lavorato ancora dopo la tornitura serve un trattamento termico di distensione, che allunga il ciclo. <span class="pag">(p. 80)</span></p></aside>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Il libro non elenca varianti di questo processo. Qui sotto le possibilità descritte nel testo e nel caso studio.</p><div class="griglia-card"><article class="card"><h3>Tornitura senza mandrino</h3><p class="originale" lang="en">Spinning on-air</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-aria-t var-aria-d" class="mini-svg"><title id="var-aria-t">Tornitura senza mandrino</title><desc id="var-aria-d">La lamiera si forma &quot;in aria&quot;, senza attrezzatura: costi di stampo nulli, manodopera più alta.</desc><defs>
+  <pattern id="var-aria-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-aria-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-aria-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-aria-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <line x1="10" y1="62" x2="210" y2="62" class="asse"/>
+    <rect x="10" y="40" width="40" height="44" class="macchina"/>
+    <path d="M50,62 Q90,20 160,14 M50,62 Q90,104 160,110" fill="none" stroke-width="5" stroke-linecap="round" style="stroke:var(--finito)"/>
+    <circle cx="150" cy="24" r="10" fill="url(#var-aria-tratteggio)" class="contorno"/></svg></div><p>Si forma la lamiera senza alcuno stampo: la superficie interna non è influenzata da un mandrino, non ci sono costi di attrezzatura ma la manodopera è più alta. <span class="pag">(p. 78–80)</span></p></article>
+<article class="card"><h3>Mandrino scomponibile</h3><p class="originale" lang="en">Split mandrel</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-scomponibile-t var-scomponibile-d" class="mini-svg"><title id="var-scomponibile-t">Mandrino scomponibile</title><desc id="var-scomponibile-d">Nel caso studio il mandrino si divide all'interno del pezzo: si forma a mano un rientro sul collo e poi si estraggono i pezzi uno per uno.</desc><defs>
+  <pattern id="var-scomponibile-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-scomponibile-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-scomponibile-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-scomponibile-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <line x1="10" y1="62" x2="210" y2="62" class="asse"/>
+    <path d="M40,30 H110 V94 H40 Z" fill="url(#var-scomponibile-tratteggio)" class="contorno"/><path d="M110,40 H170 V84 H110 Z" fill="url(#var-scomponibile-tratteggio)" class="contorno"/>
+    <path d="M34,24 H110 L120,34 H176 V90 H120 L110,100 H34" fill="none" stroke-width="4" stroke-linecap="round" style="stroke:var(--finito)"/></svg></div><p>Per ottenere un rientro, come sul collo del paralume del caso studio, il mandrino si divide all'interno del pezzo e le sue parti si estraggono una per volta dopo la lavorazione a mano. <span class="pag">(p. 79–80)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="stampaggio-lamiera.html">Stampaggio della lamiera</a> – profili simili con stampi accoppiati <span class="pag">(p. 78)</span></li><li><a href="imbutitura-profonda.html">Imbutitura profonda</a> – profili simili con stampi accoppiati <span class="pag">(p. 78)</span></li><li><a href="tornitura-argilla.html">Tornitura dell'argilla</a> – gesto simile al tornio del vasaio <span class="pag">(p. 79–80)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 78–81.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/tornitura-lastra.js"></script>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Curvatura di tubi e profilati – Processi produttivi per il design</title>
+<meta name="description" content="Tubi e profilati metallici vengono piegati a freddo su una matrice rotante, con un mandrino all'interno, o fra rulli: si ottengono strutture continue e fluide, dalle sedie in tubolare alle travi curve.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 1 – Formatura › Metalli</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Curvatura di tubi e profilati</h1>
+  <p class="originale" lang="en">Tube and Section Bending</p>
+  <p class="categoria">Parte 1 – Formatura · Metalli</p>
+  <p class="sintesi">Tubi e profilati metallici vengono piegati a freddo su una matrice rotante, con un mandrino all'interno, o fra rulli: si ottengono strutture continue e fluide, dalle sedie in tubolare alle travi curve.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="2000,2600,2400,2600,2000">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="curvatura-tubi" data-alt="Modello 3D di un tubo d'acciaio piegato in sequenza. La matrice rotante, un cilindro con la morsa, si porta sul punto di curvatura e piega il tubo di 90 gradi. Poi il tubo avanza e ruota sul proprio asse, così la curva successiva si forma su un piano diverso; dopo due curve su piani diversi il tubo forma una struttura tridimensionale e diventa verde.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Carico<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Prima curva<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Avanzamento e rotazione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Seconda curva<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="5">5. Scarico<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Carico</b>Il tubo, pulito e lucidato, viene infilato sul mandrino e bloccato sulla matrice con la morsa. <span class="pag">(p. 99, 101)</span></li>
+    <li><b>Fase 2 – Prima curva</b>La matrice ruota e trascina il tubo: il mandrino impedisce alle pareti di schiacciarsi nel punto di piega e la matrice di pressione segue il tubo per una curva precisa e senza grinze. <span class="pag">(p. 99)</span></li>
+    <li><b>Fase 3 – Avanzamento e rotazione</b>La morsa si apre, il tubo avanza fino al punto della curva successiva e ruota sul proprio asse: la curva seguente si forma su un altro piano. <span class="pag">(p. 101)</span></li>
+    <li><b>Fase 4 – Seconda curva</b>Si ripete la piegatura; il raggio dipende dalla dimensione della matrice, l'angolo da quanto ruota. <span class="pag">(p. 99, 101)</span></li>
+    <li><b>Fase 5 – Scarico</b>La struttura piegata si toglie a mano e si controlla. Non c'è sfrido: si usa tutta la lunghezza del tubo. <span class="pag">(p. 101)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di un tubo d'acciaio piegato in sequenza. La matrice rotante, un cilindro con la morsa, si porta sul punto di curvatura e piega il tubo di 90 gradi. Poi il tubo avanza e ruota sul proprio asse, così la curva successiva si forma su un piano diverso; dopo due curve su piani diversi il tubo forma una struttura tridimensionale e diventa verde.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 40 820 320" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Curvatura con mandrino vista dall'alto</title>
+<desc id="sc-d">Vista dall'alto della curvatubi: la matrice rotante con la morsa, il tubo con il mandrino interno e la matrice di pressione che lo accompagna. Le fasi mostrano il carico, la prima curva a 90°, l'avanzamento con rotazione del tubo, la seconda curva e lo scarico.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- matrice rotante: il suo raggio dà il raggio di curvatura -->
+<g data-k="rot:0,90,0,90,0" data-i="rot:0" data-o="420,200">
+  <circle cx="420" cy="200" r="58" fill="url(#sc-tratteggio)" class="contorno"/>
+  <rect x="436" y="118" width="90" height="12" fill="url(#sc-tratteggio)" class="contorno"/>
+  <rect x="436" y="150" width="90" height="12" fill="url(#sc-tratteggio)" class="contorno"/>
+</g>
+<g class="etichetta"><text x="560" y="250" text-anchor="start">Matrice rotante (raggio di curvatura)</text></g>
+<g class="etichetta"><text x="560" y="110" text-anchor="start">Morsa di serraggio</text></g>
+
+<!-- tubo -->
+<g data-k="op:1,0,0,0,0" data-i="op:1"><path d="M100,140 H560" fill="none" stroke="var(--testo)" stroke-width="26" stroke-linejoin="round"/><path d="M100,140 H560" fill="none" stroke-width="22" stroke-linejoin="round" style="stroke:var(--grezzo)"/></g>
+<g data-k="op:0,1,0,0,0" data-i="op:0"><path d="M100,140 H420 A60,60 0 0 1 480,200 V330" fill="none" stroke="var(--testo)" stroke-width="26" stroke-linejoin="round"/><path d="M100,140 H420 A60,60 0 0 1 480,200 V330" fill="none" stroke-width="22" stroke-linejoin="round" style="stroke:var(--fuso)"/></g>
+<g data-k="op:0,0,1,1,0" data-i="op:0"><circle cx="70" cy="140" r="15" style="fill:var(--fuso)" stroke="var(--testo)" stroke-width="2"/></g>
+<g data-k="op:0,0,1,0,0" data-i="op:0"><path d="M40,140 H420" fill="none" stroke="var(--testo)" stroke-width="26" stroke-linejoin="round"/><path d="M40,140 H420" fill="none" stroke-width="22" stroke-linejoin="round" style="stroke:var(--fuso)"/></g>
+<g data-k="op:0,0,0,1,0" data-i="op:0"><path d="M40,140 H420 A60,60 0 0 1 480,200 V330" fill="none" stroke="var(--testo)" stroke-width="26" stroke-linejoin="round"/><path d="M40,140 H420 A60,60 0 0 1 480,200 V330" fill="none" stroke-width="22" stroke-linejoin="round" style="stroke:var(--fuso)"/></g>
+<g data-k="op:0,0,0,0,1" data-i="op:0"><g><path d="M40,140 H420 A60,60 0 0 1 480,200 V330" fill="none" stroke="var(--testo)" stroke-width="26" stroke-linejoin="round"/><path d="M40,140 H420 A60,60 0 0 1 480,200 V330" fill="none" stroke-width="22" stroke-linejoin="round" style="stroke:var(--finito)"/></g><circle cx="40" cy="140" r="15" style="fill:var(--finito)" stroke="var(--testo)" stroke-width="2"/></g>
+<g class="etichetta"><text x="100" y="110" text-anchor="start">Tubo</text></g>
+<g data-k="op:0,0,1,0,0">
+  <path d="M262,140 A22,22 0 1 1 240,118" class="flusso-linea" fill="none" marker-end="url(#sc-punta)"/>
+  <line x1="180" y1="190" x2="120" y2="190" class="flusso-linea" marker-end="url(#sc-punta)"/>
+  <g class="etichetta"><text x="40" y="236" text-anchor="start">il tubo avanza e ruota sul proprio asse: la prima curva esce dal foglio (vedi vista 3D)</text></g>
+</g>
+
+<!-- mandrino interno e matrice di pressione -->
+<line x1="330" y1="140" x2="426" y2="140" stroke="var(--testo)" stroke-width="6" stroke-dasharray="7 4"/>
+<g class="etichetta"><line x1="360" y1="146" x2="100" y2="325" class="richiamo"/><text x="100" y="330" text-anchor="start">Mandrino interno (evita lo schiacciamento)</text></g>
+<g data-k="tx:0,60,0,60,0" data-i="tx:0"><rect x="300" y="104" width="110" height="16" class="m-stampo contorno"/></g>
+<g class="etichetta"><line x1="330" y1="104" x2="100" y2="67" class="richiamo"/><text x="100" y="72" text-anchor="start">Matrice di pressione (segue il tubo)</text></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>I tipi principali sono due: la curvatura con mandrino, per raggi piccoli, e la curvatura a rulli, per curve ampie e continue su tubi, profilati e barre. <span class="pag">(p. 98)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>Il mandrino, inserito nel tubo, ne evita il collasso. A volte serve un'altra morsa contro le grinze sul lato interno, soprattutto con pareti sottili; senza mandrino si piegano solo pareti spesse. <span class="pag">(p. 99)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>Le macchine a controllo numerico allineano il tubo e ne gestiscono la sequenza di curve. Le semiautomatiche si preparano più in fretta e costano meno; per grandi serie conviene l'automazione completa. <span class="pag">(p. 100–101)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="5" aria-label="Mostra la fase 5 nello schema">Fase 5</button>Piegare invece di tagliare e saldare riduce sprechi e costi. La qualità del lavoro manuale dipende molto dall'esperienza dell'operatore. <span class="pag">(p. 98, 103)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Quasi tutti i metalli: acciaio, alluminio, rame, titanio; i più duttili si piegano più facilmente. <span class="pag">(p. 102)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Da pezzo unico a grande serie. <span class="pag">(p. 98, 102)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Nullo con gli utensili standard; da moderato ad alto con utensili speciali. <span class="pag">(p. 98, 103)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Da basso a moderato; manodopera alta nelle lavorazioni manuali. <span class="pag">(p. 98, 103)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Rapido; la preparazione della macchina può essere lunga. <span class="pag">(p. 98, 103)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Alta; con la piegatura il pezzo guadagna rigidità. <span class="pag">(p. 98, 102)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Più precisa con CNC; a mano l'operatore deve compensare l'imprecisione delle matrici. Valore numerico: <span class="nd">n.d.</span> <span class="pag">(p. 102)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Con mandrino: tubi di norma fino a 80 mm, pareti fino a 2 mm, raggio minimo attorno a 50 mm e fino a 200 mm. A rulli: tubi fino a 1 m di diametro, profili pieni fino a 80 mm, lamiere larghe 4,5 m e spesse fino a 80 mm, raggi sopra i 200 mm. <span class="pag">(p. 102)</span><span class="nota-ocr">Spessore minimo di parete: nel libro 0,5 mm è convertito in 0.002 in (cioè 0,05 mm), quindi le due unità non coincidono.</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Raggio minimo attorno a 50 mm</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-raggio-ok-t v-raggio-ok-d" class="mini-svg"><title id="v-raggio-ok-t">Corretto: Raggio non inferiore a circa 50 mm</title><desc id="v-raggio-ok-d">Con il mandrino il raggio minimo tipico è attorno ai 50 mm.</desc><defs>
+  <pattern id="v-raggio-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-raggio-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-raggio-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-raggio-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,100 H60 A40,40 0 0 0 100,60 V10" fill="none" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" style="stroke:var(--finito)"/><g class="etichetta"><text x="102" y="96" text-anchor="start">R ≈ 50 mm</text></g></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-raggio-ko-t v-raggio-ko-d" class="mini-svg"><title id="v-raggio-ko-t">Da evitare: Curva troppo stretta</title><desc id="v-raggio-ko-d">Sotto il raggio minimo la parete interna si raggrinza o il tubo si schiaccia.</desc><defs>
+  <pattern id="v-raggio-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-raggio-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-raggio-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-raggio-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,100 H88 A8,8 0 0 0 96,92 V10" fill="none" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" style="stroke:var(--finito)"/><circle cx="92" cy="96" r="11" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Con il mandrino il raggio minimo è tipicamente intorno ai 50 mm; la curvatura a rulli, senza mandrino, è limitata a raggi oltre i 200 mm. <span class="pag">(p. 102)</span></p></article>
+<article class="card"><h3>Distanziare le curve</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-vicine-ok-t v-vicine-ok-d" class="mini-svg"><title id="v-vicine-ok-t">Corretto: Curve ben distanziate</title><desc id="v-vicine-ok-d">Fra una curva e l'altra resta un tratto dritto che la macchina può afferrare.</desc><defs>
+  <pattern id="v-vicine-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-vicine-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-vicine-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-vicine-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,100 H50 A20,20 0 0 0 70,80 V50 A20,20 0 0 1 90,30 H150" fill="none" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" style="stroke:var(--finito)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-vicine-ko-t v-vicine-ko-d" class="mini-svg"><title id="v-vicine-ko-t">Da evitare: Curve troppo ravvicinate</title><desc id="v-vicine-ko-d">Più curve vicine possono non stare nella macchina e non essere fattibili.</desc><defs>
+  <pattern id="v-vicine-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-vicine-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-vicine-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-vicine-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,100 H60 A12,12 0 0 0 72,88 V82 A12,12 0 0 1 84,70 H150" fill="none" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" style="stroke:var(--finito)"/><circle cx="74" cy="84" r="16" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Le curve devono stare nella macchina: più curve molto vicine possono non essere realizzabili. <span class="pag">(p. 102)</span></p></article>
+<article class="card"><h3>Il pezzo piegato è più lungo</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sviluppo-ok-t v-sviluppo-ok-d" class="mini-svg"><title id="v-sviluppo-ok-t">Corretto: Calcolare lo sviluppo reale</title><desc id="v-sviluppo-ok-d">Il metallo si allunga all'esterno della curva più di quanto si comprima all'interno: il pezzo piegato risulta un po' più lungo.</desc><defs>
+  <pattern id="v-sviluppo-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sviluppo-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sviluppo-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sviluppo-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,90 H60 A30,30 0 0 0 90,60 V20" fill="none" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" style="stroke:var(--finito)"/><g class="etichetta"><text x="50" y="106" text-anchor="start">L reale &gt; L disegno</text></g></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sviluppo-ko-t v-sviluppo-ko-d" class="mini-svg"><title id="v-sviluppo-ko-t">Da evitare: Taglio uguale alla quota del disegno</title><desc id="v-sviluppo-ko-d">La lunghezza a disegno raramente corrisponde a quella del pezzo dopo la piegatura.</desc><defs>
+  <pattern id="v-sviluppo-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sviluppo-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sviluppo-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sviluppo-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,90 H60 A30,30 0 0 0 90,60 V20" fill="none" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" style="stroke:var(--finito)"/><line x1="90" y1="8" x2="90" y2="20" stroke="var(--ko)" stroke-width="3"/></svg><figcaption>Da evitare</figcaption></figure></div><p>La piegatura stira il materiale all'esterno e lo comprime all'interno, ma il metallo si allunga più facilmente: il pezzo risulta un po' più lungo e la quota a disegno raramente corrisponde alla lunghezza del tubo. <span class="pag">(p. 102)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Le due tecniche elencate nel capitolo.</p><div class="griglia-card"><article class="card"><h3>Curvatura con mandrino</h3><p class="originale" lang="en">Mandrel bending</p><div class="variante-schema"><svg viewBox="0 0 220 130" role="img" aria-labelledby="var-mandrino-t var-mandrino-d" class="mini-svg"><title id="var-mandrino-t">Curvatura con mandrino</title><desc id="var-mandrino-d">Il tubo, con un mandrino all'interno, viene trascinato su una matrice rotante: curve strette senza schiacciamento. È lo schema principale.</desc><defs>
+  <pattern id="var-mandrino-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-mandrino-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-mandrino-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-mandrino-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <circle cx="110" cy="80" r="34" fill="url(#var-mandrino-tratteggio)" class="contorno"/>
+    <path d="M20,46 H110 A34,34 0 0 1 144,80 V124" fill="none" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" style="stroke:var(--fuso)"/></svg></div><p>Per raggi piccoli; applica raggi diversi lungo lo stesso tubo, su qualunque asse, ma solo su diametri relativamente piccoli. È la tecnica dei mobili in tubolare, come la sedia S43 di Mart Stam prodotta da Thonet. <span class="pag">(p. 98–102)</span></p></article>
+<article class="card"><h3>Curvatura a rulli</h3><p class="originale" lang="en">Ring rolling</p><div class="variante-schema"><svg viewBox="0 0 220 130" role="img" aria-labelledby="var-anello-t var-anello-d" class="mini-svg"><title id="var-anello-t">Curvatura a rulli</title><desc id="var-anello-d">Tubo, profilato o lamiera passano avanti e indietro fra tre rulli; uno si avvicina a ogni passata e stringe la curva. Raggi grandi, anche variabili, fino ad anelli completi.</desc><defs>
+  <pattern id="var-anello-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-anello-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-anello-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-anello-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <circle cx="60" cy="90" r="20" fill="url(#var-anello-tratteggio)" class="contorno"/><circle cx="160" cy="90" r="20" fill="url(#var-anello-tratteggio)" class="contorno"/><circle cx="110" cy="40" r="20" fill="url(#var-anello-tratteggio)" class="contorno"/>
+    <path d="M10,96 Q110,52 210,96" fill="none" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" style="stroke:var(--fuso)"/>
+    <line x1="160" y1="124" x2="160" y2="112" class="flusso-linea" marker-end="url(#var-anello-punta)"/></svg></div><p>Il pezzo passa avanti e indietro fra tre rulli; uno si sposta verso l'interno a ogni passata e stringe gradualmente la curva per evitare crepe e grinze. Il raggio può variare: si ottengono archi non circolari, anelli completi e perfino curve tridimensionali come i binari delle montagne russe. Sulla lamiera si chiama calandratura. <span class="pag">(p. 98, 102)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="curvatura-vapore.html">Curvatura a vapore</a> – il precursore del mobile in tubolare <span class="pag">(p. 98)</span></li><li><a href="piegatura-pressa.html">Piegatura alla pressa piegatrice</a> – per profili cavi rastremati <span class="pag">(p. 98)</span></li><li><a href="saldatura-arco.html">Saldatura ad arco</a> – per unire i tratti piegati <span class="pag">(p. 98, 102)</span></li><li><a href="forgiatura.html">Forgiatura</a> – la laminazione-forgiatura dà profili simili ma pieni <span class="pag">(p. 99, 102)</span></li><li><a href="rastremazione.html">Rastremazione (swaging)</a> – processo correlato per i tubi <span class="pag">(p. 98)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 98–103.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/curvatura-tubi.js"></script>
+</body>
+</html>

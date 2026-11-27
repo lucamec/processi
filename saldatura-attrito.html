@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saldatura per attrito – Processi produttivi per il design</title>
+<meta name="description" content="Due pezzi metallici strofinati l'uno contro l'altro si scaldano per attrito fino a plastificarsi, poi una forte spinta assiale li unisce: un giunto allo stato solido, senza fusione, con resistenza simile al materiale base.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 3 – Giunzione › Termico</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Saldatura per attrito</h1>
+  <p class="originale" lang="en">Friction Welding</p>
+  <p class="categoria">Parte 3 – Giunzione · Termico</p>
+  <p class="sintesi">Due pezzi metallici strofinati l'uno contro l'altro si scaldano per attrito fino a plastificarsi, poi una forte spinta assiale li unisce: un giunto allo stato solido, senza fusione, con resistenza simile al materiale base.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="1800,2800,2400,2000">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="saldatura-attrito" data-alt="Modello 3D di una saldatrice per attrito rotativa. Due barre d'acciaio sono strette in due mandrini; quella di sinistra gira mentre l'altra avanza fino a toccarla. Le facce a contatto diventano incandescenti; la rotazione si ferma, la spinta aumenta e attorno al giunto si gonfia un collare di bava arancione. Un utensile toglie la bava e la barra saldata diventa verde.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Carico<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Attrito<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Pressione assiale<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Rimozione della bava<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Carico</b>I due pezzi si serrano nei mandrini; almeno uno deve essere simmetrico rispetto all'asse di rotazione. <span class="pag">(p. 295)</span></li>
+    <li><b>Fase 2 – Attrito</b>Un pezzo ruota e l'altro, fermo, viene spinto contro: l'attrito scalda e plastifica l'interfaccia, senza raggiungere la fusione. <span class="pag">(p. 294–295)</span></li>
+    <li><b>Fase 3 – Pressione assiale</b>Dopo un tempo stabilito, circa un minuto, la rotazione si ferma e la spinta sale a circa 20 tonnellate: i materiali si uniscono e attorno al giunto si forma la bava. <span class="pag">(p. 295)</span></li>
+    <li><b>Fase 4 – Rimozione della bava</b>La bava si toglie, per esempio lucidandola; il giunto interessa tutta l'interfaccia. <span class="pag">(p. 295)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una saldatrice per attrito rotativa. Due barre d'acciaio sono strette in due mandrini; quella di sinistra gira mentre l'altra avanza fino a toccarla. Le facce a contatto diventano incandescenti; la rotazione si ferma, la spinta aumenta e attorno al giunto si gonfia un collare di bava arancione. Un utensile toglie la bava e la barra saldata diventa verde.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 90 820 240" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Saldatura rotativa per attrito, in sezione assiale</title>
+<desc id="sc-d">Sezione assiale di due barre fra un mandrino rotante e uno fisso. Le fasi mostrano il carico, l'attrito che plastifica l'interfaccia, la spinta assiale che forma la bava e il giunto finito dopo la rimozione della bava.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<line x1="80" y1="200" x2="740" y2="200" class="asse"/>
+<!-- mandrino rotante + pezzo sinistro -->
+<rect x="80" y="130" width="90" height="140" class="macchina"/>
+<path d="M147,200 A22,22 0 1 1 125,178" class="flusso-linea" fill="none" marker-end="url(#sc-punta)"/>
+<g data-k="tx:0,0,0,0" data-i="tx:-40">
+  <rect x="170" y="160" width="236" height="80" class="m-stampo contorno"/>
+</g>
+<!-- pezzo destro + mandrino fisso, spinto -->
+<g data-k="tx:40,0,-14,-14" data-i="tx:40">
+  <rect x="414" y="160" width="236" height="80" class="m-stampo contorno"/>
+  <rect x="650" y="130" width="90" height="140" class="macchina"/>
+  <g data-k="op:0,1,1,0"><line x1="780" y1="200" x2="744" y2="200" class="flusso-linea" marker-end="url(#sc-punta)"/></g>
+</g>
+<g class="etichetta"><text x="60" y="116" text-anchor="start">Mandrino rotante</text></g><g class="etichetta"><text x="640" y="116" text-anchor="start">Mandrino fisso</text></g>
+<!-- interfaccia plastificata e bava -->
+<rect x="396" y="160" width="20" height="80" style="fill:var(--fuso)" data-k="op:0,1,1,0" data-i="op:0"/>
+<g data-k="op:0,0,1,0;sx:0,0,1,1" data-i="op:0;sx:0" data-o="406,200">
+  <path d="M388,160 Q406,132 424,160 Z M388,240 Q406,268 424,240 Z" style="fill:var(--fuso)"/>
+</g>
+<rect x="398" y="160" width="12" height="80" class="m-finito contorno" data-k="op:0,0,0,1" data-i="op:0"/>
+<g data-k="op:0,1,0,0"><g class="etichetta"><text x="250" y="310" text-anchor="start">l'attrito scalda e plastifica le facce, sotto la fusione</text></g></g>
+<g data-k="op:0,0,1,0"><g class="etichetta"><text x="250" y="310" text-anchor="start">la rotazione si ferma, la spinta sale (~20 t): si forma la bava</text></g></g>
+<g data-k="op:0,0,0,1"><g class="etichetta"><text x="250" y="310" text-anchor="start">la bava si toglie; il giunto ha la resistenza del materiale base</text></g></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Quattro tecniche principali: rotativa (la più antica e diffusa), lineare, orbitale e la più recente friction stir, brevettata nel 1991. <span class="pag">(p. 294)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>Poiché non si arriva alla fusione, si saldano metalli inadatti alla saldatura per fusione ad arco o a fascio. <span class="pag">(p. 294)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>È un processo allo stato solido: la zona termicamente alterata è piccola e il ritiro, quindi la distorsione, è minimo anche su giunti lunghi. Non serve gravità: si può saldare anche capovolti. <span class="pag">(p. 296)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Si uniscono anche metalli diversi, come alluminio e rame o alluminio e inox, e spessori diversi. Non si aggiungono flussi, fili o gas, e non si producono scarti. <span class="pag">(p. 296–297)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>La maggior parte dei metalli ferrosi e non ferrosi: acciaio a basso carbonio, inox, leghe di alluminio, rame, piombo, titanio, magnesio, zinco e compositi a matrice metallica; la lineare è in sviluppo per alcuni legni. <span class="pag">(p. 296–297)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Grandi serie. <span class="pag">(p. 294)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Nessuno per rotativa, lineare e orbitale; utensili economici per il friction stir. Macchine molto costose. <span class="pag">(p. 294, 296–297)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Da basso a moderato. <span class="pag">(p. 294)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Rapido per rotativa, lineare e orbitale; più lento il friction stir, che percorre tutto il giunto (5 mm di alluminio a circa 12 mm al secondo). <span class="pag">(p. 294, 297)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Giunto ermetico di alta integrità, con resistenza simile al materiale base. <span class="pag">(p. 294)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Poca distorsione anche su giunti lunghi. Tolleranze numeriche: <span class="nd">n.d.</span> <span class="pag">(p. 294, 296)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Rotativa, lineare e orbitale: giunti sotto circa 2.000 mm². Friction stir: da 1,2 a 50 mm, fino a 150 mm saldando dai due lati; la microsaldatura scende a 0,3 mm. <span class="pag">(p. 296)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Un pezzo simmetrico per la rotativa</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-simmetria-ok-t v-simmetria-ok-d" class="mini-svg"><title id="v-simmetria-ok-t">Corretto: Almeno un pezzo simmetrico rispetto all'asse</title><desc id="v-simmetria-ok-d">Nella saldatura rotativa almeno uno dei due pezzi deve poter ruotare attorno al proprio asse.</desc><defs>
+  <pattern id="v-simmetria-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-simmetria-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-simmetria-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-simmetria-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="50" width="60" height="30" class="m-stampo contorno"/><rect x="80" y="40" width="60" height="50" class="m-stampo contorno"/><line x1="10" y1="65" x2="150" y2="65" class="asse"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-simmetria-ko-t v-simmetria-ko-d" class="mini-svg"><title id="v-simmetria-ko-t">Da evitare: Due pezzi asimmetrici</title><desc id="v-simmetria-ko-d">Pezzi irregolari non si fanno ruotare: servono la saldatura lineare o orbitale.</desc><defs>
+  <pattern id="v-simmetria-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-simmetria-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-simmetria-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-simmetria-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,40 H80 V90 H50 Z" class="m-stampo contorno"/><path d="M80,40 H140 L120,90 H80 Z" class="m-stampo contorno"/><circle cx="80" cy="65" r="18" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>La saldatura rotativa richiede che almeno un pezzo sia simmetrico rispetto all'asse di rotazione; per gli altri si usano lineare e orbitale. <span class="pag">(p. 295)</span></p></article>
+<article class="card"><h3>Superficie del giunto limitata</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sezione-ok-t v-sezione-ok-d" class="mini-svg"><title id="v-sezione-ok-t">Corretto: Giunto sotto i 2.000 mm²</title><desc id="v-sezione-ok-d">Nelle tecniche rotativa, lineare e orbitale la superficie del giunto resta sotto circa 2.000 mm².</desc><defs>
+  <pattern id="v-sezione-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sezione-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sezione-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sezione-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="60" y="40" width="40" height="40" class="m-finito contorno"/><g class="etichetta"><text x="80" y="104" text-anchor="middle">&lt; 2.000 mm²</text></g></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sezione-ko-t v-sezione-ko-d" class="mini-svg"><title id="v-sezione-ko-t">Da evitare: Giunto troppo esteso</title><desc id="v-sezione-ko-d">Una superficie di giunto molto grande supera le capacità delle macchine: si usa il friction stir lungo la linea.</desc><defs>
+  <pattern id="v-sezione-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sezione-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sezione-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sezione-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="20" width="120" height="90" class="m-finito contorno"/><circle cx="80" cy="65" r="30" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Nelle tecniche rotativa, lineare e orbitale il giunto resta sotto circa 2.000 mm². <span class="pag">(p. 296)</span></p></article>
+<article class="card"><h3>Moto relativo sul piano del giunto</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-piano-ok-t v-piano-ok-d" class="mini-svg"><title id="v-piano-ok-t">Corretto: Pezzi che scorrono sul piano del giunto</title><desc id="v-piano-ok-d">I due pezzi devono potersi muovere l'uno rispetto all'altro sullo stesso piano del giunto.</desc><defs>
+  <pattern id="v-piano-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-piano-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-piano-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-piano-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="40" width="60" height="50" class="m-stampo contorno"/><rect x="80" y="40" width="60" height="50" class="m-stampo contorno"/><line x1="110" y1="30" x2="110" y2="10" class="flusso-linea" marker-end="url(#v-piano-ok-punta)"/><line x1="110" y1="100" x2="110" y2="120" class="flusso-linea" marker-end="url(#v-piano-ok-punta)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-piano-ko-t v-piano-ko-d" class="mini-svg"><title id="v-piano-ko-t">Da evitare: Giunto incastrato</title><desc id="v-piano-ko-d">Se una parte non può oscillare o ruotare sul piano del giunto, l'attrito non si genera.</desc><defs>
+  <pattern id="v-piano-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-piano-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-piano-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-piano-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,40 H90 V60 H70 V90 H20 Z" class="m-stampo contorno"/><path d="M90,40 H140 V90 H70 V60 H90 Z" class="m-stampo contorno"/><circle cx="80" cy="60" r="14" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>I pezzi devono potersi muovere l'uno rispetto all'altro sul piano del giunto; il friction stir invece segue anche circonferenze e profili 3D a qualsiasi angolo. <span class="pag">(p. 296)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Lo schema principale mostra la saldatura rotativa; queste sono le altre tecniche descritte nel capitolo.</p><div class="griglia-card"><article class="card"><h3>Lineare</h3><p class="originale" lang="en">Linear friction welding (LFW)</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-lineare-t var-lineare-d" class="mini-svg"><title id="var-lineare-t">Lineare (LFW)</title><desc id="var-lineare-d">I pezzi oscillano uno contro l'altro, fino a 75 Hz e ±3 mm, poi la spinta aumenta: per parti non rotonde, come pale di turbina, dischi freno, cerchioni; in sviluppo anche per quercia e faggio.</desc><defs>
+  <pattern id="var-lineare-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-lineare-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-lineare-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-lineare-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="30" y="20" width="160" height="40" class="m-stampo contorno"/><rect x="30" y="64" width="160" height="40" class="m-stampo contorno"/>
+    <rect x="30" y="58" width="160" height="8" style="fill:var(--fuso)"/><line x1="70" y1="40" x2="40" y2="40" class="flusso-linea" marker-end="url(#var-lineare-punta)"/><line x1="150" y1="40" x2="180" y2="40" class="flusso-linea" marker-end="url(#var-lineare-punta)"/></svg></div><p>Oscillazione rettilinea per pezzi non rotondi, come i dischi palettati dei motori a reazione. <span class="pag">(p. 294–295, 297)</span></p></article>
+<article class="card"><h3>Orbitale</h3><p class="originale" lang="en">Orbital friction welding (OFW)</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-orbitale-t var-orbitale-d" class="mini-svg"><title id="var-orbitale-t">Orbitale (OFW)</title><desc id="var-orbitale-d">Come la lineare ma con un moto orbitale; per i metalli non ha ancora usi commerciali, è usata per le plastiche (saldatura a vibrazione).</desc><defs>
+  <pattern id="var-orbitale-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-orbitale-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-orbitale-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-orbitale-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="50" y="30" width="120" height="30" class="m-stampo contorno"/><rect x="50" y="64" width="120" height="30" class="m-stampo contorno"/>
+    <circle cx="110" cy="45" r="10" fill="none" stroke="var(--fuso)" stroke-width="3"/></svg></div><p>Oscillazione orbitale; usata soprattutto per le plastiche. <span class="pag">(p. 294–295)</span></p></article>
+<article class="card"><h3>Friction stir</h3><p class="originale" lang="en">Friction stir welding (FSW)</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-fsw-t var-fsw-d" class="mini-svg"><title id="var-fsw-t">Friction stir (FSW)</title><desc id="var-fsw-d">Un utensile rotante non consumabile avanza lungo il giunto e rimescola il materiale; spalla e barra d'appoggio lo contengono. Lamiere da 1,2 a 50 mm, pannelli di estrusi, giunti di testa, a sovrapposizione, a T e d'angolo.</desc><defs>
+  <pattern id="var-fsw-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-fsw-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-fsw-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-fsw-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="20" y="70" width="88" height="24" class="m-stampo contorno"/><rect x="112" y="70" width="88" height="24" class="m-stampo contorno"/><rect x="10" y="94" width="200" height="10" class="scuro"/>
+    <rect x="96" y="16" width="28" height="48" class="macchina"/><rect x="104" y="64" width="12" height="24" class="scuro"/></svg></div><p>Utensile rotante che avanza lungo il giunto; nato per i pannelli navali di estrusi di alluminio, usato anche per carrozze ferroviarie e prodotti di elettronica. <span class="pag">(p. 294, 296)</span></p></article>
+<article class="card"><h3>Inerziale</h3><p class="originale" lang="en">Inertia friction welding</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-inerziale-t var-inerziale-d" class="mini-svg"><title id="var-inerziale-t">Inerziale</title><desc id="var-inerziale-d">Il pezzo rotante è collegato a un volano: portato in velocità lo si lascia girare libero, e l'energia accumulata basta a saldare quando i pezzi si toccano.</desc><defs>
+  <pattern id="var-inerziale-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-inerziale-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-inerziale-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-inerziale-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <circle cx="50" cy="62" r="40" class="m-stampo contorno"/><rect x="90" y="48" width="50" height="28" class="m-stampo contorno"/><rect x="144" y="48" width="50" height="28" class="m-stampo contorno"/>
+    <path d="M68,62 A18,18 0 1 1 50,44" class="flusso-linea" fill="none" marker-end="url(#var-inerziale-punta)"/></svg></div><p>L'energia di un volano lasciato girare libero fornisce la rotazione. <span class="pag">(p. 295)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="saldatura-arco.html">Saldatura ad arco</a> – più diffusa, qualità simile <span class="pag">(p. 294)</span></li><li><a href="saldatura-resistenza.html">Saldatura a resistenza</a> – più diffusa, qualità simile <span class="pag">(p. 294)</span></li><li><a href="saldatura-fascio.html">Saldatura a fascio</a> – saldatura per fusione <span class="pag">(p. 294)</span></li><li><a href="saldatura-vibrazione.html">Saldatura a vibrazione</a> – il principio applicato alle plastiche <span class="pag">(p. 294)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 294–297.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/saldatura-attrito.js"></script>
+</body>
+</html>

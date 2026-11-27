@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Galvanostegia (elettrodeposizione) – Processi produttivi per il design</title>
+<meta name="description" content="In un bagno elettrolitico una corrente continua deposita un sottile strato di metallo, da meno di 1 a 25 µm, su un altro metallo, con un forte legame metallurgico: aspetto e prestazioni di un metallo pregiato su una base più economica.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 4 – Finitura › Processi additivi (rivestimenti)</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Galvanostegia (elettrodeposizione)</h1>
+  <p class="originale" lang="en">Electroplating</p>
+  <p class="categoria">Parte 4 – Finitura · Processi additivi (rivestimenti)</p>
+  <p class="sintesi">In un bagno elettrolitico una corrente continua deposita un sottile strato di metallo, da meno di 1 a 25 µm, su un altro metallo, con un forte legame metallurgico: aspetto e prestazioni di un metallo pregiato su una base più economica.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="2000,1800,2600,1800">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="galvanostegia" data-alt="Modello 3D di una vasca galvanica con due anodi d'argento ai lati. Tre cucchiai appesi a un filo si puliscono in una prima vasca fra le bollicine, poi scendono nel bagno; piccoli ioni chiari viaggiano dagli anodi ai cucchiai, che oscillano e diventano lentamente argentati. Infine una spazzola lucidante li porta a una finitura brillante, colorata di verde.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Pulizia<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Montaggio<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Deposizione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Lucidatura<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Pulizia</b>Il pezzo, già lucidato, si sgrassa in una soluzione caustica calda; un bagno diluito toglie l'ossido e viene poi neutralizzato. <span class="pag">(p. 365, 367)</span></li>
+    <li><b>Fase 2 – Montaggio</b>I pezzi si montano su un telaio o si appendono a un filo e si collegano alla corrente continua. <span class="pag">(p. 365–366)</span></li>
+    <li><b>Fase 3 – Deposizione</b>Immerso nell'elettrolita, il pezzo si ricopre di un film di metallo; gli anodi, in cestelli forati, si sciolgono e reintegrano gli ioni. Nel caso studio 25 µm d'argento richiedono circa un'ora. <span class="pag">(p. 365, 367)</span></li>
+    <li><b>Fase 4 – Lucidatura</b>Uscita dal bagno la superficie non è ancora brillante: si lucida finemente con pasta abrasiva molto fine. <span class="pag">(p. 365, 367)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una vasca galvanica con due anodi d'argento ai lati. Tre cucchiai appesi a un filo si puliscono in una prima vasca fra le bollicine, poi scendono nel bagno; piccoli ioni chiari viaggiano dagli anodi ai cucchiai, che oscillano e diventano lentamente argentati. Infine una spazzola lucidante li porta a una finitura brillante, colorata di verde.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 10 820 350" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Vasca galvanica, in sezione</title>
+<desc id="sc-d">Sezione di una vasca con due anodi ai lati e il pezzo appeso al centro. Le fasi mostrano la pulizia, l'immersione del pezzo collegato al negativo, gli ioni che si depositano formando lo strato e la lucidatura finale.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<path d="M120,110 V330 H620 V110" fill="none" stroke="var(--testo)" stroke-width="5"/>
+<rect x="126" y="130" width="488" height="196" style="fill:var(--flusso)" fill-opacity="0.15"/>
+<g class="etichetta"><text x="130" y="350" text-anchor="start">Elettrolita con il metallo di rivestimento in forma di ioni</text></g>
+<!-- anodi in cestelli forati -->
+<rect x="150" y="100" width="40" height="200" fill="#d9dde2" class="contorno"/><rect x="550" y="100" width="40" height="200" fill="#d9dde2" class="contorno"/>
+<g class="etichetta"><text x="20" y="80" text-anchor="start">Anodi (+): si sciolgono e reintegrano gli ioni</text></g>
+<!-- pezzo e filo -->
+<g data-k="ty:-120,0,0,-120;vx:0,0,4,0" data-i="ty:-120;vx:0">
+  <line x1="370" y1="20" x2="370" y2="150" stroke="var(--testo)" stroke-width="2"/>
+  <path d="M340,150 H400 V280 Q370,300 340,280 Z" fill="#b8a888" class="contorno"/>
+  <path d="M340,150 H400 V280 Q370,300 340,280 Z" fill="none" stroke-width="6" style="stroke:#d9dde2" data-k="op:0,0,1,0" data-i="op:0"/>
+  <path d="M340,150 H400 V280 Q370,300 340,280 Z" fill="none" stroke-width="6" style="stroke:var(--finito)" data-k="op:0,0,0,1" data-i="op:0"/>
+</g>
+<g class="etichetta"><text x="420" y="80" text-anchor="start">Pezzo (−), appeso a un filo o a un telaio</text></g>
+<!-- ioni -->
+<g data-k="op:0,0,1,0">
+  <line x1="200" y1="170" x2="330" y2="180" class="flusso-linea" marker-end="url(#sc-punta)"/><line x1="200" y1="210" x2="330" y2="220" class="flusso-linea" marker-end="url(#sc-punta)"/><line x1="200" y1="250" x2="330" y2="260" class="flusso-linea" marker-end="url(#sc-punta)"/>
+  <line x1="540" y1="170" x2="410" y2="180" class="flusso-linea" marker-end="url(#sc-punta)"/><line x1="540" y1="210" x2="410" y2="220" class="flusso-linea" marker-end="url(#sc-punta)"/><line x1="540" y1="250" x2="410" y2="260" class="flusso-linea" marker-end="url(#sc-punta)"/>
+  <g class="etichetta"><text x="20" y="30" text-anchor="start">corrente continua: gli ioni si depositano sul pezzo</text></g>
+</g>
+<g data-k="op:1,0,0,0"><g class="etichetta"><text x="20" y="30" text-anchor="start">sgrassaggio caldo e bagni che tolgono l'ossido</text></g></g>
+<g data-k="op:0,1,0,0"><g class="etichetta"><text x="20" y="30" text-anchor="start">il pezzo si collega al polo negativo e si immerge</text></g></g>
+<g data-k="op:0,0,0,1"><g class="etichetta"><text x="20" y="30" text-anchor="start">lucidatura finale (&quot;colouring over&quot;): finitura riflettente</text></g></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Il rivestimento, di metallo puro o di lega, forma uno strato integrale con il pezzo: ogni ione si lega al vicino. È il metodo di placcatura più affidabile, ripetibile e controllabile. <span class="pag">(p. 364)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>Per un rivestimento completo i pezzi si appendono a un filo e si agitano nel bagno; su un telaio resterebbe un punto non rivestito. Zone da escludere si mascherano con cere o vernici speciali. <span class="pag">(p. 366)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>La velocità dipende da temperatura e composizione dell'elettrolita: circa 25 µm all'ora per l'argento, fino a 250 per il nichel; i processi lenti danno spessori più precisi. <span class="pag">(p. 365–366)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>I metalli più usati sono stagno, cromo, rame, nichel, argento, oro e rodio, ognuno con proprie qualità: brillantezza, resistenza all'ossidazione, conducibilità, igiene. <span class="pag">(p. 364)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Quasi tutti i metalli come base, con diversi livelli di purezza ed efficienza; rivestimenti di stagno, cromo, rame, nichel, argento, oro e rodio. Alcune plastiche, soprattutto l'ABS, dopo uno strato chimico. Il nichel non va usato a contatto con la pelle. <span class="pag">(p. 364, 366)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Da pezzo unico a grandi serie. <span class="pag">(p. 364)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Nessuno; possono servire telai per tenere i pezzi in vasca. <span class="pag">(p. 364, 366)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Alto, determinato dal metallo; manodopera da moderata ad alta secondo l'applicazione. <span class="pag">(p. 364, 366)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Moderato, secondo metallo e spessore: argento circa 25 µm all'ora, nichel fino a 250 µm all'ora. <span class="pag">(p. 364, 366)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Dipende dalla finitura del pezzo prima del trattamento; il metallo si sceglie per qualità come brillantezza o resistenza alla corrosione. <span class="pag">(p. 364, 366)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Strati da meno di 1 µm fino a 25 µm (nichel intermedio fino a 10 µm, oro decorativo circa 1 µm); spessori più precisi con deposizioni lente. <span class="pag">(p. 364–366)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Limitate dalla vasca; valori numerici: <span class="nd">n.d.</span> <span class="pag">(p. 364–367)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Superficie preparata</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-superficie-ok-t v-superficie-ok-d" class="mini-svg"><title id="v-superficie-ok-t">Corretto: Superficie lucidata prima</title><desc id="v-superficie-ok-d">Lo strato è troppo sottile per nascondere graffi: la finitura dipende dalla superficie di partenza, che va lucidata.</desc><defs>
+  <pattern id="v-superficie-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-superficie-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-superficie-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-superficie-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="60" width="120" height="30" fill="#b8a888" class="contorno"/><rect x="20" y="54" width="120" height="6" fill="#d9dde2" stroke="var(--testo)" stroke-width="0.5"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-superficie-ko-t v-superficie-ko-d" class="mini-svg"><title id="v-superficie-ko-t">Da evitare: Graffi sotto il rivestimento</title><desc id="v-superficie-ko-d">I difetti del pezzo restano visibili sotto il metallo depositato.</desc><defs>
+  <pattern id="v-superficie-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-superficie-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-superficie-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-superficie-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,60 l20,0 l4,6 l4,-6 l40,0 l4,6 l4,-6 l44,0 V90 H20 Z" fill="#b8a888" class="contorno"/><path d="M20,56 l20,0 l4,6 l4,-6 l40,0 l4,6 l4,-6 l44,0" fill="none" stroke="#d9dde2" stroke-width="5"/><circle cx="44" cy="62" r="10" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Lo strato è troppo sottile per coprire graffi e imperfezioni: la qualità dipende dalla finitura del pezzo prima del trattamento. <span class="pag">(p. 364, 366)</span></p></article>
+<article class="card"><h3>Punti di contatto</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-contatto-ok-t v-contatto-ok-d" class="mini-svg"><title id="v-contatto-ok-t">Corretto: Contatto in un punto nascosto</title><desc id="v-contatto-ok-d">Il telaio lascia un segno nel punto di contatto: si riduce toccando il pezzo fra due punti piccoli o in una zona non visibile; per piccole serie si usa il filo, agitando i pezzi.</desc><defs>
+  <pattern id="v-contatto-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-contatto-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-contatto-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-contatto-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="40" y="40" width="80" height="60" fill="#d9dde2" class="contorno"/><line x1="80" y1="100" x2="80" y2="120" stroke="var(--testo)" stroke-width="3"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-contatto-ko-t v-contatto-ko-d" class="mini-svg"><title id="v-contatto-ko-t">Da evitare: Contatto sulla faccia a vista</title><desc id="v-contatto-ko-d">Il segno del contatto resta non rivestito sulla parte in vista.</desc><defs>
+  <pattern id="v-contatto-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-contatto-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-contatto-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-contatto-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="40" y="40" width="80" height="60" fill="#d9dde2" class="contorno"/><circle cx="80" cy="60" r="4" fill="#b8a888"/><line x1="80" y1="10" x2="80" y2="56" stroke="var(--testo)" stroke-width="3"/><circle cx="80" cy="60" r="14" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Il pezzo deve essere collegato alla corrente: il telaio lascia un segno visibile nel punto di contatto, da ridurre con due piccoli punti o in una zona nascosta. <span class="pag">(p. 366)</span></p></article>
+<article class="card"><h3>Strati intermedi</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-intermedio-ok-t v-intermedio-ok-d" class="mini-svg"><title id="v-intermedio-ok-t">Corretto: Strato intermedio fra metalli incompatibili</title><desc id="v-intermedio-ok-d">Metalli che non si legano o si contaminano richiedono uno strato intermedio, per esempio nichel fra ottone e oro.</desc><defs>
+  <pattern id="v-intermedio-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-intermedio-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-intermedio-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-intermedio-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="64" width="120" height="26" fill="#c9a24a" class="contorno"/><rect x="20" y="56" width="120" height="8" fill="#a8b0b8"/><rect x="20" y="50" width="120" height="6" fill="#e0c050"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-intermedio-ko-t v-intermedio-ko-d" class="mini-svg"><title id="v-intermedio-ko-t">Da evitare: Oro direttamente sull'ottone</title><desc id="v-intermedio-ko-d">L'ottone altera resistenza e durata della doratura.</desc><defs>
+  <pattern id="v-intermedio-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-intermedio-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-intermedio-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-intermedio-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="64" width="120" height="26" fill="#c9a24a" class="contorno"/><rect x="20" y="58" width="120" height="6" fill="#e0c050"/><circle cx="80" cy="62" r="14" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Metalli che non si legano fra loro si uniscono con uno strato compatibile con entrambi; per esempio il nichel fa da barriera fra ottone e oro. <span class="pag">(p. 364, 366)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Alcune possibilità descritte nel capitolo.</p><div class="griglia-card"><article class="card"><h3>Strati livellanti</h3><p class="originale" lang="en">Nickel and copper intermediate layers</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-livellante-t var-livellante-d" class="mini-svg"><title id="var-livellante-t">Strati livellanti di nichel e rame</title><desc id="var-livellante-d">Nichel e rame, depositati in quantità sufficiente, coprono piccole imperfezioni e danno una base liscia e brillante; il nichel intermedio arriva a 10 µm. Il cromo su nichel resta insuperato per brillantezza e durata.</desc><defs>
+  <pattern id="var-livellante-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-livellante-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-livellante-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-livellante-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M20,90 l20,-6 l20,6 l20,-6 l20,6 l20,-6 l20,6 l20,-6 l20,6 l20,-6 V104 H20 Z" fill="#b8a888" class="contorno"/>
+    <rect x="20" y="70" width="200" height="16" fill="#a8b0b8"/><rect x="20" y="64" width="200" height="6" fill="#d9dde2" stroke="var(--testo)" stroke-width="0.5"/></svg></div><p>Coprono piccoli difetti e danno una base brillante; il cromo su nichel è il più durevole. <span class="pag">(p. 366)</span></p></article>
+<article class="card"><h3>Plastiche metallizzate</h3><p class="originale" lang="en">Electroplated plastics</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-plastica-t var-plastica-d" class="mini-svg"><title id="var-plastica-t">Plastiche metallizzate</title><desc id="var-plastica-d">Alcune plastiche, soprattutto l'ABS che sopporta i 60 °C del bagno, si rivestono dopo un primo strato chimico; non c'è legame metallurgico, quindi la durata è minore.</desc><defs>
+  <pattern id="var-plastica-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-plastica-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-plastica-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-plastica-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="20" y="60" width="200" height="34" class="m-grezzo contorno"/><rect x="20" y="54" width="200" height="6" fill="#c27a4a"/><rect x="20" y="48" width="200" height="6" fill="#d9dde2" stroke="var(--testo)" stroke-width="0.5"/></svg></div><p>Su un primo strato chimico; meno durevoli per mancanza di legame metallurgico. <span class="pag">(p. 364, 366)</span></p></article>
+<article class="card"><h3>Brunitura dell'argento</h3><p class="originale" lang="en">Blackening</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-brunitura-t var-brunitura-d" class="mini-svg"><title id="var-brunitura-t">Brunitura dell'argento</title><desc id="var-brunitura-d">L'argento si ossida: si annerisce chimicamente e poi si lucidano i rilievi, per far risaltare i dettagli nei gioielli.</desc><defs>
+  <pattern id="var-brunitura-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-brunitura-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-brunitura-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-brunitura-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M20,90 V60 Q50,30 80,60 Q110,90 140,60 Q170,30 200,60 V90 Z" fill="#3a3e44" class="contorno"/>
+    <path d="M38,44 Q50,30 62,44 M158,44 Q170,30 182,44" fill="none" stroke="#d9dde2" stroke-width="6"/></svg></div><p>Annerimento chimico e lucidatura dei rilievi. <span class="pag">(p. 365–366)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="zincatura.html">Zincatura a caldo</a> – altro modo di rivestire di metallo <span class="pag">(p. 364)</span></li><li><a href="metallizzazione-sottovuoto.html">Metallizzazione sottovuoto</a> – altro modo di rivestire di metallo <span class="pag">(p. 364)</span></li><li><a href="verniciatura-spruzzo.html">Verniciatura a spruzzo</a> – vernici ad alto contenuto metallico, senza legame metallurgico <span class="pag">(p. 364)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 364–367.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/galvanostegia.js"></script>
+</body>
+</html>

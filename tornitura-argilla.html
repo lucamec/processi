@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tornitura dell'argilla – Processi produttivi per il design</title>
+<meta name="description" content="Al tornio del vasaio una massa d'argilla viene centrata, aperta e tirata verso l'alto con le mani fino a diventare un vaso: oggetti a simmetria di rotazione, ognuno diverso, senza alcuno stampo.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 1 – Formatura › Vetro e ceramica</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Tornitura dell'argilla</h1>
+  <p class="originale" lang="en">Clay Throwing</p>
+  <p class="categoria">Parte 1 – Formatura · Vetro e ceramica</p>
+  <p class="sintesi">Al tornio del vasaio una massa d'argilla viene centrata, aperta e tirata verso l'alto con le mani fino a diventare un vaso: oggetti a simmetria di rotazione, ognuno diverso, senza alcuno stampo.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="2200,2000,2600,2400,2200">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="tornitura-argilla" data-alt="Modello 3D di un tornio da vasaio, con l'argilla tagliata a metà. Una massa arancione centrata sulla testa del tornio, che gira, viene aperta a ciambella, poi tirata in un cilindro a parete sottile e infine modellata come un vaso con il collo. Alla fine il vaso, essiccato e cotto, diventa verde.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Centratura<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Apertura<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Tiraggio del cilindro<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Modellatura<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="5">5. Rifinitura ed essiccazione<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Centratura</b>La dose di argilla, impastata e lavorata a mano, viene lanciata sul piatto e centrata sul tornio in rotazione finché è perfettamente simmetrica. <span class="pag">(p. 169–170)</span></li>
+    <li><b>Fase 2 – Apertura</b>Il vasaio apre la massa in una forma a ciambella. <span class="pag">(p. 170)</span></li>
+    <li><b>Fase 3 – Tiraggio del cilindro</b>L'argilla viene tirata verso l'alto in un cilindro a parete uniforme: si parte sempre così, per distribuire bene spessore e tensioni. <span class="pag">(p. 169–170)</span></li>
+    <li><b>Fase 4 – Modellatura</b>Raggiunta l'altezza, il cilindro si modella nella forma voluta. <span class="pag">(p. 169)</span></li>
+    <li><b>Fase 5 – Rifinitura ed essiccazione</b>Il pezzo asciuga fino alla consistenza del cuoio, si rifila e si completa con piedi e manici; poi si cuoce, nel caso studio per 8–12 ore. <span class="pag">(p. 169–170)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di un tornio da vasaio, con l'argilla tagliata a metà. Una massa arancione centrata sulla testa del tornio, che gira, viene aperta a ciambella, poi tirata in un cilindro a parete sottile e infine modellata come un vaso con il collo. Alla fine il vaso, essiccato e cotto, diventa verde.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 60 820 320" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Tornitura al tornio in sezione assiale</title>
+<desc id="sc-d">Sezione verticale della testa del tornio con l'argilla. Le fasi mostrano la centratura del blocco, l'apertura a ciambella, il tiraggio di un cilindro a parete uniforme, la modellatura del vaso e il pezzo essiccato e rifinito.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- tornio -->
+<rect x="290" y="280" width="240" height="16" class="m-stampo contorno"/>
+<rect x="400" y="296" width="20" height="50" class="scuro"/>
+<rect x="340" y="346" width="140" height="20" class="macchina"/>
+<line x1="410" y1="80" x2="410" y2="300" class="asse"/>
+<path d="M580,300 A20,20 0 1 1 560,280" class="flusso-linea" fill="none" marker-end="url(#sc-punta)"/>
+<g class="etichetta"><text x="500" y="350" text-anchor="start">Tornio (motore elettrico o a pedale)</text></g>
+<!-- argilla -->
+<path d="M410,280 L490,280 L482,210 L450,196 L410,194 L410,194 L370,196 L338,210 L330,280 L410,280 Z" class="m-fuso contorno" data-k="op:1,0,0,0,0" data-i="op:1"/>
+<path d="M410,280 L500,280 L496,220 L480,210 L466,220 L440,262 L410,262 L410,262 L380,262 L354,220 L340,210 L324,220 L320,280 L410,280 Z" class="m-fuso contorno" data-k="op:0,1,0,0,0" data-i="op:0"/>
+<path d="M410,280 L472,280 L472,110 L460,110 L460,266 L410,266 L410,266 L360,266 L360,110 L348,110 L348,280 L410,280 Z" class="m-fuso contorno" data-k="op:0,0,1,0,0" data-i="op:0"/>
+<path d="M410,280 L466,280 L494,220 L490,160 L462,120 L470,104 L460,104 L452,120 L480,160 L484,220 L456,266 L410,266 L410,266 L364,266 L336,220 L340,160 L368,120 L360,104 L350,104 L358,120 L330,160 L326,220 L354,280 L410,280 Z" class="m-fuso contorno" data-k="op:0,0,0,1,0" data-i="op:0"/>
+<path d="M410,280 L466,280 L494,220 L490,160 L462,120 L470,104 L460,104 L452,120 L480,160 L484,220 L456,266 L410,266 L410,266 L364,266 L336,220 L340,160 L368,120 L360,104 L350,104 L358,120 L330,160 L326,220 L354,280 L410,280 Z" class="m-finito sezionato contorno" data-k="op:0,0,0,0,1" data-i="op:0"/>
+<g class="etichetta"><text x="560" y="220" text-anchor="start">Argilla (sezione)</text></g>
+<!-- mani del vasaio (schematiche) -->
+<g data-k="op:1,1,1,1,0" data-i="op:1">
+  <g data-k="ty:0,0,-120,-60,0" data-i="ty:0">
+    <rect x="510" y="230" width="60" height="22" rx="10" class="macchina"/>
+    <rect x="250" y="230" width="60" height="22" rx="10" class="macchina"/>
+  </g>
+</g>
+<g data-k="op:0,0,1,0,0"><line x1="600" y1="260" x2="600" y2="140" class="flusso-linea" marker-end="url(#sc-punta)"/><g class="etichetta"><text x="606" y="200" text-anchor="start">il vasaio tira l'argilla verso l'alto</text></g></g>
+<g data-k="op:0,0,0,0,1"><g class="etichetta"><text x="500" y="90" text-anchor="start">essiccato fino a &quot;cuoio&quot;, rifilato, poi cotto</text></g></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Prima si passa l'argilla nella impastatrice (pug mill), che la mescola e toglie parte dell'aria; poi la si lavora a mano per renderla omogenea. <span class="pag">(p. 169)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>La qualità dipende dall'abilità del vasaio: i pezzi fatti a mano sono sempre un po' diversi. <span class="pag">(p. 168)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="5" aria-label="Mostra la fase 5 nello schema">Fase 5</button>Si cuoce in biscotto e poi con lo smalto, oppure in un'unica cottura. Tempo atmosferico e temperatura influenzano l'essiccazione. <span class="pag">(p. 169)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Terracotta (la più facile e diffusa, porosa: va smaltata), gres e porcellana (la più difficile). <span class="pag">(p. 168)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Pezzi unici e piccole serie. <span class="pag">(p. 168)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Nessuno. <span class="pag">(p. 168)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Da basso a moderato; manodopera moderata ma molto specializzata. <span class="pag">(p. 168–169)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Moderato: 15–45 minuti; i pezzi alti o grandi si fanno in più parti. Cottura lunga: 8–12 ore. <span class="pag">(p. 168–170)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Variabile, perché fatta a mano. <span class="pag">(p. 168)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Dipende dal vasaio. Valore numerico: <span class="nd">n.d.</span> <span class="pag">(p. 168)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Limitate da abilità del vasaio, tornio, spessore e forno; pareti da 5 mm (pezzi piccoli) a 25 mm. <span class="pag">(p. 168)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Solo forme a rivoluzione</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-simmetria-ok-t v-simmetria-ok-d" class="mini-svg"><title id="v-simmetria-ok-t">Corretto: Forma a rivoluzione</title><desc id="v-simmetria-ok-d">Al tornio tutti i pezzi sono a simmetria di rotazione; manici, piedi e becchi si aggiungono dopo.</desc><defs>
+  <pattern id="v-simmetria-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-simmetria-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-simmetria-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-simmetria-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M60,100 Q30,80 40,50 Q50,30 70,30 H90 Q110,30 120,50 Q130,80 100,100 Z" class="m-finito contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-simmetria-ko-t v-simmetria-ko-d" class="mini-svg"><title id="v-simmetria-ko-t">Da evitare: Forma asimmetrica</title><desc id="v-simmetria-ko-d">Le forme asimmetriche richiedono altre tecniche: modellazione a mano, intaglio o pressatura.</desc><defs>
+  <pattern id="v-simmetria-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-simmetria-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-simmetria-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-simmetria-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M50,100 Q20,40 70,30 H90 Q140,60 110,100 Z" class="m-finito contorno"/><circle cx="120" cy="70" r="14" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Per natura del processo tutti i pezzi sono a simmetria di rotazione; per forme asimmetriche si combinano modellazione a mano, intaglio o pressatura, e si aggiungono pomoli, piedi e becchi. <span class="pag">(p. 168)</span></p></article>
+<article class="card"><h3>Spessore da 5 a 25 mm</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spessore-ok-t v-spessore-ok-d" class="mini-svg"><title id="v-spessore-ok-t">Corretto: Spessore proporzionato alla dimensione</title><desc id="v-spessore-ok-d">Le pareti vanno da 5 mm per i pezzi piccoli fino a 25 mm per quelli grandi.</desc><defs>
+  <pattern id="v-spessore-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spessore-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spessore-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spessore-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M30,100 V30 H42 V88 H118 V30 H130 V100 Z" class="m-finito contorno"/><g class="etichetta"><text x="80" y="20" text-anchor="middle">5–25 mm</text></g></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spessore-ko-t v-spessore-ko-d" class="mini-svg"><title id="v-spessore-ko-t">Da evitare: Pezzo grande a parete sottile</title><desc id="v-spessore-ko-d">Pareti troppo sottili per la dimensione non reggono il proprio peso.</desc><defs>
+  <pattern id="v-spessore-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spessore-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spessore-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spessore-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,110 V10 H24 V106 H136 V10 H140 V110 Z" class="m-finito contorno"/><circle cx="22" cy="30" r="12" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Le pareti vanno da 5 mm per i pezzi piccoli fino a 25 mm; la dimensione dipende anche dallo spessore. <span class="pag">(p. 168)</span></p></article>
+<article class="card"><h3>Pezzi alti in due parti</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-alti-ok-t v-alti-ok-d" class="mini-svg"><title id="v-alti-ok-t">Corretto: Pezzi alti in due tornite</title><desc id="v-alti-ok-d">Per andare oltre l'altezza di una tornita si tornisce una seconda parte senza fondo, la si capovolge e la si unisce alla prima.</desc><defs>
+  <pattern id="v-alti-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-alti-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-alti-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-alti-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M40,110 V64 H120 V110 Z M50,104 H110 V64 H50 Z" class="m-finito contorno"/><path d="M44,64 V14 H116 V64 Z M54,64 V20 H106 V64 Z" class="m-finito contorno"/><line x1="30" y1="64" x2="130" y2="64" stroke="var(--testo-2)" stroke-dasharray="4 3"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-alti-ko-t v-alti-ko-d" class="mini-svg"><title id="v-alti-ko-t">Da evitare: Pezzo troppo alto in una tornita</title><desc id="v-alti-ko-d">Oltre un certo punto il cilindro non si può più tirare né sostenere.</desc><defs>
+  <pattern id="v-alti-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-alti-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-alti-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-alti-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M60,112 V4 H100 V112 Z M66,106 H94 V4 H66 Z" class="m-finito contorno"/><circle cx="80" cy="12" r="12" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Un vaso più alto di una tornita si ottiene tornendo una seconda parte senza fondo, capovolgendola e unendola alla prima con grande precisione. <span class="pag">(p. 169–170)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Il libro non elenca varianti di questo processo. Qui sotto la possibilità descritta nel testo.</p><div class="griglia-card"><article class="card"><h3>Cottura unica</h3><p class="originale" lang="en">Once-fired</p><div class="variante-schema"><svg viewBox="0 0 220 128" role="img" aria-labelledby="var-unacottura-t var-unacottura-d" class="mini-svg"><title id="var-unacottura-t">Cottura unica</title><desc id="var-unacottura-d">Il pezzo smaltato a crudo si cuoce una sola volta, risparmiando energia; i pezzi delicati (tazze con manico) si cuociono prima in biscotto e poi con lo smalto.</desc><defs>
+  <pattern id="var-unacottura-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-unacottura-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-unacottura-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-unacottura-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="40" y="20" width="140" height="90" rx="8" fill="none" stroke="var(--testo-2)" stroke-width="2" stroke-dasharray="6 4"/>
+    <path d="M90,96 Q80,70 92,56 H128 Q140,70 130,96 Z" class="m-finito contorno"/>
+    <g class="etichetta"><text x="110" y="124" text-anchor="middle">forno</text></g></svg></div><p>Si smalta il pezzo crudo e lo si cuoce una volta sola, riducendo l'energia; i pezzi con parti delicate si cuociono prima in biscotto per non romperli durante la cottura dello smalto. <span class="pag">(p. 169)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="colaggio-ceramico.html">Colaggio ceramico</a> – con stampi, per pezzi identici <span class="pag">(p. 168)</span></li><li><a href="pressatura-ceramica.html">Formatura a pressione della ceramica</a> – con stampi, per pezzi identici <span class="pag">(p. 168)</span></li><li><a href="tornitura-lastra.html">Tornitura in lastra</a> – gesto simile, sulla lamiera <span class="pag">(p. 79)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 168–171.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/tornitura-argilla.js"></script>
+</body>
+</html>

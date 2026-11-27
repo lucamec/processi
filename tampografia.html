@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tampografia – Processi produttivi per il design</title>
+<meta name="description" content="Stampa a umido in cui un tampone di silicone preleva l'inchiostro da un cliché inciso e lo trasferisce su superfici 3D o delicate: loghi, grafiche e dettagli a tinta unita su quasi ogni materiale.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 4 – Finitura › Stampa</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Tampografia</h1>
+  <p class="originale" lang="en">Pad Printing</p>
+  <p class="categoria">Parte 4 – Finitura · Stampa</p>
+  <p class="sintesi">Stampa a umido in cui un tampone di silicone preleva l'inchiostro da un cliché inciso e lo trasferisce su superfici 3D o delicate: loghi, grafiche e dettagli a tinta unita su quasi ogni materiale.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="2000,1800,1800,2000,1800">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="tampografia" data-alt="Modello 3D di una tampografica: a sinistra un cliché d'acciaio con nove anelli incisi, a destra una tastiera di gomma con tasti bianchi e gialli. Una racla stende l'inchiostro nero negli anelli; un tampone arancione a cupola scende, si schiaccia sul cliché e si porta via gli anelli. Si sposta sulla tastiera, si schiaccia sui tasti e vi lascia gli anelli neri, poi torna indietro.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Preparazione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Prelievo<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Trasferimento<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Stampa<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="5">5. Finito<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Preparazione</b>Il cliché, con inciso in positivo un colore del disegno, si copre d'inchiostro; la racla lo pulisce, perché il tampone preleva tutto l'inchiostro che tocca. <span class="pag">(p. 405)</span></li>
+    <li><b>Fase 2 – Prelievo</b>L'incisione è poco profonda e l'inchiostro, sottilissimo, inizia subito ad asciugare: il tampone preme leggermente e lo raccoglie. <span class="pag">(p. 405–406)</span></li>
+    <li><b>Fase 3 – Trasferimento</b>Il tampone si sposta sul pezzo; intanto la racla torna indietro e ricopre il cliché. <span class="pag">(p. 405)</span></li>
+    <li><b>Fase 4 – Stampa</b>Compresso sul pezzo, il silicone ne avvolge il profilo; avendo un'energia superficiale molto bassa, cede facilmente l'inchiostro. <span class="pag">(p. 405–406)</span></li>
+    <li><b>Fase 5 – Finito</b>Il tampone torna al cliché e il ciclo ricomincia: la stampa dura 2–5 secondi; i pezzi poi cuociono in forno per 20–60 minuti. <span class="pag">(p. 404–406)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una tampografica: a sinistra un cliché d'acciaio con nove anelli incisi, a destra una tastiera di gomma con tasti bianchi e gialli. Una racla stende l'inchiostro nero negli anelli; un tampone arancione a cupola scende, si schiaccia sul cliché e si porta via gli anelli. Si sposta sulla tastiera, si schiaccia sui tasti e vi lascia gli anelli neri, poi torna indietro.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 50 820 320" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Ciclo di tampografia</title>
+<desc id="sc-d">A sinistra un cliché inciso con una racla, a destra un pezzo con superficie curva; sopra, un tampone in silicone. Le fasi mostrano la preparazione del cliché, il prelievo dell'inchiostro, lo spostamento sul pezzo, la stampa con il tampone schiacciato e il pezzo finito.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- cliché -->
+<rect x="130" y="250" width="200" height="22" fill="#b8bec6" class="contorno"/>
+<rect x="200" y="250" width="60" height="5" fill="#6a7078"/>
+<rect x="200" y="250" width="60" height="5" fill="#1d232b" data-k="op:1,0,1,1,1" data-i="op:0"/>
+<g class="etichetta"><line x1="180" y1="272" x2="40" y2="295" class="richiamo"/><text x="40" y="300" text-anchor="start">Cliché in acciaio, incisione poco profonda</text></g>
+<!-- racla -->
+<g data-k="tx:-120,-120,0,0,0" data-i="tx:0">
+  <rect x="310" y="196" width="20" height="54" class="m-stampo contorno"/>
+  <rect x="200" y="246" width="110" height="4" fill="#1d232b" fill-opacity="0.5" data-k="op:0,0,1,0,0" data-i="op:1"/>
+</g>
+<!-- pezzo curvo -->
+<path d="M460,272 V244 Q560,206 660,244 V272 Z" fill="#f4f4f0" class="contorno"/>
+<path d="M530,230 Q560,222 590,230" fill="none" stroke="#1d232b" stroke-width="4" data-k="op:0,0,0,1,1" data-i="op:0"/>
+<g class="etichetta"><line x1="640" y1="260" x2="600" y2="295" class="richiamo"/><text x="600" y="300" text-anchor="start">Pezzo con superficie curva</text></g>
+<!-- tampone -->
+<g data-k="tx:0,0,330,330,0;ty:0,60,0,64,0" data-i="tx:0;ty:0">
+  <rect x="190" y="96" width="80" height="22" class="m-macchina contorno"/>
+  <g data-k="sy:1,0.8,1,0.78,1" data-i="sy:1" data-o="230,118">
+    <path d="M160,118 H300 Q300,186 230,190 Q160,186 160,118 Z" fill="#d77a4a" class="contorno"/>
+  </g>
+  <rect x="200" y="188" width="60" height="4" fill="#1d232b" data-k="op:0,1,1,0,0" data-i="op:0"/>
+</g>
+<g class="etichetta"><text x="330" y="110" text-anchor="start">Tampone in silicone</text></g>
+<g data-k="op:1,0,0,0,0"><g class="etichetta"><text x="120" y="350" text-anchor="start">Il cliché si copre d'inchiostro e la racla lo pulisce: resta solo nell'incisione</text></g></g>
+<g data-k="op:0,1,0,0,0"><g class="etichetta"><text x="120" y="350" text-anchor="start">Il tampone preme sul cliché e preleva l'inchiostro che sta asciugando</text></g></g>
+<g data-k="op:0,0,1,0,0"><g class="etichetta"><text x="120" y="350" text-anchor="start">Il tampone si sposta sul pezzo; la racla ricopre il cliché</text></g></g>
+<g data-k="op:0,0,0,1,0"><g class="etichetta"><text x="120" y="350" text-anchor="start">Compresso, il silicone avvolge la curva e cede tutto l'inchiostro</text></g></g>
+<g data-k="op:0,0,0,0,1"><g class="etichetta"><text x="120" y="350" text-anchor="start">Pezzo stampato; il tampone torna al cliché. Cottura in forno 20–60 minuti</text></g></g>
+<line x1="330" y1="70" x2="470" y2="70" class="flusso-linea" marker-end="url(#sc-punta)"/>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Detta anche tampo printing, stampa in modo ripetibile su superfici piane, concave, convesse o entrambe: il silicone le avvolge allungandosi pochissimo, senza perdere forma e qualità della grafica. <span class="pag">(p. 404)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>Il film d'inchiostro è molto più sottile che in serigrafia, di solito sotto 1 µm: per pezzi retroilluminati o critici può servire più di uno strato. <span class="pag">(p. 404)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>La qualità dipende dal dettaglio inciso nel cliché, perché il silicone liscio trasferisce tutto ciò che preleva: linee fino a 0,1 mm, distanti 0,1 mm. <span class="pag">(p. 404)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="5" aria-label="Mostra la fase 5 nello schema">Fase 5</button>Gli inchiostri sono quasi sempre a solvente, perché quelli ad acqua non aderiscono al silicone; si stampano anche inchiostri conduttivi su forme curve. <span class="pag">(p. 406)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Quasi tutti, tranne quelli con energia superficiale più bassa del silicone, come il PTFE; alcune plastiche vanno pretrattate. <span class="pag">(p. 406)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Da lotti a produzione di massa. <span class="pag">(p. 404)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Basso: il cliché, la parte più costosa, si taglia con laser, fresatura fotochimica o CNC. <span class="pag">(p. 404, 406)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Basso; manodopera bassa perché il processo è quasi tutto meccanizzato. <span class="pag">(p. 404, 406)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Stampa in 2–5 secondi; cottura in forno 20–60 minuti. <span class="pag">(p. 404)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Alta, bordi netti anche su superfici ondulate. <span class="pag">(p. 404)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Linee fino a 0,1 mm, distanti 0,1 mm. <span class="pag">(p. 404)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Grafiche fino a 100 × 100 mm. <span class="pag">(p. 406)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Avvolgimento limitato</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-avvolgimento-ok-t v-avvolgimento-ok-d" class="mini-svg"><title id="v-avvolgimento-ok-t">Corretto: Fino a metà del cilindro</title><desc id="v-avvolgimento-ok-d">Il tampone si deforma attorno al profilo, ma non oltre metà di un pezzo cilindrico.</desc><defs>
+  <pattern id="v-avvolgimento-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-avvolgimento-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-avvolgimento-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-avvolgimento-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><circle cx="80" cy="70" r="26" fill="#f4f4f0" class="contorno"/><path d="M58,56 A26,26 0 0 1 102,56" fill="none" stroke="#1d232b" stroke-width="4"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-avvolgimento-ko-t v-avvolgimento-ko-d" class="mini-svg"><title id="v-avvolgimento-ko-t">Da evitare: Tutto attorno al cilindro</title><desc id="v-avvolgimento-ko-d">Per stampare tutt'intorno serve la tampografia rotativa.</desc><defs>
+  <pattern id="v-avvolgimento-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-avvolgimento-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-avvolgimento-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-avvolgimento-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><circle cx="80" cy="70" r="26" fill="#f4f4f0" class="contorno"/><circle cx="80" cy="70" r="26" fill="none" stroke="#1d232b" stroke-width="4" stroke-dasharray="60 30"/><circle cx="80" cy="70" r="36" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Il tampone non va oltre metà di un pezzo cilindrico; per stampare tutt'intorno si usa la versione rotativa. <span class="pag">(p. 406)</span></p></article>
+<article class="card"><h3>Massimo 100 × 100 mm</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-formato-ok-t v-formato-ok-d" class="mini-svg"><title id="v-formato-ok-t">Corretto: Grafica entro 100 × 100 mm</title><desc id="v-formato-ok-d">È il massimo che il tampone preleva dal cliché.</desc><defs>
+  <pattern id="v-formato-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-formato-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-formato-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-formato-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="40" y="35" width="80" height="60" fill="none" stroke="var(--testo)" stroke-dasharray="4 3"/><rect x="55" y="50" width="50" height="30" fill="#1d232b"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-formato-ko-t v-formato-ko-d" class="mini-svg"><title id="v-formato-ko-t">Da evitare: Grafiche più grandi</title><desc id="v-formato-ko-d">Superfici intere si coprono con la stampa idrografica.</desc><defs>
+  <pattern id="v-formato-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-formato-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-formato-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-formato-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="40" y="35" width="80" height="60" fill="none" stroke="var(--testo)" stroke-dasharray="4 3"/><rect x="20" y="40" width="120" height="50" fill="#1d232b" fill-opacity="0.8"/><circle cx="130" cy="65" r="14" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>È la grafica più grande che il tampone riesce a prelevare dal cliché. <span class="pag">(p. 406)</span></p></article>
+<article class="card"><h3>Energia superficiale</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-superficie-ok-t v-superficie-ok-d" class="mini-svg"><title id="v-superficie-ok-t">Corretto: Superfici che accettano l'inchiostro</title><desc id="v-superficie-ok-d">Quasi tutti i materiali; alcune plastiche vanno pretrattate.</desc><defs>
+  <pattern id="v-superficie-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-superficie-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-superficie-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-superficie-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="60" width="120" height="30" fill="#f4f4f0" class="contorno"/><rect x="40" y="55" width="80" height="5" fill="#1d232b"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-superficie-ko-t v-superficie-ko-d" class="mini-svg"><title id="v-superficie-ko-t">Da evitare: PTFE e simili</title><desc id="v-superficie-ko-d">Materiali antiaderenti quanto il silicone non ricevono l'inchiostro.</desc><defs>
+  <pattern id="v-superficie-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-superficie-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-superficie-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-superficie-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="60" width="120" height="30" fill="#e8eef2" class="contorno"/><circle cx="44" cy="54" r="4" fill="#1d232b"/><circle cx="64" cy="54" r="4" fill="#1d232b"/><circle cx="84" cy="54" r="4" fill="#1d232b"/><circle cx="104" cy="54" r="4" fill="#1d232b"/><circle cx="80" cy="60" r="20" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>L'inchiostro deve staccarsi dal silicone: materiali antiaderenti come il PTFE non si stampano. <span class="pag">(p. 406)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Possibilità descritte nel capitolo; lo schema principale mostra la stampa lineare.</p><div class="griglia-card"><article class="card"><h3>Tampografia rotativa</h3><p class="originale" lang="en">Rotary pad printing</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-rotativa-t var-rotativa-d" class="mini-svg"><title id="var-rotativa-t">Tampografia rotativa</title><desc id="var-rotativa-d">Stampa in continuo su superfici ondulate e tutt'intorno a pezzi cilindrici, come i flaconi di cosmetici.</desc><defs>
+  <pattern id="var-rotativa-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-rotativa-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-rotativa-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-rotativa-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <circle cx="110" cy="64" r="30" fill="#f4f4f0" class="contorno"/>
+    <circle cx="110" cy="64" r="30" fill="none" stroke="#1d232b" stroke-width="4" stroke-dasharray="20 8"/>
+    <path d="M150,30 A50,50 0 0 1 150,98" fill="none" stroke="var(--flusso)" stroke-width="2"/></svg></div><p>In continuo e tutt'intorno ai cilindri. <span class="pag">(p. 406)</span></p></article>
+<article class="card"><h3>Bagnato su bagnato</h3><p class="originale" lang="en">Wet-on-wet</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-bagnato-t var-bagnato-d" class="mini-svg"><title id="var-bagnato-t">Più colori bagnato su bagnato</title><desc id="var-bagnato-d">Il colore successivo si stampa sul precedente ancora bagnato: le macchine lavorano in tandem.</desc><defs>
+  <pattern id="var-bagnato-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-bagnato-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-bagnato-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-bagnato-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="30" y="50" width="70" height="40" fill="#f4f4f0" class="contorno"/><rect x="120" y="50" width="70" height="40" fill="#f4f4f0" class="contorno"/>
+    <rect x="45" y="62" width="40" height="8" fill="#3f8f8a"/><rect x="135" y="62" width="40" height="8" fill="#3f8f8a"/><rect x="135" y="72" width="40" height="8" fill="#f06a1d"/></svg></div><p>Macchine in tandem per più colori. <span class="pag">(p. 405–406)</span></p></article>
+<article class="card"><h3>Superfici con alveoli</h3><p class="originale" lang="en">Sports balls</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-palline-t var-palline-d" class="mini-svg"><title id="var-palline-t">Superfici con alveoli</title><desc id="var-palline-d">Si stampano palline da golf con le loro fossette, palloni da calcio, da baseball e da basket.</desc><defs>
+  <pattern id="var-palline-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-palline-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-palline-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-palline-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <circle cx="110" cy="64" r="36" fill="#f4f4f0" class="contorno"/>
+    <circle cx="96" cy="50" r="4" fill="none" stroke="var(--testo)" stroke-width="0.8"/><circle cx="120" cy="48" r="4" fill="none" stroke="var(--testo)" stroke-width="0.8"/><circle cx="104" cy="72" r="4" fill="none" stroke="var(--testo)" stroke-width="0.8"/><circle cx="126" cy="70" r="4" fill="none" stroke="var(--testo)" stroke-width="0.8"/><circle cx="90" cy="66" r="4" fill="none" stroke="var(--testo)" stroke-width="0.8"/>
+    <path d="M95,60 H125" stroke="#1d232b" stroke-width="4"/></svg></div><p>Palline da golf e palloni. <span class="pag">(p. 404)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="stampa-idrografica.html">Stampa a trasferimento ad acqua</a> – copre superfici intere <span class="pag">(p. 404)</span></li><li><a href="serigrafia.html">Serigrafia</a> – film d'inchiostro più spesso <span class="pag">(p. 404)</span></li><li><a href="verniciatura-spruzzo.html">Verniciatura a spruzzo</a> – effetto simile, con mascherature <span class="pag">(p. 404)</span></li><li><a href="stampaggio-compressione.html">Stampaggio a compressione</a> – produce la tastiera del caso studio <span class="pag">(p. 406)</span></li><li><a href="stampaggio-iniezione.html">Stampaggio a iniezione</a> – dove la decorazione in stampo non basta <span class="pag">(p. 404)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 404–407.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/tampografia.js"></script>
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elettroerosione (EDM) – Processi produttivi per il design</title>
+<meta name="description" content="Scintille ad alta tensione vaporizzano il metallo fra un elettrodo e il pezzo: si scavano cavità, si tagliano profili e si applica una texture nello stesso momento, con grande precisione anche su acciai temprati.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 2 – Taglio › Termico</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Elettroerosione (EDM)</h1>
+  <p class="originale" lang="en">Electrical Discharge Machining</p>
+  <p class="categoria">Parte 2 – Taglio · Termico</p>
+  <p class="sintesi">Scintille ad alta tensione vaporizzano il metallo fra un elettrodo e il pezzo: si scavano cavità, si tagliano profili e si applica una texture nello stesso momento, con grande precisione anche su acciai temprati.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="1800,2000,3000,2600,2000">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="elettroerosione" data-alt="Modello 3D di una vasca per elettroerosione a tuffo. Un elettrodo di rame sagomato è appeso sopra un blocco di acciaio; la vasca si riempie di olio azzurro. L'elettrodo scende lentamente fra scintille arancioni e nel blocco si forma una cavità che ne copia la forma, con un'isola al centro. L'elettrodo risale, l'olio scende e la cavità appare verde.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Elettrodo<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Immersione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Sgrossatura<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Finitura<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="5">5. Estrazione<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Elettrodo</b>L'elettrodo di lega di rame, lavorato alla fresatrice o a filo, si monta sulla testa guidata dal computer. <span class="pag">(p. 254, 256, 258)</span></li>
+    <li><b>Fase 2 – Immersione</b>Elettrodo e pezzo sono immersi in un olio leggero, simile alla paraffina, che scorre di continuo: isola, raffredda e lava via il metallo vaporizzato. <span class="pag">(p. 256–257)</span></li>
+    <li><b>Fase 3 – Sgrossatura</b>Avvicinati, i due metalli si scambiano migliaia di scintille al secondo, che vaporizzano la superficie; l'elettrodo scende piano, a spirale. Si asportano 200–400 mm³ al minuto e la superficie resta ruvida. <span class="pag">(p. 256–258)</span></li>
+    <li><b>Fase 4 – Finitura</b>Con un nuovo elettrodo si lavora molto più lentamente, fino a circa 50 mm³ al minuto: la texture diventa fine. <span class="pag">(p. 257–258)</span></li>
+    <li><b>Fase 5 – Estrazione</b>L'elettrodo risale; la cavità ne riproduce la forma negativa con spigoli vivi e la texture già finita. <span class="pag">(p. 254, 256)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una vasca per elettroerosione a tuffo. Un elettrodo di rame sagomato è appeso sopra un blocco di acciaio; la vasca si riempie di olio azzurro. L'elettrodo scende lentamente fra scintille arancioni e nel blocco si forma una cavità che ne copia la forma, con un'isola al centro. L'elettrodo risale, l'olio scende e la cavità appare verde.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 20 820 360" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Elettroerosione a tuffo, in sezione</title>
+<desc id="sc-d">Sezione di una vasca con un blocco d'acciaio e un elettrodo di rame sopra. Le fasi mostrano l'elettrodo pronto, la vasca che si riempie di dielettrico, la sgrossatura con le scintille, la finitura e la cavità che riproduce l'elettrodo dopo l'estrazione.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<clipPath id="sc-scavo"><rect x="300" y="200" width="220" height="72" data-k="sy:0,0,0.8,1,1" data-i="sy:0" data-o="300,200"/></clipPath>
+<!-- vasca e dielettrico -->
+<path d="M200,80 V330 H620 V80" fill="none" stroke="var(--testo)" stroke-width="6"/>
+<rect x="206" y="96" width="408" height="230" style="fill:var(--flusso)" opacity="0.16" data-k="sy:0,1,1,1,0" data-i="sy:0" data-o="206,326"/>
+<g data-k="op:0,1,1,1,0"><g class="etichetta"><text x="630" y="110" text-anchor="start">Olio dielettrico</text></g></g>
+<!-- pezzo con la cavità che si forma -->
+<rect x="250" y="200" width="320" height="110" fill="url(#sc-tratteggio)" class="contorno"/>
+<path d="M330,200 V236 L360,270 H460 L490,236 V200 Z" fill="#dfe6f7" clip-path="url(#sc-scavo)"/>
+<path d="M330,200 V236 L360,270 H460 L490,236 V200 Z" fill="none" stroke="var(--finito)" stroke-width="4" clip-path="url(#sc-scavo)" data-k="op:0,0,0,0,1" data-i="op:0"/>
+<rect x="230" y="310" width="360" height="14" class="macchina"/>
+<g class="etichetta"><line x1="570" y1="290" x2="630" y2="285" class="richiamo"/><text x="630" y="290" text-anchor="start">Pezzo (+)</text></g>
+
+<!-- elettrodo di rame (-) -->
+<g data-k="ty:-110,-70,-14,0,-150" data-i="ty:-150">
+  <rect x="396" y="40" width="28" height="80" class="macchina"/>
+  <rect x="300" y="120" width="220" height="76" fill="#c27a4a" class="contorno"/>
+  <path d="M330,196 V232 L360,266 H460 L490,232 V196 Z" fill="#c27a4a" class="contorno"/>
+  <g data-k="op:0,0,1,1,0;vx:0,0,3,2,0" data-i="op:0;vx:0">
+    <path d="M350,262 l4,4 l-4,4 l4,4" fill="none" stroke="var(--fuso)" stroke-width="2.5"/><path d="M380,268 l4,4 l-4,4 l4,4" fill="none" stroke="var(--fuso)" stroke-width="2.5"/><path d="M410,262 l4,4 l-4,4 l4,4" fill="none" stroke="var(--fuso)" stroke-width="2.5"/><path d="M440,268 l4,4 l-4,4 l4,4" fill="none" stroke="var(--fuso)" stroke-width="2.5"/><path d="M470,262 l4,4 l-4,4 l4,4" fill="none" stroke="var(--fuso)" stroke-width="2.5"/>
+  </g>
+</g>
+<g class="etichetta"><text x="20" y="60" text-anchor="start">Elettrodo di rame (−), forma negativa della cavità</text></g>
+<g data-k="op:0,0,1,0,0"><g class="etichetta"><text x="20" y="360" text-anchor="start">sgrossatura: migliaia di scintille al secondo, fino a 400 mm³/min</text></g></g>
+<g data-k="op:0,0,0,1,0"><g class="etichetta"><text x="20" y="360" text-anchor="start">finitura con un nuovo elettrodo, ~50 mm³/min: texture fine</text></g></g>
+<g data-k="op:0,0,0,0,1"><g class="etichetta"><text x="20" y="360" text-anchor="start">la cavità riproduce l'elettrodo, già con la texture finale</text></g></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Esistono due versioni: a tuffo (erosione a scintilla), per fori, texture e cavità profonde, e a filo, simile al taglio a filo caldo delle schiume, per profili interni ed esterni. <span class="pag">(p. 254)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>Le scariche saltano fra i punti più vicini dei due metalli: l'asportazione è uniforme. Il pezzo non viene deformato dalla forza ma vaporizzato, quindi non subisce sforzi. <span class="pag">(p. 256)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Tensione alta e velocità alta danno una texture ruvida; tensione bassa, velocità bassa e più passate la rendono fine. La finitura si misura sulla scala VDI, paragonabile a una rugosità Ra di 0,32–18 µm. <span class="pag">(p. 255)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="5" aria-label="Mostra la fase 5 nello schema">Fase 5</button>Ogni elettrodo può durare solo 5 lavorazioni; per la massima precisione se ne prepara uno nuovo per ogni operazione. <span class="pag">(p. 256)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Molti metalli, indipendentemente dalla durezza: acciaio inox, acciaio per utensili, alluminio, titanio, ottone e rame. <span class="pag">(p. 256)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Pezzi unici, modifiche a stampi esistenti e piccole serie, in genere non oltre 10 pezzi. <span class="pag">(p. 254)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Basso per il tuffo (elettrodi di rame), nullo per il filo, che però consuma filo; macchine molto costose. <span class="pag">(p. 254, 256, 258)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Da moderato ad alto; manodopera moderata per l'abilità richiesta e la durata del processo. <span class="pag">(p. 254, 258)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Lungo: a tuffo da 2 mm³ al minuto (finitura) a oltre 400 (sgrossatura); a filo, per esempio, 1,5 mm al minuto su 36 mm di acciaio temprato. <span class="pag">(p. 256, 258–259)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Controllo molto alto della texture, da opaca a lucida, senza ulteriori finiture. <span class="pag">(p. 254–255)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Fino a 5 µm. <span class="pag">(p. 255–256)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>A filo spessori da 0,1 a 200 mm; a tuffo la profondità dipende dal lavaggio dei residui. <span class="pag">(p. 255–256)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Raggi interni non troppo piccoli</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-raggi-ok-t v-raggi-ok-d" class="mini-svg"><title id="v-raggi-ok-t">Corretto: Raggi interni generosi</title><desc id="v-raggi-ok-d">Si arriva a raggi interni di 30 µm, ma raggi più ampi evitano concentrazioni di tensione; di solito non serve superare 0,5 mm.</desc><defs>
+  <pattern id="v-raggi-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-raggi-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-raggi-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-raggi-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,30 H80 Q100,30 100,50 V100 H20 Z" fill="url(#v-raggi-ok-tratteggio)" class="contorno"/><path d="M80,30 Q100,30 100,50" fill="none" stroke="var(--finito)" stroke-width="4"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-raggi-ko-t v-raggi-ko-d" class="mini-svg"><title id="v-raggi-ko-t">Da evitare: Spigoli interni vivi ovunque</title><desc id="v-raggi-ko-d">Possibili, ma concentrano le tensioni nel pezzo.</desc><defs>
+  <pattern id="v-raggi-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-raggi-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-raggi-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-raggi-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,30 H100 V100 H20 Z" fill="url(#v-raggi-ko-tratteggio)" class="contorno"/><circle cx="100" cy="30" r="11" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Si ottengono raggi interni fino a 30 µm, ma conviene usarne di più ampi per evitare concentrazioni di tensione; di solito bastano 0,5 mm. A filo il raggio minimo dipende anche dal diametro del filo. <span class="pag">(p. 256)</span></p></article>
+<article class="card"><h3>Profondità limitata dal lavaggio</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-profondita-ok-t v-profondita-ok-d" class="mini-svg"><title id="v-profondita-ok-t">Corretto: Profondità adeguata al diametro</title><desc id="v-profondita-ok-d">La profondità dipende dalla facilità con cui si lavano via i residui: conta il rapporto fra profondità e larghezza.</desc><defs>
+  <pattern id="v-profondita-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-profondita-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-profondita-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-profondita-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="30" width="120" height="70" fill="url(#v-profondita-ok-tratteggio)" class="contorno"/><rect x="50" y="30" width="60" height="34" fill="#dfe6f7" class="contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-profondita-ko-t v-profondita-ko-d" class="mini-svg"><title id="v-profondita-ko-t">Da evitare: Cavità molto profonda e stretta</title><desc id="v-profondita-ko-d">Possibile, ma serve un lavaggio supplementare e il ciclo si allunga.</desc><defs>
+  <pattern id="v-profondita-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-profondita-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-profondita-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-profondita-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="10" width="120" height="100" fill="url(#v-profondita-ko-tratteggio)" class="contorno"/><rect x="72" y="10" width="16" height="92" fill="#dfe6f7" class="contorno"/><circle cx="80" cy="96" r="12" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>La profondità di una cavità a tuffo dipende da quanto bene si eliminano i residui: profili molto profondi richiedono lavaggi in più e cicli più lunghi. <span class="pag">(p. 256)</span></p></article>
+<article class="card"><h3>Texture fini su aree piccole</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-finitura-ok-t v-finitura-ok-d" class="mini-svg"><title id="v-finitura-ok-t">Corretto: Texture fini su piccole aree</title><desc id="v-finitura-ok-d">La finitura fine richiede velocità bassissime (fino a 2 mm³/min): conviene su superfici piccole.</desc><defs>
+  <pattern id="v-finitura-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-finitura-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-finitura-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-finitura-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="40" width="120" height="50" fill="url(#v-finitura-ok-tratteggio)" class="contorno"/><rect x="60" y="40" width="40" height="8" fill="#dfe6f7" stroke="var(--finito)" stroke-width="2"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-finitura-ko-t v-finitura-ko-d" class="mini-svg"><title id="v-finitura-ko-t">Da evitare: Texture finissima su grandi superfici</title><desc id="v-finitura-ko-d">Su un'area grande il tempo di finitura diventa molto lungo.</desc><defs>
+  <pattern id="v-finitura-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-finitura-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-finitura-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-finitura-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="40" width="120" height="50" fill="url(#v-finitura-ko-tratteggio)" class="contorno"/><rect x="24" y="40" width="112" height="8" fill="#dfe6f7" stroke="var(--ko)" stroke-width="2"/><circle cx="80" cy="44" r="18" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>La finitura fine richiede velocità molto basse: è più adatta a superfici di piccola estensione. <span class="pag">(p. 258)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Le due versioni del processo e un vantaggio del taglio a filo citato nel capitolo; lo schema principale mostra l'elettroerosione a tuffo.</p><div class="griglia-card"><article class="card"><h3>Elettroerosione a tuffo</h3><p class="originale" lang="en">Die sink EDM (spark erosion)</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-tuffo-t var-tuffo-d" class="mini-svg"><title id="var-tuffo-t">Elettroerosione a tuffo</title><desc id="var-tuffo-d">Un elettrodo di rame sagomato scende a spirale nel pezzo immerso in olio dielettrico: forma cavità, fori e texture. L'elettrodo si consuma molto meno del pezzo (0,1%).</desc><defs>
+  <pattern id="var-tuffo-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-tuffo-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-tuffo-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-tuffo-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="50" y="64" width="120" height="50" fill="url(#var-tuffo-tratteggio)" class="contorno"/>
+    <rect x="80" y="10" width="60" height="30" fill="#c27a4a" class="contorno"/><path d="M90,40 V58 H130 V40 Z" fill="#c27a4a" class="contorno"/>
+    <path d="M90,64 V82 H130 V64" fill="#dfe6f7" stroke="var(--testo)"/></svg></div><p>Cavità, fori e texture con un elettrodo negativo di rame, in olio dielettrico. <span class="pag">(p. 254, 256)</span></p></article>
+<article class="card"><h3>Elettroerosione a filo</h3><p class="originale" lang="en">Wire EDM (wire erosion)</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-filo-t var-filo-d" class="mini-svg"><title id="var-filo-t">Elettroerosione a filo</title><desc id="var-filo-d">Un filo di rame o ottone (50–300 µm), teso fra due bobine e rinnovato di continuo, taglia profili interni ed esterni in acqua deionizzata; le guide mobili permettono pareti inclinate fino a 30°.</desc><defs>
+  <pattern id="var-filo-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-filo-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-filo-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-filo-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="40" y="40" width="140" height="50" fill="url(#var-filo-tratteggio)" class="contorno"/>
+    <line x1="120" y1="10" x2="104" y2="118" stroke="#c27a4a" stroke-width="3"/>
+    <rect x="108" y="2" width="24" height="10" class="scuro"/><rect x="92" y="114" width="24" height="10" class="scuro"/></svg></div><p>Profili con pareti parallele o inclinate fino a 30°, in acqua deionizzata a 20 °C; il filo si rinnova di continuo. <span class="pag">(p. 254, 256, 258)</span></p></article>
+<article class="card"><h3>Pezzi impilati</h3><p class="originale" lang="en">Stacked parts</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-pacco-t var-pacco-d" class="mini-svg"><title id="var-pacco-t">Taglio a filo di pezzi impilati</title><desc id="var-pacco-d">Senza forze sul pezzo, più lamiere sottili si impilano e si tagliano in una sola passata.</desc><defs>
+  <pattern id="var-pacco-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-pacco-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-pacco-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-pacco-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="40" y="40" width="140" height="8" class="m-stampo contorno"/><rect x="40" y="50" width="140" height="8" class="m-stampo contorno"/><rect x="40" y="60" width="140" height="8" class="m-stampo contorno"/><rect x="40" y="70" width="140" height="8" class="m-stampo contorno"/><rect x="40" y="80" width="140" height="8" class="m-stampo contorno"/>
+    <line x1="110" y1="20" x2="110" y2="110" stroke="#c27a4a" stroke-width="3"/></svg></div><p>Più pezzi sottili si tagliano insieme, riducendo il tempo. <span class="pag">(p. 256)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="lavorazione-cnc.html">Lavorazione CNC</a> – usata insieme; prepara gli elettrodi <span class="pag">(p. 254)</span></li><li><a href="taglio-getto-acqua.html">Taglio a getto d'acqua</a> – alternativa al filo <span class="pag">(p. 255)</span></li><li><a href="taglio-laser.html">Taglio laser</a> – alternativa al filo <span class="pag">(p. 255)</span></li><li><a href="saldatura-fascio.html">Saldatura a fascio</a> – i processi a fascio sono alternativi per alcuni profili e fori <span class="pag">(p. 255)</span></li><li><a href="stampaggio-iniezione.html">Stampaggio a iniezione</a> – principale uso: la costruzione degli stampi <span class="pag">(p. 254)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 254–259.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/elettroerosione.js"></script>
+</body>
+</html>

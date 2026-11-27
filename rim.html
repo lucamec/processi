@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stampaggio a iniezione con reazione (RIM) – Processi produttivi per il design</title>
+<meta name="description" content="Due liquidi che reagiscono fra loro vengono iniettati in uno stampo, dove formano poliuretano (PUR) espanso o compatto: a bassa pressione e a freddo si stampano pezzi dalle sedute imbottite ai paraurti.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 1 – Formatura › Plastica e gomma</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Stampaggio a iniezione con reazione (RIM)</h1>
+  <p class="originale" lang="en">Reaction Injection Molding</p>
+  <p class="categoria">Parte 1 – Formatura · Plastica e gomma</p>
+  <p class="sintesi">Due liquidi che reagiscono fra loro vengono iniettati in uno stampo, dove formano poliuretano (PUR) espanso o compatto: a bassa pressione e a freddo si stampano pezzi dalle sedute imbottite ai paraurti.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="2000,2400,2800,2400">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="rim" data-alt="Modello 3D di uno stampo in due metà tagliato a metà, con un telaio in acciaio scuro all'interno. In alto la testa di miscelazione riceve i due componenti. Il liquido arancione si deposita sul fondo, poi la schiuma si espande e riempie la cavità avvolgendo il telaio. Quando la reazione è finita la schiuma diventa verde, lo stampo superiore si alza e la seduta imbottita viene estratta.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Preparazione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Miscelazione e iniezione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Espansione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Sformatura e rifilatura<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Preparazione</b>Lo stampo viene pulito e spruzzato di distaccante; si posizionano inserti e telai, poi lo stampo si chiude e si blocca. <span class="pag">(p. 64, 66)</span></li>
+    <li><b>Fase 2 – Miscelazione e iniezione</b>Poliolo e isocianato, tenuti in serbatoi separati, si mescolano ad alta pressione nella testa e vengono versati nello stampo a bassa pressione, in quantità prestabilite. <span class="pag">(p. 64)</span></li>
+    <li><b>Fase 3 – Espansione</b>La reazione è esotermica: il polimero si espande e riempie lo stampo. I canali lasciano uscire l'aria e un tappo nel foro di colata mantiene la pressione interna. <span class="pag">(p. 64)</span></li>
+    <li><b>Fase 4 – Sformatura e rifilatura</b>Dopo 5–15 minuti le due metà si separano, i nuclei si tolgono e la bava viene rifilata con una lama rotante. <span class="pag">(p. 64, 67)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di uno stampo in due metà tagliato a metà, con un telaio in acciaio scuro all'interno. In alto la testa di miscelazione riceve i due componenti. Il liquido arancione si deposita sul fondo, poi la schiuma si espande e riempie la cavità avvolgendo il telaio. Quando la reazione è finita la schiuma diventa verde, lo stampo superiore si alza e la seduta imbottita viene estratta.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 0 820 340" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Stampaggio di schiuma a freddo in sezione</title>
+<desc id="sc-d">Sezione di uno stampo in due metà con una cavità a forma di cuscino e un telaio in acciaio sospeso all'interno. In alto a sinistra la testa di miscelazione riceve isocianato e poliolo; nella metà superiore ci sono il foro di colata e un canale di sfiato. Le fasi mostrano la preparazione, l'iniezione, l'espansione della schiuma e la sformatura.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<clipPath id="sc-sotto" clipPathUnits="userSpaceOnUse"><rect x="200" y="195" width="420" height="120"/></clipPath>
+<clipPath id="sc-sopra" clipPathUnits="userSpaceOnUse"><rect x="200" y="60" width="420" height="135"/></clipPath>
+<!-- metà inferiore dello stampo -->
+<path d="M230,195 H590 V300 H230 Z M280,140 H540 Q560,140 560,160 V230 Q560,250 540,250 H280 Q260,250 260,230 V160 Q260,140 280,140 Z" fill="url(#sc-tratteggio)" fill-rule="evenodd" class="contorno" clip-path="url(#sc-sotto)"/>
+<g class="etichetta"><text x="600" y="290" text-anchor="start">Stampo inferiore</text></g>
+
+<!-- schiuma: liquido sul fondo, poi espansione dal basso verso l'alto -->
+<clipPath id="sc-livello" clipPathUnits="userSpaceOnUse"><rect x="250" y="136" width="320" height="118" data-k="sy:0,0.18,1,1" data-i="sy:0" data-o="0,254"/></clipPath>
+<g data-k="ty:0,0,0,0" clip-path="url(#sc-livello)">
+  <path d="M280,140 H540 Q560,140 560,160 V230 Q560,250 540,250 H280 Q260,250 260,230 V160 Q260,140 280,140 Z" class="m-fuso contorno" data-k="op:1,1,1,0" data-i="op:1"/>
+  <g data-k="op:0,0,1,1" data-i="op:0"><circle cx="275" cy="150" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="328" cy="187" r="4" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="381" cy="224" r="5" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="434" cy="169" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="487" cy="206" r="4" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="540" cy="151" r="5" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="323" cy="188" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="376" cy="225" r="4" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="429" cy="170" r="5" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="482" cy="207" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="535" cy="152" r="4" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="318" cy="189" r="5" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="371" cy="226" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="424" cy="171" r="4" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="477" cy="208" r="5" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="530" cy="153" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="313" cy="190" r="4" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="366" cy="227" r="5" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="419" cy="172" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="472" cy="209" r="4" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="525" cy="154" r="5" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="308" cy="191" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="361" cy="228" r="4" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="414" cy="173" r="5" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="467" cy="210" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="520" cy="155" r="4" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="303" cy="192" r="5" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="356" cy="229" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="409" cy="174" r="4" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="462" cy="211" r="5" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="515" cy="156" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="298" cy="193" r="4" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="351" cy="230" r="5" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="404" cy="175" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="457" cy="212" r="4" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="510" cy="157" r="5" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="293" cy="194" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="346" cy="231" r="4" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="399" cy="176" r="5" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="452" cy="213" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="505" cy="158" r="4" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="288" cy="195" r="5" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="341" cy="232" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="394" cy="177" r="4" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="447" cy="214" r="5" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="500" cy="159" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/></g>
+</g>
+<g data-k="ty:0,0,0,-10;op:0,0,0,1" data-i="op:0">
+  <path d="M280,140 H540 Q560,140 560,160 V230 Q560,250 540,250 H280 Q260,250 260,230 V160 Q260,140 280,140 Z" class="m-finito contorno"/><circle cx="275" cy="150" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="328" cy="187" r="4" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="381" cy="224" r="5" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="434" cy="169" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="487" cy="206" r="4" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="540" cy="151" r="5" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="323" cy="188" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="376" cy="225" r="4" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="429" cy="170" r="5" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="482" cy="207" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="535" cy="152" r="4" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="318" cy="189" r="5" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="371" cy="226" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="424" cy="171" r="4" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="477" cy="208" r="5" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="530" cy="153" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="313" cy="190" r="4" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="366" cy="227" r="5" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="419" cy="172" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="472" cy="209" r="4" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="525" cy="154" r="5" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="308" cy="191" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="361" cy="228" r="4" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="414" cy="173" r="5" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="467" cy="210" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="520" cy="155" r="4" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="303" cy="192" r="5" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="356" cy="229" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="409" cy="174" r="4" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="462" cy="211" r="5" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="515" cy="156" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="298" cy="193" r="4" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="351" cy="230" r="5" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="404" cy="175" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="457" cy="212" r="4" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="510" cy="157" r="5" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="293" cy="194" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="346" cy="231" r="4" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="399" cy="176" r="5" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="452" cy="213" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="505" cy="158" r="4" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="288" cy="195" r="5" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="341" cy="232" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="394" cy="177" r="4" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="447" cy="214" r="5" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/><circle cx="500" cy="159" r="3" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.2"/>
+</g>
+
+<!-- telaio in acciaio annegato nella schiuma -->
+<rect x="304" y="190" width="12" height="12" class="scuro" data-k="ty:0,0,0,-10"/><rect x="354" y="190" width="12" height="12" class="scuro" data-k="ty:0,0,0,-10"/><rect x="404" y="190" width="12" height="12" class="scuro" data-k="ty:0,0,0,-10"/><rect x="454" y="190" width="12" height="12" class="scuro" data-k="ty:0,0,0,-10"/><rect x="504" y="190" width="12" height="12" class="scuro" data-k="ty:0,0,0,-10"/>
+<g class="etichetta"><line x1="304" y1="196" x2="40" y2="215" class="richiamo"/><text x="40" y="220" text-anchor="start">Telaio in acciaio (inserto)</text></g>
+
+<!-- metà superiore con foro di colata e canali di sfiato -->
+<g data-k="ty:0,0,0,-90" data-i="ty:-90">
+  <path d="M230,90 H590 V195 H230 Z M280,140 H540 Q560,140 560,160 V230 Q560,250 540,250 H280 Q260,250 260,230 V160 Q260,140 280,140 Z M296,90 H312 V142 H296 Z M524,90 H532 V142 H524 Z" fill="url(#sc-tratteggio)" fill-rule="evenodd" class="contorno" clip-path="url(#sc-sopra)"/>
+  <rect x="294" y="80" width="20" height="16" class="scuro" data-k="op:0,0,1,0"/>
+  <g class="etichetta"><text x="600" y="112" text-anchor="start">Stampo superiore</text></g>
+</g>
+<g data-k="op:0,0,1,0"><line x1="528" y1="120" x2="528" y2="60" class="flusso-linea tratteggiata" marker-end="url(#sc-punta)"/><g class="etichetta"><text x="540" y="66" text-anchor="start">l'aria esce dai canali</text></g><g class="etichetta"><line x1="294" y1="86" x2="120" y2="65" class="richiamo"/><text x="120" y="70" text-anchor="start">tappo nel foro di colata</text></g></g>
+
+<!-- testa di miscelazione con i due componenti -->
+<g data-k="op:0,1,0,0" data-i="op:0">
+  <rect x="80" y="10" width="60" height="40" rx="6" class="macchina"/><g class="etichetta"><text x="150" y="24" text-anchor="start">A: isocianato</text></g>
+  <rect x="80" y="54" width="60" height="40" rx="6" class="macchina"/><g class="etichetta"><text x="150" y="80" text-anchor="start">B: poliolo</text></g>
+  <path d="M140,30 H304 V60 M140,74 H304" fill="none" stroke="var(--testo-2)" stroke-width="3"/>
+  <rect x="290" y="40" width="28" height="44" class="m-stampo contorno"/>
+  <line x1="304" y1="86" x2="304" y2="150" class="flusso-linea" marker-end="url(#sc-punta)"/>
+  <g class="etichetta"><text x="330" y="36" text-anchor="start">Testa di miscelazione</text></g>
+</g>
+<g data-k="op:1,0,0,0" data-i="op:1"><g class="etichetta"><text x="260" y="330" text-anchor="start">distaccante spruzzato sulle pareti</text></g></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Il RIM comprende lo stampaggio di schiuma a freddo: entrambi formano PUR facendo reagire due liquidi a bassa pressione. Prima di ogni ciclo si applica il distaccante e si caricano inserti come telai in acciaio, boccole filettate o pannelli. <span class="pag">(p. 64, 66)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>I due componenti si combinano nella testa di miscelazione e scendono nello stampo dal foro in alto. Il liquido non catalizzato è molto fluido e riempie facilmente stampi grandi e complessi. <span class="pag">(p. 64, 66)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>L'unica pressione sullo stampo è quella del liquido che si espande: lo stampo va progettato e riempito perché il polimero si distribuisca in modo uniforme. <span class="pag">(p. 64)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>La reazione è irreversibile: una volta formata, la schiuma si può modificare solo con la lavorazione CNC. Uno stampo tipico produce 50 pezzi al giorno. <span class="pag">(p. 65, 67)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Poliuretano (PUR), espanso o compatto, da morbido (Shore A 25–90) a rigido (Shore D); densità da 40 a 400 kg/m³; schiume a celle aperte (da rivestire) o chiuse (con pelle propria). <span class="pag">(p. 64, 66–67)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Da pezzo unico a grande serie; usato anche per prototipare pezzi da stampare poi a iniezione. <span class="pag">(p. 64)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Da basso a moderato, molto meno dell'iniezione grazie a pressione e temperatura ridotte. Stampi in vetroresina per i prototipi, in alluminio o acciaio oltre i 1000 pezzi. <span class="pag">(p. 64, 66–67)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Valore numerico: <span class="nd">n.d.</span> Manodopera da bassa a moderata, maggiore per prototipi e piccole serie. <span class="pag">(p. 67)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Rapido: 5–15 minuti secondo la complessità (12 minuti nel caso studio). <span class="pag">(p. 64, 67)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Alta, con buona riproduzione di dettagli e texture: dipende dalla superficie dello stampo. Possibile la decorazione in stampo. <span class="pag">(p. 64, 66)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Alta ripetibilità e precisione. Valore numerico: <span class="nd">n.d.</span> <span class="pag">(p. 64)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Da minuscoli fino a molto grandi, lunghi fino a 3 m. <span class="pag">(p. 66)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Ricoprire il telaio di almeno 10–15 mm</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-copertura-ok-t v-copertura-ok-d" class="mini-svg"><title id="v-copertura-ok-t">Corretto: Schiuma di almeno 10–15 mm sul telaio</title><desc id="v-copertura-ok-d">Il telaio resta ben dentro la schiuma e non si vede in superficie.</desc><defs>
+  <pattern id="v-copertura-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-copertura-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-copertura-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-copertura-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M15,25 H145 V100 H15 Z" class="m-finito sezionato contorno"/><rect x="55" y="52" width="50" height="22" class="scuro"/><g class="etichetta"><text x="80" y="20" text-anchor="middle">≥ 10–15 mm</text></g></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-copertura-ko-t v-copertura-ko-d" class="mini-svg"><title id="v-copertura-ko-t">Da evitare: Telaio troppo vicino alla superficie</title><desc id="v-copertura-ko-d">Con poca schiuma sopra, la struttura si legge attraverso il rivestimento.</desc><defs>
+  <pattern id="v-copertura-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-copertura-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-copertura-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-copertura-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M15,25 H145 V100 H15 Z" class="m-finito sezionato contorno"/><rect x="35" y="29" width="90" height="16" class="scuro"/><line x1="35" y1="25" x2="125" y2="25" stroke="var(--ko)" stroke-width="3"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Quando si schiuma sopra un telaio in acciaio, la schiuma deve superarlo di almeno 10–15 mm perché la struttura non si veda in superficie. <span class="pag">(p. 66)</span></p></article>
+<article class="card"><h3>Pareti da 5 mm in su</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-pareti-ok-t v-pareti-ok-d" class="mini-svg"><title id="v-pareti-ok-t">Corretto: Pareti da 5 mm in su, anche diverse</title><desc id="v-pareti-ok-d">Nello stesso pezzo convivono pareti spesse e sottili, a partire da 5 mm.</desc><defs>
+  <pattern id="v-pareti-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-pareti-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-pareti-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-pareti-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M15,30 H145 V100 H125 V48 H35 V100 H15 Z M70,48 H90 V100 H70 Z" class="m-finito sezionato contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-pareti-ko-t v-pareti-ko-d" class="mini-svg"><title id="v-pareti-ko-t">Da evitare: Pareti sotto i 5 mm</title><desc id="v-pareti-ko-d">Il libro indica pareti a partire da 5 mm.</desc><defs>
+  <pattern id="v-pareti-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-pareti-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-pareti-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-pareti-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M15,30 H145 V100 H143 V34 H17 V100 H15 Z" class="m-finito sezionato contorno"/><circle cx="16" cy="70" r="9" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Si possono stampare nello stesso pezzo sezioni spesse e sottili, da 5 mm in su. <span class="pag">(p. 66)</span></p></article>
+<article class="card"><h3>Prevedere l'uscita dell'aria</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sfiati-ok-t v-sfiati-ok-d" class="mini-svg"><title id="v-sfiati-ok-t">Corretto: Canali per l'uscita dell'aria</title><desc id="v-sfiati-ok-d">Mentre la schiuma si espande, i canali lasciano uscire l'aria intrappolata.</desc><defs>
+  <pattern id="v-sfiati-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sfiati-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sfiati-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sfiati-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,20 H150 V105 H10 Z M30,40 H130 V90 H30 Z M120,20 H126 V40 H120 Z" fill="url(#v-sfiati-ok-tratteggio)" fill-rule="evenodd" class="contorno"/><path d="M30,40 H130 V90 H30 Z" class="m-finito sezionato contorno"/><line x1="123" y1="34" x2="123" y2="4" class="flusso-linea tratteggiata" marker-end="url(#v-sfiati-ok-punta)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sfiati-ko-t v-sfiati-ko-d" class="mini-svg"><title id="v-sfiati-ko-t">Da evitare: Aria intrappolata</title><desc id="v-sfiati-ko-d">Senza vie d'uscita l'aria resta in alto e lascia vuoti nella schiuma.</desc><defs>
+  <pattern id="v-sfiati-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sfiati-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sfiati-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sfiati-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,20 H150 V105 H10 Z M30,40 H130 V90 H30 Z" fill="url(#v-sfiati-ko-tratteggio)" fill-rule="evenodd" class="contorno"/><path d="M30,52 H130 V90 H30 Z" class="m-finito sezionato contorno"/><rect x="30" y="40" width="100" height="12" fill="#fff" stroke="var(--ko)" stroke-width="2"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Mentre il polimero si espande, i canali dello stampo lasciano uscire l'aria intrappolata. <span class="pag">(p. 64)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Il libro non elenca varianti di questo processo. Qui sotto la possibilità descritta nel testo.</p><div class="griglia-card"><article class="card"><h3>PUR rinforzato con fibre</h3><p class="originale" lang="en">SRIM / RRIM</p><div class="variante-schema"><svg viewBox="0 0 220 132" role="img" aria-labelledby="var-srim-t var-srim-d" class="mini-svg"><title id="var-srim-t">Rinforzo con fibre (SRIM, RRIM)</title><desc id="var-srim-d">Nella plastica si incorporano fibre o stuoie di fibra per aumentare resistenza e rigidità.</desc><defs>
+  <pattern id="var-srim-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-srim-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-srim-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-srim-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="20" y="10" width="180" height="30" fill="url(#var-srim-tratteggio)" class="contorno"/><rect x="20" y="84" width="180" height="30" fill="url(#var-srim-tratteggio)" class="contorno"/>
+    <rect x="20" y="40" width="180" height="44" class="m-fuso contorno"/>
+    <path d="M24,48 l18,28" stroke="var(--testo)" stroke-width="2"/><path d="M46,48 l18,28" stroke="var(--testo)" stroke-width="2"/><path d="M68,48 l18,28" stroke="var(--testo)" stroke-width="2"/><path d="M90,48 l18,28" stroke="var(--testo)" stroke-width="2"/><path d="M112,48 l18,28" stroke="var(--testo)" stroke-width="2"/><path d="M134,48 l18,28" stroke="var(--testo)" stroke-width="2"/><path d="M156,48 l18,28" stroke="var(--testo)" stroke-width="2"/><path d="M178,48 l18,28" stroke="var(--testo)" stroke-width="2"/>
+    <g class="etichetta"><text x="110" y="126" text-anchor="middle">stuoia di fibra annegata nel PUR</text></g></svg></div><p>Si può incorporare un rinforzo in fibra per migliorare resistenza e rigidità: si parla di SRIM (structural RIM) o RRIM (reinforced RIM). Si possono annegare anche stuoie di fibra e tessuti per resistere meglio a strappi e allungamenti. <span class="pag">(p. 66)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="colata-sottovuoto.html">Colata sottovuoto</a> – forme simili in PUR, di solito più piccole e complesse <span class="pag">(p. 64)</span></li><li><a href="stampaggio-iniezione.html">Stampaggio a iniezione</a> – il RIM serve anche a prototiparne i pezzi <span class="pag">(p. 64)</span></li><li><a href="lavorazione-cnc.html">Lavorazione CNC</a> – per blocchi di schiuma lavorati invece che stampati <span class="pag">(p. 64)</span></li><li><a href="imbottitura.html">Imbottitura e tappezzeria</a> – le schiume rivestono strutture e vengono poi tappezzate <span class="pag">(p. 64, 67)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 64–67.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/rim.js"></script>
+</body>
+</html>

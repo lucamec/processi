@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lavorazione CNC (fresatura, tornitura, foratura) – Processi produttivi per il design</title>
+<meta name="description" content="Una macchina a controllo numerico trasferisce i dati CAD direttamente sul pezzo, togliendo materiale con frese, punte e utensili da tornio: rapida, precisa e adatta a quasi ogni materiale.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 1 – Formatura › Legno</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Lavorazione CNC (fresatura, tornitura, foratura)</h1>
+  <p class="originale" lang="en">CNC Machining</p>
+  <p class="categoria">Parte 1 – Formatura · Legno</p>
+  <p class="sintesi">Una macchina a controllo numerico trasferisce i dati CAD direttamente sul pezzo, togliendo materiale con frese, punte e utensili da tornio: rapida, precisa e adatta a quasi ogni materiale.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="2000,2400,2000,2400,2600">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="lavorazione-cnc" data-alt="Modello 3D di una fresatrice a portale con la seduta di una sedia in legno sulla tavola a vuoto. Il mandrino si muove lungo i tre assi X, Y e Z: prima contorna il pezzo, poi ne arrotonda il bordo, poi scava la seduta con passate parallele. Nell'ultima fase la testa si inclina su due assi di rotazione e pratica tre fori obliqui per le gambe, cosa impossibile con soli tre assi.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Fissaggio sottovuoto<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Contorno<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Bordo profilato<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Scavo della seduta<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="5">5. Fori inclinati a 5 assi<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Fissaggio sottovuoto</b>Le tavole, tagliate in listelli girati e reincollati, vengono premute sulla tavola: il vuoto nelle scanalature, chiuso da una guarnizione, le tiene ferme. <span class="pag">(p. 184)</span></li>
+    <li><b>Fase 2 – Contorno</b>Con una fresa a tuffo la macchina a 3 assi taglia il profilo esterno della seduta. <span class="pag">(p. 184)</span></li>
+    <li><b>Fase 3 – Bordo profilato</b>Il carosello ruota e un altro utensile profila il bordo: il cambio è istantaneo. <span class="pag">(p. 183–184)</span></li>
+    <li><b>Fase 4 – Scavo della seduta</b>Una fresa a disco toglie materiale dal piano e dà alla seduta la forma ergonomica; tutto in meno di 2 minuti. <span class="pag">(p. 184)</span></li>
+    <li><b>Fase 5 – Fori inclinati a 5 assi</b>La 3 assi fa solo fori verticali: la seduta passa su una macchina a 5 assi, che inclina la testa e fora con l'angolo giusto per gambe e schienale. <span class="pag">(p. 182, 184)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una fresatrice a portale con la seduta di una sedia in legno sulla tavola a vuoto. Il mandrino si muove lungo i tre assi X, Y e Z: prima contorna il pezzo, poi ne arrotonda il bordo, poi scava la seduta con passate parallele. Nell'ultima fase la testa si inclina su due assi di rotazione e pratica tre fori obliqui per le gambe, cosa impossibile con soli tre assi.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 0 820 380" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Fresatura CNC della seduta di una sedia, in sezione</title>
+<desc id="sc-d">Sezione della seduta in legno sulla tavola con morsa a vuoto, con il mandrino sopra. Le fasi mostrano il fissaggio, il taglio del contorno, la profilatura del bordo, lo scavo ergonomico e i fori inclinati eseguiti a 5 assi.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- tavola con morsa a vuoto -->
+<rect x="170" y="270" width="480" height="24" class="macchina"/>
+<rect x="230" y="270" width="8" height="8" class="cavita"/><rect x="290" y="270" width="8" height="8" class="cavita"/><rect x="350" y="270" width="8" height="8" class="cavita"/><rect x="410" y="270" width="8" height="8" class="cavita"/><rect x="470" y="270" width="8" height="8" class="cavita"/><rect x="530" y="270" width="8" height="8" class="cavita"/><rect x="590" y="270" width="8" height="8" class="cavita"/>
+<g data-k="op:1,0,0,0,0"><line x1="260" y1="278" x2="260" y2="312" class="flusso-linea tratteggiata" marker-end="url(#sc-punta)"/><line x1="410" y1="278" x2="410" y2="312" class="flusso-linea tratteggiata" marker-end="url(#sc-punta)"/><line x1="560" y1="278" x2="560" y2="312" class="flusso-linea tratteggiata" marker-end="url(#sc-punta)"/></g>
+<g class="etichetta"><text x="170" y="330" text-anchor="start">Morsa a vuoto: scanalature sotto il pezzo</text></g>
+<!-- pezzo: grezzo incollato, contornato, bordato, scavato -->
+<path d="M200,220 H620 V270 H200 Z" class="m-grezzo contorno" data-k="op:1,0,0,0,0" data-i="op:1"/>
+<path d="M230,220 H590 V270 H230 Z" class="m-grezzo contorno" data-k="op:0,1,0,0,0" data-i="op:0"/>
+<path d="M240,220 H580 Q590,220 590,232 V270 H230 V232 Q230,220 240,220 Z" class="m-grezzo contorno" data-k="op:0,0,1,0,0" data-i="op:0"/>
+<path d="M240,220 H300 Q410,250 520,220 H580 Q590,220 590,232 V270 H230 V232 Q230,220 240,220 Z" class="m-grezzo contorno" data-k="op:0,0,0,1,1" data-i="op:0"/>
+<line x1="300" y1="222" x2="300" y2="268" stroke="var(--testo-2)" stroke-width="1" opacity=".5"/><line x1="360" y1="222" x2="360" y2="268" stroke="var(--testo-2)" stroke-width="1" opacity=".5"/><line x1="420" y1="222" x2="420" y2="268" stroke="var(--testo-2)" stroke-width="1" opacity=".5"/><line x1="480" y1="222" x2="480" y2="268" stroke="var(--testo-2)" stroke-width="1" opacity=".5"/><line x1="540" y1="222" x2="540" y2="268" stroke="var(--testo-2)" stroke-width="1" opacity=".5"/>
+<g class="etichetta"><text x="170" y="360" text-anchor="start">Listelli di faggio incollati (bilanciano le tensioni del legno)</text></g>
+<!-- fori inclinati (fase 5) -->
+<g data-k="op:0,0,0,0,1" data-i="op:0">
+  <path d="M276,270 L296,226 L306,230 L286,274 Z" class="cavita contorno"/><path d="M544,270 L524,226 L534,222 L554,266 Z" class="cavita contorno"/>
+</g>
+
+<!-- mandrino: si muove su X e Z (3 assi); in fase 5 la testa si inclina (5 assi) -->
+<g data-k="tx:0,170,-170,0,120;ty:-60,0,0,0,-10" data-i="tx:0;ty:-60">
+  <g data-k="rot:0,0,0,0,-24" data-i="rot:0" data-o="410,110">
+    <rect x="380" y="40" width="60" height="70" class="macchina"/>
+    <rect x="396" y="110" width="28" height="40" class="m-stampo contorno"/>
+    <rect x="404" y="150" width="12" height="70" class="scuro" data-k="op:1,1,0,0,1" data-i="op:1"/>
+    <path d="M396,190 H424 Q430,214 410,220 Q390,214 396,190 Z" class="scuro" data-k="op:0,0,1,1,0" data-i="op:0"/>
+  </g>
+</g>
+<g class="etichetta"><text x="480" y="60" text-anchor="start">Mandrino con utensile</text></g>
+<!-- assi -->
+<g transform="translate(80 120)">
+  <line x1="0" y1="0" x2="50" y2="0" stroke="var(--testo)" stroke-width="2" marker-end="url(#sc-punta-scura)"/><text x="56" y="5" class="etichetta" font-size="14">X</text>
+  <line x1="0" y1="0" x2="0" y2="-50" stroke="var(--testo)" stroke-width="2" marker-end="url(#sc-punta-scura)"/><text x="-5" y="-56" font-size="14">Z</text>
+  <circle cx="0" cy="0" r="4" fill="var(--testo)"/><text x="8" y="18" font-size="14">Y (verso chi guarda)</text>
+</g>
+<g class="etichetta" data-k="op:0,0,0,0,1"><text x="40" y="200" text-anchor="start">5 assi: X, Y, Z + 2 rotazioni della testa</text></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>La CNC comprende fresatura, contornatura, tornitura, foratura, smussatura, alesatura, incisione e taglio, su metallo, plastica, legno, pietra e compositi. <span class="pag">(p. 182)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>Il numero di assi decide le geometrie possibili: il tornio ne ha 2, la fresatrice o il pantografo fino a 5 (X e Y orizzontali, Z verticale, più due rotazioni). <span class="pag">(p. 182–183)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Si usano frese laterali e frontali, frese a tuffo, utensili conici, a coda di rondine e a testa sferica, ideali per le superfici curve. Per la macchina, linee dritte e curve 3D sono solo punti da collegare. <span class="pag">(p. 183–184)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="5" aria-label="Mostra la fase 5 nello schema">Fase 5</button>Una volta avviata, la sequenza si ripete in modo molto preciso e rapido, quasi senza operatore; il costo principale è la preparazione della macchina. <span class="pag">(p. 184, 186)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Quasi ogni materiale: plastica, metallo, legno, vetro, ceramica, compositi, schiume. <span class="pag">(p. 184, 186)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Da pezzo unico alla grande serie; spesso per prototipi e operazioni secondarie. <span class="pag">(p. 182, 184)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Basso, limitato a dime e sistemi di fissaggio; a volte basta una morsa. <span class="pag">(p. 182, 186)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Basso; manodopera minima. Pezzi grandi, complessi e materiali duri costano di più; la preparazione si paga a parte. <span class="pag">(p. 182, 186)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Rapido, secondo dimensione e numero di operazioni: meno di 2 minuti per la seduta del caso studio. <span class="pag">(p. 182, 184)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Alta, migliorabile con rettifica, carteggiatura e lucidatura; la fresa lascia segni secondo la velocità. <span class="pag">(p. 182, 184)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Tolleranze strette, adatte a prototipi molto precisi. Valore numerico: <span class="nd">n.d.</span> <span class="pag">(p. 184)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Alcune macchine accolgono un'auto intera, fino a 5 × 10 × 5 m. Per gli stampi conviene fino a circa 1 m³. <span class="pag">(p. 184)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Fori obliqui richiedono 5 assi</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-fori-ok-t v-fori-ok-d" class="mini-svg"><title id="v-fori-ok-t">Corretto: Fori inclinati con la macchina a 5 assi</title><desc id="v-fori-ok-d">La testa si inclina e fora con l'angolo giusto per gambe e schienale.</desc><defs>
+  <pattern id="v-fori-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-fori-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-fori-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-fori-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,60 H150 V100 H10 Z" class="m-grezzo contorno"/><path d="M40,100 L60,60 L70,64 L50,104 Z" class="cavita contorno"/><rect x="58" y="10" width="14" height="44" class="scuro" transform="rotate(25 65 32)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-fori-ko-t v-fori-ko-d" class="mini-svg"><title id="v-fori-ko-t">Da evitare: Fori inclinati con la macchina a 3 assi</title><desc id="v-fori-ko-d">Una macchina a 3 assi fa solo fori verticali.</desc><defs>
+  <pattern id="v-fori-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-fori-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-fori-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-fori-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,60 H150 V100 H10 Z" class="m-grezzo contorno"/><rect x="60" y="60" width="10" height="40" class="cavita contorno"/><rect x="58" y="10" width="14" height="44" class="scuro"/><circle cx="65" cy="80" r="16" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>La macchina a 3 assi fora solo in verticale; i fori inclinati per gambe e schienale si fanno su una macchina a 5 assi. <span class="pag">(p. 184)</span></p></article>
+<article class="card"><h3>Stabilizzare il legno prima della lavorazione</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-legno-ok-t v-legno-ok-d" class="mini-svg"><title id="v-legno-ok-t">Corretto: Tavole tagliate e reincollate</title><desc id="v-legno-ok-d">Le tavole si tagliano in listelli, si girano e si incollano: ogni listello bilancia le forze dei vicini e il pezzo non si imbarca.</desc><defs>
+  <pattern id="v-legno-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-legno-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-legno-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-legno-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="12" y="40" width="23" height="40" class="m-grezzo contorno"/><path d="M14,74 Q23,60 33,74" fill="none" stroke="var(--testo-2)"/><rect x="35" y="40" width="23" height="40" class="m-grezzo contorno"/><path d="M37,46 Q46,60 56,46" fill="none" stroke="var(--testo-2)"/><rect x="58" y="40" width="23" height="40" class="m-grezzo contorno"/><path d="M60,74 Q69,60 79,74" fill="none" stroke="var(--testo-2)"/><rect x="81" y="40" width="23" height="40" class="m-grezzo contorno"/><path d="M83,46 Q92,60 102,46" fill="none" stroke="var(--testo-2)"/><rect x="104" y="40" width="23" height="40" class="m-grezzo contorno"/><path d="M106,74 Q115,60 125,74" fill="none" stroke="var(--testo-2)"/><rect x="127" y="40" width="23" height="40" class="m-grezzo contorno"/><path d="M129,46 Q138,60 148,46" fill="none" stroke="var(--testo-2)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-legno-ko-t v-legno-ko-d" class="mini-svg"><title id="v-legno-ko-t">Da evitare: Tavola intera</title><desc id="v-legno-ko-d">Una tavola larga tende a imbarcarsi e a deformarsi.</desc><defs>
+  <pattern id="v-legno-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-legno-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-legno-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-legno-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M12,48 Q80,30 150,48 V84 Q80,66 12,84 Z" class="m-grezzo contorno"/><path d="M12,40 Q80,20 150,40" fill="none" stroke="var(--ko)" stroke-dasharray="4 3" stroke-width="2"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Il legno è influenzato da venatura, umidità e imbarcamento: le tavole si tagliano in listelli, si girano e si reincollano perché ognuno bilanci le forze dei vicini. <span class="pag">(p. 182, 184)</span></p></article>
+<article class="card"><h3>Prevedere la finitura delle superfici</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-finitura-ok-t v-finitura-ok-d" class="mini-svg"><title id="v-finitura-ok-t">Corretto: Segni dell'utensile tolti con la finitura</title><desc id="v-finitura-ok-d">Secondo la velocità la fresa lascia segni visibili, che si riducono o eliminano con carteggiatura, rettifica o lucidatura.</desc><defs>
+  <pattern id="v-finitura-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-finitura-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-finitura-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-finitura-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,50 Q80,90 150,50 V100 H10 Z" class="m-grezzo contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-finitura-ko-t v-finitura-ko-d" class="mini-svg"><title id="v-finitura-ko-t">Da evitare: Superficie lasciata grezza di fresatura</title><desc id="v-finitura-ko-d">Le passate dell'utensile restano visibili sulla superficie.</desc><defs>
+  <pattern id="v-finitura-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-finitura-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-finitura-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-finitura-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,50 Q80,90 150,50 V100 H10 Z" class="m-grezzo contorno"/><line x1="30" y1="59" x2="30" y2="65" stroke="var(--ko)" stroke-width="2"/><line x1="50" y1="68" x2="50" y2="74" stroke="var(--ko)" stroke-width="2"/><line x1="70" y1="77" x2="70" y2="83" stroke="var(--ko)" stroke-width="2"/><line x1="90" y1="77" x2="90" y2="83" stroke="var(--ko)" stroke-width="2"/><line x1="110" y1="68" x2="110" y2="74" stroke="var(--ko)" stroke-width="2"/><line x1="130" y1="59" x2="130" y2="65" stroke="var(--ko)" stroke-width="2"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Secondo la velocità la fresa lascia segni del taglio, che si riducono o eliminano con carteggiatura, rettifica o lucidatura. Bisogna anche progettare per le macchine effettivamente disponibili. <span class="pag">(p. 184)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Il libro non elenca varianti come sotto-voci; qui sotto le macchine descritte nel capitolo, accanto alla 5 assi dello schema principale.</p><div class="griglia-card"><article class="card"><h3>Tornio CNC</h3><p class="originale" lang="en">CNC lathe turning</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-tornio-t var-tornio-d" class="mini-svg"><title id="var-tornio-t">Tornio CNC</title><desc id="var-tornio-d">Il pezzo gira e l'utensile a punta singola lo taglia con un arco continuo: 2 assi (profondità e posizione). Così si fanno le gambe e i raggi dello schienale.</desc><defs>
+  <pattern id="var-tornio-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-tornio-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-tornio-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-tornio-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="10" y="40" width="30" height="44" class="macchina"/><rect x="180" y="52" width="30" height="20" class="macchina"/>
+    <path d="M40,50 H70 Q90,40 110,52 H180 V72 H110 Q90,84 70,74 H40 Z" class="m-grezzo contorno"/>
+    <path d="M100,96 L112,76 L124,96 Z" class="scuro"/><path d="M39,62 A14,14 0 1 1 25,48" class="flusso-linea" fill="none" marker-end="url(#var-tornio-punta)"/></svg></div><p>Il pezzo gira fra punta e contropunta e un utensile a punta singola lo taglia con un arco continuo; i pezzi di grande sezione girano più lenti. Nel caso studio così si fanno gambe e raggi della sedia. <span class="pag">(p. 182–183, 186)</span></p></article>
+<article class="card"><h3>Fresatrice a 3 assi con carosello</h3><p class="originale" lang="en">3-axis CNC with tool carousel</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-tre-t var-tre-d" class="mini-svg"><title id="var-tre-t">3 assi</title><desc id="var-tre-d">X, Y orizzontali e Z verticale; un carosello di utensili cambia la fresa in un istante. Taglia contorni e superfici, ma i fori solo in verticale.</desc><defs>
+  <pattern id="var-tre-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-tre-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-tre-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-tre-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="30" y="80" width="160" height="24" class="m-grezzo contorno"/>
+    <rect x="44" y="20" width="12" height="30" class="scuro"/><rect x="74" y="20" width="12" height="30" class="scuro"/><rect x="104" y="20" width="12" height="30" class="scuro"/><rect x="134" y="20" width="12" height="30" class="scuro"/><rect x="164" y="20" width="12" height="30" class="scuro"/>
+    <g class="etichetta"><text x="110" y="14" text-anchor="middle">carosello utensili</text></g></svg></div><p>Il carosello porta una serie di utensili e li cambia all'istante; la macchina a 5 assi del caso studio ha invece un solo utensile, con un magazzino separato da cui la testa preleva gli utensili. <span class="pag">(p. 183)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="elettroerosione.html">Elettroerosione (EDM)</a> – per forme concave nei metalli <span class="pag">(p. 184)</span></li><li><a href="elettroformatura.html">Elettroformatura</a> – più conveniente per stampi oltre circa 1 m³ <span class="pag">(p. 184)</span></li><li><a href="taglio-laser.html">Taglio laser</a> – per profilare lastre, per esempio di PMMA <span class="pag">(p. 184)</span></li><li><a href="curvatura-vapore.html">Curvatura a vapore</a> – lo schienale della sedia del caso studio <span class="pag">(p. 184, 188)</span></li><li><a href="rettifica-levigatura.html">Rettifica, levigatura e lucidatura</a> – per togliere i segni dell'utensile <span class="pag">(p. 184)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 182–189.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/lavorazione-cnc.js"></script>
+</body>
+</html>

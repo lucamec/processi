@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Punzonatura e tranciatura – Processi produttivi per il design</title>
+<meta name="description" content="Un punzone di acciaio temprato attraversa la lamiera contro una matrice e la taglia per cesoiamento: fori tondi, quadri o sagomati in pochi istanti, con utensili dedicati o intercambiabili.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 2 – Taglio › Meccanico</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Punzonatura e tranciatura</h1>
+  <p class="originale" lang="en">Punching and Blanking</p>
+  <p class="categoria">Parte 2 – Taglio · Meccanico</p>
+  <p class="sintesi">Un punzone di acciaio temprato attraversa la lamiera contro una matrice e la taglia per cesoiamento: fori tondi, quadri o sagomati in pochi istanti, con utensili dedicati o intercambiabili.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="1800,1600,2600,2000,1800">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="punzonatura-tranciatura" data-alt="Modello 3D di una punzonatrice. Una lamiera chiara scorre sul banco a rulli sotto il punzone; il premilamiera scende a bloccarla. Il punzone colpisce dodici volte mentre la lamiera si sposta da un foro all'altro, e a ogni colpo un dischetto di sfrido cade nella matrice. Alla fine la lamiera forata esce e diventa verde.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Carico<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Bloccaggio<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Punzonatura<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Ritorno ed espulsione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="5">5. Sbavatura<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Carico</b>La lamiera si posa sul banco a rulli. <span class="pag">(p. 262)</span></li>
+    <li><b>Fase 2 – Bloccaggio</b>Premilamiera e matrice serrano il pezzo. <span class="pag">(p. 262)</span></li>
+    <li><b>Fase 3 – Punzonatura</b>Il punzone temprato attraversa la lamiera, che si frattura fra i contorni di punzone e matrice; la matrice è appena più larga per lasciare spazio all'arrotondamento e alla bava. <span class="pag">(p. 262, 264)</span></li>
+    <li><b>Fase 4 – Ritorno ed espulsione</b>Il punzone risale e il premilamiera libera il metallo; lo sfrido cade e si raccoglie per il riciclo. <span class="pag">(p. 262, 264)</span></li>
+    <li><b>Fase 5 – Sbavatura</b>Il taglio lascia bave taglienti, che si eliminano con rettifica e lucidatura. <span class="pag">(p. 261–262)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una punzonatrice. Una lamiera chiara scorre sul banco a rulli sotto il punzone; il premilamiera scende a bloccarla. Il punzone colpisce dodici volte mentre la lamiera si sposta da un foro all'altro, e a ogni colpo un dischetto di sfrido cade nella matrice. Alla fine la lamiera forata esce e diventa verde.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 20 820 360" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Punzonatura, in sezione</title>
+<desc id="sc-d">Sezione di un punzone, un premilamiera e una matrice con la lamiera fra di essi. Le fasi mostrano il carico, il bloccaggio, il taglio con lo sfrido che cade, il ritorno del punzone con la bava sul bordo e la sbavatura.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- matrice (con gioco leggermente maggiore del punzone) -->
+<path d="M180,236 H372 V330 H180 Z" fill="url(#sc-tratteggio)" class="contorno"/>
+<path d="M448,236 H640 V330 H448 Z" fill="url(#sc-tratteggio)" class="contorno"/>
+<g class="etichetta"><text x="660" y="300" text-anchor="start">Matrice</text></g>
+
+<!-- lamiera: entra, viene forata -->
+<g data-k="tx:0,0,0,0,0" data-i="tx:-260">
+  <rect x="120" y="222" width="580" height="14" class="m-grezzo contorno" data-k="op:1,1,1,1,0" data-i="op:1"/>
+  <rect x="120" y="222" width="580" height="14" class="m-finito contorno" data-k="op:0,0,0,0,1" data-i="op:0"/>
+  <rect x="376" y="222" width="68" height="14" fill="#eef1f4" data-k="op:0,0,1,1,1" data-i="op:0"/>
+  <g data-k="op:0,0,1,1,0" data-i="op:0"><path d="M376,236 l-6,8 l6,0 Z M444,236 l6,8 l-6,0 Z" style="fill:var(--ko)"/></g>
+</g>
+<g class="etichetta"><line x1="130" y1="226" x2="20" y2="205" class="richiamo"/><text x="20" y="210" text-anchor="start">Lamiera (fino a 5 mm)</text></g>
+<!-- sfrido che cade -->
+<rect x="378" y="222" width="64" height="14" class="m-grezzo contorno" data-k="op:0,1,1,0,0;ty:0,0,70,120,120" data-i="op:0;ty:0"/>
+<g data-k="op:0,0,0,1,0"><g class="etichetta"><text x="20" y="360" text-anchor="start">lo sfrido cade e si ricicla; sul bordo restano arrotondamento e bava</text></g></g>
+
+<!-- premilamiera -->
+<g data-k="ty:-40,0,0,-40,-40" data-i="ty:-40">
+  <path d="M290,200 H372 V220 H290 Z M448,200 H530 V220 H448 Z" class="m-stampo contorno"/>
+</g>
+<g class="etichetta"><text x="560" y="190" text-anchor="start">Premilamiera</text></g>
+<!-- punzone temprato -->
+<g data-k="ty:-80,-40,36,-80,-80" data-i="ty:-80">
+  <rect x="330" y="40" width="160" height="40" class="macchina"/>
+  <rect x="378" y="80" width="64" height="140" fill="url(#sc-tratteggio)" class="contorno"/>
+  <g data-k="op:0,0,1,0,0"><line x1="410" y1="-10" x2="410" y2="36" class="flusso-linea" marker-end="url(#sc-punta)"/></g>
+</g>
+<g class="etichetta"><text x="520" y="70" text-anchor="start">Punzone temprato</text></g>
+<g data-k="op:0,1,0,0,0"><g class="etichetta"><text x="20" y="360" text-anchor="start">premilamiera e matrice serrano il pezzo</text></g></g>
+<g data-k="op:0,0,1,0,0"><g class="etichetta"><text x="20" y="360" text-anchor="start">il metallo si frattura fra i bordi di punzone e matrice</text></g></g>
+<g data-k="op:0,0,0,0,1"><g class="etichetta"><text x="20" y="360" text-anchor="start">la bava si toglie con rettifica e lucidatura</text></g></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Sono due processi di cesoiamento uguali: punzonatura quando si ricava una forma interna, tranciatura quando si ritaglia una forma esterna in un solo colpo. <span class="pag">(p. 260)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>Si lavora con pressa a utensile singolo, per operazioni ripetitive, o con punzonatrice a torretta a controllo numerico, caricata con molti utensili; la bilanciera è una pressa a vite manuale. <span class="pag">(p. 260, 264)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>Il gioco fra punzone e matrice dipende da tipo e spessore del materiale e va da 0,25 a 0,75 mm: le pareti del foro non sono perfettamente perpendicolari. <span class="pag">(p. 262)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Per fori piccoli la punzonatura è più rapida di laser e getto d'acqua, che devono seguire tutto il contorno; la fresatura è più precisa e senza bava, ma molto più lenta. <span class="pag">(p. 261)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Quasi tutti i metalli, soprattutto acciaio al carbonio, inox, alluminio e leghe di rame. Pelle, tessuti, plastica, carta e cartone si punzonano con macchine diverse (fustellatura). <span class="pag">(p. 262)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Da pezzo unico a produzione di massa; molto usata per prototipi e piccole serie. <span class="pag">(p. 260)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Da basso a moderato: utensili standard e piccoli economici, utensili speciali e 3D più costosi. <span class="pag">(p. 260, 262)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Da basso a moderato; manodopera da moderata ad alta per l'abilità richiesta. <span class="pag">(p. 260, 262)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Rapido, da 1 a 100 colpi al minuto; il cambio utensili richiede tempo. <span class="pag">(p. 260, 262)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Alta, ma i bordi vanno sbavati. <span class="pag">(p. 260–261)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Processo preciso; gioco punzone-matrice 0,25–0,75 mm. Tolleranze numeriche: <span class="nd">n.d.</span> <span class="pag">(p. 260, 262)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Lamiere sottili fino a 5 mm; oltre circa 85 mm di diametro un utensile unico diventa troppo costoso. <span class="pag">(p. 260–261)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Larghezze rispetto allo spessore</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-larghezza-ok-t v-larghezza-ok-d" class="mini-svg"><title id="v-larghezza-ok-t">Corretto: Fori e ponticelli non più stretti dello spessore</title><desc id="v-larghezza-ok-d">Il punzone non deve essere più stretto dello spessore, e il materiale che resta fra i fori deve essere più largo dello spessore.</desc><defs>
+  <pattern id="v-larghezza-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-larghezza-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-larghezza-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-larghezza-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="50" width="120" height="16" class="m-finito contorno"/><rect x="44" y="50" width="26" height="16" fill="#eef1f4"/><rect x="92" y="50" width="26" height="16" fill="#eef1f4"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-larghezza-ko-t v-larghezza-ko-d" class="mini-svg"><title id="v-larghezza-ko-t">Da evitare: Foro o ponticello troppo sottile</title><desc id="v-larghezza-ko-d">Un punzone più sottile dello spessore si rompe; un ponticello troppo stretto si deforma.</desc><defs>
+  <pattern id="v-larghezza-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-larghezza-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-larghezza-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-larghezza-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="50" width="120" height="16" class="m-finito contorno"/><rect x="50" y="50" width="30" height="16" fill="#eef1f4"/><rect x="84" y="50" width="30" height="16" fill="#eef1f4"/><circle cx="82" cy="58" r="13" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Il punzone non deve essere più stretto dello spessore della lamiera, e il materiale lasciato fra i fori deve essere più largo dello spessore. <span class="pag">(p. 262)</span></p></article>
+<article class="card"><h3>Punti di fissaggio arretrati</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-fissaggi-ok-t v-fissaggi-ok-d" class="mini-svg"><title id="v-fissaggi-ok-t">Corretto: Fori di fissaggio lontani dal bordo</title><desc id="v-fissaggi-ok-d">I punti di fissaggio vanno arretrati il più possibile per la massima resistenza.</desc><defs>
+  <pattern id="v-fissaggi-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-fissaggi-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-fissaggi-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-fissaggi-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="30" width="120" height="70" class="m-finito contorno"/><circle cx="50" cy="65" r="8" fill="#eef1f4" stroke="var(--testo)"/><circle cx="110" cy="65" r="8" fill="#eef1f4" stroke="var(--testo)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-fissaggi-ko-t v-fissaggi-ko-d" class="mini-svg"><title id="v-fissaggi-ko-t">Da evitare: Fori a filo del bordo</title><desc id="v-fissaggi-ko-d">Un foro troppo vicino al bordo indebolisce il pezzo.</desc><defs>
+  <pattern id="v-fissaggi-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-fissaggi-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-fissaggi-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-fissaggi-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="30" width="120" height="70" class="m-finito contorno"/><circle cx="28" cy="65" r="8" fill="#eef1f4" stroke="var(--testo)"/><circle cx="28" cy="65" r="16" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>I fori di fissaggio vanno posti il più lontano possibile dal bordo, per la massima resistenza. <span class="pag">(p. 262)</span></p></article>
+<article class="card"><h3>Verso di punzonatura e bava</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-bava-ok-t v-bava-ok-d" class="mini-svg"><title id="v-bava-ok-t">Corretto: Bava sul lato nascosto o da lucidare</title><desc id="v-bava-ok-d">La bava resta sul lato d'uscita del punzone: si sceglie il verso (nel caso studio si punzona dal retro) o la si nasconde in un incavo.</desc><defs>
+  <pattern id="v-bava-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-bava-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-bava-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-bava-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="50" width="120" height="16" class="m-finito contorno"/><rect x="66" y="50" width="28" height="16" fill="#eef1f4"/><path d="M66,66 l-4,6 h4 Z M94,66 l4,6 h-4 Z" style="fill:var(--testo)"/><g class="etichetta"><text x="80" y="96" text-anchor="middle">retro</text></g></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-bava-ko-t v-bava-ko-d" class="mini-svg"><title id="v-bava-ko-t">Da evitare: Bava sul lato in vista</title><desc id="v-bava-ko-d">Sul lato a vista bordi arrotondati e bave impediscono una lucidatura perfetta.</desc><defs>
+  <pattern id="v-bava-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-bava-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-bava-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-bava-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="50" width="120" height="16" class="m-finito contorno"/><rect x="66" y="50" width="28" height="16" fill="#eef1f4"/><path d="M66,50 l-4,-6 h4 Z M94,50 l4,-6 h-4 Z" style="fill:var(--ko)"/><circle cx="80" cy="46" r="20" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Il taglio lascia arrotondamento e bava: nel caso studio il vassoio si punzona dal retro, così il lato a vista si lucida perfettamente; altrimenti la bava si leviga o si nasconde in un incavo. <span class="pag">(p. 261–263)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Lo schema principale mostra la punzonatura di una forma interna; queste sono le altre operazioni descritte nel capitolo.</p><div class="griglia-card"><article class="card"><h3>Tranciatura</h3><p class="originale" lang="en">Blanking</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-tranciatura-t var-tranciatura-d" class="mini-svg"><title id="var-tranciatura-t">Tranciatura</title><desc id="var-tranciatura-d">Si ritaglia una forma esterna in un colpo solo: il pezzo è ciò che cade, il foglio forato è lo sfrido. I pezzi restano legati al foglio da linguette.</desc><defs>
+  <pattern id="var-tranciatura-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-tranciatura-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-tranciatura-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-tranciatura-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="20" y="40" width="180" height="16" class="m-grezzo contorno"/><rect x="80" y="40" width="60" height="16" fill="#eef1f4"/>
+    <rect x="80" y="80" width="60" height="16" class="m-finito contorno"/></svg></div><p>Ritaglio di una forma esterna in un solo colpo; i pezzi restano legati al foglio da linguette. <span class="pag">(p. 260, 262, 264)</span></p></article>
+<article class="card"><h3>Roditura</h3><p class="originale" lang="en">Nibbling</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-roditura-t var-roditura-d" class="mini-svg"><title id="var-roditura-t">Roditura (nibbling)</title><desc id="var-roditura-d">Oltre 85 mm di diametro un solo utensile costa troppo: tanti colpi sovrapposti di un punzone piccolo seguono il contorno.</desc><defs>
+  <pattern id="var-roditura-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-roditura-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-roditura-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-roditura-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <circle cx="110" cy="62" r="46" fill="none" stroke="var(--testo)" stroke-dasharray="3 3"/>
+    <circle cx="156" cy="62" r="9" fill="#eef1f4" stroke="var(--finito)" stroke-width="2"/><circle cx="152.49845849551917" cy="79.60343788879413" r="9" fill="#eef1f4" stroke="var(--finito)" stroke-width="2"/><circle cx="142.5269119345812" cy="94.5269119345812" r="9" fill="#eef1f4" stroke="var(--finito)" stroke-width="2"/><circle cx="127.60343788879413" cy="104.49845849551919" r="9" fill="#eef1f4" stroke="var(--finito)" stroke-width="2"/><circle cx="110" cy="108" r="9" fill="#eef1f4" stroke="var(--finito)" stroke-width="2"/><circle cx="92.39656211120587" cy="104.49845849551919" r="9" fill="#eef1f4" stroke="var(--finito)" stroke-width="2"/><circle cx="77.4730880654188" cy="94.5269119345812" r="9" fill="#eef1f4" stroke="var(--finito)" stroke-width="2"/><circle cx="67.50154150448081" cy="79.60343788879413" r="9" fill="#eef1f4" stroke="var(--finito)" stroke-width="2"/><circle cx="64" cy="62.00000000000001" r="9" fill="#eef1f4" stroke="var(--finito)" stroke-width="2"/><circle cx="67.5015415044808" cy="44.39656211120588" r="9" fill="#eef1f4" stroke="var(--finito)" stroke-width="2"/><circle cx="77.4730880654188" cy="29.473088065418814" r="9" fill="#eef1f4" stroke="var(--finito)" stroke-width="2"/><circle cx="92.39656211120584" cy="19.50154150448082" r="9" fill="#eef1f4" stroke="var(--finito)" stroke-width="2"/><circle cx="109.99999999999999" cy="16" r="9" fill="#eef1f4" stroke="var(--finito)" stroke-width="2"/><circle cx="127.60343788879413" cy="19.501541504480812" r="9" fill="#eef1f4" stroke="var(--finito)" stroke-width="2"/><circle cx="142.52691193458116" cy="29.473088065418807" r="9" fill="#eef1f4" stroke="var(--finito)" stroke-width="2"/><circle cx="152.49845849551917" cy="44.39656211120584" r="9" fill="#eef1f4" stroke="var(--finito)" stroke-width="2"/></svg></div><p>Molti colpi sovrapposti lungo il perimetro, per forme grandi o fori di diametro maggiore del punzone. <span class="pag">(p. 260, 264)</span></p></article>
+<article class="card"><h3>Intaglio</h3><p class="originale" lang="en">Notching</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-intaglio-t var-intaglio-d" class="mini-svg"><title id="var-intaglio-t">Intaglio (notching)</title><desc id="var-intaglio-d">Si asporta materiale dal bordo esterno del pezzo.</desc><defs>
+  <pattern id="var-intaglio-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-intaglio-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-intaglio-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-intaglio-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M20,30 H200 V100 H20 Z" class="m-finito contorno"/>
+    <path d="M90,30 H130 V56 H90 Z" fill="#eef1f4" stroke="var(--testo)"/></svg></div><p>Asportazione di materiale dal bordo esterno del pezzo. <span class="pag">(p. 260)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="taglio-laser.html">Taglio laser</a> – più materiali e spessori, ma segue il contorno <span class="pag">(p. 261)</span></li><li><a href="taglio-getto-acqua.html">Taglio a getto d'acqua</a> – più materiali e spessori, ma segue il contorno <span class="pag">(p. 261)</span></li><li><a href="lavorazione-cnc.html">Lavorazione CNC</a> – più precisa e senza bava, ma lenta e costosa <span class="pag">(p. 261)</span></li><li><a href="stampaggio-lamiera.html">Stampaggio della lamiera</a> – spesso combinata negli stampi progressivi <span class="pag">(p. 260)</span></li><li><a href="fustellatura.html">Fustellatura</a> – per materiali morbidi <span class="pag">(p. 262)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 260–265.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/punzonatura-tranciatura.js"></script>
+</body>
+</html>

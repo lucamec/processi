@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Incisione CNC – Processi produttivi per il design</title>
+<meta name="description" content="Una fresatrice a controllo numerico incide con precisione e ripetibilità superfici piane e 3D; il colore negli incavi e i materiali trasparenti mettono in risalto i dettagli.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 4 – Finitura › Processi sottrattivi</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Incisione CNC</h1>
+  <p class="originale" lang="en">CNC Engraving</p>
+  <p class="categoria">Parte 4 – Finitura · Processi sottrattivi</p>
+  <p class="sintesi">Una fresatrice a controllo numerico incide con precisione e ripetibilità superfici piane e 3D; il colore negli incavi e i materiali trasparenti mettono in risalto i dettagli.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="2000,2800,2000,1600">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="incisione-cnc" data-alt="Modello 3D di una fresatrice a portale con tre lastre trasparenti di plexiglas su un film adesivo giallo. La punta si porta sullo spigolo di partenza, poi incide tratti dritti bianchi sulle tre lastre, una dopo l'altra. Una racla stende la vernice rossa nei solchi; alla fine le lastre si sollevano pulite.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Fissaggio e azzeramento<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Incisione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Colore<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Pulizia<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Fissaggio e azzeramento</b>Tre lastre di PMMA da 10 mm, già tagliate, si fissano al piano con un film adesivo; la punta si azzera sullo spigolo in alto a destra per allineare i dati CAD. <span class="pag">(p. 398)</span></li>
+    <li><b>Fase 2 – Incisione</b>La punta in tungsteno da 0,3 mm incide a linee rette; per i tre trofei servono 45 minuti, a 0,2 mm di profondità. <span class="pag">(p. 397–398)</span></li>
+    <li><b>Fase 3 – Colore</b>Nei solchi si stende vernice alla cellulosa; ogni colore richiede 20 minuti di asciugatura. <span class="pag">(p. 398)</span></li>
+    <li><b>Fase 4 – Pulizia</b>Tolto l'eccesso, il colore nasconde i segni del taglio; le righe sottili nella plastica trasparente si attenuano lucidando. <span class="pag">(p. 397–398)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una fresatrice a portale con tre lastre trasparenti di plexiglas su un film adesivo giallo. La punta si porta sullo spigolo di partenza, poi incide tratti dritti bianchi sulle tre lastre, una dopo l'altra. Una racla stende la vernice rossa nei solchi; alla fine le lastre si sollevano pulite.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 40 820 340" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Incisione CNC di trofei in PMMA, in sezione</title>
+<desc id="sc-d">Sezione di una lastra di PMMA sul piano della fresatrice, fissata con un film adesivo. Le fasi mostrano il fissaggio e l'azzeramento della punta, l'incisione dei solchi, la vernice stesa a racla e il pezzo pulito.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<rect x="120" y="270" width="580" height="30" class="m-stampo contorno"/>
+<g class="etichetta"><text x="590" y="320" text-anchor="start">Piano della macchina</text></g>
+<rect x="200" y="264" width="420" height="6" fill="#d9c27a"/>
+<g class="etichetta"><line x1="200" y1="267" x2="40" y2="325" class="richiamo"/><text x="40" y="330" text-anchor="start">Film adesivo</text></g>
+<g data-k="ty:-60,0,0,0" data-i="ty:-60">
+  <rect x="200" y="214" width="420" height="50" fill="#daf0f4" class="contorno"/>
+  <path d="M248,214 L260,232 L272,214 Z" fill="#8fa9b0" data-k="op:0,1,1,1" data-i="op:0"/><path d="M318,214 L330,232 L342,214 Z" fill="#8fa9b0" data-k="op:0,1,1,1" data-i="op:0"/><path d="M388,214 L400,232 L412,214 Z" fill="#8fa9b0" data-k="op:0,1,1,1" data-i="op:0"/><path d="M458,214 L470,232 L482,214 Z" fill="#8fa9b0" data-k="op:0,0,1,1" data-i="op:0"/><path d="M528,214 L540,232 L552,214 Z" fill="#8fa9b0" data-k="op:0,0,1,1" data-i="op:0"/>
+  <path d="M248,214 L260,232 L272,214 Z" fill="#b8323a" data-k="op:0,0,1,1" data-i="op:0"/><path d="M318,214 L330,232 L342,214 Z" fill="#b8323a" data-k="op:0,0,1,1" data-i="op:0"/><path d="M388,214 L400,232 L412,214 Z" fill="#b8323a" data-k="op:0,0,1,1" data-i="op:0"/><path d="M458,214 L470,232 L482,214 Z" fill="#b8323a" data-k="op:0,0,1,1" data-i="op:0"/><path d="M528,214 L540,232 L552,214 Z" fill="#b8323a" data-k="op:0,0,1,1" data-i="op:0"/>
+</g>
+<g class="etichetta"><line x1="200" y1="240" x2="40" y2="235" class="richiamo"/><text x="40" y="240" text-anchor="start">PMMA 10 mm</text></g>
+<!-- utensile -->
+<g data-k="tx:420,160,0,0;ty:-40,0,-80,-80;op:1,1,0,0" data-i="tx:420;ty:-40">
+  <rect x="190" y="60" width="60" height="110" class="m-macchina contorno"/>
+  <path d="M212,170 H228 L222,206 L220,214 L218,206 Z" fill="#6a7078" class="contorno"/>
+</g>
+<g data-k="op:1,0,0,0"><g class="etichetta"><text x="140" y="360" text-anchor="start">Lastre fissate con film adesivo; la punta si azzera sullo spigolo in alto a destra</text></g></g>
+<g data-k="op:0,1,0,0"><g class="etichetta"><text x="140" y="360" text-anchor="start">Punta in tungsteno da 0,3 mm, a linee rette: 1–50 mm/s secondo materiale e profondità</text></g></g>
+<g data-k="op:0,0,1,0">
+  <path d="M180,196 L640,196" style="stroke:var(--testo)" stroke-width="5"/>
+  <g class="etichetta"><text x="140" y="360" text-anchor="start">Vernice alla cellulosa a racla: 20 minuti di asciugatura per colore</text></g>
+</g>
+<g data-k="op:0,0,0,1"><g class="etichetta"><text x="140" y="360" text-anchor="start">Pulito l'eccesso: il colore cancella i segni del taglio</text></g></g>
+<line x1="660" y1="120" x2="700" y2="120" class="flusso-linea" marker-end="url(#sc-punta)"/><line x1="660" y1="120" x2="660" y2="80" class="flusso-linea" marker-end="url(#sc-punta)"/>
+<g class="etichetta"><text x="670" y="70" text-anchor="start">x, y, z</text></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Con il laser, il CNC ha sostituito l'incisione a mano con scalpelli o pantografo; si esegue su fresatrici o pantografi a controllo numerico con almeno tre assi: x, y e z. <span class="pag">(p. 396)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>Le punte sono di solito in tungsteno, riaffilabili più volte; per materiali duri come il granito servono punte diamantate. Il percorso segue linee rette o il profilo del disegno. <span class="pag">(p. 397)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>Punte piccole riproducono dettagli e raggi interni stretti; punte grandi lavorano più in fretta e costano meno. Materiali duri e incisioni profonde richiedono velocità minori. <span class="pag">(p. 396–397)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Il processo parte dai dati CAD; anche con tre assi la profondità può variare a gradini, e si possono incidere segni di riferimento durante la lavorazione. <span class="pag">(p. 397)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Quasi tutti: plastica, schiume, legno, metallo (anche inox e titanio), pietra, vetro, ceramica, compositi. <span class="pag">(p. 396–398)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Da pezzo unico a lotti. <span class="pag">(p. 396)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Nessuno. <span class="pag">(p. 396, 398)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Moderato; manodopera minima, la macchina lavora di solito senza operatore. <span class="pag">(p. 396, 398)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Moderato, secondo dimensione e complessità; velocità di taglio 1–50 mm/s. <span class="pag">(p. 396–398)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Alta e ripetibile; il colore nasconde i segni del taglio. <span class="pag">(p. 396–397)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>0,01 mm. <span class="pag">(p. 396)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Dipende dal piano: di solito non oltre 2 m², ma esistono piani per modelli d'auto in scala reale; spessore minimo circa 1 mm. <span class="pag">(p. 397)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Dimensione della punta</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-punta-ok-t v-punta-ok-d" class="mini-svg"><title id="v-punta-ok-t">Corretto: Punta adatta ai raggi</title><desc id="v-punta-ok-d">Punte piccole (0,3 mm o meno) riproducono dettagli e raggi interni stretti.</desc><defs>
+  <pattern id="v-punta-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-punta-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-punta-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-punta-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="50" width="120" height="40" fill="#daf0f4" class="contorno"/><path d="M50,50 L56,62 L62,50 Z" fill="#eef1f4"/><path d="M90,50 L96,62 L102,50 Z" fill="#eef1f4"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-punta-ko-t v-punta-ko-d" class="mini-svg"><title id="v-punta-ko-t">Da evitare: Punta troppo grande</title><desc id="v-punta-ko-d">Una punta grande lavora più in fretta ma perde definizione: va trovato un compromesso.</desc><defs>
+  <pattern id="v-punta-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-punta-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-punta-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-punta-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="50" width="120" height="40" fill="#daf0f4" class="contorno"/><path d="M40,50 Q76,90 112,50 Z" fill="#eef1f4"/><circle cx="76" cy="62" r="18" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Compromesso fra punta piccola, che dà definizione e raggi stretti, e punta grande, che asporta più in fretta. <span class="pag">(p. 396–398)</span></p></article>
+<article class="card"><h3>Caratteri in tracciati</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-caratteri-ok-t v-caratteri-ok-d" class="mini-svg"><title id="v-caratteri-ok-t">Corretto: Testi convertiti in tracciati</title><desc id="v-caratteri-ok-d">I caratteri vanno forniti come contorni vettoriali.</desc><defs>
+  <pattern id="v-caratteri-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-caratteri-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-caratteri-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-caratteri-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><text x="80" y="78" text-anchor="middle" font-size="34" font-weight="700" fill="none" stroke="var(--testo)" stroke-width="1.5">Aa</text></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-caratteri-ko-t v-caratteri-ko-d" class="mini-svg"><title id="v-caratteri-ko-t">Da evitare: Font non convertito</title><desc id="v-caratteri-ko-d">Altrimenti nel passaggio il carattere può essere sostituito da un altro.</desc><defs>
+  <pattern id="v-caratteri-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-caratteri-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-caratteri-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-caratteri-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><text x="80" y="78" text-anchor="middle" font-size="30" font-family="monospace" fill="var(--testo)">Aa</text><circle cx="80" cy="66" r="26" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>I testi vanno consegnati come contorni vettoriali, altrimenti il carattere può essere sostituito; conviene usare la versione di software preferita dal produttore. <span class="pag">(p. 397)</span></p></article>
+<article class="card"><h3>Dettaglio e tempo</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-scala-ok-t v-scala-ok-d" class="mini-svg"><title id="v-scala-ok-t">Corretto: Dettaglio fine su aree piccole</title><desc id="v-scala-ok-d">Dettagli molto fini sono possibili, con tempi brevi se l'area è contenuta.</desc><defs>
+  <pattern id="v-scala-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-scala-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-scala-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-scala-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="50" y="40" width="60" height="50" fill="#daf0f4" class="contorno"/><line x1="60" y1="52" x2="100" y2="52" stroke="var(--testo)"/><line x1="60" y1="60" x2="100" y2="60" stroke="var(--testo)"/><line x1="60" y1="68" x2="100" y2="68" stroke="var(--testo)"/><line x1="60" y1="76" x2="100" y2="76" stroke="var(--testo)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-scala-ko-t v-scala-ko-d" class="mini-svg"><title id="v-scala-ko-t">Da evitare: Grandi aree a dettaglio fine</title><desc id="v-scala-ko-d">Incisioni grandi con dettagli minuti richiedono molto più tempo.</desc><defs>
+  <pattern id="v-scala-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-scala-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-scala-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-scala-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="30" width="120" height="70" fill="#daf0f4" class="contorno"/><line x1="28" y1="36" x2="132" y2="36" stroke="var(--testo)" stroke-width="0.8"/><line x1="28" y1="40.5" x2="132" y2="40.5" stroke="var(--testo)" stroke-width="0.8"/><line x1="28" y1="45" x2="132" y2="45" stroke="var(--testo)" stroke-width="0.8"/><line x1="28" y1="49.5" x2="132" y2="49.5" stroke="var(--testo)" stroke-width="0.8"/><line x1="28" y1="54" x2="132" y2="54" stroke="var(--testo)" stroke-width="0.8"/><line x1="28" y1="58.5" x2="132" y2="58.5" stroke="var(--testo)" stroke-width="0.8"/><line x1="28" y1="63" x2="132" y2="63" stroke="var(--testo)" stroke-width="0.8"/><line x1="28" y1="67.5" x2="132" y2="67.5" stroke="var(--testo)" stroke-width="0.8"/><line x1="28" y1="72" x2="132" y2="72" stroke="var(--testo)" stroke-width="0.8"/><line x1="28" y1="76.5" x2="132" y2="76.5" stroke="var(--testo)" stroke-width="0.8"/><line x1="28" y1="81" x2="132" y2="81" stroke="var(--testo)" stroke-width="0.8"/><line x1="28" y1="85.5" x2="132" y2="85.5" stroke="var(--testo)" stroke-width="0.8"/><line x1="28" y1="90" x2="132" y2="90" stroke="var(--testo)" stroke-width="0.8"/><line x1="28" y1="94.5" x2="132" y2="94.5" stroke="var(--testo)" stroke-width="0.8"/><circle cx="80" cy="66" r="28" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Dettagli molto fini sono riproducibili, ma su grandi aree il tempo cresce molto. <span class="pag">(p. 397)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Possibilità descritte nel capitolo; lo schema principale mostra l'incisione a tre assi con riempimento di colore.</p><div class="griglia-card"><article class="card"><h3>Incisione sul retro</h3><p class="originale" lang="en">Reverse engraving</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-retro-t var-retro-d" class="mini-svg"><title id="var-retro-t">Incisione sul retro</title><desc id="var-retro-d">Nei materiali trasparenti si incide il retro del pezzo: l'incisione si vede attraverso lo spessore.</desc><defs>
+  <pattern id="var-retro-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-retro-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-retro-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-retro-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="40" y="40" width="140" height="50" fill="#daf0f4" class="contorno"/>
+    <path d="M62,90 L70,80 L78,90 Z" fill="#b8323a"/><path d="M102,90 L110,80 L118,90 Z" fill="#b8323a"/><path d="M142,90 L150,80 L158,90 Z" fill="#b8323a"/>
+    <circle cx="110" cy="20" r="6" fill="none" stroke="var(--testo)"/><line x1="110" y1="26" x2="110" y2="38" stroke="var(--testo)" stroke-dasharray="3 2"/></svg></div><p>Nei materiali trasparenti migliora molto la resa. <span class="pag">(p. 397)</span></p></article>
+<article class="card"><h3>A 5 assi</h3><p class="originale" lang="en">5-axis engraving</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-cinque-t var-cinque-d" class="mini-svg"><title id="var-cinque-t">A 5 assi</title><desc id="var-cinque-d">Le macchine a 5 assi incidono superfici 3D e disegni più complessi, ma costano di più.</desc><defs>
+  <pattern id="var-cinque-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-cinque-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-cinque-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-cinque-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M20,100 Q110,30 200,100 Z" fill="#daf0f4" class="contorno"/>
+    <rect x="100" y="10" width="20" height="40" class="m-macchina contorno" transform="rotate(20 110 50)"/></svg></div><p>Per superfici 3D e disegni complessi. <span class="pag">(p. 396)</span></p></article>
+<article class="card"><h3>Percorso a contorno</h3><p class="originale" lang="en">Profile cutting path</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-profilo-t var-profilo-d" class="mini-svg"><title id="var-profilo-t">Percorso a contorno</title><desc id="var-profilo-d">Invece delle linee rette la punta può seguire il profilo del disegno; la scelta dipende dalla forma.</desc><defs>
+  <pattern id="var-profilo-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-profilo-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-profilo-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-profilo-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="20" y="30" width="180" height="70" fill="#daf0f4" class="contorno"/>
+    <ellipse cx="110" cy="65" rx="60" ry="24" fill="none" stroke="var(--testo)" stroke-width="2"/><ellipse cx="110" cy="65" rx="45" ry="16" fill="none" stroke="var(--testo)" stroke-width="2"/><ellipse cx="110" cy="65" rx="30" ry="8" fill="none" stroke="var(--testo)" stroke-width="2"/></svg></div><p>La punta segue il profilo del disegno. <span class="pag">(p. 397)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="lavorazione-cnc.html">Lavorazione CNC</a> – stesse macchine <span class="pag">(p. 396)</span></li><li><a href="taglio-laser.html">Taglio laser</a> – dettagli fino a 0,1 mm, attrezzature costose <span class="pag">(p. 396)</span></li><li><a href="incisione-fotochimica.html">Incisione fotochimica</a> – incisioni poco profonde nei metalli <span class="pag">(p. 396)</span></li><li><a href="sabbiatura.html">Sabbiatura</a> – effetti simili su vetro e altri materiali <span class="pag">(p. 388)</span></li><li><a href="serigrafia.html">Serigrafia</a> – alternativa economica all'incisione <span class="pag">(p. 396)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 396–399.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/incisione-cnc.js"></script>
+</body>
+</html>

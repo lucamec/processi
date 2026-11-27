@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Formatura superplastica (superforming) – Processi produttivi per il design</title>
+<meta name="description" content="Una lamiera di lega superplastica viene scaldata a circa 450–500 °C e spinta con l'aria su uno stampo a una sola faccia, come nella termoformatura: si ottengono pezzi metallici grandi e complessi in un solo pezzo.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 1 – Formatura › Metalli</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Formatura superplastica (superforming)</h1>
+  <p class="originale" lang="en">Superforming</p>
+  <p class="categoria">Parte 1 – Formatura · Metalli</p>
+  <p class="sintesi">Una lamiera di lega superplastica viene scaldata a circa 450–500 °C e spinta con l'aria su uno stampo a una sola faccia, come nella termoformatura: si ottengono pezzi metallici grandi e complessi in un solo pezzo.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="2200,2600,2200,2200">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="superformatura" data-alt="Modello 3D di uno stampo femmina riscaldato, tagliato a metà, con sopra una camera di pressione. La lamiera di alluminio viene bloccata e scaldata, diventando arancione. L'aria in pressione la spinge progressivamente nella cavità finché ne copia la forma. Poi la camera si alza e il pezzo verde viene estratto.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Carico e riscaldamento<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Pressione dell'aria<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Formatura completa<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Estrazione e rifilatura<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Carico e riscaldamento</b>La lamiera viene caricata, bloccata e scaldata fra 450 e 500 °C, secondo il tipo e lo spessore del materiale. <span class="pag">(p. 94)</span></li>
+    <li><b>Fase 2 – Pressione dell'aria</b>L'aria, a 1–30 bar, spinge la lamiera calda contro la superficie interna dello stampo. <span class="pag">(p. 94)</span></li>
+    <li><b>Fase 3 – Formatura completa</b>A questa temperatura il metallo è superplastico: si stira molto e copia anche forme complesse e minute. <span class="pag">(p. 94)</span></li>
+    <li><b>Fase 4 – Estrazione e rifilatura</b>Il pezzo formato viene estratto, rifilato e pulito, pronto per le lavorazioni successive. <span class="pag">(p. 95)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di uno stampo femmina riscaldato, tagliato a metà, con sopra una camera di pressione. La lamiera di alluminio viene bloccata e scaldata, diventando arancione. L'aria in pressione la spinge progressivamente nella cavità finché ne copia la forma. Poi la camera si alza e il pezzo verde viene estratto.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 20 820 360" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Formatura superplastica in cavità, in sezione</title>
+<desc id="sc-d">Sezione di uno stampo femmina riscaldato con sopra la camera di pressione; la lamiera è bloccata fra i due. Le fasi mostrano il riscaldamento, la pressione dell'aria che spinge la lamiera nella cavità, la formatura completa e l'estrazione.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- stampo femmina riscaldato -->
+<path d="M216,172 H298 Q308,172 312,182 L338,282 Q342,292 352,292 H468 Q478,292 482,282 L508,182 Q512,172 522,172 H604 V320 H216 Z" fill="url(#sc-tratteggio)" class="contorno"/>
+<g class="etichetta"><text x="620" y="300" text-anchor="start">Stampo (femmina)</text></g>
+<g data-k="op:1,1,1,0.3"><path d="M260,350 q6,-3.25 0,-6.5 q-6,-3.25 0,-6.5 q6,-3.25 0,-6.5 q-6,-3.25 0,-6.5" class="flusso-linea" fill="none" marker-end="url(#sc-punta)"/><path d="M410,350 q6,-3.25 0,-6.5 q-6,-3.25 0,-6.5 q6,-3.25 0,-6.5 q-6,-3.25 0,-6.5" class="flusso-linea" fill="none" marker-end="url(#sc-punta)"/><path d="M560,350 q6,-3.25 0,-6.5 q-6,-3.25 0,-6.5 q6,-3.25 0,-6.5 q-6,-3.25 0,-6.5" class="flusso-linea" fill="none" marker-end="url(#sc-punta)"/><g class="etichetta"><text x="620" y="350" text-anchor="start">450–500 °C</text></g></g>
+
+<!-- lamiera di lega superplastica -->
+<path d="M216,168 H604" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--grezzo)" data-k="op:0,0,0,0" data-i="op:1"/>
+<path d="M216,168 H604" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--fuso)" data-k="op:1,0,0,0" data-i="op:0"/>
+<path d="M216,168 H300 Q330,172 360,210 Q410,250 460,210 Q490,172 520,168 H604" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--fuso)" data-k="op:0,1,0,0" data-i="op:0"/>
+<path d="M216,168 H300 Q310,168 314,178 L340,278 Q344,288 354,288 H466 Q476,288 480,278 L506,178 Q510,168 520,168 H604" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--fuso)" data-k="op:0,0,1,0" data-i="op:0"/>
+<g data-k="ty:0,0,0,-60;op:0,0,0,1" data-i="op:0"><path d="M290,168 H300 Q310,168 314,178 L340,278 Q344,288 354,288 H466 Q476,288 480,278 L506,178 Q510,168 520,168 H530" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--finito)"/></g>
+<g class="etichetta"><line x1="220" y1="166" x2="30" y2="145" class="richiamo"/><text x="30" y="150" text-anchor="start">Lamiera di lega superplastica</text></g>
+
+<!-- camera di pressione -->
+<g data-k="ty:0,0,0,-90" data-i="ty:-90">
+  <path d="M216,60 H604 V164 H576 V92 H244 V164 H216 Z" fill="url(#sc-tratteggio)" class="contorno"/>
+  <g data-k="op:0,1,1,0"><line x1="330" y1="100" x2="330" y2="150" class="flusso-linea" marker-end="url(#sc-punta)"/><line x1="410" y1="100" x2="410" y2="150" class="flusso-linea" marker-end="url(#sc-punta)"/><line x1="490" y1="100" x2="490" y2="150" class="flusso-linea" marker-end="url(#sc-punta)"/></g>
+</g>
+<g class="etichetta"><text x="620" y="80" text-anchor="start">Camera di pressione</text></g>
+<g class="etichetta" data-k="op:0,1,1,0"><text x="620" y="110" text-anchor="start">aria 1–30 bar</text></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>È un processo a caldo con gli stessi principi della termoformatura della plastica. È stato sviluppato per alleggerire i componenti metallici, riducendo assemblaggi e spessori. <span class="pag">(p. 92)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>Ci sono quattro tecniche: in cavità, a bolla, con contropressione e con diaframma. In cavità la lamiera viene spinta dentro uno stampo femmina: è adatta a pezzi grandi e poco profondi, come i pannelli di carrozzeria. <span class="pag">(p. 92, 94)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>Una lega superplastica si allunga di più volte la sua lunghezza senza rompersi; alcune leghe superano deformazioni del 200%. <span class="pag">(p. 93)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Un unico foglio sostituisce costosi assemblaggi di più parti. Un software di simulazione del flusso (FEA) accorcia il passaggio dal CAD al pezzo. <span class="pag">(p. 92, 95)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Leghe superplastiche di alluminio (le più comuni 5083, 2004, 7475), di magnesio e di titanio. Con il diaframma anche leghe non superplastiche (2014, 2024, 2219, 6061). <span class="pag">(p. 92–94)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Serie piccole e medie. <span class="pag">(p. 92)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Da basso a moderato: uno stampo a una sola faccia, meno caro degli stampi accoppiati; dipende da dimensione e complessità. <span class="pag">(p. 92, 95)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Da moderato ad alto; manodopera moderata, rifilatura e pulizia di ogni pezzo. <span class="pag">(p. 92, 95)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Rapido: 5–20 minuti; rifilatura e assemblaggio allungano il tempo complessivo. <span class="pag">(p. 92, 95)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Molto buona; la faccia che non tocca lo stampo è la migliore. Dipende dalla finitura dello stampo e dalla precisione delle lavorazioni successive. <span class="pag">(p. 92)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Valore numerico: <span class="nd">n.d.</span> <span class="pag">(p. 92)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>In cavità fino a 3000 × 2000 × 600 mm e 10 mm di spessore; con diaframma fino a 2800 × 1600 × 600 mm. Per bolla e contropressione i valori sono spezzati fra le colonne della scansione: <span class="nd">n.d.</span> <span class="pag">(p. 94)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Il lato a vista è quello lontano dallo stampo</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-lato-ok-t v-lato-ok-d" class="mini-svg"><title id="v-lato-ok-t">Corretto: Lato a vista lontano dallo stampo</title><desc id="v-lato-ok-d">Come nella termoformatura, la faccia che non tocca lo stampo ha la finitura migliore.</desc><defs>
+  <pattern id="v-lato-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-lato-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-lato-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-lato-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,30 H40 L60,90 H100 L120,30 H150 V108 H10 Z" fill="url(#v-lato-ok-tratteggio)" class="contorno"/><path d="M10,28 H40 L60,88 H100 L120,28 H150" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--finito)"/><g class="etichetta"><text x="80" y="18" text-anchor="middle">lato a vista ↑</text></g></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-lato-ko-t v-lato-ko-d" class="mini-svg"><title id="v-lato-ko-t">Da evitare: Lato dello stampo in vista</title><desc id="v-lato-ko-d">La faccia a contatto con lo stampo ha una finitura meno curata.</desc><defs>
+  <pattern id="v-lato-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-lato-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-lato-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-lato-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,30 H40 L60,90 H100 L120,30 H150 V108 H10 Z" fill="url(#v-lato-ko-tratteggio)" class="contorno"/><path d="M10,28 H40 L60,88 H100 L120,28 H150" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--finito)"/><line x1="60" y1="96" x2="100" y2="96" stroke="var(--ko)" stroke-width="2" stroke-dasharray="2 3"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Come nella termoformatura, la faccia che non tocca lo stampo ha la finitura migliore. <span class="pag">(p. 92)</span></p></article>
+<article class="card"><h3>Pezzi profondi: formatura a bolla</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-profondi-ok-t v-profondi-ok-d" class="mini-svg"><title id="v-profondi-ok-t">Corretto: Pezzi profondi: formatura a bolla</title><desc id="v-profondi-ok-d">La bolla stira il materiale in modo uniforme prima della formatura: lo spessore resta quasi costante.</desc><defs>
+  <pattern id="v-profondi-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-profondi-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-profondi-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-profondi-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,20 H50 V100 H110 V20 H140" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--finito)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-profondi-ko-t v-profondi-ko-d" class="mini-svg"><title id="v-profondi-ko-t">Da evitare: Pezzi profondi in cavità</title><desc id="v-profondi-ko-d">La formatura in cavità è indicata soprattutto per pezzi grandi e poco profondi.</desc><defs>
+  <pattern id="v-profondi-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-profondi-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-profondi-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-profondi-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,20 H50 V100 H110 V20 H140" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--finito)"/><path d="M50,92 V100 H110 V92" fill="none" stroke="var(--ko)" stroke-width="2" stroke-dasharray="3 3"/><circle cx="80" cy="100" r="10" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>La formatura in cavità serve soprattutto per pezzi grandi e poco profondi; per pezzi profondi e complessi con spessore quasi costante si usa la bolla, che stira il materiale in modo uniforme. <span class="pag">(p. 92, 94)</span></p></article>
+<article class="card"><h3>Rispettare le dimensioni massime</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-dimensioni-ok-t v-dimensioni-ok-d" class="mini-svg"><title id="v-dimensioni-ok-t">Corretto: Entro i limiti della tecnica</title><desc id="v-dimensioni-ok-d">In cavità: fino a 3000 × 2000 × 600 mm e 10 mm di spessore.</desc><defs>
+  <pattern id="v-dimensioni-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-dimensioni-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-dimensioni-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-dimensioni-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,40 H40 Q80,90 120,40 H150" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--finito)"/><g class="etichetta"><text x="80" y="104" text-anchor="middle">≤ 3000 × 2000 × 600</text></g></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-dimensioni-ko-t v-dimensioni-ko-d" class="mini-svg"><title id="v-dimensioni-ko-t">Da evitare: Oltre i limiti della tecnica</title><desc id="v-dimensioni-ko-d">Ogni tecnica ha dimensioni massime; si possono superare solo per certe geometrie e leghe.</desc><defs>
+  <pattern id="v-dimensioni-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-dimensioni-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-dimensioni-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-dimensioni-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M2,40 H20 Q80,110 140,40 H158" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--finito)"/><circle cx="80" cy="80" r="14" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Ogni tecnica ha dimensioni massime diverse, che a volte si superano secondo geometria e lega. Una lega che si forma bene può però non avere le proprietà richieste in uso. <span class="pag">(p. 94)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>La formatura in cavità è lo schema principale; qui sotto le altre tre tecniche elencate nel capitolo.</p><div class="griglia-card"><article class="card"><h3>Formatura a bolla</h3><p class="originale" lang="en">Bubble forming</p><div class="variante-schema"><svg viewBox="0 0 220 130" role="img" aria-labelledby="var-bolla-t var-bolla-d" class="mini-svg"><title id="var-bolla-t">Formatura a bolla</title><desc id="var-bolla-d">La lamiera calda viene gonfiata a bolla, lo stampo sale e la pressione si inverte: adatta a pezzi profondi e complessi con spessore uniforme.</desc><defs>
+  <pattern id="var-bolla-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-bolla-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-bolla-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-bolla-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M20,70 H40 C60,10 160,10 180,70 H200" fill="none" stroke-width="4" stroke-linejoin="round" style="stroke:var(--fuso)"/>
+    <path d="M70,124 V80 Q70,64 86,64 H134 Q150,64 150,80 V124 Z" fill="url(#var-bolla-tratteggio)" class="contorno"/>
+    <line x1="110" y1="126" x2="110" y2="100" class="flusso-linea" marker-end="url(#var-bolla-punta)"/></svg></div><p>Simile alla termoformatura: la lamiera calda viene gonfiata a bolla, lo stampo sale nella camera e la pressione si inverte, spingendo il metallo sulla faccia esterna dello stampo. Ottiene geometrie impossibili con altri processi. <span class="pag">(p. 92, 94–95)</span></p></article>
+<article class="card"><h3>Formatura con contropressione</h3><p class="originale" lang="en">Backpressure forming</p><div class="variante-schema"><svg viewBox="0 0 220 130" role="img" aria-labelledby="var-contropressione-t var-contropressione-d" class="mini-svg"><title id="var-contropressione-t">Formatura con contropressione</title><desc id="var-contropressione-d">Come in cavità, ma l'aria preme anche sul retro della lamiera: formatura più controllata e meno sollecitata, adatta a leghe &quot;difficili&quot; come la 7475.</desc><defs>
+  <pattern id="var-contropressione-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-contropressione-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-contropressione-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-contropressione-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M20,70 H60 L80,110 H140 L160,70 H200 V124 H20 Z" fill="url(#var-contropressione-tratteggio)" class="contorno"/>
+    <path d="M20,68 H62 Q90,100 110,100 Q130,100 158,68 H200" fill="none" stroke-width="4" stroke-linejoin="round" style="stroke:var(--fuso)"/>
+    <line x1="90" y1="20" x2="90" y2="60" class="flusso-linea" marker-end="url(#var-contropressione-punta)"/><line x1="130" y1="120" x2="130" y2="104" class="flusso-linea" marker-end="url(#var-contropressione-punta)"/></svg></div><p>Come in cavità, ma l'aria agisce anche sul retro della lamiera, che viene tirata sullo stampo con una lieve differenza di pressione: meno sollecitazioni e leghe 'difficili' formabili. Nata per componenti strutturali aeronautici in lega 7475. <span class="pag">(p. 92, 94)</span></p></article>
+<article class="card"><h3>Formatura con diaframma</h3><p class="originale" lang="en">Diaphragm forming</p><div class="variante-schema"><svg viewBox="0 0 220 130" role="img" aria-labelledby="var-diaframma-t var-diaframma-d" class="mini-svg"><title id="var-diaframma-t">Formatura con diaframma</title><desc id="var-diaframma-d">Un diaframma metallico sostiene la lamiera calda e la aiuta a scorrere: permette di formare anche leghe non superplastiche (2014, 2024, 2219, 6061).</desc><defs>
+  <pattern id="var-diaframma-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-diaframma-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-diaframma-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-diaframma-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M20,70 H60 L80,110 H140 L160,70 H200 V124 H20 Z" fill="url(#var-diaframma-tratteggio)" class="contorno"/>
+    <path d="M20,64 H62 L82,104 H138 L158,64 H200" fill="none" stroke-width="3" stroke-linejoin="round" style="stroke:var(--stampo-scuro)"/><path d="M20,68 H62 L82,108 H138 L158,68 H200" fill="none" stroke-width="4" stroke-linejoin="round" style="stroke:var(--fuso)"/>
+    <g class="etichetta"><text x="30" y="50" text-anchor="start">diaframma</text></g></svg></div><p>Un diaframma metallico sostiene la lamiera calda e la aiuta a scorrere nelle forme complesse: è spesso l'unico modo pratico di formare leghe non superplastiche. <span class="pag">(p. 92, 94)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="stampaggio-lamiera.html">Stampaggio della lamiera</a> – geometrie simili con stampi accoppiati <span class="pag">(p. 92)</span></li><li><a href="imbutitura-profonda.html">Imbutitura profonda</a> – geometrie simili con stampi accoppiati <span class="pag">(p. 92)</span></li><li><a href="termoformatura.html">Termoformatura</a> – stesso principio per la plastica <span class="pag">(p. 92)</span></li><li><a href="laminazione-compositi.html">Laminazione dei compositi</a> – forme simili in vetroresina <span class="pag">(p. 92)</span></li><li><a href="battitura-lamiera.html">Battitura della lamiera</a> – complementare nelle piccole e medie serie <span class="pag">(p. 73)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 92–95.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/superformatura.js"></script>
+</body>
+</html>

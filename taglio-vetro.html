@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Taglio del vetro per incisione (scoring) – Processi produttivi per il design</title>
+<meta name="description" content="Una rotella in metallo duro incide la superficie della lastra creando una cricca sottile; una leggera pressione la fa correre in tutto lo spessore e il pezzo si stacca. È il modo più diffuso per tagliare il vetro in lastra.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 2 – Taglio › Meccanico</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Taglio del vetro per incisione (scoring)</h1>
+  <p class="originale" lang="en">Glass Scoring</p>
+  <p class="categoria">Parte 2 – Taglio · Meccanico</p>
+  <p class="sintesi">Una rotella in metallo duro incide la superficie della lastra creando una cricca sottile; una leggera pressione la fa correre in tutto lo spessore e il pezzo si stacca. È il modo più diffuso per tagliare il vetro in lastra.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="1800,2600,2400,1800">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="taglio-vetro" data-alt="Modello 3D di un plotter per vetro. Una testa con una piccola rotella percorre un cerchio su una lastra azzurrina, lasciando una linea bianca, poi quattro linee diritte dal cerchio ai bordi. I quattro pezzi esterni si allontanano come se fossero spezzati, liberando il disco, che una mola lucida sul bordo e che diventa verde.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Lubrificazione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Incisione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Separazione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Rifinitura<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Lubrificazione</b>Un po' di lubrificante si spruzza sulla rotella e sul vetro prima di tagliare. <span class="pag">(p. 278)</span></li>
+    <li><b>Fase 2 – Incisione</b>La rotella in carburo di tungsteno scorre con poca pressione e apre davanti a sé una cricca mediana, di solito profonda meno di 1 mm; la pressione cresce con lo spessore. <span class="pag">(p. 277–278)</span></li>
+    <li><b>Fase 3 – Separazione</b>Tolta la lastra dal piano, una pressione leggera fa correre la cricca in tutto lo spessore: i bordi diritti si staccano a mano, i cerchi con le pinze da rottura. <span class="pag">(p. 277–278)</span></li>
+    <li><b>Fase 4 – Rifinitura</b>La rottura è netta; se il bordo resta in vista, si lucida. <span class="pag">(p. 276)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di un plotter per vetro. Una testa con una piccola rotella percorre un cerchio su una lastra azzurrina, lasciando una linea bianca, poi quattro linee diritte dal cerchio ai bordi. I quattro pezzi esterni si allontanano come se fossero spezzati, liberando il disco, che una mola lucida sul bordo e che diventa verde.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 90 820 260" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Incisione e separazione del vetro, in sezione</title>
+<desc id="sc-d">Sezione di una lastra di vetro sotto una testa con rotella. Le fasi mostrano il lubrificante, la rotella che crea la cricca mediana, la pressione che fa correre la cricca e separa le due metà, e il bordo rifinito.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<rect x="140" y="250" width="540" height="14" class="macchina"/>
+<!-- lastra: due metà che si separano lungo la cricca -->
+<g data-k="rot:0,0,-8,-8;tx:0,0,-10,-10" data-i="rot:0;tx:0" data-o="410,250">
+  <rect x="170" y="218" width="240" height="32" fill="#cfe3ea" class="contorno"/>
+</g>
+<g data-k="rot:0,0,8,8;tx:0,0,10,10" data-i="rot:0;tx:0" data-o="410,250">
+  <rect x="410" y="218" width="240" height="32" fill="#cfe3ea" class="contorno" data-k="op:1,1,1,0" data-i="op:1"/>
+  <rect x="410" y="218" width="240" height="32" class="m-finito contorno" data-k="op:0,0,0,1" data-i="op:0"/>
+</g>
+<g class="etichetta"><line x1="180" y1="222" x2="20" y2="205" class="richiamo"/><text x="20" y="210" text-anchor="start">Lastra di vetro (0,5–20 mm)</text></g>
+<!-- cricca mediana -->
+<line x1="410" y1="218" x2="410" y2="230" stroke="var(--ko)" stroke-width="3" data-k="op:0,1,1,0" data-i="op:0"/>
+<g data-k="op:0,1,0,0"><g class="etichetta"><line x1="412" y1="228" x2="440" y2="295" class="richiamo"/><text x="440" y="300" text-anchor="start">cricca mediana, profonda meno di 1 mm</text></g></g>
+<!-- testa con rotella -->
+<g data-k="ty:-30,0,-60,-60;tx:0,0,0,0" data-i="ty:-60">
+  <rect x="396" y="110" width="28" height="70" class="macchina"/>
+  <rect x="402" y="180" width="16" height="20" class="m-stampo contorno"/>
+  <circle cx="410" cy="208" r="10" class="scuro"/>
+</g>
+<g class="etichetta"><text x="440" y="120" text-anchor="start">Testa rotante con rotella in carburo di tungsteno</text></g>
+<g data-k="op:1,0,0,0">
+  <path d="M300,140 L380,196" stroke="var(--flusso)" stroke-width="2" stroke-dasharray="4 3"/>
+  <g class="etichetta"><text x="140" y="130" text-anchor="start">un velo di lubrificante su rotella e vetro</text></g>
+</g>
+<g data-k="op:0,1,0,0"><line x1="380" y1="150" x2="380" y2="196" class="flusso-linea" marker-end="url(#sc-punta)"/><g class="etichetta"><text x="140" y="160" text-anchor="start">pressione leggera, ~100 m al minuto</text></g></g>
+<g data-k="op:0,0,1,0"><line x1="300" y1="300" x2="300" y2="266" class="flusso-linea" marker-end="url(#sc-punta)"/><line x1="520" y1="300" x2="520" y2="266" class="flusso-linea" marker-end="url(#sc-punta)"/><g class="etichetta"><text x="140" y="330" text-anchor="start">una pressione fa correre la cricca in tutto lo spessore</text></g></g>
+<g data-k="op:0,0,0,1"><g class="etichetta"><text x="140" y="330" text-anchor="start">se il bordo resta in vista, si lucida</text></g></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Si lavora su plotter x-y guidati dal computer, rapidi e precisi, oppure con utensili manuali, soprattutto per tagli lunghi e diritti. <span class="pag">(p. 276)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>La rotella non toglie materiale: non c'è solco, e i pezzi si possono annidare più vicini che con il getto d'acqua. <span class="pag">(p. 277)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>La zona incisa dalla rotella ha una texture diversa da quella della frattura; l'incisione provoca anche piccole cricche laterali. <span class="pag">(p. 277–278)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Nessun vetro va sprecato: tutti gli sfridi si riciclano, e il processo richiede pochissima energia. <span class="pag">(p. 277)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Ogni tipo di vetro in lastra: float, stampato, colorato, a specchio, dicroico. <span class="pag">(p. 277)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Da pezzo unico a grandi serie. <span class="pag">(p. 276)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Nessuno. <span class="pag">(p. 276–277)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Basso; manodopera bassa nei sistemi automatici, alta nei lavori manuali come le vetrate. <span class="pag">(p. 276–277)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Rapido: circa 100 m di taglio al minuto. <span class="pag">(p. 276–277)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Buon bordo, ma con qualche cricca laterale; i bordi in vista si lucidano. <span class="pag">(p. 276, 278)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Metodo preciso. Tolleranze numeriche: <span class="nd">n.d.</span> <span class="pag">(p. 276)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Lastre da 0,5 a 20 mm; nel vetro sottile dischi fino a 5 mm di diametro. <span class="pag">(p. 276–277)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Solo profili esterni</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-esterni-ok-t v-esterni-ok-d" class="mini-svg"><title id="v-esterni-ok-t">Corretto: Solo profili esterni</title><desc id="v-esterni-ok-d">Si tagliano linee rette o curve di qualsiasi lunghezza, purché si possano staccare dal foglio: dischi, rettangoli, forme irregolari semplici.</desc><defs>
+  <pattern id="v-esterni-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-esterni-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-esterni-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-esterni-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="20" width="120" height="90" fill="#cfe3ea" class="contorno"/><circle cx="80" cy="65" r="30" fill="none" style="stroke:var(--finito)" stroke-width="4"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-esterni-ko-t v-esterni-ko-d" class="mini-svg"><title id="v-esterni-ko-t">Da evitare: Fori o forme interne</title><desc id="v-esterni-ko-d">Una forma interna non si può staccare dal foglio.</desc><defs>
+  <pattern id="v-esterni-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-esterni-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-esterni-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-esterni-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="20" width="120" height="90" fill="#cfe3ea" class="contorno"/><rect x="60" y="45" width="40" height="40" fill="#eef1f4" stroke="var(--testo)"/><circle cx="80" cy="65" r="30" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Il limite è ciò che si riesce a staccare dal foglio: linee rette o curve di qualsiasi lunghezza, ma non forme interne. <span class="pag">(p. 277)</span></p></article>
+<article class="card"><h3>Incisioni da bordo a bordo</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-bordi-ok-t v-bordi-ok-d" class="mini-svg"><title id="v-bordi-ok-t">Corretto: Incisioni da bordo a bordo</title><desc id="v-bordi-ok-d">Ogni incisione corre da un bordo all'altro del foglio, o è una forma chiusa continua.</desc><defs>
+  <pattern id="v-bordi-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-bordi-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-bordi-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-bordi-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="20" width="120" height="90" fill="#cfe3ea" class="contorno"/><path d="M70,20 V110" fill="none" stroke-width="4" stroke-linejoin="round" style="stroke:var(--finito)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-bordi-ko-t v-bordi-ko-d" class="mini-svg"><title id="v-bordi-ko-t">Da evitare: Incisione che si ferma a metà</title><desc id="v-bordi-ko-d">Una linea interrotta non guida la frattura: il vetro si rompe dove capita.</desc><defs>
+  <pattern id="v-bordi-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-bordi-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-bordi-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-bordi-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="20" width="120" height="90" fill="#cfe3ea" class="contorno"/><path d="M70,20 V64" fill="none" stroke-width="4" stroke-linejoin="round" style="stroke:var(--finito)"/><path d="M70,64 L100,110" stroke="var(--ko)" stroke-width="2" stroke-dasharray="4 3"/><circle cx="70" cy="64" r="11" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Ogni incisione deve andare da un bordo all'altro, o essere una forma continua: ideale per dischi, rettangoli e forme irregolari semplici. <span class="pag">(p. 277)</span></p></article>
+<article class="card"><h3>Niente rientranze né angoli acuti</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-rientri-ok-t v-rientri-ok-d" class="mini-svg"><title id="v-rientri-ok-t">Corretto: Forme convesse semplici</title><desc id="v-rientri-ok-d">Profili convessi si staccano in un solo pezzo.</desc><defs>
+  <pattern id="v-rientri-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-rientri-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-rientri-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-rientri-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="20" width="120" height="90" fill="#cfe3ea" class="contorno"/><path d="M40,90 L60,40 H110 L120,90 Z" fill="none" stroke-width="4" stroke-linejoin="round" style="stroke:var(--finito)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-rientri-ko-t v-rientri-ko-d" class="mini-svg"><title id="v-rientri-ko-t">Da evitare: Rientranze e angoli acuti</title><desc id="v-rientri-ko-d">Una mezzaluna o un angolo molto acuto difficilmente si staccano integri dal foglio.</desc><defs>
+  <pattern id="v-rientri-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-rientri-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-rientri-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-rientri-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="20" width="120" height="90" fill="#cfe3ea" class="contorno"/><path d="M60,30 A36,36 0 1 0 60,100 A26,26 0 1 1 60,30 Z" fill="none" stroke-width="4" stroke-linejoin="round" style="stroke:var(--finito)"/><circle cx="64" cy="65" r="14" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Forme con rientranze, come una mezzaluna, o con angoli acuti e profili complessi difficilmente si staccano in un solo pezzo. <span class="pag">(p. 277)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>I modi di incidere e di staccare i pezzi descritti nel capitolo.</p><div class="griglia-card"><article class="card"><h3>Plotter x-y</h3><p class="originale" lang="en">Computer-guided x-y plotter</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-plotter-t var-plotter-d" class="mini-svg"><title id="var-plotter-t">Plotter x-y a controllo numerico</title><desc id="var-plotter-d">La rotella segue il file CAD ad alta velocità: per pezzi unici o grandi serie, anche dischi fino a 5 mm di diametro nel vetro sottile.</desc><defs>
+  <pattern id="var-plotter-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-plotter-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-plotter-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-plotter-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="20" y="30" width="180" height="80" fill="#cfe3ea" class="contorno"/>
+    <rect x="20" y="16" width="180" height="10" class="scuro"/><rect x="100" y="16" width="20" height="30" class="macchina"/>
+    <circle cx="110" cy="70" r="28" fill="none" stroke="#ffffff" stroke-width="2"/></svg></div><p>Rotella guidata dal file CAD ad alta velocità, per pezzi unici o grandi serie. <span class="pag">(p. 276–277)</span></p></article>
+<article class="card"><h3>Taglio a mano</h3><p class="originale" lang="en">Handheld scoring</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-mano-t var-mano-d" class="mini-svg"><title id="var-mano-t">Taglio a mano</title><desc id="var-mano-d">Utensili manuali per tagli lunghi e diritti, per prototipi a mano libera, con un compasso o lungo una sagoma; è la tecnica delle vetrate artistiche.</desc><defs>
+  <pattern id="var-mano-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-mano-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-mano-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-mano-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="20" y="60" width="180" height="40" fill="#cfe3ea" class="contorno"/>
+    <path d="M80,10 L104,54" stroke="var(--testo)" stroke-width="8" stroke-linecap="round"/><circle cx="106" cy="58" r="5" class="scuro"/></svg></div><p>Per tagli lunghi e diritti, prototipi a mano libera o con sagoma, e vetrate artistiche. <span class="pag">(p. 276–277)</span></p></article>
+<article class="card"><h3>Rottura con pinze</h3><p class="originale" lang="en">Running pliers</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-pinze-t var-pinze-d" class="mini-svg"><title id="var-pinze-t">Rottura con pinze</title><desc id="var-pinze-d">I bordi diritti si staccano a mano; cerchi e forme si liberano con pinze che rompono il vetro fuori dalla forma, facendolo cedere lungo la cricca.</desc><defs>
+  <pattern id="var-pinze-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-pinze-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-pinze-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-pinze-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <circle cx="90" cy="64" r="34" fill="#cfe3ea" class="contorno"/>
+    <path d="M150,30 L180,64 L150,98" fill="none" stroke="var(--testo)" stroke-width="6"/>
+    <path d="M124,64 H178" stroke="var(--testo)" stroke-width="3"/></svg></div><p>Rompono il vetro fuori dalla forma e lo fanno cedere lungo la cricca. <span class="pag">(p. 278)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="taglio-getto-acqua.html">Taglio a getto d'acqua</a> – più lento sui profili semplici, ma fino a 70 mm di spessore <span class="pag">(p. 276)</span></li><li><a href="taglio-laser.html">Taglio laser</a> – più lento, ma bordo di altissima qualità <span class="pag">(p. 276)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 276–279.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/taglio-vetro.js"></script>
+</body>
+</html>

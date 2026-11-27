@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Avvolgimento di filamenti – Processi produttivi per il design</title>
+<meta name="description" content="Un fascio continuo di fibre impregnate di resina viene avvolto su un mandrino che ruota, con un angolo controllato: tubi e corpi cavi leggerissimi, con la fibra orientata esattamente secondo i carichi.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 1 – Formatura › Compositi</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Avvolgimento di filamenti</h1>
+  <p class="originale" lang="en">Filament Winding</p>
+  <p class="categoria">Parte 1 – Formatura · Compositi</p>
+  <p class="sintesi">Un fascio continuo di fibre impregnate di resina viene avvolto su un mandrino che ruota, con un angolo controllato: tubi e corpi cavi leggerissimi, con la fibra orientata esattamente secondo i carichi.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="2000,3200,3200,2400,2800">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="avvolgimento-filamenti" data-alt="Modello 3D di una macchina per avvolgimento. Un mandrino cilindrico con estremità coniche ruota fra testa motrice e contropunta; un carrello con bobina, bagno di resina e testa guidafilo scorre lungo il mandrino. La fibra arancione si deposita prima in eliche incrociate, poi in anelli fitti; un nastro chiaro avvolge tutto. Dopo la cura il tubo diventa verde e il mandrino si sfila verso destra.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Aggancio della fibra<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Strati elicoidali<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Strati circonferenziali<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Nastratura<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="5">5. Cura ed estrazione<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Aggancio della fibra</b>Il fascio di carbonio arriva dalla bobina, passa su una ruota che gira nel bagno di resina epossidica e viene agganciato al mandrino. <span class="pag">(p. 224, 226)</span></li>
+    <li><b>Fase 2 – Strati elicoidali</b>Il mandrino ruota e la testa guidafilo va avanti e indietro: il rapporto fra le due velocità fissa l'angolo della fibra, qui basso, per resistere lungo l'asse e a torsione. <span class="pag">(p. 223–224, 226)</span></li>
+    <li><b>Fase 3 – Strati circonferenziali</b>Con la testa che avanza lentamente la fibra si dispone vicino a 90°: gli anelli danno resistenza circonferenziale. <span class="pag">(p. 223, 226)</span></li>
+    <li><b>Fase 4 – Nastratura</b>Un nastro di plastica avvolto sopra spreme la resina in eccesso e lascia una superficie liscia; l'eccesso si taglia prima della cura. <span class="pag">(p. 226)</span></li>
+    <li><b>Fase 5 – Cura ed estrazione</b>In forno fino a 200 °C per 4 ore, con salita e discesa graduali (8 ore in tutto). Raffreddato, il mandrino metallico si ritira più del carbonio e si sfila. <span class="pag">(p. 226)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una macchina per avvolgimento. Un mandrino cilindrico con estremità coniche ruota fra testa motrice e contropunta; un carrello con bobina, bagno di resina e testa guidafilo scorre lungo il mandrino. La fibra arancione si deposita prima in eliche incrociate, poi in anelli fitti; un nastro chiaro avvolge tutto. Dopo la cura il tubo diventa verde e il mandrino si sfila verso destra.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 80 820 300" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Avvolgimento di un albero di trasmissione, vista dall'alto</title>
+<desc id="sc-d">Vista dall'alto di un mandrino con estremità coniche fra testa motrice e contropunta, con il carrello guidafilo davanti. Le fasi mostrano l'aggancio della fibra, le eliche incrociate, gli anelli circonferenziali, il nastro, e il tubo finito con il mandrino che si sfila.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<line x1="90" y1="200" x2="740" y2="200" class="asse"/>
+<!-- testa motrice e contropunta -->
+<rect x="90" y="140" width="60" height="120" class="macchina"/>
+<path d="M138,200 A18,18 0 1 1 120,182" class="flusso-linea" fill="none" marker-end="url(#sc-punta)"/>
+<g data-k="op:1,1,1,1,0" data-i="op:1"><rect x="670" y="170" width="70" height="60" class="macchina"/></g>
+<g class="etichetta"><text x="60" y="128" text-anchor="start">Testa motrice</text></g>
+
+<!-- mandrino con estremità coniche -->
+<g data-k="tx:0,0,0,0,480" data-i="tx:0">
+  <rect x="150" y="190" width="40" height="20" class="m-stampo contorno"/><rect x="640" y="190" width="30" height="20" class="m-stampo contorno"/>
+  <path d="M180,174 L200,150 H620 L640,174 V226 L620,250 H200 L180,226 Z" fill="url(#sc-tratteggio)" class="contorno"/>
+</g>
+<g class="etichetta"><line x1="610" y1="250" x2="640" y2="285" class="richiamo"/><text x="640" y="290" text-anchor="start">Mandrino rimovibile</text></g>
+
+<!-- fibra: elica, anelli, nastro -->
+<g data-k="op:1,1,1,1,0" data-i="op:1">
+  <path d="M210,250 L280,150 L350,250 L420,150 L490,250 L560,150 L630,250 M210,150 L280,250 L350,150 L420,250 L490,150 L560,250 L630,150" pathLength="100" stroke-dasharray="100 100" fill="none" stroke-width="4" style="stroke:var(--fuso)" data-k="dash:100,0,0,0,0" data-i="dash:100"/>
+  <path d="M210,150 V250 M218,150 V250 M226,150 V250 M234,150 V250 M242,150 V250 M250,150 V250 M258,150 V250 M266,150 V250 M274,150 V250 M282,150 V250 M290,150 V250 M298,150 V250 M306,150 V250 M314,150 V250 M322,150 V250 M330,150 V250 M338,150 V250 M346,150 V250 M354,150 V250 M362,150 V250 M370,150 V250 M378,150 V250 M386,150 V250 M394,150 V250 M402,150 V250 M410,150 V250 M418,150 V250 M426,150 V250 M434,150 V250 M442,150 V250 M450,150 V250 M458,150 V250 M466,150 V250 M474,150 V250 M482,150 V250 M490,150 V250 M498,150 V250 M506,150 V250 M514,150 V250 M522,150 V250 M530,150 V250 M538,150 V250 M546,150 V250 M554,150 V250 M562,150 V250 M570,150 V250 M578,150 V250 M586,150 V250 M594,150 V250 M602,150 V250 M610,150 V250" pathLength="100" stroke-dasharray="100 100" fill="none" stroke-width="3" style="stroke:var(--fuso)" data-k="dash:100,100,0,0,0" data-i="dash:100"/>
+  <path d="M206,200 H614" pathLength="100" stroke-dasharray="100 100" fill="none" stroke-width="100" style="stroke:#ffffff;opacity:0.55" data-k="dash:100,100,100,0,0" data-i="dash:100"/>
+</g>
+<g data-k="op:0,0,0,0,1" data-i="op:0">
+  <path d="M202,150 H618 V250 H202 Z" class="m-finito sezionato contorno"/>
+  <g class="etichetta"><text x="300" y="290" text-anchor="start">tubo in carbonio, il mandrino si sfila</text></g>
+</g>
+
+<!-- carrello: testa guidafilo, ruota nel bagno di resina, bobina -->
+<g data-k="tx:0,400,0,400,400" data-i="tx:0">
+  <line x1="210" y1="250" x2="210" y2="296" stroke="var(--fuso)" stroke-width="3" data-k="op:1,1,1,0,0" data-i="op:1"/>
+  <rect x="196" y="292" width="28" height="22" class="scuro"/>
+  <rect x="186" y="318" width="48" height="20" style="fill:var(--fuso)" opacity="0.35" stroke="var(--testo)"/>
+  <circle cx="210" cy="324" r="10" class="m-stampo contorno"/>
+  <circle cx="250" cy="330" r="12" class="m-grezzo contorno"/>
+</g>
+<g class="etichetta"><text x="40" y="360" text-anchor="start">Testa guidafilo, bagno di resina e bobina sul carrello</text></g>
+<g data-k="op:0,1,0,0,0"><g class="etichetta"><text x="250" y="110" text-anchor="start">strati elicoidali: resistenza a torsione e lungo l'asse</text></g></g>
+<g data-k="op:0,0,1,0,0"><g class="etichetta"><text x="250" y="110" text-anchor="start">strati circonferenziali (circa 90°)</text></g></g>
+<g data-k="op:0,0,0,1,0"><g class="etichetta"><text x="250" y="110" text-anchor="start">nastro di plastica che spreme la resina in eccesso</text></g></g>
+<g data-k="op:0,0,0,0,1"><g class="etichetta"><text x="250" y="110" text-anchor="start">forno fino a 200 °C per 4 ore</text></g></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>La fibra, di solito vetro, carbonio o aramide, arriva come fascio con un numero fisso di filamenti: un 12k ne contiene 12.000. Si avvolge a umido o pre-impregnata. <span class="pag">(p. 222)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>Un circuito completo è un'andata e ritorno della testa da un capo all'altro del mandrino; un circuito può combinare più angoli secondo le necessità. <span class="pag">(p. 224)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>Concentrando il fascio in una zona si creano rigonfiamenti: rinforzi locali o diametri maggiori da lavorare poi alla macchina utensile. <span class="pag">(p. 224)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="5" aria-label="Mostra la fase 5 nello schema">Fase 5</button>L'avvolgimento è guidato da computer. La rigidezza dipende dallo spessore della stratificazione e dal diametro del tubo. <span class="pag">(p. 223)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Fibre di vetro, carbonio e aramide; resine termoindurenti poliestere, vinilestere, epossidica e fenolica. Liner in alluminio o titanio di alta qualità. <span class="pag">(p. 222, 224)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Da pezzo unico a lotti. <span class="pag">(p. 222)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Da basso a moderato, secondo le dimensioni; inglobare il mandrino o un liner aumenta il costo. <span class="pag">(p. 222, 224)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Da moderato ad alto; manodopera da moderata ad alta. <span class="pag">(p. 222, 225)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>20–120 minuti per pezzi piccoli, diverse settimane per i grandi; cura di 4–8 ore. <span class="pag">(p. 222, 224)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Lucida; quattro finiture: come avvolto, nastrata, lavorata alla macchina, gel coat epossidico. <span class="pag">(p. 222–223)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Avvolgimento preciso a 100 µm; la lavorazione dopo l'avvolgimento dà superfici molto accurate. <span class="pag">(p. 223)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Di solito fino a 3 m di lunghezza e 1 m di diametro; forme molto più grandi, come i razzi, sono possibili. <span class="pag">(p. 224)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Raggio degli spigoli esterni</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-raggio-ok-t v-raggio-ok-d" class="mini-svg"><title id="v-raggio-ok-t">Corretto: Spigoli esterni con raggio ≥ 20 mm</title><desc id="v-raggio-ok-d">Sotto i 20 mm di raggio sugli spigoli esterni le prestazioni peggiorano; gli spigoli interni non hanno limite.</desc><defs>
+  <pattern id="v-raggio-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-raggio-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-raggio-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-raggio-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="30" y="20" width="100" height="90" rx="22" fill="none" stroke="var(--finito)" stroke-width="6"/><g class="etichetta"><text x="80" y="70" text-anchor="middle">R ≥ 20 mm</text></g></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-raggio-ko-t v-raggio-ko-d" class="mini-svg"><title id="v-raggio-ko-t">Da evitare: Spigoli esterni vivi</title><desc id="v-raggio-ko-d">La fibra tesa su uno spigolo vivo perde resistenza.</desc><defs>
+  <pattern id="v-raggio-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-raggio-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-raggio-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-raggio-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="30" y="20" width="100" height="90" rx="3" fill="none" stroke="var(--finito)" stroke-width="6"/><circle cx="130" cy="20" r="12" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Si sconsiglia di avvolgere spigoli esterni con raggio inferiore a 20 mm; per gli spigoli interni non c'è limite. Si possono avvolgere anche profili ovali, ellittici o a facce piane. <span class="pag">(p. 224)</span></p></article>
+<article class="card"><h3>Estremità rastremate per gli angoli bassi</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-estremita-ok-t v-estremita-ok-d" class="mini-svg"><title id="v-estremita-ok-t">Corretto: Estremità del mandrino coniche</title><desc id="v-estremita-ok-d">Con angoli bassi le estremità rastremate permettono di tirare la fibra senza che scivoli lungo il mandrino.</desc><defs>
+  <pattern id="v-estremita-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-estremita-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-estremita-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-estremita-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,46 L40,30 H120 L140,46 V84 L120,100 H40 L20,84 Z" class="m-stampo contorno"/><path d="M40,100 L70,30 L100,100 L120,40" fill="none" stroke-width="3" stroke-linejoin="round" style="stroke:var(--fuso)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-estremita-ko-t v-estremita-ko-d" class="mini-svg"><title id="v-estremita-ko-t">Da evitare: Estremità diritte con angoli bassi</title><desc id="v-estremita-ko-d">Senza rastremazione la fibra stesa a basso angolo scivola sui bordi.</desc><defs>
+  <pattern id="v-estremita-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-estremita-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-estremita-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-estremita-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="30" y="30" width="100" height="70" class="m-stampo contorno"/><path d="M30,90 L80,40 L130,90" fill="none" stroke-width="3" stroke-linejoin="round" style="stroke:var(--fuso)"/><circle cx="130" cy="90" r="11" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Le estremità coniche del mandrino permettono di tendere la fibra stesa a basso angolo senza che scivoli; vicino a 90° il problema non c'è. <span class="pag">(p. 226)</span></p></article>
+<article class="card"><h3>Angolo della fibra progettato per l'uso</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-angolo-ok-t v-angolo-ok-d" class="mini-svg"><title id="v-angolo-ok-t">Corretto: Angolo della fibra progettato</title><desc id="v-angolo-ok-d">L'angolo, regolabile da quasi 0° a 90°, decide se lo strato resiste lungo l'asse, a torsione o in senso circonferenziale: si calcola con l'analisi agli elementi finiti.</desc><defs>
+  <pattern id="v-angolo-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-angolo-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-angolo-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-angolo-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="40" width="120" height="50" class="m-grezzo contorno"/><path d="M20,90 L45,40 L70,90 L95,40 L120,90 L140,50" fill="none" stroke-width="3" stroke-linejoin="round" style="stroke:var(--finito)"/><line x1="30" y1="40" x2="30" y2="90" stroke="var(--finito)" stroke-width="2"/><line x1="50" y1="40" x2="50" y2="90" stroke="var(--finito)" stroke-width="2"/><line x1="70" y1="40" x2="70" y2="90" stroke="var(--finito)" stroke-width="2"/><line x1="90" y1="40" x2="90" y2="90" stroke="var(--finito)" stroke-width="2"/><line x1="110" y1="40" x2="110" y2="90" stroke="var(--finito)" stroke-width="2"/><line x1="130" y1="40" x2="130" y2="90" stroke="var(--finito)" stroke-width="2"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-angolo-ko-t v-angolo-ko-d" class="mini-svg"><title id="v-angolo-ko-t">Da evitare: Pezzo usato per un altro scopo</title><desc id="v-angolo-ko-d">Le proprietà sono studiate per un'applicazione: un pezzo non si può scambiare con uno progettato per carichi diversi.</desc><defs>
+  <pattern id="v-angolo-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-angolo-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-angolo-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-angolo-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="40" width="120" height="50" class="m-grezzo contorno"/><line x1="30" y1="40" x2="30" y2="90" stroke="var(--finito)" stroke-width="2"/><line x1="50" y1="40" x2="50" y2="90" stroke="var(--finito)" stroke-width="2"/><line x1="70" y1="40" x2="70" y2="90" stroke="var(--finito)" stroke-width="2"/><line x1="90" y1="40" x2="90" y2="90" stroke="var(--finito)" stroke-width="2"/><line x1="110" y1="40" x2="110" y2="90" stroke="var(--finito)" stroke-width="2"/><line x1="130" y1="40" x2="130" y2="90" stroke="var(--finito)" stroke-width="2"/><path d="M10,65 H20 M140,65 H150" stroke="var(--ko)" stroke-width="3"/><circle cx="80" cy="65" r="30" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>L'angolo decide se lo strato lavora lungo l'asse, a torsione o in senso circonferenziale: le proprietà sono progettate per un'applicazione e i pezzi non sono intercambiabili. <span class="pag">(p. 222–223, 226)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>I due modi di applicare la resina e l'avvolgimento su liner descritti nel capitolo; lo schema principale mostra l'avvolgimento a umido su mandrino rimovibile.</p><div class="griglia-card"><article class="card"><h3>Avvolgimento a umido</h3><p class="originale" lang="en">Wet winding</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-umido-t var-umido-d" class="mini-svg"><title id="var-umido-t">Avvolgimento a umido</title><desc id="var-umido-d">Il fascio di fibre passa in un bagno di resina epossidica prima di arrivare al mandrino.</desc><defs>
+  <pattern id="var-umido-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-umido-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-umido-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-umido-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="20" y="70" width="80" height="34" style="fill:var(--fuso)" opacity="0.35" stroke="var(--testo)"/>
+    <circle cx="60" cy="72" r="16" class="m-stampo contorno"/>
+    <path d="M10,40 Q60,50 60,56 Q70,40 200,30" fill="none" stroke-width="3" stroke-linejoin="round" style="stroke:var(--fuso)"/>
+    <rect x="150" y="14" width="60" height="40" class="m-stampo contorno"/></svg></div><p>Il fascio passa in un bagno di resina epossidica, raccolta da una ruota, prima di arrivare al mandrino. <span class="pag">(p. 222, 224)</span></p></article>
+<article class="card"><h3>Avvolgimento di pre-impregnato</h3><p class="originale" lang="en">Pre-preg winding</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-preimpregnato-t var-preimpregnato-d" class="mini-svg"><title id="var-preimpregnato-t">Avvolgimento di pre-impregnato</title><desc id="var-preimpregnato-d">Il fascio di carbonio è già impregnato di resina e si avvolge direttamente sul mandrino, senza altra preparazione.</desc><defs>
+  <pattern id="var-preimpregnato-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-preimpregnato-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-preimpregnato-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-preimpregnato-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <circle cx="50" cy="62" r="34" class="m-grezzo contorno"/><circle cx="50" cy="62" r="10" class="m-stampo contorno"/>
+    <path d="M84,62 H150" fill="none" stroke-width="4" stroke-linejoin="round" style="stroke:var(--fuso)"/>
+    <rect x="150" y="34" width="60" height="56" class="m-stampo contorno"/></svg></div><p>Il fascio è già impregnato di resina e si applica direttamente, senza altra preparazione. <span class="pag">(p. 222)</span></p></article>
+<article class="card"><h3>Avvolgimento su liner</h3><p class="originale" lang="en">Bottle winding</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-liner-t var-liner-d" class="mini-svg"><title id="var-liner-t">Avvolgimento su liner</title><desc id="var-liner-d">La fibra si avvolge su un liner cavo che resta nel pezzo: si ottengono recipienti chiusi, come i serbatoi in pressione, a tenuta di acqua, aria e gas.</desc><defs>
+  <pattern id="var-liner-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-liner-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-liner-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-liner-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M40,40 Q40,20 70,20 H150 Q180,20 180,40 V80 Q180,104 150,104 H70 Q40,104 40,80 Z" fill="none" stroke="var(--fuso)" stroke-width="6"/>
+    <path d="M48,44 Q48,28 72,28 H148 Q172,28 172,44 V78 Q172,96 148,96 H72 Q48,96 48,78 Z" fill="url(#var-liner-tratteggio)" class="contorno"/>
+    <rect x="180" y="52" width="24" height="20" class="m-stampo contorno"/></svg></div><p>Su un liner cavo che resta nel pezzo si ottengono corpi chiusi alle due estremità e con colli, come serbatoi in pressione; serve un liner nuovo per ogni pezzo. <span class="pag">(p. 224)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="laminazione-termica-3d.html">Laminazione termica 3D</a> – processo simile, su stampo fisso e per lastre <span class="pag">(p. 222)</span></li><li><a href="laminazione-compositi.html">Laminazione dei compositi</a> – profili simili, con fibre tessute <span class="pag">(p. 222)</span></li><li><a href="dmc-smc.html">Stampaggio di DMC e SMC</a> – per volumi più alti <span class="pag">(p. 222)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 222–227.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/avvolgimento-filamenti.js"></script>
+</body>
+</html>

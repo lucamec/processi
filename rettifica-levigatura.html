@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rettifica, levigatura e lucidatura – Processi produttivi per il design</title>
+<meta name="description" content="Particelle abrasive asportano la superficie in passaggi sempre più fini, da una finitura grossolana fino allo specchio; tipo e grana dell'abrasivo e il metodo decidono l'effetto, uniforme o a motivi.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 4 – Finitura › Processi sottrattivi</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Rettifica, levigatura e lucidatura</h1>
+  <p class="originale" lang="en">Grinding, Sanding and Polishing</p>
+  <p class="categoria">Parte 4 – Finitura · Processi sottrattivi</p>
+  <p class="sintesi">Particelle abrasive asportano la superficie in passaggi sempre più fini, da una finitura grossolana fino allo specchio; tipo e grana dell'abrasivo e il metodo decidono l'effetto, uniforme o a motivi.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="2200,2200,2200,2400">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="rettifica-levigatura" data-alt="Modello 3D di una lastra d'acciaio su un banco, sotto una mola che scorre avanti e indietro. Nella prima fase la mola è scura e la lastra appare ruvida e opaca con righe; a ogni fase la mola diventa più chiara e la superficie più liscia e lucida, finché con una mola in panno diventa uno specchio verde-acqua.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Rettifica<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Levigatura<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Lucidatura opaca<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Lucidatura a specchio<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Rettifica</b>Una mola rivestita di abrasivo, ad alta velocità e con lubrificante, sgrossa la superficie: con grana 80–100 la rugosità media è circa 2,5 µm. <span class="pag">(p. 377–379)</span></li>
+    <li><b>Fase 2 – Levigatura</b>Si passa a grane più fini (180–220): ogni passaggio riduce la profondità delle ondulazioni, fino a circa 1,25 µm. <span class="pag">(p. 376–379)</span></li>
+    <li><b>Fase 3 – Lucidatura opaca</b>Con grana 240 si ottiene una lucidatura opaca, circa 0,6 µm. <span class="pag">(p. 379)</span></li>
+    <li><b>Fase 4 – Lucidatura a specchio</b>Paste o cere con abrasivo, stese con panni o mole di stoffa, danno una superficie brillante: lo specchio è sotto 0,05 µm. <span class="pag">(p. 376–379)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una lastra d'acciaio su un banco, sotto una mola che scorre avanti e indietro. Nella prima fase la mola è scura e la lastra appare ruvida e opaca con righe; a ogni fase la mola diventa più chiara e la superficie più liscia e lucida, finché con una mola in panno diventa uno specchio verde-acqua.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 20 820 330" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Dalla rettifica alla lucidatura a specchio</title>
+<desc id="sc-d">A sinistra una mola che scorre su un pezzo; a destra l'ingrandimento del profilo superficiale. Le fasi mostrano il profilo che si appiattisce passando da grana 80–100 a 180–220, a 240 e infine alla pasta lucidante, con la rugosità che scende da circa 2,5 a 0,05 µm.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- pezzo e mola -->
+<rect x="60" y="230" width="300" height="50" class="m-stampo contorno"/>
+<rect x="40" y="280" width="340" height="14" class="macchina"/>
+<g data-k="tx:120,-40,120,-40" data-i="tx:-40">
+  <circle cx="160" cy="180" r="48" class="contorno" data-k="op:1,1,1,1" data-i="op:1" fill="#5a6068"/>
+  <circle cx="160" cy="180" r="48" fill="#e8e0d0" class="contorno" data-k="op:0,0,0,1" data-i="op:0"/>
+  <circle cx="160" cy="180" r="10" class="scuro"/>
+</g>
+<path d="M238,90 A18,18 0 1 1 220,72" class="flusso-linea" fill="none" marker-end="url(#sc-punta)"/>
+<g class="etichetta"><text x="40" y="40" text-anchor="start">Mola o nastro abrasivo ad alta velocità, con lubrificante</text></g>
+<!-- profilo della superficie ingrandito -->
+<rect x="430" y="150" width="340" height="140" fill="none" stroke="var(--testo)" stroke-dasharray="4 3"/>
+<rect x="440" y="230" width="320" height="50" class="m-stampo"/>
+<path d="M440,230 L440,230 L450,204.75288863552964 L460,233.90302615255484 L470,236.62062512634463 L480,226.42316335458446 L490,217.6470447236649 L500,247.92821011590215 L510,248.54306478193823 L520,208.26302069901666 L530,224.01815584927792 L540,236.7936546712141 L550,231.09211907861018 L560,214.33520372654516 L570,232.79969065491883 L580,259.14735974514 L590,220.97361481789906 L600,216.91448971750376 L610,234.09057763326905 L620,235.40700809505813 L630,217.73015455241645 L640,216.28416599758705 L650,257.2761146453569 L660,237.35967717829732 L670,215.52370507132218 L680,229.71895858189365 L690,237.4909134748463 L700,226.5301333740537 L710,205.47906275209735 L720,243.73732824617468 L730,250.4024253361051 L740,220.28547427093378 L750,225.56250542465762 L760,236.38282139256725" fill="none" stroke="var(--testo)" stroke-width="2.5" data-k="op:1,0,0,0" data-i="op:1"/>
+<path d="M440,230 L440,230 L450,217.37644431776482 L460,231.95151307627742 L470,233.31031256317232 L480,228.21158167729223 L490,223.82352236183246 L500,238.96410505795106 L510,239.27153239096913 L520,219.13151034950835 L530,227.00907792463897 L540,233.39682733560707 L550,230.54605953930508 L560,222.16760186327258 L570,231.39984532745942 L580,244.57367987257 L590,225.48680740894952 L600,223.4572448587519 L610,232.04528881663452 L620,232.70350404752907 L630,223.86507727620824 L640,223.1420829987935 L650,243.63805732267846 L660,233.67983858914866 L670,222.7618525356611 L680,229.8594792909468 L690,233.74545673742315 L700,228.26506668702686 L710,217.73953137604866 L720,236.86866412308734 L730,240.20121266805253 L740,225.1427371354669 L750,227.7812527123288 L760,233.19141069628364" fill="none" stroke="var(--testo)" stroke-width="2.5" data-k="op:0,1,0,0" data-i="op:0"/>
+<path d="M440,230 L440,230 L450,224.10900734829025 L460,230.9107061022628 L470,231.54481252948042 L480,229.16540478273637 L490,227.11764376885515 L500,234.18324902704384 L510,234.3267151157856 L520,224.92803816310388 L530,228.6042363648315 L540,231.58518608994996 L550,230.25482778500904 L560,226.3448808695272 L570,230.6532611528144 L580,236.80105060719933 L590,227.89384345750977 L600,226.94671426741755 L610,230.95446811442946 L620,231.26163522218022 L630,227.1370360622305 L640,226.79963873277032 L650,236.36442675058328 L660,231.71725800826937 L670,226.62219784997518 L680,229.93442366910853 L690,231.74787981079746 L700,229.19036445394588 L710,224.27844797548937 L720,233.20537659077408 L730,234.76056591175785 L740,227.73327732988454 L750,228.96458459908678 L760,231.48932499159903" fill="none" stroke="var(--testo)" stroke-width="2.5" data-k="op:0,0,1,0" data-i="op:0"/>
+<path d="M440,230 L440,230 L450,229.15842962118433 L460,230.13010087175184 L470,230.2206875042115 L480,229.88077211181948 L490,229.58823482412217 L500,230.5976070038634 L510,230.61810215939795 L520,229.27543402330056 L530,229.80060519497593 L540,230.22645515570713 L550,230.036403969287 L560,229.47784012421818 L570,230.09332302183063 L580,230.97157865817132 L590,229.69912049392997 L600,229.5638163239168 L610,230.13635258777563 L620,230.1802336031686 L630,229.59100515174723 L640,229.5428055332529 L650,230.9092038215119 L660,230.24532257260992 L670,229.51745683571073 L680,229.99063195272979 L690,230.2496971158282 L700,229.88433777913514 L710,229.18263542506992 L720,230.45791094153915 L730,230.68008084453683 L740,229.6761824756978 L750,229.85208351415525 L760,230.21276071308557" fill="none" stroke-width="3" style="stroke:var(--finito)" data-k="op:0,0,0,1" data-i="op:0"/>
+<g class="etichetta"><text x="440" y="140" text-anchor="start">Profilo della superficie (ingrandito)</text></g>
+<g data-k="op:1,0,0,0"><g class="etichetta"><text x="440" y="320" text-anchor="start">grana 80–100: Ra circa 2,5 µm</text></g></g>
+<g data-k="op:0,1,0,0"><g class="etichetta"><text x="440" y="320" text-anchor="start">grana 180–220: Ra circa 1,25 µm</text></g></g>
+<g data-k="op:0,0,1,0"><g class="etichetta"><text x="440" y="320" text-anchor="start">grana 240: Ra circa 0,6 µm</text></g></g>
+<g data-k="op:0,0,0,1"><g class="etichetta"><text x="440" y="320" text-anchor="start">pasta lucidante: Ra circa 0,05 µm, a specchio</text></g></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>La rettifica lavora materiali duri: prepara le superfici, sbava, taglia e rifinisce con precisione; gli abrasivi vanno dal metallo ai minerali, dal diamante ai semi di mais macinati. <span class="pag">(p. 376)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>La levigatura usa supporti ricoperti di abrasivo (sabbia, granato, ossido di alluminio, carburo di silicio); la grana va da 40 a 2.400: numeri bassi significano particelle più grosse e finitura più grezza. <span class="pag">(p. 376)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>Con la carta abrasiva bagnata l'acqua trattiene le particelle e forma una pasta che rende la superficie molto fine. <span class="pag">(p. 378)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Le superfici lucidate riflettono oltre il 95% della luce, sono igieniche e facili da pulire; le satinate trattengono impronte e segni. <span class="pag">(p. 378–379)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Qualsiasi materiale: metallo, legno, plastica, ceramica, vetro, con risultati diversi; l'inox, molto duro, si lucida a specchio, l'alluminio meno. <span class="pag">(p. 376, 380)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Da pezzo unico a produzione di massa. <span class="pag">(p. 376)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Per molte applicazioni nessuno; profili non standard possono richiedere utensili, anche costosi secondo le dimensioni. <span class="pag">(p. 376, 380)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Dipende dalla finitura: una lucidatura opaca aggiunge circa il 10% del costo del materiale, una finitura controllata circa il 25%, una riflettente circa il 60%. <span class="pag">(p. 376, 380)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Da rapido a lungo: le superfici a specchio possono richiedere molte ore; nel caso studio la rettifica di una piastra dura fino a 45 minuti. <span class="pag">(p. 376–378, 380)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Alta, da grezza a specchio, uniforme o a motivi. <span class="pag">(p. 376)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Fino a frazioni di micron; rugosità media: circa 2,5 µm con grana 80–100, 1,25 µm con 180–220, 0,6 µm con 240, 0,05 µm a specchio. <span class="pag">(p. 376, 378–379)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Valori numerici: <span class="nd">n.d.</span> <span class="pag">(p. 376–383)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Forme adatte alla precisione</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-forma-ok-t v-forma-ok-d" class="mini-svg"><title id="v-forma-ok-t">Corretto: Superfici piane, cilindriche o coniche</title><desc id="v-forma-ok-d">Le operazioni di precisione lavorano con moti alternati o rotanti: sono limitate a superfici piane, cilindriche e coniche.</desc><defs>
+  <pattern id="v-forma-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-forma-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-forma-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-forma-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="60" width="120" height="30" class="m-stampo contorno"/><path d="M20,56 H140" stroke="var(--finito)" stroke-width="4"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-forma-ko-t v-forma-ko-d" class="mini-svg"><title id="v-forma-ko-t">Da evitare: Forme libere in precisione</title><desc id="v-forma-ko-d">Le forme irregolari si lucidano solo a mano o con finiture estetiche, con costi e tempi molto più alti.</desc><defs>
+  <pattern id="v-forma-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-forma-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-forma-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-forma-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,90 Q40,30 80,60 T140,40 V90 Z" class="m-stampo contorno"/><circle cx="80" cy="56" r="18" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Le operazioni di precisione si limitano a superfici piane, cilindriche e coniche; quelle estetiche si applicano a quasi ogni forma, anche a mano. <span class="pag">(p. 380)</span></p></article>
+<article class="card"><h3>La durezza conta</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-durezza-ok-t v-durezza-ok-d" class="mini-svg"><title id="v-durezza-ok-t">Corretto: Materiali duri per finiture brillanti</title><desc id="v-durezza-ok-d">L'acciaio inox, molto duro, si lucida fino a fare da specchio.</desc><defs>
+  <pattern id="v-durezza-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-durezza-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-durezza-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-durezza-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="50" width="120" height="40" fill="#dfe4ea" class="contorno"/><path d="M30,60 L60,80 M70,58 L100,82" stroke="#ffffff" stroke-width="4"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-durezza-ko-t v-durezza-ko-d" class="mini-svg"><title id="v-durezza-ko-t">Da evitare: Metalli teneri</title><desc id="v-durezza-ko-d">L'alluminio, più tenero, non raggiunge la stessa lucentezza.</desc><defs>
+  <pattern id="v-durezza-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-durezza-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-durezza-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-durezza-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="50" width="120" height="40" fill="#b8bec6" class="contorno"/><circle cx="80" cy="70" r="18" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>La durezza del materiale influisce sulla finitura e sul tempo: l'inox si lucida a specchio, l'alluminio no. <span class="pag">(p. 380)</span></p></article>
+<article class="card"><h3>Lucidare prima di fabbricare</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-ordine-ok-t v-ordine-ok-d" class="mini-svg"><title id="v-ordine-ok-t">Corretto: Lucidare il semilavorato</title><desc id="v-ordine-ok-d">Spesso conviene lucidare lamiere o tubi prima di fabbricare il pezzo, ritoccando poi a mano i giunti.</desc><defs>
+  <pattern id="v-ordine-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-ordine-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-ordine-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-ordine-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="40" width="120" height="16" fill="#dfe4ea" class="contorno"/><path d="M20,80 H70 V100 M70,80 H140" stroke="#dfe4ea" stroke-width="10"/><circle cx="70" cy="80" r="6" fill="none" stroke="var(--finito)" stroke-width="2"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-ordine-ko-t v-ordine-ko-d" class="mini-svg"><title id="v-ordine-ko-t">Da evitare: Lucidare solo il pezzo finito</title><desc id="v-ordine-ko-d">Lucidare a specchio un assieme complesso richiede molte ore di lavoro manuale.</desc><defs>
+  <pattern id="v-ordine-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-ordine-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-ordine-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-ordine-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M30,100 V40 H80 V70 H130 V100 Z" fill="#dfe4ea" class="contorno"/><circle cx="80" cy="70" r="16" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Spesso conviene lucidare lamiere o tubi prima della fabbricazione e ritoccare a mano i giunti dopo. <span class="pag">(p. 380)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Le altre tecniche descritte nel capitolo; lo schema principale mostra la sequenza a mola.</p><div class="griglia-card"><article class="card"><h3>A nastro</h3><p class="originale" lang="en">Belt sanding</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-nastro-t var-nastro-d" class="mini-svg"><title id="var-nastro-t">Levigatura a nastro</title><desc id="var-nastro-d">Nastri abrasivi su macchine fisse o portatili, per legno e metallo; nella versione rotativa il pezzo tubolare gira e riceve una satinatura uniforme.</desc><defs>
+  <pattern id="var-nastro-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-nastro-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-nastro-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-nastro-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="30" y="20" width="160" height="30" rx="15" fill="none" stroke="#8a7a5a" stroke-width="6"/><circle cx="110" cy="90" r="24" class="m-stampo contorno"/><path d="M120,90 A10,10 0 1 1 110,80" class="flusso-linea" fill="none" marker-end="url(#var-nastro-punta)"/></svg></div><p>Per legno e metallo; la versione rotativa satina tubi e profili irregolari. <span class="pag">(p. 377, 380)</span></p></article>
+<article class="card"><h3>Levigatura di precisione</h3><p class="originale" lang="en">Honing</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-honing-t var-honing-d" class="mini-svg"><title id="var-honing-t">Levigatura di precisione (honing)</title><desc id="var-honing-d">Una pietra sagomata, coperta di abrasivo, lavora diametri interni ed esterni di pezzi a rivoluzione, per esempio le canne dei cilindri o le tenute ermetiche fra vetro e tappo.</desc><defs>
+  <pattern id="var-honing-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-honing-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-honing-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-honing-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="50" y="30" width="120" height="70" fill="#cfe3ea" class="contorno"/><rect x="70" y="40" width="80" height="50" fill="#eef1f4" stroke="var(--testo)"/>
+    <rect x="90" y="10" width="40" height="76" class="m-stampo contorno"/><path d="M120,24 A10,10 0 1 1 110,14" class="flusso-linea" fill="none" marker-end="url(#var-honing-punta)"/></svg></div><p>Diametri interni ed esterni di pezzi a rivoluzione, con pietre sagomate. <span class="pag">(p. 377–379)</span></p></article>
+<article class="card"><h3>Lappatura</h3><p class="originale" lang="en">Lapping</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-lappatura-t var-lappatura-d" class="mini-svg"><title id="var-lappatura-t">Lappatura</title><desc id="var-lappatura-d">Blocchi rigidi o tamponi flessibili impregnati di abrasivo danno finiture finissime e controllabili su metalli duri e vetro, anche a motivi ripetuti.</desc><defs>
+  <pattern id="var-lappatura-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-lappatura-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-lappatura-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-lappatura-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="20" y="70" width="180" height="30" fill="#dfe4ea" class="contorno"/>
+    <circle cx="50" cy="85" r="12" fill="none" stroke="#9aa6b2" stroke-width="2"/><circle cx="100" cy="85" r="12" fill="none" stroke="#9aa6b2" stroke-width="2"/><circle cx="150" cy="85" r="12" fill="none" stroke="#9aa6b2" stroke-width="2"/>
+    <rect x="80" y="40" width="60" height="26" class="m-stampo contorno"/></svg></div><p>Blocchi o tamponi impregnati di abrasivo, per finiture finissime o a motivi. <span class="pag">(p. 377, 382–383)</span></p></article>
+<article class="card"><h3>Vibrofinitura</h3><p class="originale" lang="en">Vibratory finishing</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-vibro-t var-vibro-d" class="mini-svg"><title id="var-vibro-t">Vibrofinitura a botte</title><desc id="var-vibro-d">I pezzi vibrano in un contenitore pieno di sassolini lisci e duri, come ciottoli sulla spiaggia: sbavatura di grandi quantità.</desc><defs>
+  <pattern id="var-vibro-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-vibro-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-vibro-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-vibro-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M40,30 V100 H180 V30" fill="none" stroke="var(--testo)" stroke-width="4"/>
+    <circle cx="52" cy="82" r="5" fill="#b8bec6"/><circle cx="64" cy="82" r="5" fill="#b8bec6"/><circle cx="76" cy="82" r="5" fill="#b8bec6"/><circle cx="88" cy="82" r="5" fill="#b8bec6"/><circle cx="100" cy="82" r="5" fill="#b8bec6"/><circle cx="112" cy="82" r="5" fill="#b8bec6"/><circle cx="124" cy="82" r="5" fill="#b8bec6"/><circle cx="136" cy="82" r="5" fill="#b8bec6"/><circle cx="148" cy="82" r="5" fill="#b8bec6"/><circle cx="160" cy="82" r="5" fill="#b8bec6"/><circle cx="172" cy="82" r="5" fill="#b8bec6"/><circle cx="52" cy="70" r="5" fill="#b8bec6"/><circle cx="64" cy="70" r="5" fill="#b8bec6"/><circle cx="76" cy="70" r="5" fill="#b8bec6"/><circle cx="88" cy="70" r="5" fill="#b8bec6"/><circle cx="100" cy="70" r="5" fill="#b8bec6"/><circle cx="112" cy="70" r="5" fill="#b8bec6"/><circle cx="124" cy="70" r="5" fill="#b8bec6"/><circle cx="136" cy="70" r="5" fill="#b8bec6"/><circle cx="148" cy="70" r="5" fill="#b8bec6"/><circle cx="160" cy="70" r="5" fill="#b8bec6"/><circle cx="172" cy="70" r="5" fill="#b8bec6"/>
+    <rect x="90" y="60" width="40" height="20" class="m-stampo contorno"/></svg></div><p>Pezzi e sassolini in un contenitore vibrante, per sbavare grandi quantità. <span class="pag">(p. 380)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="sabbiatura.html">Sabbiatura</a> – rapida ma solo finiture opache <span class="pag">(p. 378)</span></li><li><a href="elettrolucidatura.html">Elettrolucidatura</a> – meno precisa, ma indipendente dalla forma <span class="pag">(p. 378)</span></li><li><a href="prototipazione-rapida.html">Prototipazione rapida</a> – la rettifica prepara le piastre per la DMLS <span class="pag">(p. 378)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 376–383.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/rettifica-levigatura.js"></script>
+</body>
+</html>

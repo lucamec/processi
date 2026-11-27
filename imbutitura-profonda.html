@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Imbutitura profonda – Processi produttivi per il design</title>
+<meta name="description" content="Un punzone spinge un disco di lamiera dentro una matrice e lo trasforma in un contenitore senza saldature, più profondo che largo: lattine, lavelli, recipienti.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 1 – Formatura › Metalli</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Imbutitura profonda</h1>
+  <p class="originale" lang="en">Deep Drawing</p>
+  <p class="categoria">Parte 1 – Formatura · Metalli</p>
+  <p class="sintesi">Un punzone spinge un disco di lamiera dentro una matrice e lo trasforma in un contenitore senza saldature, più profondo che largo: lattine, lavelli, recipienti.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="2000,2400,2600,2000">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="imbutitura-profonda" data-alt="Modello 3D di una pressa per imbutitura inversa, tagliato a metà. Un disco di lamiera è posato su una matrice ad anello. Il premilamiera scende e piega il disco sopra la matrice, formando una coppa rovesciata. Poi il punzone entra dall'alto nel foro e rovescia la coppa verso il basso, rendendola più profonda. Infine il pezzo verde viene estratto.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Carico<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Prima imbutitura<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Imbutitura inversa<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Estrazione<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Carico</b>Il disco di lamiera, oliato su entrambi i lati, viene caricato nella pressa idraulica e bloccato nel premilamiera. <span class="pag">(p. 89–90)</span></li>
+    <li><b>Fase 2 – Prima imbutitura</b>Il premilamiera scende e il materiale scorre sui fianchi della matrice: si forma una coppa simmetrica. <span class="pag">(p. 89)</span></li>
+    <li><b>Fase 3 – Imbutitura inversa</b>Il punzone spinge il materiale nella matrice in senso opposto: il metallo scorre sul bordo della matrice e prende la forma del punzone, rovesciando la coppa. <span class="pag">(p. 89, 91)</span></li>
+    <li><b>Fase 4 – Estrazione</b>Il pezzo viene espulso; poi si rifila il bordo per togliere grinze e strappi. <span class="pag">(p. 89, 91)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una pressa per imbutitura inversa, tagliato a metà. Un disco di lamiera è posato su una matrice ad anello. Il premilamiera scende e piega il disco sopra la matrice, formando una coppa rovesciata. Poi il punzone entra dall'alto nel foro e rovescia la coppa verso il basso, rendendola più profonda. Infine il pezzo verde viene estratto.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 0 820 370" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Imbutitura inversa in sezione</title>
+<desc id="sc-d">Sezione di una matrice ad anello, con il premilamiera esterno e il punzone che entra nel foro centrale. Le fasi mostrano il carico del disco, la prima imbutitura verso il basso attorno alla matrice, l'imbutitura inversa del punzone e l'estrazione.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- matrice inferiore: anello con foro centrale -->
+<path d="M330,176 H370 V340 H330 Z M450,176 H490 V340 H450 Z" fill="url(#sc-tratteggio)" class="contorno"/>
+<rect x="300" y="340" width="220" height="16" class="macchina"/>
+<g class="etichetta"><text x="560" y="330" text-anchor="start">Matrice inferiore</text></g>
+
+<!-- lamiera -->
+<path d="M256,172 H564" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--grezzo)" data-k="op:1,0,0,0" data-i="op:1"/>
+<path d="M322,300 V178 Q322,170 330,170 H490 Q498,170 498,178 V300" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--fuso)" data-k="op:0,1,0,0" data-i="op:0"/>
+<path d="M322,300 V178 Q322,170 330,170 H366 Q374,170 374,178 V318 Q374,326 382,326 H438 Q446,326 446,318 V178 Q446,170 454,170 H490 Q498,170 498,178 V300" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--fuso)" data-k="op:0,0,1,0" data-i="op:0"/>
+<g data-k="ty:0,0,0,-200;op:0,0,0,1" data-i="op:0"><path d="M322,300 V178 Q322,170 330,170 H366 Q374,170 374,178 V318 Q374,326 382,326 H438 Q446,326 446,318 V178 Q446,170 454,170 H490 Q498,170 498,178 V300" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--finito)"/></g>
+<g class="etichetta" data-k="op:1,0,0,0" data-i="op:1"><line x1="258" y1="170" x2="40" y2="155" class="richiamo"/><text x="40" y="160" text-anchor="start">Grezzo di lamiera oliato</text></g>
+
+<!-- premilamiera: scende sui lati della matrice -->
+<g data-k="ty:0,128,128,0" data-i="ty:0">
+  <path d="M256,120 H318 V166 H256 Z M502,120 H564 V166 H502 Z" fill="url(#sc-tratteggio)" class="contorno"/>
+  <rect x="256" y="96" width="308" height="24" class="macchina"/>
+</g>
+<g class="etichetta"><text x="580" y="112" text-anchor="start">Premilamiera</text></g>
+
+<!-- punzone: entra nel foro in senso opposto -->
+<g data-k="ty:-150,-150,0,-150" data-i="ty:-150">
+  <rect x="378" y="60" width="64" height="262" fill="url(#sc-tratteggio)" class="contorno"/>
+  <g data-k="op:0,0,1,0"><line x1="410" y1="20" x2="410" y2="58" class="flusso-linea" marker-end="url(#sc-punta)"/></g>
+</g>
+<g class="etichetta"><text x="300" y="40" text-anchor="start">Punzone</text></g>
+<g data-k="op:0,1,0,0"><line x1="287" y1="60" x2="287" y2="92" class="flusso-linea" marker-end="url(#sc-punta)"/><line x1="533" y1="60" x2="533" y2="92" class="flusso-linea" marker-end="url(#sc-punta)"/></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Si parla di imbutitura profonda quando la profondità supera il diametro, talvolta già quando ne è la metà. Si ottengono forme senza saldature e senza altre lavorazioni. <span class="pag">(p. 88)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>C'è un limite a quanto si può deformare la lamiera in un'operazione: dipende da materiale e spessore. Le coppe semplici si fanno in un passaggio, le forme profonde con stampi progressivi o con l'imbutitura inversa. <span class="pag">(p. 88)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>L'imbutitura inversa preme la lamiera due volte nella stessa operazione, rovesciandola: il ciclo è più rapido e servono meno stampi. <span class="pag">(p. 88, 91)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>La lamiera si assottiglia: nel caso studio da 0,8 a 0,7 mm. I metalli che resistono all'assottigliamento si strappano e si raggrinzano meno. <span class="pag">(p. 89–90)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Acciai, zinco, rame e leghe di alluminio: servono malleabilità e resistenza all'assottigliamento. <span class="pag">(p. 89)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Serie medie e grandi; nel caso studio 50 pezzi all'ora. <span class="pag">(p. 88, 91)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Da alto a molto alto: punzone e matrice di grande precisione; gli stampi progressivi aumentano molto i costi. <span class="pag">(p. 88, 90)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Moderato; manodopera moderata grazie all'automazione. <span class="pag">(p. 88, 90)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Rapido: da pochi secondi a diversi minuti, secondo il numero di operazioni. <span class="pag">(p. 88, 90)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>In genere molto buona, secondo la qualità di punzone e matrice; grinze e difetti sul bordo vengono rifilati. <span class="pag">(p. 88–89)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Tolleranze precise grazie agli stampi accoppiati. Valore numerico: <span class="nd">n.d.</span> <span class="pag">(p. 90)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Diametri da meno di 5 mm a 500 mm; lunghezza fino a 5 volte il diametro; presse fino a 1000 tonnellate. <span class="pag">(p. 89)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Profondità fino a 5 diametri</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-lunghezza-ok-t v-lunghezza-ok-d" class="mini-svg"><title id="v-lunghezza-ok-t">Corretto: Profondità entro 5 diametri</title><desc id="v-lunghezza-ok-d">La lunghezza dell'imbutitura può arrivare a 5 volte il diametro del pezzo.</desc><defs>
+  <pattern id="v-lunghezza-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-lunghezza-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-lunghezza-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-lunghezza-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M60,10 V95 H100 V10" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--finito)"/><g class="etichetta"><text x="116" y="60" text-anchor="start">L ≤ 5 D</text></g></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-lunghezza-ko-t v-lunghezza-ko-d" class="mini-svg"><title id="v-lunghezza-ko-t">Da evitare: Imbutitura lunga con lamiera sottile</title><desc id="v-lunghezza-ko-d">Nelle imbutiture lunghe lo spessore si riduce: servono lamiere più spesse, altrimenti il fondo si strappa.</desc><defs>
+  <pattern id="v-lunghezza-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-lunghezza-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-lunghezza-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-lunghezza-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M70,4 V104 H90 V4" fill="none" stroke-width="2" stroke-linejoin="round" style="stroke:var(--finito)"/><circle cx="80" cy="104" r="10" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>La lunghezza dell'imbutitura arriva a 5 volte il diametro; i profili più lunghi richiedono lamiere più spesse, perché lo spessore si riduce. <span class="pag">(p. 89)</span></p></article>
+<article class="card"><h3>Rientri costosi</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sottosquadri-ok-t v-sottosquadri-ok-d" class="mini-svg"><title id="v-sottosquadri-ok-t">Corretto: Rientri fatti dopo la formatura</title><desc id="v-sottosquadri-ok-d">I movimenti laterali nello stampo costano moltissimo: spesso si eseguono dopo l'imbutitura.</desc><defs>
+  <pattern id="v-sottosquadri-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sottosquadri-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sottosquadri-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sottosquadri-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M50,10 V95 H110 V10" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--finito)"/><rect x="112" y="40" width="24" height="16" class="m-stampo contorno"/><line x1="150" y1="70" x2="122" y2="70" class="flusso-linea" marker-end="url(#v-sottosquadri-ok-punta)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sottosquadri-ko-t v-sottosquadri-ko-d" class="mini-svg"><title id="v-sottosquadri-ko-t">Da evitare: Rientri nello stesso ciclo</title><desc id="v-sottosquadri-ko-d">Ottenerli con stampi progressivi o azioni perpendicolari fa crescere molto il costo dello stampo.</desc><defs>
+  <pattern id="v-sottosquadri-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sottosquadri-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sottosquadri-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sottosquadri-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M50,10 V40 L40,50 V95 H120 V50 L110,40 V10" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--finito)"/><circle cx="42" cy="48" r="10" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>I sottosquadri si ottengono con stampi progressivi o azioni perpendicolari, ma il costo dello stampo cresce molto; spesso si eseguono dopo la formatura. <span class="pag">(p. 89, 91)</span></p></article>
+<article class="card"><h3>Prevedere la rifilatura del bordo</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-bordo-ok-t v-bordo-ok-d" class="mini-svg"><title id="v-bordo-ok-t">Corretto: Margine da rifilare sul bordo</title><desc id="v-bordo-ok-d">Grinze e difetti si formano sul perimetro: si lascia materiale in più e si rifila dopo la formatura.</desc><defs>
+  <pattern id="v-bordo-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-bordo-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-bordo-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-bordo-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M30,30 H50 V95 H110 V30 H130" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--finito)"/><line x1="50" y1="22" x2="50" y2="40" stroke="var(--ko)" stroke-dasharray="3 3" stroke-width="2"/><line x1="110" y1="22" x2="110" y2="40" stroke="var(--ko)" stroke-dasharray="3 3" stroke-width="2"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-bordo-ko-t v-bordo-ko-d" class="mini-svg"><title id="v-bordo-ko-t">Da evitare: Nessun margine</title><desc id="v-bordo-ko-d">Senza margine le grinze del bordo restano sul pezzo finito.</desc><defs>
+  <pattern id="v-bordo-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-bordo-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-bordo-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-bordo-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M50,26 Q53,30 50,34 Q47,38 50,42 V95 H110 V42 Q113,38 110,34 Q107,30 110,26" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--finito)"/><circle cx="50" cy="32" r="10" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Grinze e difetti si concentrano sul bordo, che viene rifilato dopo la formatura. <span class="pag">(p. 89, 91)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Il libro non elenca varianti come sotto-voci; qui sotto le tecniche descritte nel capitolo.</p><div class="griglia-card"><article class="card"><h3>Imbutitura inversa</h3><p class="originale" lang="en">Reverse drawing</p><div class="variante-schema"><svg viewBox="0 0 220 128" role="img" aria-labelledby="var-inversa-t var-inversa-d" class="mini-svg"><title id="var-inversa-t">Imbutitura inversa</title><desc id="var-inversa-d">La lamiera viene imbutita due volte nella stessa operazione, rovesciando la forma dopo la prima: ciclo più rapido e meno stampi.</desc><defs>
+  <pattern id="var-inversa-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-inversa-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-inversa-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-inversa-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M70,40 H90 V118 H70 Z M130,40 H150 V118 H130 Z" fill="url(#var-inversa-tratteggio)" class="contorno"/>
+    <path d="M66,110 V40 H94 V110 H126 V40 H154 V110" fill="none" stroke-width="4" stroke-linejoin="round" style="stroke:var(--fuso)"/>
+    <rect x="96" y="0" width="28" height="104" fill="url(#var-inversa-tratteggio)" class="contorno"/></svg></div><p>La lamiera viene premuta due volte nella stessa operazione, rovesciando la forma dopo la prima imbutitura: è la tecnica dello schema principale. <span class="pag">(p. 88)</span></p></article>
+<article class="card"><h3>Stampi progressivi</h3><p class="originale" lang="en">Progressive dies</p><div class="variante-schema"><svg viewBox="0 0 220 128" role="img" aria-labelledby="var-progressiva-t var-progressiva-d" class="mini-svg"><title id="var-progressiva-t">Stampi progressivi</title><desc id="var-progressiva-d">Le forme molto profonde o complesse passano per una serie di stampi, ognuno dei quali allunga un po' il pezzo.</desc><defs>
+  <pattern id="var-progressiva-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-progressiva-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-progressiva-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-progressiva-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M30,20 V50 H60 V20" fill="none" stroke-width="4" stroke-linejoin="round" style="stroke:var(--finito)"/><path d="M95,20 V75 H125 V20" fill="none" stroke-width="4" stroke-linejoin="round" style="stroke:var(--finito)"/><path d="M165,20 V105 H195 V20" fill="none" stroke-width="4" stroke-linejoin="round" style="stroke:var(--finito)"/>
+    <g class="etichetta"><text x="110" y="122" text-anchor="middle">1 → 2 → 3</text></g></svg></div><p>Le forme molto profonde e complesse si ottengono con una serie di stampi; aumentano però molto i costi. <span class="pag">(p. 88, 90)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="stampaggio-lamiera.html">Stampaggio della lamiera</a> – per i profili poco profondi <span class="pag">(p. 88)</span></li><li><a href="tornitura-lastra.html">Tornitura in lastra</a> – geometrie simili senza saldature <span class="pag">(p. 88)</span></li><li><a href="curvatura-tubi.html">Curvatura di tubi e profilati</a> – la curvatura ad anello della lamiera dà forme simili <span class="pag">(p. 88)</span></li><li><a href="superformatura.html">Formatura superplastica (superforming)</a> – geometrie simili in lamiera <span class="pag">(p. 88)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 88–91.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/imbutitura-profonda.js"></script>
+</body>
+</html>

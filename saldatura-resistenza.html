@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saldatura a resistenza – Processi produttivi per il design</title>
+<meta name="description" content="Una forte corrente passa fra due elettrodi attraverso due lamiere sovrapposte: la resistenza del metallo lo scalda e lo fonde, e la pressione unisce le lamiere in un nocciolo. Rapida, semplice ed economica.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 3 – Giunzione › Termico</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Saldatura a resistenza</h1>
+  <p class="originale" lang="en">Resistance Welding</p>
+  <p class="categoria">Parte 3 – Giunzione · Termico</p>
+  <p class="sintesi">Una forte corrente passa fra due elettrodi attraverso due lamiere sovrapposte: la resistenza del metallo lo scalda e lo fonde, e la pressione unisce le lamiere in un nocciolo. Rapida, semplice ed economica.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="1800,1800,2400,2000">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="saldatura-resistenza" data-alt="Modello 3D di una pinza per saldatura a punti, con due elettrodi di rame su un telaio a C. Due lamiere sovrapposte scivolano fra gli elettrodi; la pinza si chiude e fa quattro punti in fila, ognuno dei quali si illumina d'arancione fra le lamiere. Alla fine la pinza si apre e i quattro punti diventano verdi.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Carico<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Serraggio<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Corrente<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Mantenimento e rilascio<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Carico</b>Le lamiere si sovrappongono fra gli elettrodi; non serve quasi preparazione delle superfici. <span class="pag">(p. 308, 310)</span></li>
+    <li><b>Fase 2 – Serraggio</b>Gli elettrodi si chiudono sul metallo e applicano pressione; i metalli più duri ne richiedono un po' di più. <span class="pag">(p. 310)</span></li>
+    <li><b>Fase 3 – Corrente</b>Una corrente elevata, concentrata fra gli elettrodi, scalda e plastifica il metallo per effetto della sua resistenza. <span class="pag">(p. 308, 310)</span></li>
+    <li><b>Fase 4 – Mantenimento e rilascio</b>La pressione fa unire la zona fusa, che forma il nocciolo; gli elettrodi si aprono per il punto successivo. <span class="pag">(p. 308, 310)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una pinza per saldatura a punti, con due elettrodi di rame su un telaio a C. Due lamiere sovrapposte scivolano fra gli elettrodi; la pinza si chiude e fa quattro punti in fila, ognuno dei quali si illumina d'arancione fra le lamiere. Alla fine la pinza si apre e i quattro punti diventano verdi.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 40 820 340" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Saldatura a punti, in sezione</title>
+<desc id="sc-d">Sezione di due lamiere sovrapposte fra due elettrodi di rame. Le fasi mostrano il carico, il serraggio, il passaggio di corrente che forma il nocciolo fuso fra le lamiere e il rilascio.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- lamiere sovrapposte -->
+<rect x="160" y="196" width="360" height="18" class="m-stampo contorno"/>
+<rect x="300" y="214" width="360" height="18" class="m-stampo contorno"/>
+<g class="etichetta"><line x1="180" y1="200" x2="20" y2="175" class="richiamo"/><text x="20" y="180" text-anchor="start">Due lamiere sovrapposte (di solito 0,5–5 mm)</text></g>
+<!-- nocciolo di saldatura -->
+<ellipse cx="410" cy="214" rx="30" ry="12" style="fill:var(--fuso)" data-k="op:0,0,1,0;sx:0,0,1,1" data-i="op:0;sx:0" data-o="410,214"/>
+<ellipse cx="410" cy="214" rx="30" ry="12" class="m-finito contorno" data-k="op:0,0,0,1" data-i="op:0"/>
+<g data-k="op:0,0,1,1"><g class="etichetta"><line x1="430" y1="220" x2="470" y2="265" class="richiamo"/><text x="470" y="270" text-anchor="start">nocciolo di saldatura</text></g></g>
+<!-- elettrodo superiore (+) -->
+<g data-k="ty:-60,0,0,-60" data-i="ty:-60">
+  <rect x="384" y="60" width="52" height="90" fill="#c27a4a" class="contorno"/>
+  <path d="M384,150 H436 L424,194 H396 Z" fill="#c27a4a" class="contorno"/>
+</g>
+<g class="etichetta"><text x="460" y="80" text-anchor="start">Elettrodo (+) in rame</text></g>
+<!-- elettrodo inferiore (−) -->
+<g data-k="ty:60,0,0,60" data-i="ty:60">
+  <path d="M396,234 H424 L436,278 H384 Z" fill="#c27a4a" class="contorno"/>
+  <rect x="384" y="278" width="52" height="70" fill="#c27a4a" class="contorno"/>
+</g>
+<g class="etichetta"><text x="460" y="330" text-anchor="start">Elettrodo (−)</text></g>
+<g data-k="op:0,1,1,0"><line x1="360" y1="90" x2="360" y2="140" class="flusso-linea" marker-end="url(#sc-punta)"/><line x1="360" y1="320" x2="360" y2="270" class="flusso-linea" marker-end="url(#sc-punta)"/></g>
+<g data-k="op:0,0,1,0"><g class="etichetta"><text x="20" y="360" text-anchor="start">la corrente attraversa le lamiere: la resistenza le scalda e le fonde</text></g></g>
+<g data-k="op:0,1,0,0"><g class="etichetta"><text x="20" y="360" text-anchor="start">gli elettrodi serrano le lamiere</text></g></g>
+<g data-k="op:0,0,0,1"><g class="etichetta"><text x="20" y="360" text-anchor="start">sotto pressione il metallo si unisce; gli elettrodi si aprono</text></g></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Tre processi principali, tutti con lo stesso principio: a rilievi, a punti e a rulli. Sono stati fondamentali per l'auto di massa: una sola vettura può avere fino a 4.000 punti di saldatura. <span class="pag">(p. 308)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>La saldatura a punti è la più versatile: le attrezzature non sono dedicate, quindi è la meno costosa e la più adatta a prototipi e piccole serie. <span class="pag">(p. 310)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>Il punto si forma solo fra gli elettrodi: una saldatura per volta, in sequenza. È un processo semplice, costante, economico e che richiede poca abilità. <span class="pag">(p. 310)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Non servono flussi, materiali d'apporto o gas; l'acqua che raffredda gli elettrodi di rame si ricicla. <span class="pag">(p. 311)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>La maggior parte dei metalli: acciai al carbonio, inox, nichel, alluminio, titanio e leghe di rame; anche metalli diversi, con resistenza ridotta. <span class="pag">(p. 310–311)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Da pezzo unico a produzione di massa. <span class="pag">(p. 308)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Basso o nullo: elettrodi standard; elettrodi dedicati solo per superfici sagomate. <span class="pag">(p. 308, 311)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Basso. <span class="pag">(p. 308)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Rapido: a punti una saldatura alla volta, a rilievi più saldature insieme; incidono spessore, rivestimenti e accoppiamento dei pezzi. <span class="pag">(p. 308, 311)</span><span class="nota-ocr">Numero di punti al secondo: <span class="nd">n.d.</span> (OCR &quot;about i weld per second&quot;)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Qualità costante e alta; giunti ermetici con la saldatura a rulli. <span class="pag">(p. 308, 310)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Il nocciolo si forma esattamente fra gli elettrodi. Tolleranze numeriche: <span class="nd">n.d.</span> <span class="pag">(p. 310)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Lamiere di solito fra 0,5 e 5 mm; assiemi fino a 10 mm con un solo punto. <span class="pag">(p. 310)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Punto raggiungibile</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-accesso-ok-t v-accesso-ok-d" class="mini-svg"><title id="v-accesso-ok-t">Corretto: Punto raggiungibile dal bordo</title><desc id="v-accesso-ok-d">Gli elettrodi lavorano su un asse verticale: il punto deve essere accessibile da sopra e da sotto, e raggiungibile dal bordo del foglio.</desc><defs>
+  <pattern id="v-accesso-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-accesso-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-accesso-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-accesso-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="56" width="120" height="10" class="m-stampo contorno"/><path d="M110,20 V52 M110,70 V100" stroke="#c27a4a" stroke-width="10"/><path d="M110,20 H150 V100 H110" fill="none" stroke="var(--testo)" stroke-width="4"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-accesso-ko-t v-accesso-ko-d" class="mini-svg"><title id="v-accesso-ko-t">Da evitare: Punto al centro di un pezzo chiuso</title><desc id="v-accesso-ko-d">Se la pinza non arriva al punto dal bordo, o un lato è chiuso, non si salda (salvo elettrodi sagomati).</desc><defs>
+  <pattern id="v-accesso-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-accesso-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-accesso-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-accesso-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="40" width="120" height="50" fill="none" stroke="var(--testo)" stroke-width="6"/><circle cx="80" cy="40" r="12" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>La posizione dipende dalla portata della pinza e dalla forma dell'elettrodo: il punto deve essere raggiungibile dal bordo e accessibile da sopra e da sotto; elettrodi sagomati aiutano negli spazi stretti. <span class="pag">(p. 310–311)</span></p></article>
+<article class="card"><h3>Giunti a taglio, non a pelatura</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-carico-ok-t v-carico-ok-d" class="mini-svg"><title id="v-carico-ok-t">Corretto: Giunto sollecitato a taglio</title><desc id="v-carico-ok-d">I giunti a punti hanno alta resistenza al taglio: si progettano perché le lamiere scorrano, non si aprano.</desc><defs>
+  <pattern id="v-carico-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-carico-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-carico-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-carico-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="50" width="80" height="10" class="m-stampo contorno"/><rect x="60" y="60" width="80" height="10" class="m-stampo contorno"/><ellipse cx="80" cy="60" rx="10" ry="5" style="fill:var(--finito)"/><line x1="40" y1="40" x2="10" y2="40" class="flusso-linea" marker-end="url(#v-carico-ok-punta)"/><line x1="120" y1="80" x2="150" y2="80" class="flusso-linea" marker-end="url(#v-carico-ok-punta)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-carico-ko-t v-carico-ko-d" class="mini-svg"><title id="v-carico-ko-t">Da evitare: Giunto sollecitato a pelatura</title><desc id="v-carico-ko-d">Con noccioli piccoli e localizzati la resistenza alla pelatura è limitata.</desc><defs>
+  <pattern id="v-carico-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-carico-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-carico-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-carico-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,40 Q70,40 80,58" fill="none" stroke="var(--stampo)" stroke-width="10"/><rect x="60" y="60" width="80" height="10" class="m-stampo contorno"/><line x1="30" y1="30" x2="30" y2="6" class="flusso-linea" marker-end="url(#v-carico-ko-punta)"/><circle cx="80" cy="60" r="14" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>I giunti hanno alta resistenza a taglio, ma con noccioli piccoli e localizzati la resistenza alla pelatura è limitata. <span class="pag">(p. 308, 310)</span></p></article>
+<article class="card"><h3>Spessori adatti</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spessore-ok-t v-spessore-ok-d" class="mini-svg"><title id="v-spessore-ok-t">Corretto: Lamiere sottili, anche di spessori diversi</title><desc id="v-spessore-ok-d">Lo spessore di solito è 0,5–5 mm; si saldano anche lamiere di spessore diverso o più fogli sovrapposti, fino a 10 mm con un solo punto.</desc><defs>
+  <pattern id="v-spessore-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spessore-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spessore-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spessore-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="40" width="120" height="8" class="m-stampo contorno"/><rect x="20" y="48" width="120" height="14" class="m-stampo contorno"/><rect x="20" y="62" width="120" height="8" class="m-stampo contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spessore-ko-t v-spessore-ko-d" class="mini-svg"><title id="v-spessore-ko-t">Da evitare: Pacco troppo spesso</title><desc id="v-spessore-ko-d">Oltre circa 10 mm un punto singolo non attraversa più il pacco.</desc><defs>
+  <pattern id="v-spessore-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spessore-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spessore-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spessore-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="20" width="120" height="18" class="m-stampo contorno"/><rect x="20" y="38" width="120" height="18" class="m-stampo contorno"/><rect x="20" y="56" width="120" height="18" class="m-stampo contorno"/><rect x="20" y="74" width="120" height="18" class="m-stampo contorno"/><rect x="20" y="92" width="120" height="18" class="m-stampo contorno"/><circle cx="80" cy="65" r="22" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Di solito 0,5–5 mm; si saldano anche spessori diversi e più fogli sovrapposti, fino a 10 mm con un solo punto. <span class="pag">(p. 310)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Lo schema principale mostra la saldatura a punti; queste sono le altre tecniche descritte nel capitolo.</p><div class="griglia-card"><article class="card"><h3>A rilievi</h3><p class="originale" lang="en">Projection welding</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-rilievi-t var-rilievi-d" class="mini-svg"><title id="var-rilievi-t">A rilievi (projection)</title><desc id="var-rilievi-d">Rilievi stampati su un pezzo, o un inserto, concentrano la corrente: più saldature in un colpo, con elettrodi larghi che si consumano poco.</desc><defs>
+  <pattern id="var-rilievi-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-rilievi-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-rilievi-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-rilievi-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="30" y="20" width="160" height="24" fill="#c27a4a" class="contorno"/>
+    <rect x="40" y="60" width="140" height="10" class="m-stampo contorno"/><path d="M62,60 Q70,50 78,60 Z" class="m-stampo contorno"/><path d="M102,60 Q110,50 118,60 Z" class="m-stampo contorno"/><path d="M142,60 Q150,50 158,60 Z" class="m-stampo contorno"/>
+    <rect x="40" y="70" width="140" height="10" class="m-stampo contorno"/><rect x="30" y="80" width="160" height="24" fill="#c27a4a" class="contorno"/></svg></div><p>Rilievi o inserti localizzano la corrente: più saldature insieme in circa un secondo. <span class="pag">(p. 308–309)</span></p></article>
+<article class="card"><h3>A rulli</h3><p class="originale" lang="en">Seam welding</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-rulli-t var-rulli-d" class="mini-svg"><title id="var-rulli-t">A rulli (seam)</title><desc id="var-rulli-d">Due elettrodi a rullo saldano in continuo una serie di noccioli sovrapposti: giunti ermetici per serbatoi, latte, radiatori.</desc><defs>
+  <pattern id="var-rulli-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-rulli-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-rulli-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-rulli-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <circle cx="110" cy="30" r="24" fill="#c27a4a" class="contorno"/><circle cx="110" cy="96" r="24" fill="#c27a4a" class="contorno"/>
+    <rect x="20" y="56" width="180" height="14" class="m-stampo contorno"/>
+    <ellipse cx="40" cy="63" rx="10" ry="5" style="fill:var(--finito)"/><ellipse cx="56" cy="63" rx="10" ry="5" style="fill:var(--finito)"/><ellipse cx="72" cy="63" rx="10" ry="5" style="fill:var(--finito)"/><ellipse cx="88" cy="63" rx="10" ry="5" style="fill:var(--finito)"/></svg></div><p>Elettrodi a rullo e saldatura continua, per giunti ermetici. <span class="pag">(p. 308–309, 311)</span></p></article>
+<article class="card"><h3>Punti in linea</h3><p class="originale" lang="en">Wheel spot welding</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-linea-t var-linea-d" class="mini-svg"><title id="var-linea-t">Punti in linea con ruote</title><desc id="var-linea-d">Ruote con un solo elettrodo sul bordo fanno un punto ogni volta che si allineano: punti in fila ad alta velocità.</desc><defs>
+  <pattern id="var-linea-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-linea-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-linea-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-linea-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <circle cx="110" cy="30" r="24" class="m-stampo contorno"/><circle cx="110" cy="96" r="24" class="m-stampo contorno"/>
+    <rect x="104" y="50" width="12" height="8" fill="#c27a4a"/><rect x="104" y="68" width="12" height="8" fill="#c27a4a"/>
+    <rect x="20" y="58" width="180" height="10" class="m-stampo contorno"/>
+    <ellipse cx="40" cy="63" rx="8" ry="4" style="fill:var(--finito)"/><ellipse cx="76" cy="63" rx="8" ry="4" style="fill:var(--finito)"/><ellipse cx="146" cy="63" rx="8" ry="4" style="fill:var(--finito)"/><ellipse cx="182" cy="63" rx="8" ry="4" style="fill:var(--finito)"/></svg></div><p>Ruote con un elettrodo sul bordo per serie di punti ad alta velocità, per esempio nei radiatori. <span class="pag">(p. 311)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="saldatura-arco.html">Saldatura ad arco</a> – richiede più abilità <span class="pag">(p. 308, 310)</span></li><li><a href="saldatura-attrito.html">Saldatura per attrito</a> – alternativa <span class="pag">(p. 308)</span></li><li><a href="saldatura-fascio.html">Saldatura a fascio</a> – richiede più abilità <span class="pag">(p. 310)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 308–311.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/saldatura-resistenza.js"></script>
+</body>
+</html>

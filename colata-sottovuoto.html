@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Colata sottovuoto – Processi produttivi per il design</title>
+<meta name="description" content="Poliuretano liquido viene colato sottovuoto in uno stampo di silicone ricavato da un modello: si ottengono prototipi e piccole serie con dettagli e proprietà molto vicini ai pezzi stampati a iniezione.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 1 – Formatura › Plastica e gomma</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Colata sottovuoto</h1>
+  <p class="originale" lang="en">Vacuum Casting</p>
+  <p class="categoria">Parte 1 – Formatura · Plastica e gomma</p>
+  <p class="sintesi">Poliuretano liquido viene colato sottovuoto in uno stampo di silicone ricavato da un modello: si ottengono prototipi e piccole serie con dettagli e proprietà molto vicini ai pezzi stampati a iniezione.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="2200,2000,3000,2200,2200">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="colata-sottovuoto" data-alt="Modello 3D dentro una camera a vuoto trasparente. Lo stampo in silicone, semitrasparente, è diviso in due metà. Prima si vede il modello grigio racchiuso nel silicone; poi la metà superiore si alza e il modello viene tolto. Lo stampo si richiude, il poliuretano arancione scende dal bicchiere nel canale di colata e risale riempiendo la cavità e le materozze. In forno il pezzo diventa verde; infine lo stampo si apre.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Stampo in silicone<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Rimozione del modello<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Colata sottovuoto<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Polimerizzazione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="5">5. Estrazione<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Stampo in silicone</b>Il modello (master), con canale di colata, distributore e materozze, viene sospeso in una cassa e annegato nella gomma siliconica. <span class="pag">(p. 40, 42)</span></li>
+    <li><b>Fase 2 – Rimozione del modello</b>A silicone indurito, lo stampo viene tagliato in due metà seguendo il modello, che viene tolto. <span class="pag">(p. 42)</span></li>
+    <li><b>Fase 3 – Colata sottovuoto</b>Le metà vengono richiuse. Sottovuoto il PUR miscelato scende dal canale di colata, passa nel distributore e risale nella cavità e nelle materozze, senza bolle e senza l'ostacolo della pressione dell'aria. <span class="pag">(p. 41, 43)</span></li>
+    <li><b>Fase 4 – Polimerizzazione</b>Lo stampo resta chiuso per tutta la polimerizzazione, di norma da 45 minuti a 4 ore; nel caso studio in forno a 40 °C. <span class="pag">(p. 41, 43)</span></li>
+    <li><b>Fase 5 – Estrazione</b>Aria in pressione nelle materozze aiuta a staccare il pezzo; le metà si separano e si tolgono bave, materozze e materiale in eccesso. <span class="pag">(p. 41, 43)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D dentro una camera a vuoto trasparente. Lo stampo in silicone, semitrasparente, è diviso in due metà. Prima si vede il modello grigio racchiuso nel silicone; poi la metà superiore si alza e il modello viene tolto. Lo stampo si richiude, il poliuretano arancione scende dal bicchiere nel canale di colata e risale riempiendo la cavità e le materozze. In forno il pezzo diventa verde; infine lo stampo si apre.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 0 820 360" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Colata sottovuoto in sezione</title>
+<desc id="sc-d">Sezione di uno stampo in silicone in due metà dentro la camera a vuoto. La cavità ha la forma di un guscio; un canale di colata scende dall'alto fino a un distributore sotto il pezzo e due materozze salgono dal pezzo verso l'alto. Le fasi mostrano lo stampo ricavato dal modello, la rimozione del modello, la colata, la polimerizzazione in forno e l'estrazione.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- Camera a vuoto -->
+<rect x="170" y="14" width="480" height="330" rx="10" fill="none" stroke="var(--testo-2)" stroke-width="2" stroke-dasharray="8 5"/>
+<g class="etichetta"><text x="180" y="36" text-anchor="start">Camera a vuoto</text></g>
+<g data-k="op:0,0,1,0,0"><line x1="640" y1="330" x2="700" y2="330" class="flusso-linea tratteggiata" marker-end="url(#sc-punta)"/><g class="etichetta"><text x="660" y="316" text-anchor="start">aria aspirata</text></g></g>
+
+<!-- Stampo in silicone, metà B (inferiore) -->
+<g data-k="op:1,1,1,1,1" data-i="op:0">
+  <path d="M260,225 H560 V320 H260 Z M320,200 H500 V262 H486 V214 H334 V262 H320 Z M406,130 H414 V292 H406 Z M300,284 H414 V292 H300 Z M300,262 H308 V292 H300 Z M300,262 H334 V270 H300 Z M352,130 H360 V200 H352 Z M462,130 H470 V200 H462 Z" fill="url(#sc-tratteggio)" fill-rule="evenodd" class="contorno" clip-path="url(#sc-sotto)"/>
+</g>
+<clipPath id="sc-sotto" clipPathUnits="userSpaceOnUse"><rect x="250" y="225" width="320" height="100"/></clipPath>
+<clipPath id="sc-sopra" clipPathUnits="userSpaceOnUse"><rect x="250" y="120" width="320" height="105"/></clipPath>
+
+<!-- Modello master -->
+<path d="M320,200 H500 V262 H486 V214 H334 V262 H320 Z" class="macchina" data-k="op:1,0,0,0,0" data-i="op:1"/>
+<g class="etichetta" data-k="op:1,0,0,0,0" data-i="op:1"><line x1="500" y1="232" x2="590" y2="235" class="richiamo"/><text x="590" y="240" text-anchor="start">Modello (master)</text></g>
+
+<!-- PUR: riempimento dal basso verso l'alto -->
+<clipPath id="sc-livello" clipPathUnits="userSpaceOnUse"><rect x="250" y="126" width="320" height="170" data-k="sy:0,0,1,1,1" data-i="sy:0" data-o="0,296"/></clipPath>
+<g clip-path="url(#sc-livello)">
+  <path d="M320,200 H500 V262 H486 V214 H334 V262 H320 Z M406,130 H414 V292 H406 Z M300,284 H414 V292 H300 Z M300,262 H308 V292 H300 Z M300,262 H334 V270 H300 Z" class="m-fuso contorno" data-k="op:1,1,1,0,0" data-i="op:1"/>
+  <path d="M352,130 H360 V200 H352 Z M462,130 H470 V200 H462 Z" class="m-fuso contorno" data-k="op:1,1,1,0,0" data-i="op:1"/>
+</g>
+<path d="M320,200 H500 V262 H486 V214 H334 V262 H320 Z" class="m-finito sezionato contorno" data-k="op:0,0,0,1,1" data-i="op:0"/>
+<path d="M406,130 H414 V292 H406 Z M300,284 H414 V292 H300 Z M300,262 H308 V292 H300 Z M300,262 H334 V270 H300 Z M352,130 H360 V200 H352 Z M462,130 H470 V200 H462 Z" class="m-finito contorno" data-k="op:0,0,0,1,0" data-i="op:0"/>
+
+<!-- Metà A (superiore): si solleva per togliere il modello e il pezzo -->
+<g data-k="ty:0,-70,0,0,-70;op:1,1,1,1,1" data-i="ty:0;op:0">
+  <path d="M260,130 H560 V225 H260 Z M320,200 H500 V262 H486 V214 H334 V262 H320 Z M406,130 H414 V292 H406 Z M300,284 H414 V292 H300 Z M300,262 H308 V292 H300 Z M300,262 H334 V270 H300 Z M352,130 H360 V200 H352 Z M462,130 H470 V200 H462 Z" fill="url(#sc-tratteggio)" fill-rule="evenodd" class="contorno" clip-path="url(#sc-sopra)"/>
+  <g class="etichetta"><text x="600" y="150" text-anchor="start">Stampo in silicone (metà A)</text></g>
+</g>
+<g class="etichetta"><text x="600" y="300" text-anchor="start">Metà B</text></g>
+
+<!-- Bicchiere con il PUR miscelato -->
+<g data-k="op:0,0,1,0,0">
+  <path d="M384,48 H436 L430,96 H390 Z" class="macchina"/>
+  <rect x="392" y="62" width="36" height="32" class="m-fuso"/>
+  <line x1="410" y1="96" x2="410" y2="128" stroke="var(--fuso)" stroke-width="5"/>
+  <g class="etichetta"><text x="450" y="70" text-anchor="start">PUR bicomponente miscelato</text></g>
+</g>
+
+<!-- Forno a 40 °C -->
+<g data-k="op:0,0,0,1,0">
+  <path d="M300,334 q6,-3.25 0,-6.5 q-6,-3.25 0,-6.5 q6,-3.25 0,-6.5 q-6,-3.25 0,-6.5" class="flusso-linea" fill="none" marker-end="url(#sc-punta)"/><path d="M410,334 q6,-3.25 0,-6.5 q-6,-3.25 0,-6.5 q6,-3.25 0,-6.5 q-6,-3.25 0,-6.5" class="flusso-linea" fill="none" marker-end="url(#sc-punta)"/><path d="M520,334 q6,-3.25 0,-6.5 q-6,-3.25 0,-6.5 q6,-3.25 0,-6.5 q-6,-3.25 0,-6.5" class="flusso-linea" fill="none" marker-end="url(#sc-punta)"/>
+  <g class="etichetta"><text x="540" y="342" text-anchor="start">forno a 40 °C</text></g>
+</g>
+<!-- Aria nelle materozze per staccare il pezzo -->
+<g data-k="op:0,0,0,0,1"><line x1="356" y1="60" x2="356" y2="118" class="flusso-linea" marker-end="url(#sc-punta)"/><line x1="466" y1="60" x2="466" y2="118" class="flusso-linea" marker-end="url(#sc-punta)"/></g>
+<g class="etichetta"><line x1="352" y1="150" x2="180" y2="107" class="richiamo"/><text x="180" y="112" text-anchor="start">Materozze</text></g>
+<g class="etichetta"><line x1="406" y1="286" x2="180" y2="191" class="richiamo"/><text x="180" y="196" text-anchor="start">Canale di colata</text></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Lo stampo è di silicone flessibile e si ricava direttamente da un modello di qualunque materiale non poroso. <span class="pag">(p. 40, 42)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>Lo stampo si taglia in due metà, A e B; si possono aggiungere inserti e nuclei per i pezzi complessi. <span class="pag">(p. 42)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>Il poliuretano (PUR) è un termoindurente in due componenti, conservati a 40 °C: mescolati reagiscono producendo calore e salgono a 65–70 °C. Il vuoto fa sì che il materiale non abbia porosità e scorra liberamente. <span class="pag">(p. 40–41)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>I pezzi grandi vanno induriti lentamente, altrimenti si surriscaldano e si deformano; quelli piccoli si induriscono in fretta. <span class="pag">(p. 40)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="5" aria-label="Mostra la fase 5 nello schema">Fase 5</button>Dopo l'estrazione si tolgono materozze e bave. Uno stampo dura 20–30 cicli. <span class="pag">(p. 41–43)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Centinaia di gradi di PUR che imitano PP, ABS, PA e TPE, dal trasparente a tutti i colori, da morbido (Shore A 25–90) a rigido (Shore D). Anche PA e cere per microfusione. <span class="pag">(p. 40–42)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Prototipi, pezzi unici e piccole serie. <span class="pag">(p. 40)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Basso, secondo dimensione e complessità del modello. Uno stampo richiede 0,5–1 giorno e va rifatto dopo 20–30 cicli. <span class="pag">(p. 40, 42)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Moderato; manodopera moderata, perché stampo, colata e finitura sono manuali. <span class="pag">(p. 40, 42)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Variabile: di norma da 45 minuti a 4 ore, fino a diversi giorni per i pezzi grandi. Sotto i 2,5 kg, 1 ora o meno. <span class="pag">(p. 40–42)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Molto alta: replica esatta della superficie del modello, compresi loghi e texture. La finitura dello stampo in silicone non si può modificare. <span class="pag">(p. 40–42)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Tolleranza di norma entro lo 0,4% delle dimensioni del modello. <span class="pag">(p. 41)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Da pochi grammi a diverse centinaia di chili; i pezzi tipici sono sotto i 2,5 kg. <span class="pag">(p. 42)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Pareti di almeno 1 mm, meglio 3 mm</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spessore-ok-t v-spessore-ok-d" class="mini-svg"><title id="v-spessore-ok-t">Corretto: Pareti di almeno 3 mm</title><desc id="v-spessore-ok-d">Spessore consigliato superiore a 1 mm, idealmente non meno di 3 mm.</desc><defs>
+  <pattern id="v-spessore-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spessore-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spessore-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spessore-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M15,40 H145 V100 H129 V58 H31 V100 H15 Z" class="m-finito sezionato contorno"/><g class="etichetta"><text x="80" y="34" text-anchor="middle">≥ 3 mm</text></g></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spessore-ko-t v-spessore-ko-d" class="mini-svg"><title id="v-spessore-ko-t">Da evitare: Pareti sottilissime su grandi aree</title><desc id="v-spessore-ko-d">Si arriva a 0,5 mm solo su piccole zone: su superfici estese è da evitare.</desc><defs>
+  <pattern id="v-spessore-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spessore-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spessore-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spessore-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M15,50 H145 V100 H141 V54 H19 V100 H15 Z" class="m-finito sezionato contorno"/><g class="etichetta"><text x="80" y="44" text-anchor="middle">0,5 mm</text></g></svg><figcaption>Da evitare</figcaption></figure></div><p>Si arriva a 0,5 mm su piccole zone, ma lo spessore consigliato è superiore a 1 mm e idealmente non meno di 3 mm. Grazie alla bassa pressione sono possibili cambi di spessore a gradino. <span class="pag">(p. 42)</span></p></article>
+<article class="card"><h3>Evitare i dettagli taglienti</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spigoli-ok-t v-spigoli-ok-d" class="mini-svg"><title id="v-spigoli-ok-t">Corretto: Bordi arrotondati</title><desc id="v-spigoli-ok-d">Dettagli con un minimo di raggio si riproducono bene.</desc><defs>
+  <pattern id="v-spigoli-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spigoli-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spigoli-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spigoli-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M15,90 H120 Q145,90 145,65 V60 H15 Z" class="m-finito sezionato contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spigoli-ko-t v-spigoli-ko-d" class="mini-svg"><title id="v-spigoli-ko-t">Da evitare: Spigoli a lama di coltello</title><desc id="v-spigoli-ko-d">I dettagli molto affilati sono difficili da riprodurre con qualsiasi stampaggio.</desc><defs>
+  <pattern id="v-spigoli-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spigoli-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spigoli-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spigoli-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M15,90 H145 L15,60 Z" class="m-finito sezionato contorno"/><circle cx="140" cy="88" r="9" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Dettagli molto affilati, come i bordi a lama, sono difficili da riprodurre in qualunque stampaggio e vanno evitati. <span class="pag">(p. 42)</span></p></article>
+<article class="card"><h3>Sottosquadri piccoli sì, grandi con nuclei</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sottosquadri-ok-t v-sottosquadri-ok-d" class="mini-svg"><title id="v-sottosquadri-ok-t">Corretto: Sottosquadro leggero: lo stampo si flette</title><desc id="v-sottosquadri-ok-d">Il silicone è flessibile: piccoli sottosquadri si estraggono deformando lo stampo.</desc><defs>
+  <pattern id="v-sottosquadri-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sottosquadri-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sottosquadri-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sottosquadri-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,20 H150 V100 H10 Z M40,40 H110 L116,60 H34 Z" fill="url(#v-sottosquadri-ok-tratteggio)" fill-rule="evenodd" class="contorno"/><path d="M40,40 H110 L116,60 H34 Z" class="m-finito sezionato contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sottosquadri-ko-t v-sottosquadri-ko-d" class="mini-svg"><title id="v-sottosquadri-ko-t">Da evitare: Rientro profondo senza nucleo</title><desc id="v-sottosquadri-ko-d">I rientri più grandi richiedono nuclei o inserti nello stampo.</desc><defs>
+  <pattern id="v-sottosquadri-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sottosquadri-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sottosquadri-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sottosquadri-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,20 H150 V100 H10 Z M40,40 H110 V86 H96 V54 H54 V86 H40 Z" fill="url(#v-sottosquadri-ko-tratteggio)" fill-rule="evenodd" class="contorno"/><path d="M40,40 H110 V86 H96 V54 H54 V86 H40 Z" class="m-finito sezionato contorno"/><circle cx="75" cy="70" r="13" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Piccoli sottosquadri si estraggono flettendo lo stampo di silicone; per rientri più grandi e dettagli interni servono nuclei e inserti. <span class="pag">(p. 41–42)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Il libro non elenca varianti di questo processo. Qui sotto la possibilità descritta nel testo.</p><div class="griglia-card"><article class="card"><h3>Sovrastampaggio</h3><p class="originale" lang="en">Over-molding</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-sovrastampaggio-t var-sovrastampaggio-d" class="mini-svg"><title id="var-sovrastampaggio-t">Sovrastampaggio</title><desc id="var-sovrastampaggio-d">Il pezzo rigido viene tolto dal primo stampo e messo in un secondo, dove si cola il materiale morbido sopra.</desc><defs>
+  <pattern id="var-sovrastampaggio-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-sovrastampaggio-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-sovrastampaggio-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-sovrastampaggio-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="20" y="40" width="80" height="40" class="m-finito contorno"/>
+    <line x1="108" y1="60" x2="132" y2="60" class="flusso-linea" marker-end="url(#var-sovrastampaggio-punta)"/>
+    <rect x="140" y="40" width="60" height="40" class="m-finito contorno"/>
+    <path d="M140,40 H200 V30 Q170,18 140,30 Z" class="m-fuso contorno"/>
+    <g class="etichetta"><text x="10" y="100" text-anchor="start">rigido (simil-ABS)</text></g><g class="etichetta"><text x="92" y="116" text-anchor="start">+ morbido (simil-TPE)</text></g></svg></div><p>Proprietà di plastiche diverse si combinano colando un secondo materiale sul primo. È simile all'iniezione multicomponente, ma il pezzo viene tolto dallo stampo e messo in un altro per il secondo materiale, per esempio un simil-ABS rigido rivestito di simil-TPE morbido. <span class="pag">(p. 42)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="stampaggio-iniezione.html">Stampaggio a iniezione</a> – la colata sottovuoto ne simula materiali e dettagli, ma non i volumi <span class="pag">(p. 40–41)</span></li><li><a href="rim.html">Stampaggio a iniezione con reazione (RIM)</a> – anch'esso per prototipi e piccole serie in PUR, adatto a geometrie più semplici <span class="pag">(p. 41)</span></li><li><a href="microfusione.html">Microfusione a cera persa</a> – la colata sottovuoto produce anche i modelli in cera <span class="pag">(p. 42)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 40–43.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/colata-sottovuoto.js"></script>
+</body>
+</html>

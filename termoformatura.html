@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Termoformatura – Processi produttivi per il design</title>
+<meta name="description" content="Un foglio di termoplastico viene scaldato finché si ammorbidisce e poi fatto aderire a uno stampo con il vuoto o con l'aria compressa: si ottengono gusci a parete sottile, dagli imballaggi alle vasche da bagno.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 1 – Formatura › Plastica e gomma</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Termoformatura</h1>
+  <p class="originale" lang="en">Thermoforming</p>
+  <p class="categoria">Parte 1 – Formatura · Plastica e gomma</p>
+  <p class="sintesi">Un foglio di termoplastico viene scaldato finché si ammorbidisce e poi fatto aderire a uno stampo con il vuoto o con l'aria compressa: si ottengono gusci a parete sottile, dagli imballaggi alle vasche da bagno.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="2400,2000,2000,2200,2200">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="termoformatura" data-alt="Modello 3D di una formatrice sottovuoto. Un foglio di plastica è bloccato in un telaio quadrato. Il riscaldatore sopra lo scalda e il foglio passa dal colore sabbia all'arancione. L'aria lo gonfia a bolla, poi uno stampo maschio sale dal basso dentro la bolla e il vuoto fa aderire il foglio alla sua forma. Raffreddandosi il guscio diventa verde e lo stampo si ritira.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Riscaldamento<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Bolla<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Salita dello stampo<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Vuoto<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="5">5. Raffreddamento e rifilatura<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Riscaldamento</b>Il foglio, bloccato nel telaio, viene scaldato fino al punto di rammollimento, diverso per ogni materiale (per esempio 127–182 °C per il polistirene). <span class="pag">(p. 32)</span></li>
+    <li><b>Fase 2 – Bolla</b>L'aria gonfia il foglio morbido a bolla: così si stira in modo uniforme. <span class="pag">(p. 32)</span></li>
+    <li><b>Fase 3 – Salita dello stampo</b>Il flusso d'aria si inverte e lo stampo viene spinto dentro il foglio. <span class="pag">(p. 32)</span></li>
+    <li><b>Fase 4 – Vuoto</b>Attraverso i canali forati nello stampo si aspira l'aria (circa 0,96 bar): il foglio aderisce alla superficie dello stampo. <span class="pag">(p. 32)</span></li>
+    <li><b>Fase 5 – Raffreddamento e rifilatura</b>Il pezzo si raffredda, lo stampo si ritira e il bordo in eccesso viene rifilato, a mano, con fresa guidata o a CNC. <span class="pag">(p. 32, 34)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una formatrice sottovuoto. Un foglio di plastica è bloccato in un telaio quadrato. Il riscaldatore sopra lo scalda e il foglio passa dal colore sabbia all'arancione. L'aria lo gonfia a bolla, poi uno stampo maschio sale dal basso dentro la bolla e il vuoto fa aderire il foglio alla sua forma. Raffreddandosi il guscio diventa verde e lo stampo si ritira.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 0 820 300" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Formatura sottovuoto in sezione</title>
+<desc id="sc-d">Sezione verticale: in alto il riscaldatore, al centro il foglio bloccato nel telaio, sotto lo stampo maschio con i canali per l'aria. Le fasi mostrano il riscaldamento, la bolla, la salita dello stampo, il vuoto e la rifilatura del pezzo.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- Riscaldatore -->
+<g data-k="ty:0,-120,-120,-120,-120;op:1,0,0,0,0" data-i="ty:0;op:1">
+  <rect x="230" y="14" width="360" height="30" class="macchina"/>
+  <path d="M270,52 q6,5 0,10 q-6,5 0,10 q6,5 0,10 q-6,5 0,10" class="flusso-linea" fill="none" marker-end="url(#sc-punta)"/><path d="M350,52 q6,5 0,10 q-6,5 0,10 q6,5 0,10 q-6,5 0,10" class="flusso-linea" fill="none" marker-end="url(#sc-punta)"/><path d="M430,52 q6,5 0,10 q-6,5 0,10 q6,5 0,10 q-6,5 0,10" class="flusso-linea" fill="none" marker-end="url(#sc-punta)"/><path d="M510,52 q6,5 0,10 q-6,5 0,10 q6,5 0,10 q-6,5 0,10" class="flusso-linea" fill="none" marker-end="url(#sc-punta)"/>
+  <g class="etichetta"><text x="600" y="34" text-anchor="start">Riscaldatore</text></g>
+</g>
+
+<!-- Stampo maschio con canali dell'aria: sale nel foglio in fase 3 -->
+<g data-k="ty:110,110,0,0,110" data-i="ty:110">
+  <path d="M312,150 L322,76 Q324,70 332,70 H488 Q496,70 498,76 L508,150 V250 H312 Z" fill="url(#sc-tratteggio)" class="contorno"/>
+  <line x1="360" y1="74" x2="360" y2="240" stroke="#ffffff" stroke-width="3"/><line x1="410" y1="74" x2="410" y2="240" stroke="#ffffff" stroke-width="3"/><line x1="460" y1="74" x2="460" y2="240" stroke="#ffffff" stroke-width="3"/>
+  <rect x="290" y="250" width="240" height="18" class="macchina"/>
+  <g data-k="op:0,0,0,1,0"><line x1="360" y1="150" x2="360" y2="236" class="flusso-linea tratteggiata" marker-end="url(#sc-punta)"/><line x1="410" y1="150" x2="410" y2="236" class="flusso-linea tratteggiata" marker-end="url(#sc-punta)"/><line x1="460" y1="150" x2="460" y2="236" class="flusso-linea tratteggiata" marker-end="url(#sc-punta)"/></g>
+</g>
+
+<!-- Foglio: freddo → caldo → bolla → appoggiato → formato → raffreddato -->
+<path d="M200,150 H620" fill="none" stroke-width="7" stroke-linejoin="round" style="stroke:var(--grezzo)" data-k="op:0,0,0,0,0" data-i="op:1"/>
+<path d="M200,150 H620" fill="none" stroke-width="7" stroke-linejoin="round" style="stroke:var(--fuso)" data-k="op:1,0,0,0,0" data-i="op:0"/>
+<path d="M200,150 H240 C300,30 520,30 580,150 H620" fill="none" stroke-width="7" stroke-linejoin="round" style="stroke:var(--fuso)" data-k="op:0,1,0,0,0" data-i="op:0"/>
+<path d="M200,150 H240 C268,96 296,72 330,70 H490 C524,72 552,96 580,150 H620" fill="none" stroke-width="7" stroke-linejoin="round" style="stroke:var(--fuso)" data-k="op:0,0,1,0,0" data-i="op:0"/>
+<path d="M200,150 H312 L322,76 Q324,70 332,70 H488 Q496,70 498,76 L508,150 H620" fill="none" stroke-width="7" stroke-linejoin="round" style="stroke:var(--fuso)" data-k="op:0,0,0,1,0" data-i="op:0"/>
+<g data-k="op:0,0,0,0,1" data-i="op:0">
+  <path d="M200,150 H312 L322,76 Q324,70 332,70 H488 Q496,70 498,76 L508,150 H620" fill="none" stroke-width="7" stroke-linejoin="round" style="stroke:var(--finito)"/>
+  <line x1="300" y1="132" x2="300" y2="168" stroke="var(--ko)" stroke-width="3" stroke-dasharray="4 3"/>
+  <line x1="520" y1="132" x2="520" y2="168" stroke="var(--ko)" stroke-width="3" stroke-dasharray="4 3"/>
+  <g class="etichetta"><text x="530" y="128" text-anchor="start">linee di rifilatura</text></g>
+</g>
+<g data-k="op:0,1,0,0,0"><line x1="330" y1="200" x2="330" y2="120" class="flusso-linea" marker-end="url(#sc-punta)"/><line x1="410" y1="200" x2="410" y2="120" class="flusso-linea" marker-end="url(#sc-punta)"/><line x1="490" y1="200" x2="490" y2="120" class="flusso-linea" marker-end="url(#sc-punta)"/>
+  <g class="etichetta"><text x="470" y="220" text-anchor="start">aria: il foglio si gonfia a bolla</text></g></g>
+
+<!-- Telaio di bloccaggio -->
+<rect x="196" y="138" width="40" height="8" fill="url(#sc-tratteggio)" class="contorno"/><rect x="196" y="154" width="40" height="8" fill="url(#sc-tratteggio)" class="contorno"/><rect x="584" y="138" width="40" height="8" fill="url(#sc-tratteggio)" class="contorno"/><rect x="584" y="154" width="40" height="8" fill="url(#sc-tratteggio)" class="contorno"/>
+<g class="etichetta"><line x1="200" y1="142" x2="40" y2="127" class="richiamo"/><text x="40" y="132" text-anchor="start">Telaio di bloccaggio</text></g>
+<g class="etichetta"><line x1="205" y1="152" x2="40" y2="177" class="richiamo"/><text x="40" y="182" text-anchor="start">Foglio termoplastico</text></g>
+<g class="etichetta"><line x1="512" y1="220" x2="640" y2="245" class="richiamo"/><text x="640" y="250" text-anchor="start">Stampo maschio</text></g>
+<g class="etichetta" data-k="op:0,0,0,1,0"><text x="640" y="290" text-anchor="start">Vuoto ≈ 0,96 bar</text></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>La termoformatura parte da un foglio, non da materiale fuso: per questo è versatile ed economica. Il foglio viene scaldato fino al rammollimento; alcuni materiali, come l'HIPS, hanno un intervallo di temperatura più ampio e sono più facili da formare. <span class="pag">(p. 30, 32)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>Il foglio viene gonfiato a bolla per stirarlo in modo uniforme. <span class="pag">(p. 32)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>Lo stampo sale e spinge nel foglio. <span class="pag">(p. 32)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Il vuoto fa aderire il foglio allo stampo. Lo stampo è a una sola faccia: solo un lato del pezzo ne prende la forma. <span class="pag">(p. 30, 32)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="5" aria-label="Mostra la fase 5 nello schema">Fase 5</button>Il pezzo si raffredda e viene rifilato. Le macchine a foglio sono caricate a mano; quelle a bobina sono automatiche e formano, rifilano e impilano in continuo. <span class="pag">(p. 33)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Quasi tutti i termoplastici; i più comuni sono ABS, PET e PETG, PP, PC, HIPS e HDPE. Esistono fogli multistrato, testurizzati o prestampati. <span class="pag">(p. 31–33)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>A foglio: da pezzo unico a piccola serie. A bobina: da serie a grande serie. <span class="pag">(p. 30)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Da basso a moderato. Gli stampi più cari sono in alluminio lavorato; quelli per la formatura a pressione costano il 30–50% in più, ma molto meno di uno stampo a iniezione. <span class="pag">(p. 30, 33)</span><span class="nota-ocr">Durata di uno stampo in resina: da <span class="nd">n.d.</span> a 500 cicli (OCR &quot;io&quot; per il valore minimo)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Da basso a moderato, circa 3 volte il costo del materiale; il foglio costa un po' più della materia prima. <span class="pag">(p. 30)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>A bobina: da 10 secondi a 1 minuto. A foglio: 1–8 minuti secondo la scheda riassuntiva, mentre il testo parla di 1–8 pezzi al minuto. <span class="pag">(p. 30, 33)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Dipende da materiale, pressione e tecnica. La pressione riproduce i dettagli quasi come l'iniezione; il lato a contatto con lo stampo è meno curato. <span class="pag">(p. 30–31)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Ritiro fino al 2% (ABS 0,6%, HDPE 2%). Tolleranze numeriche: <span class="nd">n.d.</span> <span class="pag">(p. 32)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Foglio da 1 a 12 mm (a foglio) o da 0,1 a 2,5 mm (a bobina). Pezzi di norma fino a 1,5 × 3,5 m, alcune macchine fino a 2,5 × 4 m. <span class="pag">(p. 32)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Profondità non oltre il diametro</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-profondita-ok-t v-profondita-ok-d" class="mini-svg"><title id="v-profondita-ok-t">Corretto: Profondità non oltre il diametro</title><desc id="v-profondita-ok-d">Coppa poco profonda: il foglio si stira senza assottigliarsi troppo.</desc><defs>
+  <pattern id="v-profondita-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-profondita-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-profondita-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-profondita-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,40 H40 C40,95 120,95 120,40 H150" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--finito)"/><g class="etichetta"><text x="80" y="108" text-anchor="middle">h ≤ d</text></g></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-profondita-ko-t v-profondita-ko-d" class="mini-svg"><title id="v-profondita-ko-t">Da evitare: Profondità maggiore del diametro</title><desc id="v-profondita-ko-d">Un pozzetto stretto e profondo assottiglia troppo la parete sul fondo.</desc><defs>
+  <pattern id="v-profondita-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-profondita-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-profondita-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-profondita-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,20 H60 V104 H100 V20 H150" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--finito)"/><circle cx="80" cy="104" r="10" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Di solito non è pratico che la profondità superi il diametro del pezzo. <span class="pag">(p. 32)</span></p></article>
+<article class="card"><h3>Sformo di 2° sugli stampi maschi</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sformo-ok-t v-sformo-ok-d" class="mini-svg"><title id="v-sformo-ok-t">Corretto: Sformo di 2° sullo stampo maschio</title><desc id="v-sformo-ok-d">Raffreddandosi il foglio si ritira (fino al 2%) e stringe lo stampo: le pareti inclinate permettono di sfilarlo.</desc><defs>
+  <pattern id="v-sformo-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sformo-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sformo-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sformo-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M40,100 L52,30 H108 L120,100 Z" fill="url(#v-sformo-ok-tratteggio)" class="contorno"/><path d="M10,100 H36 L48,24 H112 L124,100 H150" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--finito)"/><g class="etichetta"><text x="128" y="60" text-anchor="start">2°</text></g></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sformo-ko-t v-sformo-ko-d" class="mini-svg"><title id="v-sformo-ko-t">Da evitare: Pareti verticali sullo stampo maschio</title><desc id="v-sformo-ko-d">Senza sformo il pezzo, ritirandosi, si blocca sullo stampo.</desc><defs>
+  <pattern id="v-sformo-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sformo-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sformo-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sformo-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M46,100 V30 H114 V100 Z" fill="url(#v-sformo-ko-tratteggio)" class="contorno"/><path d="M10,100 H42 V24 H118 V100 H150" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--finito)"/><g class="etichetta"><text x="124" y="60" text-anchor="start">0°</text></g></svg><figcaption>Da evitare</figcaption></figure></div><p>Raffreddandosi il foglio si ritira fino al 2% e stringe le sporgenze: si consiglia di solito un angolo di sformo di 2°. <span class="pag">(p. 32)</span></p></article>
+<article class="card"><h3>Evitare spigoli vivi e angoli triedri</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spigoli-ok-t v-spigoli-ok-d" class="mini-svg"><title id="v-spigoli-ok-t">Corretto: Spigoli raccordati</title><desc id="v-spigoli-ok-d">Raggi ampi: il materiale si stira in modo più uniforme.</desc><defs>
+  <pattern id="v-spigoli-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spigoli-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spigoli-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spigoli-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,100 H30 Q40,30 70,28 H90 Q120,30 130,100 H150" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--finito)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spigoli-ko-t v-spigoli-ko-d" class="mini-svg"><title id="v-spigoli-ko-t">Da evitare: Spigoli vivi e angoli triedri</title><desc id="v-spigoli-ko-d">Negli spigoli vivi e dove si incontrano tre spigoli il foglio si assottiglia troppo e diventa debole.</desc><defs>
+  <pattern id="v-spigoli-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spigoli-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spigoli-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spigoli-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,100 H40 V28 H120 V100 H150" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--finito)"/><circle cx="40" cy="28" r="9" fill="none" stroke="var(--ko)" stroke-width="2.5"/><circle cx="120" cy="28" r="9" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Il materiale si stira di più nei profili profondi e ondulati: negli spigoli vivi e dove si incontrano tre spigoli si assottiglia troppo e diventa debole. <span class="pag">(p. 32)</span></p></article>
+<article class="card"><h3>Profili profondi: punzone ausiliario</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-punzone-ok-t v-punzone-ok-d" class="mini-svg"><title id="v-punzone-ok-t">Corretto: Profili profondi con punzone ausiliario</title><desc id="v-punzone-ok-d">Il punzone spinge e stira il foglio prima del vuoto: lo spessore resta sufficiente anche sul fondo.</desc><defs>
+  <pattern id="v-punzone-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-punzone-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-punzone-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-punzone-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="62" y="6" width="36" height="58" class="m-stampo contorno"/><path d="M10,30 H40 L60,90 H100 L120,30 H150" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--finito)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-punzone-ko-t v-punzone-ko-d" class="mini-svg"><title id="v-punzone-ko-t">Da evitare: Profilo profondo senza punzone</title><desc id="v-punzone-ko-d">Il foglio si stira solo vicino ai bordi e sul fondo si assottiglia fino a strapparsi.</desc><defs>
+  <pattern id="v-punzone-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-punzone-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-punzone-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-punzone-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,30 H40 L60,90 H100 L120,30 H150" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--finito)"/><circle cx="80" cy="90" r="10" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Per i profili profondi il punzone stira il foglio prima della formatura e garantisce uno spessore sufficiente; altrimenti il materiale si strappa. <span class="pag">(p. 30, 32)</span></p></article>
+<article class="card"><h3>Nascondere il lato a contatto con lo stampo</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-lato-ok-t v-lato-ok-d" class="mini-svg"><title id="v-lato-ok-t">Corretto: Lato a contatto con lo stampo nascosto</title><desc id="v-lato-ok-d">Il lato che tocca lo stampo ha una finitura peggiore: si progetta il pezzo perché resti all'interno.</desc><defs>
+  <pattern id="v-lato-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-lato-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-lato-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-lato-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M40,100 L52,40 H108 L120,100 Z" fill="url(#v-lato-ok-tratteggio)" class="contorno"/><path d="M10,100 H36 L48,34 H112 L124,100 H150" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--finito)"/><g class="etichetta"><text x="80" y="26" text-anchor="middle">esterno liscio</text></g></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-lato-ko-t v-lato-ko-d" class="mini-svg"><title id="v-lato-ko-t">Da evitare: Lato dello stampo in vista</title><desc id="v-lato-ko-d">Se la faccia a contatto con lo stampo è quella visibile, si vedono i difetti di superficie.</desc><defs>
+  <pattern id="v-lato-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-lato-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-lato-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-lato-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M10,100 H36 L48,34 H112 L124,100 H150" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--finito)"/><line x1="48" y1="44" x2="112" y2="44" stroke="var(--ko)" stroke-width="2" stroke-dasharray="2 3"/></svg><figcaption>Da evitare</figcaption></figure></div><p>La faccia che tocca lo stampo ha una finitura peggiore, quella opposta resta liscia: di solito si progetta il pezzo perché il lato dello stampo non si veda. <span class="pag">(p. 31)</span></p></article>
+<article class="card"><h3>Sottosquadri con inserti, fresatura o saldatura</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sottosquadri-ok-t v-sottosquadri-ok-d" class="mini-svg"><title id="v-sottosquadri-ok-t">Corretto: Sottosquadro con inserto rimovibile</title><desc id="v-sottosquadri-ok-d">Un inserto nello stampo forma il sottosquadro e si toglie a mano con il pezzo; in alternativa si fresa o si salda.</desc><defs>
+  <pattern id="v-sottosquadri-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sottosquadri-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sottosquadri-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sottosquadri-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M40,100 L52,30 H108 L120,100 Z" fill="url(#v-sottosquadri-ok-tratteggio)" class="contorno"/><rect x="108" y="56" width="14" height="14" class="m-stampo contorno"/><path d="M10,100 H36 L48,24 H112 L118,52 L126,52 L126,74 L118,74 L124,100 H150" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--finito)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sottosquadri-ko-t v-sottosquadri-ko-d" class="mini-svg"><title id="v-sottosquadri-ko-t">Da evitare: Sottosquadro su stampo in un pezzo</title><desc id="v-sottosquadri-ko-d">Uno stampo unico con un rientro trattiene il pezzo: non si estrae.</desc><defs>
+  <pattern id="v-sottosquadri-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sottosquadri-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sottosquadri-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sottosquadri-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M40,100 L52,30 H108 V52 H120 V74 L120,100 Z" fill="url(#v-sottosquadri-ko-tratteggio)" class="contorno"/><path d="M10,100 H36 L48,24 H112 V48 H126 V78 L124,100 H150" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--finito)"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Gli angoli rientranti si ottengono con inserti, messi e tolti a mano; in alternativa si fresa il pezzo dopo la formatura, o si stampano parti separate da saldare. <span class="pag">(p. 31)</span></p></article></div><aside class="approfondimento"><h3>Fori per l'aria e texture</h3><p>I canali forati nello stampo lasciano piccoli segni in rilievo sul pezzo. Sulle superfici estetiche si evitano con stampi in alluminio microporoso, che però durano meno perché i pori si intasano. Anche le texture dello stampo aiutano l'aria a defluire (texture 'aperte'). <span class="pag">(p. 32)</span></p></aside>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>La formatura sottovuoto è lo schema principale; qui sotto le altre tecniche descritte nel capitolo.</p><div class="griglia-card"><article class="card"><h3>Formatura a pressione</h3><p class="originale" lang="en">Pressure forming</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-pressione-t var-pressione-d" class="mini-svg"><title id="var-pressione-t">Formatura a pressione</title><desc id="var-pressione-d">Il foglio caldo è spinto nello stampo da aria compressa (circa 6,9 bar), non solo aspirato.</desc><defs>
+  <pattern id="var-pressione-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-pressione-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-pressione-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-pressione-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="30" y="10" width="160" height="26" class="macchina"/>
+    <line x1="70" y1="36" x2="70" y2="66" class="flusso-linea" marker-end="url(#var-pressione-punta)"/><line x1="110" y1="36" x2="110" y2="66" class="flusso-linea" marker-end="url(#var-pressione-punta)"/><line x1="150" y1="36" x2="150" y2="66" class="flusso-linea" marker-end="url(#var-pressione-punta)"/>
+    <path d="M20,60 H50 L60,104 H160 L170,60 H200 V116 H20 Z" fill="url(#var-pressione-tratteggio)" class="contorno"/>
+    <path d="M20,58 H52 L62,100 H158 L168,58 H200" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--fuso)"/></svg></div><p>È l'inverso del vuoto: il foglio viene spinto sullo stampo con circa 6,9 bar di aria compressa. Si riproducono dettagli e texture con molta più precisione, con finiture vicine allo stampaggio a iniezione; lo stampo costa di più ma resta a una sola faccia. <span class="pag">(p. 30–32)</span></p></article>
+<article class="card"><h3>Formatura con punzone ausiliario</h3><p class="originale" lang="en">Plug-assisted forming</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-punzone-t var-punzone-d" class="mini-svg"><title id="var-punzone-t">Formatura con punzone ausiliario</title><desc id="var-punzone-d">Un punzone spinge il foglio dentro lo stampo femmina e lo stira prima del vuoto, per profili profondi.</desc><defs>
+  <pattern id="var-punzone-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-punzone-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-punzone-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-punzone-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="90" y="8" width="40" height="66" class="m-stampo contorno"/>
+    <path d="M20,40 H60 V116 H160 V40 H200 V120 H20 Z" fill="url(#var-punzone-tratteggio)" class="contorno"/>
+    <path d="M20,38 H64 L90,74 H130 L156,38 H200" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--fuso)"/></svg></div><p>Per i profili profondi in stampo femmina un punzone idraulico spinge il foglio nella cavità e lo stira in modo uniforme; poi si aspira l'aria e il punzone si ritira. <span class="pag">(p. 30, 32)</span></p></article>
+<article class="card"><h3>Termoformatura a doppia lastra</h3><p class="originale" lang="en">Twin sheet thermoforming</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-doppia-t var-doppia-d" class="mini-svg"><title id="var-doppia-t">Termoformatura a doppia lastra</title><desc id="var-doppia-d">Due fogli vengono formati uno sopra l'altro e poi pressati insieme: il calore residuo li salda e si ottiene un corpo cavo.</desc><defs>
+  <pattern id="var-doppia-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-doppia-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-doppia-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-doppia-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M20,8 H200 V36 H170 L160,52 H60 L50,36 H20 Z" fill="url(#var-doppia-tratteggio)" class="contorno"/>
+    <path d="M20,116 H200 V88 H170 L160,72 H60 L50,88 H20 Z" fill="url(#var-doppia-tratteggio)" class="contorno"/>
+    <path d="M20,38 H50 L60,55 H160 L170,38 H200" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--fuso)"/><path d="M20,86 H50 L60,69 H160 L170,86 H200" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--fuso)"/></svg></div><p>Due fogli vengono formati uno sopra l'altro, su uno stampo superiore e uno inferiore, e poi pressati insieme: il calore residuo li salda con una resistenza simile a quella del materiale. Si ottengono corpi cavi leggeri e rigidi, anche di due materiali diversi, eventualmente riempiti di schiuma. <span class="pag">(p. 30–32, 34)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="laminazione-compositi.html">Laminazione dei compositi</a> – alcuni pezzi a doppia lastra la sostituiscono <span class="pag">(p. 31)</span></li><li><a href="stampaggio-iniezione.html">Stampaggio a iniezione</a> – finiture simili con la formatura a pressione, stampo molto più caro <span class="pag">(p. 30–31)</span></li><li><a href="soffiaggio.html">Soffiaggio</a> – corpi cavi simili alla doppia lastra <span class="pag">(p. 31)</span></li><li><a href="stampaggio-rotazionale.html">Stampaggio rotazionale</a> – corpi cavi simili alla doppia lastra <span class="pag">(p. 31)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 30–35.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/termoformatura.js"></script>
+</body>
+</html>

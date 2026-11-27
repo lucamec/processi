@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saldatura a vibrazione – Processi produttivi per il design</title>
+<meta name="description" content="Due pezzi di plastica premuti l'uno sull'altro vengono fatti vibrare rapidamente, in linea o in orbita: l'attrito fonde l'interfaccia, che solidificando forma un giunto omogeneo e spesso ermetico.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 3 – Giunzione › Termico</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Saldatura a vibrazione</h1>
+  <p class="originale" lang="en">Vibration Welding</p>
+  <p class="categoria">Parte 3 – Giunzione · Termico</p>
+  <p class="sintesi">Due pezzi di plastica premuti l'uno sull'altro vengono fatti vibrare rapidamente, in linea o in orbita: l'attrito fonde l'interfaccia, che solidificando forma un giunto omogeneo e spesso ermetico.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="1800,1800,2400,2000,1800">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="saldatura-vibrazione" data-alt="Modello 3D di una saldatrice a vibrazione lineare. In alto un piano tiene il guscio chiaro di un fanale, in basso un altro piano porta il catarifrangente rosso. Il piano inferiore sale e preme i pezzi, quello superiore vibra velocemente e la linea di giunzione diventa arancione; poi si ferma e, dopo il mantenimento, i piani si aprono e il fanale saldato, con il giunto verde, resta in alto.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Carico<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Chiusura<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Vibrazione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Mantenimento<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="5">5. Apertura<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Carico</b>Un pezzo va nel piano inferiore, l'altro nel piano superiore, dove il vuoto lo trattiene. <span class="pag">(p. 299–300)</span></li>
+    <li><b>Fase 2 – Chiusura</b>Il piano inferiore sale e preme i pezzi uno contro l'altro; nel caso studio a 103–207 N/cm². <span class="pag">(p. 300)</span></li>
+    <li><b>Fase 3 – Vibrazione</b>Il piano superiore, su molle risonanti, vibra nel piano del giunto: per esempio 0,7–1,8 mm a 240 Hz. L'attrito fonde la plastica in 2–3 secondi. <span class="pag">(p. 299–300)</span></li>
+    <li><b>Fase 4 – Mantenimento</b>La vibrazione si ferma, i pezzi si riallineano e la pressione resta per altri 2–15 secondi, finché il polimero solidifica. <span class="pag">(p. 299–300)</span></li>
+    <li><b>Fase 5 – Apertura</b>I piani si separano; il pezzo saldato resta in quello superiore e viene rilasciato quando si toglie il vuoto. <span class="pag">(p. 300)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una saldatrice a vibrazione lineare. In alto un piano tiene il guscio chiaro di un fanale, in basso un altro piano porta il catarifrangente rosso. Il piano inferiore sale e preme i pezzi, quello superiore vibra velocemente e la linea di giunzione diventa arancione; poi si ferma e, dopo il mantenimento, i piani si aprono e il fanale saldato, con il giunto verde, resta in alto.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 20 820 340" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Saldatura a vibrazione lineare, in sezione</title>
+<desc id="sc-d">Sezione di una saldatrice con il piano superiore che tiene un guscio e il piano inferiore con un catarifrangente rosso. Le fasi mostrano il carico, la salita del piano, la vibrazione che fonde il giunto, il mantenimento sotto pressione e l'apertura.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- piano superiore vibrante con il guscio (tenuto dal vuoto) -->
+<g data-k="vx:0,0,8,0,0" data-i="vx:0">
+  <rect x="220" y="40" width="380" height="40" class="macchina"/>
+  <path d="M240,80 H580 V100 H570 V180 H250 V100 H240 Z" fill="url(#sc-tratteggio)" class="contorno"/>
+  <path d="M260,100 H560 V170 H260 Z" class="m-grezzo contorno"/>
+  <path d="M252,170 H568 V182 H252 Z" class="m-grezzo contorno"/>
+</g>
+<g class="etichetta"><text x="620" y="64" text-anchor="start">Piano superiore vibrante</text></g>
+<g data-k="op:0,0,1,0,0"><line x1="640" y1="130" x2="690" y2="130" class="flusso-linea" marker-end="url(#sc-punta)"/><line x1="690" y1="150" x2="640" y2="150" class="flusso-linea" marker-end="url(#sc-punta)"/><g class="etichetta"><text x="640" y="110" text-anchor="start">oscillazione</text></g></g>
+<!-- piano inferiore che sale con il catarifrangente -->
+<g data-k="ty:0,-30,-30,-30,0" data-i="ty:0">
+  <path d="M252,214 H568 V226 H252 Z" fill="#c0392b" class="contorno"/>
+  <path d="M262,226 H558 V246 H262 Z" fill="#c0392b" opacity="0.75" class="contorno"/>
+  <path d="M240,226 H580 V320 H240 Z" fill="url(#sc-tratteggio)" class="contorno"/>
+  <rect x="220" y="320" width="380" height="30" class="macchina"/>
+  <g data-k="op:0,0,1,1,0" data-i="op:0"><rect x="252" y="208" width="316" height="8" style="fill:var(--fuso)"/></g>
+  <g data-k="op:0,0,0,0,1" data-i="op:0"><rect x="252" y="208" width="316" height="8" style="fill:var(--finito)"/></g>
+</g>
+<g class="etichetta"><text x="620" y="300" text-anchor="start">Piano inferiore</text></g>
+<g data-k="op:0,1,0,0,0"><line x1="200" y1="300" x2="200" y2="250" class="flusso-linea" marker-end="url(#sc-punta)"/><g class="etichetta"><text x="20" y="330" text-anchor="start">il piano sale e preme i pezzi</text></g></g>
+<g data-k="op:0,0,1,0,0"><g class="etichetta"><text x="20" y="330" text-anchor="start">l'attrito fonde il giunto in 2–3 secondi</text></g></g>
+<g data-k="op:0,0,0,1,0"><g class="etichetta"><text x="20" y="330" text-anchor="start">vibrazione ferma, pezzi allineati, pressione fino alla solidificazione</text></g></g>
+<g data-k="op:0,0,0,0,1"><g class="etichetta"><text x="20" y="330" text-anchor="start">i piani si aprono; il fanale saldato resta in quello superiore</text></g></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Si basa sui principi della saldatura per attrito: la saldatura lineare dei metalli e quella a vibrazione lineare delle plastiche sono lo stesso processo. <span class="pag">(p. 298)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>A differenza degli ultrasuoni, che trasmettono energia attraverso il pezzo, la vibrazione la porta direttamente al giunto: cariche, rimacinato, coloranti e impurità non ne riducono l'efficacia. <span class="pag">(p. 298)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Il giunto ha una resistenza vicina a quella del materiale base; con alcune combinazioni i materiali si mescolano del tutto in un legame omogeneo. Umidità e modificanti influiscono sulla saldabilità. <span class="pag">(p. 298–299)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="5" aria-label="Mostra la fase 5 nello schema">Fase 5</button>Si eliminano viti e adesivi; non si aggiunge materiale al giunto, quindi il processo non produce scarti. <span class="pag">(p. 300–301)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Termoplastici amorfi e semicristallini, alcuni compositi polimerici, film e tessuti termoplastici; utile per POM, PE, PA e PP, difficili da saldare a ultrasuoni o incollare. Solo materiali uguali, salvo ABS, PMMA e PC fra loro. <span class="pag">(p. 300–301)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Medie e grandi serie. <span class="pag">(p. 298)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Da basso a moderato: ogni pezzo richiede un'attrezzatura dedicata. <span class="pag">(p. 298, 301)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Basso; manodopera bassa, soprattutto se automatizzato. <span class="pag">(p. 298, 301)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Molto rapido, fino a 30 secondi: saldatura di 2–15 secondi e mantenimento di durata simile; più pezzi insieme riducono il ciclo. <span class="pag">(p. 298, 300–301)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Giunti forti, anche ermetici; il preriscaldo riduce i residui. <span class="pag">(p. 298)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Allineamento automatico a fine vibrazione. Tolleranze numeriche: <span class="nd">n.d.</span> <span class="pag">(p. 299–300)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Lineare fino a 500 × 1.500 mm; orbitale fino a 250 mm di diametro. <span class="pag">(p. 300)</span><span class="nota-ocr">Pressione di saldatura generale e ampiezza orbitale: <span class="nd">n.d.</span> (conversioni &quot;1-2N/mm2 (0.69-1.37 psi)&quot; e &quot;0.25 mm and 1.5 mm (0.1-0.59 in.)&quot; incoerenti)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Piano di vibrazione piatto</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-piano-ok-t v-piano-ok-d" class="mini-svg"><title id="v-piano-ok-t">Corretto: Giunto piano</title><desc id="v-piano-ok-d">Il piano di vibrazione deve essere piatto, o inclinato al massimo di 10°, perché i pezzi possano scorrere e scaldarsi.</desc><defs>
+  <pattern id="v-piano-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-piano-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-piano-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-piano-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="40" width="120" height="30" class="m-grezzo contorno"/><rect x="20" y="70" width="120" height="30" fill="#c0392b" class="contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-piano-ko-t v-piano-ko-d" class="mini-svg"><title id="v-piano-ko-t">Da evitare: Giunto curvo o inclinato</title><desc id="v-piano-ko-d">Su un giunto molto inclinato la vibrazione non genera attrito uniforme.</desc><defs>
+  <pattern id="v-piano-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-piano-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-piano-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-piano-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,70 Q80,20 140,70 V40 H20 Z" class="m-grezzo contorno"/><path d="M20,70 Q80,20 140,70 V100 H20 Z" fill="#c0392b" class="contorno"/><circle cx="80" cy="46" r="14" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>I pezzi devono potersi muovere abbastanza da generare calore: il piano di vibrazione va tenuto piatto, o entro 10°. <span class="pag">(p. 300)</span></p></article>
+<article class="card"><h3>Presa sicura e pareti sostenute</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-presa-ok-t v-presa-ok-d" class="mini-svg"><title id="v-presa-ok-t">Corretto: Pezzi ben tenuti dall'attrezzatura</title><desc id="v-presa-ok-d">I pezzi devono essere afferrati in modo da trasmettere l'energia al giunto; le pareti lunghe vanno sostenute.</desc><defs>
+  <pattern id="v-presa-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-presa-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-presa-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-presa-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,30 H140 V50 H130 V90 H30 V50 H20 Z" fill="url(#v-presa-ok-tratteggio)" class="contorno"/><rect x="34" y="50" width="92" height="40" class="m-grezzo contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-presa-ko-t v-presa-ko-d" class="mini-svg"><title id="v-presa-ko-t">Da evitare: Pareti sottili non sostenute</title><desc id="v-presa-ko-d">Pareti sottili e lunghe si flettono invece di vibrare con l'attrezzatura.</desc><defs>
+  <pattern id="v-presa-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-presa-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-presa-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-presa-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M30,30 V100 M130,30 Q150,65 130,100" fill="none" stroke="var(--grezzo)" stroke-width="5"/><circle cx="140" cy="65" r="14" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>I pezzi devono essere afferrati bene per trasmettere l'energia; pareti sottili o lunghe e non sostenute si flettono. <span class="pag">(p. 300)</span></p></article>
+<article class="card"><h3>Plastiche uguali</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-materiali-ok-t v-materiali-ok-d" class="mini-svg"><title id="v-materiali-ok-t">Corretto: Stesso materiale</title><desc id="v-materiali-ok-d">Si saldano materiali uguali; fanno eccezione ABS, PMMA e PC, che si uniscono fra loro.</desc><defs>
+  <pattern id="v-materiali-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-materiali-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-materiali-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-materiali-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="40" width="120" height="30" class="m-grezzo contorno"/><rect x="20" y="70" width="120" height="30" class="m-grezzo contorno"/><g class="etichetta"><text x="80" y="108" text-anchor="middle">PP + PP</text></g></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-materiali-ko-t v-materiali-ko-d" class="mini-svg"><title id="v-materiali-ko-t">Da evitare: Plastiche diverse</title><desc id="v-materiali-ko-d">Due termoplastici diversi, in generale, non si mescolano in un giunto omogeneo.</desc><defs>
+  <pattern id="v-materiali-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-materiali-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-materiali-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-materiali-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="40" width="120" height="30" class="m-grezzo contorno"/><rect x="20" y="70" width="120" height="30" class="m-finito contorno"/><circle cx="80" cy="70" r="16" fill="none" stroke="var(--ko)" stroke-width="2.5"/><g class="etichetta"><text x="80" y="108" text-anchor="middle">PP + PA</text></g></svg><figcaption>Da evitare</figcaption></figure></div><p>La saldatura delle plastiche unisce materiali uguali, con poche eccezioni come ABS, PMMA e PC. <span class="pag">(p. 300–301)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Le due forme di moto e lo sviluppo recente descritti nel capitolo; lo schema principale mostra la vibrazione lineare.</p><div class="griglia-card"><article class="card"><h3>Lineare</h3><p class="originale" lang="en">Linear vibration welding</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-lineare-t var-lineare-d" class="mini-svg"><title id="var-lineare-t">Vibrazione lineare</title><desc id="var-lineare-d">Moto alternato su un solo asse; pezzi fino a 500 × 1.500 mm, ma non adatta a pareti sottili e lunghe non sostenute.</desc><defs>
+  <pattern id="var-lineare-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-lineare-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-lineare-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-lineare-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="40" y="30" width="140" height="30" class="m-grezzo contorno"/><rect x="40" y="64" width="140" height="30" fill="#c0392b" class="contorno"/>
+    <line x1="110" y1="18" x2="170" y2="18" class="flusso-linea" marker-end="url(#var-lineare-punta)"/><line x1="110" y1="18" x2="50" y2="18" class="flusso-linea" marker-end="url(#var-lineare-punta)"/></svg></div><p>Moto alternato su un solo asse; per pezzi grandi. <span class="pag">(p. 298–300)</span></p></article>
+<article class="card"><h3>Orbitale</h3><p class="originale" lang="en">Orbital vibration welding</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-orbitale-t var-orbitale-d" class="mini-svg"><title id="var-orbitale-t">Vibrazione orbitale</title><desc id="var-orbitale-d">Tre elettromagneti a 120° muovono l'attrezzatura in un'orbita costante, a 190–220 Hz: ogni punto descrive lo stesso piccolo cerchio. Serve meno pressione, adatta a parti delicate fino a 250 mm.</desc><defs>
+  <pattern id="var-orbitale-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-orbitale-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-orbitale-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-orbitale-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <circle cx="110" cy="62" r="36" class="m-grezzo contorno"/>
+    <rect x="154" y="54" width="16" height="16" class="scuro"/><rect x="76.00000000000001" y="99.03332099679082" width="16" height="16" class="scuro"/><rect x="75.99999999999997" y="8.966679003209201" width="16" height="16" class="scuro"/>
+    <circle cx="110" cy="62" r="8" fill="none" stroke="var(--fuso)" stroke-width="3"/></svg></div><p>Moto circolare non rotante, uguale in tutte le direzioni del piano; meno pressione, per parti delicate. <span class="pag">(p. 298–300)</span></p></article>
+<article class="card"><h3>Con preriscaldo</h3><p class="originale" lang="en">Pre-heated vibration welding</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-preriscaldo-t var-preriscaldo-d" class="mini-svg"><title id="var-preriscaldo-t">Con preriscaldo</title><desc id="var-preriscaldo-d">Scaldando il giunto prima della vibrazione, come nella saldatura a piastra calda, i giunti sono più puliti e producono meno residui, utile per esempio nei filtri.</desc><defs>
+  <pattern id="var-preriscaldo-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-preriscaldo-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-preriscaldo-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-preriscaldo-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="40" y="20" width="140" height="26" class="m-grezzo contorno"/><rect x="40" y="78" width="140" height="26" fill="#c0392b" class="contorno"/>
+    <rect x="30" y="54" width="160" height="16" style="fill:var(--fuso)" opacity="0.6"/></svg></div><p>Il giunto si scalda prima della vibrazione: saldature pulite e resistenti con pochi residui. <span class="pag">(p. 298)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="saldatura-attrito.html">Saldatura per attrito</a> – stesso principio per i metalli <span class="pag">(p. 298)</span></li><li><a href="saldatura-ultrasuoni.html">Saldatura a ultrasuoni</a> – alternativa per pezzi sottili e delicati <span class="pag">(p. 298)</span></li><li><a href="saldatura-piastra-calda.html">Saldatura a piastra calda</a> – base del preriscaldo <span class="pag">(p. 298)</span></li><li><a href="stampaggio-iniezione.html">Stampaggio a iniezione</a> – produce i pezzi più adatti <span class="pag">(p. 300)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 298–301.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/saldatura-vibrazione.js"></script>
+</body>
+</html>

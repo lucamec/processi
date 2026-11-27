@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stampa a caldo e goffratura – Processi produttivi per il design</title>
+<meta name="description" content="Processi a secco: un utensile metallico sagomato, caldo, preme sulla superficie e vi lascia un'immagine in lamina, oppure un rilievo. Rapidi, ripetibili e poco costosi, sono molto usati negli imballaggi e negli stampati.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 4 – Finitura › Stampa</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Stampa a caldo e goffratura</h1>
+  <p class="originale" lang="en">Foil Blocking and Embossing</p>
+  <p class="categoria">Parte 4 – Finitura · Stampa</p>
+  <p class="sintesi">Processi a secco: un utensile metallico sagomato, caldo, preme sulla superficie e vi lascia un'immagine in lamina, oppure un rilievo. Rapidi, ripetibili e poco costosi, sono molto usati negli imballaggi e negli stampati.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="1800,2000,1800,2200">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="stampa-caldo-goffratura" data-alt="Modello 3D di una pressa con una piastra calda sopra un foglio di carta color crema. Fra la piastra e la carta scorre un nastro di lamina d'oro tra due bobine. La piastra scende e risale: sulla carta resta un anello d'oro con un punto al centro, mentre sul nastro rimane l'impronta vuota che si avvolge sulla bobina. Poi la piastra cambia utensile e solleva nella carta un anello in rilievo.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Carico<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Pressione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Scarico<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Goffratura<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Carico</b>Ugelli a vuoto portano il foglio sul piano di stampa; l'utensile in magnesio, inciso per fresatura fotochimica, è montato dietro la lamina. <span class="pag">(p. 414)</span></li>
+    <li><b>Fase 2 – Pressione</b>L'utensile, a 100–200 °C, preme per meno di un secondo: calore e pressione attivano l'adesivo e la lamina si incolla e affonda leggermente nella carta. <span class="pag">(p. 414)</span></li>
+    <li><b>Fase 3 – Scarico</b>Il foglio esce; la lamina usata si avvolge su una bobina ed è scarto, perché riciclarla non è pratico. <span class="pag">(p. 414)</span></li>
+    <li><b>Fase 4 – Goffratura</b>Nella goffratura non c'è lamina: il foglio si preme fra stampi accoppiati con bordi arrotondati, che non stressano le fibre, e si solleva in rilievo. <span class="pag">(p. 412, 414)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una pressa con una piastra calda sopra un foglio di carta color crema. Fra la piastra e la carta scorre un nastro di lamina d'oro tra due bobine. La piastra scende e risale: sulla carta resta un anello d'oro con un punto al centro, mentre sul nastro rimane l'impronta vuota che si avvolge sulla bobina. Poi la piastra cambia utensile e solleva nella carta un anello in rilievo.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 40 820 290" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Stampa a caldo e goffratura, in sezione</title>
+<desc id="sc-d">A sinistra la stampa a caldo: utensile caldo, lamina su film di supporto e carta sul piano. A destra la goffratura fra due stampi accoppiati. Le fasi mostrano il carico, la pressione, lo scarico e il risultato: lamina impressa a sinistra, rilievo a destra.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- STAMPA A CALDO -->
+<g class="etichetta"><text x="110" y="58" text-anchor="start">Stampa a caldo</text></g>
+<g data-k="ty:-36,0,-36,-36" data-i="ty:-36">
+  <rect x="110" y="110" width="220" height="40" fill="#9a6a4a" class="contorno"/>
+  <rect x="180" y="150" width="20" height="14" class="m-stampo contorno"/><rect x="240" y="150" width="20" height="14" class="m-stampo contorno"/>
+</g>
+<g class="etichetta"><text x="110" y="240" text-anchor="start">Utensile caldo, 100–200 °C</text></g>
+<rect x="90" y="170" width="260" height="4" fill="#d4a53a" data-k="ty:0,-6,0,0;op:1,1,1,0.4" data-i="ty:0;op:1"/>
+<g data-k="op:0,0,1,1" data-i="op:0"><rect x="180" y="166" width="20" height="4" fill="#e9e4d6"/><rect x="240" y="166" width="20" height="4" fill="#e9e4d6"/></g>
+<g class="etichetta"><line x1="90" y1="172" x2="20" y2="155" class="richiamo"/><text x="20" y="160" text-anchor="start">Lamina su film di supporto</text></g>
+<rect x="100" y="182" width="240" height="10" fill="#f4efe4" class="contorno"/>
+<g data-k="op:0,0,1,1" data-i="op:0"><rect x="180" y="182" width="20" height="3" fill="#d4a53a"/><rect x="240" y="182" width="20" height="3" fill="#d4a53a"/></g>
+<rect x="90" y="192" width="260" height="24" class="m-stampo contorno"/>
+
+<!-- GOFFRATURA -->
+<g class="etichetta"><text x="480" y="58" text-anchor="start">Goffratura</text></g>
+<g data-k="ty:-36,0,-36,-36" data-i="ty:-36">
+  <path d="M480,110 H700 V182 H624 Q624,164 600,164 H580 Q556,164 556,182 H480 Z" class="m-stampo contorno"/>
+</g>
+<g data-k="ty:18,0,18,18" data-i="ty:18"><path d="M470,190 H556 Q556,172 580,172 H600 Q624,172 624,190 H710 V214 H470 Z" class="m-stampo contorno"/></g>
+<g data-k="op:1,0,0,0" data-i="op:1"><rect x="470" y="182" width="240" height="8" fill="#f4efe4" class="contorno"/></g>
+<g data-k="op:0,1,1,1" data-i="op:0"><path d="M470,182 H556 Q556,164 580,164 H600 Q624,164 624,182 H710 V190 H624 Q624,172 600,172 H580 Q556,172 556,190 H470 Z" fill="#f4efe4" class="contorno"/></g>
+<g class="etichetta"><line x1="640" y1="214" x2="480" y2="235" class="richiamo"/><text x="480" y="240" text-anchor="start">Stampi accoppiati, bordi arrotondati</text></g>
+
+<g data-k="op:1,0,0,0"><g class="etichetta"><text x="60" y="300" text-anchor="start">Il foglio arriva sul piano, preso da ugelli a vuoto; la lamina scorre fra utensile e carta</text></g></g>
+<g data-k="op:0,1,0,0"><g class="etichetta"><text x="60" y="300" text-anchor="start">Calore e pressione per meno di un secondo: l'adesivo lega la lamina alla carta</text></g></g>
+<g data-k="op:0,0,1,0"><g class="etichetta"><text x="60" y="300" text-anchor="start">La lamina usata si avvolge sulla bobina ed è scarto; nella goffratura non c'è scarto</text></g></g>
+<g data-k="op:0,0,0,1"><g class="etichetta"><text x="60" y="300" text-anchor="start">Impronta leggera con la lamina; rilievo in positivo fra stampi accoppiati</text></g></g>
+<line x1="400" y1="140" x2="400" y2="180" class="flusso-linea" marker-end="url(#sc-punta)"/>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>La stampa a caldo è detta anche foil stamping, hot stamping o gold foil blocking; è una pressatura che si abbina bene alla goffratura. <span class="pag">(p. 412)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>Le lamine metalliche sono depositi sottilissimi di alluminio ottenuti per metallizzazione sottovuoto; le altre sono film plastici. Entrambe stanno su un film di supporto, con un velo d'adesivo sulla faccia. <span class="pag">(p. 414)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>La profondità dell'impronta dipende dalla durezza del materiale e dalla pressione; protegge la lamina dall'abrasione. L'utensile ha spigoli vivi, per un taglio netto della lamina. <span class="pag">(p. 412, 414)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>La lamina è coprente, quindi il registro è meno critico che in altre stampe; i colori si sovrappongono direttamente. Combinare stampa e goffratura in un solo colpo costa meno ma rende meno. <span class="pag">(p. 412)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Pelle, tessuti, legno, carta, cartone e plastica. <span class="pag">(p. 412–413)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Da volumi molto bassi alla produzione di massa. <span class="pag">(p. 412)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Molto basso; utensili rotativi e stampi accoppiati costano di più. <span class="pag">(p. 412, 414)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Basso; manodopera non alta, ma i cambi formato variano perché l'utensile va messo a registro con la stampa esistente. <span class="pag">(p. 412, 414)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Rapido: circa 1.000 cicli all'ora; la pressatura dura meno di un secondo. <span class="pag">(p. 412, 414)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Alta e ripetibile su lunghe tirature, con dettagli fini. <span class="pag">(p. 412)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Linee fino a 0,25 mm; caratteri fino a 1,5 mm (6 punti) con molte lamine oro e argento. <span class="pag">(p. 413)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Utensile fino al formato A1, 594 × 841 mm; lamina in rotoli larghi 640 mm. <span class="pag">(p. 413–414)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Solo piano o cilindrico</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-forma-ok-t v-forma-ok-d" class="mini-svg"><title id="v-forma-ok-t">Corretto: Superfici piane o cilindriche</title><desc id="v-forma-ok-d">Il piano è il caso più comune ed economico; i cilindri richiedono attrezzature più costose.</desc><defs>
+  <pattern id="v-forma-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-forma-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-forma-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-forma-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="70" width="120" height="16" fill="#f4efe4" class="contorno"/><rect x="50" y="66" width="60" height="4" fill="#d4a53a"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-forma-ko-t v-forma-ko-d" class="mini-svg"><title id="v-forma-ko-t">Da evitare: Superfici ondulate</title><desc id="v-forma-ko-d">Sulle superfici ondulate l'utensile rigido non appoggia: lì serve la tampografia.</desc><defs>
+  <pattern id="v-forma-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-forma-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-forma-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-forma-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,90 Q50,50 80,80 T140,70 V100 H20 Z" fill="#f4efe4" class="contorno"/><rect x="30" y="40" width="100" height="14" class="m-stampo contorno"/><circle cx="80" cy="70" r="16" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Il piano è il caso più comune ed economico; i cilindri richiedono attrezzature specifiche e quindi grandi volumi. Sulle superfici ondulate serve la tampografia. <span class="pag">(p. 412–413)</span></p></article>
+<article class="card"><h3>Limiti del dettaglio</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-dettaglio-ok-t v-dettaglio-ok-d" class="mini-svg"><title id="v-dettaglio-ok-t">Corretto: Linee da 0,25 mm, testi da 1,5 mm</title><desc id="v-dettaglio-ok-d">Molte lamine oro e argento reggono linee di 0,25 mm e caratteri di 1,5 mm (6 punti).</desc><defs>
+  <pattern id="v-dettaglio-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-dettaglio-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-dettaglio-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-dettaglio-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><text x="80" y="74" text-anchor="middle" font-size="18" fill="#d4a53a" font-weight="400">Aa</text><line x1="40" y1="88" x2="120" y2="88" stroke="#d4a53a" stroke-width="1"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-dettaglio-ko-t v-dettaglio-ko-d" class="mini-svg"><title id="v-dettaglio-ko-t">Da evitare: Neretti e retini fini</title><desc id="v-dettaglio-ko-d">Nei caratteri in neretto i fori delle lettere sono piccoli e i retini hanno punti minuscoli; alcuni colori non reggono i dettagli.</desc><defs>
+  <pattern id="v-dettaglio-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-dettaglio-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-dettaglio-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-dettaglio-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><text x="80" y="76" text-anchor="middle" font-size="26" fill="#d4a53a" font-weight="900">eB</text><circle cx="80" cy="66" r="24" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Neretti e retini sono difficili; colori come nero, bianco o rosso possono non reggere i dettagli più fini: conviene provare con lo stampatore. <span class="pag">(p. 413)</span></p></article>
+<article class="card"><h3>Spessori per la goffratura</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spessore-ok-t v-spessore-ok-d" class="mini-svg"><title id="v-spessore-ok-t">Corretto: Goffratura entro gli spessori</title><desc id="v-spessore-ok-d">Carta e cartone fino a 2 mm (500 g/m²), plastica fino a 1 mm, pelle.</desc><defs>
+  <pattern id="v-spessore-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spessore-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spessore-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spessore-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,80 H60 Q60,62 80,62 Q100,62 100,80 H140 V88 H100 Q100,70 80,70 Q60,70 60,88 H20 Z" fill="#f4efe4" class="contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-spessore-ko-t v-spessore-ko-d" class="mini-svg"><title id="v-spessore-ko-t">Da evitare: Materiali sottili sotto la lamina</title><desc id="v-spessore-ko-d">Materiali sottili si improntano da parte a parte e mostrano un rilievo sul retro, a volte indesiderato.</desc><defs>
+  <pattern id="v-spessore-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-spessore-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-spessore-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-spessore-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,70 H60 V78 H100 V70 H140 V76 H104 V84 H56 V76 H20 Z" fill="#f4efe4" class="contorno"/><rect x="60" y="66" width="40" height="4" fill="#d4a53a"/><circle cx="80" cy="84" r="14" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Si goffrano carta e cartone fino a 2 mm (500 g/m²), plastica fino a 1 mm e pelle; il debossing, impresso da un solo lato, vale per ogni spessore. I materiali sottili si improntano anche sul retro. <span class="pag">(p. 412, 414)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Possibilità descritte nel capitolo; lo schema principale mostra i due processi lineari, separati.</p><div class="griglia-card"><article class="card"><h3>Goffratura cieca</h3><p class="originale" lang="en">Blind embossing</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-cieca-t var-cieca-d" class="mini-svg"><title id="var-cieca-t">Goffratura a secco</title><desc id="var-cieca-d">Su materiali non stampati si chiama goffratura cieca: un rilievo sottile e di qualità, senza colore.</desc><defs>
+  <pattern id="var-cieca-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-cieca-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-cieca-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-cieca-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M20,80 H80 Q80,56 110,56 Q140,56 140,80 H200 V90 H20 Z" fill="#f4efe4" class="contorno"/></svg></div><p>Rilievo su materiali non stampati. <span class="pag">(p. 413)</span></p></article>
+<article class="card"><h3>Stampa a caldo rotativa</h3><p class="originale" lang="en">Rotary foil blocking</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-rotativa-t var-rotativa-d" class="mini-svg"><title id="var-rotativa-t">Stampa a caldo rotativa</title><desc id="var-rotativa-d">In continuo su fogli e pezzi cilindrici, come i flaconi di cosmetici, o per finiture finto legno su profili in plastica.</desc><defs>
+  <pattern id="var-rotativa-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-rotativa-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-rotativa-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-rotativa-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <circle cx="110" cy="50" r="30" class="m-stampo contorno"/><rect x="20" y="82" width="180" height="10" fill="#f4efe4" class="contorno"/><rect x="90" y="78" width="40" height="4" fill="#d4a53a"/></svg></div><p>Fogli in continuo, cilindri, finiture finto legno. <span class="pag">(p. 412, 414)</span></p></article>
+<article class="card"><h3>Lamine diverse</h3><p class="originale" lang="en">Foil types</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-lamine-t var-lamine-d" class="mini-svg"><title id="var-lamine-t">Lamine diverse</title><desc id="var-lamine-d">Opache, lucide, metallizzate, olografiche per la sicurezza, a motivi e trasparenti; i colori possono sovrapporsi direttamente.</desc><defs>
+  <pattern id="var-lamine-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-lamine-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-lamine-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-lamine-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="30" y="44" width="34" height="40" fill="#d4a53a"/><rect x="72" y="44" width="34" height="40" fill="#c0c6cc"/><rect x="114" y="44" width="34" height="40" fill="#b8323a"/><rect x="156" y="44" width="34" height="40" fill="#4c62d9"/></svg></div><p>Opache, lucide, metallizzate, olografiche, trasparenti. <span class="pag">(p. 412)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="tampografia.html">Tampografia</a> – per le superfici ondulate <span class="pag">(p. 412)</span></li><li><a href="serigrafia.html">Serigrafia</a> – applica la verniciatura a zone <span class="pag">(p. 412)</span></li><li><a href="metallizzazione-sottovuoto.html">Metallizzazione sottovuoto</a> – produce le lamine metalliche <span class="pag">(p. 414)</span></li><li><a href="fresatura-fotochimica.html">Fresatura fotochimica</a> – realizza gli utensili in magnesio <span class="pag">(p. 413–414)</span></li><li><a href="incisione-cnc.html">Incisione CNC</a> – altro modo per fare gli utensili <span class="pag">(p. 414)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 412–415.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/stampa-caldo-goffratura.js"></script>
+</body>
+</html>

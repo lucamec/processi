@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prototipazione rapida – Processi produttivi per il design</title>
+<meta name="description" content="Il pezzo si costruisce direttamente dal file CAD, fondendo o solidificando strati sottilissimi di polvere o liquido con un laser: prototipi e piccole serie senza alcuno stampo.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 1 – Formatura › Prototipazione rapida</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Prototipazione rapida</h1>
+  <p class="originale" lang="en">Rapid Prototyping</p>
+  <p class="categoria">Parte 1 – Formatura · Prototipazione rapida</p>
+  <p class="sintesi">Il pezzo si costruisce direttamente dal file CAD, fondendo o solidificando strati sottilissimi di polvere o liquido con un laser: prototipi e piccole serie senza alcuno stampo.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="2000,2000,3400,2400,2200">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="prototipazione-rapida" data-alt="Modello 3D di una macchina per stereolitografia. Sopra la vasca compare il modello del vaso diviso in sezioni sottili. Una piattaforma scende passo dopo passo nella resina ambrata mentre un raggio laser arancione traccia il contorno sulla superficie e una pala la livella: prima crescono i supporti, poi il vaso. La piattaforma risale, il vaso si stacca dai supporti e, sotto una lampada UV viola, diventa verde.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Modello sezionato<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Supporti<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Costruzione a strati<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Estrazione e supporti<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="5">5. Pulizia e post-cura<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Modello sezionato</b>Il modello CAD, in un file .stl, viene diviso in sezioni orizzontali: ognuna è uno strato da costruire. <span class="pag">(p. 232, 234)</span></li>
+    <li><b>Fase 2 – Supporti</b>Prima del pezzo si costruisce, nello stesso modo, una struttura di supporto a nido d'ape che lo tiene staccato dalla piattaforma. <span class="pag">(p. 234)</span></li>
+    <li><b>Fase 3 – Costruzione a strati</b>Lo specchio guida il laser UV sulla resina, che solidifica dove viene colpita: prima la pelle, poi il nucleo. La piattaforma scende di 0,05–0,1 mm e la pala livella la superficie. <span class="pag">(p. 234, 236)</span></li>
+    <li><b>Fase 4 – Estrazione e supporti</b>I pezzi sgocciolano e si tolgono dalla vasca; si staccano dalla piattaforma e si rimuove con cura la struttura di supporto. <span class="pag">(p. 237)</span></li>
+    <li><b>Fase 5 – Pulizia e post-cura</b>L'alcol isopropilico toglie la resina non indurita; poi un minuto di luce UV intensa completa la cura. Gli strati restano appena visibili. <span class="pag">(p. 237)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una macchina per stereolitografia. Sopra la vasca compare il modello del vaso diviso in sezioni sottili. Una piattaforma scende passo dopo passo nella resina ambrata mentre un raggio laser arancione traccia il contorno sulla superficie e una pala la livella: prima crescono i supporti, poi il vaso. La piattaforma risale, il vaso si stacca dai supporti e, sotto una lampada UV viola, diventa verde.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 -30 820 380" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Stereolitografia (SLA), in sezione</title>
+<desc id="sc-d">Sezione di una vasca di resina con una piattaforma che scende. Le fasi mostrano il modello CAD diviso in sezioni, la costruzione dei supporti, il laser e la pala che costruiscono il pezzo strato per strato sotto il pelo della resina, l'estrazione con la rimozione dei supporti e la post-cura UV.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<clipPath id="sc-sotto"><rect x="0" y="150" width="820" height="230"/></clipPath>
+<!-- vasca -->
+<path d="M200,110 V330 H620 V110" fill="none" stroke="var(--testo)" stroke-width="6"/>
+<g class="etichetta"><text x="210" y="346" text-anchor="start">Resina epossidica liquida sensibile ai raggi UV</text></g>
+
+<!-- parte in costruzione (solo sotto il pelo della resina) -->
+<g clip-path="url(#sc-sotto)"><g data-k="op:1,1,1,0,0" data-i="op:1">
+  <g data-k="ty:0,20,160,-40,-40" data-i="ty:0"><rect x="300" y="150" width="220" height="10" class="scuro"/><path d="M360,130 V150 M370,130 V150 M380,130 V150 M390,130 V150 M400,130 V150 M410,130 V150 M420,130 V150 M430,130 V150 M440,130 V150 M450,130 V150 M460,130 V150" stroke="var(--testo)" stroke-width="2"/><path d="M350,130 C340,80 380,60 390,30 L392,-10 H428 L430,30 C440,60 480,80 470,130 Z" class="m-fuso contorno"/></g>
+</g></g>
+<!-- parte estratta -->
+<g data-k="op:0,0,0,1,1;ty:0,0,0,-40,-40" data-i="op:0;ty:0">
+  <rect x="300" y="150" width="220" height="10" class="scuro" data-k="op:1,1,1,1,0" data-i="op:1"/>
+  <path d="M360,130 V150 M370,130 V150 M380,130 V150 M390,130 V150 M400,130 V150 M410,130 V150 M420,130 V150 M430,130 V150 M440,130 V150 M450,130 V150 M460,130 V150" stroke="var(--testo)" stroke-width="2" data-k="op:1,1,1,1,0" data-i="op:1"/>
+  <path d="M350,130 C340,80 380,60 390,30 L392,-10 H428 L430,30 C440,60 480,80 470,130 Z" class="m-fuso contorno" data-k="op:1,1,1,1,0" data-i="op:1"/>
+  <path d="M350,130 C340,80 380,60 390,30 L392,-10 H428 L430,30 C440,60 480,80 470,130 Z" class="m-finito sezionato contorno" data-k="op:0,0,0,0,1" data-i="op:0"/>
+</g>
+<rect x="206" y="150" width="408" height="176" style="fill:var(--grezzo)" opacity="0.28"/>
+<line x1="206" y1="150" x2="614" y2="150" stroke="var(--flusso)" stroke-width="2"/>
+<g data-k="op:1,1,1,0,0"><g class="etichetta"><line x1="520" y1="170" x2="630" y2="195" class="richiamo"/><text x="630" y="200" text-anchor="start">Piattaforma mobile</text></g></g>
+
+<!-- specchio e laser UV -->
+<rect x="370" y="12" width="80" height="22" class="macchina"/>
+<g class="etichetta"><text x="470" y="26" text-anchor="start">Laser UV e specchio guidato da computer</text></g>
+<g data-k="op:0,1,1,0,0;vx:0,0,36,0,0" data-i="op:0;vx:0">
+  <line x1="410" y1="34" x2="410" y2="148" stroke="var(--fuso)" stroke-width="3"/>
+  <circle cx="410" cy="150" r="5" style="fill:var(--fuso)"/>
+</g>
+<!-- pala che rompe la tensione superficiale -->
+<g data-k="op:0,1,1,0,0;vx:0,0,160,0,0" data-i="op:0;vx:0">
+  <rect x="402" y="140" width="16" height="12" class="m-stampo contorno"/>
+</g>
+<g data-k="op:0,0,1,0,0"><g class="etichetta"><text x="40" y="90" text-anchor="start">la pala livella la resina dopo ogni discesa</text></g></g>
+
+<!-- 1: modello CAD sezionato -->
+<g data-k="op:1,0,0,0,0">
+  <g transform="translate(330,-20) scale(0.5)"><path d="M350,130 C340,80 380,60 390,30 L392,-10 H428 L430,30 C440,60 480,80 470,130 Z" fill="none" stroke="var(--flusso)" stroke-width="3"/><line x1="330" y1="-6" x2="490" y2="-6" stroke="var(--flusso)" stroke-width="1.5"/><line x1="330" y1="4" x2="490" y2="4" stroke="var(--flusso)" stroke-width="1.5"/><line x1="330" y1="14" x2="490" y2="14" stroke="var(--flusso)" stroke-width="1.5"/><line x1="330" y1="24" x2="490" y2="24" stroke="var(--flusso)" stroke-width="1.5"/><line x1="330" y1="34" x2="490" y2="34" stroke="var(--flusso)" stroke-width="1.5"/><line x1="330" y1="44" x2="490" y2="44" stroke="var(--flusso)" stroke-width="1.5"/><line x1="330" y1="54" x2="490" y2="54" stroke="var(--flusso)" stroke-width="1.5"/><line x1="330" y1="64" x2="490" y2="64" stroke="var(--flusso)" stroke-width="1.5"/><line x1="330" y1="74" x2="490" y2="74" stroke="var(--flusso)" stroke-width="1.5"/><line x1="330" y1="84" x2="490" y2="84" stroke="var(--flusso)" stroke-width="1.5"/><line x1="330" y1="94" x2="490" y2="94" stroke="var(--flusso)" stroke-width="1.5"/><line x1="330" y1="104" x2="490" y2="104" stroke="var(--flusso)" stroke-width="1.5"/><line x1="330" y1="114" x2="490" y2="114" stroke="var(--flusso)" stroke-width="1.5"/><line x1="330" y1="124" x2="490" y2="124" stroke="var(--flusso)" stroke-width="1.5"/></g>
+  <g class="etichetta"><text x="40" y="60" text-anchor="start">modello CAD (.stl) diviso in sezioni</text></g>
+</g>
+<g data-k="op:0,1,0,0,0"><g class="etichetta"><text x="40" y="90" text-anchor="start">prima si costruisce la struttura di supporto a nido d'ape</text></g></g>
+<g data-k="op:0,0,0,1,0"><g class="etichetta"><text x="40" y="90" text-anchor="start">il pezzo sgocciola, si stacca e si tolgono i supporti</text></g></g>
+<!-- 5: post-cura UV -->
+<g data-k="op:0,0,0,0,1">
+  <rect x="340" y="44" width="140" height="14" fill="#8a5cf6" opacity="0.6"/>
+  <line x1="360" y1="62" x2="360" y2="80" class="flusso-linea" marker-end="url(#sc-punta)"/><line x1="410" y1="62" x2="410" y2="80" class="flusso-linea" marker-end="url(#sc-punta)"/><line x1="460" y1="62" x2="460" y2="80" class="flusso-linea" marker-end="url(#sc-punta)"/>
+  <g class="etichetta"><text x="40" y="90" text-anchor="start">lavaggio con alcol isopropilico, poi 1 minuto di luce UV intensa</text></g>
+</g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Ogni sezione del modello viene tracciata da un laser sulla superficie del materiale, che si fonde o polimerizza. Si lavorano polimeri, ceramiche, cera, metalli e perfino carta. <span class="pag">(p. 232)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>La macchina lavora da sola, spesso di notte. Non servono stampi: ogni modifica al progetto non costa nulla, e si ottengono geometrie complesse prima impossibili. <span class="pag">(p. 234)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Nella SLA e nella DMLS i pezzi devono essere sostenuti e i sottosquadri legati alla piattaforma; nella SLS la polvere non fusa fa da supporto. <span class="pag">(p. 234)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="5" aria-label="Mostra la fase 5 nello schema">Fase 5</button>Gli strati lasciano gradini sugli angoli acuti, quindi tutti i pezzi vanno rifiniti; la resina SLA trasparente può diventare lucida come vetro. <span class="pag">(p. 233)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>SLA: resine epossidiche che imitano ABS, PP/PE e PBT/ABS trasparente, alcune fino a 200 °C. SLS: polveri di nylon (Nylon 11 fino a 150 °C), caricate con vetro o carbonio, simili alla gomma o colorate. DMLS: leghe di nichel-bronzo e di acciaio. <span class="pag">(p. 234–235)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Pezzi unici, prototipi e piccole serie. <span class="pag">(p. 232)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Nessuno: non servono stampi. <span class="pag">(p. 232, 235)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Dipende dal tempo di costruzione; SLS la più economica, DMLS la più costosa; costruire più pezzi insieme lo riduce. Manodopera moderata, secondo la finitura. <span class="pag">(p. 232, 235–236)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Lento ma con consegna rapida: SLS 2–3 mm di altezza all'ora, SLA 1,2–12 mm all'ora, DMLS 2–12 mm³ all'ora; il raffreddamento SLS allunga il ciclo fino al 50%. <span class="pag">(p. 232, 235–236)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Alta definizione dei dettagli; la SLA ha la finitura migliore. La micromodellazione, con strati di 25 µm, rende quasi inutile la finitura. <span class="pag">(p. 232–233)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>SLS e SLA ±0,15 mm; DMLS ±0,05 mm. <span class="pag">(p. 233)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>SLS fino a 350 × 380 × 700 mm; SLA fino a 500 × 500 × 500 mm; DMLS fino a 250 × 250 × 185 mm; micromodellazione fino a 77 × 61 × 230 mm. Strati: SLA 0,05–0,1 mm, SLS 0,1 mm, DMLS 0,02–0,06 mm. <span class="pag">(p. 233–234)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Orientamento del pezzo</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-orientamento-ok-t v-orientamento-ok-d" class="mini-svg"><title id="v-orientamento-ok-t">Corretto: Tubo costruito in verticale</title><desc id="v-orientamento-ok-d">L'orientamento influisce su precisione e resistenza: un tubo costruito in piedi resta tondo.</desc><defs>
+  <pattern id="v-orientamento-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-orientamento-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-orientamento-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-orientamento-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="60" y="14" width="40" height="10" class="m-finito contorno"/><rect x="60" y="24" width="40" height="10" class="m-finito contorno"/><rect x="60" y="34" width="40" height="10" class="m-finito contorno"/><rect x="60" y="44" width="40" height="10" class="m-finito contorno"/><rect x="60" y="54" width="40" height="10" class="m-finito contorno"/><rect x="60" y="64" width="40" height="10" class="m-finito contorno"/><rect x="60" y="74" width="40" height="10" class="m-finito contorno"/><rect x="60" y="84" width="40" height="10" class="m-finito contorno"/><rect x="60" y="94" width="40" height="10" class="m-finito contorno"/><rect x="60" y="104" width="40" height="10" class="m-finito contorno"/><g class="etichetta"><text x="120" y="64" text-anchor="start">tondo</text></g></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-orientamento-ko-t v-orientamento-ko-d" class="mini-svg"><title id="v-orientamento-ko-t">Da evitare: Tubo costruito in orizzontale</title><desc id="v-orientamento-ko-d">Costruito sdraiato, il tubo viene leggermente ovale.</desc><defs>
+  <pattern id="v-orientamento-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-orientamento-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-orientamento-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-orientamento-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><ellipse cx="80" cy="64" rx="56" ry="40" fill="none" stroke="var(--finito)" stroke-width="10"/><line x1="20" y1="30" x2="140" y2="30" stroke="var(--testo)" stroke-width="0.8"/><line x1="20" y1="46" x2="140" y2="46" stroke="var(--testo)" stroke-width="0.8"/><line x1="20" y1="62" x2="140" y2="62" stroke="var(--testo)" stroke-width="0.8"/><line x1="20" y1="78" x2="140" y2="78" stroke="var(--testo)" stroke-width="0.8"/><line x1="20" y1="94" x2="140" y2="94" stroke="var(--testo)" stroke-width="0.8"/><circle cx="80" cy="24" r="12" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>L'orientamento incide su proprietà meccaniche e precisione: un tubo costruito in verticale resta tondo, in orizzontale viene leggermente ovale; i materiali caricati con fibre resistono meglio in certe direzioni. <span class="pag">(p. 234)</span></p></article>
+<article class="card"><h3>Grandi piani inclinati</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-piani-ok-t v-piani-ok-d" class="mini-svg"><title id="v-piani-ok-t">Corretto: Grandi superfici piane inclinate</title><desc id="v-piani-ok-d">Una grande superficie piana si costruisce inclinata, per non accumulare tensioni.</desc><defs>
+  <pattern id="v-piani-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-piani-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-piani-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-piani-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><g transform="rotate(-30 80 64)"><rect x="20" y="54" width="120" height="10" class="m-finito contorno"/><rect x="20" y="64" width="120" height="10" class="m-finito contorno"/></g></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-piani-ko-t v-piani-ko-d" class="mini-svg"><title id="v-piani-ko-t">Da evitare: Grande piano costruito in orizzontale</title><desc id="v-piani-ko-d">Costruito piatto, accumula troppe tensioni e si imbarca.</desc><defs>
+  <pattern id="v-piani-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-piani-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-piani-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-piani-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M15,70 Q80,48 145,70" fill="none" stroke-width="12" stroke-linejoin="round" style="stroke:var(--finito)"/><circle cx="80" cy="58" r="16" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Una grande superficie piana va costruita inclinata: costruita piatta accumula tensioni e si imbarca. <span class="pag">(p. 234)</span></p></article>
+<article class="card"><h3>Cerniere integrali in orizzontale</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-cerniere-ok-t v-cerniere-ok-d" class="mini-svg"><title id="v-cerniere-ok-t">Corretto: Cerniera integrale nel piano orizzontale</title><desc id="v-cerniere-ok-d">Le cerniere integrali si costruiscono in orizzontale: gli strati corrono lungo la cerniera e reggono le aperture ripetute.</desc><defs>
+  <pattern id="v-cerniere-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-cerniere-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-cerniere-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-cerniere-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="50" width="50" height="10" class="m-finito contorno"/><rect x="20" y="60" width="50" height="10" class="m-finito contorno"/><rect x="90" y="50" width="50" height="10" class="m-finito contorno"/><rect x="90" y="60" width="50" height="10" class="m-finito contorno"/><path d="M70,64 Q80,72 90,64" fill="none" stroke-width="3" stroke-linejoin="round" style="stroke:var(--finito)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-cerniere-ko-t v-cerniere-ko-d" class="mini-svg"><title id="v-cerniere-ko-t">Da evitare: Cerniera costruita in verticale</title><desc id="v-cerniere-ko-d">In verticale gli strati sono troppo corti: la cerniera cede presto.</desc><defs>
+  <pattern id="v-cerniere-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-cerniere-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-cerniere-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-cerniere-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="70" y="10" width="20" height="10" class="m-finito contorno"/><rect x="70" y="20" width="20" height="10" class="m-finito contorno"/><rect x="70" y="30" width="20" height="10" class="m-finito contorno"/><rect x="70" y="40" width="20" height="10" class="m-finito contorno"/><rect x="70" y="50" width="20" height="10" class="m-finito contorno"/><rect x="70" y="60" width="20" height="10" class="m-finito contorno"/><rect x="70" y="70" width="20" height="10" class="m-finito contorno"/><rect x="70" y="80" width="20" height="10" class="m-finito contorno"/><rect x="70" y="90" width="20" height="10" class="m-finito contorno"/><rect x="70" y="100" width="20" height="10" class="m-finito contorno"/><line x1="66" y1="60" x2="94" y2="60" stroke="var(--ko)" stroke-width="3"/><circle cx="80" cy="60" r="16" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>La cerniera integrale si costruisce sempre nel piano orizzontale: in verticale gli strati sarebbero troppo corti per resistere alle aperture e chiusure. <span class="pag">(p. 234)</span></p></article>
+<article class="card"><h3>Gradini degli strati</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-gradini-ok-t v-gradini-ok-d" class="mini-svg"><title id="v-gradini-ok-t">Corretto: Finitura prevista</title><desc id="v-gradini-ok-d">Costruendo a strati, sulle superfici molto inclinate restano gradini visibili: si prevede la finitura (sabbiatura, lucidatura, verniciatura).</desc><defs>
+  <pattern id="v-gradini-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-gradini-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-gradini-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-gradini-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,100 Q80,20 140,100" fill="none" stroke-width="8" stroke-linejoin="round" style="stroke:var(--finito)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-gradini-ko-t v-gradini-ko-d" class="mini-svg"><title id="v-gradini-ko-t">Da evitare: Superficie inclinata lasciata grezza</title><desc id="v-gradini-ko-d">Senza finitura i gradini degli strati restano visibili.</desc><defs>
+  <pattern id="v-gradini-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-gradini-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-gradini-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-gradini-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,100 V90 H30 V80 H40 V70 H50 V58 H62 V46 H80 H98 V58 H110 V70 H120 V80 H130 V90 H140 V100" fill="none" stroke-width="4" stroke-linejoin="round" style="stroke:var(--finito)"/><circle cx="45" cy="75" r="14" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Sulle superfici molto inclinate gli strati restano visibili: tutti i pezzi richiedono finitura all'uscita dalla macchina. <span class="pag">(p. 233, 237)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>I tre processi principali descritti nel capitolo; lo schema principale mostra la stereolitografia.</p><div class="griglia-card"><article class="card"><h3>Stereolitografia</h3><p class="originale" lang="en">Stereolithography (SLA)</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-sla-t var-sla-d" class="mini-svg"><title id="var-sla-t">Stereolitografia (SLA)</title><desc id="var-sla-d">Un laser UV solidifica una resina epossidica liquida strato per strato (0,05–0,1 mm), sopra una struttura di supporto. È la tecnica più diffusa, con la migliore finitura e precisione.</desc><defs>
+  <pattern id="var-sla-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-sla-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-sla-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-sla-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="40" y="40" width="140" height="74" style="fill:var(--grezzo)" opacity="0.35" stroke="var(--testo)"/>
+    <path d="M90,40 C86,20 100,12 104,4 H116 C120,12 134,20 130,40 Z" class="m-fuso contorno" transform="translate(0,46)"/>
+    <line x1="110" y1="0" x2="110" y2="40" stroke="var(--fuso)" stroke-width="3"/></svg></div><p>Laser UV su resina epossidica liquida; ideale per prototipi di forma e accoppiamento e per pezzi trasparenti, traslucidi od opachi. <span class="pag">(p. 232, 234)</span></p></article>
+<article class="card"><h3>Sinterizzazione laser selettiva</h3><p class="originale" lang="en">Selective laser sintering (SLS)</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-sls-t var-sls-d" class="mini-svg"><title id="var-sls-t">Sinterizzazione laser selettiva (SLS)</title><desc id="var-sls-d">Un laser CO₂ fonde polvere di nylon in strati di 0,1 mm, in azoto con meno dell'1% di ossigeno; la polvere non fusa sostiene i pezzi, che possono essere tanti, uno dentro l'altro.</desc><defs>
+  <pattern id="var-sls-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-sls-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-sls-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-sls-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="20" y="40" width="50" height="70" class="m-grezzo contorno"/><rect x="80" y="40" width="80" height="70" class="m-grezzo contorno"/><rect x="170" y="40" width="50" height="70" class="m-grezzo contorno"/>
+    <rect x="96" y="60" width="20" height="30" class="m-fuso contorno"/><rect x="124" y="50" width="22" height="20" class="m-fuso contorno"/>
+    <circle cx="80" cy="34" r="8" class="m-stampo contorno"/></svg></div><p>Laser CO₂ su polvere di nylon in una camera a 170 °C, appena sotto la fusione; pezzi simili agli stampati a iniezione, con cerniere integrali e incastri a scatto: adatta ai prototipi funzionali. <span class="pag">(p. 232, 234, 238)</span></p></article>
+<article class="card"><h3>Sinterizzazione laser diretta di metalli</h3><p class="originale" lang="en">Direct metal laser sintering (DMLS)</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-dmls-t var-dmls-d" class="mini-svg"><title id="var-dmls-t">Sinterizzazione laser diretta di metalli (DMLS)</title><desc id="var-dmls-d">Un laser CO₂ da 250 W sinterizza polveri metalliche su una piastra d'acciaio; il pezzo è denso al 98%, abbastanza resistente per stampi e prototipi funzionali, e si stacca con l'elettroerosione a filo.</desc><defs>
+  <pattern id="var-dmls-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-dmls-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-dmls-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-dmls-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="50" y="92" width="120" height="20" fill="url(#var-dmls-tratteggio)" class="contorno"/>
+    <path d="M70,92 V40 H150 V92 Z" class="m-stampo contorno"/>
+    <line x1="110" y1="0" x2="110" y2="40" stroke="var(--fuso)" stroke-width="3"/></svg></div><p>Laser CO₂ da 250 W su polveri metalliche, in azoto; per inserti di stampi, utensili e prototipi metallici. Un inserto in nichel-bronzo produce 20.000–30.000 pezzi, leghe più dure 100.000–200.000. <span class="pag">(p. 232, 234, 240)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="lavorazione-cnc.html">Lavorazione CNC</a> – toglie materiale invece di aggiungerlo <span class="pag">(p. 232)</span></li><li><a href="elettroerosione.html">Elettroerosione</a> – altro processo per asportazione; stacca i pezzi DMLS <span class="pag">(p. 233, 236)</span></li><li><a href="microfusione.html">Microfusione</a> – vantaggi geometrici simili, grazie agli stampi a perdere <span class="pag">(p. 233)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 232–241.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/prototipazione-rapida.js"></script>
+</body>
+</html>

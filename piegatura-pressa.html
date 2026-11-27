@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Piegatura alla pressa piegatrice – Processi produttivi per il design</title>
+<meta name="description" content="Un punzone spinto da un pistone idraulico piega la lamiera lungo una linea retta dentro una matrice: è la tecnica semplice e versatile delle carpenterie, dai prototipi alle piccole serie.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 1 – Formatura › Metalli</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Piegatura alla pressa piegatrice</h1>
+  <p class="originale" lang="en">Press Braking</p>
+  <p class="categoria">Parte 1 – Formatura · Metalli</p>
+  <p class="sintesi">Un punzone spinto da un pistone idraulico piega la lamiera lungo una linea retta dentro una matrice: è la tecnica semplice e versatile delle carpenterie, dai prototipi alle piccole serie.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="1800,2200,1800,1800">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="piegatura-pressa" data-alt="Modello 3D di una pressa piegatrice lunga, con il punzone in alto e la matrice a V in basso. Una lamiera rettangolare è appoggiata sulla matrice; il punzone scende e la lamiera si piega progressivamente fino a 90 gradi lungo una linea retta. Poi il punzone risale e il pezzo piegato, verde, viene sollevato.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Carico<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Discesa del punzone<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Piega completa<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Ritorno ed estrazione<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Carico</b>Il pezzo, già tagliato e forato da piano, viene appoggiato sulla matrice. <span class="pag">(p. 149–150)</span></li>
+    <li><b>Fase 2 – Discesa del punzone</b>Il pistone idraulico spinge il punzone, che piega la lamiera nella V; con la piegatura in aria l'angolo dipende da quanto scende. <span class="pag">(p. 149–150)</span></li>
+    <li><b>Fase 3 – Piega completa</b>Ogni piega richiede pochi secondi; le macchine a controllo numerico si riposizionano da sole fra una piega e l'altra. <span class="pag">(p. 149)</span></li>
+    <li><b>Fase 4 – Ritorno ed estrazione</b>Il punzone risale e il pezzo si toglie, oppure si esegue la stessa piega su tutto il lotto prima di riattrezzare la macchina. <span class="pag">(p. 149)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una pressa piegatrice lunga, con il punzone in alto e la matrice a V in basso. Una lamiera rettangolare è appoggiata sulla matrice; il punzone scende e la lamiera si piega progressivamente fino a 90 gradi lungo una linea retta. Poi il punzone risale e il pezzo piegato, verde, viene sollevato.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 -70 820 440" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Piegatura in aria in sezione</title>
+<desc id="sc-d">Sezione trasversale della piegatrice: in basso la matrice a V, in alto il punzone. Le fasi mostrano la lamiera piana, la discesa del punzone che la spinge nella V, la piega completa a 90° e il ritorno del punzone.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- matrice a V -->
+<path d="M320,214 H372 L410,256 L448,214 H500 V300 H320 Z" fill="url(#sc-tratteggio)" class="contorno"/>
+<rect x="300" y="300" width="220" height="18" class="macchina"/>
+<g class="etichetta"><text x="520" y="280" text-anchor="start">Matrice a V</text></g>
+<!-- lamiera -->
+<path d="M250,206 H570" fill="none" stroke-width="7" stroke-linejoin="round" style="stroke:var(--grezzo)" data-k="op:1,0,0,0" data-i="op:1"/>
+<path d="M271,126 L410,212 L549,126" fill="none" stroke-width="7" stroke-linejoin="round" style="stroke:var(--fuso)" data-k="op:0,1,0,0" data-i="op:0"/>
+<path d="M297,93 L410,216 L523,93" fill="none" stroke-width="7" stroke-linejoin="round" style="stroke:var(--fuso)" data-k="op:0,0,1,0" data-i="op:0"/>
+<g data-k="ty:0,0,0,-40;op:0,0,0,1" data-i="op:0"><path d="M297,93 L410,216 L523,93" fill="none" stroke-width="7" stroke-linejoin="round" style="stroke:var(--finito)"/></g>
+<g class="etichetta" data-k="op:1,0,0,0" data-i="op:1"><line x1="250" y1="206" x2="140" y2="195" class="richiamo"/><text x="140" y="200" text-anchor="start">Lamiera</text></g>
+<!-- punzone -->
+<g data-k="ty:-90,-6,0,-90" data-i="ty:-90">
+  <path d="M380,20 H440 V150 L410,206 L380,150 Z" fill="url(#sc-tratteggio)" class="contorno"/>
+  <rect x="330" y="-10" width="160" height="30" class="macchina"/>
+</g>
+<g class="etichetta"><text x="520" y="40" text-anchor="start">Punzone (pistone idraulico)</text></g>
+<g data-k="op:0,1,1,0"><line x1="410" y1="-60" x2="410" y2="-16" class="flusso-linea" marker-end="url(#sc-punta)"/></g>
+<g class="etichetta" data-k="op:0,1,1,0"><text x="140" y="350" text-anchor="start">il punzone scende solo quanto serve per l'angolo voluto</text></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Le presse piegatrici sono alla base della carpenteria in lamiera per piccole e medie serie, fino a circa 5000 pezzi. Il lavoro preparatorio si fa da piano, dove è più rapido. <span class="pag">(p. 148, 150)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>Il tonnellaggio dipende da lunghezza della piega, spessore, resistenza e raggio: una pressa da 100 t piega 3 m di acciaio da 5 mm su una matrice larga 32 mm. Una matrice più larga aumenta il raggio e riduce la forza. <span class="pag">(p. 148–149)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>Piegare aumenta la rigidità della lamiera, che diventa più resistente e leggera. <span class="pag">(p. 149)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Ogni piega è un'altra operazione e la macchina va predisposta: nelle grandi serie conviene spesso uno stampo più caro che riduca operazioni e tempi. <span class="pag">(p. 148, 150)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Quasi tutti i metalli: acciaio, alluminio, rame, titanio; i più duttili permettono spessori maggiori. <span class="pag">(p. 150)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Da pezzo unico a serie fino a circa 5000 pezzi. <span class="pag">(p. 148)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Nullo con punzoni e matrici standard; gli utensili speciali aumentano il prezzo unitario. <span class="pag">(p. 148, 150)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Da basso a moderato; manodopera alta per le lavorazioni manuali. <span class="pag">(p. 148, 150)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Fino a 6 pieghe al minuto; la preparazione della macchina può essere lunga. <span class="pag">(p. 148, 150)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Pieghe di alta qualità; l'aspetto dipende molto dall'operatore. <span class="pag">(p. 148, 150)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Pieghe precise entro ±0,1 mm; le macchine a controllo numerico si posizionano almeno entro 0,01 mm. <span class="pag">(p. 148–149)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Pieghe lunghe fino a 8 m, fino a 16 m affiancando due macchine; spessore massimo a freddo circa 50 mm. <span class="pag">(p. 148, 150)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Raggio interno di 1–3 spessori</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-raggio-ok-t v-raggio-ok-d" class="mini-svg"><title id="v-raggio-ok-t">Corretto: Raggio interno ≥ 1 spessore (3 nei materiali duri)</title><desc id="v-raggio-ok-d">Il raggio interno è circa pari allo spessore per i materiali duttili e a 3 volte per quelli duri.</desc><defs>
+  <pattern id="v-raggio-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-raggio-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-raggio-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-raggio-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,100 H70 Q90,100 90,80 V20" fill="none" stroke-width="10" stroke-linejoin="round" style="stroke:var(--finito)"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-raggio-ko-t v-raggio-ko-d" class="mini-svg"><title id="v-raggio-ko-t">Da evitare: Raggio troppo stretto</title><desc id="v-raggio-ko-d">Oltre la duttilità la superficie esterna della piega si strappa.</desc><defs>
+  <pattern id="v-raggio-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-raggio-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-raggio-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-raggio-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,100 H90 V20" fill="none" stroke-width="10" stroke-linejoin="round" style="stroke:var(--finito)"/><circle cx="94" cy="104" r="10" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Il raggio interno è circa pari allo spessore per i materiali duttili e a 3 volte per quelli duri. Per lo sviluppo del pezzo piano basta considerare l'arco lungo la linea media dello spessore. <span class="pag">(p. 150)</span></p></article>
+<article class="card"><h3>Solo pieghe rettilinee</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-rette-ok-t v-rette-ok-d" class="mini-svg"><title id="v-rette-ok-t">Corretto: Pieghe rettilinee</title><desc id="v-rette-ok-d">La pressa piega solo lungo linee rette, una alla volta.</desc><defs>
+  <pattern id="v-rette-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-rette-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-rette-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-rette-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,30 H140 V100 H20 Z" fill="none" stroke="var(--finito)" stroke-width="3"/><line x1="70" y1="30" x2="70" y2="100" stroke="var(--testo-2)" stroke-dasharray="4 3"/><line x1="110" y1="30" x2="110" y2="100" stroke="var(--testo-2)" stroke-dasharray="4 3"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-rette-ko-t v-rette-ko-d" class="mini-svg"><title id="v-rette-ko-t">Da evitare: Linea di piega curva</title><desc id="v-rette-ko-d">Una piega curva non si ottiene alla pressa: serve lo stampaggio.</desc><defs>
+  <pattern id="v-rette-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-rette-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-rette-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-rette-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,30 H140 V100 H20 Z" fill="none" stroke="var(--finito)" stroke-width="3"/><path d="M60,30 Q100,65 60,100" fill="none" stroke="var(--ko)" stroke-width="3" stroke-dasharray="4 3"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Il limite principale è che si piega solo lungo linee rette, con il punzone che preme su tutta la lunghezza; i pezzi cavi si ottengono saldando dopo la piegatura. <span class="pag">(p. 148, 150)</span></p></article>
+<article class="card"><h3>Pieghe vicine: punzone a collo d'oca</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-collo-ok-t v-collo-ok-d" class="mini-svg"><title id="v-collo-ok-t">Corretto: Profilo a U con punzone a collo d'oca</title><desc id="v-collo-ok-d">Due pieghe a 90° vicine formano un sottosquadro: un punzone a collo d'oca lo aggira e preme lungo tutta la piega.</desc><defs>
+  <pattern id="v-collo-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-collo-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-collo-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-collo-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M40,30 V100 H120 V30" fill="none" stroke-width="7" stroke-linejoin="round" style="stroke:var(--finito)"/><path d="M64,0 H96 V40 Q70,50 84,70 L80,96 L76,70 Q60,50 64,40 Z" fill="url(#v-collo-ok-tratteggio)" class="contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-collo-ko-t v-collo-ko-d" class="mini-svg"><title id="v-collo-ko-t">Da evitare: Profilo a U con punzone dritto</title><desc id="v-collo-ko-d">Un punzone dritto urta l'ala già piegata.</desc><defs>
+  <pattern id="v-collo-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-collo-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-collo-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-collo-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M40,30 V100 H120 V30" fill="none" stroke-width="7" stroke-linejoin="round" style="stroke:var(--finito)"/><path d="M110,0 H140 V60 L125,96 L110,60 Z" fill="url(#v-collo-ko-tratteggio)" class="contorno"/><circle cx="120" cy="40" r="12" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Due pieghe a 90° vicine formano un sottosquadro: servono punzoni sporgenti, a collo d'oca, che raggiungono la piega senza urtare l'ala già formata. <span class="pag">(p. 149–150)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>La piegatura in aria è lo schema principale; qui sotto gli altri tipi di matrice descritti nel testo.</p><div class="griglia-card"><article class="card"><h3>Piegatura a fondo</h3><p class="originale" lang="en">Bottom bending (V-die, coining)</p><div class="variante-schema"><svg viewBox="0 0 220 128" role="img" aria-labelledby="var-fondo-t var-fondo-d" class="mini-svg"><title id="var-fondo-t">Piegatura a fondo (coniatura)</title><desc id="var-fondo-d">Punzone e matrice a V accoppiati spingono la lamiera fino in fondo: più pressione, ma maggiore precisione.</desc><defs>
+  <pattern id="var-fondo-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-fondo-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-fondo-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-fondo-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M40,60 H90 L110,90 L130,60 H180 V120 H40 Z" fill="url(#var-fondo-tratteggio)" class="contorno"/>
+    <path d="M60,32 L110,88 L160,32" fill="none" stroke-width="6" stroke-linejoin="round" style="stroke:var(--fuso)"/><path d="M95,0 H125 V50 L110,84 L95,50 Z" fill="url(#var-fondo-tratteggio)" class="contorno"/></svg></div><p>Con punzone e matrice a V accoppiati, è riservata alla carpenteria di alta precisione perché richiede più pressione. <span class="pag">(p. 149)</span></p></article>
+<article class="card"><h3>Matrici ad angolo acuto</h3><p class="originale" lang="en">Acute angle dies</p><div class="variante-schema"><svg viewBox="0 0 220 128" role="img" aria-labelledby="var-acuta-t var-acuta-d" class="mini-svg"><title id="var-acuta-t">Matrici ad angolo acuto</title><desc id="var-acuta-d">Piegano la lamiera fino a 30°.</desc><defs>
+  <pattern id="var-acuta-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-acuta-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-acuta-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-acuta-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M40,60 H96 L110,110 L124,60 H180 V120 H40 Z" fill="url(#var-acuta-tratteggio)" class="contorno"/>
+    <path d="M90,14 L110,104 L130,14" fill="none" stroke-width="6" stroke-linejoin="round" style="stroke:var(--fuso)"/><g class="etichetta"><text x="140" y="50" text-anchor="start">30°</text></g></svg></div><p>Piegano la lamiera fino a 30°; la piegatura in aria arriva anch'essa ad angoli molto acuti, ma con meno precisione. <span class="pag">(p. 150)</span></p></article>
+<article class="card"><h3>Matrici segmentate</h3><p class="originale" lang="en">Segmented dies</p><div class="variante-schema"><svg viewBox="0 0 220 128" role="img" aria-labelledby="var-segmentata-t var-segmentata-d" class="mini-svg"><title id="var-segmentata-t">Matrici segmentate</title><desc id="var-segmentata-d">Piegano solo per tratti di lunghezza definita: più pieghe insieme.</desc><defs>
+  <pattern id="var-segmentata-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-segmentata-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-segmentata-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-segmentata-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="30" y="70" width="44" height="40" class="m-stampo contorno"/><rect x="90" y="70" width="44" height="40" class="m-stampo contorno"/><rect x="150" y="70" width="44" height="40" class="m-stampo contorno"/>
+    <path d="M20,60 H200" fill="none" stroke-width="5" stroke-linejoin="round" style="stroke:var(--finito)"/></svg></div><p>Piegano tratti di lunghezza definita, così si fanno più pieghe insieme; la pressa ottiene anche profili lunghi, rastremati e segmentati, impossibili con profilatura o estrusione. <span class="pag">(p. 150)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="profilatura-rulli.html">Profilatura a rulli</a> – profili continui a spessore costante <span class="pag">(p. 148)</span></li><li><a href="stampaggio-lamiera.html">Stampaggio della lamiera</a> – forme ondulate complesse in una sola operazione <span class="pag">(p. 148)</span></li><li><a href="punzonatura-tranciatura.html">Punzonatura e tranciatura</a> – per preparare i grezzi <span class="pag">(p. 150)</span></li><li><a href="taglio-laser.html">Taglio laser</a> – per preparare i grezzi <span class="pag">(p. 150)</span></li><li><a href="battitura-lamiera.html">Battitura della lamiera</a> – usa anche la pressa piegatrice <span class="pag">(p. 72)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 148–151.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/piegatura-pressa.js"></script>
+</body>
+</html>

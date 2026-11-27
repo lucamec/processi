@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fustellatura – Processi produttivi per il design</title>
+<meta name="description" content="Lame d'acciaio montate su una tavola di legno tagliano, mezzo-tagliano, perforano e cordonano un foglio in un solo colpo: è il modo più economico per ricavare scatole, vassoi ed etichette da materiali non metallici.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 2 – Taglio › Meccanico</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Fustellatura</h1>
+  <p class="originale" lang="en">Die Cutting</p>
+  <p class="categoria">Parte 2 – Taglio · Meccanico</p>
+  <p class="sintesi">Lame d'acciaio montate su una tavola di legno tagliano, mezzo-tagliano, perforano e cordonano un foglio in un solo colpo: è il modo più economico per ricavare scatole, vassoi ed etichette da materiali non metallici.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="1800,2200,1800,2200">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="fustellatura" data-alt="Modello 3D di una fustellatrice piana. Sopra, una tavola di legno con lame scure che disegnano la rete a croce di una scatola e lame chiare arrotondate sulle linee di piega; sotto, un foglio di cartone su un piano d'acciaio. Il piano sale, preme il foglio contro le lame e ridiscende; la rete ritagliata si solleva, diventa verde e i quattro lembi si piegano formando una scatola, mentre il foglio forato resta come sfrido.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Carico<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Taglio<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Espulsione<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Separazione<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Carico</b>Il foglio si posa sul piano di taglio d'acciaio. <span class="pag">(p. 268)</span></li>
+    <li><b>Fase 2 – Taglio</b>Il piano sale contro la fustella: le lame attraversano il foglio, quelle più corte cordonano o mezzo-tagliano; servono di solito 5–15 tonnellate. <span class="pag">(p. 268)</span></li>
+    <li><b>Fase 3 – Espulsione</b>I cuscinetti in schiuma o gomma ai lati delle lame premono il foglio e lo spingono fuori, perché non resti incastrato. <span class="pag">(p. 267–268)</span></li>
+    <li><b>Fase 4 – Separazione</b>Le forme ritagliate si staccano facilmente dal foglio, che diventa sfrido; nel caso della scatola, le pieghe cordonate si piegano subito. <span class="pag">(p. 268–269)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di una fustellatrice piana. Sopra, una tavola di legno con lame scure che disegnano la rete a croce di una scatola e lame chiare arrotondate sulle linee di piega; sotto, un foglio di cartone su un piano d'acciaio. Il piano sale, preme il foglio contro le lame e ridiscende; la rete ritagliata si solleva, diventa verde e i quattro lembi si piegano formando una scatola, mentre il foglio forato resta come sfrido.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 40 820 270" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Fustellatura piana, in sezione</title>
+<desc id="sc-d">Sezione di una fustella di legno con due lame di taglio, una lama cordonatrice e cuscinetti di gomma, sopra un foglio su un piano di taglio. Le fasi mostrano il carico, il piano che sale e taglia, i cuscinetti che espellono il foglio e il pezzo che si stacca dallo sfrido.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<!-- fustella: tavola di legno, lame, cuscinetti -->
+<rect x="180" y="60" width="460" height="50" class="m-grezzo contorno"/>
+<g class="etichetta"><text x="180" y="58" text-anchor="start">Fustella: lame d'acciaio su tavola di legno</text></g>
+<rect x="237" y="110" width="6" height="44" class="scuro"/><rect x="577" y="110" width="6" height="44" class="scuro"/>
+<rect x="406" y="110" width="8" height="36" rx="4" class="m-stampo contorno"/>
+<g data-k="sy:1,0.45,1,1" data-i="sy:1" data-o="240,110"><rect x="214" y="110" width="20" height="40" fill="#e98fa0" class="contorno"/><rect x="246" y="110" width="20" height="40" fill="#e98fa0" class="contorno"/></g><g data-k="sy:1,0.45,1,1" data-i="sy:1" data-o="580,110"><rect x="554" y="110" width="20" height="40" fill="#e98fa0" class="contorno"/><rect x="586" y="110" width="20" height="40" fill="#e98fa0" class="contorno"/></g>
+<g class="etichetta"><line x1="606" y1="130" x2="660" y2="135" class="richiamo"/><text x="660" y="140" text-anchor="start">Cuscinetti in gomma</text></g>
+
+<!-- piano di taglio con il foglio: sale verso la fustella -->
+<g data-k="ty:0,-46,0,0" data-i="ty:0">
+  <rect x="160" y="210" width="500" height="20" class="m-stampo contorno"/>
+  <rect x="170" y="196" width="480" height="14" class="m-grezzo contorno" data-k="op:1,1,0,0" data-i="op:1"/>
+  <g data-k="op:0,0,1,1" data-i="op:0">
+    <rect x="170" y="196" width="68" height="14" class="m-grezzo contorno"/><rect x="582" y="196" width="68" height="14" class="m-grezzo contorno"/>
+  </g>
+  <g data-k="op:0,0,1,1;ty:0,0,0,-60" data-i="op:0;ty:0">
+    <path d="M242,196 H578 V210 H242 Z" class="m-finito contorno"/>
+    <path d="M404,196 Q410,204 416,196" fill="#eef1f4" stroke="var(--testo)"/>
+  </g>
+</g>
+<g class="etichetta"><line x1="180" y1="200" x2="20" y2="175" class="richiamo"/><text x="20" y="180" text-anchor="start">Foglio (cartone, plastica, feltro, schiuma…)</text></g>
+<g class="etichetta"><line x1="170" y1="224" x2="20" y2="265" class="richiamo"/><text x="20" y="270" text-anchor="start">Piano di taglio in acciaio, spinto da un pistone idraulico</text></g>
+<g data-k="op:0,1,0,0"><line x1="410" y1="300" x2="410" y2="250" class="flusso-linea" marker-end="url(#sc-punta)"/><g class="etichetta"><text x="440" y="290" text-anchor="start">in un colpo: taglio passante e cordonatura (5–15 t)</text></g></g>
+<g data-k="op:0,0,1,0"><g class="etichetta"><text x="440" y="290" text-anchor="start">il piano scende, i cuscinetti spingono fuori il foglio</text></g></g>
+<g data-k="op:0,0,0,1"><g class="etichetta"><text x="440" y="290" text-anchor="start">il pezzo si stacca; il resto del foglio è sfrido</text></g></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Tre elementi: la fustella di legno con le lame d'acciaio, la pressa con il piano inferiore, e il foglio. Le sedi delle lame si tagliano di solito al laser, e le lame usurate si sostituiscono facilmente. <span class="pag">(p. 268)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>Profondità e forma di ogni lama decidono se taglia, mezzo-taglia, cordona o perfora; il numero e l'angolo delle linee non cambiano il costo dell'operazione. <span class="pag">(p. 266)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>La pressione dipende da spessore e tipo di materiale; alcune presse arrivano a 400 tonnellate e si possono tagliare più fogli insieme. <span class="pag">(p. 268)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>È l'opposto della punzonatura, dove si toglie materiale dal pezzo. Alcuni materiali resistono al mezzo taglio e possono lasciare un alone o delaminarsi: servono prove. <span class="pag">(p. 266–267)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Plastica alveolare, lastre e film plastici, film autoadesivi, cartoncino, cartone ondulato, feltro, schiuma, gomma, cuoio, impiallacciatura, tessuto, metalli molto sottili, fibre di rinforzo, magneti flessibili, sughero, vinile, Tyvek®. <span class="pag">(p. 270)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Da piccole serie (anche 50 pezzi) a grandi volumi. <span class="pag">(p. 266)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Basso: fustelle in legno con lame che si consumano molto lentamente. <span class="pag">(p. 266, 270)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Basso; manodopera bassa nei sistemi automatici, un po' più alta nei manuali; l'avviamento può costare per il fermo macchina. <span class="pag">(p. 266, 270)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Molto rapido: fino a 4.000 fogli all'ora; con 4 pezzi per foglio, 16.000 pezzi all'ora. <span class="pag">(p. 266, 270)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Bordo di alta qualità, ripetibile su grandi volumi. <span class="pag">(p. 266–267)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Profondità di taglio entro 50 µm. <span class="pag">(p. 267–268)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Fogli fino a 1,5 × 2,5 m; lo spessore massimo dipende dal materiale (<span class="nd">n.d.</span>). <span class="pag">(p. 268)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Raggio minimo delle lame</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-raggio-ok-t v-raggio-ok-d" class="mini-svg"><title id="v-raggio-ok-t">Corretto: Curve con raggio di almeno 5 mm</title><desc id="v-raggio-ok-d">Le lame si piegano fino a 5 mm di raggio; i fori più piccoli si fanno con un punzone sagomato, gli spigoli vivi unendo due lame.</desc><defs>
+  <pattern id="v-raggio-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-raggio-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-raggio-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-raggio-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,90 V50 Q20,30 40,30 H140" fill="none" stroke="var(--testo)" stroke-width="4"/><g class="etichetta"><text x="60" y="70" text-anchor="start">R ≥ 5 mm</text></g></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-raggio-ko-t v-raggio-ko-d" class="mini-svg"><title id="v-raggio-ko-t">Da evitare: Curve troppo strette</title><desc id="v-raggio-ko-d">Una lama d'acciaio non si piega sotto i 5 mm di raggio.</desc><defs>
+  <pattern id="v-raggio-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-raggio-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-raggio-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-raggio-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,90 V36 Q20,30 26,30 H140" fill="none" stroke="var(--testo)" stroke-width="4"/><circle cx="24" cy="34" r="12" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Le lame si piegano fino a 5 mm di raggio; i fori più piccoli si tagliano con un punzone sagomato e gli spigoli vivi unendo due lame all'angolo giusto. <span class="pag">(p. 268)</span></p></article>
+<article class="card"><h3>Distanza minima fra le lame</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-distanza-ok-t v-distanza-ok-d" class="mini-svg"><title id="v-distanza-ok-t">Corretto: Lame distanti almeno 5 mm</title><desc id="v-distanza-ok-d">Fra due lame servono almeno 5 mm, altrimenti il materiale non viene espulso.</desc><defs>
+  <pattern id="v-distanza-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-distanza-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-distanza-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-distanza-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="40" y="30" width="6" height="60" class="scuro"/><rect x="110" y="30" width="6" height="60" class="scuro"/><g class="etichetta"><text x="78" y="110" text-anchor="middle">≥ 5 mm</text></g></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-distanza-ko-t v-distanza-ko-d" class="mini-svg"><title id="v-distanza-ko-t">Da evitare: Lame troppo vicine</title><desc id="v-distanza-ko-d">Una striscia sottile resta incastrata e intasa la fustella.</desc><defs>
+  <pattern id="v-distanza-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-distanza-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-distanza-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-distanza-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="70" y="30" width="6" height="60" class="scuro"/><rect x="84" y="30" width="6" height="60" class="scuro"/><circle cx="80" cy="60" r="18" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Fra due lame servono almeno 5 mm: sotto questo valore l'espulsione del materiale diventa un problema, e geometrie fitte possono intasare la fustella. <span class="pag">(p. 268)</span></p></article>
+<article class="card"><h3>Sezioni sottili collegate</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sezioni-ok-t v-sezioni-ok-d" class="mini-svg"><title id="v-sezioni-ok-t">Corretto: Parti sottili legate a parti più robuste</title><desc id="v-sezioni-ok-d">Le sezioni sottili vanno collegate a sezioni più spesse, per non creare problemi di espulsione; i pezzi si annidano nel foglio.</desc><defs>
+  <pattern id="v-sezioni-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sezioni-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sezioni-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sezioni-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><path d="M20,40 H140 V60 H90 V100 H70 V60 H20 Z" class="m-finito contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-sezioni-ko-t v-sezioni-ko-d" class="mini-svg"><title id="v-sezioni-ko-t">Da evitare: Striscia sottile isolata</title><desc id="v-sezioni-ko-d">Una striscia sottile e libera si incastra o si strappa all'espulsione.</desc><defs>
+  <pattern id="v-sezioni-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-sezioni-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-sezioni-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-sezioni-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="40" width="120" height="20" class="m-finito contorno"/><rect x="74" y="70" width="8" height="40" class="m-finito contorno"/><circle cx="78" cy="90" r="16" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Le parti sottili vanno legate a sezioni più spesse; annidare i pezzi nel foglio riduce materiale, tempo, sfrido e costi. <span class="pag">(p. 268)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Le operazioni che la stessa fustella può eseguire in un colpo.</p><div class="griglia-card"><article class="card"><h3>Taglio passante</h3><p class="originale" lang="en">Cutting through</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-passante-t var-passante-d" class="mini-svg"><title id="var-passante-t">Taglio passante</title><desc id="var-passante-d">La lama attraversa tutto il foglio fino al piano di taglio: si ritagliano reti di scatole, vassoi e sagome.</desc><defs>
+  <pattern id="var-passante-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-passante-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-passante-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-passante-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="20" y="60" width="180" height="14" class="m-grezzo contorno"/><rect x="106" y="20" width="6" height="56" class="scuro"/>
+    <rect x="10" y="74" width="200" height="12" class="m-stampo contorno"/></svg></div><p>La lama attraversa il foglio fino al piano di taglio. <span class="pag">(p. 266, 268)</span></p></article>
+<article class="card"><h3>Mezzo taglio</h3><p class="originale" lang="en">Kiss cutting</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-mezzo-t var-mezzo-d" class="mini-svg"><title id="var-mezzo-t">Mezzo taglio (kiss cut)</title><desc id="var-mezzo-d">Si taglia solo lo strato superiore lasciando intatto il supporto: è il metodo delle etichette autoadesive, con precisione entro 50 µm.</desc><defs>
+  <pattern id="var-mezzo-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-mezzo-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-mezzo-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-mezzo-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="20" y="58" width="180" height="8" class="m-finito contorno"/><rect x="20" y="66" width="180" height="8" class="m-grezzo contorno"/>
+    <rect x="106" y="20" width="6" height="46" class="scuro"/><rect x="10" y="74" width="200" height="12" class="m-stampo contorno"/></svg></div><p>Taglia lo strato superiore e lascia intatto il supporto, come nelle etichette autoadesive; richiede più messa a punto. <span class="pag">(p. 266, 268)</span></p></article>
+<article class="card"><h3>Cordonatura e perforazione</h3><p class="originale" lang="en">Scoring and perforating</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-cordonatura-t var-cordonatura-d" class="mini-svg"><title id="var-cordonatura-t">Cordonatura e perforazione</title><desc id="var-cordonatura-d">Lame arrotondate segnano le pieghe (l'angolo dipende dal tipo di lama), lame dentate perforano: tutto nello stesso colpo.</desc><defs>
+  <pattern id="var-cordonatura-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-cordonatura-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-cordonatura-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-cordonatura-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M20,60 H90 Q100,72 110,60 H200" fill="none" stroke="var(--grezzo)" stroke-width="12"/>
+    <rect x="94" y="16" width="12" height="34" rx="6" class="m-stampo contorno"/>
+    <rect x="140" y="54" width="8" height="12" fill="#eef1f4"/><rect x="156" y="54" width="8" height="12" fill="#eef1f4"/><rect x="172" y="54" width="8" height="12" fill="#eef1f4"/><rect x="188" y="54" width="8" height="12" fill="#eef1f4"/></svg></div><p>Segna le pieghe o perfora; il cartone ondulato si può cordonare con una striscia nervata sul piano. <span class="pag">(p. 266, 268)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="punzonatura-tranciatura.html">Punzonatura e tranciatura</a> – per le lamiere <span class="pag">(p. 266)</span></li><li><a href="taglio-getto-acqua.html">Taglio a getto d'acqua</a> – per lamiere e vetro <span class="pag">(p. 266)</span></li><li><a href="taglio-laser.html">Taglio laser</a> – per le lamiere <span class="pag">(p. 266)</span></li><li><a href="taglio-vetro.html">Taglio del vetro per incisione</a> – per le lastre di vetro <span class="pag">(p. 266)</span></li><li><a href="polpa-carta.html">Stampaggio della polpa di carta</a> – riusa gli sfridi di cartone <span class="pag">(p. 270)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 266–271.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/fustellatura.js"></script>
+</body>
+</html>

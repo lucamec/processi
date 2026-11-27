@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saldatura a fascio (laser ed elettronico) – Processi produttivi per il design</title>
+<meta name="description" content="Un fascio laser o di elettroni concentra tanta energia in un punto da aprire un &quot;keyhole&quot; nel giunto: saldature strette, profonde e rapide, con zona termicamente alterata ridotta, anche in spessori molto elevati.">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a href="index.html">Processi produttivi per il design</a>
+    <span class="briciole">Parte 3 – Giunzione › Termico</span>
+  </div>
+</header>
+<main id="contenuto" class="contenitore">
+
+<!-- 1. Titolo -->
+<section aria-labelledby="titolo">
+  <h1 id="titolo">Saldatura a fascio (laser ed elettronico)</h1>
+  <p class="originale" lang="en">Power Beam Welding</p>
+  <p class="categoria">Parte 3 – Giunzione · Termico</p>
+  <p class="sintesi">Un fascio laser o di elettroni concentra tanta energia in un punto da aprire un &quot;keyhole&quot; nel giunto: saldature strette, profonde e rapide, con zona termicamente alterata ridotta, anche in spessori molto elevati.</p>
+</section>
+
+<!-- 2. Schema animato -->
+<section class="sezione" aria-labelledby="s-schema">
+  <h2 id="s-schema"><span class="num">2</span>Schema del ciclo</h2>
+  <div class="schema" id="schema" data-durate="1800,1800,2800,2000">
+  <div class="schema-griglia">
+    <div>
+      <div class="vista-3d" data-scena="saldatura-fascio" data-alt="Modello 3D di due lastre d'acciaio spesse, accostate sotto una testa laser. Le lastre si avvicinano, la testa scende e un fascio arancione apre un pozzetto luminoso che attraversa tutto lo spessore. La testa avanza lungo il giunto lasciando una saldatura sottilissima e profonda, visibile anche sulla faccia frontale, che raffreddandosi diventa verde.">
+        <div class="tela-cornice"><div class="tela-3d"></div><div class="etichette-3d" aria-hidden="true"></div></div>
+        <div class="controlli-3d">
+          <button type="button" data-azione="taglio" aria-pressed="true">Spaccato</button>
+          <button type="button" data-azione="camera">Vista iniziale</button>
+          
+          <span class="suggerimento">Trascina per ruotare · rotella o pizzico per lo zoom</span>
+        </div>
+      </div>
+      <div class="controlli">
+        <button type="button" data-azione="prec">◀ Fase precedente</button>
+        <button type="button" data-azione="play" aria-pressed="false">▶ Play</button>
+        <button type="button" data-azione="succ">Fase successiva ▶</button>
+        <p class="nota-movimento" hidden>Movimento ridotto attivo nelle preferenze di sistema: l'animazione resta ferma, usa i pulsanti per passare da una fase all'altra.</p>
+      </div>
+      <ol class="barra-fasi" aria-label="Fasi del ciclo">
+        <li><button type="button" data-fase="1" aria-current="step">1. Allineamento<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="2">2. Messa a fuoco<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="3">3. Keyhole<span class="avanz"></span></button></li>
+        <li><button type="button" data-fase="4">4. Solidificazione<span class="avanz"></span></button></li>
+      </ol>
+      <p class="annuncio sr-only" aria-live="polite"></p>
+    </div>
+    <div class="legenda" role="group" aria-label="Legenda dei colori">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+  <pattern id="legenda-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="legenda-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="legenda-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="legenda-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs></svg>
+  <p class="legenda-titolo">Legenda</p>
+  <ul><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-stampo contorno" fill="url(#legenda-tratteggio)"/></svg>Stampo / utensile</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-grezzo contorno"/></svg>Materiale grezzo (granuli, polvere, lamiera)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-fuso contorno"/></svg>Materiale fuso o in lavorazione (accento)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-finito sezionato contorno"/></svg>Pezzo finito (solidificato)</li><li><svg width="22" height="16" aria-hidden="true" focusable="false"><rect x="1" y="1" width="20" height="14" class="m-flusso contorno"/></svg>Flussi: calore, pressione, vuoto, aria</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><line x1="2" y1="8" x2="18" y2="8" class="flusso-linea" marker-end="url(#legenda-punta)"/></svg>Freccia continua: pressione o movimento del fluido</li>
+    <li><svg width="22" height="16" aria-hidden="true" focusable="false"><path d="M4,2 q4,2 0,4 q-4,2 0,4 q4,2 0,4" class="flusso-linea" fill="none"/></svg>Linea ondulata: calore</li>
+  </ul>
+  <p class="legenda-nota">Il tratteggio indica le parti sezionate: scuro a 45° per stampi e utensili, chiaro a −45° per il pezzo.</p>
+</div>
+  </div>
+  <ol class="didascalie">
+    <li class="attiva"><b>Fase 1 – Allineamento</b>Il giunto deve rispettare tolleranze strette ed essere allineato con il fascio: servono maschere e morsetti precisi. <span class="pag">(p. 290)</span></li>
+    <li><b>Fase 2 – Messa a fuoco</b>Il fascio arriva alla testa con specchi o fibra ottica; una lente lo concentra in un punto di 0,1–1 mm sulla superficie, sotto un gas di protezione. <span class="pag">(p. 290)</span></li>
+    <li><b>Fase 3 – Keyhole</b>L'energia concentrata fonde o vaporizza il materiale e apre un foro che porta il calore in profondità; la testa avanza, per esempio a 7 kW su 8 mm di acciaio a 1,5 m al minuto. <span class="pag">(p. 288, 290)</span></li>
+    <li><b>Fase 4 – Solidificazione</b>Il materiale fuso si richiude dietro il fascio in una saldatura omogenea, stretta e profonda, con una zona termicamente alterata più piccola dell'arco. <span class="pag">(p. 288)</span></li>
+  </ol>
+  <p class="alternativa-testuale"><b>Descrizione della vista 3D.</b> Modello 3D di due lastre d'acciaio spesse, accostate sotto una testa laser. Le lastre si avvicinano, la testa scende e un fascio arancione apre un pozzetto luminoso che attraversa tutto lo spessore. La testa avanza lungo il giunto lasciando una saldatura sottilissima e profonda, visibile anche sulla faccia frontale, che raffreddandosi diventa verde.</p>
+  <h3 class="titolo-sezione2d">Schema in sezione (2D)</h3>
+  <div class="schema-scorri"><svg class="schema-svg" viewBox="0 20 820 340" role="img" aria-labelledby="sc-t sc-d">
+<title id="sc-t">Saldatura laser con keyhole, in sezione trasversale</title>
+<desc id="sc-d">Sezione trasversale di due lastre spesse accostate, con la testa laser sopra. Le fasi mostrano l'allineamento del giunto, il fascio messo a fuoco con il gas di protezione, il keyhole che penetra tutto lo spessore e la saldatura stretta con la sua piccola zona alterata.</desc>
+<defs>
+  <pattern id="sc-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="sc-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="sc-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="sc-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+
+<rect x="140" y="300" width="540" height="12" class="macchina"/>
+<!-- lamiere spesse che si accostano -->
+<g data-k="tx:0,0,0,0" data-i="tx:-40"><rect x="180" y="180" width="228" height="120" fill="url(#sc-tratteggio)" class="contorno"/></g>
+<g data-k="tx:0,0,0,0" data-i="tx:40"><rect x="412" y="180" width="228" height="120" fill="url(#sc-tratteggio)" class="contorno"/></g>
+<g class="etichetta"><text x="20" y="340" text-anchor="start">Giunto con tolleranze strette, allineato al fascio</text></g>
+<!-- ZTA stretta -->
+<rect x="396" y="180" width="28" height="120" style="fill:var(--fuso)" fill-opacity="0.2" data-k="op:0,0,1,1" data-i="op:0"/>
+<!-- keyhole e cordone -->
+<path d="M404,180 L407,296 H413 L416,180 Z" style="fill:var(--fuso)" data-k="op:0,0,1,0;sy:0,0,1,1" data-i="op:0;sy:0" data-o="410,180"/>
+<path d="M402,180 L407,298 H413 L418,180 Z" class="m-finito contorno" data-k="op:0,0,0,1" data-i="op:0"/>
+<g data-k="op:0,0,1,0"><g class="etichetta"><line x1="414" y1="250" x2="470" y2="245" class="richiamo"/><text x="470" y="250" text-anchor="start">keyhole: il calore arriva in profondità</text></g></g>
+<g data-k="op:0,0,0,1"><g class="etichetta"><line x1="418" y1="250" x2="470" y2="245" class="richiamo"/><text x="470" y="250" text-anchor="start">saldatura stretta e profonda, ZTA ridotta</text></g></g>
+
+<!-- testa laser: lente e fascio -->
+<g data-k="ty:-20,0,0,-20" data-i="ty:-20">
+  <rect x="380" y="30" width="60" height="70" class="m-stampo contorno"/>
+  <ellipse cx="410" cy="100" rx="26" ry="7" style="fill:var(--flusso)" opacity="0.6"/>
+</g>
+<path d="M396,104 L410,178 L424,104 Z" style="fill:var(--fuso)" fill-opacity="0.5" data-k="op:0,1,1,0" data-i="op:0"/>
+<g data-k="op:0,1,1,0"><path d="M370,120 L392,160 M450,120 L428,160" stroke="var(--flusso)" stroke-width="2" stroke-dasharray="4 3"/></g>
+<g class="etichetta"><text x="460" y="60" text-anchor="start">Fascio laser e lente di focalizzazione</text></g>
+<g data-k="op:0,1,0,0"><g class="etichetta"><text x="380" y="130" text-anchor="start">punto di 0,1–1 mm, a fuoco sulla superficie; gas di protezione</text></g></g>
+<g data-k="op:1,0,0,0"><line x1="120" y1="240" x2="170" y2="240" class="flusso-linea" marker-end="url(#sc-punta)"/><line x1="700" y1="240" x2="650" y2="240" class="flusso-linea" marker-end="url(#sc-punta)"/></g>
+
+</svg></div>
+</div>
+  
+</section>
+
+<!-- 3. Come funziona -->
+<section class="sezione come" aria-labelledby="s-come">
+  <h2 id="s-come"><span class="num">3</span>Come funziona</h2>
+  <p><button type="button" class="rimando-fase" data-vai="1" aria-label="Mostra la fase 1 nello schema">Fase 1</button>Come l'arco, i processi a fascio fondono l'interfaccia del giunto; ma il calore non viene da un arco elettrico, bensì dall'energia concentrata nel fascio. <span class="pag">(p. 288)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="2" aria-label="Mostra la fase 2 nello schema">Fase 2</button>I laser possono essere CO₂, a diodi, Nd:YAG, a disco o a fibra; il Nd:YAG e la fibra viaggiano anche in fibra ottica e saldano su 5 assi, con profili, rotazioni e punti (fino a 120.000 punti all'ora). <span class="pag">(p. 288, 290)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="3" aria-label="Mostra la fase 3 nello schema">Fase 3</button>Gli stessi fasci possono anche tagliare, lavorare e forare. Nel fascio elettronico le densità di potenza arrivano a 30.000 W/mm². <span class="pag">(p. 288)</span></p>
+  <p><button type="button" class="rimando-fase" data-vai="4" aria-label="Mostra la fase 4 nello schema">Fase 4</button>Più velocità, ZTA stretta e poca distorsione; si uniscono anche metalli diversi e, con il laser, termoplastici diversi fra loro. <span class="pag">(p. 288–289)</span></p>
+</section>
+
+<!-- 4. Scheda caratteristiche -->
+<section class="sezione" aria-labelledby="s-scheda">
+  <h2 id="s-scheda"><span class="num">4</span>Scheda caratteristiche</h2>
+  <table><caption class="sr-only">Caratteristiche del processo</caption><tbody><tr><th scope="row">Materiali lavorabili</th><td>Metalli ferrosi e non ferrosi, soprattutto acciai, rame, alluminio (serie 5000 e 6000), magnesio e titanio; il fascio elettronico solo metalli conduttivi. Il laser salda anche termoplastici come PP, PE, ABS, POM e PMMA, e tessuti. <span class="pag">(p. 288–290)</span></td></tr><tr><th scope="row">Volumi / lotti tipici</th><td>Da applicazioni specialistiche alla produzione di massa. <span class="pag">(p. 288–289)</span></td></tr><tr><th scope="row">Costo attrezzatura</th><td>Nessuno, ma servono maschere e morsetti precisi; macchine molto costose, specie per il fascio elettronico. <span class="pag">(p. 288, 290)</span></td></tr><tr><th scope="row">Costo unitario</th><td>Alto; manodopera alta. <span class="pag">(p. 288, 290)</span></td></tr><tr><th scope="row">Tempo ciclo</th><td>Rapido: il fascio elettronico salda fino a 10 m al minuto in spessori elevati; la preparazione e il vuoto (fino a 30 minuti) allungano i tempi. <span class="pag">(p. 288, 290)</span></td></tr><tr><th scope="row">Qualità superficiale</th><td>Giunti molto resistenti, rapidi e uniformi; sulle plastiche giunti di altissima qualità senza tracce in superficie. <span class="pag">(p. 288)</span></td></tr><tr><th scope="row">Precisione / tolleranze</th><td>Saldature precise; tolleranze numeriche: <span class="nd">n.d.</span> <span class="pag">(p. 288)</span></td></tr><tr><th scope="row">Dimensioni tipiche dei pezzi</th><td>Laser: soprattutto sotto i 15 mm. Fascio elettronico: 0,1–450 mm secondo il materiale (acciaio fino a 150 mm, alluminio 450 mm, rame 100 mm). <span class="pag">(p. 288, 290)</span><span class="nota-ocr">Densità di potenza minima del laser: <span class="nd">n.d.</span> (OCR &quot;loo W/mm2&quot;)</span></td></tr></tbody></table>
+</section>
+
+<!-- 5. Vincoli progettuali -->
+<section class="sezione" aria-labelledby="s-vincoli">
+  <h2 id="s-vincoli"><span class="num">5</span>Vincoli progettuali</h2>
+  <div class="griglia-card"><article class="card"><h3>Giunto preciso e allineato</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-giunto-ok-t v-giunto-ok-d" class="mini-svg"><title id="v-giunto-ok-t">Corretto: Giunto preciso e allineato</title><desc id="v-giunto-ok-d">Per una buona saldatura testa a testa il giunto deve rispettare tolleranze strette ed essere allineato al fascio.</desc><defs>
+  <pattern id="v-giunto-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-giunto-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-giunto-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-giunto-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="40" width="58" height="50" fill="url(#v-giunto-ok-tratteggio)" class="contorno"/><rect x="82" y="40" width="58" height="50" fill="url(#v-giunto-ok-tratteggio)" class="contorno"/><path d="M80,10 V40" stroke="var(--fuso)" stroke-width="3"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-giunto-ko-t v-giunto-ko-d" class="mini-svg"><title id="v-giunto-ko-t">Da evitare: Giunto con luce variabile</title><desc id="v-giunto-ko-d">Il fascio sottile non colma un giunto largo o disallineato; per questi casi si usano ibridi laser-arco.</desc><defs>
+  <pattern id="v-giunto-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-giunto-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-giunto-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-giunto-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="40" width="50" height="50" fill="url(#v-giunto-ko-tratteggio)" class="contorno"/><rect x="92" y="46" width="48" height="50" fill="url(#v-giunto-ko-tratteggio)" class="contorno"/><path d="M80,10 V40" stroke="var(--fuso)" stroke-width="3"/><circle cx="81" cy="64" r="16" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Il giunto deve rispettare tolleranze strette ed essere allineato con il fascio: la preparazione può costare tempo, soprattutto su pezzi grandi. Se la luce del giunto varia si usano ibridi laser-arco. <span class="pag">(p. 288, 290)</span></p></article>
+<article class="card"><h3>Attenzione ai metalli sensibili</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-cricche-ok-t v-cricche-ok-d" class="mini-svg"><title id="v-cricche-ok-t">Corretto: Metalli adatti</title><desc id="v-cricche-ok-d">Acciai, rame, alluminio (serie 5000 e 6000), magnesio e titanio si saldano bene, pur con cautele per l'alluminio riflettente e il titanio reattivo.</desc><defs>
+  <pattern id="v-cricche-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-cricche-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-cricche-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-cricche-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="40" width="120" height="50" fill="url(#v-cricche-ok-tratteggio)" class="contorno"/><path d="M76,40 L78,90 H82 L84,40 Z" class="m-finito contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-cricche-ko-t v-cricche-ko-d" class="mini-svg"><title id="v-cricche-ko-t">Da evitare: Acciai ad alto carbonio</title><desc id="v-cricche-ko-d">Il salto di temperatura fra zona fusa e metallo base può causare cricche in alcuni metalli, soprattutto negli acciai ad alto carbonio.</desc><defs>
+  <pattern id="v-cricche-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-cricche-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-cricche-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-cricche-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="40" width="120" height="50" fill="url(#v-cricche-ko-tratteggio)" class="contorno"/><path d="M76,40 L78,90 H82 L84,40 Z" class="m-finito contorno"/><path d="M84,56 l8,4 l-4,6 l8,4" fill="none" stroke="var(--ko)" stroke-width="2"/><circle cx="90" cy="64" r="14" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>La grande differenza di temperatura fra zona fusa e metallo base può causare cricche, soprattutto negli acciai ad alto carbonio; l'alluminio è riflettente e il titanio reagisce con ossigeno e azoto. <span class="pag">(p. 288, 290)</span></p></article>
+<article class="card"><h3>Solo dove il costo si ripaga</h3><div class="coppia"><figure class="si"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-costo-ok-t v-costo-ok-d" class="mini-svg"><title id="v-costo-ok-t">Corretto: Applicazioni specialistiche o di massa</title><desc id="v-costo-ok-d">Attrezzature costose e programmazione accurata ripagano solo con applicazioni speciali o grandi serie, dove la velocità conta.</desc><defs>
+  <pattern id="v-costo-ok-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-costo-ok-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-costo-ok-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-costo-ok-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="20" y="50" width="20" height="30" class="m-finito contorno"/><rect x="46" y="50" width="20" height="30" class="m-finito contorno"/><rect x="72" y="50" width="20" height="30" class="m-finito contorno"/><rect x="98" y="50" width="20" height="30" class="m-finito contorno"/><rect x="124" y="50" width="20" height="30" class="m-finito contorno"/></svg><figcaption>Corretto</figcaption></figure><figure class="no"><svg viewBox="0 0 160 110" role="img" aria-labelledby="v-costo-ko-t v-costo-ko-d" class="mini-svg"><title id="v-costo-ko-t">Da evitare: Pezzo unico semplice</title><desc id="v-costo-ko-d">Per un giunto semplice in pochi pezzi l'arco è più conveniente.</desc><defs>
+  <pattern id="v-costo-ko-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="v-costo-ko-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="v-costo-ko-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="v-costo-ko-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs><rect x="60" y="50" width="40" height="30" class="m-finito contorno"/><circle cx="80" cy="65" r="26" fill="none" stroke="var(--ko)" stroke-width="2.5"/></svg><figcaption>Da evitare</figcaption></figure></div><p>Attrezzature costose, programmazione accurata e, per il fascio elettronico, il vuoto rendono il processo adatto ad applicazioni specialistiche o di massa. <span class="pag">(p. 289–290)</span></p></article></div>
+</section>
+
+<!-- 6. Varianti -->
+<section class="sezione" aria-labelledby="s-varianti">
+  <h2 id="s-varianti"><span class="num">6</span>Varianti del processo</h2>
+  <p>Lo schema principale mostra la saldatura laser; queste sono le altre tecniche e applicazioni descritte nel capitolo.</p><div class="griglia-card"><article class="card"><h3>Fascio elettronico</h3><p class="originale" lang="en">Electron beam welding (EBW)</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-ebw-t var-ebw-d" class="mini-svg"><title id="var-ebw-t">Fascio elettronico (EBW)</title><desc id="var-ebw-d">Elettroni emessi da un catodo di tungsteno a oltre 2.000 °C, accelerati fino a due terzi della velocità della luce e focalizzati da bobine magnetiche, nel vuoto: fino a 30.000 W/mm², acciaio fino a 150 mm e alluminio fino a 450 mm.</desc><defs>
+  <pattern id="var-ebw-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-ebw-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-ebw-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-ebw-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <path d="M90,6 H130 V40 L116,60 H104 L90,40 Z" class="m-stampo contorno"/>
+    <ellipse cx="110" cy="70" rx="20" ry="6" fill="none" stroke="var(--flusso)" stroke-width="3"/>
+    <path d="M110,60 V112" stroke="var(--flusso)" stroke-width="3"/>
+    <rect x="20" y="4" width="180" height="114" fill="none" stroke="var(--testo)" stroke-dasharray="6 4"/></svg></div><p>Fascio di elettroni nel vuoto; penetrazione eccezionale e saldature molto pulite. <span class="pag">(p. 288, 290, 292)</span></p></article>
+<article class="card"><h3>Fascio elettronico a pressione ridotta</h3><p class="originale" lang="en">Reduced pressure EBW</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-ridotta-t var-ridotta-d" class="mini-svg"><title id="var-ridotta-t">EBW a pressione ridotta</title><desc id="var-ridotta-d">Dagli anni Novanta un'unità piccola crea un vuoto locale (1–10 mbar) e si sposta lungo il giunto: si salda in cantiere su pezzi troppo grandi per la camera.</desc><defs>
+  <pattern id="var-ridotta-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-ridotta-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-ridotta-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-ridotta-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="20" y="80" width="180" height="30" class="m-stampo contorno"/>
+    <path d="M80,40 H140 V78 H80 Z" fill="none" stroke="var(--testo)" stroke-width="3"/><path d="M110,10 V78" stroke="var(--flusso)" stroke-width="3"/></svg></div><p>Vuoto locale di 1–10 mbar in un'unità mobile: meno energia e tempo, saldatura in opera. <span class="pag">(p. 289, 292)</span></p></article>
+<article class="card"><h3>Laser su plastiche e tessuti</h3><p class="originale" lang="en">Laser welding of plastics (Clearweld®)</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-plastica-t var-plastica-d" class="mini-svg"><title id="var-plastica-t">Laser su plastiche e tessuti</title><desc id="var-plastica-d">Il laser salda termoplastici (PP, PE, ABS, POM, PMMA) e, con un mezzo che assorbe l'infrarosso stampato sul giunto, anche plastiche trasparenti e tessuti, con giunti ermetici e senza tracce.</desc><defs>
+  <pattern id="var-plastica-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-plastica-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-plastica-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-plastica-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="20" y="60" width="180" height="16" fill="#cfe3ea" class="contorno"/><rect x="20" y="76" width="180" height="16" fill="#cfe3ea" class="contorno"/>
+    <rect x="80" y="73" width="60" height="6" style="fill:var(--fuso)"/><path d="M110,10 V72" stroke="var(--fuso)" stroke-width="3"/></svg></div><p>Un mezzo che assorbe l'infrarosso permette di saldare plastiche trasparenti e tessuti. <span class="pag">(p. 288–290)</span></p></article>
+<article class="card"><h3>Ibrido laser-arco</h3><p class="originale" lang="en">Laser-arc hybrid</p><div class="variante-schema"><svg viewBox="0 0 220 124" role="img" aria-labelledby="var-ibrido-t var-ibrido-d" class="mini-svg"><title id="var-ibrido-t">Ibrido laser-arco</title><desc id="var-ibrido-d">Laser ad alta potenza abbinato alla saldatura MIG: tollera variazioni della luce del giunto, migliora la qualità e la produttività, per esempio nei cantieri navali.</desc><defs>
+  <pattern id="var-ibrido-tratteggio" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" class="m-stampo"/>
+    <line x1="0" y1="0" x2="0" y2="8" class="tratteggio-linea"/>
+  </pattern>
+  <pattern id="var-ibrido-tratteggio-pezzo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" class="m-finito"/>
+    <line x1="0" y1="0" x2="0" y2="6" class="tratteggio-linea-chiara"/>
+  </pattern>
+  <marker id="var-ibrido-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="m-flusso"/>
+  </marker>
+  <marker id="var-ibrido-punta-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="riempi-testo"/>
+  </marker>
+</defs>
+    <rect x="20" y="80" width="180" height="30" class="m-stampo contorno"/>
+    <path d="M90,10 L106,78" stroke="var(--fuso)" stroke-width="3"/><path d="M150,20 L118,74" stroke="var(--testo)" stroke-width="10"/></svg></div><p>Laser e MIG insieme per giunti con luce variabile. <span class="pag">(p. 288)</span></p></article></div>
+</section>
+
+<!-- 7. Processi correlati -->
+<section class="sezione" aria-labelledby="s-correlati">
+  <h2 id="s-correlati"><span class="num">7</span>Processi alternativi o correlati</h2>
+  <ul class="correlati"><li><a href="saldatura-arco.html">Saldatura ad arco</a> – alternativa per le lamiere sottili <span class="pag">(p. 288)</span></li><li><a href="saldatura-ultrasuoni.html">Saldatura a ultrasuoni</a> – alternativa al laser per le plastiche <span class="pag">(p. 288)</span></li><li><a href="taglio-laser.html">Taglio laser</a> – stessa sorgente usata per tagliare <span class="pag">(p. 288)</span></li><li><a href="prototipazione-rapida.html">Prototipazione rapida</a> – il laser fonde anche strati di polvere <span class="pag">(p. 288)</span></li></ul>
+</section>
+
+<!-- 8. Fonte -->
+<section class="sezione fonte" aria-labelledby="s-fonte">
+  <h2 id="s-fonte"><span class="num">8</span>Fonte</h2>
+  <p>Thompson, R. (2007). <cite lang="en">Manufacturing Processes for Design Professionals</cite>. London: Thames &amp; Hudson, pp. 288–293.</p>
+  <p>Testi riformulati in italiano a scopo didattico; tutte le illustrazioni sono originali. I numeri di pagina tra parentesi rimandano al libro. "n.d." indica un dato assente dal libro o illeggibile nella scansione.</p>
+</section>
+
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/vista3d.js"></script>
+<script src="assets/scene3d/saldatura-fascio.js"></script>
+</body>
+</html>
